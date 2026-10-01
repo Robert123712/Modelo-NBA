@@ -1,0 +1,12 @@
+{
+ "schema_version": "1.1",
+ "sport": "NBA",
+ "model_version": "nba-0.1.0",
+ "generated_at": "2026-10-01T20:20:30.443017Z",
+ "date_local": "2026-10-01",
+ "games": [],
+ "skipped_without_id": 0,
+ "warnings": [
+  "Sin partidos de temporada en el slate"
+ ]
+}
