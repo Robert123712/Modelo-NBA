@@ -1,0 +1,56 @@
+name: predecir
+
+# Corre a :15 y :45 durante la ventana de partidos (16:00-04:45 UTC cubre
+# 12:00-23:45 ET en horario de verano e invierno). Con tips a :00 y :30, la
+# corrida de :15/:45 queda a 75 minutos: la oficial (>= 60 minutos antes)
+# aguanta hasta 15 minutos de retraso del cron de GitHub.
+on:
+  schedule:
+    - cron: "15,45 15-23 * 10-12,1-6 *"
+    - cron: "15,45 0-4 * 10-12,1-6 *"
+  workflow_dispatch:
+    inputs:
+      fecha:
+        description: "Fecha del slate (AAAA-MM-DD, hora del Este). Vacio = hoy."
+        required: false
+
+concurrency:
+  group: predecir
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  predecir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install .
+      - name: Proyectar el slate
+        run: |
+          if [ -n "${{ inputs.fecha }}" ]; then
+            modelo-nba predecir --fecha "${{ inputs.fecha }}"
+          else
+            modelo-nba predecir
+          fi
+      - name: Publicar
+        run: |
+          git config user.name "modelo-nba[bot]"
+          git config user.email "modelo-nba@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "Sin cambios que publicar"
+            exit 0
+          fi
+          git commit -m "Proyecciones $(TZ=America/New_York date +%F) $(date -u +%H:%MZ)"
+          for i in 1 2 3 4; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep $((2 ** i))
+          done
+          exit 1

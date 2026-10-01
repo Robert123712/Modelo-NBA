@@ -1,0 +1,12 @@
+{
+ "vida_media": 365.0,
+ "vida_media_pace": 30.0,
+ "lambda_jugador": 15.0,
+ "lambda_temporada": 30.0,
+ "lambda_contexto": 5.0,
+ "lambda_pace": 1.0,
+ "lambda_equipo": null,
+ "peso_prior": true,
+ "sin_historial_o": -0.3,
+ "sin_historial_d": -0.3
+}
