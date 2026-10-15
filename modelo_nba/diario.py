@@ -18,7 +18,8 @@ import pandas as pd
 from . import VERSION, datos, emitir, espn, historico
 from . import minutos as mn
 from .mercados import mercados
-from .parametros import cargar_parametros
+from .motores import elo, equipos, factores
+from .parametros import cargar_arbitro, cargar_parametros
 from .proyeccion import esperar
 from .ratings import ajustar
 from .simulador import simular
@@ -42,8 +43,13 @@ def _b2b(calendario: pd.DataFrame, team_id: int, fecha: dt.date) -> bool:
 
 
 def _rotacion(roster, base, novatos_pick, nombres):
-    """Base de minutos esperada (ya ponderada por probabilidad de jugar)."""
+    """Base de minutos esperada (ya ponderada por probabilidad de jugar).
+
+    Devuelve tambien los minutos habituales que se esperan perdidos por bajas,
+    que es una de las dos cosas que mira el arbitro.
+    """
     esperada, completa, avisos, fuera = {}, {}, [], []
+    perdidos = 0.0
     for r in roster:
         a = r["athlete_id"]
         b = base.get(a)
@@ -52,6 +58,7 @@ def _rotacion(roster, base, novatos_pick, nombres):
             b = datos.minutos_novato(pick) if pick is not None else MINUTOS_SIN_NADA
         nombres[a] = r["nombre"]
         completa[a] = b
+        perdidos += b * (1 - r["prob_juega"])
         if r["prob_juega"] <= 0:
             if b >= 10:
                 fuera.append(r["nombre"])
@@ -61,7 +68,7 @@ def _rotacion(roster, base, novatos_pick, nombres):
             avisos.append(f"{r['nombre']} está en duda ({r['estado']})")
         if not r["estado_conocido"]:
             avisos.append(f"Estado desconocido para {r['nombre']}: '{r['estado']}'")
-    return esperada, completa, avisos, fuera
+    return esperada, completa, avisos, fuera, perdidos
 
 
 def predecir(fecha: dt.date | None = None, ahora: pd.Timestamp | None = None, salida: Path = DATA) -> dict:
@@ -74,15 +81,33 @@ def predecir(fecha: dt.date | None = None, ahora: pd.Timestamp | None = None, sa
     regulares = cal[cal.season_type == 2]
     inicio = regulares.dia.min() if len(regulares) else None
     p, j = datos.historia(temporada, fecha, inicio)
-    R = ajustar(p, j, ahora, params_r)
+    # Todo se ajusta al inicio del dia (hora del Este), no a la hora de la
+    # corrida: los datos son los mismos todo el dia (hasta ayer) y asi las
+    # corridas del mismo dia solo cambian por las bajas, no por decimales del
+    # decaimiento temporal.
+    corte = min(ahora, pd.Timestamp(fecha).tz_localize(ET).tz_convert("UTC"))
+    R = ajustar(p, j, corte, params_r)
     bases = {
-        False: mn.minutos_actuales(j, p, ahora).to_dict(),
-        True: mn.minutos_actuales(j, p, ahora, playoffs=True).to_dict(),
+        False: mn.minutos_actuales(j, p, corte).to_dict(),
+        True: mn.minutos_actuales(j, p, corte, playoffs=True).to_dict(),
     }
+    # Los otros tres motores y el arbitro.
+    estado_elo = elo.historial(p)[1]
+    R_equipos = equipos.ajustar(p, corte)
+    tabla_f = factores.tabla_equipos(p, j)
+    mapeo_f = factores.ajustar_mapeo(tabla_f)
+    equipos_f, liga_f = factores.estado_actual(tabla_f)
+    arbitro = cargar_arbitro()
+    actual = p[p.season == temporada]
+    jugados = pd.concat([actual.home_id, actual.away_id]).value_counts().to_dict()
     draft = datos.novatos(temporada)
     picks = dict(zip(draft.clave, draft.overall_pick.astype(int)))
 
-    slate = [g for g in espn.scoreboard(fecha) if g["season_type"] in historico.TIPOS_VALIDOS]
+    slate = [
+        g for g in espn.scoreboard(fecha)
+        if g["season_type"] in historico.TIPOS_VALIDOS
+        and historico.es_franquicia(g["home_id"]) and historico.es_franquicia(g["away_id"])
+    ]
     generado = ahora.isoformat().replace("+00:00", "Z")
     avisos_globales = []
     if not slate:
@@ -94,13 +119,13 @@ def predecir(fecha: dt.date | None = None, ahora: pd.Timestamp | None = None, sa
         if g["estado"] != "pre":
             continue
         nombres: dict[int, str] = {}
-        rot, rot_completa, avisos, bajas = {}, {}, [], {}
+        rot, rot_completa, avisos, bajas, perdidos = {}, {}, [], {}, {}
         for lado in ("home", "away"):
             tid = g[f"{lado}_id"]
             if tid not in rosters:
                 rosters[tid] = espn.roster(tid)
             base = bases[g["season_type"] == 3]
-            esperada, completa, av, fuera = _rotacion(rosters[tid], base, picks, nombres)
+            esperada, completa, av, fuera, perdidos[lado] = _rotacion(rosters[tid], base, picks, nombres)
             rot[lado] = mn.repartir(esperada)
             rot_completa[lado] = mn.repartir(completa)
             avisos += av
@@ -114,10 +139,27 @@ def predecir(fecha: dt.date | None = None, ahora: pd.Timestamp | None = None, sa
             "home": max(0.0, (e_full.puntos_casa - e_full.puntos_visita) - (e.puntos_casa - e.puntos_visita)),
             "away": max(0.0, (e.puntos_casa - e.puntos_visita) - (e_full.puntos_casa - e_full.puntos_visita)),
         }
-        sim = simular(e.puntos_casa, e.puntos_visita, params_s, semilla=g["game_id"])
+        casa, visita, temp, neutral = g["home_id"], g["away_id"], temporada, g["neutral"]
+        f_pred = factores.predecir(equipos_f, liga_f, mapeo_f, casa, visita, neutral)
+        eq_c, eq_v = R_equipos.predecir(casa, visita, temp, neutral)
+        margenes = {
+            "jugadores": e.puntos_casa - e.puntos_visita,
+            "elo": elo.predecir(estado_elo, casa, visita, temp, neutral),
+            "equipos": eq_c - eq_v,
+            "factores": f_pred[0] - f_pred[1] if f_pred else float("nan"),
+        }
+        total_j = e.puntos_casa + e.puntos_visita
+        decision = arbitro.combinar(
+            margenes, {"jugadores": total_j},
+            min(jugados.get(casa, 0), jugados.get(visita, 0)),
+            max(perdidos.values()) / 240,
+        )
+        pts_casa = (decision["total"] + decision["margen"]) / 2
+        pts_visita = (decision["total"] - decision["margen"]) / 2
+        sim = simular(pts_casa, pts_visita, params_s, semilla=g["game_id"])
         m = mercados(sim)
         proy = emitir.proyeccion(
-            g, m, e, {k: (perdida[k], bajas[k]) for k in perdida}, avisos
+            g, m, e, {k: (perdida[k], bajas[k]) for k in perdida}, avisos, margenes
         )
         salida_juegos.append(proy)
         inicio_juego = pd.Timestamp(g["starts_at"])
@@ -140,6 +182,14 @@ def predecir(fecha: dt.date | None = None, ahora: pd.Timestamp | None = None, sa
                 for lado in ("home", "away")
             },
             "b2b": b2b,
+            "modelos": {
+                "margen_casa": {k: round(v, 2) for k, v in margenes.items() if v == v},
+                "arbitro": {
+                    "grupo": decision["grupo"],
+                    "pesos": {k: round(v, 3) for k, v in decision["pesos_margen"].items()},
+                    "margen_casa": round(decision["margen"], 2),
+                },
+            },
             "mercados": m,
         })
         registro.append({

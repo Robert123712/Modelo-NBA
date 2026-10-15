@@ -12,6 +12,7 @@ import numpy as np
 import pandas as pd
 
 from . import minutos as mn
+from .motores import elo, equipos, factores
 from .proyeccion import esperar
 from .ratings import Parametros, Ratings, ajustar, contexto_de
 
@@ -41,13 +42,25 @@ def correr(
     ctx = contexto_de(partidos).set_index("game_id")
     objetivo = partidos[(partidos.season == temporada) & partidos.season_type.isin(tipos)]
 
+    # Los otros tres motores. Elo y cuatro factores se calculan en una sola
+    # pasada cronologica con valores previos a cada partido, asi que no ven el
+    # resultado que predicen. El mapeo factores -> puntos se ajusta solo con
+    # temporadas anteriores.
+    pre_elo = elo.historial(partidos)[0].set_index("game_id")
+    tf = factores.tabla_equipos(partidos, jugadores)
+    mapeo = factores.ajustar_mapeo(tf[tf.season < temporada])
+    pre_fact = factores.predicciones(factores.con_previos(tf), objetivo, mapeo).set_index("game_id")
+    contexto = contexto_ensamble(partidos, jm)
+
     filas = []
     R: Ratings | None = None
+    RE = None
     ultimo_ajuste = None
     for dia, juegos in objetivo.groupby("dia"):
         corte = pd.Timestamp(dia).tz_localize(ET).tz_convert("UTC")
         if R is None or (corte - ultimo_ajuste).days >= cada_dias:
             R = ajustar(partidos, jugadores, corte, params)
+            RE = equipos.ajustar(partidos, corte)
             ultimo_ajuste = corte
         for _, p in juegos.iterrows():
             disp = por_partido.get(p.game_id)
@@ -66,10 +79,20 @@ def correr(
                 bool(c is not None and c.b2b_home == 1),
                 bool(c is not None and c.b2b_away == 1),
             )
+            eq_c, eq_v = RE.predecir(int(p.home_id), int(p.away_id), int(p.season), bool(p.neutral))
+            fz = pre_fact.loc[p.game_id] if p.game_id in pre_fact.index else None
+            cx = contexto.get(p.game_id, {})
             filas.append({
                 "game_id": p.game_id, "dia": dia, "season_type": p.season_type,
                 "pred_casa": e.puntos_casa, "pred_visita": e.puntos_visita,
                 "pred_pace": e.pace,
+                "m_jugadores": e.puntos_casa - e.puntos_visita,
+                "t_jugadores": e.puntos_casa + e.puntos_visita,
+                "m_elo": pre_elo.margen_elo.get(p.game_id, np.nan),
+                "m_equipos": eq_c - eq_v, "t_equipos": eq_c + eq_v,
+                "m_factores": fz.margen_factores if fz is not None else np.nan,
+                "t_factores": fz.total_factores if fz is not None else np.nan,
+                "jugados": cx.get("jugados", 0), "bajas": cx.get("bajas", 0.0),
                 "real_casa": p.home_pts, "real_visita": p.away_pts,
                 "real_1h_casa": p.home_1h, "real_1h_visita": p.away_1h,
                 "real_reg_casa": p.home_reg, "real_reg_visita": p.away_reg,
@@ -77,6 +100,36 @@ def correr(
                 "minutos_juego": p.minutos_juego,
             })
     return pd.DataFrame(filas)
+
+
+def contexto_ensamble(partidos: pd.DataFrame, jm: pd.DataFrame) -> dict[int, dict]:
+    """Por partido: cuantos juegos lleva el equipo con menos en la temporada, y
+    la mayor fraccion de minutos habituales que le falta a alguno de los dos.
+
+    Son las dos cosas de las que depende en cual motor confiar: al inicio del
+    ano los de equipo no saben nada del roster nuevo; con bajas importantes,
+    solo el de jugadores las ve.
+    """
+    jugados = {}
+    for lado in ("home_id", "away_id"):
+        x = partidos[["game_id", "season", "fecha", lado]].rename(columns={lado: "team"})
+        jugados[lado] = x
+    t = pd.concat(jugados.values()).sort_values("fecha")
+    t["n"] = t.groupby(["team", "season"]).cumcount()
+    n = t.groupby("game_id").n.min()
+    # Minutos habituales del lesionado: su ultimo promedio cuando si jugaba.
+    j = jm.sort_values(["athlete_id", "fecha"]).copy()
+    alpha = 1 - 0.5 ** (1 / mn.VIDA_MEDIA_PARTIDOS)
+    j["m_disp"] = j.minutes.where(j.disponible)
+    j["habitual"] = j.groupby("athlete_id").m_disp.transform(
+        lambda s: s.ewm(alpha=alpha, ignore_na=True).mean().shift(1).ffill()
+    )
+    faltan = j[~j.disponible].groupby(["game_id", "team_id"]).habitual.sum() / 240
+    bajas = faltan.groupby("game_id").max()
+    return {
+        int(g): {"jugados": int(n.get(g, 0)), "bajas": float(bajas.get(g, 0.0))}
+        for g in partidos.game_id
+    }
 
 
 def resumen(bt: pd.DataFrame, cierre: pd.DataFrame | None = None) -> dict:

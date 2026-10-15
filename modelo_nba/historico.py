@@ -24,6 +24,17 @@ CACHE = Path(os.environ.get("MODELO_NBA_CACHE", "cache"))
 # Temporada regular, playoffs y play-in. Se excluyen pretemporada y All-Star:
 # no se juegan para ganar con la rotacion real.
 TIPOS_VALIDOS = (2, 3, 5)
+# Las franquicias NBA en ESPN tienen id del 1 al 30. El All-Star llega marcado
+# como temporada regular (EAST, LEB, STARS, STRIPES...) y con marcadores de
+# exhibicion como 211-186; si entra, ensucia los ratings de las estrellas.
+EQUIPOS_NBA = range(1, 31)
+
+
+def es_franquicia(team_id) -> bool:
+    try:
+        return int(team_id) in EQUIPOS_NBA
+    except (TypeError, ValueError):
+        return False
 
 MINUTOS_REGLAMENTO = 48
 MINUTOS_OT = 5
@@ -72,6 +83,8 @@ def partidos_de(schedule: pd.DataFrame, team_box: pd.DataFrame) -> pd.DataFrame:
     sc = schedule[
         schedule.season_type.isin(TIPOS_VALIDOS)
         & (schedule.status_type_name == "STATUS_FINAL")
+        & schedule.home_id.map(es_franquicia)
+        & schedule.away_id.map(es_franquicia)
     ].copy()
 
     lh = sc.home_linescores.map(parse_linescores)

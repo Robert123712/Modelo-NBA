@@ -1,13 +1,8 @@
 name: predecir
 
-# Corre a :15 y :45 durante la ventana de partidos (16:00-04:45 UTC cubre
-# 12:00-23:45 ET en horario de verano e invierno). Con tips a :00 y :30, la
-# corrida de :15/:45 queda a 75 minutos: la oficial (>= 60 minutos antes)
-# aguanta hasta 15 minutos de retraso del cron de GitHub.
+# Corrida manual. Las programadas las hace `vigilante.yml`: el cron de GitHub
+# solo disparaba este workflow 3-4 veces al dia.
 on:
-  schedule:
-    - cron: "15,45 15-23 * 10-12,1-6 *"
-    - cron: "15,45 0-4 * 10-12,1-6 *"
   workflow_dispatch:
     inputs:
       fecha:

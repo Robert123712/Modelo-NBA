@@ -25,24 +25,24 @@ def _preparar(monkeypatch, tmp_path, ahora):
     monkeypatch.setattr(datos, "historia", lambda *a, **k: (p, j))
     cal = pd.DataFrame({
         "season_type": [2, 2], "dia": [dt.date(2026, 10, 20), dt.date(2026, 10, 21)],
-        "home_id": [0, 2], "away_id": [5, 3],
+        "home_id": [1, 3], "away_id": [6, 4],
     })
     monkeypatch.setattr(datos, "calendario", lambda t: cal)
     monkeypatch.setattr(datos, "novatos", lambda t: pd.DataFrame({"clave": ["novato"], "overall_pick": [2]}))
     monkeypatch.setattr(diario, "cargar_parametros",
                         lambda: (Parametros(lambda_jugador=5), ParametrosSim(simulaciones=4000)))
     juegos = [
-        _juego(9001, 0, 1, "pre", "2026-10-21T23:30Z"),
-        _juego(9002, 2, 3, "in", "2026-10-21T19:00Z"),
+        _juego(9001, 1, 2, "pre", "2026-10-21T23:30Z"),
+        _juego(9002, 3, 4, "in", "2026-10-21T19:00Z"),
     ]
     monkeypatch.setattr(espn, "scoreboard", lambda f: juegos)
 
-    estrella = max(plantel[0], key=lambda a: o[a] + d[a])
+    estrella = max(plantel[1], key=lambda a: o[a] + d[a])
 
     def roster(tid):
         r = [{"athlete_id": a, "nombre": f"J{a}", "estado": "active", "prob_juega": 1.0,
               "estado_conocido": True} for a in plantel[tid]]
-        if tid == 0:
+        if tid == 1:
             for x in r:
                 if x["athlete_id"] == estrella:
                     x.update(estado="out", prob_juega=0.0)
@@ -78,6 +78,11 @@ def test_corrida_completa_publica_contrato_y_oficial(monkeypatch, tmp_path):
     assert f"J{estrella}" not in nombres  # el "out" no juega
     assert abs(sum(x["minutos"] for x in detalle["rotacion"]["home"]) - 240) < 3
     assert {"spread_casa", "totales", "team_total_casa", "primera_mitad"} <= set(detalle["mercados"])
+    # Los cuatro modelos opinan, y el arbitro dice con que pesos decidio.
+    modelos = detalle["modelos"]
+    assert set(modelos["margen_casa"]) == {"jugadores", "elo", "equipos", "factores"}
+    assert abs(sum(modelos["arbitro"]["pesos"].values()) - 1) < 1e-6
+    assert g["key_factors"][0]["label"] == "Los 4 modelos"
 
     oficiales = json.loads((tmp_path / "oficiales" / "2026-10-21.json").read_text())
     assert oficiales["9001"]["tardia"] is False

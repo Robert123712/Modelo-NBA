@@ -78,12 +78,44 @@ def factores(
     return out[:5]
 
 
+NOMBRES_MOTOR = {"jugadores": "jugadores", "elo": "Elo", "equipos": "equipo", "factores": "cuatro factores"}
+
+
+def factor_modelos(juego: dict, margenes: dict[str, float], lado_pick: str) -> dict | None:
+    """Que dice cada uno de los cuatro modelos y si coinciden."""
+    validos = {k: v for k, v in margenes.items() if v == v}
+    if len(validos) < 2:
+        return None
+    casa = sum(v > 0 for v in validos.values())
+    visita = sum(v < 0 for v in validos.values())
+    if casa == visita:
+        favor, abbr, signo = None, juego["home_abbr"], 1
+    elif casa > visita:
+        favor, abbr, signo = "home", juego["home_abbr"], 1
+    else:
+        favor, abbr, signo = "away", juego["away_abbr"], -1
+    n = max(casa, visita)
+    lista = ", ".join(f"{NOMBRES_MOTOR[k]} {signo * v:+.1f}" for k, v in validos.items())
+    texto = (
+        f"Los modelos se dividen {casa}-{visita}. Margen de {abbr}: {lista}."
+        if favor is None
+        else f"{n} de {len(validos)} modelos ven ganar a {abbr}. Margen de {abbr}: {lista}."
+    )
+    return {
+        "label": "Los 4 modelos",
+        "favors": favor,
+        "detail": texto[:300],
+        "supports_pick": favor == lado_pick,
+    }
+
+
 def proyeccion(
     juego: dict,
     m: dict,
     e: Esperado,
     bajas: dict,
     avisos: list[str],
+    margenes: dict[str, float] | None = None,
 ) -> dict:
     """Una entrada de `games` del envelope de Edgebook."""
     p_casa = m["ganador"]["casa"]
@@ -115,8 +147,16 @@ def proyeccion(
         },
         "game_warnings": [a[:300] for a in avisos[:12]],
         "warnings": [],
-        "key_factors": factores(juego, e, bajas, lado),
+        "key_factors": _con_modelos(factores(juego, e, bajas, lado), juego, margenes, lado),
     }
+
+
+def _con_modelos(lista: list[dict], juego: dict, margenes, lado: str) -> list[dict]:
+    """Pone primero lo que dicen los cuatro modelos; el resto queda como estaba."""
+    if not margenes:
+        return lista
+    f = factor_modelos(juego, margenes, lado)
+    return ([f] + lista)[:5] if f else lista
 
 
 def envelope(fecha: str, generado: str, version: str, juegos: list[dict], avisos: list[str]) -> dict:

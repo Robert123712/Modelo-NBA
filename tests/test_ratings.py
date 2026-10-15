@@ -12,12 +12,12 @@ def _liga(semilla=0, equipos=10, por_equipo=9, juegos=900):
     n = equipos * por_equipo
     o = rng.normal(0, 1.5, n)
     d = rng.normal(0, 1.5, n)
-    plantel = {t: list(range(t * por_equipo, (t + 1) * por_equipo)) for t in range(equipos)}
+    plantel = {t + 1: list(range(t * por_equipo, (t + 1) * por_equipo)) for t in range(equipos)}
     mins = np.array([36, 34, 32, 30, 28, 24, 20, 20, 16], float)
     inicio = pd.Timestamp("2025-10-20", tz="UTC")
     partidos, jugadores = [], []
     for g in range(juegos):
-        c, v = rng.choice(equipos, 2, replace=False)
+        c, v = rng.choice(equipos, 2, replace=False) + 1
         pos = rng.normal(100, 4)
         def ortg(of, de, signo):
             return (112 + 1.0 * signo
@@ -39,6 +39,9 @@ def _liga(semilla=0, equipos=10, por_equipo=9, juegos=900):
                            "free_throws_attempted", "assists", "turnovers", "offensive_rebounds",
                            "defensive_rebounds", "steals", "blocks", "fouls"):
                     fila[st] = m / 4
+                fila["field_goals_made"] = m / 9
+                fila["three_point_field_goals_made"] = m / 30
+                fila["free_throws_made"] = m / 6
                 jugadores.append(fila)
     return pd.DataFrame(partidos), pd.DataFrame(jugadores), o, d, plantel, mins
 
@@ -59,11 +62,11 @@ def test_proyeccion_sube_con_la_localia_y_baja_sin_el_mejor():
     p, j, o, d, plantel, mins = _liga(semilla=1)
     R = ajustar(p, j, pd.Timestamp("2027-01-01", tz="UTC"), Parametros(vida_media=10_000, lambda_jugador=5))
     rot = {t: repartir(dict(zip(ids, mins))) for t, ids in plantel.items()}
-    e = esperar(R, 2026, 0, 1, rot[0], rot[1])
-    e_neutral = esperar(R, 2026, 0, 1, rot[0], rot[1], neutral=True)
+    e = esperar(R, 2026, 1, 2, rot[1], rot[2])
+    e_neutral = esperar(R, 2026, 1, 2, rot[1], rot[2], neutral=True)
     assert e.puntos_casa - e.puntos_visita > e_neutral.puntos_casa - e_neutral.puntos_visita
 
-    mejor = max(plantel[0], key=lambda a: R.ofensiva[a] + R.defensa[a])
-    sin_mejor = repartir({a: m for a, m in zip(plantel[0], mins) if a != mejor})
-    e_baja = esperar(R, 2026, 0, 1, sin_mejor, rot[1])
+    mejor = max(plantel[1], key=lambda a: R.ofensiva[a] + R.defensa[a])
+    sin_mejor = repartir({a: m for a, m in zip(plantel[1], mins) if a != mejor})
+    e_baja = esperar(R, 2026, 1, 2, sin_mejor, rot[2])
     assert e_baja.puntos_casa - e_baja.puntos_visita < e.puntos_casa - e.puntos_visita

@@ -1,0 +1,57 @@
+{
+ "pesos_margen": {
+  "global": {
+   "jugadores": 1.0,
+   "elo": 0.0,
+   "equipos": 0.0,
+   "factores": 0.0
+  },
+  "inicio|con_bajas": {
+   "jugadores": 1.0,
+   "elo": 0.0,
+   "equipos": 0.0,
+   "factores": 0.0
+  },
+  "inicio|normal": {
+   "jugadores": 0.9184,
+   "elo": 0.0816,
+   "equipos": 0.0,
+   "factores": 0.0
+  },
+  "madura|con_bajas": {
+   "jugadores": 1.0,
+   "elo": 0.0,
+   "equipos": 0.0,
+   "factores": 0.0
+  },
+  "madura|normal": {
+   "jugadores": 1.0,
+   "elo": 0.0,
+   "equipos": 0.0,
+   "factores": 0.0
+  },
+  "media|con_bajas": {
+   "jugadores": 0.6787,
+   "elo": 0.0,
+   "equipos": 0.3213,
+   "factores": 0.0
+  },
+  "media|normal": {
+   "jugadores": 1.0,
+   "elo": 0.0,
+   "equipos": 0.0,
+   "factores": 0.0
+  }
+ },
+ "pesos_total": {
+  "global": {
+   "jugadores": 1.0
+  }
+ },
+ "sesgo_margen": {
+  "global": 0.0
+ },
+ "sesgo_total": {
+  "global": 0.0
+ }
+}

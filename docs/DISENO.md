@@ -82,6 +82,19 @@ Son 20,000 partidos simulados por juego.
 - **Tiempo extra.** Cada OT da unos 10.7 puntos por equipo (90% del ritmo del
   partido), y se juegan hasta que alguien gane.
 
+### 3b. Los cuatro modelos y el árbitro (`motores/`, `ensamble.py`)
+
+Además del modelo de jugadores hay tres modelos más:
+
+- **Elo:** solo resultados.
+- **Eficiencia de equipo:** ajustada por rival.
+- **Cuatro factores:** tiro, pérdidas, rebote ofensivo y tiros libres.
+
+Un árbitro combina sus márgenes con pesos que dependen de la fase de la temporada
+y de las bajas, aprendidos en 2023-25. El total se queda con el modelo de
+jugadores. El detalle, y por qué casi no mejora la precisión, está en
+`docs/ENSAMBLE.md`.
+
 ### 4. Mercados (`mercados.py`)
 
 Para cada partido se publica una escalera de líneas alrededor de la del modelo,
@@ -95,9 +108,11 @@ En líneas enteras existe el push. Su probabilidad es `1 − casa[L] − visita[
 
 ## Registro y calificación
 
-- **Cuándo corre.** El cron va a :15 y :45 entre 15:00 y 04:45 UTC. Para un
-  tip-off a las :00 o :30, la corrida queda a 75 minutos, así que aguanta hasta
-  15 minutos de retraso del cron.
+- **Cuándo corre.** Lo maneja `vigilante.yml`, porque GitHub solo disparaba el
+  cron 3–4 veces al día. Un job de ~5 horas predice en cada :15 y :45 (entre
+  10:00 y 01:59 hora del Este) y al terminar se relanza solo; un cron horario
+  queda de respaldo. Para un tip-off a las :00 o :30, la corrida queda a 75
+  minutos.
 - **Qué se guarda.** `data/oficiales/AAAA-MM-DD.json` guarda la candidata oficial
   de cada partido. Cuando un partido entra a su última hora, ninguna corrida
   posterior lo reemplaza. Si ninguna corrida llegó a tiempo, queda la primera

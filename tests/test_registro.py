@@ -26,3 +26,17 @@ def test_sin_corrida_a_tiempo_queda_la_primera_marcada(tmp_path):
     o = registrar(tmp_path, "d", [_r(2, "b", 10, "segunda")], ahora)
     assert o["2"]["proyeccion"]["x"] == "primera"
     assert o["2"]["tardia"] is True
+
+
+def test_turnos_del_vigilante():
+    from modelo_nba.vigilante import en_ventana, siguiente_turno
+
+    t = lambda s: pd.Timestamp(s)
+    assert siguiente_turno(t("2026-10-21T22:00Z")) == t("2026-10-21T22:15Z")
+    assert siguiente_turno(t("2026-10-21T22:15Z")) == t("2026-10-21T22:45Z")
+    assert siguiente_turno(t("2026-10-21T22:50Z")) == t("2026-10-21T23:15Z")
+    assert siguiente_turno(t("2026-10-21T23:59Z")) == t("2026-10-22T00:15Z")
+    # 19:00 ET dentro; 05:00 ET fuera; 01:30 ET (noche del partido tardio) dentro.
+    assert en_ventana(t("2026-10-21T23:00Z"))
+    assert not en_ventana(t("2026-10-22T09:00Z"))
+    assert en_ventana(t("2026-10-22T05:30Z"))

@@ -35,3 +35,14 @@ def guardar_parametros(pr: Parametros | None, ps: ParametrosSim | None, director
         (directorio / "ratings.json").write_text(json.dumps(asdict(pr), indent=1) + "\n")
     if ps is not None:
         (directorio / "simulador.json").write_text(json.dumps(ps.a_dict(), indent=1) + "\n")
+
+
+def cargar_arbitro(directorio: Path = DIR):
+    """Pesos del arbitro; sin archivo, todo el peso al motor de jugadores."""
+    from .ensamble import Arbitro
+
+    f = directorio / "ensamble.json"
+    if f.exists():
+        return Arbitro.de_dict(json.loads(f.read_text()))
+    solo = {"global": {"jugadores": 1.0}}
+    return Arbitro(solo, solo, {"global": 0.0}, {"global": 0.0})

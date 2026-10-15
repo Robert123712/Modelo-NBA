@@ -66,6 +66,8 @@ def completar_con_espn(
                 juego["terminado"]
                 and juego["season"] == temporada
                 and juego["season_type"] in historico.TIPOS_VALIDOS
+                and historico.es_franquicia(juego["home_id"])
+                and historico.es_franquicia(juego["away_id"])
                 and juego["game_id"] not in ya
             ):
                 partido, filas = espn.box_desde_summary(espn.summary(juego["game_id"]))

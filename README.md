@@ -14,6 +14,10 @@ El diseño completo está en [`docs/DISENO.md`](docs/DISENO.md).
 
 ## Cómo funciona, en corto
 
+Son cuatro modelos (jugadores, Elo, eficiencia de equipo y cuatro factores) y un
+árbitro que decide cuánto confiar en cada uno según la fase de la temporada y las
+bajas. Ver [`docs/ENSAMBLE.md`](docs/ENSAMBLE.md). El corazón es el de jugadores:
+
 1. **Ratings por jugador.** Sale de quién estuvo en cancha y cuánto, con una
    regresión ridge sobre todos los partidos de las últimas temporadas, regularizada
    hacia lo que dice su box score.

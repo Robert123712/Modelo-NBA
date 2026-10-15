@@ -1,0 +1,44 @@
+name: vigilante
+
+# Corre la prediccion a :15 y :45 dentro de un job de ~5 horas y al final se
+# relanza a si mismo (workflow_dispatch con GITHUB_TOKEN si crea una corrida
+# nueva). Ver modelo_nba/vigilante.py para el porque.
+#
+# El cron horario es solo respaldo: si la cadena se rompe, la reinicia. Si ya
+# hay una corrida viva, la programada queda en espera por `concurrency` y
+# reemplaza a cualquier otra en espera, asi que nunca hay dos a la vez.
+on:
+  schedule:
+    - cron: "7 * * 10-12,1-6 *"
+  workflow_dispatch:
+
+concurrency:
+  group: vigilante
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  vigilar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 345
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install .
+      - name: Vigilar
+        id: vigilar
+        run: |
+          git config user.name "modelo-nba[bot]"
+          git config user.email "modelo-nba@users.noreply.github.com"
+          python -m modelo_nba.vigilante
+      - name: Relevo
+        if: success() && steps.vigilar.outputs.relevo == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run vigilante.yml --ref main

@@ -43,3 +43,11 @@ def test_repartir_sin_historial_usa_minutos_por_defecto():
     m = repartir({1: float("nan"), 2: 30.0, 3: 30.0, 4: 30.0, 5: 30.0, 6: 30.0, 7: 20.0, 8: 20.0})
     assert abs(sum(m.values()) - 240) < 1e-6
     assert m[1] < m[2]
+
+
+def test_all_star_no_cuenta_como_partido():
+    from modelo_nba.historico import es_franquicia
+    assert es_franquicia(25) and es_franquicia("1") and es_franquicia(30)
+    assert not es_franquicia(32)  # EAST/WEST 2024
+    assert not es_franquicia(132374)  # equipos del formato nuevo
+    assert not es_franquicia(None)
