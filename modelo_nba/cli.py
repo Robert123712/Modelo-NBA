@@ -18,7 +18,7 @@ def _predecir(a):
     from .diario import predecir
 
     fecha = dt.date.fromisoformat(a.fecha) if a.fecha else None
-    print(json.dumps(predecir(fecha), ensure_ascii=False))
+    print(json.dumps(predecir(fecha, registrar_oficial=not a.no_registrar), ensure_ascii=False))
 
 
 def _backtest(a):
@@ -60,6 +60,8 @@ def main(argv=None):
     sub = ap.add_subparsers(dest="cmd", required=True)
     s = sub.add_parser("predecir")
     s.add_argument("--fecha")
+    s.add_argument("--no-registrar", action="store_true",
+                   help="Publica sin tocar la prediccion oficial (boton de Edgebook)")
     s.set_defaults(fn=_predecir)
     s = sub.add_parser("backtest")
     s.add_argument("--temporada", type=int, required=True)

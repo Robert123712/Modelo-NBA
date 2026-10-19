@@ -8,6 +8,10 @@ on:
       fecha:
         description: "Fecha del slate (AAAA-MM-DD, hora del Este). Vacio = hoy."
         required: false
+      registrar:
+        description: "Actualizar la prediccion oficial. Edgebook manda false."
+        required: false
+        default: "false"
 
 concurrency:
   group: predecir
@@ -29,11 +33,10 @@ jobs:
       - run: pip install .
       - name: Proyectar el slate
         run: |
-          if [ -n "${{ inputs.fecha }}" ]; then
-            modelo-nba predecir --fecha "${{ inputs.fecha }}"
-          else
-            modelo-nba predecir
-          fi
+          args=""
+          if [ -n "${{ inputs.fecha }}" ]; then args="--fecha ${{ inputs.fecha }}"; fi
+          if [ "${{ inputs.registrar }}" != "true" ]; then args="$args --no-registrar"; fi
+          modelo-nba predecir $args
       - name: Publicar
         run: |
           git config user.name "modelo-nba[bot]"

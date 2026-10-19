@@ -40,3 +40,21 @@ def test_turnos_del_vigilante():
     assert en_ventana(t("2026-10-21T23:00Z"))
     assert not en_ventana(t("2026-10-22T09:00Z"))
     assert en_ventana(t("2026-10-22T05:30Z"))
+
+
+def test_corrida_sin_registrar_no_toca_la_oficial(monkeypatch, tmp_path):
+    import datetime as dt
+    import json
+
+    from modelo_nba import diario
+
+    from .test_diario import _preparar
+
+    _preparar(monkeypatch, tmp_path, None)
+    dia = dt.date(2026, 10, 21)
+    diario.predecir(dia, pd.Timestamp("2026-10-21T22:15Z"), salida=tmp_path)
+    antes = json.loads((tmp_path / "oficiales" / "2026-10-21.json").read_text())
+    # Un boton a 70 minutos calificaria si registrara; sin registrar, no.
+    diario.predecir(dia, pd.Timestamp("2026-10-21T22:20Z"), salida=tmp_path, registrar_oficial=False)
+    despues = json.loads((tmp_path / "oficiales" / "2026-10-21.json").read_text())
+    assert despues == antes

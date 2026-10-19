@@ -71,7 +71,18 @@ def _rotacion(roster, base, novatos_pick, nombres):
     return esperada, completa, avisos, fuera, perdidos
 
 
-def predecir(fecha: dt.date | None = None, ahora: pd.Timestamp | None = None, salida: Path = DATA) -> dict:
+def predecir(
+    fecha: dt.date | None = None,
+    ahora: pd.Timestamp | None = None,
+    salida: Path = DATA,
+    registrar_oficial: bool = True,
+) -> dict:
+    """Proyecta el slate y publica.
+
+    `registrar_oficial=False` publica sin tocar la prediccion oficial: es lo
+    que usa el boton de Edgebook. Si un boton pudiera escribirla, la hora en que
+    alguien lo apreto decidiria que prediccion se califica.
+    """
     ahora = ahora or pd.Timestamp.now(tz="UTC")
     fecha = fecha or ahora.tz_convert(ET).date()
     temporada = temporada_de(fecha)
@@ -203,7 +214,11 @@ def predecir(fecha: dt.date | None = None, ahora: pd.Timestamp | None = None, sa
         })
 
     fecha_s = fecha.isoformat()
-    oficiales = registrar(salida, fecha_s, registro, ahora)
+    if registrar_oficial:
+        oficiales = registrar(salida, fecha_s, registro, ahora)
+    else:
+        ruta = salida / "oficiales" / f"{fecha_s}.json"
+        oficiales = json.loads(ruta.read_text()) if ruta.exists() else {}
     # Los partidos que ya empezaron siguen en el snapshot con su prediccion
     # oficial congelada, para que no desaparezcan de Edgebook al arrancar.
     vivos = {x["league_game_id"] for x in salida_juegos}
