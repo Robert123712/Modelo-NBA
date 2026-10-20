@@ -117,11 +117,11 @@ def test_insight_elige_lo_que_mas_mueve():
             "bajas": {"points": 1.0, "reb": 1.0, "assists": 1.0}, "minutos": 30.0,
             "minutos_completo": 30.0}
     medias = {"points": 15.0, "reb": 11.0, "assists": 2.0}
-    assert props.insight(info, medias, "DAL") == "+1.4 reb: DAL cede a pívots"
+    assert props.insight(info, medias, "DAL") == "DAL permite muchos rebotes a los pívots (+1.4 reb)"
     # Sin ajuste por grupo en rebotes, se explica como del equipo.
-    assert props.insight(dict(info, por_grupo=[]), medias, "DAL") == "+1.4 reb: DAL cede rebotes"
+    assert props.insight(dict(info, por_grupo=[]), medias, "DAL") == "DAL permite muchos rebotes (+1.4 reb)"
     info["rival"]["reb"] = 1.02
     assert props.insight(info, medias, "DAL") is None  # nada pasa el umbral
     info["minutos_completo"] = 24.0
-    assert props.insight(info, medias, "DAL", ausente="Brunson") == "+6 min sin Brunson"
+    assert props.insight(info, medias, "DAL", ausente="Brunson") == "Sin Brunson juega más minutos (+6 min)"
     assert props.insight(info, medias, "DAL", en_duda=True).startswith("En duda")

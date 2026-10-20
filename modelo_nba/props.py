@@ -424,6 +424,9 @@ def resumir(sims: dict[str, np.ndarray]) -> dict:
 UMBRAL_INSIGHT = {"points": 1.5, "reb": 0.8, "assists": 0.6}
 CORTO = {"points": "pts", "reb": "reb", "assists": "ast"}
 NOMBRE_LARGO = {"points": "puntos", "reb": "rebotes", "assists": "asistencias"}
+# Frases completas: "DET permite pocas asistencias a los guardias (−0.7 ast)".
+MUCHOS = {"points": "muchos puntos", "reb": "muchos rebotes", "assists": "muchas asistencias"}
+POCOS = {"points": "pocos puntos", "reb": "pocos rebotes", "assists": "pocas asistencias"}
 
 
 def _signo(x: float, fmt: str = ".1f") -> str:
@@ -439,7 +442,7 @@ def insight(info: dict, medias: dict[str, float], rival: str, ausente: str | Non
     relacion a su umbral. Si nada pasa el umbral, no se dice nada.
     """
     if en_duda:
-        return "En duda: si no juega, se anula"
+        return "En duda: si no juega, la apuesta se anula"
     candidatos: list[tuple[float, str]] = []
     etiqueta = ROLES.get(info.get("grupo")) or POSICIONES.get(info.get("grupo"))
     for s in STATS:
@@ -447,24 +450,23 @@ def insight(info: dict, medias: dict[str, float], rival: str, ausente: str | Non
         f = info["rival"][s]
         efecto = mu * (1 - 1 / f) if f > 0 else 0.0
         if abs(efecto) >= UMBRAL_INSIGHT[s]:
-            verbo = "cede" if efecto > 0 else "limita"
-            if s in info.get("por_grupo", ()) and etiqueta:
-                texto = f"{_signo(efecto)} {CORTO[s]}: {rival} {verbo} a {etiqueta}"
-            else:
-                texto = f"{_signo(efecto)} {CORTO[s]}: {rival} {verbo} {NOMBRE_LARGO[s]}"
+            cuanto = (MUCHOS if efecto > 0 else POCOS)[s]
+            a_quien = f" a los {etiqueta}" if s in info.get("por_grupo", ()) and etiqueta else ""
+            texto = f"{rival} permite {cuanto}{a_quien} ({_signo(efecto)} {CORTO[s]})"
             candidatos.append((abs(efecto) / UMBRAL_INSIGHT[s], texto))
         # En puntos la subida por bajas no predijo nada en el backtest (acierta
         # la direccion 47%), asi que no se usa para explicar.
         b = info["bajas"][s]
         efecto = mu * (1 - 1 / b) if b > 0 else 0.0
         if ausente and s != "points" and efecto >= UMBRAL_INSIGHT[s]:
-            candidatos.append((efecto / UMBRAL_INSIGHT[s], f"{_signo(efecto)} {CORTO[s]} sin {ausente}"))
+            candidatos.append((efecto / UMBRAL_INSIGHT[s],
+                               f"Sin {ausente} le tocan más {NOMBRE_LARGO[s]} ({_signo(efecto)} {CORTO[s]})"))
     extra = info["minutos"] - (info.get("minutos_completo") or info["minutos"])
     if ausente and extra >= 4:
-        candidatos.append((extra / 4, f"+{extra:.0f} min sin {ausente}"))
+        candidatos.append((extra / 4, f"Sin {ausente} juega más minutos (+{extra:.0f} min)"))
     if not candidatos:
         return None
-    return max(candidatos)[1][:48]
+    return max(candidatos)[1][:80]
 
 
 def jugadores_disponibles(jugadores: pd.DataFrame, game_id: int) -> pd.DataFrame:
