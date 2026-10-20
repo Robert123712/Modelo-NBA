@@ -15,7 +15,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from . import VERSION, datos, emitir, espn, historico, props, reporte_nba, tendencias
+from . import VERSION, datos, emitir, espn, historico, props, reporte_nba, seguimiento, tendencias
 from . import minutos as mn
 from .mercados import mercados
 from .motores import elo, equipos, factores
@@ -303,11 +303,19 @@ def predecir(
             "minutos_antes": round((inicio_juego - ahora).total_seconds() / 60, 1),
             "proyeccion": proy,
             "mercados": m,
+            # Lo proyectado por jugador, para calificarlo contra su box score.
+            **({"props": seguimiento.compacto(props_juego, prom_props)} if "error" not in props_juego else {}),
         })
 
     fecha_s = fecha.isoformat()
     if registrar_oficial:
         oficiales = registrar(salida, fecha_s, registro, ahora)
+    # Seguimiento de props: las oficiales de dias pasados contra su box score.
+    try:
+        emitir.escribir_si_cambia(salida / "props-record.json",
+                                  seguimiento.calificar(salida / "oficiales", j, p), compacto=True)
+    except Exception:  # noqa: BLE001 -- el seguimiento nunca tumba la corrida
+        pass
     else:
         ruta = salida / "oficiales" / f"{fecha_s}.json"
         oficiales = json.loads(ruta.read_text()) if ruta.exists() else {}

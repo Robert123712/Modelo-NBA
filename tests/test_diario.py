@@ -95,6 +95,10 @@ def test_corrida_completa_publica_contrato_y_oficial(monkeypatch, tmp_path):
 
     oficiales = json.loads((tmp_path / "oficiales" / "2026-10-21.json").read_text())
     assert oficiales["9001"]["tardia"] is False
+    # La oficial guarda lo proyectado por jugador para calificarlo despues.
+    pr = oficiales["9001"]["props"]
+    assert pr and {"a", "j", "lado", "min", "s"} <= set(pr[0])
+    assert len(pr[0]["s"]["puntos"]) == 3
 
     # Una corrida a 45 minutos no reemplaza la oficial, y el partido sigue
     # publicado aunque ya no este en "pre".
