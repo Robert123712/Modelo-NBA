@@ -1,0 +1,37 @@
+name: sonda-lesiones
+# Temporal: baja reportes de lesiones de la NBA para armar el lector. Solo
+# corre en la rama sonda-lesiones y sube lo que baja a esa misma rama.
+on:
+  push:
+    branches: [sonda-lesiones]
+    paths: [".github/workflows/sonda-lesiones.yml"]
+permissions:
+  contents: write
+jobs:
+  sondear:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bajar indice y reportes
+        run: |
+          mkdir -p sonda
+          for t in 2026-27 2025-26; do
+            curl -sL -A "Mozilla/5.0" "https://official.nba.com/nba-injury-report-${t}-season/" -o "sonda/indice-${t}.html" || true
+          done
+          grep -ohE 'https://ak-static\.cms\.nba\.com/referee/injury/[^"]+\.pdf' sonda/indice-*.html | sort -u > sonda/links.txt || true
+          wc -l sonda/links.txt
+          tail -n 3 sonda/links.txt
+          # Los ultimos de la temporada nueva, y si no hay, prueba formatos por hora.
+          for u in $(grep 2026-10 sonda/links.txt | tail -n 2); do curl -sL -A "Mozilla/5.0" "$u" -o "sonda/$(basename "$u")"; done
+          for h in 01 03 05 11; do for f in "2026-10-20_${h}PM" "2026-10-20_${h}_00PM" "2026-10-20_${h}_30PM"; do
+            curl -s -A "Mozilla/5.0" -o "sonda/Injury-Report_${f}.pdf" -w "${f} %{http_code}\n" "https://ak-static.cms.nba.com/referee/injury/Injury-Report_${f}.pdf"
+          done; done
+          find sonda -name '*.pdf' -size -2k -delete
+          ls -la sonda
+      - name: Subir a la rama
+        run: |
+          git config user.name "modelo-nba[bot]"
+          git config user.email "modelo-nba@users.noreply.github.com"
+          git add sonda
+          git commit -m "Sonda: reportes de lesiones" || exit 0
+          git push origin HEAD:sonda-lesiones
