@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.3.0",
- "generated_at": "2026-10-20T22:45:00.000534Z",
+ "generated_at": "2026-10-20T23:45:00.000532Z",
  "date_local": "2026-10-20",
  "games": [
-  {
-   "league_game_id": "401909089",
-   "espn_game_id": "401909089",
-   "starts_at": "2026-10-20T23:00Z",
-   "home": {
-    "name": "New York Knicks",
-    "code": "NY"
-   },
-   "away": {
-    "name": "Philadelphia 76ers",
-    "code": "PHI"
-   },
-   "projection": {
-    "home_score": 118.1,
-    "away_score": 107.8
-   },
-   "win_probability": {
-    "home": 0.7718,
-    "away": 0.2282
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "New York Knicks ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -10.0,
-    "away": 10.0
-   },
-   "total_points": 225.9,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -8.0,
-     28.0
-    ],
-    "total": [
-     201.0,
-     252.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +10.2, Elo +9.7, equipo +10.4, cuatro factores +12.9.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 8.5 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para NY.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de PHI",
-     "favors": "home",
-     "detail": "Sin Dominick Barlow, Dean Wade: PHI pierde 0.9 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909090",
    "espn_game_id": "401909090",
@@ -215,6 +144,75 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.7 puntos para DET.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909089",
+   "espn_game_id": "401909089",
+   "starts_at": "2026-10-20T23:00Z",
+   "home": {
+    "name": "New York Knicks",
+    "code": "NY"
+   },
+   "away": {
+    "name": "Philadelphia 76ers",
+    "code": "PHI"
+   },
+   "projection": {
+    "home_score": 117.4,
+    "away_score": 107.9
+   },
+   "win_probability": {
+    "home": 0.7506,
+    "away": 0.2494
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "New York Knicks ML"
+   },
+   "data_warning": "Adem Bona está en duda (questionable)",
+   "spread": {
+    "home": -9.0,
+    "away": 9.0
+   },
+   "total_points": 225.3,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -8.0,
+     27.0
+    ],
+    "total": [
+     200.0,
+     251.0
+    ]
+   },
+   "game_warnings": [
+    "Adem Bona está en duda (questionable)",
+    "Anfernee Simons está en duda (questionable)",
+    "Dean Wade está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +9.3, Elo +9.7, equipo +10.4, cuatro factores +12.9.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 7.6 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para NY.",
+     "supports_pick": true
     }
    ]
   }
