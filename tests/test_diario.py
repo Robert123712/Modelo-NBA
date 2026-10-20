@@ -83,6 +83,13 @@ def test_corrida_completa_publica_contrato_y_oficial(monkeypatch, tmp_path):
     assert set(modelos["margen_casa"]) == {"jugadores", "elo", "equipos", "factores"}
     assert abs(sum(modelos["arbitro"]["pesos"].values()) - 1) < 1e-6
     assert g["key_factors"][0]["label"] == "Los 4 modelos"
+    # Props para la rotacion de 8 de cada lado; el "out" no tiene.
+    pr = detalle["props"]
+    assert 1 <= len(pr["home"]) <= 8 and 1 <= len(pr["away"]) <= 8
+    assert f"J{estrella}" not in [x["jugador"] for x in pr["home"]]
+    x = pr["home"][0]
+    assert {"puntos", "rebotes", "asistencias", "pra", "puntos_rebotes", "puntos_asistencias"} <= set(x)
+    assert x["pra"]["media"] > x["puntos"]["media"]
 
     oficiales = json.loads((tmp_path / "oficiales" / "2026-10-21.json").read_text())
     assert oficiales["9001"]["tardia"] is False

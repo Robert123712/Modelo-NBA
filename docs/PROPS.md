@@ -1,0 +1,99 @@
+# Props de jugador
+
+Puntos, rebotes, asistencias y sus combinados (PRA, P+R, P+A) para la rotación
+de 8 de cada equipo. Código en `modelo_nba/props.py`; se publican en
+`data/latest.json → games[].props`.
+
+## Cómo se calcula
+
+Un prop es minutos por producción, y los dos se simulan **junto con el partido**
+(las mismas 20,000 simulaciones del marcador):
+
+1. **Minutos si juega.** Los mismos minutos proyectados del simulador, pero sin
+   descontar la probabilidad de jugar: un prop se anula si el jugador no juega,
+   así que al que está en duda se le proyecta su rol completo (y se marca
+   `en_duda`).
+2. **Ruido y paliza.** Cada simulación mueve los minutos ±6 (foul trouble,
+   rachas). Por cada punto de margen arriba de 8, los titulares pierden 0.27
+   minutos y la banca los gana: medido, un titular juega 32 minutos en partido
+   cerrado y 26 cuando se decide por 30 o más.
+3. **Puntos amarrados al marcador.** Cada jugador se lleva su parte de los
+   puntos de su equipo en esa simulación, según su tasa por posesión y sus
+   minutos. Si el equipo anota 130, sus jugadores anotan más.
+4. **Rebotes y asistencias** salen de su tasa por posesión, por el ritmo del
+   partido, ajustada por lo que permite el rival en sus últimos 25 partidos.
+5. **Tasas.** Por 100 posesiones en cancha, con memoria de 60 partidos (vida
+   media) y encogidas hacia la liga con 300 posesiones ficticias.
+6. **Mezcla.** La media final combina la simulación con el promedio de la
+   temporada y el de los últimos 10 partidos. Los pesos salen de mínimos
+   cuadrados en 2024-25:
+
+   | | Simulación | Temporada | Últimos 10 |
+   | --- | ---: | ---: | ---: |
+   | Puntos | 0.67 | 0.21 | 0.17 |
+   | Rebotes | 0.57 | 0.24 | 0.21 |
+   | Asistencias | 0.62 | 0.17 | 0.23 |
+
+7. **Dispersión.** Con los minutos ya simulados, los puntos varían 2.4 veces lo
+   de un conteo Poisson (un triple vale 3); rebotes y asistencias, 1.05.
+8. **Combinados.** PRA, P+R y P+A se suman simulación por simulación, así que
+   comparten minutos y marcador: salen correlacionados, no sumados a ciegas.
+
+Por cada estadística se publica media, mediana, rango 80% (p10–p90) y una
+escalera de P(over) en líneas .5 alrededor de la mediana.
+
+## Backtest
+
+Walk-forward: cada día se calculan tasas y promedios con lo jugado antes; la
+disponibilidad sale del box score (equivale a conocer los inactivos a T-60).
+Se califican los 8 de cada rotación que jugaron, con al menos 5 partidos en la
+temporada. Se afinó en 2024-25; **2025-26 es prueba ciega**, ~19,200
+jugador-partido.
+
+### Error medio absoluto (2025-26, a ciegas)
+
+| | Modelo | Promedio de temporada | Últimos 10 |
+| --- | ---: | ---: | ---: |
+| Puntos | **4.94** | 5.14 | 5.12 |
+| Rebotes | **1.98** | 2.03 | 2.06 |
+| Asistencias | **1.48** | 1.52 | 1.53 |
+| PRA | **6.32** | 6.68 | 6.61 |
+| P+R | **5.84** | 6.12 | 6.08 |
+| P+A | **5.40** | 5.66 | 5.62 |
+
+En los primeros 5 partidos de cada jugador también gana (puntos 5.24 contra
+5.36; PRA 6.89 contra 7.06).
+
+### Calibración
+
+Usando como "línea" el promedio de temporada redondeado a .5:
+
+| P(over) del modelo | Puntos real | PRA real |
+| --- | ---: | ---: |
+| 0.27 | 0.28 | 0.28 |
+| 0.36 | 0.37 | 0.36 |
+| 0.43 | 0.42 | 0.42 |
+| 0.52 | 0.51 | 0.50 |
+| 0.57 | 0.56 | 0.55 |
+| 0.64 | 0.67 | 0.65 |
+| 0.77 | 0.78 | 0.78 |
+
+El rango 80% cubre 83% en puntos y 82% en PRA. En rebotes y asistencias cubre
+87–90% porque son enteros chicos: el rango incluye sus extremos.
+
+### Lo que no se sabe
+
+**No hay líneas históricas de props de las casas**, así que esto no dice si el
+modelo le gana al mercado. La línea de una casa es más fina que el promedio de
+temporada, con lesiones y noticias incluidas. Lo que sí dice el backtest es que
+las probabilidades están bien calibradas y que la media es mejor que los
+promedios simples. Para saber si hay ventaja, hay que guardar las líneas reales
+y calificar contra ellas durante la temporada.
+
+## Limitaciones
+
+- Los minutos son el error más grande (MAE 4.9 minutos): rotaciones que cambia
+  el coach, foul trouble, minutos restringidos tras lesión.
+- Un jugador traspasado conserva sus tasas; el cambio de rol se ve hasta que
+  juega con el nuevo equipo.
+- Novatos y jugadores sin historial usan la tasa de la liga.

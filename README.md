@@ -7,6 +7,8 @@ Simulador de partidos NBA que publica proyecciones para
 - **Spread**, en escalera de líneas, con la probabilidad de push.
 - **Total** y **total de cada equipo**.
 - **Primera mitad**: ganador (con empate), spread y total.
+- **Props de jugador**: puntos, rebotes, asistencias, PRA, P+R y P+A para la
+  rotación de 8 de cada equipo. Ver [`docs/PROPS.md`](docs/PROPS.md).
 
 Hace 20,000 simulaciones por partido. Corre en GitHub Actions y publica en `data/`.
 
@@ -48,7 +50,7 @@ bajarlos.
 | Archivo | Qué es |
 | --- | --- |
 | `data/edgebook-latest.json` | Envelope que lee Edgebook (mismo contrato que MLB y NFL) |
-| `data/latest.json` | Detalle por partido: rotación proyectada, desglose y escaleras de mercado |
+| `data/latest.json` | Detalle por partido: rotación proyectada, desglose, escaleras de mercado y props |
 | `data/oficiales/AAAA-MM-DD.json` | La predicción que se califica: la última con ≥ 60 min de anticipación |
 | `data/box/` | Box scores de ESPN que hoopR todavía no publica |
 

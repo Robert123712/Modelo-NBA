@@ -12,7 +12,7 @@ y Edgebook solo lo lee, lo valida y lo cruza con ESPN.
 | Mercados v1 | Ganador, spread, total, team totals, primera mitad (ganador, spread, total) |
 | Predicción que se califica | La última generada con ≥ 60 minutos de anticipación al tip-off |
 | Momios | No entran al modelo. Las líneas de cierre solo sirven para calificar |
-| Props de jugadores | Fuera de la v1 |
+| Props de jugadores | Puntos, rebotes, asistencias y combinados, rotación de 8 (`docs/PROPS.md`) |
 
 ## Datos
 
@@ -105,6 +105,13 @@ porque la línea de la casa casi nunca coincide con la del modelo:
 - Primera mitad: spread de ±5 y total de ±6.
 
 En líneas enteras existe el push. Su probabilidad es `1 − casa[L] − visita[−L]`.
+
+### 5. Props (`props.py`)
+
+Minutos y producción de cada jugador se simulan dentro de las mismas
+simulaciones del partido: los puntos de los jugadores salen del marcador de su
+equipo y una paliza le quita minutos a los titulares. Detalle y backtest en
+`docs/PROPS.md`.
 
 ## Registro y calificación
 

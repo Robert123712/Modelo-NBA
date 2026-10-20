@@ -15,7 +15,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from . import VERSION, datos, emitir, espn, historico
+from . import VERSION, datos, emitir, espn, historico, props
 from . import minutos as mn
 from .mercados import mercados
 from .motores import elo, equipos, factores
@@ -111,6 +111,14 @@ def predecir(
     arbitro = cargar_arbitro()
     actual = p[p.season == temporada]
     jugados = pd.concat([actual.home_id, actual.away_id]).value_counts().to_dict()
+    # Props: tasas por posesion, lo que permite cada defensa y los promedios
+    # recientes, todo con lo jugado antes del dia.
+    try:
+        tabla_props = props.tabla_jugador_partido(j, p)
+        tasas_props = props.tasas(tabla_props, corte)
+        prom_props = props.promedios(tabla_props, corte, temporada)
+    except Exception:  # noqa: BLE001 -- sin props, el resto se publica igual
+        tasas_props = prom_props = None
     draft = datos.novatos(temporada)
     picks = dict(zip(draft.clave, draft.overall_pick.astype(int)))
 
@@ -130,7 +138,7 @@ def predecir(
         if g["estado"] != "pre":
             continue
         nombres: dict[int, str] = {}
-        rot, rot_completa, avisos, bajas, perdidos = {}, {}, [], {}, {}
+        rot, rot_completa, rot_props, avisos, bajas, perdidos = {}, {}, {}, [], {}, {}
         for lado in ("home", "away"):
             tid = g[f"{lado}_id"]
             if tid not in rosters:
@@ -139,6 +147,9 @@ def predecir(
             esperada, completa, av, fuera, perdidos[lado] = _rotacion(rosters[tid], base, picks, nombres)
             rot[lado] = mn.repartir(esperada)
             rot_completa[lado] = mn.repartir(completa)
+            # Para props, los minutos si juega: un prop se anula si no juega,
+            # asi que el que esta en duda se proyecta con su rol completo.
+            rot_props[lado] = mn.repartir({a: completa[a] for a in esperada})
             avisos += av
             bajas[lado] = fuera
         b2b = {lado: _b2b(cal, g[f"{lado}_id"], fecha) for lado in ("home", "away")}
@@ -169,6 +180,25 @@ def predecir(
         pts_visita = (decision["total"] - decision["margen"]) / 2
         sim = simular(pts_casa, pts_visita, params_s, semilla=g["game_id"])
         m = mercados(sim)
+        # Los props son un extra: si fallan, el partido se publica sin ellos.
+        try:
+            sims_props = props.simular_props(
+                tasas_props, rot_props, {"home": casa, "away": visita},
+                {"home": sim.casa, "away": sim.visita}, sim.casa - sim.visita, e.pace,
+                semilla=g["game_id"] + 1, prom=prom_props,
+            )
+            en_duda = {r["athlete_id"] for tid in (casa, visita) for r in rosters[tid] if 0 < r["prob_juega"] < 1}
+            props_juego = {
+                lado: [
+                    dict(jugador=nombres[a], athlete_id=a, en_duda=a in en_duda,
+                         **props.resumir(sims_props[a]))
+                    for a in sorted(rot_props[lado], key=lambda a: -rot_props[lado][a])
+                    if a in sims_props
+                ]
+                for lado in ("home", "away")
+            }
+        except Exception as err:  # noqa: BLE001
+            props_juego = {"error": f"{type(err).__name__}: {err}"}
         proy = emitir.proyeccion(
             g, m, e, {k: (perdida[k], bajas[k]) for k in perdida}, avisos, margenes
         )
@@ -202,6 +232,7 @@ def predecir(
                 },
             },
             "mercados": m,
+            "props": props_juego,
         })
         registro.append({
             "generated_at": generado,
