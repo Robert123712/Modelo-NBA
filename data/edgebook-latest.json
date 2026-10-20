@@ -2,11 +2,217 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.2.0",
- "generated_at": "2026-10-19T04:15:00.000619Z",
- "date_local": "2026-10-19",
- "games": [],
+ "generated_at": "2026-10-20T04:15:00.000583Z",
+ "date_local": "2026-10-20",
+ "games": [
+  {
+   "league_game_id": "401909088",
+   "espn_game_id": "401909088",
+   "starts_at": "2026-10-20T19:00Z",
+   "home": {
+    "name": "Detroit Pistons",
+    "code": "DET"
+   },
+   "away": {
+    "name": "Boston Celtics",
+    "code": "BOS"
+   },
+   "projection": {
+    "home_score": 108.7,
+    "away_score": 111.8
+   },
+   "win_probability": {
+    "home": 0.4128,
+    "away": 0.5872
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Boston Celtics ML"
+   },
+   "data_warning": "Taurean Prince está en duda (day-to-day)",
+   "spread": {
+    "home": 4.0,
+    "away": -4.0
+   },
+   "total_points": 220.5,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -21.0,
+     15.0
+    ],
+    "total": [
+     195.0,
+     247.0
+    ]
+   },
+   "game_warnings": [
+    "Taurean Prince está en duda (day-to-day)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "3 de 4 modelos ven ganar a DET. Margen de DET: jugadores -3.7, Elo +2.5, equipo +1.4, cuatro factores +1.8.",
+     "supports_pick": false
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 5.5 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para DET.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909089",
+   "espn_game_id": "401909089",
+   "starts_at": "2026-10-20T23:00Z",
+   "home": {
+    "name": "New York Knicks",
+    "code": "NY"
+   },
+   "away": {
+    "name": "Philadelphia 76ers",
+    "code": "PHI"
+   },
+   "projection": {
+    "home_score": 117.4,
+    "away_score": 107.9
+   },
+   "win_probability": {
+    "home": 0.753,
+    "away": 0.247
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "New York Knicks ML"
+   },
+   "data_warning": "Adem Bona está en duda (day-to-day)",
+   "spread": {
+    "home": -10.0,
+    "away": 10.0
+   },
+   "total_points": 225.3,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -8.0,
+     27.0
+    ],
+    "total": [
+     200.0,
+     251.0
+    ]
+   },
+   "game_warnings": [
+    "Adem Bona está en duda (day-to-day)",
+    "Anfernee Simons está en duda (day-to-day)",
+    "Dean Wade está en duda (day-to-day)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +9.4, Elo +9.7, equipo +10.4, cuatro factores +12.9.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 7.7 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para NY.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909090",
+   "espn_game_id": "401909090",
+   "starts_at": "2026-10-21T01:30Z",
+   "home": {
+    "name": "San Antonio Spurs",
+    "code": "SA"
+   },
+   "away": {
+    "name": "Oklahoma City Thunder",
+    "code": "OKC"
+   },
+   "projection": {
+    "home_score": 112.3,
+    "away_score": 111.9
+   },
+   "win_probability": {
+    "home": 0.5111,
+    "away": 0.4889
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "San Antonio Spurs ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -1.0,
+    "away": 1.0
+   },
+   "total_points": 224.2,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -17.0,
+     18.0
+    ],
+    "total": [
+     198.0,
+     250.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +0.0, Elo +3.1, equipo +1.5, cuatro factores +0.5.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para SA.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de OKC vale 1.7 puntos más por partido.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de SA",
+     "favors": "away",
+     "detail": "Sin Tobias Harris: SA pierde 2.2 puntos.",
+     "supports_pick": false
+    }
+   ]
+  }
+ ],
  "skipped_without_id": 0,
- "warnings": [
-  "Sin partidos de temporada en el slate"
- ]
+ "warnings": []
 }
