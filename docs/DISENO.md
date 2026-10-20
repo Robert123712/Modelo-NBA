@@ -24,10 +24,14 @@ y Edgebook solo lo lee, lo valida y lo cruza con ESPN.
   partido terminado que todavía no esté en hoopR se baja de ESPN y se guarda en
   `data/box/`. El parser del box se valida contra las tablas de hoopR en
   `tests/test_espn.py`, y coincide hasta en las posesiones.
-- **Bajas:** el roster de ESPN trae `injuries[].status` con "Out" o "Day-To-Day".
-  "Out" quita al jugador. "Day-To-Day" multiplica sus minutos esperados por 0.6 y
-  deja un aviso en el partido. El reporte oficial de la NBA (Questionable,
-  Doubtful, Probable) queda para la fase 3.
+- **Bajas:** manda el reporte oficial de la NBA (`reporte_nba.py`), el PDF que
+  la liga publica cada 15 minutos con Out, Doubtful, Questionable, Probable y
+  Available. Cada corrida toma el más reciente. Probabilidad de jugar: Out 0,
+  Doubtful 0.25, Questionable 0.5, Probable 0.9. Si el equipo aún no entrega su
+  reporte, o la liga no responde, se usa el roster de ESPN ("Out" o
+  "Day-To-Day", este último a 0.6). Un jugador que ESPN tiene Out y no aparece
+  en el reporte se queda fuera, por si su nombre no cruzó. El reporte sí ve lo
+  que ESPN no: los two-way mandados a la G League.
 - **Líneas de cierre:** el consenso de hoopR, que es la mediana entre casas de
   The Odds API. Solo se usan para el backtest y el récord.
 - `stats.nba.com` no se usa porque bloquea IPs de nube, GitHub Actions incluido.
@@ -158,7 +162,6 @@ Los resultados están en `docs/BACKTEST.md`.
 
 ## Pendiente
 
-- Reporte oficial de lesiones de la NBA (PDF) para Questionable/Doubtful/Probable.
 - Métricas para el récord de Edgebook (`edgebook-metrics.json`), calificando las
   oficiales.
 - Ritmo y localía por equipo (altura de Denver y Utah), viajes y 3 partidos en 4

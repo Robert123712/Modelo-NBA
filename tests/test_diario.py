@@ -3,7 +3,7 @@ import json
 
 import pandas as pd
 
-from modelo_nba import datos, diario, espn
+from modelo_nba import datos, diario, espn, reporte_nba
 from modelo_nba.ratings import Parametros
 from modelo_nba.simulador import ParametrosSim
 
@@ -36,6 +36,8 @@ def _preparar(monkeypatch, tmp_path, ahora):
         _juego(9002, 3, 4, "in", "2026-10-21T19:00Z"),
     ]
     monkeypatch.setattr(espn, "scoreboard", lambda f: juegos)
+    # Sin red en las pruebas: el reporte oficial no se consulta.
+    monkeypatch.setattr(reporte_nba, "ultimo", lambda ahora, fecha: (None, None))
 
     estrella = max(plantel[1], key=lambda a: o[a] + d[a])
 

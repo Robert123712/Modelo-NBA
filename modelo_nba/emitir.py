@@ -184,7 +184,7 @@ def escribir(ruta: Path, datos, compacto: bool = False) -> None:
 
 def _sin_sello(x):
     if isinstance(x, dict):
-        return {k: _sin_sello(v) for k, v in x.items() if k not in ("generated_at", "minutos_antes")}
+        return {k: _sin_sello(v) for k, v in x.items() if k not in ("generated_at", "minutos_antes", "reporte_lesiones")}
     if isinstance(x, list):
         return [_sin_sello(v) for v in x]
     return x

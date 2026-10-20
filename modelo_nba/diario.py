@@ -15,7 +15,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from . import VERSION, datos, emitir, espn, historico, props, tendencias
+from . import VERSION, datos, emitir, espn, historico, props, reporte_nba, tendencias
 from . import minutos as mn
 from .mercados import mercados
 from .motores import elo, equipos, factores
@@ -143,6 +143,14 @@ def predecir(
     avisos_globales = []
     if not slate:
         avisos_globales.append("Sin partidos de temporada en el slate")
+    # Reporte oficial de lesiones: el mas reciente antes de esta corrida. Si
+    # la liga no responde, se sigue con lo de ESPN y se avisa.
+    reporte, hora_reporte = None, None
+    if slate:
+        try:
+            reporte, hora_reporte = reporte_nba.ultimo(ahora, fecha)
+        except Exception as err:  # noqa: BLE001
+            avisos_globales.append(f"Sin reporte oficial de lesiones ({type(err).__name__}); bajas de ESPN")
 
     rosters: dict[int, list] = {}
     salida_juegos, detalle, registro = [], [], []
@@ -156,7 +164,7 @@ def predecir(
         for lado in ("home", "away"):
             tid = g[f"{lado}_id"]
             if tid not in rosters:
-                rosters[tid] = espn.roster(tid)
+                rosters[tid] = reporte_nba.aplicar(espn.roster(tid), reporte, g[f"{lado}_nombre"])
             base = bases[g["season_type"] == 3]
             esperada, completa, av, fuera, perdidos[lado] = _rotacion(rosters[tid], base, picks, nombres)
             rot[lado] = mn.repartir(esperada)
@@ -315,6 +323,7 @@ def predecir(
     # Sin sangria: con escaleras y props, indentado pasaba de 1 MB por dia.
     emitir.escribir_si_cambia(salida / "latest.json", {
         "model_version": VERSION, "generated_at": generado, "date_local": fecha_s,
+        "reporte_lesiones": hora_reporte,
         "ratings": {"mu": R.mu_actual(temporada), "localia": R.localia,
                     "contexto": R.contexto, "pace": R.pace_actual(temporada)},
         "games": detalle,
