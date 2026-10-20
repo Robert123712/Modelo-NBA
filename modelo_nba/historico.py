@@ -163,7 +163,17 @@ def jugadores_de(player_box: pd.DataFrame, partidos: pd.DataFrame) -> pd.DataFra
     pb[stats] = pb[stats].fillna(0.0)
     pb["did_not_play"] = pb.did_not_play.fillna(pb.minutes <= 0).astype(bool)
     pb["reason"] = pb.reason.fillna("")
+    # G, F o C. ESPN a veces da la fina (PG, SF...); se lleva a las tres.
+    pos = player_box.loc[pb.index].get("athlete_position_abbreviation")
+    pb["posicion"] = posicion_simple(pos) if pos is not None else None
     return pb.reset_index(drop=True)
+
+
+def posicion_simple(pos: pd.Series) -> pd.Series:
+    """PG/SG/G -> G, SF/PF/F -> F, C -> C; lo demas queda vacio."""
+    mapa = {"PG": "G", "SG": "G", "G": "G", "SF": "F", "PF": "F", "F": "F", "C": "C",
+            "G-F": "G", "F-G": "F", "F-C": "F", "C-F": "C"}
+    return pos.astype("string").str.upper().map(mapa)
 
 
 def cargar(temporadas: list[int], refrescar_ultima: bool = False):

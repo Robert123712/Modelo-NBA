@@ -39,8 +39,43 @@ Un prop es minutos por producción, y los dos se simulan **junto con el partido*
 8. **Combinados.** PRA, P+R y P+A se suman simulación por simulación, así que
    comparten minutos y marcador: salen correlacionados, no sumados a ciegas.
 
+9. **Asistencias contra la posición.** Lo que cada defensa permite en
+   asistencias a guardias, aleros y centros (posición de ESPN), comparado con
+   lo que esos mismos jugadores suelen dar. Por eso no se infla por haber
+   enfrentado a buenos pasadores. Memoria de 180 días y encogido hacia 1.
+10. **Compañeros fuera.** Si falta alguien que jugó en los últimos 15 días, la
+    mitad de las asistencias que producía se reparte entre los que juegan. Los
+    minutos ya se redistribuían; esto suma el uso.
+
 Por cada estadística se publica media, mediana, rango 80% (p10–p90) y una
-escalera de P(over) en líneas .5 alrededor de la mediana.
+escalera de P(over) en líneas .5 alrededor de la mediana. Además, cada jugador
+trae `insight`: una frase corta con lo que más mueve su prop hoy, solo si pasa
+un umbral (1.5 puntos, 0.8 rebotes, 0.6 asistencias, 4 minutos) y solo con
+efectos que el backtest validó.
+
+## Defensa contra posición: lo que se probó
+
+Es lo más popular en redes ("cuántos rebotes permite Boston a los SF"), así que
+se probó en serio: por posición (G/F/C) y por rol (base creador, pívot, ala-pívot
+abierto, tirador, alero, sacado de sus estadísticas). Las dos versiones van
+encogidas y medidas contra lo esperado de cada jugador. Afinado en 2024-25 y
+probado a ciegas en 2025-26:
+
+| | Puntos | Rebotes | Asistencias |
+| --- | ---: | ---: | ---: |
+| Por posición, acierta la dirección | 51% | 50% | **52–53%** |
+| Por rol, acierta la dirección | 52% | 51% | 52% |
+| Error con el ajuste (2025-26) | sin cambio | sin cambio | 1.487 → 1.485 |
+
+Solo en asistencias, y solo por posición, la señal se repite fuera de muestra.
+En puntos y rebotes los números de "defensa contra posición" son ruido: unos
+25 partidos con uno o dos jugadores por posición no alcanzan para separar la
+defensa de la suerte. Ahí se queda el ajuste por equipo de la v1.
+
+**Compañeros fuera** fue igual: en asistencias ayuda (acierta 53–55% cuando
+alguien falta; error 1.599 → 1.593 a ciegas) y en rebotes no. En puntos, el
+reparto del marcador ya sube la parte de los que quedan, pero esa subida no
+acierta la dirección (47%), así que no se usa para explicar.
 
 ## Backtest
 
