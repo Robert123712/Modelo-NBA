@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.3.0",
- "generated_at": "2026-10-20T20:15:23.589615Z",
+ "generated_at": "2026-10-20T22:45:00.000534Z",
  "date_local": "2026-10-20",
  "games": [
   {
@@ -18,58 +18,60 @@
     "code": "PHI"
    },
    "projection": {
-    "home_score": 117.4,
-    "away_score": 107.9
+    "home_score": 118.1,
+    "away_score": 107.8
    },
    "win_probability": {
-    "home": 0.7506,
-    "away": 0.2494
+    "home": 0.7718,
+    "away": 0.2282
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "New York Knicks ML"
    },
-   "data_warning": "Adem Bona está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": -9.0,
-    "away": 9.0
+    "home": -10.0,
+    "away": 10.0
    },
-   "total_points": 225.3,
+   "total_points": 225.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -8.0,
-     27.0
+     28.0
     ],
     "total": [
-     200.0,
-     251.0
+     201.0,
+     252.0
     ]
    },
-   "game_warnings": [
-    "Adem Bona está en duda (questionable)",
-    "Anfernee Simons está en duda (questionable)",
-    "Dean Wade está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +9.3, Elo +9.7, equipo +10.4, cuatro factores +12.9.",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +10.2, Elo +9.7, equipo +10.4, cuatro factores +12.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 7.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 8.5 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.7 puntos para NY.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de PHI",
+     "favors": "home",
+     "detail": "Sin Dominick Barlow, Dean Wade: PHI pierde 0.9 puntos.",
      "supports_pick": true
     }
    ]
