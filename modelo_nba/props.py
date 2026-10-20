@@ -62,6 +62,20 @@ class ParametrosProps:
             "assists": (0.623, 0.171, 0.226),
         }
     )
+    # Defensa contra un grupo de jugadores: None (solo el equipo), "posicion"
+    # (G/F/C de ESPN) o "rol" (sacado de sus estadisticas).
+    grupo: str | None = None
+    vida_dvp_dias: float = 60.0
+    # Unidades ficticias de "lo esperado" que encogen el factor hacia 1.
+    prior_dvp: dict[str, float] = field(
+        default_factory=lambda: {"points": 150.0, "reb": 60.0, "assists": 40.0}
+    )
+    peso_dvp: dict[str, float] = field(
+        default_factory=lambda: {"points": 1.0, "reb": 1.0, "assists": 1.0}
+    )
+    # Companeros fuera: que fraccion de lo que producian los ausentes se queda
+    # en el equipo (0 = se pierde, 1 = el total del equipo se conserva).
+    beta_bajas: dict[str, float] = field(default_factory=lambda: {"reb": 0.0, "assists": 0.0})
 
 
 def tabla_jugador_partido(jugadores: pd.DataFrame, partidos: pd.DataFrame) -> pd.DataFrame:
@@ -79,6 +93,81 @@ class Tasas:
     jugador: pd.DataFrame  # index athlete_id, columnas = STATS (por 100 posesiones)
     rival: pd.DataFrame  # index team_id, factor permitido / liga por estadistica
     liga: dict[str, float]
+    # Con `grupo`: el grupo de cada jugador y, por (defensa, grupo), cuanto
+    # permite contra lo que esos mismos jugadores suelen producir.
+    grupo: pd.Series | None = None
+    dvp: pd.DataFrame | None = None
+
+
+ROLES = {
+    "creador": "bases",
+    "pivot": "pívots",
+    "abierto": "ala-pívots",
+    "tirador": "tiradores",
+    "alero": "aleros",
+}
+POSICIONES = {"G": "guardias", "F": "aleros", "C": "centros"}
+
+
+def posiciones(tabla: pd.DataFrame) -> pd.Series:
+    """La ultima posicion conocida de cada jugador (G, F o C)."""
+    if "posicion" not in tabla:
+        return pd.Series(dtype=object)
+    t = tabla.dropna(subset=["posicion"])
+    return t.groupby("athlete_id").posicion.last()
+
+
+def roles(tabla: pd.DataFrame, antes_de) -> pd.Series:
+    """Rol de cada jugador por como juega, no por su etiqueta.
+
+    Con su ultimo ano (minimo 300 posesiones): el que mas asiste es
+    "creador"; el que mas rebotea es "pivot" si casi no tira de tres y
+    "abierto" si si; el que mas tira de tres es "tirador"; el resto, "alero".
+    Los cortes son cuantiles de la liga, asi que no dependen de la epoca.
+    """
+    t = tabla[(tabla.fecha < antes_de) & (tabla.fecha >= antes_de - pd.Timedelta(days=365))]
+    g = t.groupby("athlete_id")[["pos", "reb", "assists", "three_point_field_goals_attempted"]].sum()
+    g = g[g.pos >= 300]
+    r = g[["reb", "assists", "three_point_field_goals_attempted"]].div(g.pos, axis=0)
+    ast_q, reb_q = r.assists.quantile(0.75), r.reb.quantile(0.75)
+    tres_med, tres_alto = r.three_point_field_goals_attempted.quantile([0.5, 0.67])
+    rol = pd.Series("alero", index=r.index, dtype=object)
+    rol[r.three_point_field_goals_attempted >= tres_alto] = "tirador"
+    grande = r.reb >= reb_q
+    rol[grande & (r.three_point_field_goals_attempted < tres_med)] = "pivot"
+    rol[grande & (r.three_point_field_goals_attempted >= tres_med)] = "abierto"
+    rol[(r.assists >= ast_q) & ~grande] = "creador"
+    return rol
+
+
+def defensa_por_grupo(t: pd.DataFrame, jug: pd.DataFrame, liga: dict, grupo: pd.Series,
+                      antes_de, params: ParametrosProps) -> pd.DataFrame:
+    """Cuanto produce cada grupo contra cada defensa, contra lo esperado.
+
+    Lo esperado de cada jugador es su propia tasa por sus posesiones de ese
+    partido, asi que enfrentar a un grupo de buenos reboteadores no infla a la
+    defensa: solo cuenta lo que se hizo de mas o de menos. Encogido hacia 1 con
+    `prior_dvp` y normalizado para que el promedio de cada grupo sea 1.
+    """
+    t = t[t.fecha >= antes_de - pd.Timedelta(days=365)].copy()
+    t["grupo"] = t.athlete_id.map(grupo)
+    t = t.dropna(subset=["grupo"])
+    dias = (antes_de - t.fecha).dt.total_seconds() / 86400
+    w = np.power(0.5, dias / params.vida_dvp_dias)
+    cols = {}
+    for s in STATS:
+        tasa = t.athlete_id.map(jug[s]).fillna(liga[s])
+        cols[f"A_{s}"] = t[s] * w
+        cols[f"E_{s}"] = tasa * t.pos / 100 * w
+    x = pd.DataFrame(cols).assign(rival=t.rival.values, grupo=t.grupo.values)
+    agg = x.groupby(["rival", "grupo"]).sum()
+    tot = x.groupby("grupo").sum()
+    out = {}
+    for s in STATS:
+        k = params.prior_dvp[s]
+        base = (tot[f"A_{s}"] / tot[f"E_{s}"]).reindex(agg.index.get_level_values("grupo")).values
+        out[s] = (agg[f"A_{s}"] + k * base) / (agg[f"E_{s}"] + k) / base
+    return pd.DataFrame(out)
 
 
 def tasas(tabla: pd.DataFrame, antes_de, params: ParametrosProps | None = None) -> Tasas:
@@ -105,7 +194,10 @@ def tasas(tabla: pd.DataFrame, antes_de, params: ParametrosProps | None = None) 
     por_partido = por_partido.sort_values("fecha").groupby("rival").tail(25)
     agg = por_partido.groupby("rival")[list(STATS) + ["pos"]].sum()
     rival = pd.DataFrame({s: (agg[s] / agg.pos * 100) / liga[s] for s in STATS})
-    return Tasas(jug, rival, liga)
+    if params.grupo is None:
+        return Tasas(jug, rival, liga)
+    grupo = posiciones(t) if params.grupo == "posicion" else roles(t, antes_de)
+    return Tasas(jug, rival, liga, grupo, defensa_por_grupo(t, jug, liga, grupo, antes_de, params))
 
 
 def promedios(tabla: pd.DataFrame, antes_de, temporada: int) -> pd.DataFrame:
@@ -139,12 +231,16 @@ def simular_props(
     semilla: int | None = None,
     jugadores: list[int] | None = None,
     prom: pd.DataFrame | None = None,
-) -> dict[int, dict[str, np.ndarray]]:
+    minutos_completos: dict[str, dict[int, float]] | None = None,
+) -> dict[int, dict]:
     """Simulaciones por jugador de cada estadistica.
 
     `jugadores` limita a quien se simula (por omision, la rotacion de 8 de cada
     lado); el reparto de puntos usa siempre a todo el equipo. `prom` (de
     `promedios`) activa la mezcla con los promedios recientes.
+    `minutos_completos` (los minutos con el roster sano) activa el efecto de
+    companeros fuera. Cada jugador trae ademas `info`: lo que movio su
+    proyeccion, para explicarla.
     """
     params = params or ParametrosProps()
     rng = np.random.default_rng(semilla)
@@ -182,10 +278,52 @@ def simular_props(
         cuota = base_pts / base_pts.sum()
         media = {"points": cuota[None, :] * puntos_equipo[lado][:, None] * frac}
         rival = equipos[rival_lado]
+        con_grupo = T.dvp is not None and T.grupo is not None
         for s in ("reb", "assists"):
-            f = T.rival[s].get(rival, 1.0) if s in T.rival else 1.0
-            f = f ** params.peso_rival.get(s, 0.0)
+            # Sin grupos, el ajuste por equipo va antes de la mezcla (como se
+            # afino la v1); con grupos, el de grupo va despues.
+            f = 1.0
+            if not con_grupo and s in T.rival:
+                f = T.rival[s].get(rival, 1.0) ** params.peso_rival.get(s, 0.0)
             media[s] = (tasa[s].values * pos_jug / 100 * f)[None, :] * frac
+
+        # Contexto que se aplica despues de la mezcla, porque los promedios
+        # recientes no lo saben: defensa contra su grupo y companeros fuera.
+        ctx = {s: np.ones(len(ids)) for s in STATS}
+        grupos = [None] * len(ids)
+        if con_grupo:
+            grupos = [T.grupo.get(a) for a in ids]
+            for s in STATS:
+                f = np.array([
+                    T.dvp[s].get((rival, g), 1.0) if g is not None else 1.0 for g in grupos
+                ]) ** params.peso_dvp.get(s, 0.0)
+                if s == "points":
+                    # Cambia el reparto, no el marcador: el que tiene buen
+                    # duelo se lleva mas de los mismos puntos.
+                    f = f / float((cuota * f).sum())
+                ctx[s] = ctx[s] * f
+        rival_ctx = {s: ctx[s].copy() for s in STATS}
+        bajas_ctx = {s: np.ones(len(ids)) for s in STATS}
+        completos = (minutos_completos or {}).get(lado)
+        m_full = np.array([completos.get(a, 0.0) for a in ids]) if completos else None
+        if completos:
+            full_ids = [a for a, mm in completos.items() if mm > 0]
+            tf = T.jugador.reindex(full_ids)
+            mf = np.array([completos[a] for a in full_ids])
+            for s in ("reb", "assists"):
+                e_full = float((tf[s].fillna(T.liga[s]).values * mf).sum())
+                e_disp = float((tasa[s].values * m).sum())
+                if e_disp > 0:
+                    bajas_ctx[s][:] = 1 + params.beta_bajas.get(s, 0.0) * (e_full / e_disp - 1)
+                    ctx[s] = ctx[s] * bajas_ctx[s]
+            # Puntos: cuanto cambia su parte del equipo sin los ausentes (ya va
+            # en `cuota`; aqui solo se mide, para explicarlo).
+            base_full = tf["points"].fillna(T.liga["points"]).values * mf
+            parte_full = dict(zip(full_ids, base_full / base_full.sum()))
+            bajas_ctx["points"] = np.array([
+                cuota[k] / parte_full[a] if parte_full.get(a, 0) > 0 else 1.0
+                for k, a in enumerate(ids)
+            ])
 
         quienes = jugadores if jugadores is not None else _rotacion(dict(zip(ids, m)))
         col = {a: k for k, a in enumerate(ids)}
@@ -202,6 +340,7 @@ def simular_props(
                     objetivo = w[0] * base + w[1] * prom.at[a, ("temporada", s)] + w[2] * prom.at[a, ("ult10", s)]
                     if base > 0 and objetivo == objetivo:
                         mu = mu * max(objetivo, 0.05) / base
+                mu = mu * ctx[s][k]
                 phi = params.dispersion[s]
                 if phi > 1.0001:
                     lam = rng.gamma(mu / (phi - 1), phi - 1)
@@ -209,6 +348,13 @@ def simular_props(
                     lam = mu
                 res[s] = rng.poisson(lam)
             res["minutos"] = ms[:, k]
+            res["info"] = {
+                "grupo": grupos[k],
+                "rival": {s: float(rival_ctx[s][k]) for s in STATS},
+                "bajas": {s: float(bajas_ctx[s][k]) for s in STATS},
+                "minutos": float(m[k]),
+                "minutos_completo": float(m_full[k]) if m_full is not None else None,
+            }
             out[a] = res
     return out
 
@@ -246,6 +392,47 @@ def resumir(sims: dict[str, np.ndarray]) -> dict:
             "overs": _escalera(v, ANCHO[clave]),
         }
     return out
+
+
+# Desde cuanto vale la pena decirlo: debajo de esto es ruido para el lector.
+UMBRAL_INSIGHT = {"points": 1.5, "reb": 0.8, "assists": 0.6}
+CORTO = {"points": "pts", "reb": "reb", "assists": "ast"}
+
+
+def _signo(x: float, fmt: str = ".1f") -> str:
+    return f"{'+' if x >= 0 else '−'}{abs(x):{fmt}}"
+
+
+def insight(info: dict, medias: dict[str, float], rival: str, ausente: str | None = None,
+            en_duda: bool = False) -> str | None:
+    """La frase corta que explica lo que mas mueve el prop hoy, o None.
+
+    Compite lo que suma la defensa rival contra su grupo, lo que suman los
+    companeros fuera y los minutos de mas por bajas; gana el mas grande en
+    relacion a su umbral. Si nada pasa el umbral, no se dice nada.
+    """
+    if en_duda:
+        return "En duda: si no juega, se anula"
+    candidatos: list[tuple[float, str]] = []
+    etiqueta = ROLES.get(info.get("grupo")) or POSICIONES.get(info.get("grupo"))
+    for s in STATS:
+        mu = medias[s]
+        f = info["rival"][s]
+        efecto = mu * (1 - 1 / f) if f > 0 else 0.0
+        if etiqueta and abs(efecto) >= UMBRAL_INSIGHT[s]:
+            verbo = "cede" if efecto > 0 else "limita"
+            candidatos.append((abs(efecto) / UMBRAL_INSIGHT[s],
+                               f"{_signo(efecto)} {CORTO[s]}: {rival} {verbo} a {etiqueta}"))
+        b = info["bajas"][s]
+        efecto = mu * (1 - 1 / b) if b > 0 else 0.0
+        if ausente and efecto >= UMBRAL_INSIGHT[s]:
+            candidatos.append((efecto / UMBRAL_INSIGHT[s], f"{_signo(efecto)} {CORTO[s]} sin {ausente}"))
+    extra = info["minutos"] - (info.get("minutos_completo") or info["minutos"])
+    if ausente and extra >= 4:
+        candidatos.append((extra / 4, f"+{extra:.0f} min sin {ausente}"))
+    if not candidatos:
+        return None
+    return max(candidatos)[1][:48]
 
 
 def jugadores_disponibles(jugadores: pd.DataFrame, game_id: int) -> pd.DataFrame:

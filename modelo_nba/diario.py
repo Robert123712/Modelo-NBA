@@ -139,6 +139,7 @@ def predecir(
             continue
         nombres: dict[int, str] = {}
         rot, rot_completa, rot_props, avisos, bajas, perdidos = {}, {}, {}, [], {}, {}
+        ausente: dict[str, str | None] = {}
         for lado in ("home", "away"):
             tid = g[f"{lado}_id"]
             if tid not in rosters:
@@ -152,6 +153,11 @@ def predecir(
             rot_props[lado] = mn.repartir({a: completa[a] for a in esperada})
             avisos += av
             bajas[lado] = fuera
+            # El ausente que mas minutos se lleva, para explicar los props.
+            fuera_ids = [r["athlete_id"] for r in rosters[tid] if r["prob_juega"] <= 0]
+            top = max(fuera_ids, key=lambda a: completa.get(a, 0.0), default=None)
+            ausente[lado] = (nombres[top].split()[-1] if top is not None and completa.get(top, 0) >= 20
+                             else None)
         b2b = {lado: _b2b(cal, g[f"{lado}_id"], fecha) for lado in ("home", "away")}
         args = (R, temporada, g["home_id"], g["away_id"])
         e = esperar(*args, rot["home"], rot["away"], g["neutral"], b2b["home"], b2b["away"])
@@ -185,13 +191,22 @@ def predecir(
             sims_props = props.simular_props(
                 tasas_props, rot_props, {"home": casa, "away": visita},
                 {"home": sim.casa, "away": sim.visita}, sim.casa - sim.visita, e.pace,
-                semilla=g["game_id"] + 1, prom=prom_props,
+                semilla=g["game_id"] + 1, prom=prom_props, minutos_completos=rot_completa,
             )
             en_duda = {r["athlete_id"] for tid in (casa, visita) for r in rosters[tid] if 0 < r["prob_juega"] < 1}
+            rival_abbr = {"home": g["away_abbr"], "away": g["home_abbr"]}
+
+            def _prop(a, lado):
+                x = sims_props[a]
+                res = props.resumir(x)
+                medias = {s: float(x[s].mean()) for s in props.STATS}
+                clave = props.insight(x["info"], medias, rival_abbr[lado], ausente[lado], a in en_duda)
+                return dict(jugador=nombres[a], athlete_id=a, en_duda=a in en_duda,
+                            insight=clave, **res)
+
             props_juego = {
                 lado: [
-                    dict(jugador=nombres[a], athlete_id=a, en_duda=a in en_duda,
-                         **props.resumir(sims_props[a]))
+                    _prop(a, lado)
                     for a in sorted(rot_props[lado], key=lambda a: -rot_props[lado][a])
                     if a in sims_props
                 ]

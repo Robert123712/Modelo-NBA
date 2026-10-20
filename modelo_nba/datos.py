@@ -111,7 +111,9 @@ def historia(temporada: int, hoy: dt.date, inicio_temporada: dt.date | None, usa
         cj["minutes"] = cj.minutes.fillna(0.0)
         cj["reason"] = cj.reason.fillna("")
         partidos.append(cp)
-        jugadores.append(cj[historico.COLUMNAS_JUGADOR])
+        pos = cj["athlete_position_abbreviation"] if "athlete_position_abbreviation" in cj else pd.Series(index=cj.index, dtype="string")
+        cj["posicion"] = historico.posicion_simple(pos)
+        jugadores.append(cj[historico.COLUMNAS_JUGADOR + ["posicion"]])
 
     p = pd.concat(partidos, ignore_index=True).sort_values(["fecha", "game_id"]).reset_index(drop=True)
     j = pd.concat(jugadores, ignore_index=True)

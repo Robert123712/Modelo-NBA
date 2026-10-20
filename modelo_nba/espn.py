@@ -184,6 +184,7 @@ def box_desde_summary(data: dict) -> tuple[dict, list[dict]]:
                 "starter": bool(a.get("starter", False)),
                 "did_not_play": bool(a.get("didNotPlay", False)) or not a.get("stats"),
                 "reason": a.get("reason") or "",
+                "athlete_position_abbreviation": (a["athlete"].get("position") or {}).get("abbreviation"),
             }
             for col in list(_MAPA_JUGADOR.values()) + [c for par in _PARES.values() for c in par]:
                 fila[col] = 0.0
@@ -226,6 +227,7 @@ def parse_roster(data: dict) -> list[dict]:
             "estado": estado,
             "prob_juega": PROB_JUEGA.get(estado, 0.5),
             "estado_conocido": estado in PROB_JUEGA,
+            "posicion": (a.get("position") or {}).get("abbreviation"),
         })
     return out
 
