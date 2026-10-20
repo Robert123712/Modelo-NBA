@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.3.0",
- "generated_at": "2026-10-20T19:08:00.282156Z",
+ "generated_at": "2026-10-20T19:12:41.999819Z",
  "date_local": "2026-10-20",
  "games": [
   {
@@ -22,18 +22,18 @@
     "away_score": 110.0
    },
    "win_probability": {
-    "home": 0.6731,
-    "away": 0.3269
+    "home": 0.6728,
+    "away": 0.3272
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "New York Knicks ML"
    },
-   "data_warning": "Adem Bona está en duda (day-to-day)",
+   "data_warning": "Adem Bona está en duda (questionable)",
    "spread": {
-    "home": -6.5,
-    "away": 6.5
+    "home": -7.0,
+    "away": 7.0
    },
    "total_points": 226.4,
    "season": 2027,
@@ -48,9 +48,9 @@
     ]
    },
    "game_warnings": [
-    "Adem Bona está en duda (day-to-day)",
-    "Anfernee Simons está en duda (day-to-day)",
-    "Dean Wade está en duda (day-to-day)"
+    "Adem Bona está en duda (questionable)",
+    "Anfernee Simons está en duda (questionable)",
+    "Dean Wade está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
