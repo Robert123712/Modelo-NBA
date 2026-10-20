@@ -64,18 +64,22 @@ class ParametrosProps:
     )
     # Defensa contra un grupo de jugadores: None (solo el equipo), "posicion"
     # (G/F/C de ESPN) o "rol" (sacado de sus estadisticas).
-    grupo: str | None = None
-    vida_dvp_dias: float = 60.0
+    # Probado en 2024-25 y a ciegas en 2025-26 (docs/PROPS.md): solo en
+    # asistencias y por posicion la defensa por grupo mejora; en puntos y
+    # rebotes es ruido, y ahi se queda la de equipo.
+    grupo: str | None = "posicion"
+    vida_dvp_dias: float = 180.0
     # Unidades ficticias de "lo esperado" que encogen el factor hacia 1.
     prior_dvp: dict[str, float] = field(
         default_factory=lambda: {"points": 150.0, "reb": 60.0, "assists": 40.0}
     )
     peso_dvp: dict[str, float] = field(
-        default_factory=lambda: {"points": 1.0, "reb": 1.0, "assists": 1.0}
+        default_factory=lambda: {"points": 0.0, "reb": 0.0, "assists": 1.0}
     )
     # Companeros fuera: que fraccion de lo que producian los ausentes se queda
-    # en el equipo (0 = se pierde, 1 = el total del equipo se conserva).
-    beta_bajas: dict[str, float] = field(default_factory=lambda: {"reb": 0.0, "assists": 0.0})
+    # en el equipo (0 = se pierde, 1 = el total del equipo se conserva). Solo
+    # asistencias mejoro; en rebotes no.
+    beta_bajas: dict[str, float] = field(default_factory=lambda: {"reb": 0.0, "assists": 0.5})
 
 
 def tabla_jugador_partido(jugadores: pd.DataFrame, partidos: pd.DataFrame) -> pd.DataFrame:
@@ -197,6 +201,8 @@ def tasas(tabla: pd.DataFrame, antes_de, params: ParametrosProps | None = None) 
     if params.grupo is None:
         return Tasas(jug, rival, liga)
     grupo = posiciones(t) if params.grupo == "posicion" else roles(t, antes_de)
+    if grupo.empty:
+        return Tasas(jug, rival, liga)
     return Tasas(jug, rival, liga, grupo, defensa_por_grupo(t, jug, liga, grupo, antes_de, params))
 
 
@@ -437,9 +443,11 @@ def insight(info: dict, medias: dict[str, float], rival: str, ausente: str | Non
             else:
                 texto = f"{_signo(efecto)} {CORTO[s]}: {rival} {verbo} {NOMBRE_LARGO[s]}"
             candidatos.append((abs(efecto) / UMBRAL_INSIGHT[s], texto))
+        # En puntos la subida por bajas no predijo nada en el backtest (acierta
+        # la direccion 47%), asi que no se usa para explicar.
         b = info["bajas"][s]
         efecto = mu * (1 - 1 / b) if b > 0 else 0.0
-        if ausente and efecto >= UMBRAL_INSIGHT[s]:
+        if ausente and s != "points" and efecto >= UMBRAL_INSIGHT[s]:
             candidatos.append((efecto / UMBRAL_INSIGHT[s], f"{_signo(efecto)} {CORTO[s]} sin {ausente}"))
     extra = info["minutos"] - (info.get("minutos_completo") or info["minutos"])
     if ausente and extra >= 4:
