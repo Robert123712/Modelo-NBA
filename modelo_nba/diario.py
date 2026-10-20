@@ -285,12 +285,13 @@ def predecir(
 
     emitir.escribir_si_cambia(salida / "edgebook-latest.json",
                     emitir.envelope(fecha_s, generado, VERSION, salida_juegos, avisos_globales))
+    # Sin sangria: con escaleras y props, indentado pasaba de 1 MB por dia.
     emitir.escribir_si_cambia(salida / "latest.json", {
         "model_version": VERSION, "generated_at": generado, "date_local": fecha_s,
         "ratings": {"mu": R.mu_actual(temporada), "localia": R.localia,
                     "contexto": R.contexto, "pace": R.pace_actual(temporada)},
         "games": detalle,
-    })
+    }, compacto=True)
     return {"juegos": len(salida_juegos), "proyectados": len(detalle), "oficiales": len(oficiales)}
 
 

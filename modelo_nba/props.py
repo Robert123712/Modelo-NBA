@@ -375,20 +375,30 @@ def simular_props(
     return out
 
 
-def _escalera(valores: np.ndarray, ancho: int) -> dict[str, float]:
+def _escalera(valores: np.ndarray, ancho: int) -> dict:
+    """P(over) en lineas .5 de uno en uno: {"desde": 9.5, "p": [0.99, 0.97, ...]}.
+
+    Compacta a proposito: son 6 estadisticas por 16 jugadores por partido, y
+    como diccionario linea -> probabilidad el archivo pasaba de 1 MB.
+    """
     centro = float(np.median(valores))
     base = np.floor(centro) + 0.5
     lineas = np.arange(base - ancho, base + ancho + 1, 1.0)
     lineas = lineas[lineas > 0]
     s = np.sort(valores)
     n = len(s)
-    return {
-        f"{L:.1f}": round(float(n - np.searchsorted(s, L, side="right")) / n, 4)
-        for L in lineas
-    }
+    p = [round(float(n - np.searchsorted(s, L, side="right")) / n, 3) for L in lineas]
+    # Sin las lineas con menos de 0.5% de un lado: no le sirven a nadie. Como
+    # P(over) baja con la linea, lo que queda es un tramo seguido.
+    quedan = [i for i, x in enumerate(p) if 0.005 <= x <= 0.995]
+    if not quedan:
+        return {"desde": float(lineas[0]), "p": []}
+    i, j = quedan[0], quedan[-1] + 1
+    return {"desde": float(lineas[i]), "p": p[i:j]}
 
 
-ANCHO = {"points": 6, "reb": 3, "assists": 3, "pra": 8, "pr": 6, "pa": 6}
+# Abanico por estadistica: lo bastante ancho para cualquier linea de casa.
+ANCHO = {"points": 12, "reb": 6, "assists": 6, "pra": 15, "pr": 12, "pa": 12}
 NOMBRE = {"points": "puntos", "reb": "rebotes", "assists": "asistencias",
           "pra": "pra", "pr": "puntos_rebotes", "pa": "puntos_asistencias"}
 

@@ -48,7 +48,7 @@ Un prop es minutos por producción, y los dos se simulan **junto con el partido*
     minutos ya se redistribuían; esto suma el uso.
 
 Por cada estadística se publica media, mediana, rango 80% (p10–p90) y una
-escalera de P(over) en líneas .5 alrededor de la mediana. Además, cada jugador
+escalera de P(over) en líneas .5, compacta: `{"desde": 9.5, "p": [...]}` de uno en uno. El abanico es amplio (±12 puntos, ±6 rebotes y asistencias, ±15 PRA) para cubrir la línea de cualquier casa, sin las líneas con menos de 0.5% de un lado. En el partido: spread ±15, total ±20, total por equipo ±12, 1ª mitad ±8/±10. Además, cada jugador
 trae `insight`: una frase corta con lo que más mueve su prop hoy, solo si pasa
 un umbral (1.5 puntos, 0.8 rebotes, 0.6 asistencias, 4 minutos) y solo con
 efectos que el backtest validó.

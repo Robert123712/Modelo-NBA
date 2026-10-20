@@ -172,10 +172,13 @@ def envelope(fecha: str, generado: str, version: str, juegos: list[dict], avisos
     }
 
 
-def escribir(ruta: Path, datos) -> None:
+def escribir(ruta: Path, datos, compacto: bool = False) -> None:
     ruta.parent.mkdir(parents=True, exist_ok=True)
     tmp = ruta.with_suffix(ruta.suffix + ".tmp")
-    tmp.write_text(json.dumps(datos, ensure_ascii=False, indent=1))
+    if compacto:
+        tmp.write_text(json.dumps(datos, ensure_ascii=False, separators=(",", ":")))
+    else:
+        tmp.write_text(json.dumps(datos, ensure_ascii=False, indent=1))
     tmp.replace(ruta)
 
 
@@ -187,7 +190,7 @@ def _sin_sello(x):
     return x
 
 
-def escribir_si_cambia(ruta: Path, datos) -> bool:
+def escribir_si_cambia(ruta: Path, datos, compacto: bool = False) -> bool:
     """Escribe solo si cambio algo mas que la hora de generacion.
 
     Entre corridas del mismo dia los ratings no cambian; lo que se mueve son
@@ -200,5 +203,5 @@ def escribir_si_cambia(ruta: Path, datos) -> bool:
                 return False
         except json.JSONDecodeError:
             pass
-    escribir(ruta, datos)
+    escribir(ruta, datos, compacto)
     return True

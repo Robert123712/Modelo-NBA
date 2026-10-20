@@ -20,6 +20,15 @@ def _escalera(centro: float, ancho: float, paso: float = 0.5) -> np.ndarray:
     return np.round(np.arange(c - ancho, c + ancho + paso / 2, paso), 1)
 
 
+# Lineas con menos de 0.5% de un lado no le sirven a nadie y solo engordan el
+# archivo: el abanico se recorta ahi.
+EXTREMO = 0.005
+
+
+def _recorta(escalera: dict[str, float]) -> dict[str, float]:
+    return {k: p for k, p in escalera.items() if EXTREMO <= p <= 1 - EXTREMO}
+
+
 def _firmada(x: float) -> str:
     return f"{x:+.1f}"
 
@@ -29,19 +38,19 @@ def _cubre(margen: np.ndarray, lineas: np.ndarray) -> dict[str, float]:
     s = np.sort(margen)
     n = len(s)
     # margen + L > 0  <=>  margen > -L
-    return {
+    return _recorta({
         _firmada(L): round(float(n - np.searchsorted(s, -L, side="right")) / n, 4)
         for L in lineas
-    }
+    })
 
 
 def _overs(valores: np.ndarray, lineas: np.ndarray) -> dict[str, float]:
     s = np.sort(valores)
     n = len(s)
-    return {
+    return _recorta({
         f"{L:.1f}": round(float(n - np.searchsorted(s, L, side="right")) / n, 4)
         for L in lineas
-    }
+    })
 
 
 def _resumen(x: np.ndarray) -> dict[str, float]:
@@ -59,9 +68,9 @@ def mercados(sim: Simulacion) -> dict:
     t1 = sim.casa_1h + sim.visita_1h
 
     centro_spread = -float(np.median(margen))  # linea de la casa
-    lineas_casa = _escalera(centro_spread, 8.0)
+    lineas_casa = _escalera(centro_spread, 15.0)
     centro_1h = -float(np.median(m1))
-    lineas_1h = _escalera(centro_1h, 5.0)
+    lineas_1h = _escalera(centro_1h, 8.0)
 
     return {
         "ganador": {
@@ -73,9 +82,9 @@ def mercados(sim: Simulacion) -> dict:
         "total": _resumen(total),
         "spread_casa": _cubre(margen, lineas_casa),
         "spread_visita": _cubre(-margen, -lineas_casa[::-1]),
-        "totales": _overs(total, _escalera(float(np.median(total)), 10.0)),
-        "team_total_casa": _overs(sim.casa, _escalera(float(np.median(sim.casa)), 6.0)),
-        "team_total_visita": _overs(sim.visita, _escalera(float(np.median(sim.visita)), 6.0)),
+        "totales": _overs(total, _escalera(float(np.median(total)), 20.0)),
+        "team_total_casa": _overs(sim.casa, _escalera(float(np.median(sim.casa)), 12.0)),
+        "team_total_visita": _overs(sim.visita, _escalera(float(np.median(sim.visita)), 12.0)),
         "puntos_casa": _resumen(sim.casa),
         "puntos_visita": _resumen(sim.visita),
         "primera_mitad": {
@@ -86,6 +95,6 @@ def mercados(sim: Simulacion) -> dict:
             "total": _resumen(t1),
             "spread_casa": _cubre(m1, lineas_1h),
             "spread_visita": _cubre(-m1, -lineas_1h[::-1]),
-            "totales": _overs(t1, _escalera(float(np.median(t1)), 6.0)),
+            "totales": _overs(t1, _escalera(float(np.median(t1)), 10.0)),
         },
     }

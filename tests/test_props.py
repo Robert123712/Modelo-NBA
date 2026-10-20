@@ -48,9 +48,15 @@ def test_combinados_salen_de_la_misma_simulacion():
     s = _sim(T, plantel, mins, prom=prom, n=4000)
     r = props.resumir(s[plantel[1][0]])
     assert abs(r["pra"]["media"] - sum(r[k]["media"] for k in ("puntos", "rebotes", "asistencias"))) < 0.05
-    # Escalera de overs: decreciente y centrada en la mediana.
-    overs = list(r["puntos"]["overs"].values())
+    # Escalera de overs: lineas .5 de uno en uno, decreciente, que cruza el 50%
+    # cerca de la mediana y sin colas inservibles.
+    esc = r["puntos"]["overs"]
+    overs = esc["p"]
+    assert esc["desde"] % 1 == 0.5
     assert all(a >= b for a, b in zip(overs, overs[1:]))
+    assert all(0.005 <= x <= 0.995 for x in overs)
+    cruce = esc["desde"] + next(i for i, x in enumerate(overs) if x < 0.5)
+    assert abs(cruce - r["puntos"]["mediana"]) <= 1
     assert r["puntos"]["p10"] <= r["puntos"]["mediana"] <= r["puntos"]["p90"]
 
 
