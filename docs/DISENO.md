@@ -63,8 +63,12 @@ temporal.
 - **Base de cada jugador.** Promedio exponencial de sus minutos en los partidos
   en que estuvo disponible, en cualquier equipo; un traspaso conserva su rol. Un
   DNP del coach cuenta como 0 minutos; un DNP por lesión no cuenta.
-- **Reparto.** Los disponibles se reparten 240 minutos proporcional a su base,
-  con tope de 40 por jugador. Así se redistribuyen los minutos de una baja.
+- **Reparto.** Entran los 11 disponibles de mayor base y se reparten 240
+  minutos: si sobran, se le resta lo mismo a todos; si faltan (bajas), se
+  reparten proporcional a la base. Tope de 40 por jugador. El tope de 11 importa
+  en vivo: el roster de ESPN trae hasta 18 con los two-way, y cada uno de más le
+  quitaba minutos a los titulares. En 2024-26 bajó el error de minutos de 5.07
+  a 5.01 y dejó igual el de partidos.
 - **Novatos.** Toman sus minutos según el turno del draft, medido en la clase
   2025: top 5, 27 min; 6–14, 15; 15–30, 9; segunda ronda, 6.
 

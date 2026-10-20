@@ -39,6 +39,15 @@ def test_repartir_redistribuye_baja_proporcional():
     assert m[2] > completo[2]
 
 
+def test_repartir_solo_entran_11():
+    # Un roster de 18 (two-way incluidos) no le quita minutos al titular.
+    base = {i: 34.0 - 2 * i for i in range(11)} | {100 + i: 10.0 for i in range(7)}
+    m = repartir(base)
+    assert abs(sum(m.values()) - 240) < 1e-6
+    assert all(m[100 + i] == 0 for i in range(7))
+    assert abs(m[0] - repartir({i: 34.0 - 2 * i for i in range(11)})[0]) < 1e-9
+
+
 def test_repartir_sin_historial_usa_minutos_por_defecto():
     m = repartir({1: float("nan"), 2: 30.0, 3: 30.0, 4: 30.0, 5: 30.0, 6: 30.0, 7: 20.0, 8: 20.0})
     assert abs(sum(m.values()) - 240) < 1e-6

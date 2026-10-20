@@ -21,6 +21,11 @@ TOPE_MINUTOS = 40.0
 # Minutos base de alguien sin historial (debut). Entra a la rotacion solo si
 # faltan cuerpos.
 MINUTOS_SIN_HISTORIAL = 6.0
+# Solo los 11 de mayor base entran al reparto. El roster de ESPN trae 15-18
+# (two-way incluidos) y cada uno de mas le restaba minutos a los titulares.
+# Medido en 2024-26 contra el box score: tope 11, error 5.01 minutos; sin tope,
+# 5.07; con 9 o 10, las estrellas se sobreestiman.
+MAX_JUGADORES = 11
 
 
 def no_disponible(did_not_play: pd.Series, reason: pd.Series) -> pd.Series:
@@ -88,6 +93,8 @@ def repartir(base: dict[int, float], minutos_partido: float = 48.0, modo: str | 
     ids = list(base)
     b = np.array([base[a] if base[a] == base[a] else MINUTOS_SIN_HISTORIAL for a in ids], float)
     b = np.clip(b, 0.0, None)
+    if len(b) > MAX_JUGADORES:
+        b[np.argsort(-b, kind="stable")[MAX_JUGADORES:]] = 0.0
     if b.sum() <= 0:
         b = np.ones_like(b)
     if modo == "resta" and b.sum() > total:
