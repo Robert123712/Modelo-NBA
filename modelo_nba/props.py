@@ -279,11 +279,14 @@ def simular_props(
         media = {"points": cuota[None, :] * puntos_equipo[lado][:, None] * frac}
         rival = equipos[rival_lado]
         con_grupo = T.dvp is not None and T.grupo is not None
+        # Estadisticas que usan defensa por grupo; las demas se quedan con la
+        # de equipo.
+        por_grupo = {s for s in STATS if con_grupo and params.peso_dvp.get(s, 0.0) > 0}
         for s in ("reb", "assists"):
             # Sin grupos, el ajuste por equipo va antes de la mezcla (como se
             # afino la v1); con grupos, el de grupo va despues.
             f = 1.0
-            if not con_grupo and s in T.rival:
+            if s not in por_grupo and s in T.rival:
                 f = T.rival[s].get(rival, 1.0) ** params.peso_rival.get(s, 0.0)
             media[s] = (tasa[s].values * pos_jug / 100 * f)[None, :] * frac
 
@@ -293,7 +296,7 @@ def simular_props(
         grupos = [None] * len(ids)
         if con_grupo:
             grupos = [T.grupo.get(a) for a in ids]
-            for s in STATS:
+            for s in por_grupo:
                 f = np.array([
                     T.dvp[s].get((rival, g), 1.0) if g is not None else 1.0 for g in grupos
                 ]) ** params.peso_dvp.get(s, 0.0)
@@ -303,6 +306,12 @@ def simular_props(
                     f = f / float((cuota * f).sum())
                 ctx[s] = ctx[s] * f
         rival_ctx = {s: ctx[s].copy() for s in STATS}
+        # Para explicar: el ajuste por equipo va antes de la mezcla, asi que
+        # pesa lo que pesa la simulacion en ella.
+        for s in ("reb", "assists"):
+            if s not in por_grupo and s in T.rival:
+                f = T.rival[s].get(rival, 1.0) ** params.peso_rival.get(s, 0.0)
+                rival_ctx[s][:] = 1 + (f - 1) * (params.mezcla[s][0] if prom is not None else 1.0)
         bajas_ctx = {s: np.ones(len(ids)) for s in STATS}
         completos = (minutos_completos or {}).get(lado)
         m_full = np.array([completos.get(a, 0.0) for a in ids]) if completos else None
@@ -350,6 +359,7 @@ def simular_props(
             res["minutos"] = ms[:, k]
             res["info"] = {
                 "grupo": grupos[k],
+                "por_grupo": sorted(por_grupo),
                 "rival": {s: float(rival_ctx[s][k]) for s in STATS},
                 "bajas": {s: float(bajas_ctx[s][k]) for s in STATS},
                 "minutos": float(m[k]),
@@ -397,6 +407,7 @@ def resumir(sims: dict[str, np.ndarray]) -> dict:
 # Desde cuanto vale la pena decirlo: debajo de esto es ruido para el lector.
 UMBRAL_INSIGHT = {"points": 1.5, "reb": 0.8, "assists": 0.6}
 CORTO = {"points": "pts", "reb": "reb", "assists": "ast"}
+NOMBRE_LARGO = {"points": "puntos", "reb": "rebotes", "assists": "asistencias"}
 
 
 def _signo(x: float, fmt: str = ".1f") -> str:
@@ -419,10 +430,13 @@ def insight(info: dict, medias: dict[str, float], rival: str, ausente: str | Non
         mu = medias[s]
         f = info["rival"][s]
         efecto = mu * (1 - 1 / f) if f > 0 else 0.0
-        if etiqueta and abs(efecto) >= UMBRAL_INSIGHT[s]:
+        if abs(efecto) >= UMBRAL_INSIGHT[s]:
             verbo = "cede" if efecto > 0 else "limita"
-            candidatos.append((abs(efecto) / UMBRAL_INSIGHT[s],
-                               f"{_signo(efecto)} {CORTO[s]}: {rival} {verbo} a {etiqueta}"))
+            if s in info.get("por_grupo", ()) and etiqueta:
+                texto = f"{_signo(efecto)} {CORTO[s]}: {rival} {verbo} a {etiqueta}"
+            else:
+                texto = f"{_signo(efecto)} {CORTO[s]}: {rival} {verbo} {NOMBRE_LARGO[s]}"
+            candidatos.append((abs(efecto) / UMBRAL_INSIGHT[s], texto))
         b = info["bajas"][s]
         efecto = mu * (1 - 1 / b) if b > 0 else 0.0
         if ausente and efecto >= UMBRAL_INSIGHT[s]:

@@ -107,11 +107,13 @@ def test_companeros_fuera_suben_el_rebote_de_los_que_quedan():
 
 
 def test_insight_elige_lo_que_mas_mueve():
-    info = {"grupo": "pivot", "rival": {"points": 1.0, "reb": 1.15, "assists": 1.0},
+    info = {"grupo": "pivot", "por_grupo": ["reb"], "rival": {"points": 1.0, "reb": 1.15, "assists": 1.0},
             "bajas": {"points": 1.0, "reb": 1.0, "assists": 1.0}, "minutos": 30.0,
             "minutos_completo": 30.0}
     medias = {"points": 15.0, "reb": 11.0, "assists": 2.0}
     assert props.insight(info, medias, "DAL") == "+1.4 reb: DAL cede a pívots"
+    # Sin ajuste por grupo en rebotes, se explica como del equipo.
+    assert props.insight(dict(info, por_grupo=[]), medias, "DAL") == "+1.4 reb: DAL cede rebotes"
     info["rival"]["reb"] = 1.02
     assert props.insight(info, medias, "DAL") is None  # nada pasa el umbral
     info["minutos_completo"] = 24.0
