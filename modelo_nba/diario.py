@@ -15,7 +15,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from . import VERSION, datos, emitir, espn, historico, props
+from . import VERSION, datos, emitir, espn, historico, props, tendencias
 from . import minutos as mn
 from .mercados import mercados
 from .motores import elo, equipos, factores
@@ -125,6 +125,12 @@ def predecir(
     except Exception:  # noqa: BLE001 -- sin props, el resto se publica igual
         tasas_props = prom_props = None
         recientes = set()
+    # Tendencias de defensa contra posicion (descriptivas, como en redes).
+    try:
+        pos5 = tendencias.posiciones5(tabla_props, corte)
+        rankings_dvp = tendencias.rankings(tabla_props, corte, temporada, pos5)
+    except Exception:  # noqa: BLE001
+        pos5, rankings_dvp = pd.Series(dtype=object), {}
     draft = datos.novatos(temporada)
     picks = dict(zip(draft.clave, draft.overall_pick.astype(int)))
 
@@ -225,6 +231,27 @@ def predecir(
             }
         except Exception as err:  # noqa: BLE001
             props_juego = {"error": f"{type(err).__name__}: {err}"}
+        try:
+            # Novatos sin historial: su G/F/C del roster de ESPN, como SG/SF/C.
+            novatos = {r["athlete_id"]: {"G": "SG", "F": "SF", "C": "C"}.get(
+                           historico.posicion_simple(pd.Series([r.get("posicion")])).iloc[0])
+                       for tid in (casa, visita) for r in rosters[tid]}
+
+            def _rot(lado):
+                return [(a, pos5.get(a, novatos.get(a)))
+                        for a in sorted(rot_props[lado], key=lambda a: -rot_props[lado][a])[:props.ROTACION]]
+            tend = tendencias.del_partido(
+                rankings_dvp,
+                {"abbr": g["home_abbr"], "team_id": casa, "rotacion": _rot("home")},
+                {"abbr": g["away_abbr"], "team_id": visita, "rotacion": _rot("away")},
+            )
+            # Cada jugador de los props lleva las suyas, debajo de su nombre.
+            if "error" not in props_juego:
+                for lado in ("home", "away"):
+                    for x in props_juego[lado]:
+                        x["tendencias"] = tend.get(x["athlete_id"], [])
+        except Exception:  # noqa: BLE001 -- sin tendencias, el partido sale igual
+            pass
         proy = emitir.proyeccion(
             g, m, e, {k: (perdida[k], bajas[k]) for k in perdida}, avisos, margenes
         )

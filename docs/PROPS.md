@@ -132,3 +132,21 @@ y calificar contra ellas durante la temporada.
 - Un jugador traspasado conserva sus tasas; el cambio de rol se ve hasta que
   juega con el nuevo equipo.
 - Novatos y jugadores sin historial usan la tasa de la liga.
+
+## Tendencias de defensa contra posición
+
+Cada jugador de los props trae `tendencias`: las defensas que más le ceden a su
+posición en puntos, rebotes, asistencias y triples, en el top 5 de 30, en la
+temporada (la pasada si van menos de 5 partidos) y en los últimos 7. Es el
+formato de redes ("DET cede los MÁS rebotes a SG"), con un máximo de 3 por
+jugador.
+
+ESPN solo da G, F o C. Las cinco posiciones salen de partir los **minutos** de
+guardias por asistencias (PG/SG) y de aleros por rebotes (SF/PF) a la mitad;
+un alero con 14+ rebotes y 3.5+ tapones por 100 posesiones cuenta como C. Así
+cada posición pesa parecido, como en una alineación, y el ranking compara
+defensas contra el mismo tipo de jugador.
+
+Son **descriptivas**. Lo que se probó arriba aplica: en puntos y rebotes no
+predicen mejor que el azar, así que la proyección no se mueve con ellas (solo
+asistencias, con el ajuste validado).
