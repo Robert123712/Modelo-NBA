@@ -2,74 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.3.0",
- "generated_at": "2026-10-20T18:40:25.106020Z",
+ "generated_at": "2026-10-20T19:08:00.282156Z",
  "date_local": "2026-10-20",
  "games": [
-  {
-   "league_game_id": "401909088",
-   "espn_game_id": "401909088",
-   "starts_at": "2026-10-20T19:00Z",
-   "home": {
-    "name": "Detroit Pistons",
-    "code": "DET"
-   },
-   "away": {
-    "name": "Boston Celtics",
-    "code": "BOS"
-   },
-   "projection": {
-    "home_score": 112.2,
-    "away_score": 112.1
-   },
-   "win_probability": {
-    "home": 0.5026,
-    "away": 0.4974
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Detroit Pistons ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -1.0,
-    "away": 1.0
-   },
-   "total_points": 224.2,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -18.0,
-     18.0
-    ],
-    "total": [
-     200.0,
-     249.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a DET. Margen de DET: jugadores -0.1, Elo +2.5, equipo +1.4, cuatro factores +1.8.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para DET.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 1.8 puntos más por partido.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909089",
    "espn_game_id": "401909089",
@@ -195,6 +130,77 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para SA.",
      "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909088",
+   "espn_game_id": "401909088",
+   "starts_at": "2026-10-20T19:00Z",
+   "home": {
+    "name": "Detroit Pistons",
+    "code": "DET"
+   },
+   "away": {
+    "name": "Boston Celtics",
+    "code": "BOS"
+   },
+   "projection": {
+    "home_score": 108.4,
+    "away_score": 112.0
+   },
+   "win_probability": {
+    "home": 0.3995,
+    "away": 0.6005
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Boston Celtics ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 4.0,
+    "away": -4.0
+   },
+   "total_points": 220.3,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -21.0,
+     14.0
+    ],
+    "total": [
+     195.0,
+     246.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "3 de 4 modelos ven ganar a DET. Margen de DET: jugadores -4.3, Elo +2.5, equipo +1.4, cuatro factores +1.8.",
+     "supports_pick": false
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 6.0 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de DET",
+     "favors": "away",
+     "detail": "Sin Taurean Prince: DET pierde 1.1 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para DET.",
+     "supports_pick": false
     }
    ]
   }
