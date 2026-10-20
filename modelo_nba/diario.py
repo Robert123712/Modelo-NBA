@@ -27,6 +27,7 @@ from .simulador import simular
 ET = "America/New_York"
 ANTICIPACION_OFICIAL = dt.timedelta(minutes=60)
 DATA = Path("data")
+BAJA_RECIENTE = pd.Timedelta(days=15)
 # Sin historial y sin draft (two-way, contrato de 10 dias): casi no juegan.
 MINUTOS_SIN_NADA = 2.0
 
@@ -117,8 +118,13 @@ def predecir(
         tabla_props = props.tabla_jugador_partido(j, p)
         tasas_props = props.tasas(tabla_props, corte)
         prom_props = props.promedios(tabla_props, corte, temporada)
+        # Para "companeros fuera" solo cuenta una baja reciente: la de toda la
+        # temporada ya esta en las tasas y promedios de los que juegan.
+        ultimo_juego = tabla_props[tabla_props.fecha < corte].groupby("athlete_id").fecha.max()
+        recientes = set(ultimo_juego[ultimo_juego >= corte - BAJA_RECIENTE].index)
     except Exception:  # noqa: BLE001 -- sin props, el resto se publica igual
         tasas_props = prom_props = None
+        recientes = set()
     draft = datos.novatos(temporada)
     picks = dict(zip(draft.clave, draft.overall_pick.astype(int)))
 
@@ -140,6 +146,7 @@ def predecir(
         nombres: dict[int, str] = {}
         rot, rot_completa, rot_props, avisos, bajas, perdidos = {}, {}, {}, [], {}, {}
         ausente: dict[str, str | None] = {}
+        sano_props: dict[str, dict[int, float]] = {}
         for lado in ("home", "away"):
             tid = g[f"{lado}_id"]
             if tid not in rosters:
@@ -151,10 +158,14 @@ def predecir(
             # Para props, los minutos si juega: un prop se anula si no juega,
             # asi que el que esta en duda se proyecta con su rol completo.
             rot_props[lado] = mn.repartir({a: completa[a] for a in esperada})
+            fuera_ids = [r["athlete_id"] for r in rosters[tid]
+                         if r["prob_juega"] <= 0 and r["athlete_id"] in recientes]
+            sano_props[lado] = mn.repartir(
+                {a: completa[a] for a in completa if a in esperada or a in fuera_ids}
+            )
             avisos += av
             bajas[lado] = fuera
             # El ausente que mas minutos se lleva, para explicar los props.
-            fuera_ids = [r["athlete_id"] for r in rosters[tid] if r["prob_juega"] <= 0]
             top = max(fuera_ids, key=lambda a: completa.get(a, 0.0), default=None)
             ausente[lado] = (nombres[top].split()[-1] if top is not None and completa.get(top, 0) >= 20
                              else None)
@@ -191,7 +202,7 @@ def predecir(
             sims_props = props.simular_props(
                 tasas_props, rot_props, {"home": casa, "away": visita},
                 {"home": sim.casa, "away": sim.visita}, sim.casa - sim.visita, e.pace,
-                semilla=g["game_id"] + 1, prom=prom_props, minutos_completos=rot_completa,
+                semilla=g["game_id"] + 1, prom=prom_props, minutos_completos=sano_props,
             )
             en_duda = {r["athlete_id"] for tid in (casa, visita) for r in rosters[tid] if 0 < r["prob_juega"] < 1}
             rival_abbr = {"home": g["away_abbr"], "away": g["home_abbr"]}
