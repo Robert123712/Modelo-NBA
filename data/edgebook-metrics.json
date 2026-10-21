@@ -1,7 +1,7 @@
 {
  "schema_version": "1.0",
  "sport": "NBA",
- "generated_at": "2026-10-21T14:45:35.503264Z",
+ "generated_at": "2026-10-21T23:52:30.508360Z",
  "minimum_meaningful": 100,
  "versions": [
   {
@@ -10,7 +10,27 @@
    "from": null,
    "to": null,
    "graded": 0,
-   "pending": 11,
+   "pending": 8,
+   "significant": false,
+   "markets": {},
+   "projected_total": null,
+   "projected_margin": null,
+   "closing_line": {
+    "total": null,
+    "margin": null
+   },
+   "interval_coverage": {
+    "margin": null,
+    "total": null
+   }
+  },
+  {
+   "model_version": "nba-0.5.0",
+   "unlabeled": false,
+   "from": null,
+   "to": null,
+   "graded": 0,
+   "pending": 3,
    "significant": false,
    "markets": {},
    "projected_total": null,

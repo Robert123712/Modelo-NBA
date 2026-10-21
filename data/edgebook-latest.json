@@ -1,81 +1,10 @@
 {
  "schema_version": "1.1",
  "sport": "NBA",
- "model_version": "nba-0.4.0",
- "generated_at": "2026-10-21T23:45:00.000669Z",
+ "model_version": "nba-0.5.0",
+ "generated_at": "2026-10-21T23:52:30.508360Z",
  "date_local": "2026-10-21",
  "games": [
-  {
-   "league_game_id": "401909837",
-   "espn_game_id": "401909837",
-   "starts_at": "2026-10-21T23:30Z",
-   "home": {
-    "name": "Toronto Raptors",
-    "code": "TOR"
-   },
-   "away": {
-    "name": "Chicago Bulls",
-    "code": "CHI"
-   },
-   "projection": {
-    "home_score": 124.5,
-    "away_score": 113.9
-   },
-   "win_probability": {
-    "home": 0.7782,
-    "away": 0.2218
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Toronto Raptors ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -11.0,
-    "away": 11.0
-   },
-   "total_points": 238.4,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -7.0,
-     28.0
-    ],
-    "total": [
-     213.0,
-     264.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +10.7, Elo +8.5, equipo +8.0, cuatro factores +9.3.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de TOR vale 8.9 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.9 puntos para TOR.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de CHI",
-     "favors": "home",
-     "detail": "Sin Nic Claxton: CHI pierde 1.0 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909838",
    "espn_game_id": "401909838",
@@ -219,19 +148,19 @@
     "code": "DAL"
    },
    "projection": {
-    "home_score": 120.9,
+    "home_score": 120.8,
     "away_score": 111.8
    },
    "win_probability": {
-    "home": 0.7457,
-    "away": 0.2543
+    "home": 0.7446,
+    "away": 0.2554
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Houston Rockets ML"
    },
-   "data_warning": "Steven Adams está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -9.0,
     "away": 9.0
@@ -244,25 +173,23 @@
      27.0
     ],
     "total": [
-     207.0,
+     206.0,
      259.0
     ]
    },
-   "game_warnings": [
-    "Steven Adams está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +9.0, Elo +8.9, equipo +9.0, cuatro factores +9.4.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +8.9, Elo +8.9, equipo +9.0, cuatro factores +9.4.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 7.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 7.1 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -274,7 +201,7 @@
     {
      "label": "Bajas de DAL",
      "favors": "home",
-     "detail": "Sin Santi Aldama, Dereck Lively II, Caleb Martin: DAL pierde 1.2 puntos.",
+     "detail": "Sin Santi Aldama, Dereck Lively II, Caleb Martin: DAL pierde 1.1 puntos.",
      "supports_pick": true
     }
    ]
@@ -769,6 +696,77 @@
      "favors": "home",
      "detail": "Sin Kon Knueppel, Coby White, Grant Williams: CHA pierde 3.1 puntos.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909837",
+   "espn_game_id": "401909837",
+   "starts_at": "2026-10-21T23:30Z",
+   "home": {
+    "name": "Toronto Raptors",
+    "code": "TOR"
+   },
+   "away": {
+    "name": "Chicago Bulls",
+    "code": "CHI"
+   },
+   "projection": {
+    "home_score": 124.5,
+    "away_score": 113.9
+   },
+   "win_probability": {
+    "home": 0.7782,
+    "away": 0.2218
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Toronto Raptors ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -11.0,
+    "away": 11.0
+   },
+   "total_points": 238.4,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -7.0,
+     28.0
+    ],
+    "total": [
+     213.0,
+     264.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +10.7, Elo +8.5, equipo +8.0, cuatro factores +9.3.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de TOR vale 8.9 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.9 puntos para TOR.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de CHI",
+     "favors": "home",
+     "detail": "Sin Nic Claxton: CHI pierde 1.0 puntos.",
+     "supports_pick": true
     }
    ]
   }
