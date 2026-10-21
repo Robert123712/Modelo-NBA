@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.4.0",
- "generated_at": "2026-10-21T15:15:00.000712Z",
+ "generated_at": "2026-10-21T16:15:00.000682Z",
  "date_local": "2026-10-21",
  "games": [
   {
@@ -159,12 +159,12 @@
     "code": "MIN"
    },
    "projection": {
-    "home_score": 122.5,
-    "away_score": 120.7
+    "home_score": 122.6,
+    "away_score": 120.6
    },
    "win_probability": {
-    "home": 0.5554,
-    "away": 0.4446
+    "home": 0.5585,
+    "away": 0.4415
    },
    "pick": {
     "market": "moneyline",
@@ -173,8 +173,8 @@
    },
    "data_warning": null,
    "spread": {
-    "home": -2.0,
-    "away": 2.0
+    "home": -3.0,
+    "away": 3.0
    },
    "total_points": 243.2,
    "season": 2027,
@@ -437,12 +437,12 @@
     "code": "IND"
    },
    "projection": {
-    "home_score": 121.8,
-    "away_score": 121.9
+    "home_score": 122.1,
+    "away_score": 123.3
    },
    "win_probability": {
-    "home": 0.494,
-    "away": 0.506
+    "home": 0.4637,
+    "away": 0.5363
    },
    "pick": {
     "market": "moneyline",
@@ -451,48 +451,43 @@
    },
    "data_warning": "Kobe Brown está en duda (probable)",
    "spread": {
-    "home": 1.0,
-    "away": -1.0
+    "home": 2.0,
+    "away": -2.0
    },
-   "total_points": 243.7,
+   "total_points": 245.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -18.0,
-     18.0
+     -19.0,
+     17.0
     ],
     "total": [
-     218.0,
-     269.0
+     219.0,
+     271.0
     ]
    },
    "game_warnings": [
-    "Kobe Brown está en duda (probable)"
+    "Kobe Brown está en duda (probable)",
+    "Jalen Slawson está en duda (probable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a NO. Margen de NO: jugadores -0.2, Elo +4.1, equipo +3.6, cuatro factores +5.3.",
+     "detail": "3 de 4 modelos ven ganar a NO. Margen de NO: jugadores -1.2, Elo +4.1, equipo +3.6, cuatro factores +5.3.",
      "supports_pick": false
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de IND vale 2.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de IND vale 3.1 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.9 puntos para NO.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de IND",
-     "favors": "home",
-     "detail": "Sin T.J. McConnell, Aaron Nesmith: IND pierde 0.6 puntos.",
      "supports_pick": false
     }
    ]
@@ -657,12 +652,12 @@
     "code": "PHX"
    },
    "projection": {
-    "home_score": 119.3,
-    "away_score": 114.6
+    "home_score": 119.1,
+    "away_score": 114.8
    },
    "win_probability": {
-    "home": 0.6359,
-    "away": 0.3641
+    "home": 0.6258,
+    "away": 0.3742
    },
    "pick": {
     "market": "moneyline",
@@ -674,11 +669,11 @@
     "home": -5.0,
     "away": 5.0
    },
-   "total_points": 233.8,
+   "total_points": 233.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -13.0,
+     -14.0,
      22.0
     ],
     "total": [
@@ -688,7 +683,6 @@
    },
    "game_warnings": [
     "Deni Avdija está en duda (questionable)",
-    "Micah Potter está en duda (questionable)",
     "Luke Kennard está en duda (questionable)"
    ],
    "warnings": [],
@@ -696,25 +690,19 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +4.8, Elo +2.3, equipo +1.3, cuatro factores +3.1.",
+     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +4.4, Elo +2.3, equipo +1.3, cuatro factores +3.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de POR vale 2.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de POR vale 2.6 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para POR.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de PHX",
-     "favors": "home",
-     "detail": "Sin Mark Williams: PHX pierde 0.5 puntos.",
      "supports_pick": true
     }
    ]
