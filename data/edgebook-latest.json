@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.3.0",
- "generated_at": "2026-10-21T04:15:00.000681Z",
+ "generated_at": "2026-10-21T04:45:00.000634Z",
  "date_local": "2026-10-21",
  "games": [
   {
@@ -18,12 +18,12 @@
     "code": "ATL"
    },
    "projection": {
-    "home_score": 118.2,
-    "away_score": 115.7
+    "home_score": 119.0,
+    "away_score": 116.3
    },
    "win_probability": {
-    "home": 0.5744,
-    "away": 0.4256
+    "home": 0.5789,
+    "away": 0.4211
    },
    "pick": {
     "market": "moneyline",
@@ -35,7 +35,7 @@
     "home": -3.0,
     "away": 3.0
    },
-   "total_points": 233.8,
+   "total_points": 235.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -43,8 +43,8 @@
      20.0
     ],
     "total": [
-     208.0,
-     260.0
+     209.0,
+     262.0
     ]
    },
    "game_warnings": [
@@ -56,13 +56,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +2.5, Elo +3.2, equipo +1.2, cuatro factores +0.9.",
+     "detail": "4 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +2.7, Elo +3.2, equipo +1.2, cuatro factores +0.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de ORL vale 0.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de ORL vale 0.8 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -92,12 +92,12 @@
     "code": "MIL"
    },
    "projection": {
-    "home_score": 120.8,
-    "away_score": 122.6
+    "home_score": 121.4,
+    "away_score": 123.2
    },
    "win_probability": {
-    "home": 0.4466,
-    "away": 0.5534
+    "home": 0.4465,
+    "away": 0.5535
    },
    "pick": {
     "market": "moneyline",
@@ -109,7 +109,7 @@
     "home": 2.0,
     "away": -2.0
    },
-   "total_points": 243.4,
+   "total_points": 244.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -117,8 +117,8 @@
      16.0
     ],
     "total": [
-     218.0,
-     269.0
+     219.0,
+     271.0
     ]
    },
    "game_warnings": [
@@ -129,7 +129,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a MIL. Margen de MIL: jugadores +1.8, Elo +1.6, equipo +1.7, cuatro factores +0.9.",
+     "detail": "4 de 4 modelos ven ganar a MIL. Margen de MIL: jugadores +1.8, Elo +1.6, equipo +1.8, cuatro factores +1.0.",
      "supports_pick": true
     },
     {
@@ -159,8 +159,8 @@
     "code": "MIN"
    },
    "projection": {
-    "home_score": 122.0,
-    "away_score": 120.1
+    "home_score": 122.5,
+    "away_score": 120.7
    },
    "win_probability": {
     "home": 0.5554,
@@ -176,7 +176,7 @@
     "home": -2.0,
     "away": 2.0
    },
-   "total_points": 242.1,
+   "total_points": 243.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -184,8 +184,8 @@
      20.0
     ],
     "total": [
-     216.0,
-     268.0
+     217.0,
+     270.0
     ]
    },
    "game_warnings": [],
@@ -194,7 +194,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIA. Margen de MIA: jugadores +2.0, Elo +0.7, equipo +1.4, cuatro factores +4.0.",
+     "detail": "4 de 4 modelos ven ganar a MIA. Margen de MIA: jugadores +2.1, Elo +0.7, equipo +1.4, cuatro factores +4.0.",
      "supports_pick": true
     },
     {
@@ -218,12 +218,12 @@
     "code": "CHA"
    },
    "projection": {
-    "home_score": 110.3,
-    "away_score": 119.6
+    "home_score": 110.9,
+    "away_score": 120.3
    },
    "win_probability": {
-    "home": 0.2492,
-    "away": 0.7508
+    "home": 0.2478,
+    "away": 0.7522
    },
    "pick": {
     "market": "moneyline",
@@ -235,7 +235,7 @@
     "home": 9.0,
     "away": -9.0
    },
-   "total_points": 230.0,
+   "total_points": 231.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -243,8 +243,8 @@
      9.0
     ],
     "total": [
-     204.0,
-     256.0
+     206.0,
+     257.0
     ]
    },
    "game_warnings": [],
@@ -253,13 +253,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +9.2, Elo +8.4, equipo +9.7, cuatro factores +10.5.",
+     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +9.3, Elo +8.4, equipo +9.8, cuatro factores +10.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de CHA vale 11.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de CHA vale 11.1 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -271,7 +271,7 @@
     {
      "label": "Bajas de CHA",
      "favors": "home",
-     "detail": "Sin Kon Knueppel, Coby White, Grant Williams: CHA pierde 2.8 puntos.",
+     "detail": "Sin Kon Knueppel, Coby White, Grant Williams: CHA pierde 2.9 puntos.",
      "supports_pick": false
     }
    ]
@@ -289,12 +289,12 @@
     "code": "CHI"
    },
    "projection": {
-    "home_score": 123.3,
-    "away_score": 114.0
+    "home_score": 123.9,
+    "away_score": 114.5
    },
    "win_probability": {
-    "home": 0.7506,
-    "away": 0.2494
+    "home": 0.7521,
+    "away": 0.2479
    },
    "pick": {
     "market": "moneyline",
@@ -306,7 +306,7 @@
     "home": -9.0,
     "away": 9.0
    },
-   "total_points": 237.3,
+   "total_points": 238.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -314,8 +314,8 @@
      27.0
     ],
     "total": [
-     211.0,
-     263.0
+     213.0,
+     264.0
     ]
    },
    "game_warnings": [
@@ -358,12 +358,12 @@
     "code": "UTAH"
    },
    "projection": {
-    "home_score": 124.7,
-    "away_score": 124.3
+    "home_score": 125.3,
+    "away_score": 125.0
    },
    "win_probability": {
-    "home": 0.5127,
-    "away": 0.4873
+    "home": 0.5123,
+    "away": 0.4877
    },
    "pick": {
     "market": "moneyline",
@@ -375,7 +375,7 @@
     "home": -1.0,
     "away": 1.0
    },
-   "total_points": 249.0,
+   "total_points": 250.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -383,8 +383,8 @@
      18.0
     ],
     "total": [
-     223.0,
-     275.0
+     224.0,
+     277.0
     ]
    },
    "game_warnings": [
@@ -395,7 +395,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +0.5, Elo +1.3, equipo +2.7, cuatro factores -1.0.",
+     "detail": "3 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +0.5, Elo +1.3, equipo +2.6, cuatro factores -1.0.",
      "supports_pick": true
     },
     {
@@ -431,12 +431,12 @@
     "code": "IND"
    },
    "projection": {
-    "home_score": 121.4,
-    "away_score": 122.3
+    "home_score": 122.0,
+    "away_score": 122.9
    },
    "win_probability": {
-    "home": 0.4723,
-    "away": 0.5277
+    "home": 0.4709,
+    "away": 0.5291
    },
    "pick": {
     "market": "moneyline",
@@ -448,7 +448,7 @@
     "home": 2.0,
     "away": -2.0
    },
-   "total_points": 243.7,
+   "total_points": 244.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -456,8 +456,8 @@
      17.0
     ],
     "total": [
-     218.0,
-     269.0
+     219.0,
+     271.0
     ]
    },
    "game_warnings": [
@@ -498,12 +498,12 @@
     "code": "DAL"
    },
    "projection": {
-    "home_score": 118.7,
-    "away_score": 111.4
+    "home_score": 119.3,
+    "away_score": 112.0
    },
    "win_probability": {
-    "home": 0.7021,
-    "away": 0.2979
+    "home": 0.7039,
+    "away": 0.2961
    },
    "pick": {
     "market": "moneyline",
@@ -512,10 +512,10 @@
    },
    "data_warning": "Steven Adams está en duda (questionable)",
    "spread": {
-    "home": -7.0,
-    "away": 7.0
+    "home": -8.0,
+    "away": 8.0
    },
-   "total_points": 230.2,
+   "total_points": 231.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -523,8 +523,8 @@
      25.0
     ],
     "total": [
-     204.0,
-     257.0
+     205.0,
+     258.0
     ]
    },
    "game_warnings": [
@@ -535,7 +535,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +7.2, Elo +8.9, equipo +9.0, cuatro factores +9.4.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +7.3, Elo +8.9, equipo +9.0, cuatro factores +9.4.",
      "supports_pick": true
     },
     {
@@ -547,7 +547,7 @@
     {
      "label": "Localía",
      "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para HOU.",
+     "detail": "Jugar en casa vale 1.9 puntos para HOU.",
      "supports_pick": true
     },
     {
@@ -571,12 +571,12 @@
     "code": "GS"
    },
    "projection": {
-    "home_score": 123.5,
-    "away_score": 117.8
+    "home_score": 124.1,
+    "away_score": 118.4
    },
    "win_probability": {
-    "home": 0.6563,
-    "away": 0.3437
+    "home": 0.6567,
+    "away": 0.3433
    },
    "pick": {
     "market": "moneyline",
@@ -588,16 +588,16 @@
     "home": -6.0,
     "away": 6.0
    },
-   "total_points": 241.4,
+   "total_points": 242.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -12.0,
-     23.0
+     24.0
     ],
     "total": [
-     216.0,
-     267.0
+     217.0,
+     269.0
     ]
    },
    "game_warnings": [
@@ -608,13 +608,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +5.7, Elo +6.9, equipo +4.2, cuatro factores +4.8.",
+     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +5.7, Elo +6.9, equipo +4.2, cuatro factores +4.7.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de LAL vale 3.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de LAL vale 3.9 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -626,7 +626,7 @@
     {
      "label": "Bajas de GS",
      "favors": "home",
-     "detail": "Sin Jimmy Butler III, Moses Moody, Brandin Podziemski: GS pierde 5.0 puntos.",
+     "detail": "Sin Jimmy Butler III, Moses Moody, Brandin Podziemski: GS pierde 5.1 puntos.",
      "supports_pick": true
     }
    ]
@@ -644,12 +644,12 @@
     "code": "PHX"
    },
    "projection": {
-    "home_score": 118.7,
-    "away_score": 114.0
+    "home_score": 119.3,
+    "away_score": 114.6
    },
    "win_probability": {
-    "home": 0.6354,
-    "away": 0.3646
+    "home": 0.6359,
+    "away": 0.3641
    },
    "pick": {
     "market": "moneyline",
@@ -661,7 +661,7 @@
     "home": -5.0,
     "away": 5.0
    },
-   "total_points": 232.7,
+   "total_points": 233.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -669,8 +669,8 @@
      22.0
     ],
     "total": [
-     207.0,
-     259.0
+     208.0,
+     260.0
     ]
    },
    "game_warnings": [
@@ -683,7 +683,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +4.8, Elo +2.3, equipo +1.4, cuatro factores +3.1.",
+     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +4.8, Elo +2.3, equipo +1.3, cuatro factores +3.1.",
      "supports_pick": true
     },
     {
@@ -719,12 +719,12 @@
     "code": "SAC"
    },
    "projection": {
-    "home_score": 123.3,
-    "away_score": 113.8
+    "home_score": 124.0,
+    "away_score": 114.4
    },
    "win_probability": {
-    "home": 0.7551,
-    "away": 0.2449
+    "home": 0.7567,
+    "away": 0.2433
    },
    "pick": {
     "market": "moneyline",
@@ -736,16 +736,16 @@
     "home": -10.0,
     "away": 10.0
    },
-   "total_points": 237.1,
+   "total_points": 238.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -9.0,
+     -8.0,
      27.0
     ],
     "total": [
-     212.0,
-     263.0
+     213.0,
+     264.0
     ]
    },
    "game_warnings": [
@@ -762,7 +762,7 @@
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de LAC vale 7.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de LAC vale 7.7 puntos más por partido.",
      "supports_pick": true
     },
     {
