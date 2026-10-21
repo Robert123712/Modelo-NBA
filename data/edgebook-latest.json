@@ -2,49 +2,190 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.3.0",
- "generated_at": "2026-10-21T02:15:00.000672Z",
- "date_local": "2026-10-20",
+ "generated_at": "2026-10-21T04:15:00.000681Z",
+ "date_local": "2026-10-21",
  "games": [
   {
-   "league_game_id": "401909088",
-   "espn_game_id": "401909088",
-   "starts_at": "2026-10-20T19:00Z",
+   "league_game_id": "401909834",
+   "espn_game_id": "401909834",
+   "starts_at": "2026-10-21T23:00Z",
    "home": {
-    "name": "Detroit Pistons",
-    "code": "DET"
+    "name": "Orlando Magic",
+    "code": "ORL"
    },
    "away": {
-    "name": "Boston Celtics",
-    "code": "BOS"
+    "name": "Atlanta Hawks",
+    "code": "ATL"
    },
    "projection": {
-    "home_score": 108.4,
-    "away_score": 112.0
+    "home_score": 118.2,
+    "away_score": 115.7
    },
    "win_probability": {
-    "home": 0.3995,
-    "away": 0.6005
+    "home": 0.5744,
+    "away": 0.4256
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Orlando Magic ML"
+   },
+   "data_warning": "Keshon Gilbert está en duda (questionable)",
+   "spread": {
+    "home": -3.0,
+    "away": 3.0
+   },
+   "total_points": 233.8,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -15.0,
+     20.0
+    ],
+    "total": [
+     208.0,
+     260.0
+    ]
+   },
+   "game_warnings": [
+    "Keshon Gilbert está en duda (questionable)",
+    "Jalen Wilson está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +2.5, Elo +3.2, equipo +1.2, cuatro factores +0.9.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de ORL vale 0.6 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.9 puntos para ORL.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de ORL",
+     "favors": "away",
+     "detail": "Sin Anthony Black: ORL pierde 1.9 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909835",
+   "espn_game_id": "401909835",
+   "starts_at": "2026-10-21T23:00Z",
+   "home": {
+    "name": "Washington Wizards",
+    "code": "WSH"
+   },
+   "away": {
+    "name": "Milwaukee Bucks",
+    "code": "MIL"
+   },
+   "projection": {
+    "home_score": 120.8,
+    "away_score": 122.6
+   },
+   "win_probability": {
+    "home": 0.4466,
+    "away": 0.5534
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
-    "label": "Boston Celtics ML"
+    "label": "Milwaukee Bucks ML"
    },
-   "data_warning": null,
+   "data_warning": "Nate Ament está en duda (probable)",
    "spread": {
-    "home": 4.0,
-    "away": -4.0
+    "home": 2.0,
+    "away": -2.0
    },
-   "total_points": 220.3,
+   "total_points": 243.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -21.0,
-     14.0
+     -20.0,
+     16.0
     ],
     "total": [
-     195.0,
-     246.0
+     218.0,
+     269.0
+    ]
+   },
+   "game_warnings": [
+    "Nate Ament está en duda (probable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a MIL. Margen de MIL: jugadores +1.8, Elo +1.6, equipo +1.7, cuatro factores +0.9.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de MIL vale 3.6 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.9 puntos para WSH.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909091",
+   "espn_game_id": "401909091",
+   "starts_at": "2026-10-21T23:30Z",
+   "home": {
+    "name": "Miami Heat",
+    "code": "MIA"
+   },
+   "away": {
+    "name": "Minnesota Timberwolves",
+    "code": "MIN"
+   },
+   "projection": {
+    "home_score": 122.0,
+    "away_score": 120.1
+   },
+   "win_probability": {
+    "home": 0.5554,
+    "away": 0.4446
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Miami Heat ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -2.0,
+    "away": 2.0
+   },
+   "total_points": 242.1,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -16.0,
+     20.0
+    ],
+    "total": [
+     216.0,
+     268.0
     ]
    },
    "game_warnings": [],
@@ -53,44 +194,103 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a DET. Margen de DET: jugadores -4.3, Elo +2.5, equipo +1.4, cuatro factores +1.8.",
-     "supports_pick": false
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 6.0 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de DET",
-     "favors": "away",
-     "detail": "Sin Taurean Prince: DET pierde 1.1 puntos.",
+     "detail": "4 de 4 modelos ven ganar a MIA. Margen de MIA: jugadores +2.0, Elo +0.7, equipo +1.4, cuatro factores +4.0.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para DET.",
+     "detail": "Jugar en casa vale 1.9 puntos para MIA.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909836",
+   "espn_game_id": "401909836",
+   "starts_at": "2026-10-21T23:30Z",
+   "home": {
+    "name": "Brooklyn Nets",
+    "code": "BKN"
+   },
+   "away": {
+    "name": "Charlotte Hornets",
+    "code": "CHA"
+   },
+   "projection": {
+    "home_score": 110.3,
+    "away_score": 119.6
+   },
+   "win_probability": {
+    "home": 0.2492,
+    "away": 0.7508
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Charlotte Hornets ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 9.0,
+    "away": -9.0
+   },
+   "total_points": 230.0,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -27.0,
+     9.0
+    ],
+    "total": [
+     204.0,
+     256.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +9.2, Elo +8.4, equipo +9.7, cuatro factores +10.5.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de CHA vale 11.0 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para BKN.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de CHA",
+     "favors": "home",
+     "detail": "Sin Kon Knueppel, Coby White, Grant Williams: CHA pierde 2.8 puntos.",
      "supports_pick": false
     }
    ]
   },
   {
-   "league_game_id": "401909089",
-   "espn_game_id": "401909089",
-   "starts_at": "2026-10-20T23:00Z",
+   "league_game_id": "401909837",
+   "espn_game_id": "401909837",
+   "starts_at": "2026-10-21T23:30Z",
    "home": {
-    "name": "New York Knicks",
-    "code": "NY"
+    "name": "Toronto Raptors",
+    "code": "TOR"
    },
    "away": {
-    "name": "Philadelphia 76ers",
-    "code": "PHI"
+    "name": "Chicago Bulls",
+    "code": "CHI"
    },
    "projection": {
-    "home_score": 117.4,
-    "away_score": 107.9
+    "home_score": 123.3,
+    "away_score": 114.0
    },
    "win_probability": {
     "home": 0.7506,
@@ -99,119 +299,482 @@
    "pick": {
     "market": "moneyline",
     "side": "home",
-    "label": "New York Knicks ML"
+    "label": "Toronto Raptors ML"
    },
-   "data_warning": "Adem Bona está en duda (questionable)",
+   "data_warning": "Zach Collins está en duda (probable)",
    "spread": {
     "home": -9.0,
     "away": 9.0
    },
-   "total_points": 225.3,
+   "total_points": 237.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -8.0,
+     -9.0,
      27.0
     ],
     "total": [
-     200.0,
-     251.0
+     211.0,
+     263.0
     ]
    },
    "game_warnings": [
-    "Adem Bona está en duda (questionable)",
-    "Anfernee Simons está en duda (questionable)",
-    "Dean Wade está en duda (questionable)"
+    "Zach Collins está en duda (probable)",
+    "Leonard Miller está en duda (probable)",
+    "Isaac Okoro está en duda (probable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +9.3, Elo +9.7, equipo +10.4, cuatro factores +12.9.",
+     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +9.5, Elo +8.5, equipo +8.0, cuatro factores +9.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 7.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de TOR vale 7.6 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para NY.",
+     "detail": "Jugar en casa vale 1.9 puntos para TOR.",
      "supports_pick": true
     }
    ]
   },
   {
-   "league_game_id": "401909090",
-   "espn_game_id": "401909090",
-   "starts_at": "2026-10-21T01:30Z",
+   "league_game_id": "401909838",
+   "espn_game_id": "401909838",
+   "starts_at": "2026-10-22T00:00Z",
    "home": {
-    "name": "San Antonio Spurs",
-    "code": "SA"
+    "name": "Memphis Grizzlies",
+    "code": "MEM"
    },
    "away": {
-    "name": "Oklahoma City Thunder",
-    "code": "OKC"
+    "name": "Utah Jazz",
+    "code": "UTAH"
    },
    "projection": {
-    "home_score": 111.9,
-    "away_score": 112.3
+    "home_score": 124.7,
+    "away_score": 124.3
    },
    "win_probability": {
-    "home": 0.4858,
-    "away": 0.5142
+    "home": 0.5127,
+    "away": 0.4873
    },
    "pick": {
     "market": "moneyline",
-    "side": "away",
-    "label": "Oklahoma City Thunder ML"
+    "side": "home",
+    "label": "Memphis Grizzlies ML"
    },
-   "data_warning": null,
+   "data_warning": "Isaiah Stewart está en duda (doubtful)",
    "spread": {
-    "home": 1.0,
-    "away": -1.0
+    "home": -1.0,
+    "away": 1.0
    },
-   "total_points": 224.2,
+   "total_points": 249.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -18.0,
-     17.0
+     -17.0,
+     18.0
     ],
     "total": [
-     198.0,
-     250.0
+     223.0,
+     275.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Isaiah Stewart está en duda (doubtful)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a SA. Margen de SA: jugadores -0.9, Elo +3.1, equipo +1.5, cuatro factores +0.5.",
-     "supports_pick": false
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de OKC vale 2.7 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de SA",
-     "favors": "away",
-     "detail": "Sin Tobias Harris: SA pierde 2.2 puntos.",
+     "detail": "3 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +0.5, Elo +1.3, equipo +2.7, cuatro factores -1.0.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para SA.",
+     "detail": "Jugar en casa vale 1.9 puntos para MEM.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de UTAH",
+     "favors": "home",
+     "detail": "Sin Blake Hinson, Jusuf Nurkic: UTAH pierde 0.7 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de UTAH vale 1.4 puntos más por partido.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909839",
+   "espn_game_id": "401909839",
+   "starts_at": "2026-10-22T00:00Z",
+   "home": {
+    "name": "New Orleans Pelicans",
+    "code": "NO"
+   },
+   "away": {
+    "name": "Indiana Pacers",
+    "code": "IND"
+   },
+   "projection": {
+    "home_score": 121.4,
+    "away_score": 122.3
+   },
+   "win_probability": {
+    "home": 0.4723,
+    "away": 0.5277
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Indiana Pacers ML"
+   },
+   "data_warning": "Kobe Brown está en duda (probable)",
+   "spread": {
+    "home": 2.0,
+    "away": -2.0
+   },
+   "total_points": 243.7,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -19.0,
+     17.0
+    ],
+    "total": [
+     218.0,
+     269.0
+    ]
+   },
+   "game_warnings": [
+    "Kobe Brown está en duda (probable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "3 de 4 modelos ven ganar a NO. Margen de NO: jugadores -0.9, Elo +4.1, equipo +3.6, cuatro factores +5.3.",
+     "supports_pick": false
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de IND vale 2.8 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.9 puntos para NO.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909840",
+   "espn_game_id": "401909840",
+   "starts_at": "2026-10-22T00:30Z",
+   "home": {
+    "name": "Houston Rockets",
+    "code": "HOU"
+   },
+   "away": {
+    "name": "Dallas Mavericks",
+    "code": "DAL"
+   },
+   "projection": {
+    "home_score": 118.7,
+    "away_score": 111.4
+   },
+   "win_probability": {
+    "home": 0.7021,
+    "away": 0.2979
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Houston Rockets ML"
+   },
+   "data_warning": "Steven Adams está en duda (questionable)",
+   "spread": {
+    "home": -7.0,
+    "away": 7.0
+   },
+   "total_points": 230.2,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -11.0,
+     25.0
+    ],
+    "total": [
+     204.0,
+     257.0
+    ]
+   },
+   "game_warnings": [
+    "Steven Adams está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +7.2, Elo +8.9, equipo +9.0, cuatro factores +9.4.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 5.4 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para HOU.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de DAL",
+     "favors": "home",
+     "detail": "Sin Santi Aldama, Dereck Lively II, Caleb Martin: DAL pierde 1.5 puntos.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909092",
+   "espn_game_id": "401909092",
+   "starts_at": "2026-10-22T02:00Z",
+   "home": {
+    "name": "Los Angeles Lakers",
+    "code": "LAL"
+   },
+   "away": {
+    "name": "Golden State Warriors",
+    "code": "GS"
+   },
+   "projection": {
+    "home_score": 123.5,
+    "away_score": 117.8
+   },
+   "win_probability": {
+    "home": 0.6563,
+    "away": 0.3437
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Los Angeles Lakers ML"
+   },
+   "data_warning": "Collin Sexton está en duda (questionable)",
+   "spread": {
+    "home": -6.0,
+    "away": 6.0
+   },
+   "total_points": 241.4,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -12.0,
+     23.0
+    ],
+    "total": [
+     216.0,
+     267.0
+    ]
+   },
+   "game_warnings": [
+    "Collin Sexton está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +5.7, Elo +6.9, equipo +4.2, cuatro factores +4.8.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de LAL vale 3.8 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para LAL.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de GS",
+     "favors": "home",
+     "detail": "Sin Jimmy Butler III, Moses Moody, Brandin Podziemski: GS pierde 5.0 puntos.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909841",
+   "espn_game_id": "401909841",
+   "starts_at": "2026-10-22T02:00Z",
+   "home": {
+    "name": "Portland Trail Blazers",
+    "code": "POR"
+   },
+   "away": {
+    "name": "Phoenix Suns",
+    "code": "PHX"
+   },
+   "projection": {
+    "home_score": 118.7,
+    "away_score": 114.0
+   },
+   "win_probability": {
+    "home": 0.6354,
+    "away": 0.3646
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Portland Trail Blazers ML"
+   },
+   "data_warning": "Deni Avdija está en duda (questionable)",
+   "spread": {
+    "home": -5.0,
+    "away": 5.0
+   },
+   "total_points": 232.7,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -13.0,
+     22.0
+    ],
+    "total": [
+     207.0,
+     259.0
+    ]
+   },
+   "game_warnings": [
+    "Deni Avdija está en duda (questionable)",
+    "Micah Potter está en duda (questionable)",
+    "Luke Kennard está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +4.8, Elo +2.3, equipo +1.4, cuatro factores +3.1.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de POR vale 2.9 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para POR.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de PHX",
+     "favors": "home",
+     "detail": "Sin Mark Williams: PHX pierde 0.5 puntos.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909842",
+   "espn_game_id": "401909842",
+   "starts_at": "2026-10-22T02:30Z",
+   "home": {
+    "name": "LA Clippers",
+    "code": "LAC"
+   },
+   "away": {
+    "name": "Sacramento Kings",
+    "code": "SAC"
+   },
+   "projection": {
+    "home_score": 123.3,
+    "away_score": 113.8
+   },
+   "win_probability": {
+    "home": 0.7551,
+    "away": 0.2449
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "LA Clippers ML"
+   },
+   "data_warning": "Malik Monk está en duda (questionable)",
+   "spread": {
+    "home": -10.0,
+    "away": 10.0
+   },
+   "total_points": 237.1,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -9.0,
+     27.0
+    ],
+    "total": [
+     212.0,
+     263.0
+    ]
+   },
+   "game_warnings": [
+    "Malik Monk está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a LAC. Margen de LAC: jugadores +9.5, Elo +7.5, equipo +9.7, cuatro factores +8.6.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de LAC vale 7.6 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para LAC.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de LAC",
+     "favors": "away",
+     "detail": "Sin Bradley Beal, Brandon Ingram, Jordan Miller: LAC pierde 1.0 puntos.",
      "supports_pick": false
     }
    ]
