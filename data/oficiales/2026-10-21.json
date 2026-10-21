@@ -1,10 +1,10 @@
 {
  "401909834": {
-  "generated_at": "2026-10-21T04:45:00.000634Z",
-  "model_version": "nba-0.3.0",
+  "generated_at": "2026-10-21T14:45:35.503264Z",
+  "model_version": "nba-0.4.0",
   "game_id": 401909834,
   "starts_at": "2026-10-21T23:00Z",
-  "minutos_antes": 1095.0,
+  "minutos_antes": 494.4,
   "proyeccion": {
    "league_game_id": "401909834",
    "espn_game_id": "401909834",
@@ -589,6 +589,21 @@
       40.0
      ]
     },
+    "ctx": {
+     "min_sano": 33.4,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.98,
+      "assists": 0.987
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 23.2,
      "rebotes": 8.23,
@@ -634,6 +649,21 @@
       12.0,
       34.0
      ]
+    },
+    "ctx": {
+     "min_sano": 30.7,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.98,
+      "assists": 0.966
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 21.23,
@@ -681,6 +711,21 @@
       29.0
      ]
     },
+    "ctx": {
+     "min_sano": 29.0,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.98,
+      "assists": 0.966
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 12.93,
      "rebotes": 4.03,
@@ -726,6 +771,21 @@
       6.0,
       22.0
      ]
+    },
+    "ctx": {
+     "min_sano": 27.4,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.98,
+      "assists": 1.065
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "C",
+     "duda": false
     },
     "prom": {
      "puntos": 11.9,
@@ -773,6 +833,21 @@
       31.0
      ]
     },
+    "ctx": {
+     "min_sano": 24.5,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.98,
+      "assists": 0.987
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 19.87,
      "rebotes": 5.17,
@@ -818,6 +893,21 @@
       5.0,
       20.0
      ]
+    },
+    "ctx": {
+     "min_sano": 23.3,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.98,
+      "assists": 0.987
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 11.6,
@@ -865,6 +955,21 @@
       25.0
      ]
     },
+    "ctx": {
+     "min_sano": 20.4,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.98,
+      "assists": 1.065
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "C",
+     "duda": false
+    },
     "prom": {
      "puntos": 13.5,
      "rebotes": 7.83,
@@ -910,6 +1015,21 @@
       2.0,
       16.0
      ]
+    },
+    "ctx": {
+     "min_sano": 15.8,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.98,
+      "assists": 0.987
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 6.37,
@@ -957,6 +1077,21 @@
       35.0
      ]
     },
+    "ctx": {
+     "min_sano": 31.5,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.984,
+      "assists": 0.934
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 21.63,
      "rebotes": 3.33,
@@ -1002,6 +1137,21 @@
       14.0,
       38.0
      ]
+    },
+    "ctx": {
+     "min_sano": 31.2,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.984,
+      "assists": 0.892
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 21.6,
@@ -1049,6 +1199,21 @@
       26.0
      ]
     },
+    "ctx": {
+     "min_sano": 29.5,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.984,
+      "assists": 0.934
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 11.97,
      "rebotes": 7.13,
@@ -1094,6 +1259,21 @@
       7.0,
       25.0
      ]
+    },
+    "ctx": {
+     "min_sano": 27.3,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.984,
+      "assists": 0.892
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 13.77,
@@ -1141,6 +1321,21 @@
       33.0
      ]
     },
+    "ctx": {
+     "min_sano": 26.6,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.984,
+      "assists": 0.934
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 18.93,
      "rebotes": 3.0,
@@ -1186,6 +1381,21 @@
       3.0,
       16.0
      ]
+    },
+    "ctx": {
+     "min_sano": 20.0,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.984,
+      "assists": 0.934
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 7.9,
@@ -1233,6 +1443,21 @@
       19.0
      ]
     },
+    "ctx": {
+     "min_sano": 17.7,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.984,
+      "assists": 0.966
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "C",
+     "duda": false
+    },
     "prom": {
      "puntos": 10.0,
      "rebotes": 5.0,
@@ -1279,6 +1504,21 @@
       16.0
      ]
     },
+    "ctx": {
+     "min_sano": 15.4,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.984,
+      "assists": 0.934
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": true
+    },
     "prom": {
      "puntos": 4.25,
      "rebotes": 1.25,
@@ -1292,11 +1532,11 @@
   "tardia": false
  },
  "401909835": {
-  "generated_at": "2026-10-21T04:45:00.000634Z",
-  "model_version": "nba-0.3.0",
+  "generated_at": "2026-10-21T14:45:35.503264Z",
+  "model_version": "nba-0.4.0",
   "game_id": 401909835,
   "starts_at": "2026-10-21T23:00Z",
-  "minutos_antes": 1095.0,
+  "minutos_antes": 494.4,
   "proyeccion": {
    "league_game_id": "401909835",
    "espn_game_id": "401909835",
@@ -1874,6 +2114,21 @@
       37.0
      ]
     },
+    "ctx": {
+     "min_sano": 28.1,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.022,
+      "assists": 1.105
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 20.93,
      "rebotes": 10.47,
@@ -1919,6 +2174,21 @@
       9.0,
       28.0
      ]
+    },
+    "ctx": {
+     "min_sano": 27.9,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.022,
+      "assists": 1.097
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 15.17,
@@ -1966,6 +2236,21 @@
       25.0
      ]
     },
+    "ctx": {
+     "min_sano": 24.5,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.022,
+      "assists": 1.097
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 11.6,
      "rebotes": 3.07,
@@ -2011,6 +2296,21 @@
       4.0,
       20.0
      ]
+    },
+    "ctx": {
+     "min_sano": 24.3,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.022,
+      "assists": 1.105
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 9.3,
@@ -2058,6 +2358,21 @@
       40.0
      ]
     },
+    "ctx": {
+     "min_sano": 22.3,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.022,
+      "assists": 1.097
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 21.93,
      "rebotes": 2.37,
@@ -2103,6 +2418,21 @@
       5.0,
       22.0
      ]
+    },
+    "ctx": {
+     "min_sano": 21.8,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.022,
+      "assists": 1.003
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "C",
+     "duda": false
     },
     "prom": {
      "puntos": 10.8,
@@ -2150,6 +2480,21 @@
       23.0
      ]
     },
+    "ctx": {
+     "min_sano": 20.9,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.022,
+      "assists": 1.097
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 13.3,
      "rebotes": 4.03,
@@ -2195,6 +2540,21 @@
       6.0,
       24.0
      ]
+    },
+    "ctx": {
+     "min_sano": 19.3,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.022,
+      "assists": 1.105
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 14.57,
@@ -2242,6 +2602,21 @@
       35.0
      ]
     },
+    "ctx": {
+     "min_sano": 26.7,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.029,
+      "assists": 1.086
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 19.03,
      "rebotes": 4.7,
@@ -2287,6 +2662,21 @@
       12.0,
       36.0
      ]
+    },
+    "ctx": {
+     "min_sano": 26.6,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.029,
+      "assists": 1.086
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 20.03,
@@ -2334,6 +2724,21 @@
       22.0
      ]
     },
+    "ctx": {
+     "min_sano": 25.9,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.029,
+      "assists": 1.086
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 10.13,
      "rebotes": 2.9,
@@ -2379,6 +2784,21 @@
       7.0,
       26.0
      ]
+    },
+    "ctx": {
+     "min_sano": 25.4,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.029,
+      "assists": 1.097
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 11.03,
@@ -2426,6 +2846,21 @@
       30.0
      ]
     },
+    "ctx": {
+     "min_sano": 24.0,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.029,
+      "assists": 1.097
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 15.2,
      "rebotes": 4.5,
@@ -2471,6 +2906,21 @@
       4.0,
       18.0
      ]
+    },
+    "ctx": {
+     "min_sano": 22.3,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.029,
+      "assists": 1.095
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "C",
+     "duda": false
     },
     "prom": {
      "puntos": 7.2,
@@ -2518,6 +2968,21 @@
       27.0
      ]
     },
+    "ctx": {
+     "min_sano": 20.6,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.029,
+      "assists": 1.086
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 14.27,
      "rebotes": 2.55,
@@ -2564,6 +3029,21 @@
       21.0
      ]
     },
+    "ctx": {
+     "min_sano": 18.8,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.029,
+      "assists": 1.095
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "C",
+     "duda": false
+    },
     "prom": {
      "puntos": 11.47,
      "rebotes": 5.3,
@@ -2577,11 +3057,11 @@
   "tardia": false
  },
  "401909091": {
-  "generated_at": "2026-10-21T04:45:00.000634Z",
-  "model_version": "nba-0.3.0",
+  "generated_at": "2026-10-21T14:45:35.503264Z",
+  "model_version": "nba-0.4.0",
   "game_id": 401909091,
   "starts_at": "2026-10-21T23:30Z",
-  "minutos_antes": 1125.0,
+  "minutos_antes": 524.4,
   "proyeccion": {
    "league_game_id": "401909091",
    "espn_game_id": "401909091",
@@ -3151,6 +3631,21 @@
       34.0
      ]
     },
+    "ctx": {
+     "min_sano": 30.4,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.024,
+      "assists": 0.958
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "C",
+     "duda": false
+    },
     "prom": {
      "puntos": 22.57,
      "rebotes": 10.0,
@@ -3196,6 +3691,21 @@
       8.0,
       25.0
      ]
+    },
+    "ctx": {
+     "min_sano": 29.7,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.024,
+      "assists": 0.972
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 10.3,
@@ -3243,6 +3753,21 @@
       25.0
      ]
     },
+    "ctx": {
+     "min_sano": 27.8,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.024,
+      "assists": 0.972
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 13.5,
      "rebotes": 3.9,
@@ -3288,6 +3813,21 @@
       8.0,
       26.0
      ]
+    },
+    "ctx": {
+     "min_sano": 27.0,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.024,
+      "assists": 0.93
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 15.17,
@@ -3335,6 +3875,21 @@
       43.0
      ]
     },
+    "ctx": {
+     "min_sano": 26.6,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.024,
+      "assists": 0.93
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 26.3,
      "rebotes": 9.07,
@@ -3380,6 +3935,21 @@
       8.0,
       27.0
      ]
+    },
+    "ctx": {
+     "min_sano": 23.3,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.024,
+      "assists": 0.93
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 14.5,
@@ -3427,6 +3997,21 @@
       22.0
      ]
     },
+    "ctx": {
+     "min_sano": 22.7,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.024,
+      "assists": 0.972
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 13.03,
      "rebotes": 2.57,
@@ -3472,6 +4057,21 @@
       5.0,
       22.0
      ]
+    },
+    "ctx": {
+     "min_sano": 18.7,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.024,
+      "assists": 0.972
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 11.8,
@@ -3519,6 +4119,21 @@
       24.0
      ]
     },
+    "ctx": {
+     "min_sano": 30.2,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.998,
+      "assists": 0.978
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 12.17,
      "rebotes": 3.83,
@@ -3564,6 +4179,21 @@
       15.0,
       42.0
      ]
+    },
+    "ctx": {
+     "min_sano": 29.0,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.998,
+      "assists": 1.018
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 28.4,
@@ -3611,6 +4241,21 @@
       25.0
      ]
     },
+    "ctx": {
+     "min_sano": 27.0,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.998,
+      "assists": 0.978
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 14.53,
      "rebotes": 3.8,
@@ -3656,6 +4301,21 @@
       5.0,
       20.0
      ]
+    },
+    "ctx": {
+     "min_sano": 26.8,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.998,
+      "assists": 0.904
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "C",
+     "duda": false
     },
     "prom": {
      "puntos": 11.1,
@@ -3703,6 +4363,21 @@
       29.0
      ]
     },
+    "ctx": {
+     "min_sano": 26.8,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.998,
+      "assists": 1.018
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 15.43,
      "rebotes": 4.43,
@@ -3748,6 +4423,21 @@
       17.0,
       44.0
      ]
+    },
+    "ctx": {
+     "min_sano": 26.5,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.998,
+      "assists": 1.018
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 21.83,
@@ -3795,6 +4485,21 @@
       16.0
      ]
     },
+    "ctx": {
+     "min_sano": 19.6,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.998,
+      "assists": 0.978
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 6.43,
      "rebotes": 4.47,
@@ -3841,6 +4546,21 @@
       24.0
      ]
     },
+    "ctx": {
+     "min_sano": 18.9,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.998,
+      "assists": 1.018
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 11.0,
      "rebotes": 2.07,
@@ -3854,11 +4574,11 @@
   "tardia": false
  },
  "401909836": {
-  "generated_at": "2026-10-21T04:45:00.000634Z",
-  "model_version": "nba-0.3.0",
+  "generated_at": "2026-10-21T14:45:35.503264Z",
+  "model_version": "nba-0.4.0",
   "game_id": 401909836,
   "starts_at": "2026-10-21T23:30Z",
-  "minutos_antes": 1125.0,
+  "minutos_antes": 524.4,
   "proyeccion": {
    "league_game_id": "401909836",
    "espn_game_id": "401909836",
@@ -4440,6 +5160,21 @@
       35.0
      ]
     },
+    "ctx": {
+     "min_sano": 29.4,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.966,
+      "assists": 0.98
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 19.3,
      "rebotes": 6.5,
@@ -4485,6 +5220,21 @@
       11.0,
       34.0
      ]
+    },
+    "ctx": {
+     "min_sano": 28.2,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.966,
+      "assists": 0.98
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 23.13,
@@ -4532,6 +5282,21 @@
       22.0
      ]
     },
+    "ctx": {
+     "min_sano": 23.4,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.966,
+      "assists": 0.994
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 8.6,
      "rebotes": 2.4,
@@ -4577,6 +5342,21 @@
       5.0,
       22.0
      ]
+    },
+    "ctx": {
+     "min_sano": 23.3,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.966,
+      "assists": 0.994
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 11.93,
@@ -4624,6 +5404,21 @@
       16.0
      ]
     },
+    "ctx": {
+     "min_sano": 22.9,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.966,
+      "assists": 0.994
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 6.63,
      "rebotes": 1.93,
@@ -4669,6 +5464,21 @@
       4.0,
       18.0
      ]
+    },
+    "ctx": {
+     "min_sano": 21.8,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.966,
+      "assists": 0.994
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 8.23,
@@ -4716,6 +5526,21 @@
       20.0
      ]
     },
+    "ctx": {
+     "min_sano": 19.4,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.966,
+      "assists": 0.98
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 11.1,
      "rebotes": 4.4,
@@ -4761,6 +5586,21 @@
       6.0,
       24.0
      ]
+    },
+    "ctx": {
+     "min_sano": 19.2,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.966,
+      "assists": 0.994
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 11.47,
@@ -4808,6 +5648,21 @@
       38.0
      ]
     },
+    "ctx": {
+     "min_sano": 33.4,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.018,
+      "assists": 1.075
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 19.83,
      "rebotes": 5.2,
@@ -4853,6 +5708,21 @@
       5.0,
       19.0
      ]
+    },
+    "ctx": {
+     "min_sano": 28.9,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.018,
+      "assists": 1.075
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 6.87,
@@ -4900,6 +5770,21 @@
       27.0
      ]
     },
+    "ctx": {
+     "min_sano": 27.6,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.018,
+      "assists": 0.998
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "C",
+     "duda": false
+    },
     "prom": {
      "puntos": 12.47,
      "rebotes": 6.03,
@@ -4945,6 +5830,21 @@
       5.0,
       20.0
      ]
+    },
+    "ctx": {
+     "min_sano": 26.2,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.018,
+      "assists": 1.075
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 9.07,
@@ -4992,6 +5892,21 @@
       28.0
      ]
     },
+    "ctx": {
+     "min_sano": 23.7,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.018,
+      "assists": 1.099
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 17.27,
      "rebotes": 3.33,
@@ -5037,6 +5952,21 @@
       7.0,
       26.0
      ]
+    },
+    "ctx": {
+     "min_sano": 21.7,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.018,
+      "assists": 1.099
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 8.2,
@@ -5084,6 +6014,21 @@
       16.0
      ]
     },
+    "ctx": {
+     "min_sano": 20.1,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.018,
+      "assists": 1.099
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 4.77,
      "rebotes": 3.53,
@@ -5130,6 +6075,21 @@
       17.0
      ]
     },
+    "ctx": {
+     "min_sano": 19.7,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.018,
+      "assists": 0.998
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "C",
+     "duda": false
+    },
     "prom": {
      "puntos": 6.2,
      "rebotes": 4.6,
@@ -5143,11 +6103,11 @@
   "tardia": false
  },
  "401909837": {
-  "generated_at": "2026-10-21T04:45:00.000634Z",
-  "model_version": "nba-0.3.0",
+  "generated_at": "2026-10-21T14:45:35.503264Z",
+  "model_version": "nba-0.4.0",
   "game_id": 401909837,
   "starts_at": "2026-10-21T23:30Z",
-  "minutos_antes": 1125.0,
+  "minutos_antes": 524.4,
   "proyeccion": {
    "league_game_id": "401909837",
    "espn_game_id": "401909837",
@@ -5727,6 +6687,21 @@
       42.0
      ]
     },
+    "ctx": {
+     "min_sano": 29.3,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.016,
+      "assists": 1.008
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 27.97,
      "rebotes": 6.67,
@@ -5772,6 +6747,21 @@
       12.0,
       34.0
      ]
+    },
+    "ctx": {
+     "min_sano": 28.1,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.016,
+      "assists": 1.008
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 19.77,
@@ -5819,6 +6809,21 @@
       34.0
      ]
     },
+    "ctx": {
+     "min_sano": 27.9,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.016,
+      "assists": 1.008
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 16.07,
      "rebotes": 6.1,
@@ -5864,6 +6869,21 @@
       9.0,
       30.0
      ]
+    },
+    "ctx": {
+     "min_sano": 25.3,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.016,
+      "assists": 1.084
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 16.33,
@@ -5911,6 +6931,21 @@
       21.0
      ]
     },
+    "ctx": {
+     "min_sano": 23.5,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.016,
+      "assists": 1.084
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 8.27,
      "rebotes": 3.4,
@@ -5956,6 +6991,21 @@
       5.0,
       21.0
      ]
+    },
+    "ctx": {
+     "min_sano": 22.8,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.016,
+      "assists": 1.084
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 9.4,
@@ -6003,6 +7053,21 @@
       22.0
      ]
     },
+    "ctx": {
+     "min_sano": 21.4,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.016,
+      "assists": 1.084
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 5.97,
      "rebotes": 1.5,
@@ -6048,6 +7113,21 @@
       5.0,
       22.0
      ]
+    },
+    "ctx": {
+     "min_sano": 20.1,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.016,
+      "assists": 1.021
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "C",
+     "duda": false
     },
     "prom": {
      "puntos": 10.8,
@@ -6095,6 +7175,21 @@
       33.0
      ]
     },
+    "ctx": {
+     "min_sano": 29.3,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.975,
+      "assists": 0.926
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 14.43,
      "rebotes": 7.43,
@@ -6140,6 +7235,21 @@
       8.0,
       28.0
      ]
+    },
+    "ctx": {
+     "min_sano": 27.3,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.975,
+      "assists": 0.947
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 18.37,
@@ -6187,6 +7297,21 @@
       18.0
      ]
     },
+    "ctx": {
+     "min_sano": 24.7,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.975,
+      "assists": 0.947
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": true
+    },
     "prom": {
      "puntos": 10.0,
      "rebotes": 2.77,
@@ -6233,6 +7358,21 @@
       23.0
      ]
     },
+    "ctx": {
+     "min_sano": 23.9,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.975,
+      "assists": 0.947
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": true
+    },
     "prom": {
      "puntos": 10.57,
      "rebotes": 5.3,
@@ -6278,6 +7418,21 @@
       5.0,
       22.0
      ]
+    },
+    "ctx": {
+     "min_sano": 23.7,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.975,
+      "assists": 1.0
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": null,
+     "duda": false
     }
    },
    {
@@ -6316,6 +7471,21 @@
       10.0,
       30.0
      ]
+    },
+    "ctx": {
+     "min_sano": 23.4,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.975,
+      "assists": 0.926
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 16.03,
@@ -6363,6 +7533,21 @@
       18.0
      ]
     },
+    "ctx": {
+     "min_sano": 22.2,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.975,
+      "assists": 0.947
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 7.63,
      "rebotes": 3.2,
@@ -6409,6 +7594,21 @@
       30.0
      ]
     },
+    "ctx": {
+     "min_sano": 21.5,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.975,
+      "assists": 0.926
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 19.0,
      "rebotes": 3.07,
@@ -6422,11 +7622,11 @@
   "tardia": false
  },
  "401909838": {
-  "generated_at": "2026-10-21T04:45:00.000634Z",
-  "model_version": "nba-0.3.0",
+  "generated_at": "2026-10-21T14:45:35.503264Z",
+  "model_version": "nba-0.4.0",
   "game_id": 401909838,
   "starts_at": "2026-10-22T00:00Z",
-  "minutos_antes": 1155.0,
+  "minutos_antes": 554.4,
   "proyeccion": {
    "league_game_id": "401909838",
    "espn_game_id": "401909838",
@@ -7010,6 +8210,21 @@
       30.0
      ]
     },
+    "ctx": {
+     "min_sano": 26.3,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.027,
+      "assists": 1.125
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 17.3,
      "rebotes": 3.0,
@@ -7056,6 +8271,21 @@
       20.0
      ]
     },
+    "ctx": {
+     "min_sano": 25.5,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.027,
+      "assists": 1.138
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 6.4,
      "rebotes": 2.7,
@@ -7101,6 +8331,21 @@
       6.0,
       24.0
      ]
+    },
+    "ctx": {
+     "min_sano": 24.2,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.027,
+      "assists": 1.0
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": null,
+     "duda": false
     }
    },
    {
@@ -7139,6 +8384,21 @@
       5.0,
       22.0
      ]
+    },
+    "ctx": {
+     "min_sano": 23.5,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.027,
+      "assists": 1.029
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "C",
+     "duda": false
     },
     "prom": {
      "puntos": 11.13,
@@ -7186,6 +8446,21 @@
       22.0
      ]
     },
+    "ctx": {
+     "min_sano": 21.7,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.027,
+      "assists": 1.125
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 13.2,
      "rebotes": 2.73,
@@ -7231,6 +8506,21 @@
       7.0,
       27.0
      ]
+    },
+    "ctx": {
+     "min_sano": 21.2,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.027,
+      "assists": 1.125
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 13.23,
@@ -7278,6 +8568,21 @@
       35.0
      ]
     },
+    "ctx": {
+     "min_sano": 20.0,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.027,
+      "assists": 1.138
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 17.53,
      "rebotes": 2.57,
@@ -7323,6 +8628,21 @@
       4.0,
       19.0
      ]
+    },
+    "ctx": {
+     "min_sano": 19.9,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.027,
+      "assists": 1.125
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 9.47,
@@ -7370,6 +8690,21 @@
       35.0
      ]
     },
+    "ctx": {
+     "min_sano": 28.0,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.069,
+      "assists": 1.024
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 25.73,
      "rebotes": 7.2,
@@ -7415,6 +8750,21 @@
       8.0,
       28.0
      ]
+    },
+    "ctx": {
+     "min_sano": 27.8,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.069,
+      "assists": 1.081
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 17.23,
@@ -7462,6 +8812,21 @@
       33.0
      ]
     },
+    "ctx": {
+     "min_sano": 26.6,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.069,
+      "assists": 1.024
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 19.87,
      "rebotes": 6.0,
@@ -7507,6 +8872,21 @@
       12.0,
       36.0
      ]
+    },
+    "ctx": {
+     "min_sano": 25.8,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.069,
+      "assists": 1.081
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 24.17,
@@ -7554,6 +8934,21 @@
       31.0
      ]
     },
+    "ctx": {
+     "min_sano": 24.9,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.069,
+      "assists": 1.024
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 19.2,
      "rebotes": 3.33,
@@ -7599,6 +8994,21 @@
       7.0,
       24.0
      ]
+    },
+    "ctx": {
+     "min_sano": 24.0,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.069,
+      "assists": 1.0
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": null,
+     "duda": false
     }
    },
    {
@@ -7637,6 +9047,21 @@
       8.0,
       27.0
      ]
+    },
+    "ctx": {
+     "min_sano": 23.5,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.069,
+      "assists": 1.024
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 14.67,
@@ -7684,6 +9109,21 @@
       30.0
      ]
     },
+    "ctx": {
+     "min_sano": 21.7,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.069,
+      "assists": 1.081
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 14.87,
      "rebotes": 2.73,
@@ -7697,11 +9137,11 @@
   "tardia": false
  },
  "401909839": {
-  "generated_at": "2026-10-21T04:45:00.000634Z",
-  "model_version": "nba-0.3.0",
+  "generated_at": "2026-10-21T14:45:35.503264Z",
+  "model_version": "nba-0.4.0",
   "game_id": 401909839,
   "starts_at": "2026-10-22T00:00Z",
-  "minutos_antes": 1155.0,
+  "minutos_antes": 554.4,
   "proyeccion": {
    "league_game_id": "401909839",
    "espn_game_id": "401909839",
@@ -8279,6 +9719,21 @@
       34.0
      ]
     },
+    "ctx": {
+     "min_sano": 29.6,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.016,
+      "assists": 0.974
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 21.33,
      "rebotes": 5.17,
@@ -8324,6 +9779,21 @@
       5.0,
       21.0
      ]
+    },
+    "ctx": {
+     "min_sano": 25.3,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.016,
+      "assists": 0.974
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 11.85,
@@ -8371,6 +9841,21 @@
       31.0
      ]
     },
+    "ctx": {
+     "min_sano": 24.7,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.016,
+      "assists": 0.994
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 15.87,
      "rebotes": 3.7,
@@ -8416,6 +9901,21 @@
       8.0,
       28.0
      ]
+    },
+    "ctx": {
+     "min_sano": 23.6,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.016,
+      "assists": 0.994
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 20.07,
@@ -8463,6 +9963,21 @@
       32.0
      ]
     },
+    "ctx": {
+     "min_sano": 23.2,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.016,
+      "assists": 0.994
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 17.77,
      "rebotes": 5.9,
@@ -8508,6 +10023,21 @@
       6.0,
       24.0
      ]
+    },
+    "ctx": {
+     "min_sano": 21.1,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.016,
+      "assists": 1.048
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "C",
+     "duda": false
     },
     "prom": {
      "puntos": 10.63,
@@ -8555,6 +10085,21 @@
       27.0
      ]
     },
+    "ctx": {
+     "min_sano": 20.8,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.016,
+      "assists": 0.994
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 17.63,
      "rebotes": 5.4,
@@ -8600,6 +10145,21 @@
       10.0,
       33.0
      ]
+    },
+    "ctx": {
+     "min_sano": 20.8,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.016,
+      "assists": 0.974
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 19.9,
@@ -8647,6 +10207,21 @@
       40.0
      ]
     },
+    "ctx": {
+     "min_sano": 28.1,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.014,
+      "assists": 1.046
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 19.83,
      "rebotes": 3.47,
@@ -8692,6 +10267,21 @@
       13.0,
       38.0
      ]
+    },
+    "ctx": {
+     "min_sano": 26.9,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.014,
+      "assists": 1.094
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 24.53,
@@ -8739,6 +10329,21 @@
       33.0
      ]
     },
+    "ctx": {
+     "min_sano": 26.6,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.014,
+      "assists": 1.046
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 16.7,
      "rebotes": 3.07,
@@ -8784,6 +10389,21 @@
       6.0,
       24.0
      ]
+    },
+    "ctx": {
+     "min_sano": 25.9,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.014,
+      "assists": 1.046
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 13.9,
@@ -8831,6 +10451,21 @@
       24.0
      ]
     },
+    "ctx": {
+     "min_sano": 22.9,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.014,
+      "assists": 1.057
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "C",
+     "duda": false
+    },
     "prom": {
      "puntos": 12.6,
      "rebotes": 10.07,
@@ -8876,6 +10511,21 @@
       7.0,
       26.0
      ]
+    },
+    "ctx": {
+     "min_sano": 22.1,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.014,
+      "assists": 1.094
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 14.73,
@@ -8923,6 +10573,21 @@
       20.0
      ]
     },
+    "ctx": {
+     "min_sano": 20.1,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.014,
+      "assists": 1.046
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": true
+    },
     "prom": {
      "puntos": 8.83,
      "rebotes": 4.47,
@@ -8969,6 +10634,21 @@
       22.0
      ]
     },
+    "ctx": {
+     "min_sano": 18.6,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.014,
+      "assists": 1.057
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "C",
+     "duda": false
+    },
     "prom": {
      "puntos": 11.43,
      "rebotes": 4.23,
@@ -8982,11 +10662,11 @@
   "tardia": false
  },
  "401909840": {
-  "generated_at": "2026-10-21T04:45:00.000634Z",
-  "model_version": "nba-0.3.0",
+  "generated_at": "2026-10-21T14:45:35.503264Z",
+  "model_version": "nba-0.4.0",
   "game_id": 401909840,
   "starts_at": "2026-10-22T00:30Z",
-  "minutos_antes": 1185.0,
+  "minutos_antes": 584.4,
   "proyeccion": {
    "league_game_id": "401909840",
    "espn_game_id": "401909840",
@@ -9570,6 +11250,21 @@
       34.0
      ]
     },
+    "ctx": {
+     "min_sano": 32.2,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.023,
+      "assists": 1.05
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 18.73,
      "rebotes": 7.9,
@@ -9615,6 +11310,21 @@
       16.0,
       42.0
      ]
+    },
+    "ctx": {
+     "min_sano": 30.0,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.023,
+      "assists": 1.02
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 26.07,
@@ -9662,6 +11372,21 @@
       26.0
      ]
     },
+    "ctx": {
+     "min_sano": 29.0,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.023,
+      "assists": 1.02
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 16.83,
      "rebotes": 6.83,
@@ -9707,6 +11432,21 @@
       9.0,
       28.0
      ]
+    },
+    "ctx": {
+     "min_sano": 27.6,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.023,
+      "assists": 1.05
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 12.77,
@@ -9754,6 +11494,21 @@
       35.0
      ]
     },
+    "ctx": {
+     "min_sano": 25.6,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.023,
+      "assists": 1.126
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "C",
+     "duda": false
+    },
     "prom": {
      "puntos": 19.2,
      "rebotes": 8.2,
@@ -9799,6 +11554,21 @@
       5.0,
       22.0
      ]
+    },
+    "ctx": {
+     "min_sano": 22.4,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.023,
+      "assists": 1.05
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 8.8,
@@ -9846,6 +11616,21 @@
       27.0
      ]
     },
+    "ctx": {
+     "min_sano": 20.1,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.023,
+      "assists": 1.05
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 15.2,
      "rebotes": 3.43,
@@ -9891,6 +11676,21 @@
       4.0,
       20.0
      ]
+    },
+    "ctx": {
+     "min_sano": 18.8,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.023,
+      "assists": 1.02
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 8.73,
@@ -9938,6 +11738,21 @@
       41.0
      ]
     },
+    "ctx": {
+     "min_sano": 34.8,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.959,
+      "assists": 0.971
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 25.1,
      "rebotes": 4.73,
@@ -9983,6 +11798,21 @@
       13.0,
       38.0
      ]
+    },
+    "ctx": {
+     "min_sano": 31.2,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.959,
+      "assists": 0.929
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 24.03,
@@ -10030,6 +11860,21 @@
       24.0
      ]
     },
+    "ctx": {
+     "min_sano": 30.9,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.959,
+      "assists": 0.929
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 12.9,
      "rebotes": 6.23,
@@ -10075,6 +11920,21 @@
       9.0,
       29.0
      ]
+    },
+    "ctx": {
+     "min_sano": 29.0,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.959,
+      "assists": 0.929
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 16.8,
@@ -10122,6 +11982,21 @@
       20.0
      ]
     },
+    "ctx": {
+     "min_sano": 27.1,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.959,
+      "assists": 0.971
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 10.77,
      "rebotes": 2.97,
@@ -10167,6 +12042,21 @@
       5.0,
       22.0
      ]
+    },
+    "ctx": {
+     "min_sano": 21.9,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.959,
+      "assists": 0.929
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 10.63,
@@ -10214,6 +12104,21 @@
       13.0
      ]
     },
+    "ctx": {
+     "min_sano": 18.6,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.959,
+      "assists": 1.011
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "C",
+     "duda": false
+    },
     "prom": {
      "puntos": 4.67,
      "rebotes": 6.13,
@@ -10260,6 +12165,21 @@
       16.0
      ]
     },
+    "ctx": {
+     "min_sano": 16.1,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.959,
+      "assists": 0.929
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 7.7,
      "rebotes": 4.5,
@@ -10273,11 +12193,11 @@
   "tardia": false
  },
  "401909092": {
-  "generated_at": "2026-10-21T04:45:00.000634Z",
-  "model_version": "nba-0.3.0",
+  "generated_at": "2026-10-21T14:45:35.503264Z",
+  "model_version": "nba-0.4.0",
   "game_id": 401909092,
   "starts_at": "2026-10-22T02:00Z",
-  "minutos_antes": 1275.0,
+  "minutos_antes": 674.4,
   "proyeccion": {
    "league_game_id": "401909092",
    "espn_game_id": "401909092",
@@ -10861,6 +12781,21 @@
       55.0
      ]
     },
+    "ctx": {
+     "min_sano": 33.1,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.986,
+      "assists": 1.01
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 33.5,
      "rebotes": 7.77,
@@ -10906,6 +12841,21 @@
       14.0,
       37.0
      ]
+    },
+    "ctx": {
+     "min_sano": 32.8,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.986,
+      "assists": 1.01
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 20.13,
@@ -10953,6 +12903,21 @@
       20.0
      ]
     },
+    "ctx": {
+     "min_sano": 26.4,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.986,
+      "assists": 1.0
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "C",
+     "duda": false
+    },
     "prom": {
      "puntos": 11.57,
      "rebotes": 12.87,
@@ -10998,6 +12963,21 @@
       9.0,
       31.0
      ]
+    },
+    "ctx": {
+     "min_sano": 24.5,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.986,
+      "assists": 1.01
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": true
     },
     "prom": {
      "puntos": 16.47,
@@ -11045,6 +13025,21 @@
       22.0
      ]
     },
+    "ctx": {
+     "min_sano": 23.3,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.986,
+      "assists": 1.01
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 13.7,
      "rebotes": 3.37,
@@ -11090,6 +13085,21 @@
       4.0,
       17.0
      ]
+    },
+    "ctx": {
+     "min_sano": 23.0,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.986,
+      "assists": 1.096
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 6.13,
@@ -11137,6 +13147,21 @@
       23.0
      ]
     },
+    "ctx": {
+     "min_sano": 18.9,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.986,
+      "assists": 1.096
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 11.0,
      "rebotes": 4.73,
@@ -11182,6 +13207,21 @@
       4.0,
       20.0
      ]
+    },
+    "ctx": {
+     "min_sano": 17.7,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.986,
+      "assists": 1.096
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 11.37,
@@ -11229,6 +13269,21 @@
       44.0
      ]
     },
+    "ctx": {
+     "min_sano": 29.8,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.972,
+      "assists": 1.089
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 25.4,
      "rebotes": 3.53,
@@ -11274,6 +13329,21 @@
       7.0,
       23.0
      ]
+    },
+    "ctx": {
+     "min_sano": 29.3,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.972,
+      "assists": 0.996
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 8.37,
@@ -11321,6 +13391,21 @@
       28.0
      ]
     },
+    "ctx": {
+     "min_sano": 29.1,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.972,
+      "assists": 0.996
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 15.33,
      "rebotes": 5.8,
@@ -11366,6 +13451,21 @@
       6.0,
       24.0
      ]
+    },
+    "ctx": {
+     "min_sano": 23.6,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.972,
+      "assists": 1.089
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 12.9,
@@ -11413,6 +13513,21 @@
       19.0
      ]
     },
+    "ctx": {
+     "min_sano": 22.6,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.972,
+      "assists": 0.95
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "C",
+     "duda": false
+    },
     "prom": {
      "puntos": 9.33,
      "rebotes": 5.03,
@@ -11458,6 +13573,21 @@
       9.0,
       29.0
      ]
+    },
+    "ctx": {
+     "min_sano": 22.1,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.972,
+      "assists": 1.089
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 14.3,
@@ -11505,6 +13635,21 @@
       22.0
      ]
     },
+    "ctx": {
+     "min_sano": 20.4,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.972,
+      "assists": 1.089
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 11.3,
      "rebotes": 4.4,
@@ -11551,6 +13696,21 @@
       20.0
      ]
     },
+    "ctx": {
+     "min_sano": 17.7,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.972,
+      "assists": 1.089
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 8.22,
      "rebotes": 1.56,
@@ -11564,11 +13724,11 @@
   "tardia": false
  },
  "401909841": {
-  "generated_at": "2026-10-21T04:45:00.000634Z",
-  "model_version": "nba-0.3.0",
+  "generated_at": "2026-10-21T14:45:35.503264Z",
+  "model_version": "nba-0.4.0",
   "game_id": 401909841,
   "starts_at": "2026-10-22T02:00Z",
-  "minutos_antes": 1275.0,
+  "minutos_antes": 674.4,
   "proyeccion": {
    "league_game_id": "401909841",
    "espn_game_id": "401909841",
@@ -12154,6 +14314,21 @@
       41.0
      ]
     },
+    "ctx": {
+     "min_sano": 31.6,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.992,
+      "assists": 0.966
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 25.1,
      "rebotes": 4.93,
@@ -12199,6 +14374,21 @@
       7.0,
       24.0
      ]
+    },
+    "ctx": {
+     "min_sano": 30.1,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.992,
+      "assists": 0.979
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 14.23,
@@ -12246,6 +14436,21 @@
       40.0
      ]
     },
+    "ctx": {
+     "min_sano": 29.7,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.992,
+      "assists": 0.979
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": true
+    },
     "prom": {
      "puntos": 22.73,
      "rebotes": 6.4,
@@ -12291,6 +14496,21 @@
       10.0,
       30.0
      ]
+    },
+    "ctx": {
+     "min_sano": 28.4,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.992,
+      "assists": 0.966
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 17.63,
@@ -12338,6 +14558,21 @@
       38.0
      ]
     },
+    "ctx": {
+     "min_sano": 25.0,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.992,
+      "assists": 0.966
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 22.53,
      "rebotes": 3.77,
@@ -12383,6 +14618,21 @@
       6.0,
       22.0
      ]
+    },
+    "ctx": {
+     "min_sano": 23.2,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.992,
+      "assists": 1.07
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "C",
+     "duda": false
     },
     "prom": {
      "puntos": 13.27,
@@ -12430,6 +14680,21 @@
       28.0
      ]
     },
+    "ctx": {
+     "min_sano": 22.5,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.992,
+      "assists": 0.966
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 14.17,
      "rebotes": 2.6,
@@ -12475,6 +14740,21 @@
       4.0,
       20.0
      ]
+    },
+    "ctx": {
+     "min_sano": 17.5,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.992,
+      "assists": 1.07
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "C",
+     "duda": true
     },
     "prom": {
      "puntos": 11.4,
@@ -12522,6 +14802,21 @@
       45.0
      ]
     },
+    "ctx": {
+     "min_sano": 33.0,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.971,
+      "assists": 0.959
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 26.67,
      "rebotes": 3.8,
@@ -12567,6 +14862,21 @@
       8.0,
       28.0
      ]
+    },
+    "ctx": {
+     "min_sano": 27.2,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.971,
+      "assists": 0.984
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 18.87,
@@ -12614,6 +14924,21 @@
       29.0
      ]
     },
+    "ctx": {
+     "min_sano": 27.1,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.971,
+      "assists": 0.984
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 15.1,
      "rebotes": 5.3,
@@ -12659,6 +14984,21 @@
       9.0,
       32.0
      ]
+    },
+    "ctx": {
+     "min_sano": 24.7,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.971,
+      "assists": 0.959
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 19.73,
@@ -12706,6 +15046,21 @@
       21.0
      ]
     },
+    "ctx": {
+     "min_sano": 22.5,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.971,
+      "assists": 0.959
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 10.4,
      "rebotes": 4.03,
@@ -12751,6 +15106,21 @@
       5.0,
       20.0
      ]
+    },
+    "ctx": {
+     "min_sano": 22.3,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.971,
+      "assists": 0.959
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 9.03,
@@ -12798,6 +15168,21 @@
       21.0
      ]
     },
+    "ctx": {
+     "min_sano": 21.8,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.971,
+      "assists": 0.959
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": true
+    },
     "prom": {
      "puntos": 9.03,
      "rebotes": 2.67,
@@ -12844,6 +15229,21 @@
       17.0
      ]
     },
+    "ctx": {
+     "min_sano": 21.8,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.971,
+      "assists": 0.984
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 8.23,
      "rebotes": 5.97,
@@ -12857,11 +15257,11 @@
   "tardia": false
  },
  "401909842": {
-  "generated_at": "2026-10-21T04:45:00.000634Z",
-  "model_version": "nba-0.3.0",
+  "generated_at": "2026-10-21T14:45:35.503264Z",
+  "model_version": "nba-0.4.0",
   "game_id": 401909842,
   "starts_at": "2026-10-22T02:30Z",
-  "minutos_antes": 1305.0,
+  "minutos_antes": 704.4,
   "proyeccion": {
    "league_game_id": "401909842",
    "espn_game_id": "401909842",
@@ -13445,6 +15845,21 @@
       44.0
      ]
     },
+    "ctx": {
+     "min_sano": 33.8,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.978,
+      "assists": 1.079
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 19.63,
      "rebotes": 2.23,
@@ -13491,6 +15906,21 @@
       26.0
      ]
     },
+    "ctx": {
+     "min_sano": 31.6,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.978,
+      "assists": 0.983
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "C",
+     "duda": false
+    },
     "prom": {
      "puntos": 11.53,
      "rebotes": 5.17,
@@ -13536,6 +15966,21 @@
       10.0,
       29.0
      ]
+    },
+    "ctx": {
+     "min_sano": 30.2,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.978,
+      "assists": 1.0
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": null,
+     "duda": false
     }
    },
    {
@@ -13574,6 +16019,21 @@
       7.0,
       24.0
      ]
+    },
+    "ctx": {
+     "min_sano": 29.7,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.978,
+      "assists": 1.095
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 10.73,
@@ -13621,6 +16081,21 @@
       20.0
      ]
     },
+    "ctx": {
+     "min_sano": 29.5,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.978,
+      "assists": 1.079
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 6.27,
      "rebotes": 4.0,
@@ -13666,6 +16141,21 @@
       7.0,
       25.0
      ]
+    },
+    "ctx": {
+     "min_sano": 28.9,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.978,
+      "assists": 1.095
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 10.33,
@@ -13713,6 +16203,21 @@
       19.0
      ]
     },
+    "ctx": {
+     "min_sano": 16.5,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.978,
+      "assists": 1.079
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 7.67,
      "rebotes": 1.87,
@@ -13758,6 +16263,21 @@
       3.0,
       18.0
      ]
+    },
+    "ctx": {
+     "min_sano": 15.7,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.978,
+      "assists": 1.095
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 5.9,
@@ -13805,6 +16325,21 @@
       26.0
      ]
     },
+    "ctx": {
+     "min_sano": 31.9,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.034
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 13.33,
      "rebotes": 4.93,
@@ -13850,6 +16385,21 @@
       6.0,
       23.0
      ]
+    },
+    "ctx": {
+     "min_sano": 28.8,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.006
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 12.97,
@@ -13897,6 +16447,21 @@
       24.0
      ]
     },
+    "ctx": {
+     "min_sano": 26.9,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.006
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 14.0,
      "rebotes": 8.3,
@@ -13942,6 +16507,21 @@
       10.0,
       32.0
      ]
+    },
+    "ctx": {
+     "min_sano": 25.9,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.006
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 17.1,
@@ -13989,6 +16569,21 @@
       23.0
      ]
     },
+    "ctx": {
+     "min_sano": 25.5,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.034
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
     "prom": {
      "puntos": 11.33,
      "rebotes": 3.1,
@@ -14034,6 +16629,21 @@
       11.0,
       33.0
      ]
+    },
+    "ctx": {
+     "min_sano": 25.5,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.034
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
     },
     "prom": {
      "puntos": 17.37,
@@ -14081,6 +16691,21 @@
       15.0
      ]
     },
+    "ctx": {
+     "min_sano": 21.9,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.006
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
+    },
     "prom": {
      "puntos": 5.4,
      "rebotes": 3.87,
@@ -14126,6 +16751,21 @@
       6.0,
       24.0
      ]
+    },
+    "ctx": {
+     "min_sano": 20.8,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.006
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": false
     },
     "prom": {
      "puntos": 11.47,
