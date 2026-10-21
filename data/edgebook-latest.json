@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.4.0",
- "generated_at": "2026-10-21T14:45:35.503264Z",
+ "generated_at": "2026-10-21T15:15:00.000712Z",
  "date_local": "2026-10-21",
  "games": [
   {
@@ -289,12 +289,12 @@
     "code": "CHI"
    },
    "projection": {
-    "home_score": 123.9,
-    "away_score": 114.5
+    "home_score": 124.6,
+    "away_score": 113.9
    },
    "win_probability": {
-    "home": 0.7521,
-    "away": 0.2479
+    "home": 0.7788,
+    "away": 0.2212
    },
    "pick": {
     "market": "moneyline",
@@ -303,15 +303,15 @@
    },
    "data_warning": "Zach Collins está en duda (probable)",
    "spread": {
-    "home": -9.0,
-    "away": 9.0
+    "home": -11.0,
+    "away": 11.0
    },
    "total_points": 238.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -9.0,
-     27.0
+     -7.0,
+     28.0
     ],
     "total": [
      213.0,
@@ -328,19 +328,25 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +9.5, Elo +8.5, equipo +8.0, cuatro factores +9.3.",
+     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +10.8, Elo +8.5, equipo +8.0, cuatro factores +9.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de TOR vale 7.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de TOR vale 8.9 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.9 puntos para TOR.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de CHI",
+     "favors": "home",
+     "detail": "Sin Nic Claxton: CHI pierde 1.3 puntos.",
      "supports_pick": true
     }
    ]
@@ -431,12 +437,12 @@
     "code": "IND"
    },
    "projection": {
-    "home_score": 122.0,
-    "away_score": 122.9
+    "home_score": 121.8,
+    "away_score": 121.9
    },
    "win_probability": {
-    "home": 0.4709,
-    "away": 0.5291
+    "home": 0.494,
+    "away": 0.506
    },
    "pick": {
     "market": "moneyline",
@@ -445,19 +451,19 @@
    },
    "data_warning": "Kobe Brown está en duda (probable)",
    "spread": {
-    "home": 2.0,
-    "away": -2.0
+    "home": 1.0,
+    "away": -1.0
    },
-   "total_points": 244.9,
+   "total_points": 243.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -19.0,
-     17.0
+     -18.0,
+     18.0
     ],
     "total": [
-     219.0,
-     271.0
+     218.0,
+     269.0
     ]
    },
    "game_warnings": [
@@ -468,19 +474,25 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a NO. Margen de NO: jugadores -0.9, Elo +4.1, equipo +3.6, cuatro factores +5.3.",
+     "detail": "3 de 4 modelos ven ganar a NO. Margen de NO: jugadores -0.2, Elo +4.1, equipo +3.6, cuatro factores +5.3.",
      "supports_pick": false
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de IND vale 2.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de IND vale 2.1 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.9 puntos para NO.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de IND",
+     "favors": "home",
+     "detail": "Sin T.J. McConnell, Aaron Nesmith: IND pierde 0.6 puntos.",
      "supports_pick": false
     }
    ]
@@ -572,11 +584,11 @@
    },
    "projection": {
     "home_score": 124.1,
-    "away_score": 118.4
+    "away_score": 118.2
    },
    "win_probability": {
-    "home": 0.6567,
-    "away": 0.3433
+    "home": 0.6635,
+    "away": 0.3365
    },
    "pick": {
     "market": "moneyline",
@@ -588,7 +600,7 @@
     "home": -6.0,
     "away": 6.0
    },
-   "total_points": 242.5,
+   "total_points": 242.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -597,24 +609,25 @@
     ],
     "total": [
      217.0,
-     269.0
+     268.0
     ]
    },
    "game_warnings": [
-    "Collin Sexton está en duda (questionable)"
+    "Collin Sexton está en duda (questionable)",
+    "Stephen Curry está en duda (probable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +5.7, Elo +6.9, equipo +4.2, cuatro factores +4.7.",
+     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +6.0, Elo +6.9, equipo +4.2, cuatro factores +4.7.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de LAL vale 3.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de LAL vale 4.1 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -626,7 +639,7 @@
     {
      "label": "Bajas de GS",
      "favors": "home",
-     "detail": "Sin Jimmy Butler III, Moses Moody, Brandin Podziemski: GS pierde 5.1 puntos.",
+     "detail": "Sin Jimmy Butler III, Moses Moody, Brandin Podziemski: GS pierde 5.3 puntos.",
      "supports_pick": true
     }
    ]
