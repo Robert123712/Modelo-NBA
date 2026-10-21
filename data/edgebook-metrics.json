@@ -1,0 +1,96 @@
+{
+ "schema_version": "1.0",
+ "sport": "NBA",
+ "generated_at": "2026-10-21T13:24:58.301302Z",
+ "minimum_meaningful": 100,
+ "versions": [
+  {
+   "model_version": "nba-0.3.0",
+   "unlabeled": false,
+   "from": "2026-10-20",
+   "to": "2026-10-20",
+   "graded": 3,
+   "pending": 11,
+   "significant": false,
+   "markets": {
+    "moneyline": {
+     "n": 3,
+     "base_rate": 0.3333,
+     "brier": 0.3867,
+     "log_loss": 0.9905,
+     "hit_rate": 0.3333,
+     "baseline_brier": 0.25,
+     "calibration": [
+      {
+       "from": 0.35,
+       "to": 0.45,
+       "n": 1,
+       "predicted": 0.3995,
+       "observed": 1.0
+      },
+      {
+       "from": 0.45,
+       "to": 0.5,
+       "n": 1,
+       "predicted": 0.4858,
+       "observed": 0.0
+      },
+      {
+       "from": 0.65,
+       "to": 1.01,
+       "n": 1,
+       "predicted": 0.7506,
+       "observed": 0.0
+      }
+     ]
+    }
+   },
+   "projected_total": {
+    "n": 3,
+    "mae": 12.4,
+    "bias": 3.267,
+    "std_error": 7.7875,
+    "by_month": [
+     {
+      "month": "2026-10",
+      "n": 3,
+      "mae": 12.4,
+      "bias": 3.267,
+      "std_error": 7.7875
+     }
+    ]
+   },
+   "projected_margin": {
+    "n": 3,
+    "mae": 12.667,
+    "bias": 4.667,
+    "std_error": 6.8691,
+    "by_month": [
+     {
+      "month": "2026-10",
+      "n": 3,
+      "mae": 12.667,
+      "bias": 4.667,
+      "std_error": 6.8691
+     }
+    ]
+   },
+   "closing_line": {
+    "total": null,
+    "margin": null
+   },
+   "interval_coverage": {
+    "margin": {
+     "n": 3,
+     "covered": 1.0,
+     "nominal": 0.8
+    },
+    "total": {
+     "n": 3,
+     "covered": 1.0,
+     "nominal": 0.8
+    }
+   }
+  }
+ ]
+}
