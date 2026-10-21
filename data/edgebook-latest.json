@@ -2,210 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.4.0",
- "generated_at": "2026-10-21T23:15:00.000580Z",
+ "generated_at": "2026-10-21T23:45:00.000669Z",
  "date_local": "2026-10-21",
  "games": [
-  {
-   "league_game_id": "401909835",
-   "espn_game_id": "401909835",
-   "starts_at": "2026-10-21T23:00Z",
-   "home": {
-    "name": "Washington Wizards",
-    "code": "WSH"
-   },
-   "away": {
-    "name": "Milwaukee Bucks",
-    "code": "MIL"
-   },
-   "projection": {
-    "home_score": 120.5,
-    "away_score": 122.2
-   },
-   "win_probability": {
-    "home": 0.4504,
-    "away": 0.5496
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Milwaukee Bucks ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 2.0,
-    "away": -2.0
-   },
-   "total_points": 242.8,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -19.1,
-     16.0
-    ],
-    "total": [
-     217.0,
-     269.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a MIL. Margen de MIL: jugadores +1.6, Elo +1.6, equipo +1.8, cuatro factores +1.0.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de MIL vale 3.5 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.9 puntos para WSH.",
-     "supports_pick": false
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909091",
-   "espn_game_id": "401909091",
-   "starts_at": "2026-10-21T23:30Z",
-   "home": {
-    "name": "Miami Heat",
-    "code": "MIA"
-   },
-   "away": {
-    "name": "Minnesota Timberwolves",
-    "code": "MIN"
-   },
-   "projection": {
-    "home_score": 122.7,
-    "away_score": 120.5
-   },
-   "win_probability": {
-    "home": 0.565,
-    "away": 0.435
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Miami Heat ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -3.0,
-    "away": 3.0
-   },
-   "total_points": 243.2,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -16.0,
-     20.0
-    ],
-    "total": [
-     217.0,
-     270.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIA. Margen de MIA: jugadores +2.3, Elo +0.7, equipo +1.4, cuatro factores +4.0.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.9 puntos para MIA.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de MIN",
-     "favors": "home",
-     "detail": "Sin Donte DiVincenzo: MIN pierde 0.9 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909836",
-   "espn_game_id": "401909836",
-   "starts_at": "2026-10-21T23:30Z",
-   "home": {
-    "name": "Brooklyn Nets",
-    "code": "BKN"
-   },
-   "away": {
-    "name": "Charlotte Hornets",
-    "code": "CHA"
-   },
-   "projection": {
-    "home_score": 112.0,
-    "away_score": 119.6
-   },
-   "win_probability": {
-    "home": 0.2898,
-    "away": 0.7102
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Charlotte Hornets ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 8.0,
-    "away": -8.0
-   },
-   "total_points": 231.6,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -26.0,
-     10.0
-    ],
-    "total": [
-     206.0,
-     258.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +7.6, Elo +8.4, equipo +9.8, cuatro factores +10.5.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de CHA vale 9.4 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para BKN.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de CHA",
-     "favors": "home",
-     "detail": "Sin Kon Knueppel, Coby White, Grant Williams: CHA pierde 3.1 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909837",
    "espn_game_id": "401909837",
@@ -290,12 +89,12 @@
     "code": "UTAH"
    },
    "projection": {
-    "home_score": 126.6,
-    "away_score": 123.0
+    "home_score": 126.5,
+    "away_score": 122.3
    },
    "win_probability": {
-    "home": 0.6021,
-    "away": 0.3979
+    "home": 0.6188,
+    "away": 0.3812
    },
    "pick": {
     "market": "moneyline",
@@ -304,19 +103,19 @@
    },
    "data_warning": null,
    "spread": {
-    "home": -4.0,
-    "away": 4.0
+    "home": -5.0,
+    "away": 5.0
    },
-   "total_points": 249.6,
+   "total_points": 248.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -14.0,
-     21.0
+     22.0
     ],
     "total": [
-     224.0,
-     276.0
+     223.0,
+     275.0
     ]
    },
    "game_warnings": [],
@@ -325,13 +124,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +3.7, Elo +1.3, equipo +2.6, cuatro factores -1.0.",
+     "detail": "3 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +4.3, Elo +1.3, equipo +2.6, cuatro factores -1.0.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MEM vale 1.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MEM vale 2.4 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -339,12 +138,6 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.9 puntos para MEM.",
      "supports_pick": true
-    },
-    {
-     "label": "Bajas de MEM",
-     "favors": "away",
-     "detail": "Sin Isaiah Stewart: MEM pierde 0.5 puntos.",
-     "supports_pick": false
     }
    ]
   },
@@ -361,24 +154,24 @@
     "code": "IND"
    },
    "projection": {
-    "home_score": 121.0,
+    "home_score": 121.1,
     "away_score": 123.6
    },
    "win_probability": {
-    "home": 0.4244,
-    "away": 0.5756
+    "home": 0.4247,
+    "away": 0.5753
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Indiana Pacers ML"
    },
-   "data_warning": "Jalen Slawson está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": 3.0,
     "away": -3.0
    },
-   "total_points": 244.6,
+   "total_points": 244.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -390,15 +183,13 @@
      271.0
     ]
    },
-   "game_warnings": [
-    "Jalen Slawson está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a NO. Margen de NO: jugadores -2.5, Elo +4.1, equipo +3.6, cuatro factores +5.3.",
+     "detail": "3 de 4 modelos ven ganar a NO. Margen de NO: jugadores -2.6, Elo +4.1, equipo +3.6, cuatro factores +5.3.",
      "supports_pick": false
     },
     {
@@ -428,12 +219,12 @@
     "code": "DAL"
    },
    "projection": {
-    "home_score": 119.8,
-    "away_score": 111.7
+    "home_score": 120.9,
+    "away_score": 111.8
    },
    "win_probability": {
-    "home": 0.7219,
-    "away": 0.2781
+    "home": 0.7457,
+    "away": 0.2543
    },
    "pick": {
     "market": "moneyline",
@@ -442,19 +233,19 @@
    },
    "data_warning": "Steven Adams está en duda (questionable)",
    "spread": {
-    "home": -8.0,
-    "away": 8.0
+    "home": -9.0,
+    "away": 9.0
    },
-   "total_points": 231.5,
+   "total_points": 232.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -10.0,
-     26.0
+     -9.0,
+     27.0
     ],
     "total": [
-     205.0,
-     258.0
+     207.0,
+     259.0
     ]
    },
    "game_warnings": [
@@ -465,13 +256,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +8.0, Elo +8.9, equipo +9.0, cuatro factores +9.4.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +9.0, Elo +8.9, equipo +9.0, cuatro factores +9.4.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 6.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 7.2 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -483,7 +274,7 @@
     {
      "label": "Bajas de DAL",
      "favors": "home",
-     "detail": "Sin Santi Aldama, Dereck Lively II, Caleb Martin: DAL pierde 1.4 puntos.",
+     "detail": "Sin Santi Aldama, Dereck Lively II, Caleb Martin: DAL pierde 1.2 puntos.",
      "supports_pick": true
     }
    ]
@@ -578,8 +369,8 @@
     "away_score": 114.9
    },
    "win_probability": {
-    "home": 0.6159,
-    "away": 0.3841
+    "home": 0.6175,
+    "away": 0.3825
    },
    "pick": {
     "market": "moneyline",
@@ -588,8 +379,8 @@
    },
    "data_warning": "Deni Avdija está en duda (questionable)",
    "spread": {
-    "home": -4.0,
-    "away": 4.0
+    "home": -5.0,
+    "away": 5.0
    },
    "total_points": 233.8,
    "season": 2027,
@@ -605,6 +396,7 @@
    },
    "game_warnings": [
     "Deni Avdija está en duda (questionable)",
+    "Micah Potter está en duda (probable)",
     "Luke Kennard está en duda (questionable)"
    ],
    "warnings": [],
@@ -612,19 +404,25 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +4.0, Elo +2.3, equipo +1.3, cuatro factores +3.1.",
+     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +4.1, Elo +2.3, equipo +1.3, cuatro factores +3.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de POR vale 2.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de POR vale 2.3 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para POR.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de PHX",
+     "favors": "home",
+     "detail": "Sin Mark Williams: PHX pierde 0.6 puntos.",
      "supports_pick": true
     }
    ]
@@ -769,6 +567,207 @@
      "label": "Bajas de ORL",
      "favors": "away",
      "detail": "Sin Anthony Black: ORL pierde 2.1 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909835",
+   "espn_game_id": "401909835",
+   "starts_at": "2026-10-21T23:00Z",
+   "home": {
+    "name": "Washington Wizards",
+    "code": "WSH"
+   },
+   "away": {
+    "name": "Milwaukee Bucks",
+    "code": "MIL"
+   },
+   "projection": {
+    "home_score": 121.4,
+    "away_score": 123.2
+   },
+   "win_probability": {
+    "home": 0.4465,
+    "away": 0.5535
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Milwaukee Bucks ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 2.0,
+    "away": -2.0
+   },
+   "total_points": 244.7,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -20.0,
+     16.0
+    ],
+    "total": [
+     219.0,
+     271.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a MIL. Margen de MIL: jugadores +1.8, Elo +1.6, equipo +1.8, cuatro factores +1.0.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de MIL vale 3.6 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.9 puntos para WSH.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909091",
+   "espn_game_id": "401909091",
+   "starts_at": "2026-10-21T23:30Z",
+   "home": {
+    "name": "Miami Heat",
+    "code": "MIA"
+   },
+   "away": {
+    "name": "Minnesota Timberwolves",
+    "code": "MIN"
+   },
+   "projection": {
+    "home_score": 122.7,
+    "away_score": 120.5
+   },
+   "win_probability": {
+    "home": 0.565,
+    "away": 0.435
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Miami Heat ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -3.0,
+    "away": 3.0
+   },
+   "total_points": 243.2,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -16.0,
+     20.0
+    ],
+    "total": [
+     217.0,
+     270.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a MIA. Margen de MIA: jugadores +2.3, Elo +0.7, equipo +1.4, cuatro factores +4.0.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.9 puntos para MIA.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de MIN",
+     "favors": "home",
+     "detail": "Sin Donte DiVincenzo: MIN pierde 0.9 puntos.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909836",
+   "espn_game_id": "401909836",
+   "starts_at": "2026-10-21T23:30Z",
+   "home": {
+    "name": "Brooklyn Nets",
+    "code": "BKN"
+   },
+   "away": {
+    "name": "Charlotte Hornets",
+    "code": "CHA"
+   },
+   "projection": {
+    "home_score": 112.0,
+    "away_score": 119.6
+   },
+   "win_probability": {
+    "home": 0.2898,
+    "away": 0.7102
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Charlotte Hornets ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 8.0,
+    "away": -8.0
+   },
+   "total_points": 231.6,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -26.0,
+     10.0
+    ],
+    "total": [
+     206.0,
+     258.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +7.6, Elo +8.4, equipo +9.8, cuatro factores +10.5.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de CHA vale 9.4 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para BKN.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de CHA",
+     "favors": "home",
+     "detail": "Sin Kon Knueppel, Coby White, Grant Williams: CHA pierde 3.1 puntos.",
      "supports_pick": false
     }
    ]
