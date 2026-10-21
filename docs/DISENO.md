@@ -73,6 +73,13 @@ temporal.
   en vivo: el roster de ESPN trae hasta 18 con los two-way, y cada uno de más le
   quitaba minutos a los titulares. En 2024-26 bajó el error de minutos de 5.07
   a 5.01 y dejó igual el de partidos.
+- **Arranque de temporada.** Los últimos 6 partidos del año pasado no
+  representan el rol: equipos que tanquean le dan 35 minutos a un suplente y
+  los contendientes descansan a sus estrellas. Por eso la base parte del
+  promedio de toda la temporada pasada y pasa a lo reciente en cuanto el
+  jugador juega: con k partidos de esta temporada, lo reciente pesa k/(k+0.5)
+  (67% tras uno, 80% tras dos). En 2024-26 bajó el error de los 3 primeros
+  partidos de 5.79 a 5.63 minutos.
 - **Novatos.** Toman sus minutos según el turno del draft, medido en la clase
   2025: top 5, 27 min; 6–14, 15; 15–30, 9; segunda ronda, 6.
 

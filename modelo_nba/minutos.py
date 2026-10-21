@@ -17,6 +17,15 @@ import numpy as np
 import pandas as pd
 
 VIDA_MEDIA_PARTIDOS = 6.0  # se ajusta en el backtest
+# Arranque de temporada: la base parte del promedio de la temporada pasada y
+# pasa a lo reciente conforme juega (peso de lo reciente = k / (k + K), con k
+# partidos de esta temporada). Sin esto, los ultimos 6 partidos del ano pasado
+# mandaban: Cody Williams en un Utah que tanqueaba (34 de base, 21 de
+# promedio) o Edwards descansando (32.7 contra 35). Medido en 2024-26: K=0.5
+# baja el error de los 3 primeros partidos de 5.79 a 5.63 minutos y el de los
+# que cambiaron de equipo de 6.84 a 6.56, sin empeorar el resto (5.006 ->
+# 5.004); K mas grande arrastra el promedio viejo de mas.
+K_ARRANQUE = 0.5
 TOPE_MINUTOS = 40.0
 # Minutos base de alguien sin historial (debut). Entra a la rotacion solo si
 # faltan cuerpos.
@@ -49,7 +58,7 @@ def con_minutos_previos(jugadores: pd.DataFrame, partidos: pd.DataFrame) -> pd.D
     sobreestima su rol. Para un partido de playoffs si cuentan, porque la
     rotacion se cierra.
     """
-    info = partidos.set_index("game_id")[["fecha", "season_type"]]
+    info = partidos.set_index("game_id")[["fecha", "season_type", "season"]]
     j = jugadores.join(info, on="game_id")
     j["disponible"] = ~no_disponible(j.did_not_play, j.reason)
     j = j.sort_values(["athlete_id", "fecha"])
@@ -62,19 +71,48 @@ def con_minutos_previos(jugadores: pd.DataFrame, partidos: pd.DataFrame) -> pd.D
     # Ultimo valor de temporada regular visto ANTES de cada fila.
     disp["m_reg"] = disp.groupby("athlete_id").m_post_reg.transform(lambda s: s.shift(1).ffill())
     disp["m_base"] = np.where(disp.season_type == 3, disp.m_todos, disp.m_reg)
+    disp = _con_arranque(disp)
     j = j.merge(disp[["game_id", "athlete_id", "m_base"]], on=["game_id", "athlete_id"], how="left")
     return j
 
 
-def minutos_actuales(jugadores: pd.DataFrame, partidos: pd.DataFrame, antes_de, playoffs: bool = False) -> pd.Series:
-    """Base de minutos de cada jugador con todo lo jugado antes de `antes_de`."""
-    info = partidos.set_index("game_id")[["fecha", "season_type"]]
+def _mezcla_arranque(base, prom_pasada, k):
+    """La base con el promedio de la temporada pasada, segun cuanto lleva jugado."""
+    w = k / (k + K_ARRANQUE)
+    return np.where(pd.notna(prom_pasada) & pd.notna(base), w * base + (1 - w) * prom_pasada, base)
+
+
+def _con_arranque(disp: pd.DataFrame) -> pd.DataFrame:
+    """`m_base` de temporada regular con el arranque de temporada (ver K_ARRANQUE)."""
+    reg = disp.season_type != 3
+    prom = disp[reg].groupby(["athlete_id", "season"]).minutes.mean().rename("prom_pasada").reset_index()
+    prom["season"] += 1
+    disp = disp.merge(prom, on=["athlete_id", "season"], how="left").sort_values(["athlete_id", "fecha"])
+    disp["k_temp"] = disp[disp.season_type != 3].groupby(["athlete_id", "season"]).cumcount()
+    mezcla = _mezcla_arranque(disp.m_base, disp.prom_pasada, disp.k_temp)
+    disp["m_base"] = np.where(disp.season_type != 3, mezcla, disp.m_base)
+    return disp.drop(columns=["prom_pasada", "k_temp"])
+
+
+def minutos_actuales(jugadores: pd.DataFrame, partidos: pd.DataFrame, antes_de, playoffs: bool = False,
+                     temporada: int | None = None) -> pd.Series:
+    """Base de minutos de cada jugador con todo lo jugado antes de `antes_de`.
+
+    Con `temporada` (y fuera de playoffs) se aplica el arranque de temporada:
+    ver K_ARRANQUE.
+    """
+    info = partidos.set_index("game_id")[["fecha", "season_type", "season"]]
     j = jugadores.join(info, on="game_id")
     j = j[(j.fecha < antes_de) & ~no_disponible(j.did_not_play, j.reason)]
     if not playoffs:
         j = j[j.season_type != 3]
     j = j.sort_values(["athlete_id", "fecha"])
-    return j.groupby("athlete_id").minutes.agg(lambda s: _ewm(s).iloc[-1])
+    base = j.groupby("athlete_id").minutes.agg(lambda s: _ewm(s).iloc[-1])
+    if temporada is None or playoffs:
+        return base
+    k = j[j.season == temporada].groupby("athlete_id").size().reindex(base.index).fillna(0)
+    prom = j[j.season == temporada - 1].groupby("athlete_id").minutes.mean().reindex(base.index)
+    return pd.Series(_mezcla_arranque(base.values, prom.values, k.values), index=base.index)
 
 
 MODO_REPARTO = "resta"

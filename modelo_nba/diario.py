@@ -100,7 +100,7 @@ def predecir(
     corte = min(ahora, pd.Timestamp(fecha).tz_localize(ET).tz_convert("UTC"))
     R = ajustar(p, j, corte, params_r)
     bases = {
-        False: mn.minutos_actuales(j, p, corte).to_dict(),
+        False: mn.minutos_actuales(j, p, corte, temporada=temporada).to_dict(),
         True: mn.minutos_actuales(j, p, corte, playoffs=True).to_dict(),
     }
     # Los otros tres motores y el arbitro.
