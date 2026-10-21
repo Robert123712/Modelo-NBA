@@ -16,8 +16,10 @@ from __future__ import annotations
 
 import datetime as dt
 import os
+import shutil
 import subprocess
 import sys
+import tempfile
 import time
 import traceback
 
@@ -58,8 +60,32 @@ def publicar() -> None:
         if (subprocess.run(["git", "pull", "-q", "--rebase", "origin", "main"]).returncode == 0
                 and subprocess.run(["git", "push", "-q", "origin", "HEAD:main"]).returncode == 0):
             return
+        # Choque: otra corrida publico mientras esta calculaba. latest.json va
+        # en una sola linea, asi que cualquier cambio ajeno choca al rebasar y
+        # el rebase quedaba a medias, trabando todos los turnos siguientes.
+        _encima_de_lo_ultimo(msg)
+        if subprocess.run(["git", "push", "-q", "origin", "HEAD:main"]).returncode == 0:
+            return
         time.sleep(2 ** (intento + 1))
     raise RuntimeError("No se pudo publicar despues de 4 intentos")
+
+
+def _encima_de_lo_ultimo(msg: str) -> None:
+    """Lo mas nuevo del repo, con los datos de esta corrida encima.
+
+    Los datos se recalculan completos en cada corrida, asi que los de esta
+    son los buenos; del remoto se queda todo lo demas (codigo, archivos que
+    esta corrida no tiene).
+    """
+    subprocess.run(["git", "rebase", "--abort"], capture_output=True)
+    with tempfile.TemporaryDirectory() as tmp:
+        shutil.copytree("data", f"{tmp}/data")
+        subprocess.run(["git", "fetch", "-q", "origin", "main"], check=True)
+        subprocess.run(["git", "reset", "-q", "--hard", "origin/main"], check=True)
+        shutil.copytree(f"{tmp}/data", "data", dirs_exist_ok=True)
+    subprocess.run(["git", "add", "data/"], check=True)
+    if subprocess.run(["git", "diff", "--cached", "--quiet"]).returncode != 0:
+        subprocess.run(["git", "commit", "-q", "-m", msg], check=True)
 
 
 def turno() -> None:
