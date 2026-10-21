@@ -16,7 +16,15 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 
-VIDA_MEDIA_PARTIDOS = 6.0  # se ajusta en el backtest
+# Memoria corta: cuando cambia el rol de alguien, lo reciente manda. En el
+# estudio de minutos (docs/MINUTOS.md) 2 partidos fue el mejor valor en 2024-25
+# y en 2025-26; con 6, la racha de los ultimos 3 partidos seguia explicando
+# 1.3 minutos de error por cada 5 de diferencia.
+VIDA_MEDIA_PARTIDOS = 2.0
+# El modelo del marcador (spread y total) y el arbitro se quedan con 6: en
+# 2025-26 la memoria corta y las correcciones no le cambiaron el error (margen
+# 11.19 contra 11.19, total 14.82 contra 14.80). Lo nuevo es solo para props.
+VIDA_MEDIA_MARCADOR = 6.0
 # Arranque de temporada: la base parte del promedio de la temporada pasada y
 # pasa a lo reciente conforme juega (peso de lo reciente = k / (k + K), con k
 # partidos de esta temporada). Sin esto, los ultimos 6 partidos del ano pasado
@@ -42,12 +50,12 @@ def no_disponible(did_not_play: pd.Series, reason: pd.Series) -> pd.Series:
     return did_not_play & ~reason.str.upper().str.startswith("COACH")
 
 
-def _ewm(serie: pd.Series) -> pd.Series:
-    alpha = 1 - 0.5 ** (1 / VIDA_MEDIA_PARTIDOS)
+def _ewm(serie: pd.Series, vida: float | None = None) -> pd.Series:
+    alpha = 1 - 0.5 ** (1 / (vida or VIDA_MEDIA_PARTIDOS))
     return serie.ewm(alpha=alpha, adjust=True).mean()
 
 
-def con_minutos_previos(jugadores: pd.DataFrame, partidos: pd.DataFrame) -> pd.DataFrame:
+def con_minutos_previos(jugadores: pd.DataFrame, partidos: pd.DataFrame, vida: float | None = None) -> pd.DataFrame:
     """Agrega `m_base`: la base de minutos ANTES de cada partido.
 
     Se calcula una vez para todo el historico; el backtest la lee sin fuga
@@ -63,10 +71,11 @@ def con_minutos_previos(jugadores: pd.DataFrame, partidos: pd.DataFrame) -> pd.D
     j["disponible"] = ~no_disponible(j.did_not_play, j.reason)
     j = j.sort_values(["athlete_id", "fecha"])
     disp = j[j.disponible].copy()
-    disp["m_todos"] = disp.groupby("athlete_id").minutes.transform(_ewm)
+    ewm = lambda x: _ewm(x, vida)  # noqa: E731
+    disp["m_todos"] = disp.groupby("athlete_id").minutes.transform(ewm)
     disp["m_todos"] = disp.groupby("athlete_id").m_todos.shift(1)
     reg = disp[disp.season_type != 3].copy()
-    reg["m_post_reg"] = reg.groupby("athlete_id").minutes.transform(_ewm)
+    reg["m_post_reg"] = reg.groupby("athlete_id").minutes.transform(ewm)
     disp = disp.merge(reg[["game_id", "athlete_id", "m_post_reg"]], on=["game_id", "athlete_id"], how="left")
     # Ultimo valor de temporada regular visto ANTES de cada fila.
     disp["m_reg"] = disp.groupby("athlete_id").m_post_reg.transform(lambda s: s.shift(1).ffill())
@@ -95,11 +104,11 @@ def _con_arranque(disp: pd.DataFrame) -> pd.DataFrame:
 
 
 def minutos_actuales(jugadores: pd.DataFrame, partidos: pd.DataFrame, antes_de, playoffs: bool = False,
-                     temporada: int | None = None) -> pd.Series:
+                     temporada: int | None = None, vida: float | None = None) -> pd.Series:
     """Base de minutos de cada jugador con todo lo jugado antes de `antes_de`.
 
     Con `temporada` (y fuera de playoffs) se aplica el arranque de temporada:
-    ver K_ARRANQUE.
+    ver K_ARRANQUE. `vida` cambia la memoria (por omision VIDA_MEDIA_PARTIDOS).
     """
     info = partidos.set_index("game_id")[["fecha", "season_type", "season"]]
     j = jugadores.join(info, on="game_id")
@@ -107,7 +116,7 @@ def minutos_actuales(jugadores: pd.DataFrame, partidos: pd.DataFrame, antes_de, 
     if not playoffs:
         j = j[j.season_type != 3]
     j = j.sort_values(["athlete_id", "fecha"])
-    base = j.groupby("athlete_id").minutes.agg(lambda s: _ewm(s).iloc[-1])
+    base = j.groupby("athlete_id").minutes.agg(lambda s: _ewm(s, vida).iloc[-1])
     if temporada is None or playoffs:
         return base
     k = j[j.season == temporada].groupby("athlete_id").size().reindex(base.index).fillna(0)
@@ -128,6 +137,154 @@ def promedio_referencia(jugadores: pd.DataFrame, partidos: pd.DataFrame, antes_d
     usar = actual[actual["size"] >= minimo]["mean"]
     ref.loc[usar.index] = usar
     return ref
+
+
+# --- Correcciones por contexto (docs/MINUTOS.md) -----------------------------
+# Lo que la base no ve y en el estudio movio los minutos en 2024-25 y 2025-26.
+# Se suman a la base antes del reparto, asi que el equipo sigue sumando 240.
+# Los coeficientes se ajustaron en 2024-25 con todo el proceso (base, reparto
+# y paliza del simulador) y se probaron a ciegas en 2025-26.
+CORRECCION = {
+    "titular": 2.4,          # fue titular en su partido anterior
+    "regreso": -2.6,         # primer partido tras perderse 3+ de su equipo
+    "traspaso": -3.8,        # primer partido con su equipo nuevo
+    "arranque": -1.8,        # primeros 5 partidos de la temporada
+    "veterano_b2b": -1.2,    # 31+ anos y su equipo jugo ayer
+    "bajas": 0.29,           # por cada 10 minutos habituales que faltan hoy
+    "bajas_titular": -0.63,  # ... y si es titular, esto ademas
+    "faltas": -0.16,         # por cada falta por 36 minutos arriba de 3
+    "encoge": -0.1,          # acerca la base a 25 minutos
+}
+PARTIDOS_REGRESO = 3
+PARTIDOS_ARRANQUE = 5
+EDAD_VETERANO = 31.0
+VENTANA_FALTAS = 15
+
+
+def _juegos_entre(fechas_equipo: np.ndarray, desde, hasta) -> np.ndarray:
+    """Partidos del equipo con fecha en (desde, hasta); fechas ordenadas."""
+    return (np.searchsorted(fechas_equipo, hasta, side="left")
+            - np.searchsorted(fechas_equipo, desde, side="right"))
+
+
+def _fechas_equipos(partidos: pd.DataFrame) -> dict[int, np.ndarray]:
+    t = pd.concat([partidos[["fecha", "home_id"]].rename(columns={"home_id": "t"}),
+                   partidos[["fecha", "away_id"]].rename(columns={"away_id": "t"})])
+    return {int(k): np.sort(x.fecha.values) for k, x in t.groupby("t")}
+
+
+def con_rasgos(jm: pd.DataFrame, partidos: pd.DataFrame, nacimientos: dict | None = None) -> pd.DataFrame:
+    """Rasgos previos de cada fila de `con_minutos_previos` (para el backtest).
+
+    Todo con partidos anteriores: titular en su partido anterior, partidos de su
+    equipo que se perdio justo antes, traspaso, partidos de la temporada, faltas
+    por 36 y si es veterano. `bajas_eq`: minutos habituales de los companeros
+    que faltan (jugaron en los ultimos 15 dias).
+    """
+    jm = jm.sort_values(["athlete_id", "fecha"]).copy()
+    d = jm[jm.disponible].copy()
+    g = d.groupby("athlete_id")
+    d["titular_prev"] = g.starter.shift(1).eq(True)
+    d["fecha_prev"] = g.fecha.shift(1)
+    d["equipo_prev"] = g.team_id.shift(1)
+    d["k_temp"] = d.groupby(["athlete_id", "season", "season_type"]).cumcount()
+    jugo = d.minutes > 0
+    f = d.fouls.where(jugo, 0.0).groupby(d.athlete_id).transform(
+        lambda s: s.shift(1).rolling(VENTANA_FALTAS, min_periods=5).sum())
+    m = d.minutes.where(jugo, 0.0).groupby(d.athlete_id).transform(
+        lambda s: s.shift(1).rolling(VENTANA_FALTAS, min_periods=5).sum())
+    d["faltas36"] = (f / m.where(m > 0) * 36).fillna(3.0)
+    fe = _fechas_equipos(partidos)
+    fuera = np.zeros(len(d), int)
+    for t, idx in d.groupby("team_id").indices.items():
+        x = d.iloc[idx]
+        ok = x.fecha_prev.notna().values
+        n = np.zeros(len(x), int)
+        n[ok] = _juegos_entre(fe[int(t)], x.fecha_prev.values[ok], x.fecha.values[ok])
+        fuera[idx] = n
+    d["fuera"] = fuera
+    d["traspaso"] = d.equipo_prev.notna() & (d.equipo_prev != d.team_id)
+    d["veterano"] = _veterano(d.athlete_id, d.fecha, nacimientos)
+    # Bajas: los no disponibles que jugaron hace poco, con su ultima base.
+    jm["habitual"] = jm.groupby("athlete_id").m_base.ffill()
+    ult = jm.fecha.where(jm.disponible).groupby(jm.athlete_id).transform(lambda s: s.shift(1).ffill())
+    falta = ~jm.disponible & ((jm.fecha - ult) <= pd.Timedelta(days=15)) & jm.habitual.notna()
+    bajas = jm[falta].groupby(["game_id", "team_id"]).habitual.sum().rename("bajas_eq")
+    d = d.join(bajas, on=["game_id", "team_id"])
+    d["bajas_eq"] = d.bajas_eq.fillna(0.0)
+    cols = ["titular_prev", "fuera", "traspaso", "k_temp", "faltas36", "veterano", "bajas_eq"]
+    return jm.drop(columns="habitual").join(d[cols])
+
+
+def _veterano(athlete_id: pd.Series, fecha: pd.Series, nacimientos: dict | None) -> np.ndarray:
+    if not nacimientos:
+        return np.zeros(len(athlete_id), bool)
+    nac = pd.to_datetime(athlete_id.map(nacimientos), utc=True, errors="coerce")
+    edad = (pd.to_datetime(fecha, utc=True) - nac).dt.days / 365.25
+    return (edad >= EDAD_VETERANO).fillna(False).values
+
+
+def rasgos_actuales(jugadores: pd.DataFrame, partidos: pd.DataFrame, antes_de, temporada: int) -> pd.DataFrame:
+    """Los mismos rasgos que `con_rasgos`, para la corrida de hoy (sin `fuera`,
+    `veterano` ni `bajas_eq`, que dependen del equipo y el roster de hoy)."""
+    info = partidos.set_index("game_id")[["fecha", "season_type", "season"]]
+    j = jugadores.join(info, on="game_id")
+    j = j[(j.fecha < antes_de) & ~no_disponible(j.did_not_play, j.reason)].sort_values(["athlete_id", "fecha"])
+    for c, v in (("starter", False), ("fouls", np.nan)):
+        if c not in j:
+            j[c] = v
+    g = j.groupby("athlete_id")
+    ult = g.tail(1).set_index("athlete_id")
+    out = pd.DataFrame({
+        "titular_prev": ult.starter.eq(True),
+        "fecha_prev": ult.fecha,
+        "equipo_prev": ult.team_id,
+    })
+    reg = j[(j.season == temporada) & (j.season_type == 2)]
+    out["k_temp"] = reg.groupby("athlete_id").size().reindex(out.index).fillna(0).astype(int)
+    ult15 = j[j.minutes > 0].groupby("athlete_id").tail(VENTANA_FALTAS)
+    s = ult15.groupby("athlete_id")[["fouls", "minutes"]].sum()
+    n = ult15.groupby("athlete_id").size()
+    f36 = (s.fouls / s.minutes * 36).where(n >= 5)
+    out["faltas36"] = f36.reindex(out.index).fillna(3.0)
+    return out
+
+
+def juegos_fuera(partidos: pd.DataFrame, team_id: int, fecha_prev, antes_de) -> int:
+    """Partidos de su equipo desde su ultimo partido disponible hasta hoy."""
+    fe = _fechas_equipos(partidos).get(int(team_id))
+    if fe is None or fecha_prev is None or pd.isna(fecha_prev):
+        return 0
+    utc = lambda x: pd.Timestamp(x).tz_convert("UTC").tz_localize(None).to_datetime64()  # noqa: E731
+    return int(_juegos_entre(fe, utc(fecha_prev), utc(antes_de)))
+
+
+RASGOS = ["titular_prev", "fuera", "traspaso", "k_temp", "faltas36", "veterano"]
+
+
+def corregir(base: dict[int, float], rasgos: dict[int, dict], b2b: bool, bajas: float,
+             coef: dict | None = None) -> dict[int, float]:
+    """Base corregida por contexto (ver CORRECCION). Sin rasgos, queda igual."""
+    c = coef or CORRECCION
+    out = {}
+    for a, b in base.items():
+        r = rasgos.get(a)
+        if r is None or b != b:
+            out[a] = b
+            continue
+        t = float(bool(r.get("titular_prev", False)))
+        ajuste = (
+            c["titular"] * t
+            + c["regreso"] * (r.get("fuera", 0) >= PARTIDOS_REGRESO and not r.get("traspaso", False))
+            + c["traspaso"] * bool(r.get("traspaso", False))
+            + c["arranque"] * (r.get("k_temp", 99) < PARTIDOS_ARRANQUE)
+            + c["veterano_b2b"] * (bool(r.get("veterano", False)) and b2b)
+            + (c["bajas"] + c["bajas_titular"] * t) * bajas / 10
+            + c["faltas"] * (r.get("faltas36", 3.0) - 3.0)
+            + c["encoge"] * (b - 25.0)
+        )
+        out[a] = max(b + ajuste, 0.0)
+    return out
 
 
 # Alarma: proyeccion que se aleja de su promedio sin bajas que lo expliquen.

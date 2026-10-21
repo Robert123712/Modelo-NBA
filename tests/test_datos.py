@@ -93,3 +93,46 @@ def test_revision_avisa_minutos_fuera_de_lo_normal():
     assert revisar({1: 30.2, 2: 25.0}, ref, minutos_perdidos=40) == [(2, 25.0, 35.0)]
     # El que esta en duda baja por su probabilidad de jugar: no es error.
     assert revisar({2: 17.5}, ref, minutos_perdidos=0, en_duda={2}) == []
+
+
+def _historial_regreso():
+    """El 7 es titular, se pierde 3 partidos por lesion y regresa; el 8 es
+    suplente en todos."""
+    partidos, jugadores = [], []
+    inicio = pd.Timestamp("2025-10-21", tz="UTC")
+    for g in range(10):
+        partidos.append(dict(game_id=g, fecha=inicio + pd.Timedelta(days=2 * g), season_type=2, season=2026,
+                             home_id=1, away_id=2))
+        fuera = 5 <= g <= 7
+        jugadores.append(dict(game_id=g, team_id=1, athlete_id=7, minutes=0.0 if fuera else 34.0,
+                              starter=not fuera, did_not_play=fuera, reason="Left Ankle Sprain" if fuera else "",
+                              fouls=2.0))
+        jugadores.append(dict(game_id=g, team_id=1, athlete_id=8, minutes=18.0, starter=False,
+                              did_not_play=False, reason="", fouls=4.0))
+    return pd.DataFrame(partidos), pd.DataFrame(jugadores)
+
+
+def test_rasgos_iguales_en_backtest_y_en_vivo():
+    from modelo_nba import minutos as mn
+    p, j = _historial_regreso()
+    jm = mn.con_rasgos(mn.con_minutos_previos(j, p), p)
+    fila = jm[(jm.game_id == 8) & (jm.athlete_id == 7)].iloc[0]
+    assert bool(fila.titular_prev) and fila.fuera == 3 and not fila.traspaso and fila.k_temp == 5
+    corte = p.fecha[8]
+    vivo = mn.rasgos_actuales(j, p, corte, 2026).loc[7]
+    assert bool(vivo.titular_prev) and vivo.k_temp == fila.k_temp
+    assert mn.juegos_fuera(p, 1, vivo.fecha_prev, corte) == fila.fuera
+    assert abs(vivo.faltas36 - fila.faltas36) < 1e-9
+
+
+def test_correccion_por_contexto():
+    from modelo_nba.minutos import corregir
+    base = {7: 30.0, 8: 30.0}
+    titular = corregir(base, {7: {"titular_prev": True, "k_temp": 20}, 8: {"titular_prev": False, "k_temp": 20}},
+                       b2b=False, bajas=0.0)
+    assert titular[7] > titular[8]
+    regreso = corregir(base, {7: {"titular_prev": True, "fuera": 3, "k_temp": 20},
+                              8: {"titular_prev": True, "fuera": 0, "k_temp": 20}}, b2b=False, bajas=0.0)
+    assert regreso[7] < regreso[8]
+    # Sin rasgos (novato sin historial), la base no se toca.
+    assert corregir({9: 12.0}, {}, b2b=True, bajas=30.0) == {9: 12.0}

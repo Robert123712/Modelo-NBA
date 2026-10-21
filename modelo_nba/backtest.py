@@ -37,7 +37,7 @@ def correr(
     tipos=(2, 3, 5),
 ) -> pd.DataFrame:
     params = params or Parametros()
-    jm = mn.con_minutos_previos(jugadores, partidos)
+    jm = mn.con_minutos_previos(jugadores, partidos, vida=mn.VIDA_MEDIA_MARCADOR)
     por_partido = {gid: x for gid, x in jm[jm.disponible].groupby("game_id")}
     ctx = contexto_de(partidos).set_index("game_id")
     objetivo = partidos[(partidos.season == temporada) & partidos.season_type.isin(tipos)]
@@ -119,7 +119,7 @@ def contexto_ensamble(partidos: pd.DataFrame, jm: pd.DataFrame) -> dict[int, dic
     n = t.groupby("game_id").n.min()
     # Minutos habituales del lesionado: su ultimo promedio cuando si jugaba.
     j = jm.sort_values(["athlete_id", "fecha"]).copy()
-    alpha = 1 - 0.5 ** (1 / mn.VIDA_MEDIA_PARTIDOS)
+    alpha = 1 - 0.5 ** (1 / mn.VIDA_MEDIA_MARCADOR)
     j["m_disp"] = j.minutes.where(j.disponible)
     j["habitual"] = j.groupby("athlete_id").m_disp.transform(
         lambda s: s.ewm(alpha=alpha, ignore_na=True).mean().shift(1).ffill()

@@ -228,6 +228,7 @@ def parse_roster(data: dict) -> list[dict]:
             "prob_juega": PROB_JUEGA.get(estado, 0.5),
             "estado_conocido": estado in PROB_JUEGA,
             "posicion": (a.get("position") or {}).get("abbreviation"),
+            "nacimiento": a.get("dateOfBirth"),
         })
     return out
 

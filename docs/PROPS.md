@@ -14,9 +14,11 @@ Un prop es minutos por producción, y los dos se simulan **junto con el partido*
    así que al que está en duda se le proyecta su rol completo (y se marca
    `en_duda`).
 2. **Ruido y paliza.** Cada simulación mueve los minutos ±6 (foul trouble,
-   rachas). Por cada punto de margen arriba de 8, los titulares pierden 0.27
-   minutos y la banca los gana: medido, un titular juega 32 minutos en partido
-   cerrado y 26 cuando se decide por 30 o más.
+   rachas). Por cada punto de margen arriba de 12, los titulares pierden 0.19
+   minutos y se los lleva parejo el fondo de la banca (del noveno para abajo):
+   en 2024-26, con 30+ de diferencia el titular jugó 4.9 minutos menos de lo
+   proyectado, el sexto a octavo 0.8 más y el duodécimo en adelante 7.3 más.
+   Detalle en `docs/MINUTOS.md`.
 3. **Puntos amarrados al marcador.** Cada jugador se lleva su parte de los
    puntos de su equipo en esa simulación, según su tasa por posesión y sus
    minutos. Si el equipo anota 130, sus jugadores anotan más.

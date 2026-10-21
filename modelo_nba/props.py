@@ -12,9 +12,10 @@ junto con el partido para que las dos cosas se muevan juntas:
   pueden contradecir al marcador.
 * **Rebotes y asistencias ajustados por rival**: lo que cada defensa permite
   por posesion, respecto a la liga.
-* **Paliza.** Por cada punto de margen arriba de 8, los titulares pierden
-  minutos (medido: 32 en partido cerrado, 26 con 30+ de diferencia). Por eso
-  el prop sale de simular el partido, no de un promedio.
+* **Paliza.** Por cada punto de margen arriba de 12, los titulares pierden
+  0.19 minutos, y se los llevan del noveno hombre para abajo: el sexto a
+  octavo casi no cambia (docs/MINUTOS.md). Por eso el prop sale de simular el
+  partido, no de un promedio.
 * **Ruido.** Los puntos varian ~2.5 veces lo que daria un conteo simple
   (Poisson); rebotes y asistencias casi nada. Cada estadistica tiene su
   dispersion, y las tres de un jugador comparten sus minutos simulados, asi
@@ -50,8 +51,11 @@ class ParametrosProps:
         default_factory=lambda: {"points": 2.4, "reb": 1.05, "assists": 1.05}
     )
     sd_minutos: float = 6.0
-    paliza_umbral: float = 8.0
-    paliza_pendiente: float = 0.27  # minutos por punto de margen, titulares
+    paliza_umbral: float = 12.0
+    paliza_pendiente: float = 0.19  # minutos por punto de margen, titulares
+    # Desde que lugar de la rotacion (1 = el de mas minutos) se reparten los
+    # minutos que pierden los titulares en una paliza.
+    paliza_desde: int = 9
     # Mezcla final de la media: (simulacion, promedio de la temporada, ultimos
     # 10). Ajustada por minimos cuadrados en 2024-25; los promedios traen el
     # rol reciente que la tasa de largo plazo no ve.
@@ -262,13 +266,19 @@ def simular_props(
         titulares[np.argsort(-m)[:5]] = True
 
         # Minutos simulados: ruido propio + lo que quita una paliza a los
-        # titulares, repartido entre la banca.
+        # titulares, que se reparte parejo del noveno para abajo (incluidos
+        # los que no entran a la rotacion, que aqui no se simulan).
         exceso = np.maximum(np.abs(margen_casa) - params.paliza_umbral, 0.0)
         quita = params.paliza_pendiente * exceso
         ms = m[None, :] + rng.normal(0, params.sd_minutos, (n, len(ids)))
         ms[:, titulares] -= quita[:, None]
-        banca = ~titulares
-        if banca.any():
+        orden = sorted(mins, key=lambda a: -mins[a])
+        fondo = set(orden[params.paliza_desde - 1:])
+        if fondo:
+            recibe = np.array([a in fondo for a in ids])
+            ms[:, recibe] += (quita * titulares.sum() / len(fondo))[:, None]
+        elif (~titulares).any():
+            banca = ~titulares
             peso_b = m[banca] / m[banca].sum()
             ms[:, banca] += (quita * titulares.sum())[:, None] * peso_b[None, :]
         ms = np.clip(ms, 0, 48)

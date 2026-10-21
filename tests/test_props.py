@@ -38,9 +38,11 @@ def test_paliza_le_quita_minutos_a_los_titulares():
     _, T, _, plantel, mins = _tasas()
     cerrado = _sim(T, plantel, mins, margen=0, n=4000)
     paliza = _sim(T, plantel, mins, margen=30, n=4000)
-    titular, banca = plantel[1][0], plantel[1][7]
-    assert paliza[titular]["minutos"].mean() < cerrado[titular]["minutos"].mean() - 4
-    assert paliza[banca]["minutos"].mean() > cerrado[banca]["minutos"].mean()
+    titular, octavo = plantel[1][0], plantel[1][7]
+    # 30 de diferencia: 0.19 * (30 - 12) = 3.4 minutos menos para el titular.
+    assert paliza[titular]["minutos"].mean() < cerrado[titular]["minutos"].mean() - 3
+    # Se los lleva el fondo de la banca (del noveno para abajo), no el octavo.
+    assert abs(paliza[octavo]["minutos"].mean() - cerrado[octavo]["minutos"].mean()) < 0.3
 
 
 def test_combinados_salen_de_la_misma_simulacion():

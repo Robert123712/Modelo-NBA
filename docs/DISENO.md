@@ -66,7 +66,16 @@ temporal.
 
 - **Base de cada jugador.** Promedio exponencial de sus minutos en los partidos
   en que estuvo disponible, en cualquier equipo; un traspaso conserva su rol. Un
-  DNP del coach cuenta como 0 minutos; un DNP por lesión no cuenta.
+  DNP del coach cuenta como 0 minutos; un DNP por lesión no cuenta. Vida media:
+  6 partidos para el marcador y el árbitro, 2 para props.
+- **Correcciones por contexto (solo props).** Antes del reparto, la base se
+  mueve por lo que ella no ve: si fue titular en su partido anterior, si
+  regresa de perderse 3+ partidos o de un traspaso, sus primeros 5 partidos del
+  año, veterano en back-to-back, minutos de los compañeros que faltan, faltas
+  por 36 y un pequeño encogimiento hacia 25 minutos. No aplican en playoffs.
+  Con la memoria corta bajan el error de minutos de 5.28 a 4.85 en 2025-26; al
+  marcador no le cambiaron nada, por eso ahí no entran. Estudio en
+  `docs/MINUTOS.md`.
 - **Reparto.** Entran los 11 disponibles de mayor base y se reparten 240
   minutos: si sobran, se le resta lo mismo a todos; si faltan (bajas), se
   reparten proporcional a la base. Tope de 40 por jugador. El tope de 11 importa
