@@ -99,6 +99,7 @@ def predecir(
     # decaimiento temporal.
     corte = min(ahora, pd.Timestamp(fecha).tz_localize(ET).tz_convert("UTC"))
     R = ajustar(p, j, corte, params_r)
+    referencia_min = mn.promedio_referencia(j, p, corte, temporada).to_dict()
     bases = {
         False: mn.minutos_actuales(j, p, corte, temporada=temporada).to_dict(),
         True: mn.minutos_actuales(j, p, corte, playoffs=True).to_dict(),
@@ -284,6 +285,15 @@ def predecir(
                 for lado in ("home", "away")
             },
             "b2b": b2b,
+            # Proyecciones de minutos lejos del promedio sin bajas que lo
+            # expliquen: para revisar, no se muestran en Edgebook.
+            "revision_minutos": [
+                {"jugador": nombres[a], "proyectado": m_, "promedio": r_}
+                for lado in ("home", "away")
+                for a, m_, r_ in mn.revisar(
+                    rot[lado], referencia_min, perdidos[lado],
+                    en_duda={r["athlete_id"] for r in rosters[g[f"{lado}_id"]] if r["prob_juega"] < 1})
+            ],
             "modelos": {
                 "margen_casa": {k: round(v, 2) for k, v in margenes.items() if v == v},
                 "arbitro": {

@@ -115,6 +115,48 @@ def minutos_actuales(jugadores: pd.DataFrame, partidos: pd.DataFrame, antes_de, 
     return pd.Series(_mezcla_arranque(base.values, prom.values, k.values), index=base.index)
 
 
+def promedio_referencia(jugadores: pd.DataFrame, partidos: pd.DataFrame, antes_de, temporada: int,
+                        minimo: int = 5) -> pd.Series:
+    """Minutos por partido contra los que se revisa la proyeccion: los de esta
+    temporada si ya lleva `minimo` partidos, si no los de la pasada."""
+    info = partidos.set_index("game_id")[["fecha", "season_type", "season"]]
+    j = jugadores.join(info, on="game_id")
+    j = j[(j.fecha < antes_de) & (j.season_type != 3) & ~no_disponible(j.did_not_play, j.reason)]
+    actual = j[j.season == temporada].groupby("athlete_id").minutes.agg(["mean", "size"])
+    pasada = j[j.season == temporada - 1].groupby("athlete_id").minutes.mean()
+    ref = pasada.copy()
+    usar = actual[actual["size"] >= minimo]["mean"]
+    ref.loc[usar.index] = usar
+    return ref
+
+
+# Alarma: proyeccion que se aleja de su promedio sin bajas que lo expliquen.
+UMBRAL_REVISION = 8.0
+BAJAS_QUE_EXPLICAN = 20.0  # minutos habituales del equipo que faltan hoy
+
+
+def revisar(rotacion: dict[int, float], referencia: dict[int, float], minutos_perdidos: float,
+            umbral: float = UMBRAL_REVISION, en_duda: set | frozenset = frozenset()) -> list[tuple[int, float, float]]:
+    """(jugador, proyectado, promedio) de quien se aleja `umbral` minutos o mas.
+
+    Con bajas importantes en el equipo, que los demas jueguen mas es lo
+    esperado, asi que solo se revisan las caidas. El que esta en duda baja por
+    su probabilidad de jugar, asi que tampoco cuenta. Sirve para atrapar
+    errores como el del arranque de temporada antes de que lleguen a los props.
+    """
+    out = []
+    for a, m in rotacion.items():
+        if a in en_duda:
+            continue
+        ref = referencia.get(a)
+        if ref is None or ref != ref:
+            continue
+        d = m - ref
+        if abs(d) >= umbral and (minutos_perdidos < BAJAS_QUE_EXPLICAN or d < 0):
+            out.append((a, round(m, 1), round(float(ref), 1)))
+    return out
+
+
 MODO_REPARTO = "resta"
 
 

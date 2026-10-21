@@ -80,6 +80,11 @@ temporal.
   jugador juega: con k partidos de esta temporada, lo reciente pesa k/(k+0.5)
   (67% tras uno, 80% tras dos). En 2024-26 bajó el error de los 3 primeros
   partidos de 5.79 a 5.63 minutos.
+- **Revisión diaria.** Cada corrida anota en `latest.json → revision_minutos`
+  a quien se le proyectan 8 minutos o más lejos de su promedio (esta temporada
+  con 5+ partidos, si no la pasada) sin bajas en su equipo que lo expliquen y
+  sin estar en duda. No se muestra en Edgebook; es la alarma para atrapar
+  errores como el del arranque antes de que lleguen a los props.
 - **Novatos.** Toman sus minutos según el turno del draft, medido en la clase
   2025: top 5, 27 min; 6–14, 15; 15–30, 9; segunda ronda, 6.
 

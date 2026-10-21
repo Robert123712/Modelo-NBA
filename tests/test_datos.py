@@ -60,3 +60,36 @@ def test_all_star_no_cuenta_como_partido():
     assert not es_franquicia(32)  # EAST/WEST 2024
     assert not es_franquicia(132374)  # equipos del formato nuevo
     assert not es_franquicia(None)
+
+
+def _historial_tanque():
+    """Un suplente que juega 21 minutos y en los ultimos 8 de la temporada,
+    con su equipo tanqueando, juega 36 (el caso de Cody Williams)."""
+    from modelo_nba.minutos import minutos_actuales
+    partidos, jugadores = [], []
+    inicio = pd.Timestamp("2025-10-20", tz="UTC")
+    for g in range(70):
+        partidos.append(dict(game_id=g, fecha=inicio + pd.Timedelta(days=2 * g), season_type=2, season=2026))
+        jugadores.append(dict(game_id=g, athlete_id=7, minutes=36.0 if g >= 62 else 21.0,
+                              did_not_play=False, reason=""))
+    return pd.DataFrame(partidos), pd.DataFrame(jugadores), minutos_actuales
+
+
+def test_arranque_de_temporada_no_arrastra_el_cierre_del_ano_pasado():
+    p, j, minutos_actuales = _historial_tanque()
+    corte = pd.Timestamp("2026-10-21", tz="UTC")
+    viejo = minutos_actuales(j, p, corte)[7]
+    nuevo = minutos_actuales(j, p, corte, temporada=2027)[7]
+    assert viejo > 30  # sin la regla: el cierre manda
+    assert abs(nuevo - j.minutes.mean()) < 0.5  # con la regla: su promedio
+
+
+def test_revision_avisa_minutos_fuera_de_lo_normal():
+    from modelo_nba.minutos import revisar
+    ref = {1: 21.0, 2: 35.0, 3: 30.0}
+    rot = {1: 30.2, 2: 29.0, 3: 31.0}
+    assert {a for a, *_ in revisar(rot, ref, minutos_perdidos=0)} == {1}
+    # Con bajas grandes, que alguien suba es normal; que baje, no.
+    assert revisar({1: 30.2, 2: 25.0}, ref, minutos_perdidos=40) == [(2, 25.0, 35.0)]
+    # El que esta en duda baja por su probabilidad de jugar: no es error.
+    assert revisar({2: 17.5}, ref, minutos_perdidos=0, en_duda={2}) == []
