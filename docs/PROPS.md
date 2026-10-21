@@ -150,3 +150,16 @@ defensas contra el mismo tipo de jugador.
 Son **descriptivas**. Lo que se probó arriba aplica: en puntos y rebotes no
 predicen mejor que el azar, así que la proyección no se mueve con ellas (solo
 asistencias, con el ajuste validado).
+
+## Seguimiento para reentrenar
+
+La predicción oficial de cada partido (la de 60 minutos antes) guarda en
+`data/oficiales/AAAA-MM-DD.json → props`, por jugador: media y rango 80% de
+cada estadística, minutos proyectados, su promedio de temporada hasta ese día y
+el contexto de la proyección (`ctx`: minutos con el roster sano, factor del
+rival y de las bajas por estadística, posición y si estaba en duda). Cada
+corrida cruza las oficiales ya jugadas con su box score y escribe
+`data/props-record.json` (error contra el promedio de temporada, % dentro del
+rango 80%, sesgo). No se muestra en Edgebook: es la base para reajustar la
+mezcla, la dispersión y los ajustes de contexto cuando haya volumen (unas
+semanas, ~1,000 jugadores-partido).

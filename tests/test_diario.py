@@ -99,6 +99,8 @@ def test_corrida_completa_publica_contrato_y_oficial(monkeypatch, tmp_path):
     pr = oficiales["9001"]["props"]
     assert pr and {"a", "j", "lado", "min", "s"} <= set(pr[0])
     assert len(pr[0]["s"]["puntos"]) == 3
+    # Con el contexto de la proyeccion, para entrenar despues.
+    assert {"rival", "bajas", "duda"} <= set(pr[0]["ctx"])
 
     # Una corrida a 45 minutos no reemplaza la oficial, y el partido sigue
     # publicado aunque ya no este en "pre".

@@ -304,7 +304,8 @@ def predecir(
             "proyeccion": proy,
             "mercados": m,
             # Lo proyectado por jugador, para calificarlo contra su box score.
-            **({"props": seguimiento.compacto(props_juego, prom_props)} if "error" not in props_juego else {}),
+            **({"props": seguimiento.compacto(
+                props_juego, prom_props, {a: x["info"] for a, x in sims_props.items()})} if "error" not in props_juego else {}),
         })
 
     fecha_s = fecha.isoformat()

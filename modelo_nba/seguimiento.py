@@ -36,11 +36,15 @@ DIAS_SERIE = 30
 POR_JUGADOR = 5
 
 
-def compacto(props_juego: dict, prom: pd.DataFrame | None) -> list[dict]:
+def compacto(props_juego: dict, prom: pd.DataFrame | None, infos: dict | None = None) -> list[dict]:
     """Lo que se guarda en la oficial de cada jugador: chico a proposito.
 
     `s`: estadistica -> [media, p10, p90]. `prom`: promedio de la temporada de
     puntos, rebotes y asistencias hasta ese dia (la vara a la que le debe ganar).
+    `ctx` (de `infos`, el `info` de simular_props): lo que movio la proyeccion,
+    para poder entrenar despues contra el resultado: minutos con el roster
+    sano, factor del rival y de las bajas por estadistica, posicion y si estaba
+    en duda.
     """
     out = []
     for lado in ("home", "away"):
@@ -50,6 +54,15 @@ def compacto(props_juego: dict, prom: pd.DataFrame | None) -> list[dict]:
                 "a": a, "j": x["jugador"], "lado": lado, "min": x["minutos"],
                 "s": {k: [round(x[k]["media"], 2), x[k]["p10"], x[k]["p90"]] for k in STATS},
             }
+            info = (infos or {}).get(a)
+            if info:
+                fila["ctx"] = {
+                    "min_sano": None if info.get("minutos_completo") is None else round(info["minutos_completo"], 1),
+                    "rival": {k: round(v, 3) for k, v in info["rival"].items()},
+                    "bajas": {k: round(v, 3) for k, v in info["bajas"].items()},
+                    "grupo": info.get("grupo"),
+                    "duda": bool(x.get("en_duda")),
+                }
             if prom is not None and a in prom.index:
                 base = {c: float(prom.at[a, ("temporada", c)]) for c in BASE.values()}
                 if all(v == v for v in base.values()):
