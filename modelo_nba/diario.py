@@ -15,7 +15,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from . import VERSION, datos, emitir, espn, historico, props, reporte_nba, seguimiento, tendencias
+from . import VERSION, datos, emitir, espn, historico, props, record, reporte_nba, seguimiento, tendencias
 from . import minutos as mn
 from .mercados import mercados
 from .motores import elo, equipos, factores
@@ -316,6 +316,16 @@ def predecir(
         emitir.escribir_si_cambia(salida / "props-record.json",
                                   seguimiento.calificar(salida / "oficiales", j, p), compacto=True)
     except Exception:  # noqa: BLE001 -- el seguimiento nunca tumba la corrida
+        pass
+    # Record para Edgebook: las oficiales contra el marcador final y el cierre.
+    try:
+        try:
+            cierre = historico.lineas_de_cierre()
+        except Exception:  # noqa: BLE001 -- sin cierre se califica igual
+            cierre = None
+        emitir.escribir_si_cambia(salida / "edgebook-metrics.json",
+                                  record.construir(salida / "oficiales", p, cierre, generado))
+    except Exception:  # noqa: BLE001
         pass
     else:
         ruta = salida / "oficiales" / f"{fecha_s}.json"

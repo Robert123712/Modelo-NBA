@@ -52,6 +52,7 @@ bajarlos.
 | `data/edgebook-latest.json` | Envelope que lee Edgebook (mismo contrato que MLB y NFL) |
 | `data/latest.json` | Detalle por partido: rotación proyectada, desglose, escaleras de mercado y props |
 | `data/oficiales/AAAA-MM-DD.json` | La predicción que se califica: la última con ≥ 60 min de anticipación |
+| `data/edgebook-metrics.json` | Récord para Edgebook: las oficiales contra el marcador final y la línea de cierre (mismo formato que NFL) |
 | `data/props-record.json` | Seguimiento de props: lo proyectado en la oficial contra el box score real, por estadística y jugador |
 | `data/box/` | Box scores de ESPN que hoopR todavía no publica |
 
