@@ -1,11 +1,11 @@
 {
  "schema_version": "1.0",
  "sport": "NBA",
- "generated_at": "2026-10-22T14:37:18.288635Z",
+ "generated_at": "2026-10-22T14:38:51.470805Z",
  "minimum_meaningful": 100,
  "versions": [
   {
-   "model_version": "nba-0.6.0",
+   "model_version": "nba-0.7.0",
    "unlabeled": false,
    "from": null,
    "to": null,

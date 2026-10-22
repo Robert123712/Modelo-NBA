@@ -1,10 +1,10 @@
 {
  "401909093": {
-  "generated_at": "2026-10-22T14:37:18.288635Z",
-  "model_version": "nba-0.6.0",
+  "generated_at": "2026-10-22T14:38:51.470805Z",
+  "model_version": "nba-0.7.0",
   "game_id": 401909093,
   "starts_at": "2026-10-22T23:00Z",
-  "minutos_antes": 502.7,
+  "minutos_antes": 501.1,
   "proyeccion": {
    "league_game_id": "401909093",
    "espn_game_id": "401909093",
@@ -550,41 +550,41 @@
     "a": 4431678,
     "j": "Tyrese Maxey",
     "lado": "home",
-    "min": 33.0,
+    "min": 33.1,
     "s": {
      "puntos": [
-      22.54,
+      22.5,
       12.0,
       34.0
      ],
      "rebotes": [
-      3.55,
+      3.54,
       1.0,
       6.0
      ],
      "asistencias": [
-      5.61,
+      5.62,
       2.0,
       9.0
      ],
      "pra": [
-      31.7,
+      31.66,
       19.0,
-      45.10000000000218
+      45.0
      ],
      "puntos_rebotes": [
-      26.09,
+      26.05,
       15.0,
       39.0
      ],
      "puntos_asistencias": [
-      28.15,
+      28.12,
       16.0,
       41.0
      ]
     },
     "ctx": {
-     "min_sano": 34.0,
+     "min_sano": 34.1,
      "rival": {
       "points": 1.0,
       "reb": 0.973,
@@ -611,20 +611,20 @@
     "a": 5124612,
     "j": "VJ Edgecombe",
     "lado": "home",
-    "min": 31.9,
+    "min": 32.1,
     "s": {
      "puntos": [
-      13.78,
+      13.76,
       6.0,
-      22.0
+      23.0
      ],
      "rebotes": [
-      5.52,
+      5.53,
       2.0,
       9.0
      ],
      "asistencias": [
-      4.04,
+      4.05,
       1.0,
       7.0
      ],
@@ -634,18 +634,18 @@
       34.0
      ],
      "puntos_rebotes": [
-      19.3,
+      19.28,
       10.0,
       29.0
      ],
      "puntos_asistencias": [
-      17.82,
+      17.81,
       9.0,
       27.0
      ]
     },
     "ctx": {
-     "min_sano": 32.8,
+     "min_sano": 33.0,
      "rival": {
       "points": 1.0,
       "reb": 0.973,
@@ -672,41 +672,41 @@
     "a": 3917376,
     "j": "Jaylen Brown",
     "lado": "home",
-    "min": 30.5,
+    "min": 30.9,
     "s": {
      "puntos": [
-      23.3,
+      23.48,
       12.0,
-      35.0
+      36.0
      ],
      "rebotes": [
-      6.29,
+      6.34,
       3.0,
       10.0
      ],
      "asistencias": [
-      4.57,
+      4.61,
       2.0,
       8.0
      ],
      "pra": [
-      34.16,
-      20.0,
+      34.43,
+      21.0,
       49.0
      ],
      "puntos_rebotes": [
-      29.59,
+      29.82,
       17.0,
       43.0
      ],
      "puntos_asistencias": [
-      27.87,
+      28.09,
       16.0,
       41.0
      ]
     },
     "ctx": {
-     "min_sano": 31.3,
+     "min_sano": 31.7,
      "rival": {
       "points": 1.0,
       "reb": 0.973,
@@ -733,41 +733,41 @@
     "a": 3059318,
     "j": "Joel Embiid",
     "lado": "home",
-    "min": 29.2,
+    "min": 29.8,
     "s": {
      "puntos": [
-      24.13,
-      12.0,
+      24.34,
+      13.0,
       37.0
      ],
      "rebotes": [
-      8.21,
+      8.29,
       4.0,
       13.0
      ],
      "asistencias": [
-      4.65,
+      4.71,
       2.0,
       8.0
      ],
      "pra": [
-      37.0,
-      22.0,
+      37.34,
+      23.0,
       53.0
      ],
      "puntos_rebotes": [
-      32.35,
+      32.64,
       19.0,
       47.0
      ],
      "puntos_asistencias": [
-      28.78,
+      29.05,
       16.0,
       43.0
      ]
     },
     "ctx": {
-     "min_sano": 30.1,
+     "min_sano": 30.8,
      "rival": {
       "points": 1.0,
       "reb": 0.973,
@@ -794,41 +794,41 @@
     "a": 1966,
     "j": "LeBron James",
     "lado": "home",
-    "min": 27.2,
+    "min": 28.3,
     "s": {
      "puntos": [
-      17.71,
+      18.04,
       8.0,
-      28.0
+      29.0
      ],
      "rebotes": [
-      6.12,
+      6.23,
       3.0,
       10.0
      ],
      "asistencias": [
-      7.19,
+      7.35,
       3.0,
-      11.0
+      12.0
      ],
      "pra": [
-      31.01,
-      18.0,
+      31.62,
+      19.0,
       45.0
      ],
      "puntos_rebotes": [
-      23.82,
+      24.28,
       13.0,
       36.0
      ],
      "puntos_asistencias": [
-      24.89,
+      25.39,
       14.0,
-      37.0
+      38.0
      ]
     },
     "ctx": {
-     "min_sano": 28.1,
+     "min_sano": 29.2,
      "rival": {
       "points": 1.0,
       "reb": 0.973,
@@ -855,41 +855,41 @@
     "a": 2581018,
     "j": "Kentavious Caldwell-Pope",
     "lado": "home",
-    "min": 18.7,
+    "min": 17.5,
     "s": {
      "puntos": [
-      6.89,
-      2.0,
+      6.63,
+      1.0,
       13.0
      ],
      "rebotes": [
-      2.24,
+      2.19,
       0.0,
-      5.0
+      4.0
      ],
      "asistencias": [
-      1.81,
+      1.74,
       0.0,
       4.0
      ],
      "pra": [
-      10.94,
+      10.56,
       4.0,
-      19.0
+      18.0
      ],
      "puntos_rebotes": [
-      9.13,
+      8.82,
       3.0,
       16.0
      ],
      "puntos_asistencias": [
-      8.7,
-      3.0,
-      16.0
+      8.38,
+      2.0,
+      15.0
      ]
     },
     "ctx": {
-     "min_sano": 18.9,
+     "min_sano": 17.6,
      "rival": {
       "points": 1.0,
       "reb": 0.973,
@@ -916,41 +916,41 @@
     "a": 5099752,
     "j": "Rayan Rupert",
     "lado": "home",
-    "min": 17.0,
+    "min": 15.9,
     "s": {
      "puntos": [
-      7.21,
-      2.0,
-      14.0
+      6.96,
+      1.0,
+      13.0
      ],
      "rebotes": [
-      4.14,
+      4.06,
       1.0,
       7.0
      ],
      "asistencias": [
-      1.73,
+      1.66,
       0.0,
       4.0
      ],
      "pra": [
-      13.08,
+      12.69,
       5.0,
       22.0
      ],
      "puntos_rebotes": [
-      11.35,
+      11.02,
       4.0,
-      20.0
+      19.0
      ],
      "puntos_asistencias": [
-      8.94,
-      3.0,
+      8.62,
+      2.0,
       16.0
      ]
     },
     "ctx": {
-     "min_sano": 17.2,
+     "min_sano": 16.1,
      "rival": {
       "points": 1.0,
       "reb": 0.973,
@@ -977,41 +977,41 @@
     "a": 4351851,
     "j": "Anfernee Simons",
     "lado": "home",
-    "min": 16.8,
+    "min": 15.9,
     "s": {
      "puntos": [
-      11.34,
-      4.0,
+      11.0,
+      3.0,
       20.0
      ],
      "rebotes": [
-      2.17,
+      2.14,
       0.0,
       4.0
      ],
      "asistencias": [
-      2.08,
+      2.03,
       0.0,
       4.0
      ],
      "pra": [
-      15.6,
+      15.18,
       6.0,
       26.0
      ],
      "puntos_rebotes": [
-      13.51,
-      5.0,
+      13.15,
+      4.0,
       23.0
      ],
      "puntos_asistencias": [
-      13.43,
-      5.0,
+      13.04,
+      4.0,
       23.0
      ]
     },
     "ctx": {
-     "min_sano": 16.9,
+     "min_sano": 16.0,
      "rival": {
       "points": 1.0,
       "reb": 0.973,
@@ -1038,7 +1038,7 @@
     "a": 3992,
     "j": "James Harden",
     "lado": "away",
-    "min": 33.5,
+    "min": 33.6,
     "s": {
      "puntos": [
       20.83,
@@ -1051,12 +1051,12 @@
       8.0
      ],
      "asistencias": [
-      7.63,
+      7.64,
       4.0,
       12.0
      ],
      "pra": [
-      33.45,
+      33.46,
       21.0,
       47.0
      ],
@@ -1066,7 +1066,7 @@
       38.0
      ],
      "puntos_asistencias": [
-      28.46,
+      28.48,
       17.0,
       41.0
      ]
@@ -1099,41 +1099,41 @@
     "a": 3908809,
     "j": "Donovan Mitchell",
     "lado": "away",
-    "min": 32.2,
+    "min": 32.4,
     "s": {
      "puntos": [
-      25.78,
+      25.79,
       14.0,
-      39.0
+      38.0
      ],
      "rebotes": [
-      4.78,
+      4.81,
       2.0,
       8.0
      ],
      "asistencias": [
-      4.89,
+      4.9,
       2.0,
       8.0
      ],
      "pra": [
-      35.44,
+      35.49,
       22.0,
       50.0
      ],
      "puntos_rebotes": [
-      30.56,
+      30.6,
       18.0,
       44.0
      ],
      "puntos_asistencias": [
-      30.66,
+      30.69,
       18.0,
       44.0
      ]
     },
     "ctx": {
-     "min_sano": 33.1,
+     "min_sano": 33.3,
      "rival": {
       "points": 1.0,
       "reb": 1.043,
@@ -1160,41 +1160,41 @@
     "a": 4432158,
     "j": "Evan Mobley",
     "lado": "away",
-    "min": 31.0,
+    "min": 31.4,
     "s": {
      "puntos": [
-      17.62,
-      8.0,
+      17.77,
+      9.0,
       28.0
      ],
      "rebotes": [
-      9.62,
+      9.68,
       5.0,
-      14.0
+      15.0
      ],
      "asistencias": [
-      3.59,
+      3.61,
       1.0,
       6.0
      ],
      "pra": [
-      30.82,
+      31.07,
       19.0,
       44.0
      ],
      "puntos_rebotes": [
-      27.24,
+      27.45,
       16.0,
-      40.0
+      39.0
      ],
      "puntos_asistencias": [
-      21.21,
+      21.39,
       11.0,
       32.0
      ]
     },
     "ctx": {
-     "min_sano": 31.9,
+     "min_sano": 32.3,
      "rival": {
       "points": 1.0,
       "reb": 1.043,
@@ -1221,41 +1221,41 @@
     "a": 4066328,
     "j": "Jarrett Allen",
     "lado": "away",
-    "min": 26.7,
+    "min": 27.9,
     "s": {
      "puntos": [
-      14.84,
-      6.0,
-      24.0
+      15.22,
+      7.0,
+      25.0
      ],
      "rebotes": [
-      9.07,
-      4.0,
+      9.28,
+      5.0,
       14.0
      ],
      "asistencias": [
-      1.55,
+      1.6,
       0.0,
       3.0
      ],
      "pra": [
-      25.46,
-      14.0,
-      37.0
+      26.1,
+      15.0,
+      38.0
      ],
      "puntos_rebotes": [
-      23.91,
-      13.0,
+      24.5,
+      14.0,
       36.0
      ],
      "puntos_asistencias": [
-      16.39,
+      16.82,
       8.0,
-      26.0
+      27.0
      ]
     },
     "ctx": {
-     "min_sano": 27.6,
+     "min_sano": 28.8,
      "rival": {
       "points": 1.0,
       "reb": 1.043,
@@ -1279,44 +1279,105 @@
     }
    },
    {
-    "a": 4683747,
-    "j": "Jaylon Tyson",
+    "a": 4576087,
+    "j": "Peyton Watson",
     "lado": "away",
-    "min": 23.9,
+    "min": 26.5,
     "s": {
      "puntos": [
-      12.01,
-      5.0,
-      20.0
+      13.35,
+      6.0,
+      22.0
      ],
      "rebotes": [
-      4.87,
+      4.78,
       2.0,
       8.0
      ],
      "asistencias": [
-      2.41,
+      2.27,
+      0.0,
+      4.0
+     ],
+     "pra": [
+      20.39,
+      11.0,
+      31.0
+     ],
+     "puntos_rebotes": [
+      18.13,
+      9.0,
+      28.0
+     ],
+     "puntos_asistencias": [
+      15.62,
+      7.0,
+      25.0
+     ]
+    },
+    "ctx": {
+     "min_sano": 27.4,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.043,
+      "assists": 0.99
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
+    "prom": {
+     "puntos": 17.7,
+     "rebotes": 4.8,
+     "asistencias": 2.37,
+     "pra": 24.87,
+     "puntos_rebotes": 22.5,
+     "puntos_asistencias": 20.07
+    }
+   },
+   {
+    "a": 4683747,
+    "j": "Jaylon Tyson",
+    "lado": "away",
+    "min": 22.4,
+    "s": {
+     "puntos": [
+      11.49,
+      4.0,
+      20.0
+     ],
+     "rebotes": [
+      4.69,
+      2.0,
+      8.0
+     ],
+     "asistencias": [
+      2.33,
       0.0,
       5.0
      ],
      "pra": [
-      19.29,
-      10.0,
-      30.0
+      18.51,
+      9.0,
+      29.0
      ],
      "puntos_rebotes": [
-      16.88,
+      16.19,
       8.0,
       26.0
      ],
      "puntos_asistencias": [
-      14.42,
+      13.82,
       6.0,
       23.0
      ]
     },
     "ctx": {
-     "min_sano": 24.8,
+     "min_sano": 22.6,
      "rival": {
       "points": 1.0,
       "reb": 1.043,
@@ -1343,41 +1404,41 @@
     "a": 4066757,
     "j": "Sam Merrill",
     "lado": "away",
-    "min": 23.6,
+    "min": 21.5,
     "s": {
      "puntos": [
-      10.86,
+      10.33,
       4.0,
-      19.0
+      18.0
      ],
      "rebotes": [
-      2.84,
+      2.75,
       1.0,
       5.0
      ],
      "asistencias": [
-      2.38,
+      2.23,
       0.0,
-      5.0
+      4.0
      ],
      "pra": [
-      16.08,
-      8.0,
+      15.31,
+      7.0,
       25.0
      ],
      "puntos_rebotes": [
-      13.7,
-      6.0,
+      13.08,
+      5.0,
       22.0
      ],
      "puntos_asistencias": [
-      13.24,
-      6.0,
-      22.0
+      12.56,
+      5.0,
+      21.0
      ]
     },
     "ctx": {
-     "min_sano": 23.8,
+     "min_sano": 21.6,
      "rival": {
       "points": 1.0,
       "reb": 1.043,
@@ -1401,105 +1462,44 @@
     }
    },
    {
-    "a": 4576087,
-    "j": "Peyton Watson",
-    "lado": "away",
-    "min": 23.2,
-    "s": {
-     "puntos": [
-      12.46,
-      5.0,
-      21.0
-     ],
-     "rebotes": [
-      4.47,
-      2.0,
-      8.0
-     ],
-     "asistencias": [
-      2.1,
-      0.0,
-      4.0
-     ],
-     "pra": [
-      19.03,
-      9.0,
-      29.0
-     ],
-     "puntos_rebotes": [
-      16.93,
-      8.0,
-      27.0
-     ],
-     "puntos_asistencias": [
-      14.56,
-      6.0,
-      24.0
-     ]
-    },
-    "ctx": {
-     "min_sano": 23.4,
-     "rival": {
-      "points": 1.0,
-      "reb": 1.043,
-      "assists": 0.99
-     },
-     "bajas": {
-      "points": 1.0,
-      "reb": 1.0,
-      "assists": 1.0
-     },
-     "grupo": "G",
-     "duda": false
-    },
-    "prom": {
-     "puntos": 17.7,
-     "rebotes": 4.8,
-     "asistencias": 2.37,
-     "pra": 24.87,
-     "puntos_rebotes": 22.5,
-     "puntos_asistencias": 20.07
-    }
-   },
-   {
     "a": 4701233,
     "j": "Craig Porter Jr.",
     "lado": "away",
-    "min": 15.4,
+    "min": 14.9,
     "s": {
      "puntos": [
-      4.22,
+      4.12,
       0.0,
       9.0
      ],
      "rebotes": [
-      3.52,
+      3.45,
       1.0,
       7.0
      ],
      "asistencias": [
-      2.9,
+      2.84,
       0.0,
       6.0
      ],
      "pra": [
-      10.63,
-      4.0,
+      10.42,
+      3.0,
       18.0
      ],
      "puntos_rebotes": [
-      7.73,
+      7.57,
       2.0,
       14.0
      ],
      "puntos_asistencias": [
-      7.11,
+      6.96,
       2.0,
       13.0
      ]
     },
     "ctx": {
-     "min_sano": 15.6,
+     "min_sano": 15.0,
      "rival": {
       "points": 1.0,
       "reb": 1.043,
@@ -1526,11 +1526,11 @@
   "tardia": false
  },
  "401909094": {
-  "generated_at": "2026-10-22T14:37:18.288635Z",
-  "model_version": "nba-0.6.0",
+  "generated_at": "2026-10-22T14:38:51.470805Z",
+  "model_version": "nba-0.7.0",
   "game_id": 401909094,
   "starts_at": "2026-10-23T01:30Z",
-  "minutos_antes": 652.7,
+  "minutos_antes": 651.1,
   "proyeccion": {
    "league_game_id": "401909094",
    "espn_game_id": "401909094",
@@ -2075,41 +2075,41 @@
     "a": 4278073,
     "j": "Shai Gilgeous-Alexander",
     "lado": "home",
-    "min": 32.2,
+    "min": 32.1,
     "s": {
      "puntos": [
-      29.45,
+      29.37,
       17.0,
       43.0
      ],
      "rebotes": [
-      4.1,
+      4.09,
       1.0,
       7.0
      ],
      "asistencias": [
-      6.72,
+      6.7,
       3.0,
       11.0
      ],
      "pra": [
-      40.27,
+      40.16,
       25.0,
       56.0
      ],
      "puntos_rebotes": [
-      33.55,
+      33.46,
       20.0,
       48.0
      ],
      "puntos_asistencias": [
-      36.17,
+      36.07,
       22.0,
       51.0
      ]
     },
     "ctx": {
-     "min_sano": 33.4,
+     "min_sano": 33.3,
      "rival": {
       "points": 1.0,
       "reb": 1.002,
@@ -2136,41 +2136,41 @@
     "a": 4593803,
     "j": "Jalen Williams",
     "lado": "home",
-    "min": 28.4,
+    "min": 29.0,
     "s": {
      "puntos": [
-      17.58,
-      8.0,
+      17.89,
+      9.0,
       28.0
      ],
      "rebotes": [
-      4.67,
+      4.72,
       2.0,
       8.0
      ],
      "asistencias": [
-      4.92,
+      4.98,
       2.0,
       8.0
      ],
      "pra": [
-      27.17,
+      27.59,
       16.0,
       40.0
      ],
      "puntos_rebotes": [
-      22.25,
+      22.61,
       12.0,
       34.0
      ],
      "puntos_asistencias": [
-      22.5,
+      22.87,
       12.0,
       34.0
      ]
     },
     "ctx": {
-     "min_sano": 29.5,
+     "min_sano": 30.1,
      "rival": {
       "points": 1.0,
       "reb": 1.002,
@@ -2197,41 +2197,41 @@
     "a": 4433255,
     "j": "Chet Holmgren",
     "lado": "home",
-    "min": 28.2,
+    "min": 28.8,
     "s": {
      "puntos": [
-      16.06,
-      7.0,
+      16.31,
+      8.0,
       26.0
      ],
      "rebotes": [
-      8.78,
+      8.87,
       4.0,
       14.0
      ],
      "asistencias": [
-      1.67,
+      1.69,
       0.0,
-      3.0
+      4.0
      ],
      "pra": [
-      26.5,
-      15.0,
+      26.87,
+      16.0,
       39.0
      ],
      "puntos_rebotes": [
-      24.84,
+      25.18,
       14.0,
       37.0
      ],
      "puntos_asistencias": [
-      17.72,
+      18.0,
       9.0,
       28.0
      ]
     },
     "ctx": {
-     "min_sano": 29.4,
+     "min_sano": 30.0,
      "rival": {
       "points": 1.0,
       "reb": 1.002,
@@ -2258,41 +2258,41 @@
     "a": 4683692,
     "j": "Cason Wallace",
     "lado": "home",
-    "min": 23.5,
+    "min": 25.0,
     "s": {
      "puntos": [
-      8.14,
-      2.0,
+      8.45,
+      3.0,
       15.0
      ],
      "rebotes": [
-      3.08,
+      3.16,
       1.0,
       6.0
      ],
      "asistencias": [
-      2.39,
+      2.48,
       0.0,
       5.0
      ],
      "pra": [
-      13.61,
-      6.0,
+      14.09,
+      7.0,
       22.0
      ],
      "puntos_rebotes": [
-      11.22,
+      11.61,
       5.0,
       19.0
      ],
      "puntos_asistencias": [
-      10.53,
+      10.93,
       4.0,
       18.0
      ]
     },
     "ctx": {
-     "min_sano": 24.7,
+     "min_sano": 26.2,
      "rival": {
       "points": 1.0,
       "reb": 1.002,
@@ -2316,105 +2316,44 @@
     }
    },
    {
-    "a": 4900671,
-    "j": "Ajay Mitchell",
-    "lado": "home",
-    "min": 21.9,
-    "s": {
-     "puntos": [
-      11.04,
-      4.0,
-      19.0
-     ],
-     "rebotes": [
-      3.03,
-      1.0,
-      6.0
-     ],
-     "asistencias": [
-      3.47,
-      1.0,
-      6.0
-     ],
-     "pra": [
-      17.54,
-      8.0,
-      28.0
-     ],
-     "puntos_rebotes": [
-      14.07,
-      6.0,
-      23.0
-     ],
-     "puntos_asistencias": [
-      14.52,
-      6.0,
-      24.0
-     ]
-    },
-    "ctx": {
-     "min_sano": 23.0,
-     "rival": {
-      "points": 1.0,
-      "reb": 1.002,
-      "assists": 1.001
-     },
-     "bajas": {
-      "points": 1.0,
-      "reb": 1.0,
-      "assists": 1.0
-     },
-     "grupo": "G",
-     "duda": false
-    },
-    "prom": {
-     "puntos": 12.8,
-     "rebotes": 3.3,
-     "asistencias": 3.67,
-     "pra": 19.77,
-     "puntos_rebotes": 16.1,
-     "puntos_asistencias": 16.47
-    }
-   },
-   {
     "a": 4222252,
     "j": "Isaiah Hartenstein",
     "lado": "home",
-    "min": 21.3,
+    "min": 22.4,
     "s": {
      "puntos": [
-      7.7,
+      7.91,
       2.0,
-      14.0
+      15.0
      ],
      "rebotes": [
-      8.64,
+      8.81,
       4.0,
       14.0
      ],
      "asistencias": [
-      2.99,
+      3.07,
       1.0,
       6.0
      ],
      "pra": [
-      19.32,
+      19.79,
       10.0,
       30.0
      ],
      "puntos_rebotes": [
-      16.34,
+      16.72,
       8.0,
       26.0
      ],
      "puntos_asistencias": [
-      10.68,
+      10.98,
       4.0,
-      18.0
+      19.0
      ]
     },
     "ctx": {
-     "min_sano": 21.6,
+     "min_sano": 23.6,
      "rival": {
       "points": 1.0,
       "reb": 1.002,
@@ -2438,44 +2377,105 @@
     }
    },
    {
+    "a": 4900671,
+    "j": "Ajay Mitchell",
+    "lado": "home",
+    "min": 20.9,
+    "s": {
+     "puntos": [
+      10.81,
+      4.0,
+      19.0
+     ],
+     "rebotes": [
+      2.99,
+      1.0,
+      6.0
+     ],
+     "asistencias": [
+      3.39,
+      1.0,
+      6.0
+     ],
+     "pra": [
+      17.18,
+      8.0,
+      27.0
+     ],
+     "puntos_rebotes": [
+      13.8,
+      6.0,
+      23.0
+     ],
+     "puntos_asistencias": [
+      14.2,
+      6.0,
+      23.0
+     ]
+    },
+    "ctx": {
+     "min_sano": 21.1,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.002,
+      "assists": 1.001
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
+    "prom": {
+     "puntos": 12.8,
+     "rebotes": 3.3,
+     "asistencias": 3.67,
+     "pra": 19.77,
+     "puntos_rebotes": 16.1,
+     "puntos_asistencias": 16.47
+    }
+   },
+   {
     "a": 4683778,
     "j": "Jared McCain",
     "lado": "home",
-    "min": 17.7,
+    "min": 16.8,
     "s": {
      "puntos": [
-      9.77,
+      9.46,
       3.0,
-      18.0
+      17.0
      ],
      "rebotes": [
-      2.13,
+      2.08,
       0.0,
       4.0
      ],
      "asistencias": [
-      1.38,
+      1.33,
       0.0,
       3.0
      ],
      "pra": [
-      13.28,
+      12.86,
       5.0,
       22.0
      ],
      "puntos_rebotes": [
-      11.9,
-      4.0,
-      21.0
-     ],
-     "puntos_asistencias": [
-      11.16,
+      11.53,
       4.0,
       20.0
+     ],
+     "puntos_asistencias": [
+      10.79,
+      3.0,
+      19.0
      ]
     },
     "ctx": {
-     "min_sano": 17.8,
+     "min_sano": 16.9,
      "rival": {
       "points": 1.0,
       "reb": 1.002,
@@ -2502,41 +2502,41 @@
     "a": 2991350,
     "j": "Alex Caruso",
     "lado": "home",
-    "min": 17.2,
+    "min": 16.4,
     "s": {
      "puntos": [
-      6.06,
+      5.85,
       1.0,
       12.0
      ],
      "rebotes": [
-      2.81,
+      2.74,
       0.0,
-      6.0
+      5.0
      ],
      "asistencias": [
-      1.93,
+      1.88,
       0.0,
       4.0
      ],
      "pra": [
-      10.8,
-      4.0,
-      19.0
+      10.46,
+      3.0,
+      18.0
      ],
      "puntos_rebotes": [
-      8.87,
-      3.0,
+      8.59,
+      2.0,
       16.0
      ],
      "puntos_asistencias": [
-      7.99,
+      7.72,
       2.0,
-      15.0
+      14.0
      ]
     },
     "ctx": {
-     "min_sano": 17.4,
+     "min_sano": 16.6,
      "rival": {
       "points": 1.0,
       "reb": 1.002,
@@ -2563,41 +2563,41 @@
     "a": 3936299,
     "j": "Jamal Murray",
     "lado": "away",
-    "min": 31.9,
+    "min": 32.8,
     "s": {
      "puntos": [
-      22.25,
+      22.52,
       11.0,
-      34.0
+      35.0
      ],
      "rebotes": [
-      4.13,
+      4.18,
       1.0,
       7.0
      ],
      "asistencias": [
-      6.18,
+      6.27,
       3.0,
       10.0
      ],
      "pra": [
-      32.56,
+      32.97,
       20.0,
       47.0
      ],
      "puntos_rebotes": [
-      26.38,
+      26.7,
       15.0,
-      39.0
+      40.0
      ],
      "puntos_asistencias": [
-      28.43,
-      16.0,
+      28.79,
+      17.0,
       42.0
      ]
     },
     "ctx": {
-     "min_sano": 33.0,
+     "min_sano": 33.9,
      "rival": {
       "points": 1.0,
       "reb": 0.99,
@@ -2624,41 +2624,41 @@
     "a": 3112335,
     "j": "Nikola Jokic",
     "lado": "away",
-    "min": 31.2,
+    "min": 32.2,
     "s": {
      "puntos": [
-      24.7,
+      25.07,
       13.0,
       38.0
      ],
      "rebotes": [
-      12.7,
+      12.87,
       7.0,
-      18.0
+      19.0
      ],
      "asistencias": [
-      9.24,
+      9.4,
       5.0,
       14.0
      ],
      "pra": [
-      46.63,
-      30.0,
-      64.0
+      47.35,
+      31.0,
+      65.0
      ],
      "puntos_rebotes": [
-      37.39,
+      37.94,
       23.0,
-      53.0
+      54.0
      ],
      "puntos_asistencias": [
-      33.93,
-      20.0,
+      34.47,
+      21.0,
       49.0
      ]
     },
     "ctx": {
-     "min_sano": 32.4,
+     "min_sano": 33.4,
      "rival": {
       "points": 1.0,
       "reb": 0.99,
@@ -2685,41 +2685,41 @@
     "a": 4431767,
     "j": "Christian Braun",
     "lado": "away",
-    "min": 28.5,
+    "min": 29.8,
     "s": {
      "puntos": [
-      11.71,
+      11.98,
       5.0,
       20.0
      ],
      "rebotes": [
-      4.62,
+      4.71,
       2.0,
       8.0
      ],
      "asistencias": [
-      2.2,
+      2.27,
       0.0,
       4.0
      ],
      "pra": [
-      18.53,
+      18.96,
       10.0,
-      28.0
+      29.0
      ],
      "puntos_rebotes": [
-      16.33,
+      16.69,
       8.0,
       26.0
      ],
      "puntos_asistencias": [
-      13.91,
+      14.25,
       6.0,
-      22.0
+      23.0
      ]
     },
     "ctx": {
-     "min_sano": 29.7,
+     "min_sano": 31.1,
      "rival": {
       "points": 1.0,
       "reb": 0.99,
@@ -2746,41 +2746,41 @@
     "a": 3138196,
     "j": "Cameron Johnson",
     "lado": "away",
-    "min": 27.2,
+    "min": 28.8,
     "s": {
      "puntos": [
-      12.94,
-      5.0,
+      13.44,
+      6.0,
       22.0
      ],
      "rebotes": [
-      3.91,
+      4.02,
       1.0,
       7.0
      ],
      "asistencias": [
-      2.62,
+      2.71,
       1.0,
       5.0
      ],
      "pra": [
-      19.47,
-      10.0,
-      30.0
+      20.17,
+      11.0,
+      31.0
      ],
      "puntos_rebotes": [
-      16.85,
-      8.0,
+      17.45,
+      9.0,
       27.0
      ],
      "puntos_asistencias": [
-      15.56,
-      7.0,
-      25.0
+      16.15,
+      8.0,
+      26.0
      ]
     },
     "ctx": {
-     "min_sano": 28.4,
+     "min_sano": 30.0,
      "rival": {
       "points": 1.0,
       "reb": 0.99,
@@ -2807,41 +2807,41 @@
     "a": 3064290,
     "j": "Aaron Gordon",
     "lado": "away",
-    "min": 24.9,
+    "min": 26.9,
     "s": {
      "puntos": [
-      13.44,
-      5.0,
+      14.06,
+      6.0,
       23.0
      ],
      "rebotes": [
-      5.26,
+      5.47,
       2.0,
       9.0
      ],
      "asistencias": [
-      2.87,
+      3.01,
       1.0,
-      5.0
+      6.0
      ],
      "pra": [
-      21.57,
-      11.0,
-      33.0
+      22.53,
+      12.0,
+      34.0
      ],
      "puntos_rebotes": [
-      18.7,
-      9.0,
-      29.0
+      19.52,
+      10.0,
+      30.0
      ],
      "puntos_asistencias": [
-      16.31,
-      7.0,
-      26.0
+      17.07,
+      8.0,
+      27.0
      ]
     },
     "ctx": {
-     "min_sano": 26.1,
+     "min_sano": 28.1,
      "rival": {
       "points": 1.0,
       "reb": 0.99,
@@ -2868,41 +2868,41 @@
     "a": 3978,
     "j": "DeMar DeRozan",
     "lado": "away",
-    "min": 25.3,
+    "min": 21.9,
     "s": {
      "puntos": [
-      15.79,
-      7.0,
-      26.0
+      14.45,
+      6.0,
+      24.0
      ],
      "rebotes": [
-      2.6,
+      2.42,
       0.0,
       5.0
      ],
      "asistencias": [
-      3.88,
+      3.61,
       1.0,
       7.0
      ],
      "pra": [
-      22.27,
-      12.0,
-      34.0
+      20.48,
+      10.0,
+      32.0
      ],
      "puntos_rebotes": [
-      18.39,
-      9.0,
-      29.0
+      16.87,
+      8.0,
+      27.0
      ],
      "puntos_asistencias": [
-      19.67,
-      10.0,
-      30.0
+      18.05,
+      8.0,
+      29.0
      ]
     },
     "ctx": {
-     "min_sano": 25.5,
+     "min_sano": 22.1,
      "rival": {
       "points": 1.0,
       "reb": 0.99,
@@ -2929,41 +2929,41 @@
     "a": 4592427,
     "j": "Spencer Jones",
     "lado": "away",
-    "min": 19.2,
+    "min": 16.4,
     "s": {
      "puntos": [
-      4.83,
-      1.0,
-      10.0
+      4.38,
+      0.0,
+      9.0
      ],
      "rebotes": [
-      3.33,
+      3.12,
       1.0,
       6.0
      ],
      "asistencias": [
-      0.74,
+      0.66,
       0.0,
       2.0
      ],
      "pra": [
-      8.9,
+      8.16,
       3.0,
       15.0
      ],
      "puntos_rebotes": [
-      8.16,
-      3.0,
+      7.5,
+      2.0,
       14.0
      ],
      "puntos_asistencias": [
-      5.57,
+      5.04,
       1.0,
-      11.0
+      10.0
      ]
     },
     "ctx": {
-     "min_sano": 19.4,
+     "min_sano": 16.6,
      "rival": {
       "points": 1.0,
       "reb": 0.99,
@@ -2990,41 +2990,41 @@
     "a": 4277848,
     "j": "Marvin Bagley III",
     "lado": "away",
-    "min": 14.5,
+    "min": 12.7,
     "s": {
      "puntos": [
-      8.62,
-      2.0,
-      17.0
+      8.02,
+      1.0,
+      16.0
      ],
      "rebotes": [
-      5.36,
-      2.0,
-      10.0
+      5.09,
+      1.0,
+      9.0
      ],
      "asistencias": [
-      1.12,
+      1.05,
       0.0,
       3.0
      ],
      "pra": [
-      15.09,
-      5.0,
-      26.0
+      14.16,
+      4.0,
+      25.0
      ],
      "puntos_rebotes": [
-      13.98,
-      5.0,
+      13.11,
+      4.0,
       24.0
      ],
      "puntos_asistencias": [
-      9.73,
+      9.07,
       2.0,
-      18.0
+      17.0
      ]
     },
     "ctx": {
-     "min_sano": 14.5,
+     "min_sano": 12.8,
      "rival": {
       "points": 1.0,
       "reb": 0.99,
