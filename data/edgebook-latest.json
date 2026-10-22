@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-22T14:38:51.470805Z",
+ "generated_at": "2026-10-22T22:45:00.000555Z",
  "date_local": "2026-10-22",
  "games": [
   {
@@ -18,51 +18,54 @@
     "code": "CLE"
    },
    "projection": {
-    "home_score": 118.2,
-    "away_score": 121.2
+    "home_score": 117.7,
+    "away_score": 121.4
    },
    "win_probability": {
-    "home": 0.417,
-    "away": 0.583
+    "home": 0.3935,
+    "away": 0.6065
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Cleveland Cavaliers ML"
    },
-   "data_warning": "Dean Wade está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": 3.0,
-    "away": -3.0
+    "home": 4.0,
+    "away": -4.0
    },
-   "total_points": 239.4,
+   "total_points": 239.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -21.0,
-     15.0
+     -22.0,
+     14.0
     ],
     "total": [
-     214.0,
-     266.0
+     213.0,
+     265.0
     ]
    },
-   "game_warnings": [
-    "Dean Wade está en duda (questionable)",
-    "Jarrett Allen está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "3 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +2.9, Elo -1.4, equipo +0.6, cuatro factores +1.0.",
+     "detail": "3 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +3.8, Elo -1.4, equipo +0.6, cuatro factores +1.0.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de CLE vale 4.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de CLE vale 5.7 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de PHI",
+     "favors": "away",
+     "detail": "Sin Dominick Barlow, Dean Wade: PHI pierde 1.0 puntos.",
      "supports_pick": true
     },
     {
