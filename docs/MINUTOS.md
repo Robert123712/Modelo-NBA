@@ -92,3 +92,13 @@ Al modelo del marcador no le sirvió: con los minutos nuevos, el error del
 margen en 2025-26 pasó de 11.187 a 11.193 y el del total de 14.80 a 14.82. Se
 queda con su memoria de 6 partidos y sin correcciones (`VIDA_MEDIA_MARCADOR`).
 
+## Alineación titular del día
+
+Con quién arranca hoy en vez de quién arrancó el partido anterior, y las
+correcciones reajustadas igual en 2024-25 (`CORRECCION_ALINEACION`; titular
+pesa +5.8 en vez de +2.4), el error de minutos en 2025-26 baja de 4.85 a
+4.69. En vivo sale de la NBA (`alineaciones.py`); el equipo que todavía no
+tiene alineación se queda con `CORRECCION`. Cada corrida publica en
+`latest.json` el estado de cada equipo (`alineacion`: Expected, Confirmed o
+null) y en cada prop si es titular.
+

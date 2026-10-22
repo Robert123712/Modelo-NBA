@@ -34,7 +34,12 @@ y Edgebook solo lo lee, lo valida y lo cruza con ESPN.
   que ESPN no: los two-way mandados a la G League.
 - **Líneas de cierre:** el consenso de hoopR, que es la mediana entre casas de
   The Odds API. Solo se usan para el backtest y el récord.
-- `stats.nba.com` no se usa porque bloquea IPs de nube, GitHub Actions incluido.
+- **Alineaciones titulares:** `stats.nba.com/js/data/leaders/00_daily_lineups_AAAAMMDD.json`
+  (`alineaciones.py`), "Expected" desde la mañana y "Confirmed" ~30 minutos
+  antes. Se cruzan por nombre con el roster de ESPN (4 de 5 bastan). Si no
+  responde, los props usan al titular del partido anterior.
+- El resto de `stats.nba.com` no se usa porque bloquea IPs de nube, GitHub
+  Actions incluido; esa ruta sí responde.
 
 La temporada se nombra como en ESPN: `2027` es la 2026-27.
 

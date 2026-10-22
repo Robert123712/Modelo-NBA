@@ -15,7 +15,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from . import VERSION, datos, emitir, espn, historico, props, record, reporte_nba, seguimiento, tendencias
+from . import VERSION, alineaciones, datos, emitir, espn, historico, props, record, reporte_nba, seguimiento, tendencias
 from . import minutos as mn
 from .mercados import mercados
 from .motores import elo, equipos, factores
@@ -43,10 +43,11 @@ def _b2b(calendario: pd.DataFrame, team_id: int, fecha: dt.date) -> bool:
     return bool(((c.home_id.astype(int) == team_id) | (c.away_id.astype(int) == team_id)).any())
 
 
-def _corregida(roster, base, rasgos, partidos, team_id, corte, b2b, recientes):
+def _corregida(roster, base, rasgos, partidos, team_id, corte, b2b, recientes, alineacion=None):
     """Base de los del roster corregida por contexto (minutos.corregir): si fue
     titular, si regresa de lesion o de un traspaso, arranque, faltas, veterano
-    en back-to-back y los minutos de los companeros que faltan hoy."""
+    en back-to-back y los minutos de los companeros que faltan hoy. Con la
+    alineacion de hoy, "titular" es titular hoy y van sus coeficientes."""
     bajas = sum(base.get(r["athlete_id"], 0.0) * (1 - r["prob_juega"]) for r in roster
                 if r["athlete_id"] in recientes and base.get(r["athlete_id"]) == base.get(r["athlete_id"]))
     hoy = {}
@@ -58,11 +59,13 @@ def _corregida(roster, base, rasgos, partidos, team_id, corte, b2b, recientes):
         traspaso = int(x.equipo_prev) != int(team_id)
         fuera = 0 if traspaso else mn.juegos_fuera(partidos, team_id, x.fecha_prev, corte)
         edad = _edad(r.get("nacimiento"), corte)
-        hoy[a] = {"titular_prev": bool(x.titular_prev), "fuera": fuera, "traspaso": traspaso,
+        titular = a in alineacion["titulares"] if alineacion else bool(x.titular_prev)
+        hoy[a] = {"titular_prev": titular, "fuera": fuera, "traspaso": traspaso,
                   "k_temp": int(x.k_temp), "faltas36": float(x.faltas36),
                   "veterano": edad is not None and edad >= mn.EDAD_VETERANO}
     ids = [r["athlete_id"] for r in roster if r["athlete_id"] in base]
-    corr = mn.corregir({a: base[a] for a in ids}, hoy, b2b, bajas)
+    coef = mn.CORRECCION_ALINEACION if alineacion else mn.CORRECCION
+    corr = mn.corregir({a: base[a] for a in ids}, hoy, b2b, bajas, coef)
     return {**base, **corr}
 
 
@@ -190,6 +193,16 @@ def predecir(
         except Exception as err:  # noqa: BLE001
             avisos_globales.append(f"Sin reporte oficial de lesiones ({type(err).__name__}); bajas de ESPN")
 
+    # Alineaciones titulares de la NBA ("Expected" desde la manana, "Confirmed"
+    # ~30 minutos antes). Si no responde, se sigue con el titular del partido
+    # anterior.
+    alin_dia: dict[str, dict] = {}
+    if slate:
+        try:
+            alin_dia = alineaciones.del_dia(fecha)
+        except Exception as err:  # noqa: BLE001
+            avisos_globales.append(f"Sin alineaciones de la NBA ({type(err).__name__}); titular del partido anterior")
+
     rosters: dict[int, list] = {}
     salida_juegos, detalle, registro = [], [], []
     for g in slate:
@@ -200,6 +213,7 @@ def predecir(
         ausente: dict[str, str | None] = {}
         sano_props: dict[str, dict[int, float]] = {}
         fuera_props: dict[str, list[int]] = {}
+        alin: dict[str, dict | None] = {}
         b2b = {lado: _b2b(cal, g[f"{lado}_id"], fecha) for lado in ("home", "away")}
         for lado in ("home", "away"):
             tid = g[f"{lado}_id"]
@@ -211,9 +225,10 @@ def predecir(
             rot_completa[lado] = mn.repartir(completa)
             # Para props, los minutos si juega: un prop se anula si no juega,
             # asi que el que esta en duda se proyecta con su rol completo.
+            alin[lado] = alineaciones.del_equipo(alin_dia, rosters[tid]) if alin_dia else None
             base_p = bases_props[playoffs]
             if not playoffs:
-                base_p = _corregida(rosters[tid], base_p, rasgos, p, tid, corte, b2b[lado], recientes)
+                base_p = _corregida(rosters[tid], base_p, rasgos, p, tid, corte, b2b[lado], recientes, alin[lado])
             esperada_p, completa_p, *_ = _rotacion(rosters[tid], base_p, picks, nombres)
             rot_props[lado] = mn.repartir({a: completa_p[a] for a in esperada_p})
             fuera_ids = [r["athlete_id"] for r in rosters[tid]
@@ -270,7 +285,8 @@ def predecir(
                 res = props.resumir(x)
                 medias = {s: float(x[s].mean()) for s in props.STATS}
                 clave = props.insight(x["info"], medias, rival_abbr[lado], ausente[lado], a in en_duda)
-                return dict(jugador=nombres[a], athlete_id=a, en_duda=a in en_duda,
+                titular = a in alin[lado]["titulares"] if alin.get(lado) else None
+                return dict(jugador=nombres[a], athlete_id=a, en_duda=a in en_duda, titular=titular,
                             insight=clave, **res)
 
             props_juego = {
@@ -328,6 +344,7 @@ def predecir(
                 for lado in ("home", "away")
             },
             "b2b": b2b,
+            "alineacion": {lado: (alin[lado]["estado"] if alin.get(lado) else None) for lado in ("home", "away")},
             # Proyecciones de minutos lejos del promedio sin bajas que lo
             # expliquen: para revisar, no se muestran en Edgebook.
             "revision_minutos": [

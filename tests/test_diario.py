@@ -53,6 +53,13 @@ def _preparar(monkeypatch, tmp_path, ahora):
         return r
 
     monkeypatch.setattr(espn, "roster", roster)
+    # Alineaciones de la NBA: sin red; el local ya confirmo a sus cinco.
+    from modelo_nba import alineaciones
+    from modelo_nba.datos import clave_nombre
+    titulares = [a for a in plantel[1] if a != estrella][:5]
+    monkeypatch.setattr(alineaciones, "del_dia", lambda f: {"LOC": {
+        "estado": "Confirmed", "hora": "2026-10-21T22:00:00",
+        "titulares": {clave_nombre(f"J{a}") for a in titulares}}})
     return estrella
 
 
@@ -108,3 +115,15 @@ def test_corrida_completa_publica_contrato_y_oficial(monkeypatch, tmp_path):
     diario.predecir(dt.date(2026, 10, 21), tarde, salida=tmp_path)
     oficiales2 = json.loads((tmp_path / "oficiales" / "2026-10-21.json").read_text())
     assert oficiales2["9001"]["generated_at"] == oficiales["9001"]["generated_at"]
+
+
+def test_alineacion_confirmada_marca_titulares(monkeypatch, tmp_path):
+    ahora = pd.Timestamp("2026-10-21T22:15Z")
+    _preparar(monkeypatch, tmp_path, ahora)
+    diario.predecir(dt.date(2026, 10, 21), ahora, salida=tmp_path)
+    det = json.loads((tmp_path / "latest.json").read_text())
+    (g,) = [x for x in det["games"] if "alineacion" in x]
+    assert g["alineacion"] == {"home": "Confirmed", "away": None}
+    casa = g["props"]["home"]
+    assert sum(p["titular"] is True for p in casa) == 5
+    assert all(p["titular"] is None for p in g["props"]["away"])

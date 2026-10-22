@@ -155,6 +155,20 @@ CORRECCION = {
     "faltas": -0.16,         # por cada falta por 36 minutos arriba de 3
     "encoge": -0.1,          # acerca la base a 25 minutos
 }
+# Las mismas correcciones cuando se sabe quien arranca hoy (alineaciones.py):
+# "titular" es titular hoy. Ajustadas igual, en 2024-25; en 2025-26 bajan el
+# error de minutos de 4.85 (con el titular del partido anterior) a 4.69.
+CORRECCION_ALINEACION = {
+    "titular": 5.76,
+    "regreso": -2.03,
+    "traspaso": -2.98,
+    "arranque": -1.89,
+    "veterano_b2b": -1.26,
+    "bajas": 0.07,
+    "bajas_titular": -0.36,
+    "faltas": -0.21,
+    "encoge": -0.25,
+}
 PARTIDOS_REGRESO = 3
 PARTIDOS_ARRANQUE = 5
 EDAD_VETERANO = 31.0
