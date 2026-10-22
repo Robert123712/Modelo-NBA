@@ -42,7 +42,7 @@ class ParametrosProps:
     # Posesiones ficticias con la tasa de la liga: cuanto se encoge un jugador
     # con poca muestra.
     prior_posesiones: dict[str, float] = field(
-        default_factory=lambda: {"points": 300.0, "reb": 300.0, "assists": 300.0}
+        default_factory=lambda: {"points": 150.0, "reb": 150.0, "assists": 150.0}
     )
     # Partidos recientes de cada defensa con los que se mide lo que permite.
     ventana_rival: int = 25
@@ -52,10 +52,11 @@ class ParametrosProps:
     dispersion: dict[str, float] = field(
         default_factory=lambda: {"points": 2.4, "reb": 1.05, "assists": 1.05}
     )
-    sd_minutos: float = 6.0
-    # Probabilidad de una salida temprana (lesion a media partida, faltas,
-    # expulsion): ese partido juega entre 0 y 60% de lo proyectado.
-    salida_temprana: float = 0.0
+    # Ruido de minutos: normal de 5.7 mas una salida temprana (lesion a media
+    # partida, faltas, expulsion) en 1.4% de los partidos, que juega entre 0 y
+    # 60% de lo proyectado. Medido igual en 2024-25 y 2025-26 (docs/PROPS.md).
+    sd_minutos: float = 5.7
+    salida_temprana: float = 0.014
     paliza_umbral: float = 12.0
     paliza_pendiente: float = 0.19  # minutos por punto de margen, titulares
     # Desde que lugar de la rotacion (1 = el de mas minutos) se reparten los
@@ -89,6 +90,18 @@ class ParametrosProps:
     # en el equipo (0 = se pierde, 1 = el total del equipo se conserva). Solo
     # asistencias mejoro; en rebotes no.
     beta_bajas: dict[str, float] = field(default_factory=lambda: {"reb": 0.0, "assists": 0.5})
+    # Correcciones a la media de cada jugador (estudio de props, docs/PROPS.md):
+    # fuera = por cada 10 de la estadistica que producian los companeros que
+    # faltan hoy; racha = por cada unidad que sus ultimos 3 partidos superan a
+    # sus ultimos 30 (por minuto, llevado a sus minutos de hoy); triples = por
+    # cada 10 puntos porcentuales que su % de triples de los ultimos 5 supera
+    # al de sus ultimos 40; minutos = por cada 10 minutos proyectados arriba de
+    # 25; sesgo = constante.
+    correccion: dict[str, dict[str, float]] = field(default_factory=lambda: {
+        "points": {"fuera": 0.261, "racha": 0.06, "triples": -0.179, "sesgo": -0.267},
+        "reb": {"fuera": 0.38, "minutos": -0.123, "sesgo": -0.043},
+        "assists": {"fuera": 0.383, "racha": 0.064},
+    })
 
 
 def tabla_jugador_partido(jugadores: pd.DataFrame, partidos: pd.DataFrame) -> pd.DataFrame:
@@ -228,7 +241,38 @@ def promedios(tabla: pd.DataFrame, antes_de, temporada: int) -> pd.DataFrame:
     tt = t[t.season == temporada].groupby("athlete_id")
     temp = tt[list(STATS)].mean()
     temp = temp[tt.size() >= 3].reindex(ult30.index).fillna(ult30)
-    return pd.concat({"temporada": temp, "ult10": ult10}, axis=1)
+    # Para las correcciones: lo habitual por partido (ultimos 15), produccion
+    # por minuto de los ultimos 3 y 30, y % de triples de los ultimos 5 y 40.
+    hab = g[list(STATS)].apply(lambda x: x.tail(15).mean())
+    por_min = t[list(STATS)].div(t.minutes, axis=0).assign(athlete_id=t.athlete_id).groupby("athlete_id")
+    r3 = por_min[list(STATS)].apply(lambda x: x.tail(3).mean() if len(x) >= 3 else x.iloc[:0].mean())
+    r30 = por_min[list(STATS)].apply(lambda x: x.tail(30).mean() if len(x) >= 10 else x.iloc[:0].mean())
+    tres = g[["three_point_field_goals_made", "three_point_field_goals_attempted"]]
+    t5, t40 = tres.apply(lambda x: x.tail(5).sum()), tres.apply(lambda x: x.tail(40).sum())
+    n = g.size()
+    triples = pd.DataFrame({
+        "ult5": (t5.iloc[:, 0] / t5.iloc[:, 1]).where(n >= 5),
+        "ult40": (t40.iloc[:, 0] / t40.iloc[:, 1]).where(n >= 15),
+    })
+    return pd.concat({"temporada": temp, "ult10": ult10, "hab": hab, "r3": r3, "r30": r30, "triples": triples}, axis=1)
+
+
+def _correccion(c: dict | None, s: str, a: int, minutos: float, prom: pd.DataFrame | None,
+                fuera: dict[str, float]) -> float:
+    """Lo que se le suma a la media de `a` en la estadistica `s` (ver
+    ParametrosProps.correccion)."""
+    if not c or not any(c.values()):
+        return 0.0
+    v = c.get("sesgo", 0.0) + c.get("minutos", 0.0) * (minutos - 25.0) / 10
+    v += c.get("fuera", 0.0) * fuera.get(s, 0.0) / 10
+    if prom is not None and a in prom.index:
+        r3, r30 = prom.at[a, ("r3", s)], prom.at[a, ("r30", s)]
+        if r3 == r3 and r30 == r30:
+            v += c.get("racha", 0.0) * (r3 - r30) * minutos
+        t5, t40 = prom.at[a, ("triples", "ult5")], prom.at[a, ("triples", "ult40")]
+        if t5 == t5 and t40 == t40:
+            v += c.get("triples", 0.0) * (t5 - t40) * 10
+    return float(v)
 
 
 def _rotacion(minutos: dict[int, float], n: int = ROTACION) -> list[int]:
@@ -247,6 +291,7 @@ def simular_props(
     jugadores: list[int] | None = None,
     prom: pd.DataFrame | None = None,
     minutos_completos: dict[str, dict[int, float]] | None = None,
+    fuera: dict[str, list[int]] | None = None,
 ) -> dict[int, dict]:
     """Simulaciones por jugador de cada estadistica.
 
@@ -254,8 +299,9 @@ def simular_props(
     lado); el reparto de puntos usa siempre a todo el equipo. `prom` (de
     `promedios`) activa la mezcla con los promedios recientes.
     `minutos_completos` (los minutos con el roster sano) activa el efecto de
-    companeros fuera. Cada jugador trae ademas `info`: lo que movio su
-    proyeccion, para explicarla.
+    companeros fuera. `fuera` (lado -> los que no juegan hoy y jugaron hace
+    poco) activa la correccion por lo que producian. Cada jugador trae ademas
+    `info`: lo que movio su proyeccion, para explicarla.
     """
     params = params or ParametrosProps()
     rng = np.random.default_rng(semilla)
@@ -358,6 +404,12 @@ def simular_props(
                 for k, a in enumerate(ids)
             ])
 
+        # Lo que producian los companeros que faltan hoy.
+        fuera_eq = {}
+        if prom is not None and fuera and fuera.get(lado):
+            fuera_eq = {s: float(sum(prom.at[o, ("hab", s)] for o in fuera[lado]
+                                     if o in prom.index and prom.at[o, ("hab", s)] == prom.at[o, ("hab", s)]))
+                        for s in STATS}
         quienes = jugadores if jugadores is not None else _rotacion(dict(zip(ids, m)))
         col = {a: k for k, a in enumerate(ids)}
         for a in quienes:
@@ -374,6 +426,9 @@ def simular_props(
                     if base > 0 and objetivo == objetivo:
                         mu = mu * max(objetivo, 0.05) / base
                 mu = mu * ctx[s][k]
+                corr = _correccion(params.correccion.get(s), s, a, float(m[k]), prom, fuera_eq)
+                if corr:
+                    mu = np.maximum(mu + corr, 0.05)
                 phi = params.dispersion[s]
                 if phi > 1.0001:
                     lam = rng.gamma(mu / (phi - 1), phi - 1)

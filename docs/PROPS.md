@@ -13,8 +13,9 @@ Un prop es minutos por producción, y los dos se simulan **junto con el partido*
    descontar la probabilidad de jugar: un prop se anula si el jugador no juega,
    así que al que está en duda se le proyecta su rol completo (y se marca
    `en_duda`).
-2. **Ruido y paliza.** Cada simulación mueve los minutos ±6 (foul trouble,
-   rachas). Por cada punto de margen arriba de 12, los titulares pierden 0.19
+2. **Ruido y paliza.** Cada simulación mueve los minutos ±5.7 (foul trouble,
+   rachas) y en 1.4% de ellas hay una salida temprana: juega entre 0 y 60% de
+   lo proyectado (lesión a media partida, faltas, expulsión). Por cada punto de margen arriba de 12, los titulares pierden 0.19
    minutos y se los lleva parejo el fondo de la banca (del noveno para abajo):
    en 2024-26, con 30+ de diferencia el titular jugó 4.9 minutos menos de lo
    proyectado, el sexto a octavo 0.8 más y el duodécimo en adelante 7.3 más.
@@ -25,7 +26,7 @@ Un prop es minutos por producción, y los dos se simulan **junto con el partido*
 4. **Rebotes y asistencias** salen de su tasa por posesión, por el ritmo del
    partido, ajustada por lo que permite el rival en sus últimos 25 partidos.
 5. **Tasas.** Por 100 posesiones en cancha, con memoria de 60 partidos (vida
-   media) y encogidas hacia la liga con 300 posesiones ficticias.
+   media) y encogidas hacia la liga con 150 posesiones ficticias.
 6. **Mezcla.** La media final combina la simulación con el promedio de la
    temporada y el de los últimos 10 partidos. Los pesos salen de mínimos
    cuadrados en 2024-25:
@@ -48,6 +49,19 @@ Un prop es minutos por producción, y los dos se simulan **junto con el partido*
 10. **Compañeros fuera.** Si falta alguien que jugó en los últimos 15 días, la
     mitad de las asistencias que producía se reparte entre los que juegan. Los
     minutos ya se redistribuían; esto suma el uso.
+11. **Correcciones a la media** (`ParametrosProps.correccion`), ajustadas en
+    2024-25 y probadas a ciegas en 2025-26:
+
+    | | Puntos | Rebotes | Asistencias |
+    | --- | ---: | ---: | ---: |
+    | Por cada 10 de la estadística que producían los compañeros fuera | +0.26 | +0.38 | +0.38 |
+    | Racha: últimos 3 contra últimos 30 (por unidad, a sus minutos de hoy) | +0.06 | | +0.06 |
+    | Triples: últimos 5 contra últimos 40 (por 10 pp) | −0.18 | | |
+    | Por cada 10 minutos proyectados arriba de 25 | | −0.12 | |
+    | Constante | −0.27 | −0.04 | |
+
+    La "mano caliente" de triples no se sostiene: el que viene tirando de más
+    anota menos de lo que la mezcla con los últimos 10 le daba.
 
 Por cada estadística se publica media, mediana, rango 80% (p10–p90) y una
 escalera de P(over) en líneas .5, compacta: `{"desde": 9.5, "p": [...]}` de uno en uno. El abanico es amplio (±12 puntos, ±6 rebotes y asistencias, ±15 PRA) para cubrir la línea de cualquier casa, sin las líneas con menos de 0.5% de un lado. En el partido: spread ±15, total ±20, total por equipo ±12, 1ª mitad ±8/±10. Además, cada jugador
@@ -165,3 +179,34 @@ corrida cruza las oficiales ya jugadas con su box score y escribe
 rango 80%, sesgo). No se muestra en Edgebook: es la base para reajustar la
 mezcla, la dispersión y los ajustes de contexto cuando haya volumen (unas
 semanas, ~1,000 jugadores-partido).
+
+## Estudio de props (octubre 2026)
+
+Mismo método que `docs/MINUTOS.md`: el error de la proyección final, descubrir
+en 2024-25, confirmar a ciegas en 2025-26, corrección de Holm.
+
+- **De dónde viene el error.** Con los minutos exactos, el error de puntos en
+  2025-26 bajaría de 4.93 a 4.24, ya en el piso de lo que varía un partido;
+  rebotes de 1.98 a 1.78 (piso 1.74), asistencias de 1.47 a 1.39 (piso 1.34).
+  La palanca grande son los minutos.
+- **Factores.** De 17 probados en las tres estadísticas, pasaron los de la
+  tabla de arriba. No importan: back-to-back, descanso, local, altura de Denver
+  y Utah, spread, total esperado, FG% del rival y del propio equipo, faltas.
+- **Perillas.** Factorial 2^4 (memoria de la producción, encogimiento, peso y
+  ventana del rival): solo el encogimiento mueve algo; 150 mejora un poco a 300
+  en las dos temporadas.
+- **Calibración.** Ya estaba bien (lo que dice al over pasa a 1–2 puntos).
+
+Resultado, mismo backtest antes y después:
+
+| 2025-26 (a ciegas) | Antes | Ahora |
+| --- | ---: | ---: |
+| Puntos | 4.924 | 4.899 |
+| Rebotes | 1.976 | 1.970 |
+| Asistencias | 1.473 | 1.473 |
+| PRA | 6.275 | 6.250 |
+| Brier PRA | 0.2303 | 0.2299 |
+| Sesgo de puntos | +0.29 | +0.09 |
+
+Mejoran las seis estadísticas en error y en Brier, también en 2024-25.
+

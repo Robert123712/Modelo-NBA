@@ -127,3 +127,19 @@ def test_insight_elige_lo_que_mas_mueve():
     info["minutos_completo"] = 24.0
     assert props.insight(info, medias, "DAL", ausente="Brunson") == "Sin Brunson juega más minutos (+6 min)"
     assert props.insight(info, medias, "DAL", en_duda=True).startswith("En duda")
+
+
+def test_companeros_fuera_suben_a_los_que_juegan():
+    _, T, prom, plantel, mins = _tasas()
+    base = _sim(T, plantel, mins, prom=prom, n=4000)
+    ausente = plantel[1][8]
+    minutos = {"home": repartir(dict(zip(plantel[1], mins))), "away": repartir(dict(zip(plantel[2], mins)))}
+    pts = {"home": np.full(4000, 115.0), "away": np.full(4000, 110.0)}
+    con = props.simular_props(T, minutos, {"home": 1, "away": 2}, pts, np.full(4000, 5.0), 100.0,
+                              semilla=1, prom=prom, fuera={"home": [ausente], "away": []})
+    a = plantel[1][0]
+    esperado = props.ParametrosProps().correccion["reb"]["fuera"] * prom.at[ausente, ("hab", "reb")] / 10
+    assert abs((con[a]["reb"].mean() - base[a]["reb"].mean()) - esperado) < 0.15
+    # El rival no cambia.
+    b = plantel[2][0]
+    assert abs(con[b]["reb"].mean() - base[b]["reb"].mean()) < 0.1

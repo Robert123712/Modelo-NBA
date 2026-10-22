@@ -199,6 +199,7 @@ def predecir(
         rot, rot_completa, rot_props, avisos, bajas, perdidos = {}, {}, {}, [], {}, {}
         ausente: dict[str, str | None] = {}
         sano_props: dict[str, dict[int, float]] = {}
+        fuera_props: dict[str, list[int]] = {}
         b2b = {lado: _b2b(cal, g[f"{lado}_id"], fecha) for lado in ("home", "away")}
         for lado in ("home", "away"):
             tid = g[f"{lado}_id"]
@@ -217,6 +218,7 @@ def predecir(
             rot_props[lado] = mn.repartir({a: completa_p[a] for a in esperada_p})
             fuera_ids = [r["athlete_id"] for r in rosters[tid]
                          if r["prob_juega"] <= 0 and r["athlete_id"] in recientes]
+            fuera_props[lado] = fuera_ids
             sano_props[lado] = mn.repartir(
                 {a: completa_p[a] for a in completa_p if a in esperada_p or a in fuera_ids}
             )
@@ -258,7 +260,7 @@ def predecir(
             sims_props = props.simular_props(
                 tasas_props, rot_props, {"home": casa, "away": visita},
                 {"home": sim.casa, "away": sim.visita}, sim.casa - sim.visita, e.pace,
-                semilla=g["game_id"] + 1, prom=prom_props, minutos_completos=sano_props,
+                semilla=g["game_id"] + 1, prom=prom_props, minutos_completos=sano_props, fuera=fuera_props,
             )
             en_duda = {r["athlete_id"] for tid in (casa, visita) for r in rosters[tid] if 0 < r["prob_juega"] < 1}
             rival_abbr = {"home": g["away_abbr"], "away": g["home_abbr"]}
