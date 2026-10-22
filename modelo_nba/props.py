@@ -44,6 +44,8 @@ class ParametrosProps:
     prior_posesiones: dict[str, float] = field(
         default_factory=lambda: {"points": 300.0, "reb": 300.0, "assists": 300.0}
     )
+    # Partidos recientes de cada defensa con los que se mide lo que permite.
+    ventana_rival: int = 25
     # Exponente del ajuste por rival (0 = no se ajusta, 1 = completo).
     peso_rival: dict[str, float] = field(default_factory=lambda: {"reb": 1.0, "assists": 1.0})
     # Varianza / media de cada estadistica con los minutos ya fijos.
@@ -51,6 +53,9 @@ class ParametrosProps:
         default_factory=lambda: {"points": 2.4, "reb": 1.05, "assists": 1.05}
     )
     sd_minutos: float = 6.0
+    # Probabilidad de una salida temprana (lesion a media partida, faltas,
+    # expulsion): ese partido juega entre 0 y 60% de lo proyectado.
+    salida_temprana: float = 0.0
     paliza_umbral: float = 12.0
     paliza_pendiente: float = 0.19  # minutos por punto de margen, titulares
     # Desde que lugar de la rotacion (1 = el de mas minutos) se reparten los
@@ -196,10 +201,10 @@ def tasas(tabla: pd.DataFrame, antes_de, params: ParametrosProps | None = None) 
     jug = pd.DataFrame(filas)
 
     # Lo que permite cada defensa: lo que sus rivales produjeron contra ella en
-    # sus ultimos ~25 partidos, por posesion, contra la liga.
+    # sus ultimos `ventana_rival` partidos, por posesion, contra la liga.
     por_partido = t.groupby(["game_id", "rival"])[list(STATS) + ["pos"]].sum().reset_index()
     por_partido = por_partido.merge(t[["game_id", "fecha"]].drop_duplicates("game_id"), on="game_id")
-    por_partido = por_partido.sort_values("fecha").groupby("rival").tail(25)
+    por_partido = por_partido.sort_values("fecha").groupby("rival").tail(int(params.ventana_rival))
     agg = por_partido.groupby("rival")[list(STATS) + ["pos"]].sum()
     rival = pd.DataFrame({s: (agg[s] / agg.pos * 100) / liga[s] for s in STATS})
     if params.grupo is None:
@@ -281,6 +286,9 @@ def simular_props(
             banca = ~titulares
             peso_b = m[banca] / m[banca].sum()
             ms[:, banca] += (quita * titulares.sum())[:, None] * peso_b[None, :]
+        if params.salida_temprana > 0:
+            sale = rng.random((n, len(ids))) < params.salida_temprana
+            ms = np.where(sale, m[None, :] * rng.uniform(0, 0.6, (n, len(ids))), ms)
         ms = np.clip(ms, 0, 48)
         frac = np.where(m[None, :] > 0, ms / m[None, :], 0.0)
 
