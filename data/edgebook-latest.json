@@ -1,8 +1,8 @@
 {
  "schema_version": "1.1",
  "sport": "NBA",
- "model_version": "nba-0.5.0",
- "generated_at": "2026-10-22T05:15:00.000701Z",
+ "model_version": "nba-0.6.0",
+ "generated_at": "2026-10-22T14:37:18.288635Z",
  "date_local": "2026-10-22",
  "games": [
   {
