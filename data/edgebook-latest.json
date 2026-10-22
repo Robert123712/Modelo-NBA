@@ -2,139 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.5.0",
- "generated_at": "2026-10-21T23:52:30.508360Z",
+ "generated_at": "2026-10-22T00:15:00.000740Z",
  "date_local": "2026-10-21",
  "games": [
-  {
-   "league_game_id": "401909838",
-   "espn_game_id": "401909838",
-   "starts_at": "2026-10-22T00:00Z",
-   "home": {
-    "name": "Memphis Grizzlies",
-    "code": "MEM"
-   },
-   "away": {
-    "name": "Utah Jazz",
-    "code": "UTAH"
-   },
-   "projection": {
-    "home_score": 126.5,
-    "away_score": 122.3
-   },
-   "win_probability": {
-    "home": 0.6188,
-    "away": 0.3812
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Memphis Grizzlies ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -5.0,
-    "away": 5.0
-   },
-   "total_points": 248.7,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -14.0,
-     22.0
-    ],
-    "total": [
-     223.0,
-     275.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +4.3, Elo +1.3, equipo +2.6, cuatro factores -1.0.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MEM vale 2.4 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.9 puntos para MEM.",
-     "supports_pick": true
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909839",
-   "espn_game_id": "401909839",
-   "starts_at": "2026-10-22T00:00Z",
-   "home": {
-    "name": "New Orleans Pelicans",
-    "code": "NO"
-   },
-   "away": {
-    "name": "Indiana Pacers",
-    "code": "IND"
-   },
-   "projection": {
-    "home_score": 121.1,
-    "away_score": 123.6
-   },
-   "win_probability": {
-    "home": 0.4247,
-    "away": 0.5753
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Indiana Pacers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 3.0,
-    "away": -3.0
-   },
-   "total_points": 244.7,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -20.0,
-     15.0
-    ],
-    "total": [
-     219.0,
-     271.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a NO. Margen de NO: jugadores -2.6, Elo +4.1, equipo +3.6, cuatro factores +5.3.",
-     "supports_pick": false
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de IND vale 4.4 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.9 puntos para NO.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909840",
    "espn_game_id": "401909840",
@@ -767,6 +637,140 @@
      "favors": "home",
      "detail": "Sin Nic Claxton: CHI pierde 1.0 puntos.",
      "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909838",
+   "espn_game_id": "401909838",
+   "starts_at": "2026-10-22T00:00Z",
+   "home": {
+    "name": "Memphis Grizzlies",
+    "code": "MEM"
+   },
+   "away": {
+    "name": "Utah Jazz",
+    "code": "UTAH"
+   },
+   "projection": {
+    "home_score": 126.6,
+    "away_score": 123.0
+   },
+   "win_probability": {
+    "home": 0.6021,
+    "away": 0.3979
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Memphis Grizzlies ML"
+   },
+   "data_warning": "Isaiah Stewart está en duda (doubtful)",
+   "spread": {
+    "home": -4.0,
+    "away": 4.0
+   },
+   "total_points": 249.6,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -14.0,
+     21.0
+    ],
+    "total": [
+     224.0,
+     276.0
+    ]
+   },
+   "game_warnings": [
+    "Isaiah Stewart está en duda (doubtful)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "3 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +3.7, Elo +1.3, equipo +2.6, cuatro factores -1.0.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de MEM vale 1.8 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.9 puntos para MEM.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909839",
+   "espn_game_id": "401909839",
+   "starts_at": "2026-10-22T00:00Z",
+   "home": {
+    "name": "New Orleans Pelicans",
+    "code": "NO"
+   },
+   "away": {
+    "name": "Indiana Pacers",
+    "code": "IND"
+   },
+   "projection": {
+    "home_score": 121.0,
+    "away_score": 123.6
+   },
+   "win_probability": {
+    "home": 0.4244,
+    "away": 0.5756
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Indiana Pacers ML"
+   },
+   "data_warning": "Jalen Slawson está en duda (probable)",
+   "spread": {
+    "home": 3.0,
+    "away": -3.0
+   },
+   "total_points": 244.6,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -20.0,
+     15.0
+    ],
+    "total": [
+     219.0,
+     271.0
+    ]
+   },
+   "game_warnings": [
+    "Jalen Slawson está en duda (probable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "3 de 4 modelos ven ganar a NO. Margen de NO: jugadores -2.5, Elo +4.1, equipo +3.6, cuatro factores +5.3.",
+     "supports_pick": false
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de IND vale 4.4 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.9 puntos para NO.",
+     "supports_pick": false
     }
    ]
   }
