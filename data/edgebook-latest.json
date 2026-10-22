@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.5.0",
- "generated_at": "2026-10-22T04:45:00.000652Z",
+ "generated_at": "2026-10-22T05:15:00.000701Z",
  "date_local": "2026-10-22",
  "games": [
   {
@@ -18,12 +18,12 @@
     "code": "CLE"
    },
    "projection": {
-    "home_score": 118.5,
-    "away_score": 121.5
+    "home_score": 118.2,
+    "away_score": 121.2
    },
    "win_probability": {
-    "home": 0.4152,
-    "away": 0.5848
+    "home": 0.417,
+    "away": 0.583
    },
    "pick": {
     "market": "moneyline",
@@ -35,7 +35,7 @@
     "home": 3.0,
     "away": -3.0
    },
-   "total_points": 240.0,
+   "total_points": 239.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -56,13 +56,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "3 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +3.0, Elo -1.4, equipo +0.7, cuatro factores +1.0.",
+     "detail": "3 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +2.9, Elo -1.4, equipo +0.6, cuatro factores +1.0.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de CLE vale 4.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de CLE vale 4.8 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -86,12 +86,12 @@
     "code": "DEN"
    },
    "projection": {
-    "home_score": 126.6,
-    "away_score": 116.8
+    "home_score": 126.2,
+    "away_score": 116.5
    },
    "win_probability": {
-    "home": 0.7603,
-    "away": 0.2397
+    "home": 0.7577,
+    "away": 0.2423
    },
    "pick": {
     "market": "moneyline",
@@ -103,15 +103,15 @@
     "home": -10.0,
     "away": 10.0
    },
-   "total_points": 243.3,
+   "total_points": 242.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -8.0,
-     28.0
+     27.0
     ],
     "total": [
-     218.0,
+     217.0,
      269.0
     ]
    },
@@ -123,13 +123,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +10.0, Elo +6.1, equipo +7.6, cuatro factores +7.6.",
+     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +9.8, Elo +6.1, equipo +7.7, cuatro factores +7.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de OKC vale 8.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de OKC vale 7.9 puntos más por partido.",
      "supports_pick": true
     },
     {
