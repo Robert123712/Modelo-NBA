@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.5.0",
- "generated_at": "2026-10-22T00:15:00.000740Z",
+ "generated_at": "2026-10-22T00:45:00.000660Z",
  "date_local": "2026-10-21",
  "games": [
-  {
-   "league_game_id": "401909840",
-   "espn_game_id": "401909840",
-   "starts_at": "2026-10-22T00:30Z",
-   "home": {
-    "name": "Houston Rockets",
-    "code": "HOU"
-   },
-   "away": {
-    "name": "Dallas Mavericks",
-    "code": "DAL"
-   },
-   "projection": {
-    "home_score": 120.8,
-    "away_score": 111.8
-   },
-   "win_probability": {
-    "home": 0.7446,
-    "away": 0.2554
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Houston Rockets ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -9.0,
-    "away": 9.0
-   },
-   "total_points": 232.6,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -9.0,
-     27.0
-    ],
-    "total": [
-     206.0,
-     259.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +8.9, Elo +8.9, equipo +9.0, cuatro factores +9.4.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 7.1 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.9 puntos para HOU.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de DAL",
-     "favors": "home",
-     "detail": "Sin Santi Aldama, Dereck Lively II, Caleb Martin: DAL pierde 1.1 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909092",
    "espn_game_id": "401909092",
@@ -771,6 +700,79 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.9 puntos para NO.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909840",
+   "espn_game_id": "401909840",
+   "starts_at": "2026-10-22T00:30Z",
+   "home": {
+    "name": "Houston Rockets",
+    "code": "HOU"
+   },
+   "away": {
+    "name": "Dallas Mavericks",
+    "code": "DAL"
+   },
+   "projection": {
+    "home_score": 119.8,
+    "away_score": 111.7
+   },
+   "win_probability": {
+    "home": 0.7219,
+    "away": 0.2781
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Houston Rockets ML"
+   },
+   "data_warning": "Steven Adams está en duda (questionable)",
+   "spread": {
+    "home": -8.0,
+    "away": 8.0
+   },
+   "total_points": 231.5,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -10.0,
+     26.0
+    ],
+    "total": [
+     205.0,
+     258.0
+    ]
+   },
+   "game_warnings": [
+    "Steven Adams está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +8.0, Elo +8.9, equipo +9.0, cuatro factores +9.4.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 6.2 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.9 puntos para HOU.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de DAL",
+     "favors": "home",
+     "detail": "Sin Santi Aldama, Dereck Lively II, Caleb Martin: DAL pierde 1.4 puntos.",
+     "supports_pick": true
     }
    ]
   }
