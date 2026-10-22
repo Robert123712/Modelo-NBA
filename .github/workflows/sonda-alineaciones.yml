@@ -1,0 +1,45 @@
+name: sonda-alineaciones
+on:
+  push:
+    branches: [sonda-alineaciones]
+jobs:
+  sonda:
+    runs-on: ubuntu-latest
+    steps:
+      - run: pip install requests
+      - shell: python
+        run: |
+          import json, datetime as dt, requests
+          H = {"User-Agent": "Mozilla/5.0", "Referer": "https://www.nba.com/", "Origin": "https://www.nba.com"}
+          hoy = dt.datetime.utcnow() - dt.timedelta(hours=5)
+          def get(u):
+              try:
+                  r = requests.get(u, headers=H, timeout=30)
+                  print("==", r.status_code, len(r.content), u)
+                  return r.json() if r.ok else None
+              except Exception as e:
+                  print("== ERROR", u, type(e).__name__, str(e)[:200]); return None
+          for d in (hoy, hoy - dt.timedelta(days=1)):
+              x = get(f"https://stats.nba.com/js/data/leaders/00_daily_lineups_{d:%Y%m%d}.json")
+              if x:
+                  print(json.dumps(x)[:3000])
+          sb = get("https://cdn.nba.com/static/json/liveData/scoreboard/todaysScoreboard_00.json")
+          if sb:
+              juegos = sb["scoreboard"]["games"]
+              for g in juegos:
+                  print(g["gameId"], g["gameTimeUTC"], g["gameStatusText"], g["awayTeam"]["teamTricode"], "@", g["homeTeam"]["teamTricode"])
+              if juegos:
+                  b = get(f"https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{juegos[0]['gameId']}.json")
+                  if b:
+                      t = b["game"]["homeTeam"]
+                      print([(p["name"], p.get("starter"), p.get("status")) for p in t["players"]][:15])
+          e = get(f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates={hoy:%Y%m%d}")
+          if e and e.get("events"):
+              gid = e["events"][0]["id"]
+              s = get(f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event={gid}")
+              if s:
+                  print("claves summary:", list(s))
+                  txt = json.dumps(s)
+                  print("menciona starter:", txt.count('"starter"'), "| rosters:", "rosters" in s)
+                  for k in ("rosters", "boxscore"):
+                      if k in s: print(k, json.dumps(s[k])[:1500])
