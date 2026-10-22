@@ -1,16 +1,16 @@
 {
  "schema_version": "1.0",
  "sport": "NBA",
- "generated_at": "2026-10-21T23:52:30.508360Z",
+ "generated_at": "2026-10-22T04:15:00.000653Z",
  "minimum_meaningful": 100,
  "versions": [
   {
-   "model_version": "nba-0.4.0",
+   "model_version": "nba-0.5.0",
    "unlabeled": false,
    "from": null,
    "to": null,
    "graded": 0,
-   "pending": 8,
+   "pending": 5,
    "significant": false,
    "markets": {},
    "projected_total": null,
@@ -25,23 +25,98 @@
    }
   },
   {
-   "model_version": "nba-0.5.0",
+   "model_version": "nba-0.4.0",
    "unlabeled": false,
-   "from": null,
-   "to": null,
-   "graded": 0,
-   "pending": 3,
+   "from": "2026-10-21",
+   "to": "2026-10-21",
+   "graded": 8,
+   "pending": 0,
    "significant": false,
-   "markets": {},
-   "projected_total": null,
-   "projected_margin": null,
+   "markets": {
+    "moneyline": {
+     "n": 8,
+     "base_rate": 0.5,
+     "brier": 0.1879,
+     "log_loss": 0.5587,
+     "hit_rate": 0.625,
+     "baseline_brier": 0.25,
+     "calibration": [
+      {
+       "from": 0.0,
+       "to": 0.35,
+       "n": 1,
+       "predicted": 0.2898,
+       "observed": 0.0
+      },
+      {
+       "from": 0.35,
+       "to": 0.45,
+       "n": 2,
+       "predicted": 0.4355,
+       "observed": 0.5
+      },
+      {
+       "from": 0.55,
+       "to": 0.65,
+       "n": 3,
+       "predicted": 0.5802,
+       "observed": 0.3333
+      },
+      {
+       "from": 0.65,
+       "to": 1.01,
+       "n": 2,
+       "predicted": 0.75,
+       "observed": 1.0
+      }
+     ]
+    }
+   },
+   "projected_total": {
+    "n": 8,
+    "mae": 11.312,
+    "bias": 4.212,
+    "std_error": 4.7669,
+    "by_month": [
+     {
+      "month": "2026-10",
+      "n": 8,
+      "mae": 11.312,
+      "bias": 4.212,
+      "std_error": 4.7669
+     }
+    ]
+   },
+   "projected_margin": {
+    "n": 8,
+    "mae": 13.875,
+    "bias": -4.375,
+    "std_error": 6.005,
+    "by_month": [
+     {
+      "month": "2026-10",
+      "n": 8,
+      "mae": 13.875,
+      "bias": -4.375,
+      "std_error": 6.005
+     }
+    ]
+   },
    "closing_line": {
     "total": null,
     "margin": null
    },
    "interval_coverage": {
-    "margin": null,
-    "total": null
+    "margin": {
+     "n": 8,
+     "covered": 0.75,
+     "nominal": 0.8
+    },
+    "total": {
+     "n": 8,
+     "covered": 1.0,
+     "nominal": 0.8
+    }
    }
   },
   {
