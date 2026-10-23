@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-23T17:45:00.000533Z",
+ "generated_at": "2026-10-23T20:15:00.000535Z",
  "date_local": "2026-10-23",
  "games": [
   {
@@ -627,23 +627,23 @@
    },
    "projection": {
     "home_score": 117.9,
-    "away_score": 115.2
+    "away_score": 114.9
    },
    "win_probability": {
-    "home": 0.5758,
-    "away": 0.4242
+    "home": 0.5842,
+    "away": 0.4158
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Golden State Warriors ML"
    },
-   "data_warning": "Brandin Podziemski está en duda (questionable)",
+   "data_warning": "Brandin Podziemski está en duda (probable)",
    "spread": {
     "home": -3.0,
     "away": 3.0
    },
-   "total_points": 233.0,
+   "total_points": 232.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -656,7 +656,7 @@
     ]
    },
    "game_warnings": [
-    "Brandin Podziemski está en duda (questionable)",
+    "Brandin Podziemski está en duda (probable)",
     "Cedric Coward está en duda (doubtful)",
     "Isaiah Stewart está en duda (questionable)"
    ],
@@ -665,13 +665,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +2.7, Elo +5.7, equipo +4.7, cuatro factores +7.6.",
+     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +2.9, Elo +5.7, equipo +4.7, cuatro factores +7.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de GS vale 0.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de GS vale 1.1 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -683,7 +683,7 @@
     {
      "label": "Bajas de GS",
      "favors": "away",
-     "detail": "Sin Jimmy Butler III, Moses Moody, Kristaps Porzingis: GS pierde 3.1 puntos.",
+     "detail": "Sin Jimmy Butler III, Moses Moody, Kristaps Porzingis: GS pierde 2.8 puntos.",
      "supports_pick": false
     }
    ]
