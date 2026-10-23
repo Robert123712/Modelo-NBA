@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-23T22:15:00.000544Z",
+ "generated_at": "2026-10-23T22:45:00.000580Z",
  "date_local": "2026-10-23",
  "games": [
   {
@@ -152,15 +152,15 @@
     "away_score": 114.6
    },
    "win_probability": {
-    "home": 0.6471,
-    "away": 0.3529
+    "home": 0.6474,
+    "away": 0.3526
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Indiana Pacers ML"
    },
-   "data_warning": "Kobe Brown está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": -6.0,
     "away": 6.0
@@ -177,10 +177,7 @@
      260.0
     ]
    },
-   "game_warnings": [
-    "Kobe Brown está en duda (probable)",
-    "Jalen Slawson está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
