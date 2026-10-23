@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-23T04:45:00.000580Z",
+ "generated_at": "2026-10-23T14:15:00.816909Z",
  "date_local": "2026-10-23",
  "games": [
   {
@@ -44,7 +44,7 @@
     ],
     "total": [
      213.0,
-     265.0
+     264.0
     ]
    },
    "game_warnings": [
@@ -87,7 +87,7 @@
    },
    "projection": {
     "home_score": 114.7,
-    "away_score": 110.1
+    "away_score": 110.0
    },
    "win_probability": {
     "home": 0.6283,
@@ -155,8 +155,8 @@
     "away_score": 115.1
    },
    "win_probability": {
-    "home": 0.567,
-    "away": 0.433
+    "home": 0.5665,
+    "away": 0.4335
    },
    "pick": {
     "market": "moneyline",
@@ -222,8 +222,8 @@
     "away_score": 115.8
    },
    "win_probability": {
-    "home": 0.5972,
-    "away": 0.4028
+    "home": 0.5969,
+    "away": 0.4031
    },
    "pick": {
     "market": "moneyline",
@@ -309,7 +309,7 @@
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -15.1,
+     -16.0,
      20.0
     ],
     "total": [
@@ -351,8 +351,8 @@
     "away_score": 124.7
    },
    "win_probability": {
-    "home": 0.162,
-    "away": 0.838
+    "home": 0.1621,
+    "away": 0.8379
    },
    "pick": {
     "market": "moneyline",
@@ -422,8 +422,8 @@
     "away_score": 117.8
    },
    "win_probability": {
-    "home": 0.3718,
-    "away": 0.6282
+    "home": 0.3721,
+    "away": 0.6279
    },
    "pick": {
     "market": "moneyline",
@@ -444,7 +444,7 @@
     ],
     "total": [
      205.0,
-     258.0
+     257.0
     ]
    },
    "game_warnings": [
@@ -489,8 +489,8 @@
     "away_score": 110.6
    },
    "win_probability": {
-    "home": 0.625,
-    "away": 0.375
+    "home": 0.6249,
+    "away": 0.3751
    },
    "pick": {
     "market": "moneyline",
@@ -561,8 +561,8 @@
     "code": "NO"
    },
    "projection": {
-    "home_score": 119.5,
-    "away_score": 119.1
+    "home_score": 119.3,
+    "away_score": 119.0
    },
    "win_probability": {
     "home": 0.5122,
@@ -578,7 +578,7 @@
     "home": -1.0,
     "away": 1.0
    },
-   "total_points": 238.6,
+   "total_points": 238.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -587,7 +587,7 @@
     ],
     "total": [
      213.0,
-     265.0
+     264.0
     ]
    },
    "game_warnings": [],
@@ -632,8 +632,8 @@
     "code": "MEM"
    },
    "projection": {
-    "home_score": 118.0,
-    "away_score": 115.3
+    "home_score": 117.9,
+    "away_score": 115.2
    },
    "win_probability": {
     "home": 0.5758,
@@ -649,7 +649,7 @@
     "home": -3.0,
     "away": 3.0
    },
-   "total_points": 233.2,
+   "total_points": 233.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -657,8 +657,8 @@
      21.0
     ],
     "total": [
-     208.0,
-     259.0
+     207.0,
+     258.0
     ]
    },
    "game_warnings": [
@@ -671,7 +671,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +2.7, Elo +5.7, equipo +4.8, cuatro factores +7.6.",
+     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +2.7, Elo +5.7, equipo +4.7, cuatro factores +7.6.",
      "supports_pick": true
     },
     {
@@ -772,8 +772,8 @@
     "away_score": 117.2
    },
    "win_probability": {
-    "home": 0.2295,
-    "away": 0.7705
+    "home": 0.2299,
+    "away": 0.7701
    },
    "pick": {
     "market": "moneyline",
@@ -824,7 +824,5 @@
   }
  ],
  "skipped_without_id": 0,
- "warnings": [
-  "Sin alineaciones de la NBA (HTTPError); titular del partido anterior"
- ]
+ "warnings": []
 }
