@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-22T23:15:00.000576Z",
+ "generated_at": "2026-10-23T00:45:00.000501Z",
  "date_local": "2026-10-22",
  "games": [
   {
@@ -18,50 +18,48 @@
     "code": "DEN"
    },
    "projection": {
-    "home_score": 126.2,
-    "away_score": 116.5
+    "home_score": 126.4,
+    "away_score": 116.6
    },
    "win_probability": {
-    "home": 0.7577,
-    "away": 0.2423
+    "home": 0.7591,
+    "away": 0.2409
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Oklahoma City Thunder ML"
    },
-   "data_warning": "Spencer Jones está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -10.0,
     "away": 10.0
    },
-   "total_points": 242.8,
+   "total_points": 243.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -8.0,
-     27.0
+     28.0
     ],
     "total": [
      217.0,
      269.0
     ]
    },
-   "game_warnings": [
-    "Spencer Jones está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +9.8, Elo +6.1, equipo +7.7, cuatro factores +7.6.",
+     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +9.9, Elo +6.1, equipo +7.7, cuatro factores +7.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de OKC vale 7.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de OKC vale 8.0 puntos más por partido.",
      "supports_pick": true
     },
     {
