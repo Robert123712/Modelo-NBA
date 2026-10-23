@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-23T14:45:00.000548Z",
+ "generated_at": "2026-10-23T15:45:00.000600Z",
  "date_local": "2026-10-23",
  "games": [
   {
@@ -485,12 +485,12 @@
     "code": "HOU"
    },
    "projection": {
-    "home_score": 115.2,
+    "home_score": 115.4,
     "away_score": 110.6
    },
    "win_probability": {
-    "home": 0.6249,
-    "away": 0.3751
+    "home": 0.6303,
+    "away": 0.3697
    },
    "pick": {
     "market": "moneyline",
@@ -502,11 +502,11 @@
     "home": -5.0,
     "away": 5.0
    },
-   "total_points": 225.8,
+   "total_points": 226.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -14.0,
+     -13.0,
      23.0
     ],
     "total": [
@@ -517,21 +517,20 @@
    "game_warnings": [
     "De'Aaron Fox está en duda (questionable)",
     "Keldon Johnson está en duda (questionable)",
-    "Steven Adams está en duda (questionable)",
-    "Reed Sheppard está en duda (questionable)"
+    "Steven Adams está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +4.6, Elo +6.4, equipo +6.4, cuatro factores +2.7.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +4.9, Elo +6.4, equipo +6.4, cuatro factores +2.7.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 2.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 3.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -543,7 +542,7 @@
     {
      "label": "Bajas de SA",
      "favors": "away",
-     "detail": "Sin Tobias Harris: SA pierde 0.9 puntos.",
+     "detail": "Sin Tobias Harris: SA pierde 0.6 puntos.",
      "supports_pick": false
     }
    ]
