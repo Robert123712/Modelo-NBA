@@ -2,74 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-23T20:15:00.000535Z",
+ "generated_at": "2026-10-23T20:45:00.000555Z",
  "date_local": "2026-10-23",
  "games": [
-  {
-   "league_game_id": "401909848",
-   "espn_game_id": "401909848",
-   "starts_at": "2026-10-23T20:00Z",
-   "home": {
-    "name": "Milwaukee Bucks",
-    "code": "MIL"
-   },
-   "away": {
-    "name": "Chicago Bulls",
-    "code": "CHI"
-   },
-   "projection": {
-    "home_score": 120.6,
-    "away_score": 118.0
-   },
-   "win_probability": {
-    "home": 0.5738,
-    "away": 0.4262
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Milwaukee Bucks ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -3.0,
-    "away": 3.0
-   },
-   "total_points": 238.6,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -15.0,
-     20.0
-    ],
-    "total": [
-     213.0,
-     265.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIL. Margen de MIL: jugadores +2.5, Elo +2.2, equipo +2.4, cuatro factores +0.3.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MIL vale 0.6 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.9 puntos para MIL.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909095",
    "espn_game_id": "401909095",
@@ -701,28 +636,28 @@
     "code": "LAC"
    },
    "projection": {
-    "home_score": 117.1,
-    "away_score": 114.8
+    "home_score": 116.6,
+    "away_score": 115.1
    },
    "win_probability": {
-    "home": 0.5655,
-    "away": 0.4345
+    "home": 0.5455,
+    "away": 0.4545
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Los Angeles Lakers ML"
    },
-   "data_warning": "Jake LaRavia está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": -3.0,
-    "away": 3.0
+    "home": -2.0,
+    "away": 2.0
    },
-   "total_points": 231.9,
+   "total_points": 231.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -16.0,
+     -17.0,
      20.0
     ],
     "total": [
@@ -730,15 +665,13 @@
      258.0
     ]
    },
-   "game_warnings": [
-    "Jake LaRavia está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +2.2, Elo +3.9, equipo +2.3, cuatro factores +0.4.",
+     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +1.4, Elo +3.9, equipo +2.3, cuatro factores +0.4.",
      "supports_pick": true
     },
     {
@@ -746,6 +679,12 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.9 puntos para LAL.",
      "supports_pick": true
+    },
+    {
+     "label": "Bajas de LAL",
+     "favors": "away",
+     "detail": "Sin Jake LaRavia: LAL pierde 1.5 puntos.",
+     "supports_pick": false
     }
    ]
   },
@@ -811,6 +750,71 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.9 puntos para SAC.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909848",
+   "espn_game_id": "401909848",
+   "starts_at": "2026-10-23T20:00Z",
+   "home": {
+    "name": "Milwaukee Bucks",
+    "code": "MIL"
+   },
+   "away": {
+    "name": "Chicago Bulls",
+    "code": "CHI"
+   },
+   "projection": {
+    "home_score": 120.6,
+    "away_score": 118.0
+   },
+   "win_probability": {
+    "home": 0.5738,
+    "away": 0.4262
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Milwaukee Bucks ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -3.0,
+    "away": 3.0
+   },
+   "total_points": 238.6,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -15.0,
+     20.0
+    ],
+    "total": [
+     213.0,
+     265.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a MIL. Margen de MIL: jugadores +2.5, Elo +2.2, equipo +2.4, cuatro factores +0.3.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de MIL vale 0.6 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.9 puntos para MIL.",
+     "supports_pick": true
     }
    ]
   }
