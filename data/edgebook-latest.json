@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-23T17:15:00.000519Z",
+ "generated_at": "2026-10-23T17:45:00.000533Z",
  "date_local": "2026-10-23",
  "games": [
   {
@@ -18,24 +18,24 @@
     "code": "CHI"
    },
    "projection": {
-    "home_score": 120.7,
-    "away_score": 117.8
+    "home_score": 120.6,
+    "away_score": 118.0
    },
    "win_probability": {
-    "home": 0.5807,
-    "away": 0.4193
+    "home": 0.5738,
+    "away": 0.4262
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Milwaukee Bucks ML"
    },
-   "data_warning": "Zach Collins está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": -3.0,
     "away": 3.0
    },
-   "total_points": 238.5,
+   "total_points": 238.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -47,22 +47,19 @@
      265.0
     ]
    },
-   "game_warnings": [
-    "Zach Collins está en duda (probable)",
-    "Josh Giddey está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIL. Margen de MIL: jugadores +2.8, Elo +2.2, equipo +2.4, cuatro factores +0.3.",
+     "detail": "4 de 4 modelos ven ganar a MIL. Margen de MIL: jugadores +2.5, Elo +2.2, equipo +2.4, cuatro factores +0.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MIL vale 0.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MIL vale 0.6 puntos más por partido.",
      "supports_pick": true
     },
     {
