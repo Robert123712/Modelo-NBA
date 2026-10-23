@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-23T04:15:00.000510Z",
+ "generated_at": "2026-10-23T04:45:00.000580Z",
  "date_local": "2026-10-23",
  "games": [
   {
@@ -18,12 +18,12 @@
     "code": "CHI"
    },
    "projection": {
-    "home_score": 121.4,
-    "away_score": 118.6
+    "home_score": 120.7,
+    "away_score": 117.8
    },
    "win_probability": {
-    "home": 0.5816,
-    "away": 0.4184
+    "home": 0.582,
+    "away": 0.418
    },
    "pick": {
     "market": "moneyline",
@@ -35,7 +35,7 @@
     "home": -3.0,
     "away": 3.0
    },
-   "total_points": 240.0,
+   "total_points": 238.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -43,8 +43,8 @@
      20.0
     ],
     "total": [
-     214.0,
-     266.0
+     213.0,
+     265.0
     ]
    },
    "game_warnings": [
@@ -86,12 +86,12 @@
     "code": "NY"
    },
    "projection": {
-    "home_score": 115.7,
-    "away_score": 111.0
+    "home_score": 114.7,
+    "away_score": 110.1
    },
    "win_probability": {
-    "home": 0.6296,
-    "away": 0.3704
+    "home": 0.6283,
+    "away": 0.3717
    },
    "pick": {
     "market": "moneyline",
@@ -103,7 +103,7 @@
     "home": -5.0,
     "away": 5.0
    },
-   "total_points": 226.7,
+   "total_points": 224.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -111,8 +111,8 @@
      22.0
     ],
     "total": [
-     201.0,
-     253.0
+     199.0,
+     251.0
     ]
    },
    "game_warnings": [],
@@ -151,12 +151,12 @@
     "code": "ATL"
    },
    "projection": {
-    "home_score": 118.0,
-    "away_score": 115.7
+    "home_score": 117.5,
+    "away_score": 115.1
    },
    "win_probability": {
-    "home": 0.5661,
-    "away": 0.4339
+    "home": 0.567,
+    "away": 0.433
    },
    "pick": {
     "market": "moneyline",
@@ -168,16 +168,16 @@
     "home": -3.0,
     "away": 3.0
    },
-   "total_points": 233.7,
+   "total_points": 232.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -16.0,
+     -15.0,
      20.0
     ],
     "total": [
-     208.0,
-     260.0
+     207.0,
+     259.0
     ]
    },
    "game_warnings": [
@@ -218,12 +218,12 @@
     "code": "DAL"
    },
    "projection": {
-    "home_score": 120.0,
-    "away_score": 116.6
+    "home_score": 119.2,
+    "away_score": 115.8
    },
    "win_probability": {
-    "home": 0.5971,
-    "away": 0.4029
+    "home": 0.5972,
+    "away": 0.4028
    },
    "pick": {
     "market": "moneyline",
@@ -235,7 +235,7 @@
     "home": -4.0,
     "away": 4.0
    },
-   "total_points": 236.7,
+   "total_points": 235.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -243,8 +243,8 @@
      21.0
     ],
     "total": [
-     211.0,
-     263.0
+     209.0,
+     261.0
     ]
    },
    "game_warnings": [
@@ -288,12 +288,12 @@
     "code": "MIN"
    },
    "projection": {
-    "home_score": 119.8,
-    "away_score": 117.5
+    "home_score": 119.1,
+    "away_score": 116.7
    },
    "win_probability": {
-    "home": 0.5649,
-    "away": 0.4351
+    "home": 0.5664,
+    "away": 0.4336
    },
    "pick": {
     "market": "moneyline",
@@ -305,16 +305,16 @@
     "home": -3.0,
     "away": 3.0
    },
-   "total_points": 237.2,
+   "total_points": 235.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -16.0,
+     -15.1,
      20.0
     ],
     "total": [
-     211.0,
-     263.0
+     210.0,
+     262.0
     ]
    },
    "game_warnings": [],
@@ -323,7 +323,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +2.3, Elo +0.6, equipo -0.4, cuatro factores +0.5.",
+     "detail": "3 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +2.3, Elo +0.6, equipo -0.4, cuatro factores +0.6.",
      "supports_pick": true
     },
     {
@@ -347,12 +347,12 @@
     "code": "TOR"
    },
    "projection": {
-    "home_score": 111.9,
-    "away_score": 125.5
+    "home_score": 111.1,
+    "away_score": 124.7
    },
    "win_probability": {
-    "home": 0.1608,
-    "away": 0.8392
+    "home": 0.162,
+    "away": 0.838
    },
    "pick": {
     "market": "moneyline",
@@ -364,7 +364,7 @@
     "home": 14.0,
     "away": -14.0
    },
-   "total_points": 237.4,
+   "total_points": 235.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -372,8 +372,8 @@
      5.0
     ],
     "total": [
-     212.0,
-     263.0
+     210.0,
+     262.0
     ]
    },
    "game_warnings": [],
@@ -388,7 +388,7 @@
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de TOR vale 15.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de TOR vale 15.6 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -418,12 +418,12 @@
     "code": "DET"
    },
    "projection": {
-    "home_score": 114.0,
-    "away_score": 118.5
+    "home_score": 113.3,
+    "away_score": 117.8
    },
    "win_probability": {
-    "home": 0.3704,
-    "away": 0.6296
+    "home": 0.3718,
+    "away": 0.6282
    },
    "pick": {
     "market": "moneyline",
@@ -435,7 +435,7 @@
     "home": 5.0,
     "away": -5.0
    },
-   "total_points": 232.6,
+   "total_points": 231.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -443,8 +443,8 @@
      13.0
     ],
     "total": [
-     206.0,
-     259.0
+     205.0,
+     258.0
     ]
    },
    "game_warnings": [
@@ -485,12 +485,12 @@
     "code": "HOU"
    },
    "projection": {
-    "home_score": 115.0,
-    "away_score": 110.5
+    "home_score": 115.2,
+    "away_score": 110.6
    },
    "win_probability": {
-    "home": 0.6241,
-    "away": 0.3759
+    "home": 0.625,
+    "away": 0.375
    },
    "pick": {
     "market": "moneyline",
@@ -502,7 +502,7 @@
     "home": -5.0,
     "away": 5.0
    },
-   "total_points": 225.4,
+   "total_points": 225.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -511,7 +511,7 @@
     ],
     "total": [
      200.0,
-     251.0
+     252.0
     ]
    },
    "game_warnings": [
@@ -525,7 +525,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +4.6, Elo +6.4, equipo +6.3, cuatro factores +2.7.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +4.6, Elo +6.4, equipo +6.4, cuatro factores +2.7.",
      "supports_pick": true
     },
     {
@@ -561,12 +561,12 @@
     "code": "NO"
    },
    "projection": {
-    "home_score": 120.2,
-    "away_score": 119.9
+    "home_score": 119.5,
+    "away_score": 119.1
    },
    "win_probability": {
-    "home": 0.511,
-    "away": 0.489
+    "home": 0.5122,
+    "away": 0.4878
    },
    "pick": {
     "market": "moneyline",
@@ -578,7 +578,7 @@
     "home": -1.0,
     "away": 1.0
    },
-   "total_points": 240.1,
+   "total_points": 238.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -586,8 +586,8 @@
      18.0
     ],
     "total": [
-     214.0,
-     266.0
+     213.0,
+     265.0
     ]
    },
    "game_warnings": [],
@@ -632,12 +632,12 @@
     "code": "MEM"
    },
    "projection": {
-    "home_score": 118.8,
-    "away_score": 116.1
+    "home_score": 118.0,
+    "away_score": 115.3
    },
    "win_probability": {
-    "home": 0.5771,
-    "away": 0.4229
+    "home": 0.5758,
+    "away": 0.4242
    },
    "pick": {
     "market": "moneyline",
@@ -649,7 +649,7 @@
     "home": -3.0,
     "away": 3.0
    },
-   "total_points": 234.9,
+   "total_points": 233.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -657,8 +657,8 @@
      21.0
     ],
     "total": [
-     209.0,
-     260.0
+     208.0,
+     259.0
     ]
    },
    "game_warnings": [
@@ -671,7 +671,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +2.7, Elo +5.7, equipo +4.7, cuatro factores +7.6.",
+     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +2.7, Elo +5.7, equipo +4.8, cuatro factores +7.6.",
      "supports_pick": true
     },
     {
@@ -707,12 +707,12 @@
     "code": "LAC"
    },
    "projection": {
-    "home_score": 117.7,
-    "away_score": 115.5
+    "home_score": 117.1,
+    "away_score": 114.8
    },
    "win_probability": {
-    "home": 0.5652,
-    "away": 0.4348
+    "home": 0.5655,
+    "away": 0.4345
    },
    "pick": {
     "market": "moneyline",
@@ -724,7 +724,7 @@
     "home": -3.0,
     "away": 3.0
    },
-   "total_points": 233.2,
+   "total_points": 231.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -732,8 +732,8 @@
      20.0
     ],
     "total": [
-     207.0,
-     259.0
+     206.0,
+     258.0
     ]
    },
    "game_warnings": [
@@ -768,12 +768,12 @@
     "code": "POR"
    },
    "projection": {
-    "home_score": 107.6,
-    "away_score": 117.9
+    "home_score": 107.0,
+    "away_score": 117.2
    },
    "win_probability": {
-    "home": 0.2272,
-    "away": 0.7728
+    "home": 0.2295,
+    "away": 0.7705
    },
    "pick": {
     "market": "moneyline",
@@ -785,7 +785,7 @@
     "home": 10.0,
     "away": -10.0
    },
-   "total_points": 225.6,
+   "total_points": 224.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -793,8 +793,8 @@
      8.0
     ],
     "total": [
-     200.0,
-     251.0
+     199.0,
+     250.0
     ]
    },
    "game_warnings": [
@@ -805,7 +805,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +10.3, Elo +4.8, equipo +6.9, cuatro factores +3.5.",
+     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +10.2, Elo +4.8, equipo +6.9, cuatro factores +3.5.",
      "supports_pick": true
     },
     {
