@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-23T20:45:00.000555Z",
+ "generated_at": "2026-10-23T22:15:00.000544Z",
  "date_local": "2026-10-23",
  "games": [
   {
@@ -83,44 +83,42 @@
     "code": "ATL"
    },
    "projection": {
-    "home_score": 117.5,
+    "home_score": 117.1,
     "away_score": 115.1
    },
    "win_probability": {
-    "home": 0.5665,
-    "away": 0.4335
+    "home": 0.5536,
+    "away": 0.4464
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Charlotte Hornets ML"
    },
-   "data_warning": "Keshon Gilbert está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -3.0,
     "away": 3.0
    },
-   "total_points": 232.6,
+   "total_points": 232.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -15.0,
+     -16.0,
      20.0
     ],
     "total": [
-     207.0,
-     259.0
+     206.0,
+     258.0
     ]
    },
-   "game_warnings": [
-    "Keshon Gilbert está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +2.4, Elo +4.4, equipo +4.1, cuatro factores +4.2.",
+     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +1.9, Elo +4.4, equipo +4.1, cuatro factores +4.2.",
      "supports_pick": true
     },
     {
@@ -132,7 +130,7 @@
     {
      "label": "Bajas de CHA",
      "favors": "away",
-     "detail": "Sin Kon Knueppel, Coby White, Grant Williams: CHA pierde 2.4 puntos.",
+     "detail": "Sin Kon Knueppel, Coby White, Grant Williams: CHA pierde 2.9 puntos.",
      "supports_pick": false
     }
    ]
@@ -150,12 +148,12 @@
     "code": "DAL"
    },
    "projection": {
-    "home_score": 119.2,
-    "away_score": 115.8
+    "home_score": 119.8,
+    "away_score": 114.6
    },
    "win_probability": {
-    "home": 0.5969,
-    "away": 0.4031
+    "home": 0.6471,
+    "away": 0.3529
    },
    "pick": {
     "market": "moneyline",
@@ -164,25 +162,23 @@
    },
    "data_warning": "Kobe Brown está en duda (probable)",
    "spread": {
-    "home": -4.0,
-    "away": 4.0
+    "home": -6.0,
+    "away": 6.0
    },
-   "total_points": 235.1,
+   "total_points": 234.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -14.0,
-     21.0
+     -13.0,
+     23.0
     ],
     "total": [
      209.0,
-     261.0
+     260.0
     ]
    },
    "game_warnings": [
     "Kobe Brown está en duda (probable)",
-    "Aaron Nesmith está en duda (questionable)",
-    "Ben Sheppard está en duda (questionable)",
     "Jalen Slawson está en duda (probable)"
    ],
    "warnings": [],
@@ -190,19 +186,25 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a IND. Margen de IND: jugadores +3.4, Elo +2.3, equipo +2.8, cuatro factores +0.4.",
+     "detail": "4 de 4 modelos ven ganar a IND. Margen de IND: jugadores +5.2, Elo +2.3, equipo +2.8, cuatro factores +0.4.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de IND vale 1.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de IND vale 3.3 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.9 puntos para IND.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de DAL",
+     "favors": "home",
+     "detail": "Sin Santi Aldama, Dereck Lively II, Caleb Martin: DAL pierde 2.2 puntos.",
      "supports_pick": true
     }
    ]
