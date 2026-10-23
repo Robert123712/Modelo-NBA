@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-23T15:45:00.000600Z",
+ "generated_at": "2026-10-23T17:15:00.000519Z",
  "date_local": "2026-10-23",
  "games": [
   {
@@ -418,19 +418,19 @@
     "code": "DET"
    },
    "projection": {
-    "home_score": 113.3,
-    "away_score": 117.8
+    "home_score": 113.4,
+    "away_score": 117.7
    },
    "win_probability": {
-    "home": 0.3721,
-    "away": 0.6279
+    "home": 0.3743,
+    "away": 0.6257
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Detroit Pistons ML"
    },
-   "data_warning": "Taurean Prince está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": 5.0,
     "away": -5.0
@@ -444,24 +444,22 @@
     ],
     "total": [
      205.0,
-     257.0
+     258.0
     ]
    },
-   "game_warnings": [
-    "Taurean Prince está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +4.8, Elo +2.4, equipo +3.5, cuatro factores +2.6.",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +4.7, Elo +2.4, equipo +3.5, cuatro factores +2.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DET vale 6.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DET vale 6.6 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -768,23 +766,23 @@
    },
    "projection": {
     "home_score": 107.0,
-    "away_score": 117.2
+    "away_score": 117.3
    },
    "win_probability": {
-    "home": 0.2299,
-    "away": 0.7701
+    "home": 0.23,
+    "away": 0.77
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Portland Trail Blazers ML"
    },
-   "data_warning": "Malik Monk está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": 10.0,
     "away": -10.0
    },
-   "total_points": 224.2,
+   "total_points": 224.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -796,9 +794,7 @@
      250.0
     ]
    },
-   "game_warnings": [
-    "Malik Monk está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
@@ -810,7 +806,7 @@
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de POR vale 12.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de POR vale 12.0 puntos más por partido.",
      "supports_pick": true
     },
     {
