@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-24T00:45:00.000555Z",
+ "generated_at": "2026-10-24T01:15:00.000603Z",
  "date_local": "2026-10-23",
  "games": [
   {
@@ -18,24 +18,24 @@
     "code": "HOU"
    },
    "projection": {
-    "home_score": 115.2,
+    "home_score": 115.3,
     "away_score": 111.1
    },
    "win_probability": {
-    "home": 0.6157,
-    "away": 0.3843
+    "home": 0.6171,
+    "away": 0.3829
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "San Antonio Spurs ML"
    },
-   "data_warning": "Steven Adams está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -5.0,
     "away": 5.0
    },
-   "total_points": 226.3,
+   "total_points": 226.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -47,9 +47,7 @@
      252.0
     ]
    },
-   "game_warnings": [
-    "Steven Adams está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
