@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-24T22:15:00.000529Z",
+ "generated_at": "2026-10-24T22:45:00.000564Z",
  "date_local": "2026-10-24",
  "games": [
   {
@@ -154,12 +154,12 @@
     "code": "WSH"
    },
    "projection": {
-    "home_score": 123.6,
-    "away_score": 119.2
+    "home_score": 124.3,
+    "away_score": 118.9
    },
    "win_probability": {
-    "home": 0.6282,
-    "away": 0.3718
+    "home": 0.6529,
+    "away": 0.3471
    },
    "pick": {
     "market": "moneyline",
@@ -168,18 +168,18 @@
    },
    "data_warning": null,
    "spread": {
-    "home": -5.0,
-    "away": 5.0
+    "home": -6.0,
+    "away": 6.0
    },
-   "total_points": 242.8,
+   "total_points": 243.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -14.0,
-     22.0
+     -13.0,
+     23.0
     ],
     "total": [
-     217.0,
+     218.0,
      269.0
     ]
    },
@@ -189,13 +189,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a CHI. Margen de CHI: jugadores +4.5, Elo +5.3, equipo +4.5, cuatro factores +6.9.",
+     "detail": "4 de 4 modelos ven ganar a CHI. Margen de CHI: jugadores +5.4, Elo +5.3, equipo +4.5, cuatro factores +6.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de CHI vale 2.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de CHI vale 3.5 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -203,12 +203,6 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.9 puntos para CHI.",
      "supports_pick": true
-    },
-    {
-     "label": "Bajas de CHI",
-     "favors": "away",
-     "detail": "Sin Nic Claxton: CHI pierde 1.0 puntos.",
-     "supports_pick": false
     }
    ]
   },
@@ -377,11 +371,11 @@
    },
    "projection": {
     "home_score": 120.8,
-    "away_score": 112.4
+    "away_score": 112.3
    },
    "win_probability": {
-    "home": 0.7266,
-    "away": 0.2734
+    "home": 0.7304,
+    "away": 0.2696
    },
    "pick": {
     "market": "moneyline",
@@ -390,10 +384,10 @@
    },
    "data_warning": "Alpha Diallo está en duda (questionable)",
    "spread": {
-    "home": -8.0,
-    "away": 8.0
+    "home": -9.0,
+    "away": 9.0
    },
-   "total_points": 233.2,
+   "total_points": 233.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -401,26 +395,25 @@
      26.0
     ],
     "total": [
-     208.0,
+     207.9,
      259.0
     ]
    },
    "game_warnings": [
-    "Alpha Diallo está en duda (questionable)",
-    "Julian Reese está en duda (probable)"
+    "Alpha Diallo está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +8.4, Elo +8.6, equipo +8.0, cuatro factores +6.3.",
+     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +8.6, Elo +8.6, equipo +8.0, cuatro factores +6.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DEN vale 4.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DEN vale 4.8 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -438,7 +431,7 @@
     {
      "label": "Bajas de DEN",
      "favors": "away",
-     "detail": "Sin Cameron Johnson, Spencer Jones, Julian Strawther: DEN pierde 3.4 puntos.",
+     "detail": "Sin Cameron Johnson, Spencer Jones, Julian Strawther: DEN pierde 3.2 puntos.",
      "supports_pick": false
     }
    ]
