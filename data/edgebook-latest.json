@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-24T18:45:00.000591Z",
+ "generated_at": "2026-10-24T19:15:00.000518Z",
  "date_local": "2026-10-24",
  "games": [
   {
@@ -443,11 +443,11 @@
    },
    "projection": {
     "home_score": 120.8,
-    "away_score": 112.3
+    "away_score": 112.4
    },
    "win_probability": {
-    "home": 0.7304,
-    "away": 0.2696
+    "home": 0.7266,
+    "away": 0.2734
    },
    "pick": {
     "market": "moneyline",
@@ -456,10 +456,10 @@
    },
    "data_warning": "Alpha Diallo está en duda (questionable)",
    "spread": {
-    "home": -9.0,
-    "away": 9.0
+    "home": -8.0,
+    "away": 8.0
    },
-   "total_points": 233.1,
+   "total_points": 233.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -467,26 +467,26 @@
      26.0
     ],
     "total": [
-     207.9,
+     208.0,
      259.0
     ]
    },
    "game_warnings": [
     "Alpha Diallo está en duda (questionable)",
-    "Yves Missi está en duda (day-to-day)"
+    "Julian Reese está en duda (probable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +8.6, Elo +8.6, equipo +8.0, cuatro factores +6.3.",
+     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +8.4, Elo +8.6, equipo +8.0, cuatro factores +6.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DEN vale 4.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DEN vale 4.7 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -504,7 +504,7 @@
     {
      "label": "Bajas de DEN",
      "favors": "away",
-     "detail": "Sin Cameron Johnson, Spencer Jones, Julian Strawther: DEN pierde 3.2 puntos.",
+     "detail": "Sin Cameron Johnson, Spencer Jones, Julian Strawther: DEN pierde 3.4 puntos.",
      "supports_pick": false
     }
    ]
