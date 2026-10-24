@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-24T04:45:00.000518Z",
+ "generated_at": "2026-10-24T05:45:00.000784Z",
  "date_local": "2026-10-24",
  "games": [
   {
@@ -19,7 +19,7 @@
    },
    "projection": {
     "home_score": 118.7,
-    "away_score": 113.9
+    "away_score": 113.8
    },
    "win_probability": {
     "home": 0.6353,
@@ -35,7 +35,7 @@
     "home": -5.0,
     "away": 5.0
    },
-   "total_points": 232.6,
+   "total_points": 232.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -44,7 +44,7 @@
     ],
     "total": [
      207.0,
-     259.0
+     258.0
     ]
    },
    "game_warnings": [
@@ -87,12 +87,12 @@
     "code": "BKN"
    },
    "projection": {
-    "home_score": 124.2,
-    "away_score": 108.3
+    "home_score": 124.0,
+    "away_score": 108.1
    },
    "win_probability": {
-    "home": 0.8775,
-    "away": 0.1225
+    "home": 0.8768,
+    "away": 0.1232
    },
    "pick": {
     "market": "moneyline",
@@ -104,7 +104,7 @@
     "home": -16.0,
     "away": 16.0
    },
-   "total_points": 232.4,
+   "total_points": 232.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -113,7 +113,7 @@
     ],
     "total": [
      207.0,
-     258.0
+     257.0
     ]
    },
    "game_warnings": [],
@@ -152,12 +152,12 @@
     "code": "MIL"
    },
    "projection": {
-    "home_score": 125.8,
+    "home_score": 125.7,
     "away_score": 115.4
    },
    "win_probability": {
-    "home": 0.7774,
-    "away": 0.2226
+    "home": 0.7775,
+    "away": 0.2225
    },
    "pick": {
     "market": "moneyline",
@@ -169,7 +169,7 @@
     "home": -10.0,
     "away": 10.0
    },
-   "total_points": 241.2,
+   "total_points": 241.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -177,7 +177,7 @@
      28.0
     ],
     "total": [
-     216.0,
+     215.0,
      267.0
     ]
    },
@@ -232,12 +232,12 @@
     "code": "WSH"
    },
    "projection": {
-    "home_score": 123.7,
+    "home_score": 123.6,
     "away_score": 119.2
    },
    "win_probability": {
-    "home": 0.6283,
-    "away": 0.3717
+    "home": 0.6279,
+    "away": 0.3721
    },
    "pick": {
     "market": "moneyline",
@@ -249,7 +249,7 @@
     "home": -5.0,
     "away": 5.0
    },
-   "total_points": 242.9,
+   "total_points": 242.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -269,7 +269,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a CHI. Margen de CHI: jugadores +4.5, Elo +5.3, equipo +4.6, cuatro factores +6.9.",
+     "detail": "4 de 4 modelos ven ganar a CHI. Margen de CHI: jugadores +4.5, Elo +5.3, equipo +4.5, cuatro factores +6.9.",
      "supports_pick": true
     },
     {
@@ -305,12 +305,12 @@
     "code": "SA"
    },
    "projection": {
-    "home_score": 111.5,
-    "away_score": 119.3
+    "home_score": 111.4,
+    "away_score": 119.1
    },
    "win_probability": {
-    "home": 0.2829,
-    "away": 0.7171
+    "home": 0.2858,
+    "away": 0.7142
    },
    "pick": {
     "market": "moneyline",
@@ -322,7 +322,7 @@
     "home": 8.0,
     "away": -8.0
    },
-   "total_points": 230.8,
+   "total_points": 230.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -342,13 +342,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +7.8, Elo +8.0, equipo +9.0, cuatro factores +6.5.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +7.7, Elo +8.0, equipo +9.0, cuatro factores +6.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 9.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 9.5 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -372,8 +372,8 @@
     "code": "HOU"
    },
    "projection": {
-    "home_score": 113.5,
-    "away_score": 115.3
+    "home_score": 113.4,
+    "away_score": 115.2
    },
    "win_probability": {
     "home": 0.4441,
@@ -389,7 +389,7 @@
     "home": 3.0,
     "away": -3.0
    },
-   "total_points": 228.7,
+   "total_points": 228.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -398,7 +398,7 @@
     ],
     "total": [
      203.0,
-     255.0
+     254.0
     ]
    },
    "game_warnings": [],
@@ -443,12 +443,12 @@
     "code": "NO"
    },
    "projection": {
-    "home_score": 121.0,
-    "away_score": 112.5
+    "home_score": 120.8,
+    "away_score": 112.3
    },
    "win_probability": {
-    "home": 0.7294,
-    "away": 0.2706
+    "home": 0.7301,
+    "away": 0.2699
    },
    "pick": {
     "market": "moneyline",
@@ -457,10 +457,10 @@
    },
    "data_warning": "Alpha Diallo está en duda (questionable)",
    "spread": {
-    "home": -8.0,
-    "away": 8.0
+    "home": -9.0,
+    "away": 9.0
    },
-   "total_points": 233.5,
+   "total_points": 233.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -469,7 +469,7 @@
     ],
     "total": [
      208.0,
-     260.0
+     259.0
     ]
    },
    "game_warnings": [
@@ -505,7 +505,7 @@
     {
      "label": "Bajas de DEN",
      "favors": "away",
-     "detail": "Sin Cameron Johnson, Spencer Jones, Julian Strawther: DEN pierde 3.3 puntos.",
+     "detail": "Sin Cameron Johnson, Spencer Jones, Julian Strawther: DEN pierde 3.2 puntos.",
      "supports_pick": false
     }
    ]
@@ -523,12 +523,12 @@
     "code": "GS"
    },
    "projection": {
-    "home_score": 114.2,
-    "away_score": 110.6
+    "home_score": 112.9,
+    "away_score": 109.3
    },
    "win_probability": {
-    "home": 0.601,
-    "away": 0.399
+    "home": 0.6028,
+    "away": 0.3972
    },
    "pick": {
     "market": "moneyline",
@@ -540,7 +540,7 @@
     "home": -4.0,
     "away": 4.0
    },
-   "total_points": 224.8,
+   "total_points": 222.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -548,8 +548,8 @@
      21.0
     ],
     "total": [
-     199.0,
-     251.0
+     196.0,
+     248.0
     ]
    },
    "game_warnings": [
@@ -561,13 +561,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +3.5, Elo +4.6, equipo +2.1, cuatro factores +2.7.",
+     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +3.5, Elo +5.0, equipo +2.4, cuatro factores +2.5.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para PHX.",
+     "detail": "Jugar en casa vale 1.7 puntos para PHX.",
      "supports_pick": true
     },
     {
