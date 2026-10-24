@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-24T18:15:00.000531Z",
+ "generated_at": "2026-10-24T18:45:00.000591Z",
  "date_local": "2026-10-24",
  "games": [
   {
@@ -292,58 +292,59 @@
     "code": "SA"
    },
    "projection": {
-    "home_score": 110.3,
-    "away_score": 119.7
+    "home_score": 111.3,
+    "away_score": 119.9
    },
    "win_probability": {
-    "home": 0.2442,
-    "away": 0.7558
+    "home": 0.2648,
+    "away": 0.7352
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "San Antonio Spurs ML"
    },
-   "data_warning": "Santi Aldama está en duda (day-to-day)",
+   "data_warning": "Max Christie está en duda (questionable)",
    "spread": {
     "home": 9.0,
     "away": -9.0
    },
-   "total_points": 230.0,
+   "total_points": 231.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -27.0,
+     -26.0,
      9.0
     ],
     "total": [
-     204.0,
-     256.0
+     205.0,
+     257.0
     ]
    },
    "game_warnings": [
-    "Santi Aldama está en duda (day-to-day)",
-    "Kyrie Irving está en duda (day-to-day)",
-    "Tobias Harris está en duda (day-to-day)"
+    "Max Christie está en duda (questionable)",
+    "Kyrie Irving está en duda (questionable)",
+    "Morez Johnson Jr. está en duda (questionable)",
+    "Zaccharie Risacher está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +9.4, Elo +8.0, equipo +9.0, cuatro factores +6.5.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +8.6, Elo +8.0, equipo +9.0, cuatro factores +6.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 11.3 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 10.4 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de DAL",
      "favors": "away",
-     "detail": "Sin Cooper Flagg, Dereck Lively II: DAL pierde 1.9 puntos.",
+     "detail": "Sin Santi Aldama, Cooper Flagg, Dereck Lively II: DAL pierde 1.1 puntos.",
      "supports_pick": true
     },
     {
