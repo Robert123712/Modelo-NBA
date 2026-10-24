@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-24T01:15:00.000603Z",
+ "generated_at": "2026-10-24T01:45:00.000593Z",
  "date_local": "2026-10-23",
  "games": [
   {
@@ -77,77 +77,6 @@
    ]
   },
   {
-   "league_game_id": "401909849",
-   "espn_game_id": "401909849",
-   "starts_at": "2026-10-24T01:30Z",
-   "home": {
-    "name": "Utah Jazz",
-    "code": "UTAH"
-   },
-   "away": {
-    "name": "New Orleans Pelicans",
-    "code": "NO"
-   },
-   "projection": {
-    "home_score": 119.3,
-    "away_score": 119.0
-   },
-   "win_probability": {
-    "home": 0.5122,
-    "away": 0.4878
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Utah Jazz ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -1.0,
-    "away": 1.0
-   },
-   "total_points": 238.3,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -18.0,
-     18.0
-    ],
-    "total": [
-     213.0,
-     264.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "3 de 4 modelos ven ganar a NO. Margen de NO: jugadores -0.3, Elo +1.5, equipo +1.6, cuatro factores +1.4.",
-     "supports_pick": false
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.9 puntos para UTAH.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de NO vale 1.6 puntos más por partido.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de UTAH",
-     "favors": "away",
-     "detail": "Sin Blake Hinson, Jusuf Nurkic: UTAH pierde 2.0 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
-  {
    "league_game_id": "401909850",
    "espn_game_id": "401909850",
    "starts_at": "2026-10-24T02:00Z",
@@ -160,52 +89,42 @@
     "code": "MEM"
    },
    "projection": {
-    "home_score": 117.9,
-    "away_score": 114.9
+    "home_score": 117.0,
+    "away_score": 115.2
    },
    "win_probability": {
-    "home": 0.5842,
-    "away": 0.4158
+    "home": 0.5514,
+    "away": 0.4486
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Golden State Warriors ML"
    },
-   "data_warning": "Brandin Podziemski está en duda (probable)",
+   "data_warning": null,
    "spread": {
-    "home": -3.0,
-    "away": 3.0
+    "home": -2.0,
+    "away": 2.0
    },
-   "total_points": 232.9,
+   "total_points": 232.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -15.0,
-     21.0
+     -16.0,
+     20.0
     ],
     "total": [
      207.0,
      258.0
     ]
    },
-   "game_warnings": [
-    "Brandin Podziemski está en duda (probable)",
-    "Cedric Coward está en duda (doubtful)",
-    "Isaiah Stewart está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +2.9, Elo +5.7, equipo +4.7, cuatro factores +7.6.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de GS vale 1.1 puntos más por partido.",
+     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +1.8, Elo +5.7, equipo +4.7, cuatro factores +7.6.",
      "supports_pick": true
     },
     {
@@ -217,7 +136,7 @@
     {
      "label": "Bajas de GS",
      "favors": "away",
-     "detail": "Sin Jimmy Butler III, Moses Moody, Kristaps Porzingis: GS pierde 2.8 puntos.",
+     "detail": "Sin Jimmy Butler III, Moses Moody, Kristaps Porzingis: GS pierde 4.0 puntos.",
      "supports_pick": false
     }
    ]
@@ -810,6 +729,77 @@
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.9 puntos para MIA.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909849",
+   "espn_game_id": "401909849",
+   "starts_at": "2026-10-24T01:30Z",
+   "home": {
+    "name": "Utah Jazz",
+    "code": "UTAH"
+   },
+   "away": {
+    "name": "New Orleans Pelicans",
+    "code": "NO"
+   },
+   "projection": {
+    "home_score": 119.3,
+    "away_score": 119.0
+   },
+   "win_probability": {
+    "home": 0.5122,
+    "away": 0.4878
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Utah Jazz ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -1.0,
+    "away": 1.0
+   },
+   "total_points": 238.3,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -18.0,
+     18.0
+    ],
+    "total": [
+     213.0,
+     264.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "3 de 4 modelos ven ganar a NO. Margen de NO: jugadores -0.3, Elo +1.5, equipo +1.6, cuatro factores +1.4.",
+     "supports_pick": false
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.9 puntos para UTAH.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de NO vale 1.6 puntos más por partido.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de UTAH",
+     "favors": "away",
+     "detail": "Sin Blake Hinson, Jusuf Nurkic: UTAH pierde 2.0 puntos.",
      "supports_pick": false
     }
    ]
