@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-24T22:45:00.000564Z",
+ "generated_at": "2026-10-24T23:15:00.000592Z",
  "date_local": "2026-10-24",
  "games": [
   {
@@ -219,12 +219,12 @@
     "code": "SA"
    },
    "projection": {
-    "home_score": 110.7,
-    "away_score": 120.7
+    "home_score": 110.2,
+    "away_score": 121.3
    },
    "win_probability": {
-    "home": 0.2328,
-    "away": 0.7672
+    "home": 0.2065,
+    "away": 0.7935
    },
    "pick": {
     "market": "moneyline",
@@ -233,15 +233,15 @@
    },
    "data_warning": "Max Christie está en duda (questionable)",
    "spread": {
-    "home": 10.0,
-    "away": -10.0
+    "home": 11.0,
+    "away": -11.0
    },
-   "total_points": 231.4,
+   "total_points": 231.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -28.0,
-     8.0
+     -29.0,
+     7.0
     ],
     "total": [
      206.0,
@@ -250,28 +250,26 @@
    },
    "game_warnings": [
     "Max Christie está en duda (questionable)",
-    "Kyrie Irving está en duda (doubtful)",
-    "Morez Johnson Jr. está en duda (probable)",
-    "Zaccharie Risacher está en duda (probable)"
+    "Morez Johnson Jr. está en duda (probable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +10.0, Elo +8.0, equipo +9.0, cuatro factores +6.5.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +11.2, Elo +8.0, equipo +9.0, cuatro factores +6.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 11.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 13.0 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de DAL",
      "favors": "away",
-     "detail": "Sin Santi Aldama, Cooper Flagg, Dereck Lively II: DAL pierde 2.5 puntos.",
+     "detail": "Sin Santi Aldama, Cooper Flagg, Kyrie Irving: DAL pierde 3.7 puntos.",
      "supports_pick": true
     },
     {

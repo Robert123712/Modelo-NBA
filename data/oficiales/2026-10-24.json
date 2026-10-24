@@ -7634,11 +7634,11 @@
   "tardia": false
  },
  "401909856": {
-  "generated_at": "2026-10-24T22:45:00.000564Z",
+  "generated_at": "2026-10-24T23:15:00.000592Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909856,
   "starts_at": "2026-10-25T00:30Z",
-  "minutos_antes": 105.0,
+  "minutos_antes": 75.0,
   "proyeccion": {
    "league_game_id": "401909856",
    "espn_game_id": "401909856",
@@ -8682,17 +8682,17 @@
     "min": 34.6,
     "s": {
      "puntos": [
-      18.62,
+      18.6,
       9.0,
       29.0
      ],
      "rebotes": [
-      8.18,
+      8.21,
       4.0,
       13.0
      ],
      "asistencias": [
-      5.44,
+      5.42,
       2.0,
       9.0
      ],
@@ -8702,12 +8702,12 @@
       45.0
      ],
      "puntos_rebotes": [
-      26.8,
+      26.81,
       16.0,
       39.0
      ],
      "puntos_asistencias": [
-      24.05,
+      24.02,
       14.0,
       35.0
      ]
@@ -8722,7 +8722,7 @@
      "bajas": {
       "points": 1.043,
       "reb": 1.0,
-      "assists": 1.03
+      "assists": 1.029
      },
      "grupo": "G",
      "duda": false
@@ -8743,9 +8743,9 @@
     "min": 33.3,
     "s": {
      "puntos": [
-      25.0,
+      24.96,
       13.0,
-      37.0
+      38.0
      ],
      "rebotes": [
       5.94,
@@ -8753,22 +8753,22 @@
       10.0
      ],
      "asistencias": [
-      5.37,
+      5.36,
       2.0,
       9.0
      ],
      "pra": [
-      36.31,
+      36.26,
       23.0,
       51.0
      ],
      "puntos_rebotes": [
-      30.95,
+      30.9,
       18.0,
-      44.0
+      45.0
      ],
      "puntos_asistencias": [
-      30.37,
+      30.32,
       18.0,
       44.0
      ]
@@ -8783,7 +8783,7 @@
      "bajas": {
       "points": 1.046,
       "reb": 1.0,
-      "assists": 1.03
+      "assists": 1.029
      },
      "grupo": "F",
      "duda": false
@@ -8804,7 +8804,7 @@
     "min": 33.1,
     "s": {
      "puntos": [
-      16.25,
+      16.18,
       8.0,
       26.0
      ],
@@ -8814,22 +8814,22 @@
       11.0
      ],
      "asistencias": [
-      1.96,
+      1.95,
       0.0,
       4.0
      ],
      "pra": [
-      25.28,
+      25.2,
       15.0,
-      37.0
+      36.0
      ],
      "puntos_rebotes": [
-      23.32,
+      23.24,
       13.0,
       34.0
      ],
      "puntos_asistencias": [
-      18.21,
+      18.13,
       9.0,
       28.0
      ]
@@ -8844,7 +8844,7 @@
      "bajas": {
       "points": 1.046,
       "reb": 1.0,
-      "assists": 1.03
+      "assists": 1.029
      },
      "grupo": "F",
      "duda": false
@@ -8865,12 +8865,12 @@
     "min": 30.8,
     "s": {
      "puntos": [
-      19.93,
+      19.87,
       10.0,
       31.0
      ],
      "rebotes": [
-      9.04,
+      9.03,
       5.0,
       14.0
      ],
@@ -8880,17 +8880,17 @@
       11.0
      ],
      "pra": [
-      35.73,
+      35.66,
       22.0,
       50.0
      ],
      "puntos_rebotes": [
-      28.97,
+      28.9,
       17.0,
       42.0
      ],
      "puntos_asistencias": [
-      26.69,
+      26.63,
       15.0,
       39.0
      ]
@@ -8905,7 +8905,7 @@
      "bajas": {
       "points": 1.052,
       "reb": 1.0,
-      "assists": 1.03
+      "assists": 1.029
      },
      "grupo": "C",
      "duda": false
@@ -8920,114 +8920,53 @@
     }
    },
    {
-    "a": 2990992,
-    "j": "Marcus Smart",
-    "lado": "away",
-    "min": 24.7,
-    "s": {
-     "puntos": [
-      9.45,
-      3.0,
-      17.0
-     ],
-     "rebotes": [
-      2.86,
-      1.0,
-      5.0
-     ],
-     "asistencias": [
-      3.55,
-      1.0,
-      6.0
-     ],
-     "pra": [
-      15.87,
-      8.0,
-      25.0
-     ],
-     "puntos_rebotes": [
-      12.31,
-      5.0,
-      20.0
-     ],
-     "puntos_asistencias": [
-      13.01,
-      6.0,
-      21.0
-     ]
-    },
-    "ctx": {
-     "min_sano": 23.1,
-     "rival": {
-      "points": 1.0,
-      "reb": 0.982,
-      "assists": 0.971
-     },
-     "bajas": {
-      "points": 1.074,
-      "reb": 1.0,
-      "assists": 1.03
-     },
-     "grupo": "G",
-     "duda": true
-    },
-    "prom": {
-     "puntos": 8.47,
-     "rebotes": 2.47,
-     "asistencias": 3.03,
-     "pra": 13.97,
-     "puntos_rebotes": 10.93,
-     "puntos_asistencias": 11.5
-    }
-   },
-   {
     "a": 4711272,
     "j": "Reed Sheppard",
     "lado": "away",
-    "min": 21.6,
+    "min": 24.0,
     "s": {
      "puntos": [
-      12.25,
+      13.07,
       5.0,
-      21.0
+      22.0
      ],
      "rebotes": [
-      3.13,
+      3.25,
       1.0,
       6.0
      ],
      "asistencias": [
-      3.58,
+      3.76,
       1.0,
       7.0
      ],
      "pra": [
-      18.96,
-      9.0,
-      29.0
+      20.08,
+      10.0,
+      31.0
      ],
      "puntos_rebotes": [
-      15.38,
-      7.0,
-      25.0
+      16.32,
+      8.0,
+      26.0
      ],
      "puntos_asistencias": [
-      15.83,
-      7.0,
-      25.0
+      16.83,
+      8.0,
+      27.0
      ]
     },
     "ctx": {
-     "min_sano": 19.4,
+     "min_sano": 22.5,
      "rival": {
       "points": 1.0,
       "reb": 0.982,
       "assists": 0.971
      },
      "bajas": {
-      "points": 1.093,
+      "points": 1.077,
       "reb": 1.0,
-      "assists": 1.03
+      "assists": 1.029
      },
      "grupo": "G",
      "duda": true
@@ -9042,38 +8981,99 @@
     }
    },
    {
+    "a": 2990992,
+    "j": "Marcus Smart",
+    "lado": "away",
+    "min": 22.3,
+    "s": {
+     "puntos": [
+      8.82,
+      3.0,
+      16.0
+     ],
+     "rebotes": [
+      2.75,
+      1.0,
+      5.0
+     ],
+     "asistencias": [
+      3.37,
+      1.0,
+      6.0
+     ],
+     "pra": [
+      14.93,
+      7.0,
+      24.0
+     ],
+     "puntos_rebotes": [
+      11.57,
+      5.0,
+      19.0
+     ],
+     "puntos_asistencias": [
+      12.18,
+      5.0,
+      20.0
+     ]
+    },
+    "ctx": {
+     "min_sano": 20.0,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.982,
+      "assists": 0.971
+     },
+     "bajas": {
+      "points": 1.09,
+      "reb": 1.0,
+      "assists": 1.029
+     },
+     "grupo": "G",
+     "duda": true
+    },
+    "prom": {
+     "puntos": 8.47,
+     "rebotes": 2.47,
+     "asistencias": 3.03,
+     "pra": 13.97,
+     "puntos_rebotes": 10.93,
+     "puntos_asistencias": 11.5
+    }
+   },
+   {
     "a": 4433192,
     "j": "Tari Eason",
     "lado": "away",
     "min": 20.4,
     "s": {
      "puntos": [
-      9.71,
+      9.66,
       3.0,
       17.0
      ],
      "rebotes": [
-      5.88,
+      5.9,
       2.0,
       10.0
      ],
      "asistencias": [
-      1.5,
+      1.51,
       0.0,
       3.0
      ],
      "pra": [
-      17.09,
+      17.07,
       8.0,
       27.0
      ],
      "puntos_rebotes": [
-      15.59,
+      15.56,
       7.0,
       25.0
      ],
      "puntos_asistencias": [
-      11.21,
+      11.16,
       4.0,
       19.0
      ]
@@ -9088,7 +9088,7 @@
      "bajas": {
       "points": 1.101,
       "reb": 1.0,
-      "assists": 1.03
+      "assists": 1.029
      },
      "grupo": "F",
      "duda": false
@@ -9109,7 +9109,7 @@
     "min": 9.8,
     "s": {
      "puntos": [
-      4.1,
+      4.07,
       0.0,
       9.0
      ],
@@ -9119,22 +9119,22 @@
       9.0
      ],
      "asistencias": [
-      0.97,
+      0.98,
       0.0,
       2.0
      ],
      "pra": [
-      9.88,
+      9.84,
       2.0,
-      19.0
+      18.0
      ],
      "puntos_rebotes": [
-      8.9,
+      8.87,
       2.0,
       17.0
      ],
      "puntos_asistencias": [
-      5.08,
+      5.04,
       0.0,
       11.0
      ]
@@ -9149,7 +9149,7 @@
      "bajas": {
       "points": 1.293,
       "reb": 1.0,
-      "assists": 1.03
+      "assists": 1.029
      },
      "grupo": "C",
      "duda": false
@@ -9167,11 +9167,11 @@
   "tardia": false
  },
  "401909859": {
-  "generated_at": "2026-10-24T22:45:00.000564Z",
+  "generated_at": "2026-10-24T23:15:00.000592Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909859,
   "starts_at": "2026-10-25T01:00Z",
-  "minutos_antes": 135.0,
+  "minutos_antes": 105.0,
   "proyeccion": {
    "league_game_id": "401909859",
    "espn_game_id": "401909859",
@@ -10704,11 +10704,11 @@
   "tardia": false
  },
  "401909860": {
-  "generated_at": "2026-10-24T22:45:00.000564Z",
+  "generated_at": "2026-10-24T23:15:00.000592Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909860,
   "starts_at": "2026-10-25T02:00Z",
-  "minutos_antes": 195.0,
+  "minutos_antes": 165.0,
   "proyeccion": {
    "league_game_id": "401909860",
    "espn_game_id": "401909860",
