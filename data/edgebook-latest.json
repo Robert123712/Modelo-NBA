@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-24T19:15:00.000518Z",
+ "generated_at": "2026-10-24T19:45:00.000515Z",
  "date_local": "2026-10-24",
  "games": [
   {
@@ -368,12 +368,12 @@
     "code": "HOU"
    },
    "projection": {
-    "home_score": 114.5,
-    "away_score": 113.8
+    "home_score": 114.9,
+    "away_score": 114.2
    },
    "win_probability": {
-    "home": 0.5175,
-    "away": 0.4825
+    "home": 0.5162,
+    "away": 0.4838
    },
    "pick": {
     "market": "moneyline",
@@ -385,7 +385,7 @@
     "home": -1.0,
     "away": 1.0
    },
-   "total_points": 228.3,
+   "total_points": 229.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -394,12 +394,13 @@
     ],
     "total": [
      203.0,
-     254.0
+     255.0
     ]
    },
    "game_warnings": [
     "Keshon Gilbert está en duda (questionable)",
-    "Reed Sheppard está en duda (questionable)"
+    "Reed Sheppard está en duda (questionable)",
+    "Marcus Smart está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
