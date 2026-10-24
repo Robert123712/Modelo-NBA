@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-24T19:45:00.000515Z",
+ "generated_at": "2026-10-24T20:15:00.000514Z",
  "date_local": "2026-10-24",
  "games": [
   {
@@ -523,52 +523,51 @@
     "code": "GS"
    },
    "projection": {
-    "home_score": 113.5,
-    "away_score": 108.3
+    "home_score": 114.0,
+    "away_score": 106.2
    },
    "win_probability": {
-    "home": 0.6466,
-    "away": 0.3534
+    "home": 0.7107,
+    "away": 0.2893
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Phoenix Suns ML"
    },
-   "data_warning": "Oso Ighodaro está en duda (doubtful)",
+   "data_warning": "Luke Kennard está en duda (questionable)",
    "spread": {
-    "home": -5.0,
-    "away": 5.0
+    "home": -8.0,
+    "away": 8.0
    },
-   "total_points": 221.8,
+   "total_points": 220.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -13.0,
-     23.0
+     -10.0,
+     26.0
     ],
     "total": [
-     196.0,
-     248.0
+     194.0,
+     246.0
     ]
    },
    "game_warnings": [
-    "Oso Ighodaro está en duda (doubtful)",
     "Luke Kennard está en duda (questionable)",
-    "Stephen Curry está en duda (day-to-day)"
+    "Draymond Green está en duda (doubtful)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +5.1, Elo +5.0, equipo +2.4, cuatro factores +2.5.",
+     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +7.7, Elo +5.0, equipo +2.4, cuatro factores +2.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de PHX vale 1.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de PHX vale 4.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -586,7 +585,7 @@
     {
      "label": "Bajas de GS",
      "favors": "home",
-     "detail": "Sin Jimmy Butler III, Moses Moody, Brandin Podziemski: GS pierde 4.7 puntos.",
+     "detail": "Sin Jimmy Butler III, Stephen Curry, Al Horford: GS pierde 7.3 puntos.",
      "supports_pick": true
     }
    ]
