@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-24T00:15:00.000605Z",
+ "generated_at": "2026-10-24T00:45:00.000555Z",
  "date_local": "2026-10-23",
  "games": [
   {
@@ -18,12 +18,12 @@
     "code": "HOU"
    },
    "projection": {
-    "home_score": 115.6,
-    "away_score": 111.0
+    "home_score": 115.2,
+    "away_score": 111.1
    },
    "win_probability": {
-    "home": 0.6278,
-    "away": 0.3722
+    "home": 0.6157,
+    "away": 0.3843
    },
    "pick": {
     "market": "moneyline",
@@ -35,12 +35,12 @@
     "home": -5.0,
     "away": 5.0
    },
-   "total_points": 226.6,
+   "total_points": 226.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -14.0,
-     23.0
+     22.0
     ],
     "total": [
      201.0,
@@ -55,13 +55,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +4.7, Elo +6.4, equipo +6.4, cuatro factores +2.7.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +4.3, Elo +6.4, equipo +6.4, cuatro factores +2.7.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 2.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 2.4 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -73,7 +73,7 @@
     {
      "label": "Bajas de SA",
      "favors": "away",
-     "detail": "Sin Tobias Harris: SA pierde 0.8 puntos.",
+     "detail": "Sin Tobias Harris: SA pierde 1.2 puntos.",
      "supports_pick": false
     }
    ]
