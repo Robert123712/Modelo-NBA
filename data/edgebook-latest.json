@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-25T14:15:00.722854Z",
+ "generated_at": "2026-10-25T16:45:00.000491Z",
  "date_local": "2026-10-25",
  "games": [
   {
@@ -232,33 +232,33 @@
     "code": "TOR"
    },
    "projection": {
-    "home_score": 115.3,
-    "away_score": 115.4
+    "home_score": 115.9,
+    "away_score": 114.9
    },
    "win_probability": {
-    "home": 0.4999,
-    "away": 0.5001
+    "home": 0.5303,
+    "away": 0.4697
    },
    "pick": {
     "market": "moneyline",
-    "side": "away",
-    "label": "Toronto Raptors ML"
+    "side": "home",
+    "label": "Minnesota Timberwolves ML"
    },
    "data_warning": null,
    "spread": {
-    "home": 1.0,
-    "away": -1.0
+    "home": -2.0,
+    "away": 2.0
    },
-   "total_points": 230.7,
+   "total_points": 230.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -18.0,
-     18.0
+     -17.0,
+     19.0
     ],
     "total": [
      205.0,
-     256.0
+     257.0
     ]
    },
    "game_warnings": [],
@@ -267,25 +267,19 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores -0.5, Elo +3.8, equipo +1.8, cuatro factores +0.1.",
-     "supports_pick": false
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de TOR vale 2.3 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de MIN",
-     "favors": "away",
-     "detail": "Sin Donte DiVincenzo: MIN pierde 1.0 puntos.",
+     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +0.7, Elo +3.8, equipo +1.8, cuatro factores +0.1.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para MIN.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de TOR vale 1.2 puntos más por partido.",
      "supports_pick": false
     }
    ]
