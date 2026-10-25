@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-25T17:15:00.000501Z",
+ "generated_at": "2026-10-25T17:45:00.000559Z",
  "date_local": "2026-10-25",
  "games": [
   {
@@ -447,24 +447,24 @@
     "code": "MEM"
    },
    "projection": {
-    "home_score": 114.3,
-    "away_score": 117.5
+    "home_score": 113.8,
+    "away_score": 117.0
    },
    "win_probability": {
-    "home": 0.4107,
-    "away": 0.5893
+    "home": 0.4121,
+    "away": 0.5879
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Memphis Grizzlies ML"
    },
-   "data_warning": "Keegan Murray está en duda (questionable)",
+   "data_warning": "Cedric Coward está en duda (questionable)",
    "spread": {
     "home": 4.0,
     "away": -4.0
    },
-   "total_points": 231.7,
+   "total_points": 230.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -472,12 +472,11 @@
      14.0
     ],
     "total": [
-     206.0,
-     258.0
+     205.0,
+     257.0
     ]
    },
    "game_warnings": [
-    "Keegan Murray está en duda (questionable)",
     "Cedric Coward está en duda (questionable)"
    ],
    "warnings": [],
