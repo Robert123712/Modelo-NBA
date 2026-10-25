@@ -2,145 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-24T23:45:00.000583Z",
+ "generated_at": "2026-10-25T00:15:00.000557Z",
  "date_local": "2026-10-24",
  "games": [
-  {
-   "league_game_id": "401909857",
-   "espn_game_id": "401909857",
-   "starts_at": "2026-10-25T00:00Z",
-   "home": {
-    "name": "Chicago Bulls",
-    "code": "CHI"
-   },
-   "away": {
-    "name": "Washington Wizards",
-    "code": "WSH"
-   },
-   "projection": {
-    "home_score": 124.3,
-    "away_score": 118.9
-   },
-   "win_probability": {
-    "home": 0.6529,
-    "away": 0.3471
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Chicago Bulls ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -6.0,
-    "away": 6.0
-   },
-   "total_points": 243.2,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -13.0,
-     23.0
-    ],
-    "total": [
-     218.0,
-     269.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a CHI. Margen de CHI: jugadores +5.4, Elo +5.3, equipo +4.5, cuatro factores +6.9.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de CHI vale 3.5 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.9 puntos para CHI.",
-     "supports_pick": true
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909858",
-   "espn_game_id": "401909858",
-   "starts_at": "2026-10-25T00:00Z",
-   "home": {
-    "name": "Dallas Mavericks",
-    "code": "DAL"
-   },
-   "away": {
-    "name": "San Antonio Spurs",
-    "code": "SA"
-   },
-   "projection": {
-    "home_score": 109.6,
-    "away_score": 121.5
-   },
-   "win_probability": {
-    "home": 0.1933,
-    "away": 0.8067
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "San Antonio Spurs ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 12.0,
-    "away": -12.0
-   },
-   "total_points": 231.1,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -30.0,
-     6.0
-    ],
-    "total": [
-     205.0,
-     257.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +11.9, Elo +8.0, equipo +9.0, cuatro factores +6.5.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 13.7 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de DAL",
-     "favors": "away",
-     "detail": "Sin Santi Aldama, Cooper Flagg, Kyrie Irving: DAL pierde 4.4 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para DAL.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909856",
    "espn_game_id": "401909856",
@@ -154,24 +18,24 @@
     "code": "HOU"
    },
    "projection": {
-    "home_score": 115.0,
-    "away_score": 113.8
+    "home_score": 115.7,
+    "away_score": 114.0
    },
    "win_probability": {
-    "home": 0.5321,
-    "away": 0.4679
+    "home": 0.5423,
+    "away": 0.4577
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Atlanta Hawks ML"
    },
-   "data_warning": "Reed Sheppard está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -2.0,
     "away": 2.0
    },
-   "total_points": 228.7,
+   "total_points": 229.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -179,20 +43,17 @@
      19.0
     ],
     "total": [
-     203.0,
-     255.0
+     204.0,
+     256.0
     ]
    },
-   "game_warnings": [
-    "Reed Sheppard está en duda (questionable)",
-    "Marcus Smart está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +1.1, Elo +2.4, equipo +1.7, cuatro factores -0.4.",
+     "detail": "3 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +1.5, Elo +2.4, equipo +1.7, cuatro factores -0.4.",
      "supports_pick": true
     },
     {
@@ -204,14 +65,8 @@
     {
      "label": "Bajas de HOU",
      "favors": "home",
-     "detail": "Sin Steven Adams, Fred VanVleet: HOU pierde 2.3 puntos.",
+     "detail": "Sin Steven Adams, Marcus Smart, Fred VanVleet: HOU pierde 2.7 puntos.",
      "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 0.7 puntos más por partido.",
-     "supports_pick": false
     }
    ]
   },
@@ -228,50 +83,48 @@
     "code": "NO"
    },
    "projection": {
-    "home_score": 120.8,
+    "home_score": 121.0,
     "away_score": 112.3
    },
    "win_probability": {
-    "home": 0.7304,
-    "away": 0.2696
+    "home": 0.7339,
+    "away": 0.2661
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Denver Nuggets ML"
    },
-   "data_warning": "Alpha Diallo está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -9.0,
     "away": 9.0
    },
-   "total_points": 233.1,
+   "total_points": 233.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -10.0,
+     -9.0,
      26.0
     ],
     "total": [
-     207.9,
-     259.0
+     208.0,
+     260.0
     ]
    },
-   "game_warnings": [
-    "Alpha Diallo está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +8.6, Elo +8.6, equipo +8.0, cuatro factores +6.3.",
+     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +8.7, Elo +8.6, equipo +8.0, cuatro factores +6.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DEN vale 4.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DEN vale 5.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -289,7 +142,7 @@
     {
      "label": "Bajas de DEN",
      "favors": "away",
-     "detail": "Sin Cameron Johnson, Spencer Jones, Julian Strawther: DEN pierde 3.2 puntos.",
+     "detail": "Sin Alpha Diallo, Cameron Johnson, Spencer Jones: DEN pierde 3.1 puntos.",
      "supports_pick": false
     }
    ]
@@ -574,6 +427,147 @@
      "favors": "home",
      "detail": "MIL juega su segundo partido en dos noches: 2.1 puntos.",
      "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909857",
+   "espn_game_id": "401909857",
+   "starts_at": "2026-10-25T00:00Z",
+   "home": {
+    "name": "Chicago Bulls",
+    "code": "CHI"
+   },
+   "away": {
+    "name": "Washington Wizards",
+    "code": "WSH"
+   },
+   "projection": {
+    "home_score": 124.3,
+    "away_score": 118.9
+   },
+   "win_probability": {
+    "home": 0.6529,
+    "away": 0.3471
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Chicago Bulls ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -6.0,
+    "away": 6.0
+   },
+   "total_points": 243.2,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -13.0,
+     23.0
+    ],
+    "total": [
+     218.0,
+     269.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a CHI. Margen de CHI: jugadores +5.4, Elo +5.3, equipo +4.5, cuatro factores +6.9.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de CHI vale 3.5 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.9 puntos para CHI.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909858",
+   "espn_game_id": "401909858",
+   "starts_at": "2026-10-25T00:00Z",
+   "home": {
+    "name": "Dallas Mavericks",
+    "code": "DAL"
+   },
+   "away": {
+    "name": "San Antonio Spurs",
+    "code": "SA"
+   },
+   "projection": {
+    "home_score": 110.7,
+    "away_score": 120.7
+   },
+   "win_probability": {
+    "home": 0.2328,
+    "away": 0.7672
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "San Antonio Spurs ML"
+   },
+   "data_warning": "Max Christie está en duda (questionable)",
+   "spread": {
+    "home": 10.0,
+    "away": -10.0
+   },
+   "total_points": 231.4,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -28.0,
+     8.0
+    ],
+    "total": [
+     206.0,
+     257.0
+    ]
+   },
+   "game_warnings": [
+    "Max Christie está en duda (questionable)",
+    "Kyrie Irving está en duda (doubtful)",
+    "Morez Johnson Jr. está en duda (probable)",
+    "Zaccharie Risacher está en duda (probable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +10.0, Elo +8.0, equipo +9.0, cuatro factores +6.5.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 11.8 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de DAL",
+     "favors": "away",
+     "detail": "Sin Santi Aldama, Cooper Flagg, Dereck Lively II: DAL pierde 2.5 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para DAL.",
+     "supports_pick": false
     }
    ]
   }
