@@ -2,86 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-25T01:45:00.000564Z",
+ "generated_at": "2026-10-25T02:15:00.000641Z",
  "date_local": "2026-10-24",
  "games": [
-  {
-   "league_game_id": "401909860",
-   "espn_game_id": "401909860",
-   "starts_at": "2026-10-25T02:00Z",
-   "home": {
-    "name": "Phoenix Suns",
-    "code": "PHX"
-   },
-   "away": {
-    "name": "Golden State Warriors",
-    "code": "GS"
-   },
-   "projection": {
-    "home_score": 114.2,
-    "away_score": 106.0
-   },
-   "win_probability": {
-    "home": 0.7214,
-    "away": 0.2786
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Phoenix Suns ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -8.0,
-    "away": 8.0
-   },
-   "total_points": 220.1,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -10.0,
-     26.0
-    ],
-    "total": [
-     194.0,
-     246.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +8.1, Elo +5.0, equipo +2.4, cuatro factores +2.5.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de PHX vale 4.4 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para PHX.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "home",
-     "detail": "GS juega su segundo partido en dos noches: 2.0 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de GS",
-     "favors": "home",
-     "detail": "Sin Jimmy Butler III, Stephen Curry, Draymond Green: GS pierde 7.7 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909853",
    "espn_game_id": "401909853",
@@ -577,6 +500,85 @@
      "favors": "away",
      "detail": "Sin Cameron Johnson, Spencer Jones, Julian Strawther: DEN pierde 3.2 puntos.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909860",
+   "espn_game_id": "401909860",
+   "starts_at": "2026-10-25T02:00Z",
+   "home": {
+    "name": "Phoenix Suns",
+    "code": "PHX"
+   },
+   "away": {
+    "name": "Golden State Warriors",
+    "code": "GS"
+   },
+   "projection": {
+    "home_score": 114.0,
+    "away_score": 106.2
+   },
+   "win_probability": {
+    "home": 0.713,
+    "away": 0.287
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Phoenix Suns ML"
+   },
+   "data_warning": "Luke Kennard está en duda (questionable)",
+   "spread": {
+    "home": -8.0,
+    "away": 8.0
+   },
+   "total_points": 220.2,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -10.0,
+     26.0
+    ],
+    "total": [
+     194.0,
+     246.0
+    ]
+   },
+   "game_warnings": [
+    "Luke Kennard está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +7.8, Elo +5.0, equipo +2.4, cuatro factores +2.5.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de PHX vale 4.1 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para PHX.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "home",
+     "detail": "GS juega su segundo partido en dos noches: 2.0 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de GS",
+     "favors": "home",
+     "detail": "Sin Jimmy Butler III, Stephen Curry, Draymond Green: GS pierde 7.4 puntos.",
+     "supports_pick": true
     }
    ]
   }
