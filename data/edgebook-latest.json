@@ -2,74 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-25T00:15:00.000557Z",
+ "generated_at": "2026-10-25T00:45:00.000580Z",
  "date_local": "2026-10-24",
  "games": [
-  {
-   "league_game_id": "401909856",
-   "espn_game_id": "401909856",
-   "starts_at": "2026-10-25T00:30Z",
-   "home": {
-    "name": "Atlanta Hawks",
-    "code": "ATL"
-   },
-   "away": {
-    "name": "Houston Rockets",
-    "code": "HOU"
-   },
-   "projection": {
-    "home_score": 115.7,
-    "away_score": 114.0
-   },
-   "win_probability": {
-    "home": 0.5423,
-    "away": 0.4577
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Atlanta Hawks ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -2.0,
-    "away": 2.0
-   },
-   "total_points": 229.7,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -16.0,
-     19.0
-    ],
-    "total": [
-     204.0,
-     256.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +1.5, Elo +2.4, equipo +1.7, cuatro factores -0.4.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para ATL.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de HOU",
-     "favors": "home",
-     "detail": "Sin Steven Adams, Marcus Smart, Fred VanVleet: HOU pierde 2.7 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909859",
    "espn_game_id": "401909859",
@@ -164,8 +99,8 @@
     "away_score": 106.2
    },
    "win_probability": {
-    "home": 0.7107,
-    "away": 0.2893
+    "home": 0.713,
+    "away": 0.287
    },
    "pick": {
     "market": "moneyline",
@@ -177,7 +112,7 @@
     "home": -8.0,
     "away": 8.0
    },
-   "total_points": 220.1,
+   "total_points": 220.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -190,21 +125,20 @@
     ]
    },
    "game_warnings": [
-    "Luke Kennard está en duda (questionable)",
-    "Draymond Green está en duda (doubtful)"
+    "Luke Kennard está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +7.7, Elo +5.0, equipo +2.4, cuatro factores +2.5.",
+     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +7.8, Elo +5.0, equipo +2.4, cuatro factores +2.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de PHX vale 4.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de PHX vale 4.1 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -222,7 +156,7 @@
     {
      "label": "Bajas de GS",
      "favors": "home",
-     "detail": "Sin Jimmy Butler III, Stephen Curry, Al Horford: GS pierde 7.3 puntos.",
+     "detail": "Sin Jimmy Butler III, Stephen Curry, Draymond Green: GS pierde 7.4 puntos.",
      "supports_pick": true
     }
    ]
@@ -567,6 +501,81 @@
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para DAL.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909856",
+   "espn_game_id": "401909856",
+   "starts_at": "2026-10-25T00:30Z",
+   "home": {
+    "name": "Atlanta Hawks",
+    "code": "ATL"
+   },
+   "away": {
+    "name": "Houston Rockets",
+    "code": "HOU"
+   },
+   "projection": {
+    "home_score": 114.9,
+    "away_score": 114.2
+   },
+   "win_probability": {
+    "home": 0.5162,
+    "away": 0.4838
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Atlanta Hawks ML"
+   },
+   "data_warning": "Keshon Gilbert está en duda (questionable)",
+   "spread": {
+    "home": -1.0,
+    "away": 1.0
+   },
+   "total_points": 229.1,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -17.0,
+     18.0
+    ],
+    "total": [
+     203.0,
+     255.0
+    ]
+   },
+   "game_warnings": [
+    "Keshon Gilbert está en duda (questionable)",
+    "Reed Sheppard está en duda (questionable)",
+    "Marcus Smart está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "3 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +0.6, Elo +2.4, equipo +1.7, cuatro factores -0.4.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para ATL.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de HOU",
+     "favors": "home",
+     "detail": "Sin Steven Adams, Fred VanVleet: HOU pierde 1.8 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 1.2 puntos más por partido.",
      "supports_pick": false
     }
    ]
