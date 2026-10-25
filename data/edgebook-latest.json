@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-25T04:45:00.000510Z",
+ "generated_at": "2026-10-25T14:15:00.722854Z",
  "date_local": "2026-10-25",
  "games": [
   {
@@ -22,8 +22,8 @@
     "away_score": 122.8
    },
    "win_probability": {
-    "home": 0.3084,
-    "away": 0.6916
+    "home": 0.3085,
+    "away": 0.6915
    },
    "pick": {
     "market": "moneyline",
@@ -374,12 +374,12 @@
     "code": "DET"
    },
    "projection": {
-    "home_score": 113.4,
-    "away_score": 119.9
+    "home_score": 113.8,
+    "away_score": 119.4
    },
    "win_probability": {
-    "home": 0.3186,
-    "away": 0.6814
+    "home": 0.3419,
+    "away": 0.6581
    },
    "pick": {
     "market": "moneyline",
@@ -388,15 +388,15 @@
    },
    "data_warning": "Joel Embiid está en duda (day-to-day)",
    "spread": {
-    "home": 7.0,
-    "away": -7.0
+    "home": 6.0,
+    "away": -6.0
    },
-   "total_points": 233.3,
+   "total_points": 233.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -24.0,
-     11.0
+     12.0
     ],
     "total": [
      207.0,
@@ -405,6 +405,7 @@
    },
    "game_warnings": [
     "Joel Embiid está en duda (day-to-day)",
+    "LeBron James está en duda (day-to-day)",
     "Ausar Thompson está en duda (questionable)"
    ],
    "warnings": [],
@@ -412,13 +413,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +6.7, Elo +0.1, equipo +4.0, cuatro factores +5.3.",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +5.8, Elo +0.1, equipo +4.0, cuatro factores +5.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DET vale 6.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DET vale 5.6 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -430,7 +431,7 @@
     {
      "label": "Bajas de PHI",
      "favors": "away",
-     "detail": "Sin Dominick Barlow, LeBron James: PHI pierde 1.9 puntos.",
+     "detail": "Sin Dominick Barlow: PHI pierde 1.0 puntos.",
      "supports_pick": true
     },
     {
@@ -471,7 +472,7 @@
     "home": 4.0,
     "away": -4.0
    },
-   "total_points": 231.8,
+   "total_points": 231.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -517,7 +518,5 @@
   }
  ],
  "skipped_without_id": 0,
- "warnings": [
-  "Sin alineaciones de la NBA (HTTPError); titular del partido anterior"
- ]
+ "warnings": []
 }
