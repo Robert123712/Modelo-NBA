@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-25T16:45:00.000491Z",
+ "generated_at": "2026-10-25T17:15:00.000501Z",
  "date_local": "2026-10-25",
  "games": [
   {
@@ -368,38 +368,36 @@
     "code": "DET"
    },
    "projection": {
-    "home_score": 113.8,
-    "away_score": 119.4
+    "home_score": 113.3,
+    "away_score": 120.2
    },
    "win_probability": {
-    "home": 0.3419,
-    "away": 0.6581
+    "home": 0.3081,
+    "away": 0.6919
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Detroit Pistons ML"
    },
-   "data_warning": "Joel Embiid está en duda (day-to-day)",
+   "data_warning": "Ausar Thompson está en duda (questionable)",
    "spread": {
-    "home": 6.0,
-    "away": -6.0
+    "home": 7.0,
+    "away": -7.0
    },
-   "total_points": 233.2,
+   "total_points": 233.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -24.0,
-     12.0
+     -25.0,
+     11.0
     ],
     "total": [
-     207.0,
+     208.0,
      259.0
     ]
    },
    "game_warnings": [
-    "Joel Embiid está en duda (day-to-day)",
-    "LeBron James está en duda (day-to-day)",
     "Ausar Thompson está en duda (questionable)"
    ],
    "warnings": [],
@@ -407,13 +405,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +5.8, Elo +0.1, equipo +4.0, cuatro factores +5.3.",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +7.0, Elo +0.1, equipo +4.0, cuatro factores +5.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DET vale 5.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DET vale 6.8 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -425,7 +423,7 @@
     {
      "label": "Bajas de PHI",
      "favors": "away",
-     "detail": "Sin Dominick Barlow: PHI pierde 1.0 puntos.",
+     "detail": "Sin Dominick Barlow, Joel Embiid: PHI pierde 2.2 puntos.",
      "supports_pick": true
     },
     {
