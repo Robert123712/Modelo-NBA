@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-25T20:15:00.000587Z",
+ "generated_at": "2026-10-25T21:15:00.000558Z",
  "date_local": "2026-10-25",
  "games": [
-  {
-   "league_game_id": "401909861",
-   "espn_game_id": "401909861",
-   "starts_at": "2026-10-25T21:00Z",
-   "home": {
-    "name": "Utah Jazz",
-    "code": "UTAH"
-   },
-   "away": {
-    "name": "Los Angeles Lakers",
-    "code": "LAL"
-   },
-   "projection": {
-    "home_score": 116.0,
-    "away_score": 122.8
-   },
-   "win_probability": {
-    "home": 0.3085,
-    "away": 0.6915
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Los Angeles Lakers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 7.0,
-    "away": -7.0
-   },
-   "total_points": 238.8,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -24.0,
-     11.0
-    ],
-    "total": [
-     213.0,
-     265.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +6.7, Elo +7.4, equipo +7.6, cuatro factores +6.0.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de LAL vale 8.5 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de UTAH",
-     "favors": "away",
-     "detail": "Sin Blake Hinson, Jusuf Nurkic: UTAH pierde 1.1 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para UTAH.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909862",
    "espn_game_id": "401909862",
@@ -368,36 +297,37 @@
     "code": "DET"
    },
    "projection": {
-    "home_score": 113.3,
-    "away_score": 120.2
+    "home_score": 112.8,
+    "away_score": 121.1
    },
    "win_probability": {
-    "home": 0.3081,
-    "away": 0.6919
+    "home": 0.2741,
+    "away": 0.7259
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Detroit Pistons ML"
    },
-   "data_warning": "Ausar Thompson está en duda (questionable)",
+   "data_warning": "VJ Edgecombe está en duda (questionable)",
    "spread": {
-    "home": 7.0,
-    "away": -7.0
+    "home": 8.0,
+    "away": -8.0
    },
-   "total_points": 233.5,
+   "total_points": 233.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -25.0,
-     11.0
+     -26.0,
+     10.0
     ],
     "total": [
      208.0,
-     259.0
+     260.0
     ]
    },
    "game_warnings": [
+    "VJ Edgecombe está en duda (questionable)",
     "Ausar Thompson está en duda (questionable)"
    ],
    "warnings": [],
@@ -405,13 +335,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +7.0, Elo +0.1, equipo +4.0, cuatro factores +5.3.",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +8.5, Elo +0.1, equipo +4.0, cuatro factores +5.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DET vale 6.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DET vale 8.2 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -423,7 +353,7 @@
     {
      "label": "Bajas de PHI",
      "favors": "away",
-     "detail": "Sin Dominick Barlow, Joel Embiid: PHI pierde 2.2 puntos.",
+     "detail": "Sin Dominick Barlow, Joel Embiid: PHI pierde 3.7 puntos.",
      "supports_pick": true
     },
     {
@@ -504,6 +434,77 @@
      "label": "Bajas de MEM",
      "favors": "home",
      "detail": "Sin Zach Edey: MEM pierde 2.2 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909861",
+   "espn_game_id": "401909861",
+   "starts_at": "2026-10-25T21:00Z",
+   "home": {
+    "name": "Utah Jazz",
+    "code": "UTAH"
+   },
+   "away": {
+    "name": "Los Angeles Lakers",
+    "code": "LAL"
+   },
+   "projection": {
+    "home_score": 116.0,
+    "away_score": 122.8
+   },
+   "win_probability": {
+    "home": 0.3085,
+    "away": 0.6915
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Los Angeles Lakers ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 7.0,
+    "away": -7.0
+   },
+   "total_points": 238.8,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -24.0,
+     11.0
+    ],
+    "total": [
+     213.0,
+     265.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +6.7, Elo +7.4, equipo +7.6, cuatro factores +6.0.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de LAL vale 8.5 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de UTAH",
+     "favors": "away",
+     "detail": "Sin Blake Hinson, Jusuf Nurkic: UTAH pierde 1.1 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para UTAH.",
      "supports_pick": false
     }
    ]
