@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-25T01:15:00.000626Z",
+ "generated_at": "2026-10-25T01:45:00.000564Z",
  "date_local": "2026-10-24",
  "games": [
   {
@@ -18,12 +18,12 @@
     "code": "GS"
    },
    "projection": {
-    "home_score": 114.1,
+    "home_score": 114.2,
     "away_score": 106.0
    },
    "win_probability": {
-    "home": 0.7194,
-    "away": 0.2806
+    "home": 0.7214,
+    "away": 0.2786
    },
    "pick": {
     "market": "moneyline",
@@ -35,7 +35,7 @@
     "home": -8.0,
     "away": 8.0
    },
-   "total_points": 220.2,
+   "total_points": 220.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -53,13 +53,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +8.0, Elo +5.0, equipo +2.4, cuatro factores +2.5.",
+     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +8.1, Elo +5.0, equipo +2.4, cuatro factores +2.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de PHX vale 4.3 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de PHX vale 4.4 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -77,7 +77,7 @@
     {
      "label": "Bajas de GS",
      "favors": "home",
-     "detail": "Sin Jimmy Butler III, Stephen Curry, Draymond Green: GS pierde 7.6 puntos.",
+     "detail": "Sin Jimmy Butler III, Stephen Curry, Draymond Green: GS pierde 7.7 puntos.",
      "supports_pick": true
     }
    ]
