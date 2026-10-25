@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-25T17:45:00.000559Z",
+ "generated_at": "2026-10-25T20:15:00.000587Z",
  "date_local": "2026-10-25",
  "games": [
   {
@@ -447,24 +447,24 @@
     "code": "MEM"
    },
    "projection": {
-    "home_score": 113.8,
-    "away_score": 117.0
+    "home_score": 114.4,
+    "away_score": 117.7
    },
    "win_probability": {
-    "home": 0.4121,
-    "away": 0.5879
+    "home": 0.4101,
+    "away": 0.5899
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Memphis Grizzlies ML"
    },
-   "data_warning": "Cedric Coward está en duda (questionable)",
+   "data_warning": "Keegan Murray está en duda (doubtful)",
    "spread": {
     "home": 4.0,
     "away": -4.0
    },
-   "total_points": 230.9,
+   "total_points": 232.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -472,11 +472,12 @@
      14.0
     ],
     "total": [
-     205.0,
-     257.0
+     207.0,
+     258.0
     ]
    },
    "game_warnings": [
+    "Keegan Murray está en duda (doubtful)",
     "Cedric Coward está en duda (questionable)"
    ],
    "warnings": [],
@@ -502,7 +503,7 @@
     {
      "label": "Bajas de MEM",
      "favors": "home",
-     "detail": "Sin Zach Edey: MEM pierde 2.3 puntos.",
+     "detail": "Sin Zach Edey: MEM pierde 2.2 puntos.",
      "supports_pick": false
     }
    ]
