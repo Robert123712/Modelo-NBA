@@ -1,10 +1,10 @@
 {
  "401909868": {
-  "generated_at": "2026-10-26T20:45:00.000638Z",
+  "generated_at": "2026-10-26T21:15:00.000608Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909868,
   "starts_at": "2026-10-26T23:00Z",
-  "minutos_antes": 135.0,
+  "minutos_antes": 105.0,
   "proyeccion": {
    "league_game_id": "401909868",
    "espn_game_id": "401909868",
@@ -1531,11 +1531,11 @@
   "tardia": false
  },
  "401909869": {
-  "generated_at": "2026-10-26T20:45:00.000638Z",
+  "generated_at": "2026-10-26T21:15:00.000608Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909869,
   "starts_at": "2026-10-26T23:00Z",
-  "minutos_antes": 135.0,
+  "minutos_antes": 105.0,
   "proyeccion": {
    "league_game_id": "401909869",
    "espn_game_id": "401909869",
@@ -3062,11 +3062,11 @@
   "tardia": false
  },
  "401909870": {
-  "generated_at": "2026-10-26T20:45:00.000638Z",
+  "generated_at": "2026-10-26T21:15:00.000608Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909870,
   "starts_at": "2026-10-26T23:30Z",
-  "minutos_antes": 165.0,
+  "minutos_antes": 135.0,
   "proyeccion": {
    "league_game_id": "401909870",
    "espn_game_id": "401909870",
@@ -4591,11 +4591,11 @@
   "tardia": false
  },
  "401909871": {
-  "generated_at": "2026-10-26T20:45:00.000638Z",
+  "generated_at": "2026-10-26T21:15:00.000608Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909871,
   "starts_at": "2026-10-26T23:30Z",
-  "minutos_antes": 165.0,
+  "minutos_antes": 135.0,
   "proyeccion": {
    "league_game_id": "401909871",
    "espn_game_id": "401909871",
@@ -6116,11 +6116,11 @@
   "tardia": false
  },
  "401909872": {
-  "generated_at": "2026-10-26T20:45:00.000638Z",
+  "generated_at": "2026-10-26T21:15:00.000608Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909872,
   "starts_at": "2026-10-27T00:00Z",
-  "minutos_antes": 195.0,
+  "minutos_antes": 165.0,
   "proyeccion": {
    "league_game_id": "401909872",
    "espn_game_id": "401909872",
@@ -7656,11 +7656,11 @@
   "tardia": false
  },
  "401909873": {
-  "generated_at": "2026-10-26T20:45:00.000638Z",
+  "generated_at": "2026-10-26T21:15:00.000608Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909873,
   "starts_at": "2026-10-27T00:00Z",
-  "minutos_antes": 195.0,
+  "minutos_antes": 165.0,
   "proyeccion": {
    "league_game_id": "401909873",
    "espn_game_id": "401909873",
@@ -9191,11 +9191,11 @@
   "tardia": false
  },
  "401909874": {
-  "generated_at": "2026-10-26T20:45:00.000638Z",
+  "generated_at": "2026-10-26T21:15:00.000608Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909874,
   "starts_at": "2026-10-27T00:30Z",
-  "minutos_antes": 225.0,
+  "minutos_antes": 195.0,
   "proyeccion": {
    "league_game_id": "401909874",
    "espn_game_id": "401909874",
@@ -10714,11 +10714,11 @@
   "tardia": false
  },
  "401909875": {
-  "generated_at": "2026-10-26T20:45:00.000638Z",
+  "generated_at": "2026-10-26T21:15:00.000608Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909875,
   "starts_at": "2026-10-27T01:00Z",
-  "minutos_antes": 255.0,
+  "minutos_antes": 225.0,
   "proyeccion": {
    "league_game_id": "401909875",
    "espn_game_id": "401909875",
@@ -12246,11 +12246,11 @@
   "tardia": false
  },
  "401909876": {
-  "generated_at": "2026-10-26T20:45:00.000638Z",
+  "generated_at": "2026-10-26T21:15:00.000608Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909876,
   "starts_at": "2026-10-27T02:00Z",
-  "minutos_antes": 315.0,
+  "minutos_antes": 285.0,
   "proyeccion": {
    "league_game_id": "401909876",
    "espn_game_id": "401909876",
@@ -13293,7 +13293,7 @@
     "min": 31.6,
     "s": {
      "puntos": [
-      17.48,
+      17.43,
       8.0,
       28.0
      ],
@@ -13308,17 +13308,17 @@
       8.0
      ],
      "pra": [
-      29.62,
-      18.0,
+      29.57,
+      17.0,
       42.0
      ],
      "puntos_rebotes": [
-      25.07,
+      25.01,
       14.0,
       37.0
      ],
      "puntos_asistencias": [
-      22.03,
+      21.98,
       12.0,
       33.0
      ]
@@ -13354,12 +13354,12 @@
     "min": 29.9,
     "s": {
      "puntos": [
-      15.76,
+      15.71,
       7.0,
       25.0
      ],
      "rebotes": [
-      5.39,
+      5.38,
       2.0,
       9.0
      ],
@@ -13369,19 +13369,19 @@
       6.0
      ],
      "pra": [
-      24.5,
+      24.44,
       14.0,
       36.0
      ],
      "puntos_rebotes": [
-      21.15,
+      21.09,
       11.0,
       32.0
      ],
      "puntos_asistencias": [
-      19.11,
+      19.05,
       10.0,
-      30.0
+      29.0
      ]
     },
     "ctx": {
@@ -13420,27 +13420,27 @@
       36.0
      ],
      "rebotes": [
-      3.33,
+      3.32,
       1.0,
       6.0
      ],
      "asistencias": [
-      4.21,
+      4.2,
       1.0,
       7.0
      ],
      "pra": [
-      30.8,
+      30.78,
       17.0,
       45.0
      ],
      "puntos_rebotes": [
-      26.59,
+      26.58,
       14.0,
       40.0
      ],
      "puntos_asistencias": [
-      27.48,
+      27.46,
       15.0,
       41.0
      ]
@@ -13476,32 +13476,32 @@
     "min": 27.0,
     "s": {
      "puntos": [
-      7.55,
+      7.5,
       2.0,
       14.0
      ],
      "rebotes": [
-      5.29,
+      5.28,
       2.0,
       9.0
      ],
      "asistencias": [
-      6.71,
+      6.7,
       3.0,
       11.0
      ],
      "pra": [
-      19.55,
+      19.47,
       11.0,
       29.0
      ],
      "puntos_rebotes": [
-      12.85,
+      12.78,
       6.0,
-      21.0
+      20.0
      ],
      "puntos_asistencias": [
-      14.26,
+      14.19,
       7.0,
       22.0
      ]
@@ -13531,44 +13531,44 @@
     }
    },
    {
-    "a": 4997536,
-    "j": "Gui Santos",
+    "a": 4703396,
+    "j": "Graham Ike",
     "lado": "away",
-    "min": 23.4,
+    "min": 19.5,
     "s": {
      "puntos": [
-      9.74,
+      10.2,
       3.0,
-      17.0
+      18.0
      ],
      "rebotes": [
-      4.77,
-      2.0,
+      4.6,
+      1.0,
       8.0
      ],
      "asistencias": [
-      2.83,
-      1.0,
-      5.0
+      1.9,
+      0.0,
+      4.0
      ],
      "pra": [
-      17.34,
-      8.0,
+      16.71,
+      7.0,
       27.0
      ],
      "puntos_rebotes": [
-      14.51,
+      14.8,
       6.0,
-      23.0
+      24.0
      ],
      "puntos_asistencias": [
-      12.57,
-      5.0,
+      12.11,
+      4.0,
       21.0
      ]
     },
     "ctx": {
-     "min_sano": 24.3,
+     "min_sano": 20.3,
      "rival": {
       "points": 1.0,
       "reb": 1.005,
@@ -13580,15 +13580,15 @@
       "assists": 1.0
      },
      "grupo": "F",
-     "duda": true
+     "duda": false
     },
     "prom": {
-     "puntos": 8.0,
-     "rebotes": 4.33,
-     "asistencias": 1.67,
-     "pra": 14.0,
-     "puntos_rebotes": 12.33,
-     "puntos_asistencias": 9.67
+     "puntos": 10.0,
+     "rebotes": 4.67,
+     "asistencias": 1.33,
+     "pra": 16.0,
+     "puntos_rebotes": 14.67,
+     "puntos_asistencias": 11.33
     }
    },
    {
@@ -13598,32 +13598,32 @@
     "min": 19.1,
     "s": {
      "puntos": [
-      9.83,
+      9.79,
       3.0,
       18.0
      ],
      "rebotes": [
-      3.05,
+      3.04,
       1.0,
       6.0
      ],
      "asistencias": [
-      2.39,
+      2.38,
       0.0,
       5.0
      ],
      "pra": [
-      15.27,
+      15.21,
       6.0,
       25.0
      ],
      "puntos_rebotes": [
-      12.87,
+      12.83,
       5.0,
       22.0
      ],
      "puntos_asistencias": [
-      12.22,
+      12.17,
       4.0,
       21.0
      ]
@@ -13653,13 +13653,74 @@
     }
    },
    {
+    "a": 4997536,
+    "j": "Gui Santos",
+    "lado": "away",
+    "min": 18.9,
+    "s": {
+     "puntos": [
+      8.44,
+      2.0,
+      16.0
+     ],
+     "rebotes": [
+      4.33,
+      1.0,
+      8.0
+     ],
+     "asistencias": [
+      2.51,
+      0.0,
+      5.0
+     ],
+     "pra": [
+      15.28,
+      7.0,
+      25.0
+     ],
+     "puntos_rebotes": [
+      12.78,
+      5.0,
+      21.0
+     ],
+     "puntos_asistencias": [
+      10.95,
+      4.0,
+      19.0
+     ]
+    },
+    "ctx": {
+     "min_sano": 19.1,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.005,
+      "assists": 1.113
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "F",
+     "duda": true
+    },
+    "prom": {
+     "puntos": 8.0,
+     "rebotes": 4.33,
+     "asistencias": 1.67,
+     "pra": 14.0,
+     "puntos_rebotes": 12.33,
+     "puntos_asistencias": 9.67
+    }
+   },
+   {
     "a": 3213,
     "j": "Al Horford",
     "lado": "away",
     "min": 17.0,
     "s": {
      "puntos": [
-      6.67,
+      6.65,
       1.0,
       13.0
      ],
@@ -13674,17 +13735,17 @@
       4.0
      ],
      "pra": [
-      12.85,
+      12.83,
       5.0,
       22.0
      ],
      "puntos_rebotes": [
-      10.99,
+      10.97,
       4.0,
       19.0
      ],
      "puntos_asistencias": [
-      8.53,
+      8.51,
       2.0,
       16.0
      ]
@@ -13711,67 +13772,6 @@
      "pra": 16.7,
      "puntos_rebotes": 13.83,
      "puntos_asistencias": 11.87
-    }
-   },
-   {
-    "a": 4397040,
-    "j": "Brandon Williams",
-    "lado": "away",
-    "min": 16.5,
-    "s": {
-     "puntos": [
-      10.95,
-      3.0,
-      20.0
-     ],
-     "rebotes": [
-      2.52,
-      0.0,
-      5.0
-     ],
-     "asistencias": [
-      3.11,
-      1.0,
-      6.0
-     ],
-     "pra": [
-      16.59,
-      6.900000000000091,
-      28.0
-     ],
-     "puntos_rebotes": [
-      13.48,
-      5.0,
-      23.0
-     ],
-     "puntos_asistencias": [
-      14.06,
-      5.0,
-      24.0
-     ]
-    },
-    "ctx": {
-     "min_sano": 16.7,
-     "rival": {
-      "points": 1.0,
-      "reb": 1.005,
-      "assists": 1.001
-     },
-     "bajas": {
-      "points": 1.0,
-      "reb": 1.0,
-      "assists": 1.0
-     },
-     "grupo": "G",
-     "duda": true
-    },
-    "prom": {
-     "puntos": 12.67,
-     "rebotes": 3.0,
-     "asistencias": 3.0,
-     "pra": 18.67,
-     "puntos_rebotes": 15.67,
-     "puntos_asistencias": 15.67
     }
    }
   ],
