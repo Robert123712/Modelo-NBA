@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-26T14:15:00.785579Z",
+ "generated_at": "2026-10-26T15:45:00.000574Z",
  "date_local": "2026-10-26",
  "games": [
   {
@@ -18,24 +18,24 @@
     "code": "WSH"
    },
    "projection": {
-    "home_score": 115.3,
+    "home_score": 115.4,
     "away_score": 107.6
    },
    "win_probability": {
-    "home": 0.7119,
-    "away": 0.2881
+    "home": 0.7126,
+    "away": 0.2874
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Charlotte Hornets ML"
    },
-   "data_warning": null,
+   "data_warning": "Naz Reid está en duda (probable)",
    "spread": {
     "home": -8.0,
     "away": 8.0
    },
-   "total_points": 222.9,
+   "total_points": 223.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -47,13 +47,15 @@
      249.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Naz Reid está en duda (probable)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +7.7, Elo +11.4, equipo +9.5, cuatro factores +13.1.",
+     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +7.8, Elo +11.4, equipo +9.5, cuatro factores +13.1.",
      "supports_pick": true
     },
     {
@@ -233,24 +235,24 @@
     "code": "DAL"
    },
    "projection": {
-    "home_score": 119.8,
-    "away_score": 117.4
+    "home_score": 119.4,
+    "away_score": 117.3
    },
    "win_probability": {
-    "home": 0.5679,
-    "away": 0.4321
+    "home": 0.5631,
+    "away": 0.4369
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Miami Heat ML"
    },
-   "data_warning": null,
+   "data_warning": "Cooper Flagg está en duda (questionable)",
    "spread": {
     "home": -3.0,
     "away": 3.0
    },
-   "total_points": 237.2,
+   "total_points": 236.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -262,19 +264,15 @@
      263.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Cooper Flagg está en duda (questionable)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIA. Margen de MIA: jugadores +2.4, Elo +5.1, equipo +4.4, cuatro factores +6.7.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MIA vale 0.5 puntos más por partido.",
+     "detail": "4 de 4 modelos ven ganar a MIA. Margen de MIA: jugadores +2.2, Elo +5.1, equipo +4.4, cuatro factores +6.7.",
      "supports_pick": true
     },
     {
@@ -286,7 +284,7 @@
     {
      "label": "Bajas de DAL",
      "favors": "home",
-     "detail": "Sin Santi Aldama, Cooper Flagg, Dereck Lively II: DAL pierde 2.7 puntos.",
+     "detail": "Sin Santi Aldama, Dereck Lively II, Naji Marshall: DAL pierde 2.5 puntos.",
      "supports_pick": true
     }
    ]
