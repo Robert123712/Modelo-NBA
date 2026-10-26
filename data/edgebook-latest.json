@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-26T15:45:00.000574Z",
+ "generated_at": "2026-10-26T16:45:00.000563Z",
  "date_local": "2026-10-26",
  "games": [
   {
@@ -456,12 +456,12 @@
     "code": "ATL"
    },
    "projection": {
-    "home_score": 115.7,
-    "away_score": 111.0
+    "home_score": 116.4,
+    "away_score": 111.7
    },
    "win_probability": {
-    "home": 0.6299,
-    "away": 0.3701
+    "home": 0.6319,
+    "away": 0.3681
    },
    "pick": {
     "market": "moneyline",
@@ -473,7 +473,7 @@
     "home": -5.0,
     "away": 5.0
    },
-   "total_points": 226.7,
+   "total_points": 228.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -481,8 +481,8 @@
      23.0
     ],
     "total": [
-     201.0,
-     253.0
+     202.0,
+     254.0
     ]
    },
    "game_warnings": [
@@ -493,13 +493,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +4.6, Elo +2.8, equipo +2.5, cuatro factores +4.4.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +4.7, Elo +2.8, equipo +2.5, cuatro factores +4.4.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 2.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 3.0 puntos más por partido.",
      "supports_pick": true
     },
     {
