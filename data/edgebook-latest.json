@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-26T22:15:00.000609Z",
+ "generated_at": "2026-10-26T22:45:00.000583Z",
  "date_local": "2026-10-26",
  "games": [
   {
@@ -229,20 +229,20 @@
     "away_score": 117.1
    },
    "win_probability": {
-    "home": 0.5627,
-    "away": 0.4373
+    "home": 0.5628,
+    "away": 0.4372
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Miami Heat ML"
    },
-   "data_warning": "Cooper Flagg está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": -3.0,
     "away": 3.0
    },
-   "total_points": 236.4,
+   "total_points": 236.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -251,12 +251,10 @@
     ],
     "total": [
      211.0,
-     263.0
+     262.0
     ]
    },
-   "game_warnings": [
-    "Cooper Flagg está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
