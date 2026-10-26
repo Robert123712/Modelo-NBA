@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-26T17:15:00.000580Z",
+ "generated_at": "2026-10-26T18:45:00.000561Z",
  "date_local": "2026-10-26",
  "games": [
   {
@@ -302,50 +302,53 @@
     "code": "IND"
    },
    "projection": {
-    "home_score": 121.6,
-    "away_score": 122.6
+    "home_score": 121.3,
+    "away_score": 123.4
    },
    "win_probability": {
-    "home": 0.4706,
-    "away": 0.5294
+    "home": 0.4401,
+    "away": 0.5599
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Indiana Pacers ML"
    },
-   "data_warning": "Ivica Zubac está en duda (day-to-day)",
+   "data_warning": "Kobe Brown está en duda (questionable)",
    "spread": {
-    "home": 2.0,
-    "away": -2.0
+    "home": 3.0,
+    "away": -3.0
    },
-   "total_points": 244.2,
+   "total_points": 244.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -19.0,
-     17.0
+     -20.0,
+     16.0
     ],
     "total": [
      219.0,
-     270.0
+     271.0
     ]
    },
    "game_warnings": [
-    "Ivica Zubac está en duda (day-to-day)"
+    "Kobe Brown está en duda (questionable)",
+    "Andrew Nembhard está en duda (questionable)",
+    "Aaron Nesmith está en duda (probable)",
+    "Jalen Slawson está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": null,
-     "detail": "Los modelos se dividen 2-2. Margen de MIL: jugadores -1.1, Elo +0.5, equipo -1.2, cuatro factores +0.3.",
+     "detail": "Los modelos se dividen 2-2. Margen de MIL: jugadores -2.1, Elo +0.5, equipo -1.2, cuatro factores +0.3.",
      "supports_pick": false
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de IND vale 5.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de IND vale 6.1 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -363,7 +366,7 @@
     {
      "label": "Bajas de IND",
      "favors": "home",
-     "detail": "Sin T.J. McConnell, Ben Sheppard: IND pierde 1.7 puntos.",
+     "detail": "Sin Johnny Furphy, T.J. McConnell, Ben Sheppard: IND pierde 0.6 puntos.",
      "supports_pick": false
     }
    ]
@@ -381,52 +384,48 @@
     "code": "PHX"
    },
    "projection": {
-    "home_score": 115.3,
-    "away_score": 104.7
+    "home_score": 114.7,
+    "away_score": 106.8
    },
    "win_probability": {
-    "home": 0.7783,
-    "away": 0.2217
+    "home": 0.714,
+    "away": 0.286
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Oklahoma City Thunder ML"
    },
-   "data_warning": "Cason Wallace está en duda (day-to-day)",
+   "data_warning": null,
    "spread": {
-    "home": -11.0,
-    "away": 11.0
+    "home": -8.0,
+    "away": 8.0
    },
-   "total_points": 219.9,
+   "total_points": 221.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -7.0,
-     28.0
+     -10.0,
+     25.0
     ],
     "total": [
-     194.0,
-     246.0
+     196.0,
+     247.0
     ]
    },
-   "game_warnings": [
-    "Cason Wallace está en duda (day-to-day)",
-    "Jaylin Williams está en duda (day-to-day)",
-    "Oso Ighodaro está en duda (doubtful)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +10.6, Elo +10.0, equipo +11.3, cuatro factores +10.5.",
+     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +7.7, Elo +10.0, equipo +11.3, cuatro factores +10.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de OKC vale 10.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de OKC vale 8.1 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -439,6 +438,12 @@
      "label": "Descanso",
      "favors": "away",
      "detail": "OKC juega su segundo partido en dos noches: 2.0 puntos.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de OKC",
+     "favors": "away",
+     "detail": "Sin Chet Holmgren, Cason Wallace, Jalen Williams: OKC pierde 3.1 puntos.",
      "supports_pick": false
     }
    ]
@@ -456,12 +461,12 @@
     "code": "ATL"
    },
    "projection": {
-    "home_score": 116.9,
-    "away_score": 111.0
+    "home_score": 116.4,
+    "away_score": 111.7
    },
    "win_probability": {
-    "home": 0.6645,
-    "away": 0.3355
+    "home": 0.6319,
+    "away": 0.3681
    },
    "pick": {
     "market": "moneyline",
@@ -470,15 +475,15 @@
    },
    "data_warning": "Keshon Gilbert está en duda (doubtful)",
    "spread": {
-    "home": -6.0,
-    "away": 6.0
+    "home": -5.0,
+    "away": 5.0
    },
-   "total_points": 227.9,
+   "total_points": 228.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -12.0,
-     24.0
+     -13.0,
+     23.0
     ],
     "total": [
      202.0,
@@ -493,25 +498,19 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +5.9, Elo +2.8, equipo +2.5, cuatro factores +4.4.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +4.7, Elo +2.8, equipo +2.5, cuatro factores +4.4.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 4.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 3.0 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para HOU.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de ATL",
-     "favors": "home",
-     "detail": "Sin Mouhamed Gueye: ATL pierde 0.8 puntos.",
      "supports_pick": true
     }
    ]
