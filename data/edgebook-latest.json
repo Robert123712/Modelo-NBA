@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-26T16:45:00.000563Z",
+ "generated_at": "2026-10-26T17:15:00.000580Z",
  "date_local": "2026-10-26",
  "games": [
   {
@@ -91,24 +91,24 @@
     "code": "MIN"
    },
    "projection": {
-    "home_score": 118.6,
-    "away_score": 116.3
+    "home_score": 118.0,
+    "away_score": 115.5
    },
    "win_probability": {
-    "home": 0.5708,
-    "away": 0.4292
+    "home": 0.5744,
+    "away": 0.4256
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Cleveland Cavaliers ML"
    },
-   "data_warning": null,
+   "data_warning": "Anthony Edwards está en duda (questionable)",
    "spread": {
     "home": -3.0,
     "away": 3.0
    },
-   "total_points": 234.9,
+   "total_points": 233.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -116,17 +116,19 @@
      20.0
     ],
     "total": [
-     209.0,
-     261.0
+     208.0,
+     260.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Anthony Edwards está en duda (questionable)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +2.5, Elo +0.3, equipo -1.5, cuatro factores +0.3.",
+     "detail": "3 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +2.4, Elo +0.3, equipo -1.5, cuatro factores +0.3.",
      "supports_pick": true
     },
     {
@@ -144,7 +146,7 @@
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de MIN vale 1.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MIN vale 1.5 puntos más por partido.",
      "supports_pick": false
     }
    ]
@@ -162,50 +164,48 @@
     "code": "CHI"
    },
    "projection": {
-    "home_score": 125.6,
-    "away_score": 107.7
+    "home_score": 125.3,
+    "away_score": 107.6
    },
    "win_probability": {
-    "home": 0.9022,
-    "away": 0.0978
+    "home": 0.9002,
+    "away": 0.0998
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Boston Celtics ML"
    },
-   "data_warning": "Patrick Williams está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -18.0,
     "away": 18.0
    },
-   "total_points": 233.2,
+   "total_points": 232.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      1.0,
-     36.0
+     35.0
     ],
     "total": [
-     208.0,
-     259.0
+     207.0,
+     258.0
     ]
    },
-   "game_warnings": [
-    "Patrick Williams está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +17.9, Elo +11.1, equipo +12.9, cuatro factores +12.6.",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +18.4, Elo +11.1, equipo +12.9, cuatro factores +12.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 16.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 16.6 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -217,7 +217,7 @@
     {
      "label": "Bajas de CHI",
      "favors": "home",
-     "detail": "Sin Nic Claxton: CHI pierde 0.6 puntos.",
+     "detail": "Sin Nic Claxton: CHI pierde 1.0 puntos.",
      "supports_pick": true
     }
    ]
@@ -235,24 +235,24 @@
     "code": "DAL"
    },
    "projection": {
-    "home_score": 119.4,
-    "away_score": 117.3
+    "home_score": 119.3,
+    "away_score": 117.1
    },
    "win_probability": {
-    "home": 0.5631,
-    "away": 0.4369
+    "home": 0.5627,
+    "away": 0.4373
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Miami Heat ML"
    },
-   "data_warning": "Cooper Flagg está en duda (questionable)",
+   "data_warning": "Cooper Flagg está en duda (probable)",
    "spread": {
     "home": -3.0,
     "away": 3.0
    },
-   "total_points": 236.7,
+   "total_points": 236.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -265,7 +265,7 @@
     ]
    },
    "game_warnings": [
-    "Cooper Flagg está en duda (questionable)"
+    "Cooper Flagg está en duda (probable)"
    ],
    "warnings": [],
    "key_factors": [
@@ -456,12 +456,12 @@
     "code": "ATL"
    },
    "projection": {
-    "home_score": 116.4,
-    "away_score": 111.7
+    "home_score": 116.9,
+    "away_score": 111.0
    },
    "win_probability": {
-    "home": 0.6319,
-    "away": 0.3681
+    "home": 0.6645,
+    "away": 0.3355
    },
    "pick": {
     "market": "moneyline",
@@ -470,15 +470,15 @@
    },
    "data_warning": "Keshon Gilbert está en duda (doubtful)",
    "spread": {
-    "home": -5.0,
-    "away": 5.0
+    "home": -6.0,
+    "away": 6.0
    },
-   "total_points": 228.1,
+   "total_points": 227.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -13.0,
-     23.0
+     -12.0,
+     24.0
     ],
     "total": [
      202.0,
@@ -493,19 +493,25 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +4.7, Elo +2.8, equipo +2.5, cuatro factores +4.4.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +5.9, Elo +2.8, equipo +2.5, cuatro factores +4.4.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 3.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 4.2 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para HOU.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de ATL",
+     "favors": "home",
+     "detail": "Sin Mouhamed Gueye: ATL pierde 0.8 puntos.",
      "supports_pick": true
     }
    ]
