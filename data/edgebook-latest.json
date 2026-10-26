@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-26T19:15:00.000677Z",
+ "generated_at": "2026-10-26T19:45:00.000600Z",
  "date_local": "2026-10-26",
  "games": [
   {
@@ -384,12 +384,12 @@
     "code": "PHX"
    },
    "projection": {
-    "home_score": 114.7,
-    "away_score": 106.8
+    "home_score": 115.0,
+    "away_score": 106.1
    },
    "win_probability": {
-    "home": 0.714,
-    "away": 0.286
+    "home": 0.7428,
+    "away": 0.2572
    },
    "pick": {
     "market": "moneyline",
@@ -398,18 +398,18 @@
    },
    "data_warning": null,
    "spread": {
-    "home": -8.0,
-    "away": 8.0
+    "home": -9.0,
+    "away": 9.0
    },
-   "total_points": 221.5,
+   "total_points": 221.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -10.0,
-     25.0
+     -9.0,
+     27.0
     ],
     "total": [
-     196.0,
+     195.0,
      247.0
     ]
    },
@@ -419,13 +419,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +7.7, Elo +10.0, equipo +11.3, cuatro factores +10.5.",
+     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +8.9, Elo +10.0, equipo +11.3, cuatro factores +10.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de OKC vale 8.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de OKC vale 9.2 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -443,7 +443,7 @@
     {
      "label": "Bajas de OKC",
      "favors": "away",
-     "detail": "Sin Chet Holmgren, Cason Wallace, Jalen Williams: OKC pierde 3.1 puntos.",
+     "detail": "Sin Chet Holmgren, Nikola Topic, Cason Wallace: OKC pierde 1.9 puntos.",
      "supports_pick": false
     }
    ]
@@ -528,24 +528,24 @@
     "code": "MEM"
    },
    "projection": {
-    "home_score": 116.3,
-    "away_score": 118.8
+    "home_score": 116.9,
+    "away_score": 119.2
    },
    "win_probability": {
-    "home": 0.4221,
-    "away": 0.5779
+    "home": 0.4288,
+    "away": 0.5712
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Memphis Grizzlies ML"
    },
-   "data_warning": null,
+   "data_warning": "Jaxson Hayes está en duda (questionable)",
    "spread": {
     "home": 3.0,
     "away": -3.0
    },
-   "total_points": 235.1,
+   "total_points": 236.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -553,29 +553,32 @@
      15.0
     ],
     "total": [
-     209.0,
-     261.0
+     210.0,
+     262.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Jaxson Hayes está en duda (questionable)",
+    "Isaiah Stewart está en duda (questionable)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": null,
-     "detail": "Los modelos se dividen 2-2. Margen de UTAH: jugadores -2.7, Elo +0.7, equipo -1.8, cuatro factores +3.3.",
+     "detail": "Los modelos se dividen 2-2. Margen de UTAH: jugadores -2.5, Elo +0.7, equipo -1.8, cuatro factores +3.3.",
      "supports_pick": false
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de MEM vale 4.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MEM vale 4.3 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de UTAH",
      "favors": "away",
-     "detail": "Sin Blake Hinson, Jusuf Nurkic: UTAH pierde 1.1 puntos.",
+     "detail": "Sin Blake Hinson, Jusuf Nurkic: UTAH pierde 0.9 puntos.",
      "supports_pick": true
     },
     {
