@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-26T19:45:00.000600Z",
+ "generated_at": "2026-10-26T20:15:00.000596Z",
  "date_local": "2026-10-26",
  "games": [
   {
@@ -602,37 +602,36 @@
     "code": "GS"
    },
    "projection": {
-    "home_score": 119.1,
-    "away_score": 115.4
+    "home_score": 120.1,
+    "away_score": 114.5
    },
    "win_probability": {
-    "home": 0.6071,
-    "away": 0.3929
+    "home": 0.6614,
+    "away": 0.3386
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Denver Nuggets ML"
    },
-   "data_warning": "Cameron Johnson está en duda (doubtful)",
+   "data_warning": "Gui Santos está en duda (questionable)",
    "spread": {
-    "home": -4.0,
-    "away": 4.0
+    "home": -6.0,
+    "away": 6.0
    },
    "total_points": 234.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -14.0,
-     21.0
+     -12.0,
+     23.0
     ],
     "total": [
      209.0,
-     261.0
+     260.0
     ]
    },
    "game_warnings": [
-    "Cameron Johnson está en duda (doubtful)",
     "Gui Santos está en duda (questionable)",
     "Brandon Williams está en duda (probable)"
    ],
@@ -641,19 +640,25 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +3.6, Elo +8.9, equipo +6.9, cuatro factores +5.6.",
+     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +5.5, Elo +8.9, equipo +6.9, cuatro factores +5.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DEN vale 1.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DEN vale 3.8 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.7 puntos para DEN.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de GS",
+     "favors": "home",
+     "detail": "Sin Jimmy Butler III, Moses Moody, Kristaps Porzingis: GS pierde 2.3 puntos.",
      "supports_pick": true
     }
    ]
