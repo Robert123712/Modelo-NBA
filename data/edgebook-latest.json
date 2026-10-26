@@ -2,139 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-26T23:15:00.000658Z",
+ "generated_at": "2026-10-26T23:45:00.000589Z",
  "date_local": "2026-10-26",
  "games": [
-  {
-   "league_game_id": "401909870",
-   "espn_game_id": "401909870",
-   "starts_at": "2026-10-26T23:30Z",
-   "home": {
-    "name": "Boston Celtics",
-    "code": "BOS"
-   },
-   "away": {
-    "name": "Chicago Bulls",
-    "code": "CHI"
-   },
-   "projection": {
-    "home_score": 125.5,
-    "away_score": 108.0
-   },
-   "win_probability": {
-    "home": 0.897,
-    "away": 0.103
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Boston Celtics ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -17.0,
-    "away": 17.0
-   },
-   "total_points": 233.4,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -1.0,
-     35.0
-    ],
-    "total": [
-     208.0,
-     259.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +17.6, Elo +11.1, equipo +12.9, cuatro factores +12.6.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 15.8 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para BOS.",
-     "supports_pick": true
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909871",
-   "espn_game_id": "401909871",
-   "starts_at": "2026-10-26T23:30Z",
-   "home": {
-    "name": "Miami Heat",
-    "code": "MIA"
-   },
-   "away": {
-    "name": "Dallas Mavericks",
-    "code": "DAL"
-   },
-   "projection": {
-    "home_score": 119.3,
-    "away_score": 117.1
-   },
-   "win_probability": {
-    "home": 0.5628,
-    "away": 0.4372
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Miami Heat ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -3.0,
-    "away": 3.0
-   },
-   "total_points": 236.3,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -16.0,
-     20.0
-    ],
-    "total": [
-     211.0,
-     262.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIA. Margen de MIA: jugadores +2.2, Elo +5.1, equipo +4.4, cuatro factores +6.7.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para MIA.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de DAL",
-     "favors": "home",
-     "detail": "Sin Santi Aldama, Dereck Lively II, Naji Marshall: DAL pierde 2.5 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909872",
    "espn_game_id": "401909872",
@@ -148,51 +18,48 @@
     "code": "IND"
    },
    "projection": {
-    "home_score": 121.5,
-    "away_score": 123.2
+    "home_score": 122.0,
+    "away_score": 123.0
    },
    "win_probability": {
-    "home": 0.449,
-    "away": 0.551
+    "home": 0.4736,
+    "away": 0.5264
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Indiana Pacers ML"
    },
-   "data_warning": "Kobe Brown está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": 2.0,
     "away": -2.0
    },
-   "total_points": 244.7,
+   "total_points": 245.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -20.0,
-     16.0
+     -19.0,
+     17.0
     ],
     "total": [
      219.0,
      271.0
     ]
    },
-   "game_warnings": [
-    "Kobe Brown está en duda (questionable)",
-    "Jalen Slawson está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": null,
-     "detail": "Los modelos se dividen 2-2. Margen de MIL: jugadores -1.8, Elo +0.5, equipo -1.2, cuatro factores +0.3.",
+     "detail": "Los modelos se dividen 2-2. Margen de MIL: jugadores -1.0, Elo +0.5, equipo -1.2, cuatro factores +0.3.",
      "supports_pick": false
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de IND vale 5.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de IND vale 4.9 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -210,7 +77,7 @@
     {
      "label": "Bajas de IND",
      "favors": "home",
-     "detail": "Sin Johnny Furphy, T.J. McConnell, Andrew Nembhard: IND pierde 0.9 puntos.",
+     "detail": "Sin Johnny Furphy, T.J. McConnell, Andrew Nembhard: IND pierde 1.8 puntos.",
      "supports_pick": false
     }
    ]
@@ -648,6 +515,138 @@
      "favors": "away",
      "detail": "Con los minutos proyectados, la rotación de MIN vale 1.5 puntos más por partido.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909870",
+   "espn_game_id": "401909870",
+   "starts_at": "2026-10-26T23:30Z",
+   "home": {
+    "name": "Boston Celtics",
+    "code": "BOS"
+   },
+   "away": {
+    "name": "Chicago Bulls",
+    "code": "CHI"
+   },
+   "projection": {
+    "home_score": 125.5,
+    "away_score": 108.0
+   },
+   "win_probability": {
+    "home": 0.897,
+    "away": 0.103
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Boston Celtics ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -17.0,
+    "away": 17.0
+   },
+   "total_points": 233.4,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -1.0,
+     35.0
+    ],
+    "total": [
+     208.0,
+     259.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +17.6, Elo +11.1, equipo +12.9, cuatro factores +12.6.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 15.8 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para BOS.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909871",
+   "espn_game_id": "401909871",
+   "starts_at": "2026-10-26T23:30Z",
+   "home": {
+    "name": "Miami Heat",
+    "code": "MIA"
+   },
+   "away": {
+    "name": "Dallas Mavericks",
+    "code": "DAL"
+   },
+   "projection": {
+    "home_score": 119.3,
+    "away_score": 117.1
+   },
+   "win_probability": {
+    "home": 0.5627,
+    "away": 0.4373
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Miami Heat ML"
+   },
+   "data_warning": "Cooper Flagg está en duda (probable)",
+   "spread": {
+    "home": -3.0,
+    "away": 3.0
+   },
+   "total_points": 236.4,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -16.0,
+     20.0
+    ],
+    "total": [
+     211.0,
+     263.0
+    ]
+   },
+   "game_warnings": [
+    "Cooper Flagg está en duda (probable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a MIA. Margen de MIA: jugadores +2.2, Elo +5.1, equipo +4.4, cuatro factores +6.7.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para MIA.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de DAL",
+     "favors": "home",
+     "detail": "Sin Santi Aldama, Dereck Lively II, Naji Marshall: DAL pierde 2.5 puntos.",
+     "supports_pick": true
     }
    ]
   }
