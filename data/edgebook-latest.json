@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-26T00:45:00.000559Z",
+ "generated_at": "2026-10-26T01:15:00.000567Z",
  "date_local": "2026-10-25",
  "games": [
-  {
-   "league_game_id": "401909867",
-   "espn_game_id": "401909867",
-   "starts_at": "2026-10-26T01:00Z",
-   "home": {
-    "name": "Sacramento Kings",
-    "code": "SAC"
-   },
-   "away": {
-    "name": "Memphis Grizzlies",
-    "code": "MEM"
-   },
-   "projection": {
-    "home_score": 114.7,
-    "away_score": 117.9
-   },
-   "win_probability": {
-    "home": 0.4093,
-    "away": 0.5907
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Memphis Grizzlies ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 4.0,
-    "away": -4.0
-   },
-   "total_points": 232.6,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -21.0,
-     14.0
-    ],
-    "total": [
-     207.0,
-     258.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": null,
-     "detail": "Los modelos se dividen 2-2. Margen de SAC: jugadores -3.3, Elo +2.6, equipo -1.7, cuatro factores +4.8.",
-     "supports_pick": false
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de MEM vale 5.0 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para SAC.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de MEM",
-     "favors": "home",
-     "detail": "Sin Zach Edey: MEM pierde 2.2 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909861",
    "espn_game_id": "401909861",
@@ -498,6 +427,79 @@
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para PHI.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909867",
+   "espn_game_id": "401909867",
+   "starts_at": "2026-10-26T01:00Z",
+   "home": {
+    "name": "Sacramento Kings",
+    "code": "SAC"
+   },
+   "away": {
+    "name": "Memphis Grizzlies",
+    "code": "MEM"
+   },
+   "projection": {
+    "home_score": 114.5,
+    "away_score": 117.9
+   },
+   "win_probability": {
+    "home": 0.4057,
+    "away": 0.5943
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Memphis Grizzlies ML"
+   },
+   "data_warning": "Cedric Coward está en duda (questionable)",
+   "spread": {
+    "home": 4.0,
+    "away": -4.0
+   },
+   "total_points": 232.4,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -21.0,
+     14.0
+    ],
+    "total": [
+     207.0,
+     258.0
+    ]
+   },
+   "game_warnings": [
+    "Cedric Coward está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": null,
+     "detail": "Los modelos se dividen 2-2. Margen de SAC: jugadores -3.4, Elo +2.6, equipo -1.7, cuatro factores +4.8.",
+     "supports_pick": false
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de MEM vale 5.2 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para SAC.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de MEM",
+     "favors": "home",
+     "detail": "Sin Zach Edey: MEM pierde 2.1 puntos.",
      "supports_pick": false
     }
    ]
