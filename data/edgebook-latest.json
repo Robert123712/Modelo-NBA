@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-26T04:15:00.000633Z",
+ "generated_at": "2026-10-26T14:15:00.785579Z",
  "date_local": "2026-10-26",
  "games": [
   {
@@ -18,12 +18,12 @@
     "code": "WSH"
    },
    "projection": {
-    "home_score": 115.2,
-    "away_score": 107.5
+    "home_score": 115.3,
+    "away_score": 107.6
    },
    "win_probability": {
-    "home": 0.712,
-    "away": 0.288
+    "home": 0.7119,
+    "away": 0.2881
    },
    "pick": {
     "market": "moneyline",
@@ -35,7 +35,7 @@
     "home": -8.0,
     "away": 8.0
    },
-   "total_points": 222.7,
+   "total_points": 222.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -89,12 +89,12 @@
     "code": "MIN"
    },
    "projection": {
-    "home_score": 118.7,
+    "home_score": 118.6,
     "away_score": 116.3
    },
    "win_probability": {
-    "home": 0.5704,
-    "away": 0.4296
+    "home": 0.5708,
+    "away": 0.4292
    },
    "pick": {
     "market": "moneyline",
@@ -106,7 +106,7 @@
     "home": -3.0,
     "away": 3.0
    },
-   "total_points": 235.0,
+   "total_points": 234.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -142,7 +142,7 @@
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de MIN vale 1.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MIN vale 1.4 puntos más por partido.",
      "supports_pick": false
     }
    ]
@@ -233,12 +233,12 @@
     "code": "DAL"
    },
    "projection": {
-    "home_score": 119.5,
-    "away_score": 117.2
+    "home_score": 119.8,
+    "away_score": 117.4
    },
    "win_probability": {
-    "home": 0.5685,
-    "away": 0.4315
+    "home": 0.5679,
+    "away": 0.4321
    },
    "pick": {
     "market": "moneyline",
@@ -250,7 +250,7 @@
     "home": -3.0,
     "away": 3.0
    },
-   "total_points": 236.7,
+   "total_points": 237.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -274,7 +274,7 @@
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MIA vale 0.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MIA vale 0.5 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -308,8 +308,8 @@
     "away_score": 122.6
    },
    "win_probability": {
-    "home": 0.4704,
-    "away": 0.5296
+    "home": 0.4706,
+    "away": 0.5294
    },
    "pick": {
     "market": "moneyline",
@@ -347,7 +347,7 @@
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de IND vale 5.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de IND vale 5.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -383,12 +383,12 @@
     "code": "PHX"
    },
    "projection": {
-    "home_score": 115.2,
-    "away_score": 104.9
+    "home_score": 115.3,
+    "away_score": 104.7
    },
    "win_probability": {
-    "home": 0.7711,
-    "away": 0.2289
+    "home": 0.7783,
+    "away": 0.2217
    },
    "pick": {
     "market": "moneyline",
@@ -397,14 +397,14 @@
    },
    "data_warning": "Cason Wallace está en duda (day-to-day)",
    "spread": {
-    "home": -10.0,
-    "away": 10.0
+    "home": -11.0,
+    "away": 11.0
    },
-   "total_points": 220.1,
+   "total_points": 219.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -8.0,
+     -7.0,
      28.0
     ],
     "total": [
@@ -414,7 +414,6 @@
    },
    "game_warnings": [
     "Cason Wallace está en duda (day-to-day)",
-    "Jalen Williams está en duda (day-to-day)",
     "Jaylin Williams está en duda (day-to-day)",
     "Oso Ighodaro está en duda (doubtful)"
    ],
@@ -423,13 +422,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +10.2, Elo +10.0, equipo +11.3, cuatro factores +10.5.",
+     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +10.6, Elo +10.0, equipo +11.3, cuatro factores +10.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de OKC vale 10.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de OKC vale 10.9 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -442,12 +441,6 @@
      "label": "Descanso",
      "favors": "away",
      "detail": "OKC juega su segundo partido en dos noches: 2.0 puntos.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de OKC",
-     "favors": "away",
-     "detail": "Sin Nikola Topic: OKC pierde 0.6 puntos.",
      "supports_pick": false
     }
    ]
@@ -469,8 +462,8 @@
     "away_score": 111.0
    },
    "win_probability": {
-    "home": 0.63,
-    "away": 0.37
+    "home": 0.6299,
+    "away": 0.3701
    },
    "pick": {
     "market": "moneyline",
@@ -516,12 +509,6 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para HOU.",
      "supports_pick": true
-    },
-    {
-     "label": "Bajas de HOU",
-     "favors": "away",
-     "detail": "Sin Steven Adams: HOU pierde 0.5 puntos.",
-     "supports_pick": false
     }
    ]
   },
@@ -542,20 +529,20 @@
     "away_score": 118.5
    },
    "win_probability": {
-    "home": 0.4679,
-    "away": 0.5321
+    "home": 0.4682,
+    "away": 0.5318
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Memphis Grizzlies ML"
    },
-   "data_warning": null,
+   "data_warning": "Zach Edey está en duda (day-to-day)",
    "spread": {
     "home": 2.0,
     "away": -2.0
    },
-   "total_points": 236.0,
+   "total_points": 235.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -567,7 +554,9 @@
      262.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Zach Edey está en duda (day-to-day)"
+   ],
    "warnings": [],
    "key_factors": [
     {
@@ -607,8 +596,8 @@
     "away_score": 115.4
    },
    "win_probability": {
-    "home": 0.6072,
-    "away": 0.3928
+    "home": 0.6071,
+    "away": 0.3929
    },
    "pick": {
     "market": "moneyline",
@@ -629,7 +618,7 @@
     ],
     "total": [
      209.0,
-     260.0
+     261.0
     ]
    },
    "game_warnings": [
@@ -662,7 +651,5 @@
   }
  ],
  "skipped_without_id": 0,
- "warnings": [
-  "Sin alineaciones de la NBA (HTTPError); titular del partido anterior"
- ]
+ "warnings": []
 }
