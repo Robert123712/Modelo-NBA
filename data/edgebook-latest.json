@@ -2,151 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-26T22:45:00.000583Z",
+ "generated_at": "2026-10-26T23:15:00.000658Z",
  "date_local": "2026-10-26",
  "games": [
-  {
-   "league_game_id": "401909868",
-   "espn_game_id": "401909868",
-   "starts_at": "2026-10-26T23:00Z",
-   "home": {
-    "name": "Charlotte Hornets",
-    "code": "CHA"
-   },
-   "away": {
-    "name": "Washington Wizards",
-    "code": "WSH"
-   },
-   "projection": {
-    "home_score": 115.3,
-    "away_score": 107.6
-   },
-   "win_probability": {
-    "home": 0.7119,
-    "away": 0.2881
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Charlotte Hornets ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -8.0,
-    "away": 8.0
-   },
-   "total_points": 222.9,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -10.0,
-     25.0
-    ],
-    "total": [
-     197.0,
-     249.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +7.7, Elo +11.4, equipo +9.5, cuatro factores +13.1.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de CHA vale 6.0 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para CHA.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de CHA",
-     "favors": "away",
-     "detail": "Sin Kon Knueppel, Coby White, Grant Williams: CHA pierde 3.3 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909869",
-   "espn_game_id": "401909869",
-   "starts_at": "2026-10-26T23:00Z",
-   "home": {
-    "name": "Cleveland Cavaliers",
-    "code": "CLE"
-   },
-   "away": {
-    "name": "Minnesota Timberwolves",
-    "code": "MIN"
-   },
-   "projection": {
-    "home_score": 118.6,
-    "away_score": 116.3
-   },
-   "win_probability": {
-    "home": 0.5708,
-    "away": 0.4292
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Cleveland Cavaliers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -3.0,
-    "away": 3.0
-   },
-   "total_points": 234.9,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -15.0,
-     20.0
-    ],
-    "total": [
-     209.0,
-     261.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +2.5, Elo +0.3, equipo -1.5, cuatro factores +0.3.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para CLE.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "home",
-     "detail": "MIN juega su segundo partido en dos noches: 2.1 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de MIN vale 1.4 puntos más por partido.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909870",
    "espn_game_id": "401909870",
@@ -290,12 +148,12 @@
     "code": "IND"
    },
    "projection": {
-    "home_score": 121.3,
-    "away_score": 123.4
+    "home_score": 121.5,
+    "away_score": 123.2
    },
    "win_probability": {
-    "home": 0.4401,
-    "away": 0.5599
+    "home": 0.449,
+    "away": 0.551
    },
    "pick": {
     "market": "moneyline",
@@ -304,8 +162,8 @@
    },
    "data_warning": "Kobe Brown está en duda (questionable)",
    "spread": {
-    "home": 3.0,
-    "away": -3.0
+    "home": 2.0,
+    "away": -2.0
    },
    "total_points": 244.7,
    "season": 2027,
@@ -321,8 +179,6 @@
    },
    "game_warnings": [
     "Kobe Brown está en duda (questionable)",
-    "Andrew Nembhard está en duda (questionable)",
-    "Aaron Nesmith está en duda (probable)",
     "Jalen Slawson está en duda (questionable)"
    ],
    "warnings": [],
@@ -330,13 +186,13 @@
     {
      "label": "Los 4 modelos",
      "favors": null,
-     "detail": "Los modelos se dividen 2-2. Margen de MIL: jugadores -2.1, Elo +0.5, equipo -1.2, cuatro factores +0.3.",
+     "detail": "Los modelos se dividen 2-2. Margen de MIL: jugadores -1.8, Elo +0.5, equipo -1.2, cuatro factores +0.3.",
      "supports_pick": false
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de IND vale 6.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de IND vale 5.8 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -354,7 +210,7 @@
     {
      "label": "Bajas de IND",
      "favors": "home",
-     "detail": "Sin Johnny Furphy, T.J. McConnell, Ben Sheppard: IND pierde 0.6 puntos.",
+     "detail": "Sin Johnny Furphy, T.J. McConnell, Andrew Nembhard: IND pierde 0.9 puntos.",
      "supports_pick": false
     }
    ]
@@ -646,6 +502,152 @@
      "favors": "home",
      "detail": "Sin Jimmy Butler III, Moses Moody, Kristaps Porzingis: GS pierde 2.3 puntos.",
      "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909868",
+   "espn_game_id": "401909868",
+   "starts_at": "2026-10-26T23:00Z",
+   "home": {
+    "name": "Charlotte Hornets",
+    "code": "CHA"
+   },
+   "away": {
+    "name": "Washington Wizards",
+    "code": "WSH"
+   },
+   "projection": {
+    "home_score": 115.4,
+    "away_score": 107.6
+   },
+   "win_probability": {
+    "home": 0.7126,
+    "away": 0.2874
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Charlotte Hornets ML"
+   },
+   "data_warning": "Naz Reid está en duda (probable)",
+   "spread": {
+    "home": -8.0,
+    "away": 8.0
+   },
+   "total_points": 223.0,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -10.0,
+     25.0
+    ],
+    "total": [
+     197.0,
+     249.0
+    ]
+   },
+   "game_warnings": [
+    "Naz Reid está en duda (probable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +7.8, Elo +11.4, equipo +9.5, cuatro factores +13.1.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de CHA vale 6.0 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para CHA.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de CHA",
+     "favors": "away",
+     "detail": "Sin Kon Knueppel, Coby White, Grant Williams: CHA pierde 3.3 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909869",
+   "espn_game_id": "401909869",
+   "starts_at": "2026-10-26T23:00Z",
+   "home": {
+    "name": "Cleveland Cavaliers",
+    "code": "CLE"
+   },
+   "away": {
+    "name": "Minnesota Timberwolves",
+    "code": "MIN"
+   },
+   "projection": {
+    "home_score": 118.0,
+    "away_score": 115.5
+   },
+   "win_probability": {
+    "home": 0.5744,
+    "away": 0.4256
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Cleveland Cavaliers ML"
+   },
+   "data_warning": "Anthony Edwards está en duda (questionable)",
+   "spread": {
+    "home": -3.0,
+    "away": 3.0
+   },
+   "total_points": 233.6,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -15.0,
+     20.0
+    ],
+    "total": [
+     208.0,
+     260.0
+    ]
+   },
+   "game_warnings": [
+    "Anthony Edwards está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "3 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +2.4, Elo +0.3, equipo -1.5, cuatro factores +0.3.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para CLE.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "home",
+     "detail": "MIN juega su segundo partido en dos noches: 2.1 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de MIN vale 1.5 puntos más por partido.",
+     "supports_pick": false
     }
    ]
   }
