@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-26T20:45:00.000638Z",
+ "generated_at": "2026-10-26T21:45:00.000607Z",
  "date_local": "2026-10-26",
  "games": [
   {
@@ -164,12 +164,12 @@
     "code": "CHI"
    },
    "projection": {
-    "home_score": 125.3,
-    "away_score": 107.6
+    "home_score": 125.5,
+    "away_score": 108.0
    },
    "win_probability": {
-    "home": 0.9002,
-    "away": 0.0998
+    "home": 0.897,
+    "away": 0.103
    },
    "pick": {
     "market": "moneyline",
@@ -178,19 +178,19 @@
    },
    "data_warning": null,
    "spread": {
-    "home": -18.0,
-    "away": 18.0
+    "home": -17.0,
+    "away": 17.0
    },
-   "total_points": 232.9,
+   "total_points": 233.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     1.0,
+     -1.0,
      35.0
     ],
     "total": [
-     207.0,
-     258.0
+     208.0,
+     259.0
     ]
    },
    "game_warnings": [],
@@ -199,25 +199,19 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +18.4, Elo +11.1, equipo +12.9, cuatro factores +12.6.",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +17.6, Elo +11.1, equipo +12.9, cuatro factores +12.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 16.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 15.8 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para BOS.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de CHI",
-     "favors": "home",
-     "detail": "Sin Nic Claxton: CHI pierde 1.0 puntos.",
      "supports_pick": true
     }
    ]
