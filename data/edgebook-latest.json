@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-26T21:45:00.000607Z",
+ "generated_at": "2026-10-26T22:15:00.000609Z",
  "date_local": "2026-10-26",
  "games": [
   {
@@ -18,24 +18,24 @@
     "code": "WSH"
    },
    "projection": {
-    "home_score": 115.4,
+    "home_score": 115.3,
     "away_score": 107.6
    },
    "win_probability": {
-    "home": 0.7126,
-    "away": 0.2874
+    "home": 0.7119,
+    "away": 0.2881
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Charlotte Hornets ML"
    },
-   "data_warning": "Naz Reid está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": -8.0,
     "away": 8.0
    },
-   "total_points": 223.0,
+   "total_points": 222.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -47,15 +47,13 @@
      249.0
     ]
    },
-   "game_warnings": [
-    "Naz Reid está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +7.8, Elo +11.4, equipo +9.5, cuatro factores +13.1.",
+     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +7.7, Elo +11.4, equipo +9.5, cuatro factores +13.1.",
      "supports_pick": true
     },
     {
@@ -91,24 +89,24 @@
     "code": "MIN"
    },
    "projection": {
-    "home_score": 118.0,
-    "away_score": 115.5
+    "home_score": 118.6,
+    "away_score": 116.3
    },
    "win_probability": {
-    "home": 0.5744,
-    "away": 0.4256
+    "home": 0.5708,
+    "away": 0.4292
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Cleveland Cavaliers ML"
    },
-   "data_warning": "Anthony Edwards está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -3.0,
     "away": 3.0
    },
-   "total_points": 233.6,
+   "total_points": 234.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -116,19 +114,17 @@
      20.0
     ],
     "total": [
-     208.0,
-     260.0
+     209.0,
+     261.0
     ]
    },
-   "game_warnings": [
-    "Anthony Edwards está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +2.4, Elo +0.3, equipo -1.5, cuatro factores +0.3.",
+     "detail": "3 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +2.5, Elo +0.3, equipo -1.5, cuatro factores +0.3.",
      "supports_pick": true
     },
     {
@@ -146,7 +142,7 @@
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de MIN vale 1.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MIN vale 1.4 puntos más por partido.",
      "supports_pick": false
     }
    ]
