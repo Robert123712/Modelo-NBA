@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-26T20:15:00.000596Z",
+ "generated_at": "2026-10-26T20:45:00.000638Z",
  "date_local": "2026-10-26",
  "games": [
   {
@@ -473,7 +473,7 @@
     "side": "home",
     "label": "Houston Rockets ML"
    },
-   "data_warning": "Keshon Gilbert está en duda (doubtful)",
+   "data_warning": null,
    "spread": {
     "home": -5.0,
     "away": 5.0
@@ -490,9 +490,7 @@
      254.0
     ]
    },
-   "game_warnings": [
-    "Keshon Gilbert está en duda (doubtful)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
