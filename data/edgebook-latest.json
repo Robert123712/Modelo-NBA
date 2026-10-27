@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-27T01:45:00.000616Z",
+ "generated_at": "2026-10-27T02:15:00.000645Z",
  "date_local": "2026-10-26",
  "games": [
-  {
-   "league_game_id": "401909876",
-   "espn_game_id": "401909876",
-   "starts_at": "2026-10-27T02:00Z",
-   "home": {
-    "name": "Denver Nuggets",
-    "code": "DEN"
-   },
-   "away": {
-    "name": "Golden State Warriors",
-    "code": "GS"
-   },
-   "projection": {
-    "home_score": 119.1,
-    "away_score": 114.6
-   },
-   "win_probability": {
-    "home": 0.6273,
-    "away": 0.3727
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Denver Nuggets ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -5.0,
-    "away": 5.0
-   },
-   "total_points": 233.7,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -13.0,
-     22.0
-    ],
-    "total": [
-     208.0,
-     260.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +4.3, Elo +8.9, equipo +6.9, cuatro factores +5.6.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DEN vale 2.6 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para DEN.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de GS",
-     "favors": "home",
-     "detail": "Sin Jimmy Butler III, Moses Moody, Kristaps Porzingis: GS pierde 1.1 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909868",
    "espn_game_id": "401909868",
@@ -649,6 +578,79 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.7 puntos para UTAH.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909876",
+   "espn_game_id": "401909876",
+   "starts_at": "2026-10-27T02:00Z",
+   "home": {
+    "name": "Denver Nuggets",
+    "code": "DEN"
+   },
+   "away": {
+    "name": "Golden State Warriors",
+    "code": "GS"
+   },
+   "projection": {
+    "home_score": 119.1,
+    "away_score": 114.6
+   },
+   "win_probability": {
+    "home": 0.6273,
+    "away": 0.3727
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Denver Nuggets ML"
+   },
+   "data_warning": "Cameron Johnson está en duda (doubtful)",
+   "spread": {
+    "home": -5.0,
+    "away": 5.0
+   },
+   "total_points": 233.7,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -13.0,
+     22.0
+    ],
+    "total": [
+     208.0,
+     260.0
+    ]
+   },
+   "game_warnings": [
+    "Cameron Johnson está en duda (doubtful)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +4.3, Elo +8.9, equipo +6.9, cuatro factores +5.6.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de DEN vale 2.6 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para DEN.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de GS",
+     "favors": "home",
+     "detail": "Sin Jimmy Butler III, Moses Moody, Kristaps Porzingis: GS pierde 1.1 puntos.",
+     "supports_pick": true
     }
    ]
   }
