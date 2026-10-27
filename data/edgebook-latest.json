@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-27T17:15:00.000622Z",
+ "generated_at": "2026-10-27T23:15:00.000525Z",
  "date_local": "2026-10-27",
  "games": [
   {
@@ -22,15 +22,15 @@
     "away_score": 106.6
    },
    "win_probability": {
-    "home": 0.8945,
-    "away": 0.1055
+    "home": 0.8953,
+    "away": 0.1047
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Boston Celtics ML"
    },
-   "data_warning": "Derrick White está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": -17.0,
     "away": 17.0
@@ -47,15 +47,13 @@
      256.0
     ]
    },
-   "game_warnings": [
-    "Derrick White está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +17.2, Elo +14.3, equipo +16.8, cuatro factores +16.4.",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +17.3, Elo +14.3, equipo +16.8, cuatro factores +16.4.",
      "supports_pick": true
     },
     {
