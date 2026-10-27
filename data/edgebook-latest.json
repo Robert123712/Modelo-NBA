@@ -2,163 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-26T23:45:00.000589Z",
+ "generated_at": "2026-10-27T00:15:00.000638Z",
  "date_local": "2026-10-26",
  "games": [
-  {
-   "league_game_id": "401909872",
-   "espn_game_id": "401909872",
-   "starts_at": "2026-10-27T00:00Z",
-   "home": {
-    "name": "Milwaukee Bucks",
-    "code": "MIL"
-   },
-   "away": {
-    "name": "Indiana Pacers",
-    "code": "IND"
-   },
-   "projection": {
-    "home_score": 122.0,
-    "away_score": 123.0
-   },
-   "win_probability": {
-    "home": 0.4736,
-    "away": 0.5264
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Indiana Pacers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 2.0,
-    "away": -2.0
-   },
-   "total_points": 245.0,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -19.0,
-     17.0
-    ],
-    "total": [
-     219.0,
-     271.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": null,
-     "detail": "Los modelos se dividen 2-2. Margen de MIL: jugadores -1.0, Elo +0.5, equipo -1.2, cuatro factores +0.3.",
-     "supports_pick": false
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de IND vale 4.9 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para MIL.",
-     "supports_pick": false
-    },
-    {
-     "label": "Descanso",
-     "favors": "home",
-     "detail": "IND juega su segundo partido en dos noches: 2.1 puntos.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de IND",
-     "favors": "home",
-     "detail": "Sin Johnny Furphy, T.J. McConnell, Andrew Nembhard: IND pierde 1.8 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909873",
-   "espn_game_id": "401909873",
-   "starts_at": "2026-10-27T00:00Z",
-   "home": {
-    "name": "Oklahoma City Thunder",
-    "code": "OKC"
-   },
-   "away": {
-    "name": "Phoenix Suns",
-    "code": "PHX"
-   },
-   "projection": {
-    "home_score": 115.0,
-    "away_score": 106.1
-   },
-   "win_probability": {
-    "home": 0.7428,
-    "away": 0.2572
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Oklahoma City Thunder ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -9.0,
-    "away": 9.0
-   },
-   "total_points": 221.1,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -9.0,
-     27.0
-    ],
-    "total": [
-     195.0,
-     247.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +8.9, Elo +10.0, equipo +11.3, cuatro factores +10.5.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de OKC vale 9.2 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para OKC.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "away",
-     "detail": "OKC juega su segundo partido en dos noches: 2.0 puntos.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de OKC",
-     "favors": "away",
-     "detail": "Sin Chet Holmgren, Nikola Topic, Cason Wallace: OKC pierde 1.9 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909874",
    "espn_game_id": "401909874",
@@ -237,24 +83,24 @@
     "code": "MEM"
    },
    "projection": {
-    "home_score": 116.9,
-    "away_score": 119.2
+    "home_score": 116.8,
+    "away_score": 119.4
    },
    "win_probability": {
-    "home": 0.4288,
-    "away": 0.5712
+    "home": 0.4226,
+    "away": 0.5774
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Memphis Grizzlies ML"
    },
-   "data_warning": "Jaxson Hayes está en duda (questionable)",
+   "data_warning": "Isaiah Stewart está en duda (questionable)",
    "spread": {
     "home": 3.0,
     "away": -3.0
    },
-   "total_points": 236.1,
+   "total_points": 236.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -267,7 +113,6 @@
     ]
    },
    "game_warnings": [
-    "Jaxson Hayes está en duda (questionable)",
     "Isaiah Stewart está en duda (questionable)"
    ],
    "warnings": [],
@@ -275,19 +120,19 @@
     {
      "label": "Los 4 modelos",
      "favors": null,
-     "detail": "Los modelos se dividen 2-2. Margen de UTAH: jugadores -2.5, Elo +0.7, equipo -1.8, cuatro factores +3.3.",
+     "detail": "Los modelos se dividen 2-2. Margen de UTAH: jugadores -2.8, Elo +0.7, equipo -1.8, cuatro factores +3.3.",
      "supports_pick": false
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de MEM vale 4.3 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MEM vale 4.5 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de UTAH",
      "favors": "away",
-     "detail": "Sin Blake Hinson, Jusuf Nurkic: UTAH pierde 0.9 puntos.",
+     "detail": "Sin Jaxson Hayes, Blake Hinson, Jusuf Nurkic: UTAH pierde 1.1 puntos.",
      "supports_pick": true
     },
     {
@@ -647,6 +492,165 @@
      "favors": "home",
      "detail": "Sin Santi Aldama, Dereck Lively II, Naji Marshall: DAL pierde 2.5 puntos.",
      "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909872",
+   "espn_game_id": "401909872",
+   "starts_at": "2026-10-27T00:00Z",
+   "home": {
+    "name": "Milwaukee Bucks",
+    "code": "MIL"
+   },
+   "away": {
+    "name": "Indiana Pacers",
+    "code": "IND"
+   },
+   "projection": {
+    "home_score": 121.3,
+    "away_score": 123.4
+   },
+   "win_probability": {
+    "home": 0.4401,
+    "away": 0.5599
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Indiana Pacers ML"
+   },
+   "data_warning": "Kobe Brown está en duda (questionable)",
+   "spread": {
+    "home": 3.0,
+    "away": -3.0
+   },
+   "total_points": 244.7,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -20.0,
+     16.0
+    ],
+    "total": [
+     219.0,
+     271.0
+    ]
+   },
+   "game_warnings": [
+    "Kobe Brown está en duda (questionable)",
+    "Andrew Nembhard está en duda (questionable)",
+    "Aaron Nesmith está en duda (probable)",
+    "Jalen Slawson está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": null,
+     "detail": "Los modelos se dividen 2-2. Margen de MIL: jugadores -2.1, Elo +0.5, equipo -1.2, cuatro factores +0.3.",
+     "supports_pick": false
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de IND vale 6.1 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para MIL.",
+     "supports_pick": false
+    },
+    {
+     "label": "Descanso",
+     "favors": "home",
+     "detail": "IND juega su segundo partido en dos noches: 2.1 puntos.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de IND",
+     "favors": "home",
+     "detail": "Sin Johnny Furphy, T.J. McConnell, Ben Sheppard: IND pierde 0.6 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909873",
+   "espn_game_id": "401909873",
+   "starts_at": "2026-10-27T00:00Z",
+   "home": {
+    "name": "Oklahoma City Thunder",
+    "code": "OKC"
+   },
+   "away": {
+    "name": "Phoenix Suns",
+    "code": "PHX"
+   },
+   "projection": {
+    "home_score": 115.0,
+    "away_score": 106.1
+   },
+   "win_probability": {
+    "home": 0.7428,
+    "away": 0.2572
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Oklahoma City Thunder ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -9.0,
+    "away": 9.0
+   },
+   "total_points": 221.1,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -9.0,
+     27.0
+    ],
+    "total": [
+     195.0,
+     247.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +8.9, Elo +10.0, equipo +11.3, cuatro factores +10.5.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de OKC vale 9.2 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para OKC.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "away",
+     "detail": "OKC juega su segundo partido en dos noches: 2.0 puntos.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de OKC",
+     "favors": "away",
+     "detail": "Sin Chet Holmgren, Nikola Topic, Cason Wallace: OKC pierde 1.9 puntos.",
+     "supports_pick": false
     }
    ]
   }
