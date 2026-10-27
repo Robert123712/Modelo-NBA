@@ -2,86 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-27T23:15:00.000525Z",
+ "generated_at": "2026-10-27T23:45:00.000535Z",
  "date_local": "2026-10-27",
  "games": [
-  {
-   "league_game_id": "401909877",
-   "espn_game_id": "401909877",
-   "starts_at": "2026-10-27T23:30Z",
-   "home": {
-    "name": "Boston Celtics",
-    "code": "BOS"
-   },
-   "away": {
-    "name": "Brooklyn Nets",
-    "code": "BKN"
-   },
-   "projection": {
-    "home_score": 123.9,
-    "away_score": 106.6
-   },
-   "win_probability": {
-    "home": 0.8953,
-    "away": 0.1047
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Boston Celtics ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -17.0,
-    "away": 17.0
-   },
-   "total_points": 230.5,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -1.0,
-     35.0
-    ],
-    "total": [
-     205.0,
-     256.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +17.3, Elo +14.3, equipo +16.8, cuatro factores +16.4.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 17.6 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para BOS.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "away",
-     "detail": "BOS juega su segundo partido en dos noches: 2.1 puntos.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de BOS",
-     "favors": "away",
-     "detail": "Sin Devin Carter: BOS pierde 2.6 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909878",
    "espn_game_id": "401909878",
@@ -95,24 +18,24 @@
     "code": "DET"
    },
    "projection": {
-    "home_score": 109.6,
-    "away_score": 106.8
+    "home_score": 109.5,
+    "away_score": 106.4
    },
    "win_probability": {
-    "home": 0.5818,
-    "away": 0.4182
+    "home": 0.5898,
+    "away": 0.4102
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "New York Knicks ML"
    },
-   "data_warning": "Elijah Harkless está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": -3.0,
-    "away": 3.0
+    "home": -4.0,
+    "away": 4.0
    },
-   "total_points": 216.4,
+   "total_points": 215.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -124,23 +47,19 @@
      242.0
     ]
    },
-   "game_warnings": [
-    "Elijah Harkless está en duda (questionable)",
-    "Isaiah Joe está en duda (questionable)",
-    "Ausar Thompson está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +2.8, Elo +3.7, equipo +1.5, cuatro factores +3.6.",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +3.1, Elo +3.7, equipo +1.5, cuatro factores +3.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 1.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 1.4 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -285,6 +204,85 @@
      "label": "Rotación",
      "favors": "away",
      "detail": "Con los minutos proyectados, la rotación de POR vale 1.2 puntos más por partido.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909877",
+   "espn_game_id": "401909877",
+   "starts_at": "2026-10-27T23:30Z",
+   "home": {
+    "name": "Boston Celtics",
+    "code": "BOS"
+   },
+   "away": {
+    "name": "Brooklyn Nets",
+    "code": "BKN"
+   },
+   "projection": {
+    "home_score": 123.9,
+    "away_score": 106.6
+   },
+   "win_probability": {
+    "home": 0.8945,
+    "away": 0.1055
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Boston Celtics ML"
+   },
+   "data_warning": "Derrick White está en duda (probable)",
+   "spread": {
+    "home": -17.0,
+    "away": 17.0
+   },
+   "total_points": 230.5,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -1.0,
+     35.0
+    ],
+    "total": [
+     205.0,
+     256.0
+    ]
+   },
+   "game_warnings": [
+    "Derrick White está en duda (probable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +17.2, Elo +14.3, equipo +16.8, cuatro factores +16.4.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 17.6 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para BOS.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "away",
+     "detail": "BOS juega su segundo partido en dos noches: 2.1 puntos.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de BOS",
+     "favors": "away",
+     "detail": "Sin Devin Carter: BOS pierde 2.6 puntos.",
      "supports_pick": false
     }
    ]
