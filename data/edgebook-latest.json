@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-28T15:45:00.000556Z",
+ "generated_at": "2026-10-28T16:45:00.000606Z",
  "date_local": "2026-10-28",
  "games": [
   {
@@ -18,12 +18,12 @@
     "code": "MIA"
    },
    "projection": {
-    "home_score": 125.0,
-    "away_score": 118.6
+    "home_score": 125.1,
+    "away_score": 118.5
    },
    "win_probability": {
-    "home": 0.6794,
-    "away": 0.3206
+    "home": 0.6841,
+    "away": 0.3159
    },
    "pick": {
     "market": "moneyline",
@@ -35,12 +35,12 @@
     "home": -7.0,
     "away": 7.0
    },
-   "total_points": 243.7,
+   "total_points": 243.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -11.0,
-     24.0
+     25.0
     ],
     "total": [
      218.0,
@@ -49,20 +49,20 @@
    },
    "game_warnings": [
     "Keshon Gilbert está en duda (questionable)",
-    "Aaron Wiggins está en duda (questionable)"
+    "Aaron Wiggins está en duda (probable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +6.5, Elo +6.2, equipo +6.5, cuatro factores +3.1.",
+     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +6.7, Elo +6.2, equipo +6.5, cuatro factores +3.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de ATL vale 4.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de ATL vale 4.8 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -70,12 +70,6 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.9 puntos para ATL.",
      "supports_pick": true
-    },
-    {
-     "label": "Bajas de ATL",
-     "favors": "away",
-     "detail": "Sin Mouhamed Gueye: ATL pierde 0.6 puntos.",
-     "supports_pick": false
     }
    ]
   },
@@ -92,24 +86,24 @@
     "code": "WSH"
    },
    "projection": {
-    "home_score": 126.1,
+    "home_score": 125.6,
     "away_score": 111.5
    },
    "win_probability": {
-    "home": 0.8566,
-    "away": 0.1434
+    "home": 0.8477,
+    "away": 0.1523
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Cleveland Cavaliers ML"
    },
-   "data_warning": "AJ Dybantsa está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": -15.0,
-    "away": 15.0
+    "home": -14.0,
+    "away": 14.0
    },
-   "total_points": 237.5,
+   "total_points": 237.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -121,21 +115,19 @@
      263.0
     ]
    },
-   "game_warnings": [
-    "AJ Dybantsa está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +14.6, Elo +12.5, equipo +10.9, cuatro factores +11.7.",
+     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +14.1, Elo +12.5, equipo +10.9, cuatro factores +11.7.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de CLE vale 12.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de CLE vale 12.3 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -147,7 +139,7 @@
     {
      "label": "Bajas de WSH",
      "favors": "home",
-     "detail": "Sin Justin Champagnie, Tristan Vukcevic, Jamir Watkins: WSH pierde 1.6 puntos.",
+     "detail": "Sin Justin Champagnie, Tristan Vukcevic, Jamir Watkins: WSH pierde 1.1 puntos.",
      "supports_pick": true
     }
    ]
