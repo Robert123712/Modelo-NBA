@@ -1,10 +1,10 @@
 {
  "401909881": {
-  "generated_at": "2026-10-28T17:45:00.000587Z",
+  "generated_at": "2026-10-28T18:15:00.000550Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909881,
   "starts_at": "2026-10-28T23:00Z",
-  "minutos_antes": 315.0,
+  "minutos_antes": 285.0,
   "proyeccion": {
    "league_game_id": "401909881",
    "espn_game_id": "401909881",
@@ -1531,11 +1531,11 @@
   "tardia": false
  },
  "401909882": {
-  "generated_at": "2026-10-28T17:45:00.000587Z",
+  "generated_at": "2026-10-28T18:15:00.000550Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909882,
   "starts_at": "2026-10-28T23:00Z",
-  "minutos_antes": 315.0,
+  "minutos_antes": 285.0,
   "proyeccion": {
    "league_game_id": "401909882",
    "espn_game_id": "401909882",
@@ -3052,11 +3052,11 @@
   "tardia": false
  },
  "401909883": {
-  "generated_at": "2026-10-28T17:45:00.000587Z",
+  "generated_at": "2026-10-28T18:15:00.000550Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909883,
   "starts_at": "2026-10-28T23:00Z",
-  "minutos_antes": 315.0,
+  "minutos_antes": 285.0,
   "proyeccion": {
    "league_game_id": "401909883",
    "espn_game_id": "401909883",
@@ -4589,11 +4589,11 @@
   "tardia": false
  },
  "401909884": {
-  "generated_at": "2026-10-28T17:45:00.000587Z",
+  "generated_at": "2026-10-28T18:15:00.000550Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909884,
   "starts_at": "2026-10-28T23:00Z",
-  "minutos_antes": 315.0,
+  "minutos_antes": 285.0,
   "proyeccion": {
    "league_game_id": "401909884",
    "espn_game_id": "401909884",
@@ -5146,94 +5146,33 @@
   },
   "props": [
    {
-    "a": 4396993,
-    "j": "Tyrese Haliburton",
-    "lado": "home",
-    "min": 30.2,
-    "s": {
-     "puntos": [
-      19.41,
-      9.0,
-      30.0
-     ],
-     "rebotes": [
-      4.78,
-      2.0,
-      8.0
-     ],
-     "asistencias": [
-      8.98,
-      5.0,
-      14.0
-     ],
-     "pra": [
-      33.17,
-      20.0,
-      47.0
-     ],
-     "puntos_rebotes": [
-      24.19,
-      13.0,
-      36.0
-     ],
-     "puntos_asistencias": [
-      28.39,
-      17.0,
-      41.0
-     ]
-    },
-    "ctx": {
-     "min_sano": 30.1,
-     "rival": {
-      "points": 1.0,
-      "reb": 1.057,
-      "assists": 0.973
-     },
-     "bajas": {
-      "points": 1.044,
-      "reb": 1.0,
-      "assists": 0.985
-     },
-     "grupo": "G",
-     "duda": true
-    },
-    "prom": {
-     "puntos": 21.75,
-     "rebotes": 4.5,
-     "asistencias": 9.5,
-     "pra": 35.75,
-     "puntos_rebotes": 26.25,
-     "puntos_asistencias": 31.25
-    }
-   },
-   {
     "a": 4395712,
     "j": "Andrew Nembhard",
     "lado": "home",
     "min": 28.9,
     "s": {
      "puntos": [
-      14.84,
+      14.88,
       7.0,
       24.0
      ],
      "rebotes": [
-      3.1,
+      3.13,
       1.0,
       6.0
      ],
      "asistencias": [
-      6.47,
+      6.43,
       3.0,
       10.0
      ],
      "pra": [
-      24.42,
+      24.44,
       14.0,
       36.0
      ],
      "puntos_rebotes": [
-      17.95,
+      18.01,
       9.0,
       28.0
      ],
@@ -5274,32 +5213,32 @@
     "min": 28.8,
     "s": {
      "puntos": [
-      21.71,
+      21.89,
       11.0,
       34.0
      ],
      "rebotes": [
-      7.6,
+      7.57,
       4.0,
       12.0
      ],
      "asistencias": [
       3.68,
       1.0,
-      7.0
+      6.0
      ],
      "pra": [
-      33.0,
+      33.15,
       20.0,
       47.0
      ],
      "puntos_rebotes": [
-      29.32,
+      29.46,
       17.0,
       43.0
      ],
      "puntos_asistencias": [
-      25.4,
+      25.57,
       14.0,
       38.0
      ]
@@ -5329,38 +5268,160 @@
     }
    },
    {
+    "a": 4396993,
+    "j": "Tyrese Haliburton",
+    "lado": "home",
+    "min": 27.4,
+    "s": {
+     "puntos": [
+      18.3,
+      9.0,
+      29.0
+     ],
+     "rebotes": [
+      4.56,
+      2.0,
+      8.0
+     ],
+     "asistencias": [
+      8.5,
+      4.0,
+      13.0
+     ],
+     "pra": [
+      31.37,
+      19.0,
+      45.0
+     ],
+     "puntos_rebotes": [
+      22.86,
+      12.0,
+      35.0
+     ],
+     "puntos_asistencias": [
+      26.81,
+      15.0,
+      39.0
+     ]
+    },
+    "ctx": {
+     "min_sano": 27.2,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.057,
+      "assists": 0.973
+     },
+     "bajas": {
+      "points": 1.047,
+      "reb": 1.0,
+      "assists": 0.985
+     },
+     "grupo": "G",
+     "duda": true
+    },
+    "prom": {
+     "puntos": 21.75,
+     "rebotes": 4.5,
+     "asistencias": 9.5,
+     "pra": 35.75,
+     "puntos_rebotes": 26.25,
+     "puntos_asistencias": 31.25
+    }
+   },
+   {
+    "a": 3133603,
+    "j": "Kelly Oubre Jr.",
+    "lado": "home",
+    "min": 23.9,
+    "s": {
+     "puntos": [
+      10.48,
+      4.0,
+      18.0
+     ],
+     "rebotes": [
+      4.45,
+      2.0,
+      8.0
+     ],
+     "asistencias": [
+      1.56,
+      0.0,
+      3.0
+     ],
+     "pra": [
+      16.49,
+      8.0,
+      26.0
+     ],
+     "puntos_rebotes": [
+      14.93,
+      7.0,
+      24.0
+     ],
+     "puntos_asistencias": [
+      12.04,
+      5.0,
+      20.0
+     ]
+    },
+    "ctx": {
+     "min_sano": 23.8,
+     "rival": {
+      "points": 1.0,
+      "reb": 1.057,
+      "assists": 0.973
+     },
+     "bajas": {
+      "points": 1.052,
+      "reb": 1.0,
+      "assists": 0.985
+     },
+     "grupo": "G",
+     "duda": false
+    },
+    "prom": {
+     "puntos": 7.5,
+     "rebotes": 2.25,
+     "asistencias": 2.0,
+     "pra": 11.75,
+     "puntos_rebotes": 9.75,
+     "puntos_asistencias": 9.5
+    }
+   },
+   {
     "a": 4396909,
     "j": "Aaron Nesmith",
     "lado": "home",
     "min": 23.5,
     "s": {
      "puntos": [
-      12.53,
+      12.63,
       5.0,
       21.0
      ],
      "rebotes": [
-      3.67,
+      3.68,
       1.0,
-      7.0
+      6.0
      ],
      "asistencias": [
-      1.41,
+      1.43,
       0.0,
       3.0
      ],
      "pra": [
-      17.61,
+      17.74,
       9.0,
       28.0
      ],
      "puntos_rebotes": [
-      16.2,
+      16.3,
       8.0,
       26.0
      ],
      "puntos_asistencias": [
-      13.94,
+      14.06,
       6.0,
       23.0
      ]
@@ -5390,79 +5451,18 @@
     }
    },
    {
-    "a": 3133603,
-    "j": "Kelly Oubre Jr.",
-    "lado": "home",
-    "min": 21.1,
-    "s": {
-     "puntos": [
-      9.72,
-      3.0,
-      17.0
-     ],
-     "rebotes": [
-      4.18,
-      1.0,
-      7.0
-     ],
-     "asistencias": [
-      1.45,
-      0.0,
-      3.0
-     ],
-     "pra": [
-      15.36,
-      7.0,
-      25.0
-     ],
-     "puntos_rebotes": [
-      13.91,
-      6.0,
-      23.0
-     ],
-     "puntos_asistencias": [
-      11.17,
-      4.0,
-      19.0
-     ]
-    },
-    "ctx": {
-     "min_sano": 21.0,
-     "rival": {
-      "points": 1.0,
-      "reb": 1.057,
-      "assists": 0.973
-     },
-     "bajas": {
-      "points": 1.057,
-      "reb": 1.0,
-      "assists": 0.985
-     },
-     "grupo": "G",
-     "duda": false
-    },
-    "prom": {
-     "puntos": 7.5,
-     "rebotes": 2.25,
-     "asistencias": 2.0,
-     "pra": 11.75,
-     "puntos_rebotes": 9.75,
-     "puntos_asistencias": 9.5
-    }
-   },
-   {
     "a": 5106060,
     "j": "Jarace Walker",
     "lado": "home",
     "min": 20.6,
     "s": {
      "puntos": [
-      8.67,
+      8.65,
       3.0,
       16.0
      ],
      "rebotes": [
-      5.6,
+      5.59,
       2.0,
       9.0
      ],
@@ -5472,17 +5472,17 @@
       4.0
      ],
      "pra": [
-      16.49,
+      16.45,
       8.0,
       26.0
      ],
      "puntos_rebotes": [
-      14.27,
+      14.24,
       6.0,
       23.0
      ],
      "puntos_asistencias": [
-      10.89,
+      10.86,
       4.0,
       19.0
      ]
@@ -5518,12 +5518,12 @@
     "min": 19.0,
     "s": {
      "puntos": [
-      13.06,
+      13.03,
       5.0,
-      23.0
+      22.0
      ],
      "rebotes": [
-      5.45,
+      5.43,
       2.0,
       9.0
      ],
@@ -5533,17 +5533,17 @@
       4.0
      ],
      "pra": [
-      20.36,
+      20.32,
       10.0,
       32.0
      ],
      "puntos_rebotes": [
-      18.51,
+      18.47,
       8.0,
       30.0
      ],
      "puntos_asistencias": [
-      14.91,
+      14.89,
       6.0,
       25.0
      ]
@@ -5579,7 +5579,7 @@
     "min": 18.8,
     "s": {
      "puntos": [
-      9.15,
+      9.14,
       3.0,
       17.0
      ],
@@ -5589,22 +5589,22 @@
       6.0
      ],
      "asistencias": [
-      3.2,
+      3.19,
       1.0,
       6.0
      ],
      "pra": [
-      15.45,
+      15.44,
       7.0,
       25.0
      ],
      "puntos_rebotes": [
-      12.25,
+      12.24,
       5.0,
       21.0
      ],
      "puntos_asistencias": [
-      12.34,
+      12.33,
       5.0,
       21.0
      ]
@@ -5640,9 +5640,9 @@
     "min": 32.9,
     "s": {
      "puntos": [
-      23.49,
+      23.54,
       13.0,
-      35.0
+      36.0
      ],
      "rebotes": [
       3.79,
@@ -5650,22 +5650,22 @@
       7.0
      ],
      "asistencias": [
-      5.32,
+      5.33,
       2.0,
       9.0
      ],
      "pra": [
-      32.59,
+      32.65,
       20.0,
       46.0
      ],
      "puntos_rebotes": [
-      27.27,
+      27.32,
       16.0,
       40.0
      ],
      "puntos_asistencias": [
-      28.8,
+      28.87,
       17.0,
       42.0
      ]
@@ -5698,35 +5698,35 @@
     "a": 3917376,
     "j": "Jaylen Brown",
     "lado": "away",
-    "min": 32.4,
+    "min": 32.5,
     "s": {
      "puntos": [
-      21.99,
+      22.01,
       11.0,
-      33.0
+      34.0
      ],
      "rebotes": [
-      6.43,
+      6.46,
       3.0,
       10.0
      ],
      "asistencias": [
-      4.74,
+      4.73,
       2.0,
       8.0
      ],
      "pra": [
-      33.16,
+      33.2,
       20.0,
       47.0
      ],
      "puntos_rebotes": [
-      28.42,
-      17.0,
+      28.48,
+      16.0,
       41.0
      ],
      "puntos_asistencias": [
-      26.72,
+      26.74,
       15.0,
       39.0
      ]
@@ -5759,35 +5759,35 @@
     "a": 3059318,
     "j": "Joel Embiid",
     "lado": "away",
-    "min": 30.7,
+    "min": 30.8,
     "s": {
      "puntos": [
-      23.43,
+      23.32,
       12.0,
       36.0
      ],
      "rebotes": [
-      9.32,
+      9.33,
       5.0,
       14.0
      ],
      "asistencias": [
-      5.39,
+      5.38,
       2.0,
       9.0
      ],
      "pra": [
-      38.14,
+      38.04,
       24.0,
-      54.0
+      53.0
      ],
      "puntos_rebotes": [
-      32.76,
+      32.66,
       20.0,
       47.0
      ],
      "puntos_asistencias": [
-      28.82,
+      28.71,
       17.0,
       42.0
      ]
@@ -5825,7 +5825,7 @@
      "puntos": [
       12.34,
       5.0,
-      21.0
+      20.0
      ],
      "rebotes": [
       6.69,
@@ -5833,12 +5833,12 @@
       11.0
      ],
      "asistencias": [
-      3.69,
+      3.7,
       1.0,
       7.0
      ],
      "pra": [
-      22.72,
+      22.73,
       13.0,
       33.0
      ],
@@ -5848,7 +5848,7 @@
       29.0
      ],
      "puntos_asistencias": [
-      16.03,
+      16.04,
       8.0,
       25.0
      ]
@@ -5884,7 +5884,7 @@
     "min": 29.1,
     "s": {
      "puntos": [
-      17.47,
+      17.42,
       8.0,
       28.0
      ],
@@ -5894,22 +5894,22 @@
       11.0
      ],
      "asistencias": [
-      6.62,
+      6.6,
       3.0,
       11.0
      ],
      "pra": [
-      30.89,
-      19.0,
+      30.82,
+      18.0,
       44.0
      ],
      "puntos_rebotes": [
-      24.27,
+      24.21,
       13.0,
       36.0
      ],
      "puntos_asistencias": [
-      24.09,
+      24.02,
       13.0,
       36.0
      ]
@@ -5942,15 +5942,15 @@
     "a": 2581018,
     "j": "Kentavious Caldwell-Pope",
     "lado": "away",
-    "min": 20.3,
+    "min": 20.2,
     "s": {
      "puntos": [
-      6.7,
+      6.71,
       1.0,
       13.0
      ],
      "rebotes": [
-      2.64,
+      2.61,
       0.0,
       5.0
      ],
@@ -5960,17 +5960,17 @@
       4.0
      ],
      "pra": [
-      11.2,
+      11.18,
       4.0,
       19.0
      ],
      "puntos_rebotes": [
-      9.34,
+      9.33,
       3.0,
       16.0
      ],
      "puntos_asistencias": [
-      8.56,
+      8.57,
       3.0,
       15.0
      ]
@@ -6003,15 +6003,15 @@
     "a": 3912848,
     "j": "Dean Wade",
     "lado": "away",
-    "min": 18.2,
+    "min": 18.1,
     "s": {
      "puntos": [
-      4.4,
+      4.38,
       0.0,
       9.0
      ],
      "rebotes": [
-      3.98,
+      3.97,
       1.0,
       7.0
      ],
@@ -6021,17 +6021,17 @@
       3.0
      ],
      "pra": [
-      9.44,
+      9.42,
       3.0,
       16.0
      ],
      "puntos_rebotes": [
-      8.37,
+      8.35,
       3.0,
       15.0
      ],
      "puntos_asistencias": [
-      5.47,
+      5.45,
       1.0,
       11.0
      ]
@@ -6067,32 +6067,32 @@
     "min": 16.7,
     "s": {
      "puntos": [
-      8.37,
+      8.39,
       2.0,
       16.0
      ],
      "rebotes": [
-      2.25,
+      2.27,
       0.0,
       5.0
      ],
      "asistencias": [
-      2.11,
+      2.1,
       0.0,
       4.0
      ],
      "pra": [
-      12.73,
+      12.76,
       5.0,
       22.0
      ],
      "puntos_rebotes": [
-      10.62,
+      10.66,
       3.0,
       19.0
      ],
      "puntos_asistencias": [
-      10.48,
+      10.49,
       3.0,
       19.0
      ]
@@ -6125,11 +6125,11 @@
   "tardia": false
  },
  "401909885": {
-  "generated_at": "2026-10-28T17:45:00.000587Z",
+  "generated_at": "2026-10-28T18:15:00.000550Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909885,
   "starts_at": "2026-10-28T23:30Z",
-  "minutos_antes": 345.0,
+  "minutos_antes": 315.0,
   "proyeccion": {
    "league_game_id": "401909885",
    "espn_game_id": "401909885",
@@ -7656,11 +7656,11 @@
   "tardia": false
  },
  "401909886": {
-  "generated_at": "2026-10-28T17:45:00.000587Z",
+  "generated_at": "2026-10-28T18:15:00.000550Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909886,
   "starts_at": "2026-10-29T00:00Z",
-  "minutos_antes": 375.0,
+  "minutos_antes": 345.0,
   "proyeccion": {
    "league_game_id": "401909886",
    "espn_game_id": "401909886",
@@ -9194,11 +9194,11 @@
   "tardia": false
  },
  "401909887": {
-  "generated_at": "2026-10-28T17:45:00.000587Z",
+  "generated_at": "2026-10-28T18:15:00.000550Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909887,
   "starts_at": "2026-10-29T00:00Z",
-  "minutos_antes": 375.0,
+  "minutos_antes": 345.0,
   "proyeccion": {
    "league_game_id": "401909887",
    "espn_game_id": "401909887",
@@ -10723,11 +10723,11 @@
   "tardia": false
  },
  "401909888": {
-  "generated_at": "2026-10-28T17:45:00.000587Z",
+  "generated_at": "2026-10-28T18:15:00.000550Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909888,
   "starts_at": "2026-10-29T00:00Z",
-  "minutos_antes": 375.0,
+  "minutos_antes": 345.0,
   "proyeccion": {
    "league_game_id": "401909888",
    "espn_game_id": "401909888",
@@ -12254,11 +12254,11 @@
   "tardia": false
  },
  "401909889": {
-  "generated_at": "2026-10-28T17:45:00.000587Z",
+  "generated_at": "2026-10-28T18:15:00.000550Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909889,
   "starts_at": "2026-10-29T00:00Z",
-  "minutos_antes": 375.0,
+  "minutos_antes": 345.0,
   "proyeccion": {
    "league_game_id": "401909889",
    "espn_game_id": "401909889",
@@ -13786,11 +13786,11 @@
   "tardia": false
  },
  "401909890": {
-  "generated_at": "2026-10-28T17:45:00.000587Z",
+  "generated_at": "2026-10-28T18:15:00.000550Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909890,
   "starts_at": "2026-10-29T01:00Z",
-  "minutos_antes": 435.0,
+  "minutos_antes": 405.0,
   "proyeccion": {
    "league_game_id": "401909890",
    "espn_game_id": "401909890",
@@ -15324,11 +15324,11 @@
   "tardia": false
  },
  "401909891": {
-  "generated_at": "2026-10-28T17:45:00.000587Z",
+  "generated_at": "2026-10-28T18:15:00.000550Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909891,
   "starts_at": "2026-10-29T01:30Z",
-  "minutos_antes": 465.0,
+  "minutos_antes": 435.0,
   "proyeccion": {
    "league_game_id": "401909891",
    "espn_game_id": "401909891",
@@ -16858,11 +16858,11 @@
   "tardia": false
  },
  "401909892": {
-  "generated_at": "2026-10-28T17:45:00.000587Z",
+  "generated_at": "2026-10-28T18:15:00.000550Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909892,
   "starts_at": "2026-10-29T02:30Z",
-  "minutos_antes": 525.0,
+  "minutos_antes": 495.0,
   "proyeccion": {
    "league_game_id": "401909892",
    "espn_game_id": "401909892",
