@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-28T17:45:00.000587Z",
+ "generated_at": "2026-10-28T18:45:00.000525Z",
  "date_local": "2026-10-28",
  "games": [
   {
@@ -393,11 +393,11 @@
    },
    "projection": {
     "home_score": 112.2,
-    "away_score": 121.9
+    "away_score": 122.0
    },
    "win_probability": {
-    "home": 0.236,
-    "away": 0.764
+    "home": 0.2334,
+    "away": 0.7666
    },
    "pick": {
     "market": "moneyline",
@@ -409,7 +409,7 @@
     "home": 10.0,
     "away": -10.0
    },
-   "total_points": 234.0,
+   "total_points": 234.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -417,32 +417,31 @@
      8.0
     ],
     "total": [
-     208.0,
+     209.0,
      260.0
     ]
    },
    "game_warnings": [
-    "Patrick Williams está en duda (questionable)",
-    "Jose Alvarado está en duda (day-to-day)"
+    "Patrick Williams está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +9.7, Elo +10.6, equipo +12.6, cuatro factores +11.2.",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +9.8, Elo +10.6, equipo +12.6, cuatro factores +11.2.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 13.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 13.9 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de CHI",
      "favors": "away",
-     "detail": "Sin Nic Claxton: CHI pierde 0.8 puntos.",
+     "detail": "Sin Nic Claxton: CHI pierde 0.9 puntos.",
      "supports_pick": true
     },
     {
@@ -690,12 +689,12 @@
     "code": "SA"
    },
    "projection": {
-    "home_score": 111.0,
-    "away_score": 123.7
+    "home_score": 111.7,
+    "away_score": 122.6
    },
    "win_probability": {
-    "home": 0.1751,
-    "away": 0.8249
+    "home": 0.211,
+    "away": 0.789
    },
    "pick": {
     "market": "moneyline",
@@ -704,43 +703,42 @@
    },
    "data_warning": "Jaxson Hayes está en duda (questionable)",
    "spread": {
-    "home": 13.0,
-    "away": -13.0
+    "home": 11.0,
+    "away": -11.0
    },
-   "total_points": 234.7,
+   "total_points": 234.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -30.0,
-     5.0
+     -29.0,
+     7.0
     ],
     "total": [
      209.0,
-     261.0
+     260.0
     ]
    },
    "game_warnings": [
-    "Jaxson Hayes está en duda (questionable)",
-    "Lauri Markkanen está en duda (questionable)"
+    "Jaxson Hayes está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +12.6, Elo +11.7, equipo +13.3, cuatro factores +9.3.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +10.8, Elo +11.7, equipo +13.3, cuatro factores +9.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 16.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 14.8 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de UTAH",
      "favors": "away",
-     "detail": "Sin Blake Hinson, Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 2.6 puntos.",
+     "detail": "Sin Blake Hinson, Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 0.9 puntos.",
      "supports_pick": true
     },
     {
@@ -770,24 +768,24 @@
     "code": "OKC"
    },
    "projection": {
-    "home_score": 109.2,
-    "away_score": 115.3
+    "home_score": 108.8,
+    "away_score": 115.4
    },
    "win_probability": {
-    "home": 0.3276,
-    "away": 0.6724
+    "home": 0.3139,
+    "away": 0.6861
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Oklahoma City Thunder ML"
    },
-   "data_warning": "Santi Aldama está en duda (doubtful)",
+   "data_warning": "Kyrie Irving está en duda (questionable)",
    "spread": {
-    "home": 6.0,
-    "away": -6.0
+    "home": 7.0,
+    "away": -7.0
    },
-   "total_points": 224.5,
+   "total_points": 224.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -796,13 +794,12 @@
     ],
     "total": [
      199.0,
-     251.0
+     250.0
     ]
    },
    "game_warnings": [
-    "Santi Aldama está en duda (doubtful)",
     "Kyrie Irving está en duda (questionable)",
-    "Naji Marshall está en duda (questionable)",
+    "Naji Marshall está en duda (doubtful)",
     "Ajay Mitchell está en duda (questionable)"
    ],
    "warnings": [],
@@ -810,13 +807,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +6.2, Elo +9.3, equipo +10.6, cuatro factores +9.3.",
+     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +6.7, Elo +9.3, equipo +10.6, cuatro factores +9.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de OKC vale 7.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de OKC vale 8.4 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -828,7 +825,7 @@
     {
      "label": "Bajas de OKC",
      "favors": "home",
-     "detail": "Sin Alex Caruso, Chet Holmgren, Nikola Topic: OKC pierde 1.8 puntos.",
+     "detail": "Sin Alex Caruso, Chet Holmgren, Nikola Topic: OKC pierde 1.3 puntos.",
      "supports_pick": false
     }
    ]
