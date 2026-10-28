@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-28T04:15:00.000516Z",
+ "generated_at": "2026-10-28T05:45:00.000591Z",
  "date_local": "2026-10-28",
  "games": [
   {
@@ -178,7 +178,7 @@
     "side": "home",
     "label": "Detroit Pistons ML"
    },
-   "data_warning": null,
+   "data_warning": "Isaiah Joe está en duda (day-to-day)",
    "spread": {
     "home": -6.0,
     "away": 6.0
@@ -195,7 +195,9 @@
      236.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Isaiah Joe está en duda (day-to-day)"
+   ],
    "warnings": [],
    "key_factors": [
     {
@@ -387,11 +389,11 @@
    },
    "projection": {
     "home_score": 112.0,
-    "away_score": 121.9
+    "away_score": 121.7
    },
    "win_probability": {
-    "home": 0.2336,
-    "away": 0.7664
+    "home": 0.2361,
+    "away": 0.7639
    },
    "pick": {
     "market": "moneyline",
@@ -403,7 +405,7 @@
     "home": 10.0,
     "away": -10.0
    },
-   "total_points": 233.9,
+   "total_points": 233.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -416,26 +418,27 @@
     ]
    },
    "game_warnings": [
-    "Patrick Williams está en duda (questionable)"
+    "Patrick Williams está en duda (questionable)",
+    "Jose Alvarado está en duda (day-to-day)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +9.8, Elo +10.6, equipo +12.6, cuatro factores +11.2.",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +9.7, Elo +10.6, equipo +12.6, cuatro factores +11.2.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 13.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 13.8 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de CHI",
      "favors": "away",
-     "detail": "Sin Nic Claxton: CHI pierde 0.9 puntos.",
+     "detail": "Sin Nic Claxton: CHI pierde 0.8 puntos.",
      "supports_pick": true
     },
     {
