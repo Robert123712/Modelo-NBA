@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-29T23:25:54.513334Z",
+ "generated_at": "2026-10-29T23:45:00.000531Z",
  "date_local": "2026-10-29",
  "games": [
   {
@@ -19,23 +19,23 @@
    },
    "projection": {
     "home_score": 120.6,
-    "away_score": 120.8
+    "away_score": 120.5
    },
    "win_probability": {
-    "home": 0.4932,
-    "away": 0.5068
+    "home": 0.4995,
+    "away": 0.5005
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Cleveland Cavaliers ML"
    },
-   "data_warning": "Jaylon Tyson está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": 1.0,
     "away": -1.0
    },
-   "total_points": 241.4,
+   "total_points": 241.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -47,27 +47,31 @@
      268.0
     ]
    },
-   "game_warnings": [
-    "Jaylon Tyson está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores -0.1, Elo +1.0, equipo +2.1, cuatro factores +2.2.",
+     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +0.1, Elo +1.0, equipo +2.1, cuatro factores +2.2.",
      "supports_pick": false
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de CLE vale 1.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de CLE vale 1.7 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para ATL.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de CLE",
+     "favors": "home",
+     "detail": "Sin Meleek Thomas: CLE pierde 0.7 puntos.",
      "supports_pick": false
     }
    ]
