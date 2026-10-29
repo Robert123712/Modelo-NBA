@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-29T01:15:00.000609Z",
+ "generated_at": "2026-10-29T01:45:00.000516Z",
  "date_local": "2026-10-28",
  "games": [
   {
@@ -89,12 +89,12 @@
     "code": "LAL"
    },
    "projection": {
-    "home_score": 120.2,
-    "away_score": 116.5
+    "home_score": 119.7,
+    "away_score": 115.8
    },
    "win_probability": {
-    "home": 0.605,
-    "away": 0.395
+    "home": 0.611,
+    "away": 0.389
    },
    "pick": {
     "market": "moneyline",
@@ -106,7 +106,7 @@
     "home": -4.0,
     "away": 4.0
    },
-   "total_points": 236.7,
+   "total_points": 235.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -114,8 +114,8 @@
      22.0
     ],
     "total": [
-     211.0,
-     263.0
+     210.0,
+     261.0
     ]
    },
    "game_warnings": [],
@@ -124,7 +124,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a LAC. Margen de LAC: jugadores +3.7, Elo +0.0, equipo +1.1, cuatro factores +2.2.",
+     "detail": "4 de 4 modelos ven ganar a LAC. Margen de LAC: jugadores +4.0, Elo +0.0, equipo +1.1, cuatro factores +2.2.",
      "supports_pick": true
     },
     {
@@ -142,7 +142,7 @@
     {
      "label": "Bajas de LAL",
      "favors": "home",
-     "detail": "Sin Luka Doncic, Ziaire Williams: LAL pierde 1.7 puntos.",
+     "detail": "Sin Luka Doncic, Ziaire Williams: LAL pierde 2.0 puntos.",
      "supports_pick": true
     }
    ]
