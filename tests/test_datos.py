@@ -136,3 +136,18 @@ def test_correccion_por_contexto():
     assert regreso[7] < regreso[8]
     # Sin rasgos (novato sin historial), la base no se toca.
     assert corregir({9: 12.0}, {}, b2b=True, bajas=30.0) == {9: 12.0}
+
+
+def test_referencia_de_minutos_con_novatos():
+    """Un novato con 5+ partidos no tiene temporada pasada (tumbo la corrida
+    del 29 de octubre de 2026)."""
+    from modelo_nba.minutos import promedio_referencia
+    partidos, jugadores = [], []
+    inicio = pd.Timestamp("2026-10-21", tz="UTC")
+    for g in range(6):
+        partidos.append(dict(game_id=g, fecha=inicio + pd.Timedelta(days=2 * g), season_type=2, season=2027))
+        jugadores.append(dict(game_id=g, athlete_id=1, minutes=20.0, did_not_play=False, reason=""))
+    partidos.append(dict(game_id=99, fecha=pd.Timestamp("2026-03-01", tz="UTC"), season_type=2, season=2026))
+    jugadores.append(dict(game_id=99, athlete_id=2, minutes=30.0, did_not_play=False, reason=""))
+    ref = promedio_referencia(pd.DataFrame(jugadores), pd.DataFrame(partidos), pd.Timestamp("2026-11-05", tz="UTC"), 2027)
+    assert ref[1] == 20.0 and ref[2] == 30.0

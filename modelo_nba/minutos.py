@@ -133,10 +133,9 @@ def promedio_referencia(jugadores: pd.DataFrame, partidos: pd.DataFrame, antes_d
     j = j[(j.fecha < antes_de) & (j.season_type != 3) & ~no_disponible(j.did_not_play, j.reason)]
     actual = j[j.season == temporada].groupby("athlete_id").minutes.agg(["mean", "size"])
     pasada = j[j.season == temporada - 1].groupby("athlete_id").minutes.mean()
-    ref = pasada.copy()
     usar = actual[actual["size"] >= minimo]["mean"]
-    ref.loc[usar.index] = usar
-    return ref
+    # Un novato con 5+ partidos no tiene temporada pasada: su referencia es esta.
+    return usar.combine_first(pasada)
 
 
 # --- Correcciones por contexto (docs/MINUTOS.md) -----------------------------

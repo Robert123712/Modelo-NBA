@@ -132,7 +132,11 @@ def predecir(
     # decaimiento temporal.
     corte = min(ahora, pd.Timestamp(fecha).tz_localize(ET).tz_convert("UTC"))
     R = ajustar(p, j, corte, params_r)
-    referencia_min = mn.promedio_referencia(j, p, corte, temporada).to_dict()
+    # La revision de minutos es solo una alarma: si falla, se publica igual.
+    try:
+        referencia_min = mn.promedio_referencia(j, p, corte, temporada).to_dict()
+    except Exception:  # noqa: BLE001
+        referencia_min = {}
     # Marcador (spread, total, arbitro): memoria de 6. Props: memoria corta y
     # correcciones por contexto (docs/MINUTOS.md).
     bases = {
