@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-29T02:15:00.000517Z",
+ "generated_at": "2026-10-29T02:45:00.000531Z",
  "date_local": "2026-10-28",
  "games": [
-  {
-   "league_game_id": "401909892",
-   "espn_game_id": "401909892",
-   "starts_at": "2026-10-29T02:30Z",
-   "home": {
-    "name": "LA Clippers",
-    "code": "LAC"
-   },
-   "away": {
-    "name": "Los Angeles Lakers",
-    "code": "LAL"
-   },
-   "projection": {
-    "home_score": 119.7,
-    "away_score": 115.8
-   },
-   "win_probability": {
-    "home": 0.611,
-    "away": 0.389
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "LA Clippers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -4.0,
-    "away": 4.0
-   },
-   "total_points": 235.5,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -14.0,
-     22.0
-    ],
-    "total": [
-     210.0,
-     261.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a LAC. Margen de LAC: jugadores +4.0, Elo +0.0, equipo +1.1, cuatro factores +2.2.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para LAC.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "home",
-     "detail": "LAL juega su segundo partido en dos noches: 2.2 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de LAL",
-     "favors": "home",
-     "detail": "Sin Luka Doncic, Ziaire Williams: LAL pierde 2.0 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909881",
    "espn_game_id": "401909881",
@@ -885,6 +814,77 @@
      "favors": "home",
      "detail": "Sin Alex Caruso, Chet Holmgren, Nikola Topic: OKC pierde 1.1 puntos.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909892",
+   "espn_game_id": "401909892",
+   "starts_at": "2026-10-29T02:30Z",
+   "home": {
+    "name": "LA Clippers",
+    "code": "LAC"
+   },
+   "away": {
+    "name": "Los Angeles Lakers",
+    "code": "LAL"
+   },
+   "projection": {
+    "home_score": 120.2,
+    "away_score": 116.5
+   },
+   "win_probability": {
+    "home": 0.605,
+    "away": 0.395
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "LA Clippers ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -4.0,
+    "away": 4.0
+   },
+   "total_points": 236.7,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -14.0,
+     22.0
+    ],
+    "total": [
+     211.0,
+     263.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a LAC. Margen de LAC: jugadores +3.7, Elo +0.0, equipo +1.1, cuatro factores +2.2.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para LAC.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "home",
+     "detail": "LAL juega su segundo partido en dos noches: 2.2 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de LAL",
+     "favors": "home",
+     "detail": "Sin Luka Doncic, Ziaire Williams: LAL pierde 1.7 puntos.",
+     "supports_pick": true
     }
    ]
   }
