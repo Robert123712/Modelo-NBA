@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-29T01:45:00.000516Z",
+ "generated_at": "2026-10-29T02:15:00.000517Z",
  "date_local": "2026-10-28",
  "games": [
-  {
-   "league_game_id": "401909891",
-   "espn_game_id": "401909891",
-   "starts_at": "2026-10-29T01:30Z",
-   "home": {
-    "name": "Dallas Mavericks",
-    "code": "DAL"
-   },
-   "away": {
-    "name": "Oklahoma City Thunder",
-    "code": "OKC"
-   },
-   "projection": {
-    "home_score": 108.5,
-    "away_score": 114.9
-   },
-   "win_probability": {
-    "home": 0.3192,
-    "away": 0.6808
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Oklahoma City Thunder ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 7.0,
-    "away": -7.0
-   },
-   "total_points": 223.5,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -24.0,
-     12.0
-    ],
-    "total": [
-     198.0,
-     250.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +6.5, Elo +9.3, equipo +10.6, cuatro factores +9.3.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de OKC vale 8.2 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para DAL.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de OKC",
-     "favors": "home",
-     "detail": "Sin Alex Caruso, Chet Holmgren, Nikola Topic: OKC pierde 1.5 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909892",
    "espn_game_id": "401909892",
@@ -881,6 +810,80 @@
      "label": "Descanso",
      "favors": "home",
      "detail": "SA juega su segundo partido en dos noches: 2.2 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909891",
+   "espn_game_id": "401909891",
+   "starts_at": "2026-10-29T01:30Z",
+   "home": {
+    "name": "Dallas Mavericks",
+    "code": "DAL"
+   },
+   "away": {
+    "name": "Oklahoma City Thunder",
+    "code": "OKC"
+   },
+   "projection": {
+    "home_score": 108.4,
+    "away_score": 115.2
+   },
+   "win_probability": {
+    "home": 0.3099,
+    "away": 0.6901
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Oklahoma City Thunder ML"
+   },
+   "data_warning": "Kyrie Irving está en duda (questionable)",
+   "spread": {
+    "home": 7.0,
+    "away": -7.0
+   },
+   "total_points": 223.5,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -25.0,
+     11.0
+    ],
+    "total": [
+     198.0,
+     250.0
+    ]
+   },
+   "game_warnings": [
+    "Kyrie Irving está en duda (questionable)",
+    "Ajay Mitchell está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +6.8, Elo +9.3, equipo +10.6, cuatro factores +9.3.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de OKC vale 8.6 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para DAL.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de OKC",
+     "favors": "home",
+     "detail": "Sin Alex Caruso, Chet Holmgren, Nikola Topic: OKC pierde 1.1 puntos.",
      "supports_pick": false
     }
    ]
