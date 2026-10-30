@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-30T01:15:00.000531Z",
+ "generated_at": "2026-10-30T01:45:00.000536Z",
  "date_local": "2026-10-29",
  "games": [
   {
@@ -18,48 +18,50 @@
     "code": "MEM"
    },
    "projection": {
-    "home_score": 117.6,
-    "away_score": 111.8
+    "home_score": 118.1,
+    "away_score": 108.9
    },
    "win_probability": {
-    "home": 0.6619,
-    "away": 0.3381
+    "home": 0.7493,
+    "away": 0.2507
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Portland Trail Blazers ML"
    },
-   "data_warning": null,
+   "data_warning": "Ty Jerome está en duda (questionable)",
    "spread": {
-    "home": -6.0,
-    "away": 6.0
+    "home": -9.0,
+    "away": 9.0
    },
-   "total_points": 229.4,
+   "total_points": 227.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -12.0,
-     24.0
+     -9.0,
+     27.0
     ],
     "total": [
-     204.0,
-     255.0
+     201.0,
+     253.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Ty Jerome está en duda (questionable)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +5.7, Elo +9.6, equipo +7.1, cuatro factores +10.4.",
+     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +9.0, Elo +9.6, equipo +7.1, cuatro factores +10.4.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de POR vale 3.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de POR vale 7.3 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -69,10 +71,10 @@
      "supports_pick": true
     },
     {
-     "label": "Bajas de POR",
-     "favors": "away",
-     "detail": "Sin Shaedon Sharpe, Robert Williams III: POR pierde 1.1 puntos.",
-     "supports_pick": false
+     "label": "Bajas de MEM",
+     "favors": "home",
+     "detail": "Sin Jahmai Mashack, Javon Small: MEM pierde 2.2 puntos.",
+     "supports_pick": true
     }
    ]
   },
