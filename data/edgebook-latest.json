@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-30T22:15:00.000606Z",
+ "generated_at": "2026-10-30T22:45:00.000594Z",
  "date_local": "2026-10-30",
  "games": [
   {
@@ -18,37 +18,36 @@
     "code": "CHA"
    },
    "projection": {
-    "home_score": 105.5,
-    "away_score": 109.9
+    "home_score": 105.6,
+    "away_score": 109.2
    },
    "win_probability": {
-    "home": 0.3764,
-    "away": 0.6236
+    "home": 0.3993,
+    "away": 0.6007
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Charlotte Hornets ML"
    },
-   "data_warning": "Tre Johnson está en duda (questionable)",
+   "data_warning": "Dennis Schroder está en duda (probable)",
    "spread": {
-    "home": 5.0,
-    "away": -5.0
+    "home": 4.0,
+    "away": -4.0
    },
-   "total_points": 215.4,
+   "total_points": 214.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -22.0,
-     13.0
+     -21.0,
+     14.0
     ],
     "total": [
-     190.0,
+     189.0,
      241.0
     ]
    },
    "game_warnings": [
-    "Tre Johnson está en duda (questionable)",
     "Dennis Schroder está en duda (probable)"
    ],
    "warnings": [],
@@ -56,13 +55,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +4.5, Elo +7.2, equipo +6.1, cuatro factores +8.8.",
+     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +3.7, Elo +7.2, equipo +6.1, cuatro factores +8.8.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de CHA vale 6.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de CHA vale 5.4 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -74,7 +73,7 @@
     {
      "label": "Bajas de CHA",
      "favors": "home",
-     "detail": "Sin Kon Knueppel, Coby White, Grant Williams: CHA pierde 2.5 puntos.",
+     "detail": "Sin Kon Knueppel, Coby White, Grant Williams: CHA pierde 3.3 puntos.",
      "supports_pick": false
     }
    ]
@@ -235,49 +234,47 @@
    },
    "projection": {
     "home_score": 111.4,
-    "away_score": 115.0
+    "away_score": 115.1
    },
    "win_probability": {
-    "home": 0.3977,
-    "away": 0.6023
+    "home": 0.3938,
+    "away": 0.6062
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "New York Knicks ML"
    },
-   "data_warning": "Karl-Anthony Towns está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": 4.0,
     "away": -4.0
    },
-   "total_points": 226.4,
+   "total_points": 226.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -21.0,
+     -22.0,
      14.0
     ],
     "total": [
      201.0,
-     252.0
+     252.1
     ]
    },
-   "game_warnings": [
-    "Karl-Anthony Towns está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +3.6, Elo +3.0, equipo +5.3, cuatro factores +7.2.",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +3.8, Elo +3.0, equipo +5.3, cuatro factores +7.2.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 5.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 5.5 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -372,12 +369,12 @@
     "code": "IND"
    },
    "projection": {
-    "home_score": 121.4,
-    "away_score": 115.5
+    "home_score": 121.7,
+    "away_score": 115.6
    },
    "win_probability": {
-    "home": 0.6644,
-    "away": 0.3356
+    "home": 0.6732,
+    "away": 0.3268
    },
    "pick": {
     "market": "moneyline",
@@ -389,7 +386,7 @@
     "home": -6.0,
     "away": 6.0
    },
-   "total_points": 236.9,
+   "total_points": 237.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -397,7 +394,7 @@
      24.0
     ],
     "total": [
-     211.0,
+     212.0,
      263.0
     ]
    },
@@ -411,13 +408,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIA. Margen de MIA: jugadores +5.8, Elo +6.4, equipo +5.2, cuatro factores +8.4.",
+     "detail": "4 de 4 modelos ven ganar a MIA. Margen de MIA: jugadores +6.2, Elo +6.4, equipo +5.2, cuatro factores +8.4.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MIA vale 4.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MIA vale 4.4 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -429,7 +426,7 @@
     {
      "label": "Bajas de IND",
      "favors": "home",
-     "detail": "Sin Johnny Furphy, Tyrese Haliburton, T.J. McConnell: IND pierde 4.7 puntos.",
+     "detail": "Sin Johnny Furphy, Tyrese Haliburton, T.J. McConnell: IND pierde 5.0 puntos.",
      "supports_pick": true
     }
    ]
@@ -447,12 +444,12 @@
     "code": "HOU"
    },
    "projection": {
-    "home_score": 108.2,
-    "away_score": 113.1
+    "home_score": 108.8,
+    "away_score": 112.9
    },
    "win_probability": {
-    "home": 0.3639,
-    "away": 0.6361
+    "home": 0.3865,
+    "away": 0.6135
    },
    "pick": {
     "market": "moneyline",
@@ -461,19 +458,19 @@
    },
    "data_warning": "Santi Aldama está en duda (doubtful)",
    "spread": {
-    "home": 5.0,
-    "away": -5.0
+    "home": 4.0,
+    "away": -4.0
    },
-   "total_points": 221.3,
+   "total_points": 221.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -23.0,
-     13.0
+     -22.0,
+     14.0
     ],
     "total": [
      196.0,
-     247.0
+     248.0
     ]
    },
    "game_warnings": [
@@ -485,19 +482,19 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +5.0, Elo +4.0, equipo +6.0, cuatro factores +5.6.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +4.2, Elo +4.0, equipo +6.0, cuatro factores +5.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 6.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 5.9 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de DAL",
      "favors": "away",
-     "detail": "Sin Sergio de Larrea, Dereck Lively II: DAL pierde 1.6 puntos.",
+     "detail": "Sin Sergio de Larrea, Dereck Lively II: DAL pierde 0.8 puntos.",
      "supports_pick": true
     },
     {
