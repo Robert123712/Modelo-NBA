@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-30T04:45:00.000591Z",
+ "generated_at": "2026-10-30T14:15:00.941381Z",
  "date_local": "2026-10-30",
  "games": [
   {
@@ -22,8 +22,8 @@
     "away_score": 109.9
    },
    "win_probability": {
-    "home": 0.3655,
-    "away": 0.6345
+    "home": 0.3656,
+    "away": 0.6344
    },
    "pick": {
     "market": "moneyline",
@@ -310,8 +310,8 @@
     "away_score": 111.0
    },
    "win_probability": {
-    "home": 0.631,
-    "away": 0.369
+    "home": 0.6308,
+    "away": 0.3692
    },
    "pick": {
     "market": "moneyline",
@@ -381,8 +381,8 @@
     "away_score": 116.0
    },
    "win_probability": {
-    "home": 0.6541,
-    "away": 0.3459
+    "home": 0.6542,
+    "away": 0.3458
    },
    "pick": {
     "market": "moneyline",
@@ -530,8 +530,8 @@
     "away_score": 106.5
    },
    "win_probability": {
-    "home": 0.6877,
-    "away": 0.3123
+    "home": 0.6878,
+    "away": 0.3122
    },
    "pick": {
     "market": "moneyline",
@@ -603,8 +603,8 @@
     "away_score": 120.1
    },
    "win_probability": {
-    "home": 0.4509,
-    "away": 0.5491
+    "home": 0.4506,
+    "away": 0.5494
    },
    "pick": {
     "market": "moneyline",
@@ -616,7 +616,7 @@
     "home": 2.0,
     "away": -2.0
    },
-   "total_points": 238.4,
+   "total_points": 238.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -736,7 +736,5 @@
   }
  ],
  "skipped_without_id": 0,
- "warnings": [
-  "Sin alineaciones de la NBA (HTTPError); titular del partido anterior"
- ]
+ "warnings": []
 }
