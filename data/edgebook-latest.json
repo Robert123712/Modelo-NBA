@@ -2,82 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-30T22:45:00.000594Z",
+ "generated_at": "2026-10-30T23:15:00.000574Z",
  "date_local": "2026-10-30",
  "games": [
-  {
-   "league_game_id": "401909277",
-   "espn_game_id": "401909277",
-   "starts_at": "2026-10-30T23:00Z",
-   "home": {
-    "name": "Washington Wizards",
-    "code": "WSH"
-   },
-   "away": {
-    "name": "Charlotte Hornets",
-    "code": "CHA"
-   },
-   "projection": {
-    "home_score": 105.6,
-    "away_score": 109.2
-   },
-   "win_probability": {
-    "home": 0.3993,
-    "away": 0.6007
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Charlotte Hornets ML"
-   },
-   "data_warning": "Dennis Schroder está en duda (probable)",
-   "spread": {
-    "home": 4.0,
-    "away": -4.0
-   },
-   "total_points": 214.8,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -21.0,
-     14.0
-    ],
-    "total": [
-     189.0,
-     241.0
-    ]
-   },
-   "game_warnings": [
-    "Dennis Schroder está en duda (probable)"
-   ],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +3.7, Elo +7.2, equipo +6.1, cuatro factores +8.8.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de CHA vale 5.4 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para WSH.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de CHA",
-     "favors": "home",
-     "detail": "Sin Kon Knueppel, Coby White, Grant Williams: CHA pierde 3.3 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909278",
    "espn_game_id": "401909278",
@@ -369,24 +296,24 @@
     "code": "IND"
    },
    "projection": {
-    "home_score": 121.7,
-    "away_score": 115.6
+    "home_score": 121.6,
+    "away_score": 115.3
    },
    "win_probability": {
-    "home": 0.6732,
-    "away": 0.3268
+    "home": 0.6767,
+    "away": 0.3233
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Miami Heat ML"
    },
-   "data_warning": "Andrew Nembhard está en duda (probable)",
+   "data_warning": null,
    "spread": {
-    "home": -6.0,
-    "away": 6.0
+    "home": -7.0,
+    "away": 7.0
    },
-   "total_points": 237.3,
+   "total_points": 236.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -394,27 +321,23 @@
      24.0
     ],
     "total": [
-     212.0,
+     211.0,
      263.0
     ]
    },
-   "game_warnings": [
-    "Andrew Nembhard está en duda (probable)",
-    "Aaron Nesmith está en duda (probable)",
-    "Obi Toppin está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIA. Margen de MIA: jugadores +6.2, Elo +6.4, equipo +5.2, cuatro factores +8.4.",
+     "detail": "4 de 4 modelos ven ganar a MIA. Margen de MIA: jugadores +6.3, Elo +6.4, equipo +5.2, cuatro factores +8.4.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MIA vale 4.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MIA vale 4.5 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -426,7 +349,7 @@
     {
      "label": "Bajas de IND",
      "favors": "home",
-     "detail": "Sin Johnny Furphy, Tyrese Haliburton, T.J. McConnell: IND pierde 5.0 puntos.",
+     "detail": "Sin Johnny Furphy, Tyrese Haliburton, T.J. McConnell: IND pierde 5.2 puntos.",
      "supports_pick": true
     }
    ]
@@ -444,19 +367,19 @@
     "code": "HOU"
    },
    "projection": {
-    "home_score": 108.8,
-    "away_score": 112.9
+    "home_score": 108.9,
+    "away_score": 113.0
    },
    "win_probability": {
-    "home": 0.3865,
-    "away": 0.6135
+    "home": 0.388,
+    "away": 0.612
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Houston Rockets ML"
    },
-   "data_warning": "Santi Aldama está en duda (doubtful)",
+   "data_warning": null,
    "spread": {
     "home": 4.0,
     "away": -4.0
@@ -473,16 +396,13 @@
      248.0
     ]
    },
-   "game_warnings": [
-    "Santi Aldama está en duda (doubtful)",
-    "Naji Marshall está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +4.2, Elo +4.0, equipo +6.0, cuatro factores +5.6.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +4.1, Elo +4.0, equipo +6.0, cuatro factores +5.6.",
      "supports_pick": true
     },
     {
@@ -494,7 +414,7 @@
     {
      "label": "Bajas de DAL",
      "favors": "away",
-     "detail": "Sin Sergio de Larrea, Dereck Lively II: DAL pierde 0.8 puntos.",
+     "detail": "Sin Santi Aldama, Sergio de Larrea, Dereck Lively II: DAL pierde 0.8 puntos.",
      "supports_pick": true
     },
     {
@@ -519,23 +439,23 @@
    },
    "projection": {
     "home_score": 113.1,
-    "away_score": 106.8
+    "away_score": 106.9
    },
    "win_probability": {
-    "home": 0.6757,
-    "away": 0.3243
+    "home": 0.673,
+    "away": 0.327
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Minnesota Timberwolves ML"
    },
-   "data_warning": "Rui Hachimura está en duda (probable)",
+   "data_warning": null,
    "spread": {
-    "home": -7.0,
-    "away": 7.0
+    "home": -6.0,
+    "away": 6.0
    },
-   "total_points": 219.9,
+   "total_points": 220.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -547,21 +467,19 @@
      246.0
     ]
    },
-   "game_warnings": [
-    "Rui Hachimura está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +6.2, Elo +5.8, equipo +4.2, cuatro factores +2.3.",
+     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +6.1, Elo +5.8, equipo +4.2, cuatro factores +2.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MIN vale 4.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MIN vale 4.4 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -573,7 +491,7 @@
     {
      "label": "Bajas de LAC",
      "favors": "home",
-     "detail": "Sin Bradley Beal, Brandon Ingram, Jordan Miller: LAC pierde 0.8 puntos.",
+     "detail": "Sin Bradley Beal, Brandon Ingram, Jordan Miller: LAC pierde 0.7 puntos.",
      "supports_pick": true
     }
    ]
@@ -722,6 +640,80 @@
      "label": "Bajas de DEN",
      "favors": "home",
      "detail": "Sin Spencer Jones, Julian Strawther: DEN pierde 0.8 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909277",
+   "espn_game_id": "401909277",
+   "starts_at": "2026-10-30T23:00Z",
+   "home": {
+    "name": "Washington Wizards",
+    "code": "WSH"
+   },
+   "away": {
+    "name": "Charlotte Hornets",
+    "code": "CHA"
+   },
+   "projection": {
+    "home_score": 105.5,
+    "away_score": 109.9
+   },
+   "win_probability": {
+    "home": 0.3764,
+    "away": 0.6236
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Charlotte Hornets ML"
+   },
+   "data_warning": "Tre Johnson está en duda (questionable)",
+   "spread": {
+    "home": 5.0,
+    "away": -5.0
+   },
+   "total_points": 215.4,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -22.0,
+     13.0
+    ],
+    "total": [
+     190.0,
+     241.0
+    ]
+   },
+   "game_warnings": [
+    "Tre Johnson está en duda (questionable)",
+    "Dennis Schroder está en duda (probable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +4.5, Elo +7.2, equipo +6.1, cuatro factores +8.8.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de CHA vale 6.2 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para WSH.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de CHA",
+     "favors": "home",
+     "detail": "Sin Kon Knueppel, Coby White, Grant Williams: CHA pierde 2.5 puntos.",
      "supports_pick": false
     }
    ]
