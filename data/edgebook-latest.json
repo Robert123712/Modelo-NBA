@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-31T18:45:00.000578Z",
+ "generated_at": "2026-10-31T19:15:00.000581Z",
  "date_local": "2026-10-31",
  "games": [
-  {
-   "league_game_id": "401909896",
-   "espn_game_id": "401909896",
-   "starts_at": "2026-10-31T19:00Z",
-   "home": {
-    "name": "Utah Jazz",
-    "code": "UTAH"
-   },
-   "away": {
-    "name": "Portland Trail Blazers",
-    "code": "POR"
-   },
-   "projection": {
-    "home_score": 112.2,
-    "away_score": 118.9
-   },
-   "win_probability": {
-    "home": 0.316,
-    "away": 0.684
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Portland Trail Blazers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 7.0,
-    "away": -7.0
-   },
-   "total_points": 231.2,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -25.0,
-     11.0
-    ],
-    "total": [
-     206.0,
-     257.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +6.7, Elo +5.9, equipo +5.7, cuatro factores +4.9.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de POR vale 8.4 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de UTAH",
-     "favors": "away",
-     "detail": "Sin Blake Hinson, Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 1.6 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para UTAH.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909897",
    "espn_game_id": "401909897",
@@ -363,24 +292,24 @@
     "code": "MIN"
    },
    "projection": {
-    "home_score": 115.8,
-    "away_score": 108.0
+    "home_score": 115.9,
+    "away_score": 107.7
    },
    "win_probability": {
-    "home": 0.7129,
-    "away": 0.2871
+    "home": 0.7227,
+    "away": 0.2773
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "San Antonio Spurs ML"
    },
-   "data_warning": "Rudy Gobert está en duda (questionable)",
+   "data_warning": "Stephon Castle está en duda (questionable)",
    "spread": {
     "home": -8.0,
     "away": 8.0
    },
-   "total_points": 223.9,
+   "total_points": 223.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -389,10 +318,11 @@
     ],
     "total": [
      198.0,
-     250.0
+     249.0
     ]
    },
    "game_warnings": [
+    "Stephon Castle está en duda (questionable)",
     "Rudy Gobert está en duda (questionable)"
    ],
    "warnings": [],
@@ -400,13 +330,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +7.7, Elo +5.0, equipo +4.2, cuatro factores +5.5.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +8.1, Elo +5.0, equipo +4.2, cuatro factores +5.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 3.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 4.2 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -496,6 +426,80 @@
      "label": "Descanso",
      "favors": "away",
      "detail": "HOU juega su segundo partido en dos noches: 2.1 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909896",
+   "espn_game_id": "401909896",
+   "starts_at": "2026-10-31T19:00Z",
+   "home": {
+    "name": "Utah Jazz",
+    "code": "UTAH"
+   },
+   "away": {
+    "name": "Portland Trail Blazers",
+    "code": "POR"
+   },
+   "projection": {
+    "home_score": 111.6,
+    "away_score": 119.8
+   },
+   "win_probability": {
+    "home": 0.2796,
+    "away": 0.7204
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Portland Trail Blazers ML"
+   },
+   "data_warning": "Lauri Markkanen está en duda (questionable)",
+   "spread": {
+    "home": 8.0,
+    "away": -8.0
+   },
+   "total_points": 231.4,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -26.0,
+     10.0
+    ],
+    "total": [
+     206.0,
+     257.0
+    ]
+   },
+   "game_warnings": [
+    "Lauri Markkanen está en duda (questionable)",
+    "Robert Williams III está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +8.1, Elo +5.9, equipo +5.7, cuatro factores +4.9.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de POR vale 9.9 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de UTAH",
+     "favors": "away",
+     "detail": "Sin Blake Hinson, Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 3.0 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para UTAH.",
      "supports_pick": false
     }
    ]
