@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-31T01:15:00.000600Z",
+ "generated_at": "2026-10-31T01:45:00.000615Z",
  "date_local": "2026-10-30",
  "games": [
   {
@@ -89,63 +89,54 @@
     "code": "DEN"
    },
    "projection": {
-    "home_score": 110.6,
-    "away_score": 112.2
+    "home_score": 110.2,
+    "away_score": 112.8
    },
    "win_probability": {
-    "home": 0.4559,
-    "away": 0.5441
+    "home": 0.4291,
+    "away": 0.5709
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Denver Nuggets ML"
    },
-   "data_warning": "Alpha Diallo está en duda (doubtful)",
+   "data_warning": null,
    "spread": {
-    "home": 2.0,
-    "away": -2.0
+    "home": 3.0,
+    "away": -3.0
    },
-   "total_points": 222.8,
+   "total_points": 223.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -20.0,
-     16.0
+     -21.0,
+     15.0
     ],
     "total": [
      197.0,
      249.0
     ]
    },
-   "game_warnings": [
-    "Alpha Diallo está en duda (doubtful)",
-    "Cameron Johnson está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +1.7, Elo +0.2, equipo +2.0, cuatro factores +0.9.",
+     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +2.6, Elo +0.2, equipo +2.0, cuatro factores +0.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DEN vale 3.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DEN vale 4.3 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.6 puntos para PHX.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de DEN",
-     "favors": "home",
-     "detail": "Sin Spencer Jones, Julian Strawther: DEN pierde 0.9 puntos.",
      "supports_pick": false
     }
    ]
