@@ -1,7 +1,7 @@
 {
  "schema_version": "1.0",
  "sport": "NBA",
- "generated_at": "2026-10-31T04:15:00.000613Z",
+ "generated_at": "2026-10-31T04:45:00.000584Z",
  "minimum_meaningful": 100,
  "versions": [
   {
@@ -9,16 +9,16 @@
    "unlabeled": false,
    "from": "2026-10-22",
    "to": "2026-10-30",
-   "graded": 65,
-   "pending": 9,
+   "graded": 66,
+   "pending": 8,
    "significant": false,
    "markets": {
     "moneyline": {
-     "n": 65,
-     "base_rate": 0.5077,
+     "n": 66,
+     "base_rate": 0.5,
      "brier": 0.2006,
-     "log_loss": 0.5783,
-     "hit_rate": 0.6308,
+     "log_loss": 0.5787,
+     "hit_rate": 0.6364,
      "baseline_brier": 0.25,
      "calibration": [
       {
@@ -38,9 +38,9 @@
       {
        "from": 0.45,
        "to": 0.5,
-       "n": 2,
-       "predicted": 0.4808,
-       "observed": 0.5
+       "n": 3,
+       "predicted": 0.4711,
+       "observed": 0.3333
       },
       {
        "from": 0.5,
@@ -67,32 +67,32 @@
     }
    },
    "projected_total": {
-    "n": 65,
-    "mae": 15.812,
-    "bias": 3.535,
-    "std_error": 2.5257,
+    "n": 66,
+    "mae": 15.938,
+    "bias": 3.117,
+    "std_error": 2.5219,
     "by_month": [
      {
       "month": "2026-10",
-      "n": 65,
-      "mae": 15.812,
-      "bias": 3.535,
-      "std_error": 2.5257
+      "n": 66,
+      "mae": 15.938,
+      "bias": 3.117,
+      "std_error": 2.5219
      }
     ]
    },
    "projected_margin": {
-    "n": 65,
-    "mae": 10.477,
-    "bias": 2.538,
-    "std_error": 1.7085,
+    "n": 66,
+    "mae": 10.394,
+    "bias": 2.576,
+    "std_error": 1.683,
     "by_month": [
      {
       "month": "2026-10",
-      "n": 65,
-      "mae": 10.477,
-      "bias": 2.538,
-      "std_error": 1.7085
+      "n": 66,
+      "mae": 10.394,
+      "bias": 2.576,
+      "std_error": 1.683
      }
     ]
    },
@@ -102,13 +102,13 @@
    },
    "interval_coverage": {
     "margin": {
-     "n": 65,
-     "covered": 0.8154,
+     "n": 66,
+     "covered": 0.8182,
      "nominal": 0.8
     },
     "total": {
-     "n": 65,
-     "covered": 0.8154,
+     "n": 66,
+     "covered": 0.8182,
      "nominal": 0.8
     }
    }
