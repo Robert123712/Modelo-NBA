@@ -2,74 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-31T22:45:00.000582Z",
+ "generated_at": "2026-10-31T23:15:00.000599Z",
  "date_local": "2026-10-31",
  "games": [
-  {
-   "league_game_id": "401909898",
-   "espn_game_id": "401909898",
-   "starts_at": "2026-10-31T23:00Z",
-   "home": {
-    "name": "New Orleans Pelicans",
-    "code": "NO"
-   },
-   "away": {
-    "name": "Atlanta Hawks",
-    "code": "ATL"
-   },
-   "projection": {
-    "home_score": 118.8,
-    "away_score": 122.8
-   },
-   "win_probability": {
-    "home": 0.3861,
-    "away": 0.6139
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Atlanta Hawks ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 4.0,
-    "away": -4.0
-   },
-   "total_points": 241.6,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -22.0,
-     14.0
-    ],
-    "total": [
-     216.0,
-     268.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +4.2, Elo +3.3, equipo +4.1, cuatro factores +2.0.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de ATL vale 6.1 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.9 puntos para NO.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909899",
    "espn_game_id": "401909899",
@@ -217,24 +152,24 @@
     "code": "MIN"
    },
    "projection": {
-    "home_score": 117.4,
-    "away_score": 108.2
+    "home_score": 117.3,
+    "away_score": 108.4
    },
    "win_probability": {
-    "home": 0.7476,
-    "away": 0.2524
+    "home": 0.7389,
+    "away": 0.2611
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "San Antonio Spurs ML"
    },
-   "data_warning": "Stephon Castle está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -9.0,
     "away": 9.0
    },
-   "total_points": 225.6,
+   "total_points": 225.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -246,21 +181,19 @@
      252.0
     ]
    },
-   "game_warnings": [
-    "Stephon Castle está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +9.1, Elo +5.0, equipo +4.2, cuatro factores +5.5.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +8.7, Elo +5.0, equipo +4.2, cuatro factores +5.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 5.3 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 4.9 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -278,7 +211,7 @@
     {
      "label": "Bajas de MIN",
      "favors": "home",
-     "detail": "Sin Donte DiVincenzo, Anthony Edwards, Rudy Gobert: MIN pierde 1.2 puntos.",
+     "detail": "Sin Donte DiVincenzo, Anthony Edwards, Rudy Gobert: MIN pierde 0.8 puntos.",
      "supports_pick": true
     }
    ]
@@ -503,6 +436,71 @@
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.7 puntos para CHA.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909898",
+   "espn_game_id": "401909898",
+   "starts_at": "2026-10-31T23:00Z",
+   "home": {
+    "name": "New Orleans Pelicans",
+    "code": "NO"
+   },
+   "away": {
+    "name": "Atlanta Hawks",
+    "code": "ATL"
+   },
+   "projection": {
+    "home_score": 118.8,
+    "away_score": 122.8
+   },
+   "win_probability": {
+    "home": 0.3861,
+    "away": 0.6139
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Atlanta Hawks ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 4.0,
+    "away": -4.0
+   },
+   "total_points": 241.6,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -22.0,
+     14.0
+    ],
+    "total": [
+     216.0,
+     268.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +4.2, Elo +3.3, equipo +4.1, cuatro factores +2.0.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de ATL vale 6.1 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.9 puntos para NO.",
      "supports_pick": false
     }
    ]
