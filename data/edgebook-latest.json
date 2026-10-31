@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-31T04:45:00.000584Z",
+ "generated_at": "2026-10-31T05:15:00.000553Z",
  "date_local": "2026-10-31",
  "games": [
   {
@@ -18,12 +18,12 @@
     "code": "POR"
    },
    "projection": {
-    "home_score": 111.4,
-    "away_score": 119.6
+    "home_score": 111.7,
+    "away_score": 119.8
    },
    "win_probability": {
-    "home": 0.278,
-    "away": 0.722
+    "home": 0.2799,
+    "away": 0.7201
    },
    "pick": {
     "market": "moneyline",
@@ -35,7 +35,7 @@
     "home": 8.0,
     "away": -8.0
    },
-   "total_points": 230.9,
+   "total_points": 231.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -43,7 +43,7 @@
      10.0
     ],
     "total": [
-     205.0,
+     206.0,
      257.0
     ]
    },
@@ -56,7 +56,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +8.2, Elo +5.9, equipo +5.7, cuatro factores +4.9.",
+     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +8.1, Elo +5.9, equipo +5.7, cuatro factores +4.9.",
      "supports_pick": true
     },
     {
@@ -74,7 +74,7 @@
     {
      "label": "Localía",
      "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para UTAH.",
+     "detail": "Jugar en casa vale 1.8 puntos para UTAH.",
      "supports_pick": false
     }
    ]
@@ -92,28 +92,28 @@
     "code": "PHI"
    },
    "projection": {
-    "home_score": 104.6,
-    "away_score": 107.4
+    "home_score": 104.4,
+    "away_score": 107.5
    },
    "win_probability": {
-    "home": 0.4245,
-    "away": 0.5755
+    "home": 0.4145,
+    "away": 0.5855
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Philadelphia 76ers ML"
    },
-   "data_warning": null,
+   "data_warning": "Jaylen Brown está en duda (day-to-day)",
    "spread": {
-    "home": 3.0,
-    "away": -3.0
+    "home": 4.0,
+    "away": -4.0
    },
-   "total_points": 212.1,
+   "total_points": 211.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -20.0,
+     -21.0,
      15.0
     ],
     "total": [
@@ -121,25 +121,27 @@
      238.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Jaylen Brown está en duda (day-to-day)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores -2.9, Elo +0.1, equipo +0.9, cuatro factores +5.6.",
+     "detail": "3 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores -3.2, Elo +0.1, equipo +1.0, cuatro factores +5.6.",
      "supports_pick": false
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de PHI vale 4.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de PHI vale 5.0 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de CHA",
      "favors": "away",
-     "detail": "Sin Kon Knueppel, Coby White, Grant Williams: CHA pierde 4.9 puntos.",
+     "detail": "Sin Kon Knueppel, Coby White, Grant Williams: CHA pierde 5.2 puntos.",
      "supports_pick": true
     },
     {
@@ -163,12 +165,12 @@
     "code": "ATL"
    },
    "projection": {
-    "home_score": 120.2,
-    "away_score": 122.2
+    "home_score": 120.1,
+    "away_score": 122.1
    },
    "win_probability": {
-    "home": 0.443,
-    "away": 0.557
+    "home": 0.4443,
+    "away": 0.5557
    },
    "pick": {
     "market": "moneyline",
@@ -177,10 +179,10 @@
    },
    "data_warning": null,
    "spread": {
-    "home": 3.0,
-    "away": -3.0
+    "home": 2.0,
+    "away": -2.0
    },
-   "total_points": 242.5,
+   "total_points": 242.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -189,7 +191,7 @@
     ],
     "total": [
      216.0,
-     269.0
+     268.0
     ]
    },
    "game_warnings": [],
@@ -198,7 +200,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +2.1, Elo +3.3, equipo +4.2, cuatro factores +2.0.",
+     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +2.1, Elo +3.3, equipo +4.1, cuatro factores +2.0.",
      "supports_pick": true
     },
     {
@@ -234,12 +236,12 @@
     "code": "SAC"
    },
    "projection": {
-    "home_score": 120.6,
-    "away_score": 112.7
+    "home_score": 120.5,
+    "away_score": 112.6
    },
    "win_probability": {
-    "home": 0.7174,
-    "away": 0.2826
+    "home": 0.7183,
+    "away": 0.2817
    },
    "pick": {
     "market": "moneyline",
@@ -251,7 +253,7 @@
     "home": -8.0,
     "away": 8.0
    },
-   "total_points": 233.3,
+   "total_points": 233.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -273,7 +275,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +7.6, Elo +5.3, equipo +8.3, cuatro factores +1.8.",
+     "detail": "4 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +7.7, Elo +5.3, equipo +8.4, cuatro factores +1.8.",
      "supports_pick": true
     },
     {
@@ -303,12 +305,12 @@
     "code": "CLE"
    },
    "projection": {
-    "home_score": 114.5,
-    "away_score": 123.6
+    "home_score": 114.4,
+    "away_score": 123.5
    },
    "win_probability": {
-    "home": 0.2527,
-    "away": 0.7473
+    "home": 0.2535,
+    "away": 0.7465
    },
    "pick": {
     "market": "moneyline",
@@ -320,7 +322,7 @@
     "home": 9.0,
     "away": -9.0
    },
-   "total_points": 238.1,
+   "total_points": 237.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -328,7 +330,7 @@
      9.0
     ],
     "total": [
-     213.0,
+     212.0,
      264.0
     ]
    },
@@ -338,7 +340,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +9.5, Elo +6.3, equipo +7.3, cuatro factores +5.3.",
+     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +9.4, Elo +6.3, equipo +7.2, cuatro factores +5.3.",
      "supports_pick": true
     },
     {
@@ -369,11 +371,11 @@
    },
    "projection": {
     "home_score": 114.7,
-    "away_score": 107.7
+    "away_score": 107.8
    },
    "win_probability": {
-    "home": 0.6914,
-    "away": 0.3086
+    "home": 0.6915,
+    "away": 0.3085
    },
    "pick": {
     "market": "moneyline",
@@ -385,7 +387,7 @@
     "home": -7.0,
     "away": 7.0
    },
-   "total_points": 222.4,
+   "total_points": 222.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -409,7 +411,7 @@
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 3.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 2.9 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -445,48 +447,51 @@
     "code": "OKC"
    },
    "projection": {
-    "home_score": 111.9,
-    "away_score": 109.6
+    "home_score": 112.2,
+    "away_score": 109.0
    },
    "win_probability": {
-    "home": 0.5659,
-    "away": 0.4341
+    "home": 0.5907,
+    "away": 0.4093
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Houston Rockets ML"
    },
-   "data_warning": null,
+   "data_warning": "Alperen Sengun está en duda (day-to-day)",
    "spread": {
-    "home": -3.0,
-    "away": 3.0
+    "home": -4.0,
+    "away": 4.0
    },
-   "total_points": 221.5,
+   "total_points": 221.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -16.0,
-     20.0
+     -15.0,
+     21.0
     ],
     "total": [
-     196.0,
+     195.0,
      247.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Alperen Sengun está en duda (day-to-day)",
+    "Reed Sheppard está en duda (day-to-day)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": null,
-     "detail": "Los modelos se dividen 2-2. Margen de HOU: jugadores +2.5, Elo -0.1, equipo -0.3, cuatro factores +0.1.",
+     "detail": "Los modelos se dividen 2-2. Margen de HOU: jugadores +3.3, Elo -0.1, equipo -0.2, cuatro factores +0.1.",
      "supports_pick": false
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 2.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 3.6 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -498,7 +503,7 @@
     {
      "label": "Bajas de OKC",
      "favors": "home",
-     "detail": "Sin Alex Caruso, Chet Holmgren, Nikola Topic: OKC pierde 5.1 puntos.",
+     "detail": "Sin Alex Caruso, Chet Holmgren, Nikola Topic: OKC pierde 5.9 puntos.",
      "supports_pick": true
     },
     {
