@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-31T21:45:00.000621Z",
+ "generated_at": "2026-10-31T22:15:00.000631Z",
  "date_local": "2026-10-31",
  "games": [
-  {
-   "league_game_id": "401909897",
-   "espn_game_id": "401909897",
-   "starts_at": "2026-10-31T22:00Z",
-   "home": {
-    "name": "Charlotte Hornets",
-    "code": "CHA"
-   },
-   "away": {
-    "name": "Philadelphia 76ers",
-    "code": "PHI"
-   },
-   "projection": {
-    "home_score": 105.1,
-    "away_score": 105.5
-   },
-   "win_probability": {
-    "home": 0.491,
-    "away": 0.509
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Philadelphia 76ers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 1.0,
-    "away": -1.0
-   },
-   "total_points": 210.6,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -18.0,
-     17.0
-    ],
-    "total": [
-     185.0,
-     237.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores -0.5, Elo +0.1, equipo +1.0, cuatro factores +5.6.",
-     "supports_pick": false
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de PHI vale 2.2 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de CHA",
-     "favors": "away",
-     "detail": "Sin Kon Knueppel, Coby White, Grant Williams: CHA pierde 2.5 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para CHA.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909898",
    "espn_game_id": "401909898",
@@ -496,6 +425,79 @@
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para UTAH.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909897",
+   "espn_game_id": "401909897",
+   "starts_at": "2026-10-31T22:00Z",
+   "home": {
+    "name": "Charlotte Hornets",
+    "code": "CHA"
+   },
+   "away": {
+    "name": "Philadelphia 76ers",
+    "code": "PHI"
+   },
+   "projection": {
+    "home_score": 104.9,
+    "away_score": 105.5
+   },
+   "win_probability": {
+    "home": 0.4867,
+    "away": 0.5133
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Philadelphia 76ers ML"
+   },
+   "data_warning": "Jaylen Brown está en duda (questionable)",
+   "spread": {
+    "home": 1.0,
+    "away": -1.0
+   },
+   "total_points": 210.4,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -18.0,
+     17.0
+    ],
+    "total": [
+     184.0,
+     236.0
+    ]
+   },
+   "game_warnings": [
+    "Jaylen Brown está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "3 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores -0.6, Elo +0.1, equipo +1.0, cuatro factores +5.6.",
+     "supports_pick": false
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de PHI vale 2.4 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de CHA",
+     "favors": "away",
+     "detail": "Sin Kon Knueppel, Coby White, Grant Williams: CHA pierde 2.6 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para CHA.",
      "supports_pick": false
     }
    ]
