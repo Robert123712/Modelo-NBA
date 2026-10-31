@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-31T23:15:00.000599Z",
+ "generated_at": "2026-10-31T23:45:00.000582Z",
  "date_local": "2026-10-31",
  "games": [
   {
@@ -30,7 +30,7 @@
     "side": "home",
     "label": "Memphis Grizzlies ML"
    },
-   "data_warning": "Ty Jerome está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -8.0,
     "away": 8.0
@@ -47,11 +47,7 @@
      259.0
     ]
    },
-   "game_warnings": [
-    "Ty Jerome está en duda (questionable)",
-    "Scotty Pippen Jr. está en duda (questionable)",
-    "Quinten Post está en duda (doubtful)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
@@ -71,6 +67,12 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para MEM.",
      "supports_pick": true
+    },
+    {
+     "label": "Bajas de MEM",
+     "favors": "away",
+     "detail": "Sin Ty Jerome, Scotty Pippen Jr., Quinten Post: MEM pierde 3.9 puntos.",
+     "supports_pick": false
     }
    ]
   },
@@ -87,12 +89,12 @@
     "code": "CLE"
    },
    "projection": {
-    "home_score": 114.4,
+    "home_score": 114.5,
     "away_score": 123.4
    },
    "win_probability": {
-    "home": 0.2564,
-    "away": 0.7436
+    "home": 0.2572,
+    "away": 0.7428
    },
    "pick": {
     "market": "moneyline",
@@ -122,13 +124,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +9.3, Elo +6.3, equipo +7.2, cuatro factores +5.3.",
+     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +9.2, Elo +6.3, equipo +7.2, cuatro factores +5.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de CLE vale 11.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de CLE vale 11.0 puntos más por partido.",
      "supports_pick": true
     },
     {
