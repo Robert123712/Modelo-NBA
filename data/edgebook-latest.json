@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-31T18:15:00.000589Z",
+ "generated_at": "2026-10-31T18:45:00.000578Z",
  "date_local": "2026-10-31",
  "games": [
   {
@@ -18,56 +18,54 @@
     "code": "POR"
    },
    "projection": {
-    "home_score": 111.5,
-    "away_score": 119.8
+    "home_score": 112.2,
+    "away_score": 118.9
    },
    "win_probability": {
-    "home": 0.2775,
-    "away": 0.7225
+    "home": 0.316,
+    "away": 0.684
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Portland Trail Blazers ML"
    },
-   "data_warning": "Lauri Markkanen está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": 8.0,
-    "away": -8.0
+    "home": 7.0,
+    "away": -7.0
    },
-   "total_points": 231.3,
+   "total_points": 231.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -26.0,
-     10.0
+     -25.0,
+     11.0
     ],
     "total": [
      206.0,
      257.0
     ]
    },
-   "game_warnings": [
-    "Lauri Markkanen está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +8.2, Elo +5.9, equipo +5.7, cuatro factores +4.9.",
+     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +6.7, Elo +5.9, equipo +5.7, cuatro factores +4.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de POR vale 10.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de POR vale 8.4 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de UTAH",
      "favors": "away",
-     "detail": "Sin Blake Hinson, Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 3.1 puntos.",
+     "detail": "Sin Blake Hinson, Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 1.6 puntos.",
      "supports_pick": true
     },
     {
@@ -301,11 +299,11 @@
    },
    "projection": {
     "home_score": 114.4,
-    "away_score": 123.5
+    "away_score": 123.4
    },
    "win_probability": {
-    "home": 0.254,
-    "away": 0.746
+    "home": 0.2564,
+    "away": 0.7436
    },
    "pick": {
     "market": "moneyline",
@@ -335,13 +333,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +9.4, Elo +6.3, equipo +7.2, cuatro factores +5.3.",
+     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +9.3, Elo +6.3, equipo +7.2, cuatro factores +5.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de CLE vale 11.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de CLE vale 11.1 puntos más por partido.",
      "supports_pick": true
     },
     {
