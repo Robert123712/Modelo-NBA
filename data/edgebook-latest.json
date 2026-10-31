@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-31T17:45:00.000566Z",
+ "generated_at": "2026-10-31T18:15:00.000589Z",
  "date_local": "2026-10-31",
  "games": [
   {
@@ -18,12 +18,12 @@
     "code": "POR"
    },
    "projection": {
-    "home_score": 111.6,
+    "home_score": 111.5,
     "away_score": 119.8
    },
    "win_probability": {
-    "home": 0.2796,
-    "away": 0.7204
+    "home": 0.2775,
+    "away": 0.7225
    },
    "pick": {
     "market": "moneyline",
@@ -35,7 +35,7 @@
     "home": 8.0,
     "away": -8.0
    },
-   "total_points": 231.4,
+   "total_points": 231.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -48,27 +48,26 @@
     ]
    },
    "game_warnings": [
-    "Lauri Markkanen está en duda (questionable)",
-    "Robert Williams III está en duda (questionable)"
+    "Lauri Markkanen está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +8.1, Elo +5.9, equipo +5.7, cuatro factores +4.9.",
+     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +8.2, Elo +5.9, equipo +5.7, cuatro factores +4.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de POR vale 9.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de POR vale 10.0 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de UTAH",
      "favors": "away",
-     "detail": "Sin Blake Hinson, Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 3.0 puntos.",
+     "detail": "Sin Blake Hinson, Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 3.1 puntos.",
      "supports_pick": true
     },
     {
@@ -366,48 +365,50 @@
     "code": "MIN"
    },
    "projection": {
-    "home_score": 114.7,
-    "away_score": 107.7
+    "home_score": 115.8,
+    "away_score": 108.0
    },
    "win_probability": {
-    "home": 0.6909,
-    "away": 0.3091
+    "home": 0.7129,
+    "away": 0.2871
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "San Antonio Spurs ML"
    },
-   "data_warning": null,
+   "data_warning": "Rudy Gobert está en duda (questionable)",
    "spread": {
-    "home": -7.0,
-    "away": 7.0
+    "home": -8.0,
+    "away": 8.0
    },
-   "total_points": 222.4,
+   "total_points": 223.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -11.0,
-     25.0
+     -10.0,
+     26.0
     ],
     "total": [
-     197.0,
-     248.0
+     198.0,
+     250.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Rudy Gobert está en duda (questionable)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +6.8, Elo +5.0, equipo +4.2, cuatro factores +5.5.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +7.7, Elo +5.0, equipo +4.2, cuatro factores +5.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 2.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 3.8 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -421,12 +422,6 @@
      "favors": "home",
      "detail": "MIN juega su segundo partido en dos noches: 2.1 puntos.",
      "supports_pick": true
-    },
-    {
-     "label": "Bajas de SA",
-     "favors": "away",
-     "detail": "Sin Tobias Harris: SA pierde 1.1 puntos.",
-     "supports_pick": false
     }
    ]
   },
