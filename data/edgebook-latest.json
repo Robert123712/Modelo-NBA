@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-31T19:15:00.000581Z",
+ "generated_at": "2026-10-31T21:15:00.000523Z",
  "date_local": "2026-10-31",
  "games": [
   {
@@ -103,7 +103,7 @@
     "side": "away",
     "label": "Atlanta Hawks ML"
    },
-   "data_warning": "Keshon Gilbert está en duda (doubtful)",
+   "data_warning": null,
    "spread": {
     "home": 4.0,
     "away": -4.0
@@ -120,9 +120,7 @@
      268.0
     ]
    },
-   "game_warnings": [
-    "Keshon Gilbert está en duda (doubtful)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
