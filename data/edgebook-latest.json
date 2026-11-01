@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-01T04:15:00.000561Z",
+ "generated_at": "2026-11-01T05:15:00.000571Z",
  "date_local": "2026-11-01",
  "games": [
   {
@@ -30,12 +30,12 @@
     "side": "away",
     "label": "Boston Celtics ML"
    },
-   "data_warning": "Mitchell Robinson está en duda (questionable)",
+   "data_warning": "Mitchell Robinson está en duda (day-to-day)",
    "spread": {
     "home": 6.0,
     "away": -6.0
    },
-   "total_points": 223.7,
+   "total_points": 223.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -48,7 +48,7 @@
     ]
    },
    "game_warnings": [
-    "Mitchell Robinson está en duda (questionable)"
+    "Mitchell Robinson está en duda (day-to-day)"
    ],
    "warnings": [],
    "key_factors": [
@@ -91,48 +91,51 @@
     "code": "BKN"
    },
    "projection": {
-    "home_score": 119.4,
-    "away_score": 114.6
+    "home_score": 119.8,
+    "away_score": 113.6
    },
    "win_probability": {
-    "home": 0.6369,
-    "away": 0.3631
+    "home": 0.6701,
+    "away": 0.3299
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Indiana Pacers ML"
    },
-   "data_warning": null,
+   "data_warning": "Aaron Nesmith está en duda (day-to-day)",
    "spread": {
-    "home": -5.0,
-    "away": 5.0
+    "home": -6.0,
+    "away": 6.0
    },
-   "total_points": 234.0,
+   "total_points": 233.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -13.0,
-     22.1
+     -12.0,
+     24.0
     ],
     "total": [
      208.0,
-     260.0
+     259.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Aaron Nesmith está en duda (day-to-day)",
+    "Obi Toppin está en duda (day-to-day)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a IND. Margen de IND: jugadores +4.8, Elo +5.4, equipo +5.3, cuatro factores +5.9.",
+     "detail": "4 de 4 modelos ven ganar a IND. Margen de IND: jugadores +6.1, Elo +5.4, equipo +5.3, cuatro factores +5.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de IND vale 3.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de IND vale 4.3 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -144,7 +147,7 @@
     {
      "label": "Bajas de IND",
      "favors": "away",
-     "detail": "Sin Johnny Furphy, Tyrese Haliburton, T.J. McConnell: IND pierde 6.4 puntos.",
+     "detail": "Sin Johnny Furphy, Tyrese Haliburton, T.J. McConnell: IND pierde 5.1 puntos.",
      "supports_pick": false
     }
    ]
@@ -162,42 +165,44 @@
     "code": "LAC"
    },
    "projection": {
-    "home_score": 113.8,
-    "away_score": 112.1
+    "home_score": 114.0,
+    "away_score": 111.9
    },
    "win_probability": {
-    "home": 0.5473,
-    "away": 0.4527
+    "home": 0.5587,
+    "away": 0.4413
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Golden State Warriors ML"
    },
-   "data_warning": null,
+   "data_warning": "Gui Santos está en duda (day-to-day)",
    "spread": {
-    "home": -2.0,
-    "away": 2.0
+    "home": -3.0,
+    "away": 3.0
    },
-   "total_points": 225.9,
+   "total_points": 225.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -16.0,
-     19.0
+     20.0
     ],
     "total": [
      200.0,
      252.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Gui Santos está en duda (day-to-day)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +1.6, Elo +2.2, equipo +2.2, cuatro factores +0.4.",
+     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +2.0, Elo +2.2, equipo +2.2, cuatro factores +0.4.",
      "supports_pick": true
     },
     {
@@ -209,7 +214,7 @@
     {
      "label": "Bajas de GS",
      "favors": "away",
-     "detail": "Sin Jimmy Butler III, Stephen Curry, Draymond Green: GS pierde 4.3 puntos.",
+     "detail": "Sin Jimmy Butler III, Stephen Curry, Draymond Green: GS pierde 3.8 puntos.",
      "supports_pick": false
     }
    ]
@@ -227,29 +232,29 @@
     "code": "TOR"
    },
    "projection": {
-    "home_score": 114.2,
-    "away_score": 112.1
+    "home_score": 114.8,
+    "away_score": 111.5
    },
    "win_probability": {
-    "home": 0.5616,
-    "away": 0.4384
+    "home": 0.5972,
+    "away": 0.4028
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Los Angeles Lakers ML"
    },
-   "data_warning": "Ziaire Williams está en duda (questionable)",
+   "data_warning": "Ziaire Williams está en duda (day-to-day)",
    "spread": {
-    "home": -3.0,
-    "away": 3.0
+    "home": -4.0,
+    "away": 4.0
    },
    "total_points": 226.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -16.0,
-     20.0
+     -14.0,
+     21.0
     ],
     "total": [
      201.0,
@@ -257,14 +262,20 @@
     ]
    },
    "game_warnings": [
-    "Ziaire Williams está en duda (questionable)"
+    "Ziaire Williams está en duda (day-to-day)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +2.0, Elo +2.7, equipo +0.8, cuatro factores +0.5.",
+     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +3.2, Elo +2.7, equipo +0.8, cuatro factores +0.5.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de LAL vale 1.4 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -276,7 +287,7 @@
     {
      "label": "Bajas de TOR",
      "favors": "home",
-     "detail": "Sin Kawhi Leonard, Malachi Smith: TOR pierde 2.2 puntos.",
+     "detail": "Sin Kawhi Leonard: TOR pierde 3.4 puntos.",
      "supports_pick": true
     }
    ]
@@ -284,6 +295,7 @@
  ],
  "skipped_without_id": 0,
  "warnings": [
+  "Sin reporte oficial de lesiones (ValueError); bajas de ESPN",
   "Sin alineaciones de la NBA (HTTPError); titular del partido anterior"
  ]
 }
