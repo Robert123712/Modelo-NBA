@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-01T20:45:00.000541Z",
+ "generated_at": "2026-11-01T21:15:00.000566Z",
  "date_local": "2026-11-01",
  "games": [
   {
@@ -160,20 +160,20 @@
     "away_score": 111.5
    },
    "win_probability": {
-    "home": 0.5972,
-    "away": 0.4028
+    "home": 0.5961,
+    "away": 0.4039
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Los Angeles Lakers ML"
    },
-   "data_warning": "Ziaire Williams está en duda (day-to-day)",
+   "data_warning": null,
    "spread": {
     "home": -4.0,
     "away": 4.0
    },
-   "total_points": 226.3,
+   "total_points": 226.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -185,9 +185,7 @@
      252.0
     ]
    },
-   "game_warnings": [
-    "Ziaire Williams está en duda (day-to-day)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
