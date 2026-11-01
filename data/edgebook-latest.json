@@ -2,222 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-10-31T23:45:00.000582Z",
+ "generated_at": "2026-11-01T00:15:00.000587Z",
  "date_local": "2026-10-31",
  "games": [
-  {
-   "league_game_id": "401909899",
-   "espn_game_id": "401909899",
-   "starts_at": "2026-11-01T00:00Z",
-   "home": {
-    "name": "Memphis Grizzlies",
-    "code": "MEM"
-   },
-   "away": {
-    "name": "Sacramento Kings",
-    "code": "SAC"
-   },
-   "projection": {
-    "home_score": 120.6,
-    "away_score": 112.7
-   },
-   "win_probability": {
-    "home": 0.7188,
-    "away": 0.2812
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Memphis Grizzlies ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -8.0,
-    "away": 8.0
-   },
-   "total_points": 233.3,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -10.0,
-     25.0
-    ],
-    "total": [
-     207.0,
-     259.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +7.7, Elo +5.3, equipo +8.4, cuatro factores +1.8.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MEM vale 5.9 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para MEM.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de MEM",
-     "favors": "away",
-     "detail": "Sin Ty Jerome, Scotty Pippen Jr., Quinten Post: MEM pierde 3.9 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909900",
-   "espn_game_id": "401909900",
-   "starts_at": "2026-11-01T00:00Z",
-   "home": {
-    "name": "Milwaukee Bucks",
-    "code": "MIL"
-   },
-   "away": {
-    "name": "Cleveland Cavaliers",
-    "code": "CLE"
-   },
-   "projection": {
-    "home_score": 114.5,
-    "away_score": 123.4
-   },
-   "win_probability": {
-    "home": 0.2572,
-    "away": 0.7428
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Cleveland Cavaliers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 9.0,
-    "away": -9.0
-   },
-   "total_points": 237.8,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -27.0,
-     9.0
-    ],
-    "total": [
-     212.0,
-     264.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +9.2, Elo +6.3, equipo +7.2, cuatro factores +5.3.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de CLE vale 11.0 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para MIL.",
-     "supports_pick": false
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909901",
-   "espn_game_id": "401909901",
-   "starts_at": "2026-11-01T00:00Z",
-   "home": {
-    "name": "San Antonio Spurs",
-    "code": "SA"
-   },
-   "away": {
-    "name": "Minnesota Timberwolves",
-    "code": "MIN"
-   },
-   "projection": {
-    "home_score": 117.3,
-    "away_score": 108.4
-   },
-   "win_probability": {
-    "home": 0.7389,
-    "away": 0.2611
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "San Antonio Spurs ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -9.0,
-    "away": 9.0
-   },
-   "total_points": 225.8,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -9.0,
-     27.0
-    ],
-    "total": [
-     200.0,
-     252.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +8.7, Elo +5.0, equipo +4.2, cuatro factores +5.5.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 4.9 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para SA.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "home",
-     "detail": "MIN juega su segundo partido en dos noches: 2.1 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de MIN",
-     "favors": "home",
-     "detail": "Sin Donte DiVincenzo, Anthony Edwards, Rudy Gobert: MIN pierde 0.8 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909902",
    "espn_game_id": "401909902",
@@ -504,6 +291,219 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.9 puntos para NO.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909899",
+   "espn_game_id": "401909899",
+   "starts_at": "2026-11-01T00:00Z",
+   "home": {
+    "name": "Memphis Grizzlies",
+    "code": "MEM"
+   },
+   "away": {
+    "name": "Sacramento Kings",
+    "code": "SAC"
+   },
+   "projection": {
+    "home_score": 120.6,
+    "away_score": 112.7
+   },
+   "win_probability": {
+    "home": 0.7188,
+    "away": 0.2812
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Memphis Grizzlies ML"
+   },
+   "data_warning": "Ty Jerome está en duda (questionable)",
+   "spread": {
+    "home": -8.0,
+    "away": 8.0
+   },
+   "total_points": 233.3,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -10.0,
+     25.0
+    ],
+    "total": [
+     207.0,
+     259.0
+    ]
+   },
+   "game_warnings": [
+    "Ty Jerome está en duda (questionable)",
+    "Scotty Pippen Jr. está en duda (questionable)",
+    "Quinten Post está en duda (doubtful)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +7.7, Elo +5.3, equipo +8.4, cuatro factores +1.8.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de MEM vale 5.9 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para MEM.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909900",
+   "espn_game_id": "401909900",
+   "starts_at": "2026-11-01T00:00Z",
+   "home": {
+    "name": "Milwaukee Bucks",
+    "code": "MIL"
+   },
+   "away": {
+    "name": "Cleveland Cavaliers",
+    "code": "CLE"
+   },
+   "projection": {
+    "home_score": 114.4,
+    "away_score": 123.4
+   },
+   "win_probability": {
+    "home": 0.2564,
+    "away": 0.7436
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Cleveland Cavaliers ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 9.0,
+    "away": -9.0
+   },
+   "total_points": 237.8,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -27.0,
+     9.0
+    ],
+    "total": [
+     212.0,
+     264.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +9.3, Elo +6.3, equipo +7.2, cuatro factores +5.3.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de CLE vale 11.1 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para MIL.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909901",
+   "espn_game_id": "401909901",
+   "starts_at": "2026-11-01T00:00Z",
+   "home": {
+    "name": "San Antonio Spurs",
+    "code": "SA"
+   },
+   "away": {
+    "name": "Minnesota Timberwolves",
+    "code": "MIN"
+   },
+   "projection": {
+    "home_score": 117.4,
+    "away_score": 108.2
+   },
+   "win_probability": {
+    "home": 0.7476,
+    "away": 0.2524
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "San Antonio Spurs ML"
+   },
+   "data_warning": "Stephon Castle está en duda (questionable)",
+   "spread": {
+    "home": -9.0,
+    "away": 9.0
+   },
+   "total_points": 225.6,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -9.0,
+     27.0
+    ],
+    "total": [
+     200.0,
+     252.0
+    ]
+   },
+   "game_warnings": [
+    "Stephon Castle está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +9.1, Elo +5.0, equipo +4.2, cuatro factores +5.5.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 5.3 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para SA.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "home",
+     "detail": "MIN juega su segundo partido en dos noches: 2.1 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de MIN",
+     "favors": "home",
+     "detail": "Sin Donte DiVincenzo, Anthony Edwards, Rudy Gobert: MIN pierde 1.2 puntos.",
+     "supports_pick": true
     }
    ]
   }
