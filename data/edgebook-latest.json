@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-02T05:15:00.000532Z",
+ "generated_at": "2026-11-02T15:15:00.878023Z",
  "date_local": "2026-11-02",
  "games": [
   {
@@ -22,8 +22,8 @@
     "away_score": 111.8
    },
    "win_probability": {
-    "home": 0.6571,
-    "away": 0.3429
+    "home": 0.6573,
+    "away": 0.3427
    },
    "pick": {
     "market": "moneyline",
@@ -95,8 +95,8 @@
     "away_score": 105.6
    },
    "win_probability": {
-    "home": 0.3211,
-    "away": 0.6789
+    "home": 0.3206,
+    "away": 0.6794
    },
    "pick": {
     "market": "moneyline",
@@ -249,8 +249,8 @@
     "away_score": 100.7
    },
    "win_probability": {
-    "home": 0.9228,
-    "away": 0.0772
+    "home": 0.9229,
+    "away": 0.0771
    },
    "pick": {
     "market": "moneyline",
@@ -329,8 +329,8 @@
     "away_score": 109.0
    },
    "win_probability": {
-    "home": 0.6694,
-    "away": 0.3306
+    "home": 0.6698,
+    "away": 0.3302
    },
    "pick": {
     "market": "moneyline",
@@ -408,8 +408,8 @@
     "away_score": 113.6
    },
    "win_probability": {
-    "home": 0.7742,
-    "away": 0.2258
+    "home": 0.774,
+    "away": 0.226
    },
    "pick": {
     "market": "moneyline",
@@ -477,8 +477,8 @@
     "away_score": 111.9
    },
    "win_probability": {
-    "home": 0.7825,
-    "away": 0.2175
+    "home": 0.7833,
+    "away": 0.2167
    },
    "pick": {
     "market": "moneyline",
@@ -490,7 +490,7 @@
     "home": -11.0,
     "away": 11.0
    },
-   "total_points": 234.6,
+   "total_points": 234.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -513,7 +513,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +10.6, Elo +7.8, equipo +10.1, cuatro factores +5.2.",
+     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +10.7, Elo +7.8, equipo +10.1, cuatro factores +5.1.",
      "supports_pick": true
     },
     {
@@ -553,8 +553,8 @@
     "away_score": 116.1
    },
    "win_probability": {
-    "home": 0.6512,
-    "away": 0.3488
+    "home": 0.6509,
+    "away": 0.3491
    },
    "pick": {
     "market": "moneyline",
@@ -588,7 +588,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +5.3, Elo +1.8, equipo +3.3, cuatro factores -1.0.",
+     "detail": "3 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +5.3, Elo +1.8, equipo +3.3, cuatro factores -0.9.",
      "supports_pick": true
     },
     {
@@ -622,8 +622,8 @@
     "away_score": 109.5
    },
    "win_probability": {
-    "home": 0.8571,
-    "away": 0.1429
+    "home": 0.8575,
+    "away": 0.1425
    },
    "pick": {
     "market": "moneyline",
@@ -683,24 +683,24 @@
     "code": "BOS"
    },
    "projection": {
-    "home_score": 109.5,
-    "away_score": 108.2
+    "home_score": 109.4,
+    "away_score": 108.0
    },
    "win_probability": {
-    "home": 0.5378,
-    "away": 0.4622
+    "home": 0.5407,
+    "away": 0.4593
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Houston Rockets ML"
    },
-   "data_warning": null,
+   "data_warning": "Mitchell Robinson está en duda (day-to-day)",
    "spread": {
     "home": -2.0,
     "away": 2.0
    },
-   "total_points": 217.7,
+   "total_points": 217.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -708,11 +708,13 @@
      19.0
     ],
     "total": [
-     192.0,
-     244.0
+     191.0,
+     243.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Mitchell Robinson está en duda (day-to-day)"
+   ],
    "warnings": [],
    "key_factors": [
     {
@@ -736,7 +738,7 @@
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 2.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 2.1 puntos más por partido.",
      "supports_pick": false
     }
    ]
@@ -829,8 +831,8 @@
     "away_score": 112.9
    },
    "win_probability": {
-    "home": 0.5312,
-    "away": 0.4688
+    "home": 0.5309,
+    "away": 0.4691
    },
    "pick": {
     "market": "moneyline",
@@ -862,7 +864,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +1.2, Elo +3.4, equipo +2.4, cuatro factores +1.9.",
+     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +1.1, Elo +3.4, equipo +2.4, cuatro factores +1.9.",
      "supports_pick": true
     },
     {
@@ -898,50 +900,51 @@
     "code": "PHX"
    },
    "projection": {
-    "home_score": 115.8,
-    "away_score": 113.7
+    "home_score": 117.2,
+    "away_score": 113.2
    },
    "win_probability": {
-    "home": 0.5619,
-    "away": 0.4381
+    "home": 0.6159,
+    "away": 0.3841
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Golden State Warriors ML"
    },
-   "data_warning": "Gui Santos está en duda (day-to-day)",
+   "data_warning": "Stephen Curry está en duda (day-to-day)",
    "spread": {
-    "home": -3.0,
-    "away": 3.0
+    "home": -5.0,
+    "away": 5.0
    },
-   "total_points": 229.5,
+   "total_points": 230.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -16.0,
-     20.0
+     -14.0,
+     22.0
     ],
     "total": [
      204.0,
-     256.0
+     257.0
     ]
    },
    "game_warnings": [
-    "Gui Santos está en duda (day-to-day)"
+    "Stephen Curry está en duda (day-to-day)",
+    "Draymond Green está en duda (day-to-day)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +1.9, Elo +2.6, equipo +4.0, cuatro factores +2.5.",
+     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +3.8, Elo +2.6, equipo +4.0, cuatro factores +2.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de GS vale 2.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de GS vale 4.1 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -959,7 +962,7 @@
     {
      "label": "Bajas de GS",
      "favors": "away",
-     "detail": "Sin Jimmy Butler III, Stephen Curry, Draymond Green: GS pierde 3.3 puntos.",
+     "detail": "Sin Jimmy Butler III, Moses Moody, Kristaps Porzingis: GS pierde 1.4 puntos.",
      "supports_pick": false
     }
    ]
@@ -981,8 +984,8 @@
     "away_score": 113.0
    },
    "win_probability": {
-    "home": 0.4686,
-    "away": 0.5314
+    "home": 0.4692,
+    "away": 0.5308
    },
    "pick": {
     "market": "moneyline",
@@ -1015,7 +1018,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +1.1, Elo +0.4, equipo +1.6, cuatro factores +0.9.",
+     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +1.1, Elo +0.4, equipo +1.6, cuatro factores +1.0.",
      "supports_pick": true
     },
     {
@@ -1111,7 +1114,5 @@
   }
  ],
  "skipped_without_id": 0,
- "warnings": [
-  "Sin alineaciones de la NBA (HTTPError); titular del partido anterior"
- ]
+ "warnings": []
 }
