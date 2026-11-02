@@ -2,74 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-02T00:45:00.000546Z",
+ "generated_at": "2026-11-02T01:45:00.000543Z",
  "date_local": "2026-11-01",
  "games": [
-  {
-   "league_game_id": "401909905",
-   "espn_game_id": "401909905",
-   "starts_at": "2026-11-02T01:30Z",
-   "home": {
-    "name": "Golden State Warriors",
-    "code": "GS"
-   },
-   "away": {
-    "name": "LA Clippers",
-    "code": "LAC"
-   },
-   "projection": {
-    "home_score": 113.8,
-    "away_score": 112.1
-   },
-   "win_probability": {
-    "home": 0.5473,
-    "away": 0.4527
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Golden State Warriors ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -2.0,
-    "away": 2.0
-   },
-   "total_points": 225.9,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -16.0,
-     19.0
-    ],
-    "total": [
-     200.0,
-     252.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +1.6, Elo +2.2, equipo +2.2, cuatro factores +0.4.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para GS.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de GS",
-     "favors": "away",
-     "detail": "Sin Jimmy Butler III, Stephen Curry, Draymond Green: GS pierde 4.3 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909906",
    "espn_game_id": "401909906",
@@ -83,12 +18,12 @@
     "code": "TOR"
    },
    "projection": {
-    "home_score": 114.8,
-    "away_score": 111.5
+    "home_score": 115.3,
+    "away_score": 111.3
    },
    "win_probability": {
-    "home": 0.5961,
-    "away": 0.4039
+    "home": 0.6161,
+    "away": 0.3839
    },
    "pick": {
     "market": "moneyline",
@@ -100,12 +35,12 @@
     "home": -4.0,
     "away": 4.0
    },
-   "total_points": 226.4,
+   "total_points": 226.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -14.0,
-     21.0
+     22.0
     ],
     "total": [
      201.0,
@@ -118,13 +53,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +3.2, Elo +2.7, equipo +0.8, cuatro factores +0.5.",
+     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +3.9, Elo +2.7, equipo +0.8, cuatro factores +0.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de LAL vale 1.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de LAL vale 2.1 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -136,7 +71,7 @@
     {
      "label": "Bajas de TOR",
      "favors": "home",
-     "detail": "Sin Kawhi Leonard: TOR pierde 3.4 puntos.",
+     "detail": "Sin Kawhi Leonard, Jakob Poeltl: TOR pierde 4.1 puntos.",
      "supports_pick": true
     }
    ]
@@ -279,6 +214,73 @@
      "label": "Bajas de IND",
      "favors": "away",
      "detail": "Sin Johnny Furphy, Tyrese Haliburton, T.J. McConnell: IND pierde 5.2 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909905",
+   "espn_game_id": "401909905",
+   "starts_at": "2026-11-02T01:30Z",
+   "home": {
+    "name": "Golden State Warriors",
+    "code": "GS"
+   },
+   "away": {
+    "name": "LA Clippers",
+    "code": "LAC"
+   },
+   "projection": {
+    "home_score": 114.0,
+    "away_score": 111.9
+   },
+   "win_probability": {
+    "home": 0.5587,
+    "away": 0.4413
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Golden State Warriors ML"
+   },
+   "data_warning": "Gui Santos está en duda (day-to-day)",
+   "spread": {
+    "home": -3.0,
+    "away": 3.0
+   },
+   "total_points": 225.8,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -16.0,
+     20.0
+    ],
+    "total": [
+     200.0,
+     252.0
+    ]
+   },
+   "game_warnings": [
+    "Gui Santos está en duda (day-to-day)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +2.0, Elo +2.2, equipo +2.2, cuatro factores +0.4.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para GS.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de GS",
+     "favors": "away",
+     "detail": "Sin Jimmy Butler III, Stephen Curry, Draymond Green: GS pierde 3.8 puntos.",
      "supports_pick": false
     }
    ]
