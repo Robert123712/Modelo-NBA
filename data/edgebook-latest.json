@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-02T17:15:00.000538Z",
+ "generated_at": "2026-11-02T17:45:00.000554Z",
  "date_local": "2026-11-02",
  "games": [
   {
@@ -91,56 +91,54 @@
     "code": "DET"
    },
    "projection": {
-    "home_score": 99.2,
-    "away_score": 105.6
+    "home_score": 99.5,
+    "away_score": 105.2
    },
    "win_probability": {
-    "home": 0.3206,
-    "away": 0.6794
+    "home": 0.3365,
+    "away": 0.6635
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Detroit Pistons ML"
    },
-   "data_warning": "Isaiah Joe está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": 7.0,
-    "away": -7.0
+    "home": 6.0,
+    "away": -6.0
    },
-   "total_points": 204.8,
+   "total_points": 204.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -24.0,
-     11.0
+     -23.0,
+     12.0
     ],
     "total": [
      179.0,
      230.0
     ]
    },
-   "game_warnings": [
-    "Isaiah Joe está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +6.3, Elo +3.0, equipo +4.6, cuatro factores +2.6.",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +5.7, Elo +3.0, equipo +4.6, cuatro factores +2.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DET vale 8.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DET vale 7.4 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de CHA",
      "favors": "away",
-     "detail": "Sin Kon Knueppel, Grant Williams: CHA pierde 2.6 puntos.",
+     "detail": "Sin Kon Knueppel, Grant Williams: CHA pierde 2.0 puntos.",
      "supports_pick": true
     },
     {
