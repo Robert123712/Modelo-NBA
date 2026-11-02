@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-02T15:15:00.878023Z",
+ "generated_at": "2026-11-02T17:15:00.000538Z",
  "date_local": "2026-11-02",
  "games": [
   {
@@ -325,12 +325,12 @@
     "code": "WSH"
    },
    "projection": {
-    "home_score": 115.1,
-    "away_score": 109.0
+    "home_score": 115.4,
+    "away_score": 109.8
    },
    "win_probability": {
-    "home": 0.6698,
-    "away": 0.3302
+    "home": 0.6601,
+    "away": 0.3399
    },
    "pick": {
     "market": "moneyline",
@@ -342,16 +342,16 @@
     "home": -6.0,
     "away": 6.0
    },
-   "total_points": 224.1,
+   "total_points": 225.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -12.0,
-     24.0
+     23.0
     ],
     "total": [
-     198.0,
-     250.0
+     199.0,
+     251.0
     ]
    },
    "game_warnings": [
@@ -362,25 +362,19 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +6.1, Elo +9.5, equipo +7.2, cuatro factores +8.7.",
+     "detail": "4 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +5.7, Elo +9.5, equipo +7.2, cuatro factores +8.7.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de ORL vale 6.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de ORL vale 6.0 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para ORL.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de WSH",
-     "favors": "home",
-     "detail": "Sin Justin Champagnie, Tristan Vukcevic, Jamir Watkins: WSH pierde 0.7 puntos.",
      "supports_pick": true
     },
     {
@@ -473,12 +467,12 @@
     "code": "SAC"
    },
    "projection": {
-    "home_score": 122.7,
-    "away_score": 111.9
+    "home_score": 123.7,
+    "away_score": 110.9
    },
    "win_probability": {
-    "home": 0.7833,
-    "away": 0.2167
+    "home": 0.8224,
+    "away": 0.1776
    },
    "pick": {
     "market": "moneyline",
@@ -487,15 +481,15 @@
    },
    "data_warning": "Santi Aldama está en duda (doubtful)",
    "spread": {
-    "home": -11.0,
-    "away": 11.0
+    "home": -13.0,
+    "away": 13.0
    },
-   "total_points": 234.7,
+   "total_points": 234.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -7.0,
-     29.0
+     -5.0,
+     31.0
     ],
     "total": [
      209.0,
@@ -504,7 +498,6 @@
    },
    "game_warnings": [
     "Santi Aldama está en duda (doubtful)",
-    "Kyrie Irving está en duda (questionable)",
     "Dylan Cardwell está en duda (questionable)",
     "Zach LaVine está en duda (questionable)"
    ],
@@ -513,13 +506,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +10.7, Elo +7.8, equipo +10.1, cuatro factores +5.1.",
+     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +12.6, Elo +7.8, equipo +10.1, cuatro factores +5.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DAL vale 8.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DAL vale 10.8 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -531,7 +524,7 @@
     {
      "label": "Bajas de DAL",
      "favors": "away",
-     "detail": "Sin Sergio de Larrea, Dereck Lively II: DAL pierde 2.6 puntos.",
+     "detail": "Sin Sergio de Larrea, Dereck Lively II: DAL pierde 0.7 puntos.",
      "supports_pick": false
     }
    ]
@@ -580,6 +573,7 @@
    },
    "game_warnings": [
     "Scotty Pippen Jr. está en duda (doubtful)",
+    "Quinten Post está en duda (questionable)",
     "Trey Murphy III está en duda (probable)",
     "Julian Reese está en duda (probable)"
    ],
@@ -683,24 +677,24 @@
     "code": "BOS"
    },
    "projection": {
-    "home_score": 109.4,
-    "away_score": 108.0
+    "home_score": 109.5,
+    "away_score": 107.8
    },
    "win_probability": {
-    "home": 0.5407,
-    "away": 0.4593
+    "home": 0.547,
+    "away": 0.453
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Houston Rockets ML"
    },
-   "data_warning": "Mitchell Robinson está en duda (day-to-day)",
+   "data_warning": "Reed Sheppard está en duda (questionable)",
    "spread": {
     "home": -2.0,
     "away": 2.0
    },
-   "total_points": 217.4,
+   "total_points": 217.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -713,6 +707,7 @@
     ]
    },
    "game_warnings": [
+    "Reed Sheppard está en duda (questionable)",
     "Mitchell Robinson está en duda (day-to-day)"
    ],
    "warnings": [],
@@ -720,7 +715,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +1.5, Elo +2.3, equipo +2.0, cuatro factores +1.3.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +1.8, Elo +2.3, equipo +2.0, cuatro factores +1.3.",
      "supports_pick": true
     },
     {
@@ -736,9 +731,15 @@
      "supports_pick": true
     },
     {
+     "label": "Bajas de BOS",
+     "favors": "home",
+     "detail": "Sin Devin Carter: BOS pierde 0.5 puntos.",
+     "supports_pick": true
+    },
+    {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 2.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 1.8 puntos más por partido.",
      "supports_pick": false
     }
    ]
@@ -1054,24 +1055,24 @@
     "code": "MIA"
    },
    "projection": {
-    "home_score": 124.0,
+    "home_score": 123.8,
     "away_score": 120.8
    },
    "win_probability": {
-    "home": 0.5888,
-    "away": 0.4112
+    "home": 0.5846,
+    "away": 0.4154
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Los Angeles Lakers ML"
    },
-   "data_warning": null,
+   "data_warning": "Tim Hardaway Jr. está en duda (questionable)",
    "spread": {
     "home": -4.0,
     "away": 4.0
    },
-   "total_points": 244.8,
+   "total_points": 244.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -1080,22 +1081,24 @@
     ],
     "total": [
      219.0,
-     271.0
+     270.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Tim Hardaway Jr. está en duda (questionable)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +3.1, Elo +5.0, equipo +4.3, cuatro factores +2.6.",
+     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +2.9, Elo +5.0, equipo +4.3, cuatro factores +2.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de LAL vale 3.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de LAL vale 3.2 puntos más por partido.",
      "supports_pick": true
     },
     {
