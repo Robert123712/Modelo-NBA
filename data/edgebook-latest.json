@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-02T20:15:00.000512Z",
+ "generated_at": "2026-11-02T20:45:00.000568Z",
  "date_local": "2026-11-02",
  "games": [
   {
@@ -456,12 +456,12 @@
     "code": "SAC"
    },
    "projection": {
-    "home_score": 123.4,
-    "away_score": 111.0
+    "home_score": 123.7,
+    "away_score": 110.9
    },
    "win_probability": {
-    "home": 0.8165,
-    "away": 0.1835
+    "home": 0.8224,
+    "away": 0.1776
    },
    "pick": {
     "market": "moneyline",
@@ -470,15 +470,15 @@
    },
    "data_warning": "Santi Aldama está en duda (doubtful)",
    "spread": {
-    "home": -12.0,
-    "away": 12.0
+    "home": -13.0,
+    "away": 13.0
    },
-   "total_points": 234.5,
+   "total_points": 234.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -6.0,
-     30.0
+     -5.0,
+     31.0
     ],
     "total": [
      209.0,
@@ -487,7 +487,7 @@
    },
    "game_warnings": [
     "Santi Aldama está en duda (doubtful)",
-    "Dylan Cardwell está en duda (probable)",
+    "Dylan Cardwell está en duda (questionable)",
     "Zach LaVine está en duda (questionable)"
    ],
    "warnings": [],
@@ -495,13 +495,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +12.3, Elo +7.8, equipo +10.1, cuatro factores +5.1.",
+     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +12.6, Elo +7.8, equipo +10.1, cuatro factores +5.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DAL vale 10.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DAL vale 10.8 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -513,7 +513,7 @@
     {
      "label": "Bajas de DAL",
      "favors": "away",
-     "detail": "Sin Sergio de Larrea, Dereck Lively II: DAL pierde 1.0 puntos.",
+     "detail": "Sin Sergio de Larrea, Dereck Lively II: DAL pierde 0.7 puntos.",
      "supports_pick": false
     }
    ]
@@ -964,12 +964,12 @@
     "code": "TOR"
    },
    "projection": {
-    "home_score": 111.8,
-    "away_score": 113.0
+    "home_score": 111.2,
+    "away_score": 113.6
    },
    "win_probability": {
-    "home": 0.4692,
-    "away": 0.5308
+    "home": 0.4338,
+    "away": 0.5662
    },
    "pick": {
     "market": "moneyline",
@@ -978,15 +978,15 @@
    },
    "data_warning": "Derrick Jones Jr. está en duda (day-to-day)",
    "spread": {
-    "home": 2.0,
-    "away": -2.0
+    "home": 3.0,
+    "away": -3.0
    },
    "total_points": 224.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -19.0,
-     17.0
+     -20.0,
+     16.0
     ],
     "total": [
      199.0,
@@ -995,20 +995,20 @@
    },
    "game_warnings": [
     "Derrick Jones Jr. está en duda (day-to-day)",
-    "Jakob Poeltl está en duda (day-to-day)"
+    "Jakob Poeltl está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +1.1, Elo +0.4, equipo +1.6, cuatro factores +1.0.",
+     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +2.4, Elo +0.4, equipo +1.6, cuatro factores +1.0.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de TOR vale 2.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de TOR vale 4.2 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -1020,7 +1020,7 @@
     {
      "label": "Bajas de TOR",
      "favors": "home",
-     "detail": "Sin Kawhi Leonard: TOR pierde 2.8 puntos.",
+     "detail": "Sin Kawhi Leonard, Malachi Smith: TOR pierde 1.5 puntos.",
      "supports_pick": false
     }
    ]
