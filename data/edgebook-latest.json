@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-02T21:15:00.000537Z",
+ "generated_at": "2026-11-02T21:45:00.000554Z",
  "date_local": "2026-11-02",
  "games": [
   {
@@ -193,7 +193,6 @@
    },
    "game_warnings": [
     "Obi Toppin está en duda (questionable)",
-    "Keshon Gilbert está en duda (doubtful)",
     "Jalen Johnson está en duda (questionable)"
    ],
    "warnings": [],
@@ -961,12 +960,12 @@
     "code": "TOR"
    },
    "projection": {
-    "home_score": 110.2,
-    "away_score": 115.2
+    "home_score": 110.6,
+    "away_score": 115.0
    },
    "win_probability": {
-    "home": 0.3614,
-    "away": 0.6386
+    "home": 0.3798,
+    "away": 0.6202
    },
    "pick": {
     "market": "moneyline",
@@ -978,15 +977,15 @@
     "home": 5.0,
     "away": -5.0
    },
-   "total_points": 225.3,
+   "total_points": 225.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -23.0,
-     13.0
+     -22.0,
+     14.0
     ],
     "total": [
-     199.0,
+     200.0,
      251.0
     ]
    },
@@ -999,19 +998,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +5.0, Elo +0.4, equipo +1.6, cuatro factores +1.0.",
+     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +4.3, Elo +0.4, equipo +1.6, cuatro factores +1.0.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de TOR vale 6.8 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de LAC",
-     "favors": "away",
-     "detail": "Sin Bradley Beal, Rui Hachimura, Brandon Ingram: LAC pierde 1.1 puntos.",
+     "detail": "Con los minutos proyectados, la rotación de TOR vale 6.1 puntos más por partido.",
      "supports_pick": true
     },
     {
