@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-02T22:45:00.000607Z",
+ "generated_at": "2026-11-02T23:15:00.000591Z",
  "date_local": "2026-11-02",
  "games": [
   {
@@ -162,51 +162,48 @@
     "code": "ATL"
    },
    "projection": {
-    "home_score": 109.8,
-    "away_score": 121.8
+    "home_score": 109.0,
+    "away_score": 122.4
    },
    "win_probability": {
-    "home": 0.196,
-    "away": 0.804
+    "home": 0.1661,
+    "away": 0.8339
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Atlanta Hawks ML"
    },
-   "data_warning": "Obi Toppin está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": 12.0,
-    "away": -12.0
+    "home": 13.0,
+    "away": -13.0
    },
-   "total_points": 231.6,
+   "total_points": 231.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -30.0,
-     6.0
+     -31.0,
+     5.0
     ],
     "total": [
      206.0,
      257.0
     ]
    },
-   "game_warnings": [
-    "Obi Toppin está en duda (questionable)",
-    "Jalen Johnson está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +11.8, Elo +4.5, equipo +4.9, cuatro factores +3.7.",
+     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +13.3, Elo +4.5, equipo +4.9, cuatro factores +3.7.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de ATL vale 11.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de ATL vale 13.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -218,7 +215,7 @@
     {
      "label": "Bajas de IND",
      "favors": "away",
-     "detail": "Sin Johnny Furphy, Tyrese Haliburton, T.J. McConnell: IND pierde 10.3 puntos.",
+     "detail": "Sin Johnny Furphy, Tyrese Haliburton, T.J. McConnell: IND pierde 11.8 puntos.",
      "supports_pick": true
     },
     {
@@ -387,11 +384,11 @@
    },
    "projection": {
     "home_score": 124.0,
-    "away_score": 113.6
+    "away_score": 113.8
    },
    "win_probability": {
-    "home": 0.774,
-    "away": 0.226
+    "home": 0.7722,
+    "away": 0.2278
    },
    "pick": {
     "market": "moneyline",
@@ -403,7 +400,7 @@
     "home": -10.0,
     "away": 10.0
    },
-   "total_points": 237.6,
+   "total_points": 237.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -416,28 +413,32 @@
     ]
    },
    "game_warnings": [
-    "Joel Embiid está en duda (questionable)",
-    "Nic Claxton está en duda (doubtful)",
-    "Jalen Smith está en duda (probable)"
+    "Joel Embiid está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a PHI. Margen de PHI: jugadores +10.3, Elo +10.7, equipo +9.2, cuatro factores +6.0.",
+     "detail": "4 de 4 modelos ven ganar a PHI. Margen de PHI: jugadores +10.2, Elo +10.7, equipo +9.2, cuatro factores +6.0.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de PHI vale 8.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de PHI vale 8.3 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.9 puntos para PHI.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de CHI",
+     "favors": "home",
+     "detail": "Sin Nic Claxton: CHI pierde 0.9 puntos.",
      "supports_pick": true
     }
    ]
@@ -455,12 +456,12 @@
     "code": "SAC"
    },
    "projection": {
-    "home_score": 123.7,
-    "away_score": 110.9
+    "home_score": 121.9,
+    "away_score": 112.4
    },
    "win_probability": {
-    "home": 0.8224,
-    "away": 0.1776
+    "home": 0.7561,
+    "away": 0.2439
    },
    "pick": {
     "market": "moneyline",
@@ -469,15 +470,15 @@
    },
    "data_warning": "Santi Aldama está en duda (doubtful)",
    "spread": {
-    "home": -13.0,
-    "away": 13.0
+    "home": -9.0,
+    "away": 9.0
    },
-   "total_points": 234.6,
+   "total_points": 234.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -5.0,
-     31.0
+     -8.0,
+     27.0
     ],
     "total": [
      209.0,
@@ -486,7 +487,7 @@
    },
    "game_warnings": [
     "Santi Aldama está en duda (doubtful)",
-    "Dylan Cardwell está en duda (questionable)",
+    "Dylan Cardwell está en duda (doubtful)",
     "Zach LaVine está en duda (questionable)"
    ],
    "warnings": [],
@@ -494,13 +495,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +12.6, Elo +7.8, equipo +10.1, cuatro factores +5.1.",
+     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +9.4, Elo +7.8, equipo +10.1, cuatro factores +5.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DAL vale 10.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DAL vale 7.6 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -512,7 +513,7 @@
     {
      "label": "Bajas de DAL",
      "favors": "away",
-     "detail": "Sin Sergio de Larrea, Dereck Lively II: DAL pierde 0.7 puntos.",
+     "detail": "Sin Sergio de Larrea, Kyrie Irving, Dereck Lively II: DAL pierde 3.8 puntos.",
      "supports_pick": false
     }
    ]
