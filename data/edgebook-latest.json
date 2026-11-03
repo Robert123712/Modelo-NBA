@@ -2,82 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-02T23:45:00.000546Z",
+ "generated_at": "2026-11-03T00:15:00.000593Z",
  "date_local": "2026-11-02",
  "games": [
-  {
-   "league_game_id": "401909907",
-   "espn_game_id": "401909907",
-   "starts_at": "2026-11-03T00:00Z",
-   "home": {
-    "name": "Cleveland Cavaliers",
-    "code": "CLE"
-   },
-   "away": {
-    "name": "Oklahoma City Thunder",
-    "code": "OKC"
-   },
-   "projection": {
-    "home_score": 117.4,
-    "away_score": 111.8
-   },
-   "win_probability": {
-    "home": 0.6573,
-    "away": 0.3427
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Cleveland Cavaliers ML"
-   },
-   "data_warning": "Peyton Watson está en duda (questionable)",
-   "spread": {
-    "home": -6.0,
-    "away": 6.0
-   },
-   "total_points": 229.2,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -12.0,
-     23.0
-    ],
-    "total": [
-     204.0,
-     255.0
-    ]
-   },
-   "game_warnings": [
-    "Peyton Watson está en duda (questionable)"
-   ],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "3 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores -5.5, Elo +0.3, equipo +2.1, cuatro factores +2.6.",
-     "supports_pick": false
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de CLE vale 3.7 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para CLE.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de OKC",
-     "favors": "home",
-     "detail": "Sin Alex Caruso, Chet Holmgren, Nikola Topic: OKC pierde 7.4 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909908",
    "espn_game_id": "401909908",
@@ -454,19 +381,19 @@
     "code": "SAC"
    },
    "projection": {
-    "home_score": 121.9,
-    "away_score": 112.4
+    "home_score": 121.7,
+    "away_score": 112.6
    },
    "win_probability": {
-    "home": 0.7561,
-    "away": 0.2439
+    "home": 0.7439,
+    "away": 0.2561
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Dallas Mavericks ML"
    },
-   "data_warning": "Santi Aldama está en duda (doubtful)",
+   "data_warning": null,
    "spread": {
     "home": -9.0,
     "away": 9.0
@@ -475,7 +402,7 @@
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -8.0,
+     -9.0,
      27.0
     ],
     "total": [
@@ -483,22 +410,19 @@
      260.0
     ]
    },
-   "game_warnings": [
-    "Santi Aldama está en duda (doubtful)",
-    "Zach LaVine está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +9.4, Elo +7.8, equipo +10.1, cuatro factores +5.1.",
+     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +9.0, Elo +7.8, equipo +10.1, cuatro factores +5.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DAL vale 7.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DAL vale 7.2 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -510,7 +434,7 @@
     {
      "label": "Bajas de DAL",
      "favors": "away",
-     "detail": "Sin Sergio de Larrea, Kyrie Irving, Dereck Lively II: DAL pierde 3.8 puntos.",
+     "detail": "Sin Santi Aldama, Sergio de Larrea, Kyrie Irving: DAL pierde 4.3 puntos.",
      "supports_pick": false
     }
    ]
@@ -1080,6 +1004,79 @@
      "favors": "away",
      "detail": "LAL juega su segundo partido en dos noches: 2.1 puntos.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909907",
+   "espn_game_id": "401909907",
+   "starts_at": "2026-11-03T00:00Z",
+   "home": {
+    "name": "Cleveland Cavaliers",
+    "code": "CLE"
+   },
+   "away": {
+    "name": "Oklahoma City Thunder",
+    "code": "OKC"
+   },
+   "projection": {
+    "home_score": 117.4,
+    "away_score": 111.8
+   },
+   "win_probability": {
+    "home": 0.6573,
+    "away": 0.3427
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Cleveland Cavaliers ML"
+   },
+   "data_warning": "Peyton Watson está en duda (questionable)",
+   "spread": {
+    "home": -6.0,
+    "away": 6.0
+   },
+   "total_points": 229.2,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -12.0,
+     23.0
+    ],
+    "total": [
+     204.0,
+     255.0
+    ]
+   },
+   "game_warnings": [
+    "Peyton Watson está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "3 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores -5.5, Elo +0.3, equipo +2.1, cuatro factores +2.6.",
+     "supports_pick": false
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de CLE vale 3.7 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para CLE.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de OKC",
+     "favors": "home",
+     "detail": "Sin Alex Caruso, Chet Holmgren, Nikola Topic: OKC pierde 7.4 puntos.",
+     "supports_pick": true
     }
    ]
   }
