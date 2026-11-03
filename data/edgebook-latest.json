@@ -2,372 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-03T00:15:00.000593Z",
+ "generated_at": "2026-11-03T00:45:00.000634Z",
  "date_local": "2026-11-02",
  "games": [
-  {
-   "league_game_id": "401909908",
-   "espn_game_id": "401909908",
-   "starts_at": "2026-11-03T00:30Z",
-   "home": {
-    "name": "Charlotte Hornets",
-    "code": "CHA"
-   },
-   "away": {
-    "name": "Detroit Pistons",
-    "code": "DET"
-   },
-   "projection": {
-    "home_score": 99.5,
-    "away_score": 105.2
-   },
-   "win_probability": {
-    "home": 0.3365,
-    "away": 0.6635
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Detroit Pistons ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 6.0,
-    "away": -6.0
-   },
-   "total_points": 204.7,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -23.0,
-     12.0
-    ],
-    "total": [
-     179.0,
-     230.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +5.7, Elo +3.0, equipo +4.6, cuatro factores +2.6.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DET vale 7.4 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de CHA",
-     "favors": "away",
-     "detail": "Sin Kon Knueppel, Grant Williams: CHA pierde 2.0 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para CHA.",
-     "supports_pick": false
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909909",
-   "espn_game_id": "401909909",
-   "starts_at": "2026-11-03T00:30Z",
-   "home": {
-    "name": "Indiana Pacers",
-    "code": "IND"
-   },
-   "away": {
-    "name": "Atlanta Hawks",
-    "code": "ATL"
-   },
-   "projection": {
-    "home_score": 109.0,
-    "away_score": 122.4
-   },
-   "win_probability": {
-    "home": 0.1661,
-    "away": 0.8339
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Atlanta Hawks ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 13.0,
-    "away": -13.0
-   },
-   "total_points": 231.4,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -31.0,
-     5.0
-    ],
-    "total": [
-     206.0,
-     257.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +13.3, Elo +4.5, equipo +4.9, cuatro factores +3.7.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de ATL vale 13.0 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "away",
-     "detail": "IND juega su segundo partido en dos noches: 2.1 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de IND",
-     "favors": "away",
-     "detail": "Sin Johnny Furphy, Tyrese Haliburton, T.J. McConnell: IND pierde 11.8 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para IND.",
-     "supports_pick": false
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909910",
-   "espn_game_id": "401909910",
-   "starts_at": "2026-11-03T00:30Z",
-   "home": {
-    "name": "New York Knicks",
-    "code": "NY"
-   },
-   "away": {
-    "name": "Brooklyn Nets",
-    "code": "BKN"
-   },
-   "projection": {
-    "home_score": 119.2,
-    "away_score": 101.8
-   },
-   "win_probability": {
-    "home": 0.8963,
-    "away": 0.1037
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "New York Knicks ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -17.0,
-    "away": 17.0
-   },
-   "total_points": 221.0,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -1.0,
-     35.0
-    ],
-    "total": [
-     196.0,
-     247.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +17.2, Elo +16.7, equipo +15.3, cuatro factores +17.0.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 13.4 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para NY.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "home",
-     "detail": "BKN juega su segundo partido en dos noches: 2.1 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909911",
-   "espn_game_id": "401909911",
-   "starts_at": "2026-11-03T00:30Z",
-   "home": {
-    "name": "Orlando Magic",
-    "code": "ORL"
-   },
-   "away": {
-    "name": "Washington Wizards",
-    "code": "WSH"
-   },
-   "projection": {
-    "home_score": 115.9,
-    "away_score": 110.2
-   },
-   "win_probability": {
-    "home": 0.6613,
-    "away": 0.3387
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Orlando Magic ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -6.0,
-    "away": 6.0
-   },
-   "total_points": 226.0,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -12.0,
-     24.0
-    ],
-    "total": [
-     200.0,
-     252.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +5.8, Elo +9.5, equipo +7.2, cuatro factores +8.7.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de ORL vale 6.0 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para ORL.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "away",
-     "detail": "ORL juega su segundo partido en dos noches: 2.0 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909912",
-   "espn_game_id": "401909912",
-   "starts_at": "2026-11-03T00:30Z",
-   "home": {
-    "name": "Philadelphia 76ers",
-    "code": "PHI"
-   },
-   "away": {
-    "name": "Chicago Bulls",
-    "code": "CHI"
-   },
-   "projection": {
-    "home_score": 124.0,
-    "away_score": 113.8
-   },
-   "win_probability": {
-    "home": 0.7722,
-    "away": 0.2278
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Philadelphia 76ers ML"
-   },
-   "data_warning": "Joel Embiid está en duda (questionable)",
-   "spread": {
-    "home": -10.0,
-    "away": 10.0
-   },
-   "total_points": 237.8,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -8.0,
-     28.0
-    ],
-    "total": [
-     212.0,
-     264.0
-    ]
-   },
-   "game_warnings": [
-    "Joel Embiid está en duda (questionable)"
-   ],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a PHI. Margen de PHI: jugadores +10.2, Elo +10.7, equipo +9.2, cuatro factores +6.0.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de PHI vale 8.3 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.9 puntos para PHI.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de CHI",
-     "favors": "home",
-     "detail": "Sin Nic Claxton: CHI pierde 0.9 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909913",
    "espn_game_id": "401909913",
@@ -452,24 +89,24 @@
     "code": "NO"
    },
    "projection": {
-    "home_score": 121.0,
-    "away_score": 115.5
+    "home_score": 120.5,
+    "away_score": 114.6
    },
    "win_probability": {
-    "home": 0.6569,
-    "away": 0.3431
+    "home": 0.6662,
+    "away": 0.3338
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Memphis Grizzlies ML"
    },
-   "data_warning": "Scotty Pippen Jr. está en duda (doubtful)",
+   "data_warning": null,
    "spread": {
     "home": -6.0,
     "away": 6.0
    },
-   "total_points": 236.5,
+   "total_points": 235.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -477,26 +114,23 @@
      24.0
     ],
     "total": [
-     211.0,
-     262.0
+     209.0,
+     261.0
     ]
    },
-   "game_warnings": [
-    "Scotty Pippen Jr. está en duda (doubtful)",
-    "Quinten Post está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +5.5, Elo +1.8, equipo +3.3, cuatro factores -0.9.",
+     "detail": "3 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +5.9, Elo +1.8, equipo +3.3, cuatro factores -0.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MEM vale 3.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MEM vale 4.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -504,6 +138,12 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para MEM.",
      "supports_pick": true
+    },
+    {
+     "label": "Bajas de MEM",
+     "favors": "away",
+     "detail": "Sin Scotty Pippen Jr., Quinten Post, Javon Small: MEM pierde 2.4 puntos.",
+     "supports_pick": false
     }
    ]
   },
@@ -520,50 +160,48 @@
     "code": "MIL"
    },
    "projection": {
-    "home_score": 123.6,
-    "away_score": 108.4
+    "home_score": 124.5,
+    "away_score": 108.7
    },
    "win_probability": {
-    "home": 0.8623,
-    "away": 0.1377
+    "home": 0.8708,
+    "away": 0.1292
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Minnesota Timberwolves ML"
    },
-   "data_warning": "LaMelo Ball está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": -15.0,
-    "away": 15.0
+    "home": -16.0,
+    "away": 16.0
    },
-   "total_points": 232.0,
+   "total_points": 233.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -3.0,
-     33.0
+     34.0
     ],
     "total": [
-     207.0,
-     258.0
+     208.0,
+     259.0
     ]
    },
-   "game_warnings": [
-    "LaMelo Ball está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +15.1, Elo +12.1, equipo +14.6, cuatro factores +10.6.",
+     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +15.7, Elo +12.1, equipo +14.6, cuatro factores +10.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MIN vale 13.3 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MIN vale 13.9 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -587,19 +225,19 @@
     "code": "BOS"
    },
    "projection": {
-    "home_score": 109.0,
-    "away_score": 107.7
+    "home_score": 108.8,
+    "away_score": 107.8
    },
    "win_probability": {
-    "home": 0.5364,
-    "away": 0.4636
+    "home": 0.5278,
+    "away": 0.4722
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Houston Rockets ML"
    },
-   "data_warning": "Reed Sheppard está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -2.0,
     "away": 2.0
@@ -608,7 +246,7 @@
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -16.0,
+     -17.0,
      19.0
     ],
     "total": [
@@ -616,15 +254,13 @@
      243.0
     ]
    },
-   "game_warnings": [
-    "Reed Sheppard está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +1.5, Elo +2.3, equipo +2.0, cuatro factores +1.3.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +1.2, Elo +2.3, equipo +2.0, cuatro factores +1.3.",
      "supports_pick": true
     },
     {
@@ -642,7 +278,7 @@
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 2.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 2.5 puntos más por partido.",
      "supports_pick": false
     }
    ]
@@ -1076,6 +712,371 @@
      "label": "Bajas de OKC",
      "favors": "home",
      "detail": "Sin Alex Caruso, Chet Holmgren, Nikola Topic: OKC pierde 7.4 puntos.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909908",
+   "espn_game_id": "401909908",
+   "starts_at": "2026-11-03T00:30Z",
+   "home": {
+    "name": "Charlotte Hornets",
+    "code": "CHA"
+   },
+   "away": {
+    "name": "Detroit Pistons",
+    "code": "DET"
+   },
+   "projection": {
+    "home_score": 99.5,
+    "away_score": 105.2
+   },
+   "win_probability": {
+    "home": 0.3365,
+    "away": 0.6635
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Detroit Pistons ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 6.0,
+    "away": -6.0
+   },
+   "total_points": 204.7,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -23.0,
+     12.0
+    ],
+    "total": [
+     179.0,
+     230.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +5.7, Elo +3.0, equipo +4.6, cuatro factores +2.6.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de DET vale 7.4 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de CHA",
+     "favors": "away",
+     "detail": "Sin Kon Knueppel, Grant Williams: CHA pierde 2.0 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para CHA.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909909",
+   "espn_game_id": "401909909",
+   "starts_at": "2026-11-03T00:30Z",
+   "home": {
+    "name": "Indiana Pacers",
+    "code": "IND"
+   },
+   "away": {
+    "name": "Atlanta Hawks",
+    "code": "ATL"
+   },
+   "projection": {
+    "home_score": 109.0,
+    "away_score": 122.4
+   },
+   "win_probability": {
+    "home": 0.1661,
+    "away": 0.8339
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Atlanta Hawks ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 13.0,
+    "away": -13.0
+   },
+   "total_points": 231.4,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -31.0,
+     5.0
+    ],
+    "total": [
+     206.0,
+     257.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +13.3, Elo +4.5, equipo +4.9, cuatro factores +3.7.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de ATL vale 13.0 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "away",
+     "detail": "IND juega su segundo partido en dos noches: 2.1 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de IND",
+     "favors": "away",
+     "detail": "Sin Johnny Furphy, Tyrese Haliburton, T.J. McConnell: IND pierde 11.8 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para IND.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909910",
+   "espn_game_id": "401909910",
+   "starts_at": "2026-11-03T00:30Z",
+   "home": {
+    "name": "New York Knicks",
+    "code": "NY"
+   },
+   "away": {
+    "name": "Brooklyn Nets",
+    "code": "BKN"
+   },
+   "projection": {
+    "home_score": 119.7,
+    "away_score": 102.0
+   },
+   "win_probability": {
+    "home": 0.8993,
+    "away": 0.1007
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "New York Knicks ML"
+   },
+   "data_warning": "Jose Alvarado está en duda (questionable)",
+   "spread": {
+    "home": -17.0,
+    "away": 17.0
+   },
+   "total_points": 221.7,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -1.0,
+     36.0
+    ],
+    "total": [
+     196.0,
+     247.0
+    ]
+   },
+   "game_warnings": [
+    "Jose Alvarado está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +17.4, Elo +16.7, equipo +15.3, cuatro factores +17.0.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 13.6 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para NY.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "home",
+     "detail": "BKN juega su segundo partido en dos noches: 2.1 puntos.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909911",
+   "espn_game_id": "401909911",
+   "starts_at": "2026-11-03T00:30Z",
+   "home": {
+    "name": "Orlando Magic",
+    "code": "ORL"
+   },
+   "away": {
+    "name": "Washington Wizards",
+    "code": "WSH"
+   },
+   "projection": {
+    "home_score": 115.9,
+    "away_score": 110.2
+   },
+   "win_probability": {
+    "home": 0.6613,
+    "away": 0.3387
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Orlando Magic ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -6.0,
+    "away": 6.0
+   },
+   "total_points": 226.0,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -12.0,
+     24.0
+    ],
+    "total": [
+     200.0,
+     252.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +5.8, Elo +9.5, equipo +7.2, cuatro factores +8.7.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de ORL vale 6.0 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para ORL.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "away",
+     "detail": "ORL juega su segundo partido en dos noches: 2.0 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909912",
+   "espn_game_id": "401909912",
+   "starts_at": "2026-11-03T00:30Z",
+   "home": {
+    "name": "Philadelphia 76ers",
+    "code": "PHI"
+   },
+   "away": {
+    "name": "Chicago Bulls",
+    "code": "CHI"
+   },
+   "projection": {
+    "home_score": 124.0,
+    "away_score": 113.8
+   },
+   "win_probability": {
+    "home": 0.7722,
+    "away": 0.2278
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Philadelphia 76ers ML"
+   },
+   "data_warning": "Joel Embiid está en duda (questionable)",
+   "spread": {
+    "home": -10.0,
+    "away": 10.0
+   },
+   "total_points": 237.8,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -8.0,
+     28.0
+    ],
+    "total": [
+     212.0,
+     264.0
+    ]
+   },
+   "game_warnings": [
+    "Joel Embiid está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a PHI. Margen de PHI: jugadores +10.2, Elo +10.7, equipo +9.2, cuatro factores +6.0.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de PHI vale 8.3 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.9 puntos para PHI.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de CHI",
+     "favors": "home",
+     "detail": "Sin Nic Claxton: CHI pierde 0.9 puntos.",
      "supports_pick": true
     }
    ]
