@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-03T02:15:00.000578Z",
+ "generated_at": "2026-11-03T02:45:00.000549Z",
  "date_local": "2026-11-02",
  "games": [
   {
@@ -18,12 +18,12 @@
     "code": "PHX"
    },
    "projection": {
-    "home_score": 118.2,
-    "away_score": 113.6
+    "home_score": 117.7,
+    "away_score": 114.3
    },
    "win_probability": {
-    "home": 0.6325,
-    "away": 0.3675
+    "home": 0.6008,
+    "away": 0.3992
    },
    "pick": {
     "market": "moneyline",
@@ -32,15 +32,15 @@
    },
    "data_warning": null,
    "spread": {
-    "home": -5.0,
-    "away": 5.0
+    "home": -4.0,
+    "away": 4.0
    },
-   "total_points": 231.8,
+   "total_points": 232.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -13.0,
-     22.0
+     -15.0,
+     21.0
     ],
     "total": [
      206.0,
@@ -53,13 +53,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +4.4, Elo +2.6, equipo +4.0, cuatro factores +2.5.",
+     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +3.3, Elo +2.6, equipo +4.0, cuatro factores +2.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de GS vale 4.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de GS vale 3.5 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -77,7 +77,7 @@
     {
      "label": "Bajas de GS",
      "favors": "away",
-     "detail": "Sin Jimmy Butler III, Al Horford, Moses Moody: GS pierde 0.8 puntos.",
+     "detail": "Sin Jimmy Butler III, Al Horford, Moses Moody: GS pierde 2.0 puntos.",
      "supports_pick": false
     }
    ]
@@ -95,24 +95,24 @@
     "code": "TOR"
    },
    "projection": {
-    "home_score": 110.6,
-    "away_score": 115.0
+    "home_score": 110.9,
+    "away_score": 114.8
    },
    "win_probability": {
-    "home": 0.3798,
-    "away": 0.6202
+    "home": 0.3934,
+    "away": 0.6066
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Toronto Raptors ML"
    },
-   "data_warning": "Scottie Barnes está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": 5.0,
-    "away": -5.0
+    "home": 4.0,
+    "away": -4.0
    },
-   "total_points": 225.6,
+   "total_points": 225.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -121,25 +121,22 @@
     ],
     "total": [
      200.0,
-     251.0
+     252.0
     ]
    },
-   "game_warnings": [
-    "Scottie Barnes está en duda (questionable)",
-    "Jakob Poeltl está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +4.3, Elo +0.4, equipo +1.6, cuatro factores +1.0.",
+     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +3.8, Elo +0.4, equipo +1.6, cuatro factores +1.0.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de TOR vale 6.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de TOR vale 5.6 puntos más por partido.",
      "supports_pick": true
     },
     {
