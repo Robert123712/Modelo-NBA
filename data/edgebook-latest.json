@@ -2,151 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-03T01:15:00.000577Z",
+ "generated_at": "2026-11-03T01:45:00.000563Z",
  "date_local": "2026-11-02",
  "games": [
-  {
-   "league_game_id": "401909916",
-   "espn_game_id": "401909916",
-   "starts_at": "2026-11-03T01:30Z",
-   "home": {
-    "name": "Houston Rockets",
-    "code": "HOU"
-   },
-   "away": {
-    "name": "Boston Celtics",
-    "code": "BOS"
-   },
-   "projection": {
-    "home_score": 108.8,
-    "away_score": 107.8
-   },
-   "win_probability": {
-    "home": 0.5278,
-    "away": 0.4722
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Houston Rockets ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -2.0,
-    "away": 2.0
-   },
-   "total_points": 216.6,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -17.0,
-     19.0
-    ],
-    "total": [
-     191.0,
-     243.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +1.2, Elo +2.3, equipo +2.0, cuatro factores +1.3.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para HOU.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "home",
-     "detail": "BOS juega su segundo partido en dos noches: 2.0 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 2.5 puntos más por partido.",
-     "supports_pick": false
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909917",
-   "espn_game_id": "401909917",
-   "starts_at": "2026-11-03T01:30Z",
-   "home": {
-    "name": "San Antonio Spurs",
-    "code": "SA"
-   },
-   "away": {
-    "name": "Utah Jazz",
-    "code": "UTAH"
-   },
-   "projection": {
-    "home_score": 120.1,
-    "away_score": 103.8
-   },
-   "win_probability": {
-    "home": 0.8821,
-    "away": 0.1179
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "San Antonio Spurs ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -16.0,
-    "away": 16.0
-   },
-   "total_points": 224.0,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -2.0,
-     34.0
-    ],
-    "total": [
-     199.0,
-     250.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +16.3, Elo +16.8, equipo +15.8, cuatro factores +14.3.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 14.5 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para SA.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de UTAH",
-     "favors": "home",
-     "detail": "Sin Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 0.5 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909918",
    "espn_game_id": "401909918",
@@ -233,12 +91,12 @@
     "code": "PHX"
    },
    "projection": {
-    "home_score": 117.4,
-    "away_score": 113.7
+    "home_score": 118.2,
+    "away_score": 113.6
    },
    "win_probability": {
-    "home": 0.6079,
-    "away": 0.3921
+    "home": 0.6325,
+    "away": 0.3675
    },
    "pick": {
     "market": "moneyline",
@@ -247,19 +105,19 @@
    },
    "data_warning": null,
    "spread": {
-    "home": -4.0,
-    "away": 4.0
+    "home": -5.0,
+    "away": 5.0
    },
-   "total_points": 231.1,
+   "total_points": 231.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -14.0,
-     21.0
+     -13.0,
+     22.0
     ],
     "total": [
-     205.0,
-     257.0
+     206.0,
+     258.0
     ]
    },
    "game_warnings": [],
@@ -268,13 +126,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +3.6, Elo +2.6, equipo +4.0, cuatro factores +2.5.",
+     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +4.4, Elo +2.6, equipo +4.0, cuatro factores +2.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de GS vale 3.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de GS vale 4.7 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -292,7 +150,7 @@
     {
      "label": "Bajas de GS",
      "favors": "away",
-     "detail": "Sin Jimmy Butler III, Al Horford, Moses Moody: GS pierde 1.7 puntos.",
+     "detail": "Sin Jimmy Butler III, Al Horford, Moses Moody: GS pierde 0.8 puntos.",
      "supports_pick": false
     }
    ]
@@ -1079,6 +937,150 @@
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para MIN.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909916",
+   "espn_game_id": "401909916",
+   "starts_at": "2026-11-03T01:30Z",
+   "home": {
+    "name": "Houston Rockets",
+    "code": "HOU"
+   },
+   "away": {
+    "name": "Boston Celtics",
+    "code": "BOS"
+   },
+   "projection": {
+    "home_score": 109.0,
+    "away_score": 107.7
+   },
+   "win_probability": {
+    "home": 0.5364,
+    "away": 0.4636
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Houston Rockets ML"
+   },
+   "data_warning": "Reed Sheppard está en duda (questionable)",
+   "spread": {
+    "home": -2.0,
+    "away": 2.0
+   },
+   "total_points": 216.6,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -16.0,
+     19.0
+    ],
+    "total": [
+     191.0,
+     243.0
+    ]
+   },
+   "game_warnings": [
+    "Reed Sheppard está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +1.5, Elo +2.3, equipo +2.0, cuatro factores +1.3.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para HOU.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "home",
+     "detail": "BOS juega su segundo partido en dos noches: 2.0 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 2.2 puntos más por partido.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909917",
+   "espn_game_id": "401909917",
+   "starts_at": "2026-11-03T01:30Z",
+   "home": {
+    "name": "San Antonio Spurs",
+    "code": "SA"
+   },
+   "away": {
+    "name": "Utah Jazz",
+    "code": "UTAH"
+   },
+   "projection": {
+    "home_score": 120.1,
+    "away_score": 103.8
+   },
+   "win_probability": {
+    "home": 0.8821,
+    "away": 0.1179
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "San Antonio Spurs ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -16.0,
+    "away": 16.0
+   },
+   "total_points": 224.0,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -2.0,
+     34.0
+    ],
+    "total": [
+     199.0,
+     250.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +16.3, Elo +16.8, equipo +15.8, cuatro factores +14.3.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 14.5 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para SA.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de UTAH",
+     "favors": "home",
+     "detail": "Sin Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 0.5 puntos.",
      "supports_pick": true
     }
    ]
