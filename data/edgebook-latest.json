@@ -2,82 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-03T01:45:00.000563Z",
+ "generated_at": "2026-11-03T02:15:00.000578Z",
  "date_local": "2026-11-02",
  "games": [
-  {
-   "league_game_id": "401909918",
-   "espn_game_id": "401909918",
-   "starts_at": "2026-11-03T02:00Z",
-   "home": {
-    "name": "Denver Nuggets",
-    "code": "DEN"
-   },
-   "away": {
-    "name": "Portland Trail Blazers",
-    "code": "POR"
-   },
-   "projection": {
-    "home_score": 114.1,
-    "away_score": 112.9
-   },
-   "win_probability": {
-    "home": 0.5309,
-    "away": 0.4691
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Denver Nuggets ML"
-   },
-   "data_warning": "Alpha Diallo está en duda (questionable)",
-   "spread": {
-    "home": -2.0,
-    "away": 2.0
-   },
-   "total_points": 227.0,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -17.0,
-     19.0
-    ],
-    "total": [
-     202.0,
-     253.0
-    ]
-   },
-   "game_warnings": [
-    "Alpha Diallo está en duda (questionable)"
-   ],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +1.1, Elo +3.4, equipo +2.4, cuatro factores +1.9.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para DEN.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de POR vale 0.6 puntos más por partido.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de DEN",
-     "favors": "away",
-     "detail": "Sin Spencer Jones, Julian Strawther: DEN pierde 1.3 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909919",
    "espn_game_id": "401909919",
@@ -1082,6 +1009,79 @@
      "favors": "home",
      "detail": "Sin Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 0.5 puntos.",
      "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909918",
+   "espn_game_id": "401909918",
+   "starts_at": "2026-11-03T02:00Z",
+   "home": {
+    "name": "Denver Nuggets",
+    "code": "DEN"
+   },
+   "away": {
+    "name": "Portland Trail Blazers",
+    "code": "POR"
+   },
+   "projection": {
+    "home_score": 114.1,
+    "away_score": 112.9
+   },
+   "win_probability": {
+    "home": 0.5309,
+    "away": 0.4691
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Denver Nuggets ML"
+   },
+   "data_warning": "Alpha Diallo está en duda (questionable)",
+   "spread": {
+    "home": -2.0,
+    "away": 2.0
+   },
+   "total_points": 227.0,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -17.0,
+     19.0
+    ],
+    "total": [
+     202.0,
+     253.0
+    ]
+   },
+   "game_warnings": [
+    "Alpha Diallo está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +1.1, Elo +3.4, equipo +2.4, cuatro factores +1.9.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para DEN.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de POR vale 0.6 puntos más por partido.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de DEN",
+     "favors": "away",
+     "detail": "Sin Spencer Jones, Julian Strawther: DEN pierde 1.3 puntos.",
+     "supports_pick": false
     }
    ]
   }
