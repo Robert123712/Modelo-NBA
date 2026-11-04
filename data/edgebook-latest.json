@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-04T18:15:00.000540Z",
+ "generated_at": "2026-11-04T18:45:00.000584Z",
  "date_local": "2026-11-04",
  "games": [
   {
@@ -457,51 +457,50 @@
     "code": "UTAH"
    },
    "projection": {
-    "home_score": 120.2,
-    "away_score": 114.2
+    "home_score": 119.6,
+    "away_score": 114.3
    },
    "win_probability": {
-    "home": 0.6645,
-    "away": 0.3355
+    "home": 0.6451,
+    "away": 0.3549
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "New Orleans Pelicans ML"
    },
-   "data_warning": "Trey Murphy III está en duda (probable)",
+   "data_warning": "Trey Murphy III está en duda (questionable)",
    "spread": {
     "home": -6.0,
     "away": 6.0
    },
-   "total_points": 234.4,
+   "total_points": 233.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -12.0,
-     24.0
+     -13.0,
+     23.0
     ],
     "total": [
-     209.0,
-     261.0
+     208.0,
+     260.0
     ]
    },
    "game_warnings": [
-    "Trey Murphy III está en duda (probable)",
-    "Julian Reese está en duda (probable)"
+    "Trey Murphy III está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NO. Margen de NO: jugadores +5.8, Elo +7.5, equipo +6.8, cuatro factores +6.5.",
+     "detail": "4 de 4 modelos ven ganar a NO. Margen de NO: jugadores +5.1, Elo +7.5, equipo +6.8, cuatro factores +6.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NO vale 4.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NO vale 3.3 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -513,7 +512,7 @@
     {
      "label": "Bajas de UTAH",
      "favors": "home",
-     "detail": "Sin Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 2.4 puntos.",
+     "detail": "Sin Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 1.7 puntos.",
      "supports_pick": true
     }
    ]
@@ -602,24 +601,24 @@
     "code": "MIN"
    },
    "projection": {
-    "home_score": 109.7,
-    "away_score": 106.8
+    "home_score": 109.5,
+    "away_score": 106.9
    },
    "win_probability": {
-    "home": 0.58,
-    "away": 0.42
+    "home": 0.5734,
+    "away": 0.4266
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Houston Rockets ML"
    },
-   "data_warning": "Terrence Shannon Jr. está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -3.0,
     "away": 3.0
    },
-   "total_points": 216.5,
+   "total_points": 216.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -631,21 +630,19 @@
      242.0
     ]
    },
-   "game_warnings": [
-    "Terrence Shannon Jr. está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +3.0, Elo +3.5, equipo +3.6, cuatro factores +5.0.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +2.7, Elo +3.5, equipo +3.6, cuatro factores +5.0.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 1.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 1.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -653,6 +650,12 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.7 puntos para HOU.",
      "supports_pick": true
+    },
+    {
+     "label": "Bajas de HOU",
+     "favors": "away",
+     "detail": "Sin Steven Adams, Clint Capela: HOU pierde 0.6 puntos.",
+     "supports_pick": false
     }
    ]
   },
