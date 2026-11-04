@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-04T20:15:00.000589Z",
+ "generated_at": "2026-11-04T21:15:00.000597Z",
  "date_local": "2026-11-04",
  "games": [
   {
@@ -891,50 +891,48 @@
     "code": "LAL"
    },
    "projection": {
-    "home_score": 114.6,
-    "away_score": 124.7
+    "home_score": 114.3,
+    "away_score": 124.8
    },
    "win_probability": {
-    "home": 0.2331,
-    "away": 0.7669
+    "home": 0.2256,
+    "away": 0.7744
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Los Angeles Lakers ML"
    },
-   "data_warning": "Precious Achiuwa está en duda (probable)",
+   "data_warning": null,
    "spread": {
-    "home": 10.0,
-    "away": -10.0
+    "home": 11.0,
+    "away": -11.0
    },
-   "total_points": 239.3,
+   "total_points": 239.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -28.0,
-     8.0
+     7.0
     ],
     "total": [
      214.0,
      265.0
     ]
    },
-   "game_warnings": [
-    "Precious Achiuwa está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +10.1, Elo +6.8, equipo +9.5, cuatro factores +5.4.",
+     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +10.4, Elo +6.8, equipo +9.5, cuatro factores +5.4.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de LAL vale 11.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de LAL vale 12.2 puntos más por partido.",
      "supports_pick": true
     },
     {
