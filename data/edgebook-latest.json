@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-04T18:45:00.000584Z",
+ "generated_at": "2026-11-04T19:15:00.000536Z",
  "date_local": "2026-11-04",
  "games": [
   {
@@ -819,24 +819,24 @@
     "code": "DAL"
    },
    "projection": {
-    "home_score": 115.7,
+    "home_score": 115.8,
     "away_score": 105.8
    },
    "win_probability": {
-    "home": 0.7621,
-    "away": 0.2379
+    "home": 0.765,
+    "away": 0.235
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "San Antonio Spurs ML"
    },
-   "data_warning": "Santi Aldama está en duda (questionable)",
+   "data_warning": "Santi Aldama está en duda (doubtful)",
    "spread": {
     "home": -10.0,
     "away": 10.0
    },
-   "total_points": 221.4,
+   "total_points": 221.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -849,20 +849,20 @@
     ]
    },
    "game_warnings": [
-    "Santi Aldama está en duda (questionable)"
+    "Santi Aldama está en duda (doubtful)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +9.7, Elo +11.8, equipo +11.5, cuatro factores +11.1.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +9.9, Elo +11.8, equipo +11.5, cuatro factores +11.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 8.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 8.1 puntos más por partido.",
      "supports_pick": true
     },
     {
