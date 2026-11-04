@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-04T15:15:00.848124Z",
+ "generated_at": "2026-11-04T17:45:00.000591Z",
  "date_local": "2026-11-04",
  "games": [
   {
@@ -18,12 +18,12 @@
     "code": "PHI"
    },
    "projection": {
-    "home_score": 110.9,
-    "away_score": 105.9
+    "home_score": 111.3,
+    "away_score": 105.5
    },
    "win_probability": {
-    "home": 0.6419,
-    "away": 0.3581
+    "home": 0.6611,
+    "away": 0.3389
    },
    "pick": {
     "market": "moneyline",
@@ -32,19 +32,19 @@
    },
    "data_warning": null,
    "spread": {
-    "home": -5.0,
-    "away": 5.0
+    "home": -6.0,
+    "away": 6.0
    },
    "total_points": 216.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -13.0,
-     23.0
+     -12.0,
+     24.0
     ],
     "total": [
      191.0,
-     242.0
+     243.0
     ]
    },
    "game_warnings": [],
@@ -53,13 +53,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +5.0, Elo +5.1, equipo +7.7, cuatro factores +9.3.",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +5.7, Elo +5.1, equipo +7.7, cuatro factores +9.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DET vale 3.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DET vale 4.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -71,7 +71,7 @@
     {
      "label": "Bajas de DET",
      "favors": "away",
-     "detail": "Sin Jalen Duren, Isaiah Joe: DET pierde 2.5 puntos.",
+     "detail": "Sin Jalen Duren, Elijah Harkless, Isaiah Joe: DET pierde 1.8 puntos.",
      "supports_pick": false
     }
    ]
@@ -89,24 +89,24 @@
     "code": "ATL"
    },
    "projection": {
-    "home_score": 112.5,
-    "away_score": 115.7
+    "home_score": 112.9,
+    "away_score": 115.8
    },
    "win_probability": {
-    "home": 0.4107,
-    "away": 0.5893
+    "home": 0.4168,
+    "away": 0.5832
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Atlanta Hawks ML"
    },
-   "data_warning": "Alex Sarr está en duda (questionable)",
+   "data_warning": "Bilal Coulibaly está en duda (questionable)",
    "spread": {
-    "home": 4.0,
-    "away": -4.0
+    "home": 3.0,
+    "away": -3.0
    },
-   "total_points": 228.2,
+   "total_points": 228.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -114,11 +114,12 @@
      15.0
     ],
     "total": [
-     202.0,
-     254.0
+     203.0,
+     255.0
     ]
    },
    "game_warnings": [
+    "Bilal Coulibaly está en duda (questionable)",
     "Alex Sarr está en duda (questionable)",
     "Keshon Gilbert está en duda (doubtful)",
     "Jalen Johnson está en duda (questionable)"
@@ -128,19 +129,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +3.1, Elo +4.5, equipo +5.5, cuatro factores +6.8.",
+     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +2.9, Elo +4.5, equipo +5.5, cuatro factores +6.8.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de ATL vale 4.9 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de WSH",
-     "favors": "away",
-     "detail": "Sin Reece Beekman, Justin Champagnie, Tristan Vukcevic: WSH pierde 0.6 puntos.",
+     "detail": "Con los minutos proyectados, la rotación de ATL vale 4.7 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -463,15 +458,15 @@
     "away_score": 114.2
    },
    "win_probability": {
-    "home": 0.6657,
-    "away": 0.3343
+    "home": 0.6645,
+    "away": 0.3355
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "New Orleans Pelicans ML"
    },
-   "data_warning": null,
+   "data_warning": "Trey Murphy III está en duda (probable)",
    "spread": {
     "home": -6.0,
     "away": 6.0
@@ -488,19 +483,22 @@
      261.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Trey Murphy III está en duda (probable)",
+    "Julian Reese está en duda (probable)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NO. Margen de NO: jugadores +5.9, Elo +7.5, equipo +6.8, cuatro factores +6.5.",
+     "detail": "4 de 4 modelos ven ganar a NO. Margen de NO: jugadores +5.8, Elo +7.5, equipo +6.8, cuatro factores +6.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NO vale 4.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NO vale 4.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -512,7 +510,7 @@
     {
      "label": "Bajas de UTAH",
      "favors": "home",
-     "detail": "Sin Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 2.5 puntos.",
+     "detail": "Sin Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 2.4 puntos.",
      "supports_pick": true
     }
    ]
@@ -530,56 +528,54 @@
     "code": "CLE"
    },
    "projection": {
-    "home_score": 114.1,
-    "away_score": 114.8
+    "home_score": 114.3,
+    "away_score": 114.5
    },
    "win_probability": {
-    "home": 0.4789,
-    "away": 0.5211
+    "home": 0.4919,
+    "away": 0.5081
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Cleveland Cavaliers ML"
    },
-   "data_warning": "Jaylin Williams está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": 1.0,
     "away": -1.0
    },
-   "total_points": 228.9,
+   "total_points": 228.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -19.0,
-     17.0
+     -18.0,
+     18.0
     ],
     "total": [
      203.0,
      255.0
     ]
    },
-   "game_warnings": [
-    "Jaylin Williams está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores -0.8, Elo +5.2, equipo +5.7, cuatro factores +6.2.",
+     "detail": "3 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores -0.3, Elo +5.2, equipo +5.7, cuatro factores +6.2.",
      "supports_pick": false
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de CLE vale 2.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de CLE vale 2.1 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de OKC",
      "favors": "away",
-     "detail": "Sin Chet Holmgren, Nikola Topic, Cason Wallace: OKC pierde 6.8 puntos.",
+     "detail": "Sin Chet Holmgren, Nikola Topic, Cason Wallace: OKC pierde 6.3 puntos.",
      "supports_pick": true
     },
     {
