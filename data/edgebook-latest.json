@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-04T19:15:00.000536Z",
+ "generated_at": "2026-11-04T20:15:00.000589Z",
  "date_local": "2026-11-04",
  "games": [
   {
@@ -89,12 +89,12 @@
     "code": "ATL"
    },
    "projection": {
-    "home_score": 112.9,
-    "away_score": 115.8
+    "home_score": 112.6,
+    "away_score": 115.9
    },
    "win_probability": {
-    "home": 0.4168,
-    "away": 0.5832
+    "home": 0.4083,
+    "away": 0.5917
    },
    "pick": {
     "market": "moneyline",
@@ -103,25 +103,24 @@
    },
    "data_warning": "Bilal Coulibaly está en duda (questionable)",
    "spread": {
-    "home": 3.0,
-    "away": -3.0
+    "home": 4.0,
+    "away": -4.0
    },
-   "total_points": 228.8,
+   "total_points": 228.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -21.0,
-     15.0
+     14.0
     ],
     "total": [
      203.0,
-     255.0
+     254.0
     ]
    },
    "game_warnings": [
     "Bilal Coulibaly está en duda (questionable)",
     "Alex Sarr está en duda (questionable)",
-    "Keshon Gilbert está en duda (doubtful)",
     "Jalen Johnson está en duda (questionable)"
    ],
    "warnings": [],
@@ -129,13 +128,19 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +2.9, Elo +4.5, equipo +5.5, cuatro factores +6.8.",
+     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +3.2, Elo +4.5, equipo +5.5, cuatro factores +6.8.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de ATL vale 4.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de ATL vale 5.0 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de WSH",
+     "favors": "away",
+     "detail": "Sin Reece Beekman, Justin Champagnie, Tristan Vukcevic: WSH pierde 0.7 puntos.",
      "supports_pick": true
     },
     {
