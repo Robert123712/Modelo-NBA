@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-04T23:15:00.000576Z",
+ "generated_at": "2026-11-04T23:45:00.000563Z",
  "date_local": "2026-11-04",
  "games": [
   {
@@ -160,24 +160,24 @@
     "code": "MIL"
    },
    "projection": {
-    "home_score": 120.7,
+    "home_score": 121.2,
     "away_score": 105.5
    },
    "win_probability": {
-    "home": 0.863,
-    "away": 0.137
+    "home": 0.8713,
+    "away": 0.1287
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Boston Celtics ML"
    },
-   "data_warning": "Payton Pritchard está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": -15.0,
-    "away": 15.0
+    "home": -16.0,
+    "away": 16.0
    },
-   "total_points": 226.2,
+   "total_points": 226.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -189,21 +189,19 @@
      252.0
     ]
    },
-   "game_warnings": [
-    "Payton Pritchard está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +15.1, Elo +12.6, equipo +14.2, cuatro factores +13.6.",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +15.6, Elo +12.6, equipo +14.2, cuatro factores +13.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 13.3 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 13.9 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -215,7 +213,7 @@
     {
      "label": "Bajas de BOS",
      "favors": "away",
-     "detail": "Sin Devin Carter, Jayson Tatum: BOS pierde 1.4 puntos.",
+     "detail": "Sin Devin Carter, Jayson Tatum: BOS pierde 0.8 puntos.",
      "supports_pick": false
     }
    ]
@@ -234,23 +232,23 @@
    },
    "projection": {
     "home_score": 104.3,
-    "away_score": 107.8
+    "away_score": 107.9
    },
    "win_probability": {
-    "home": 0.4014,
-    "away": 0.5986
+    "home": 0.4002,
+    "away": 0.5998
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Charlotte Hornets ML"
    },
-   "data_warning": "Coby White está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": 4.0,
     "away": -4.0
    },
-   "total_points": 212.1,
+   "total_points": 212.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -262,15 +260,13 @@
      238.0
     ]
    },
-   "game_warnings": [
-    "Coby White está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +3.4, Elo +5.0, equipo +3.7, cuatro factores +6.6.",
+     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +3.5, Elo +5.0, equipo +3.7, cuatro factores +6.6.",
      "supports_pick": true
     },
     {
@@ -526,12 +522,12 @@
     "code": "CLE"
    },
    "projection": {
-    "home_score": 114.3,
-    "away_score": 114.5
+    "home_score": 113.5,
+    "away_score": 115.4
    },
    "win_probability": {
-    "home": 0.4919,
-    "away": 0.5081
+    "home": 0.4437,
+    "away": 0.5563
    },
    "pick": {
     "market": "moneyline",
@@ -540,15 +536,15 @@
    },
    "data_warning": null,
    "spread": {
-    "home": 1.0,
-    "away": -1.0
+    "home": 3.0,
+    "away": -3.0
    },
    "total_points": 228.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -18.0,
-     18.0
+     -20.0,
+     16.0
     ],
     "total": [
      203.0,
@@ -561,19 +557,19 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores -0.3, Elo +5.2, equipo +5.7, cuatro factores +6.2.",
+     "detail": "3 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores -2.0, Elo +5.2, equipo +5.7, cuatro factores +6.2.",
      "supports_pick": false
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de CLE vale 2.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de CLE vale 3.8 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de OKC",
      "favors": "away",
-     "detail": "Sin Chet Holmgren, Nikola Topic, Cason Wallace: OKC pierde 6.3 puntos.",
+     "detail": "Sin Chet Holmgren, Nikola Topic, Cason Wallace: OKC pierde 8.0 puntos.",
      "supports_pick": true
     },
     {
