@@ -2,222 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-05T00:45:00.000529Z",
+ "generated_at": "2026-11-05T01:15:00.000532Z",
  "date_local": "2026-11-04",
  "games": [
-  {
-   "league_game_id": "401909927",
-   "espn_game_id": "401909927",
-   "starts_at": "2026-11-05T01:00Z",
-   "home": {
-    "name": "Memphis Grizzlies",
-    "code": "MEM"
-   },
-   "away": {
-    "name": "Indiana Pacers",
-    "code": "IND"
-   },
-   "projection": {
-    "home_score": 118.1,
-    "away_score": 109.5
-   },
-   "win_probability": {
-    "home": 0.7361,
-    "away": 0.2639
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Memphis Grizzlies ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -9.0,
-    "away": 9.0
-   },
-   "total_points": 227.7,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -10.0,
-     26.0
-    ],
-    "total": [
-     202.0,
-     254.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +8.6, Elo +5.0, equipo +6.0, cuatro factores +2.1.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MEM vale 6.8 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para MEM.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de IND",
-     "favors": "home",
-     "detail": "Sin Johnny Furphy, Tyrese Haliburton, T.J. McConnell: IND pierde 3.1 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909928",
-   "espn_game_id": "401909928",
-   "starts_at": "2026-11-05T01:00Z",
-   "home": {
-    "name": "New Orleans Pelicans",
-    "code": "NO"
-   },
-   "away": {
-    "name": "Utah Jazz",
-    "code": "UTAH"
-   },
-   "projection": {
-    "home_score": 118.8,
-    "away_score": 114.6
-   },
-   "win_probability": {
-    "home": 0.614,
-    "away": 0.386
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "New Orleans Pelicans ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -5.0,
-    "away": 5.0
-   },
-   "total_points": 233.4,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -14.0,
-     22.0
-    ],
-    "total": [
-     208.0,
-     260.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NO. Margen de NO: jugadores +4.0, Elo +7.5, equipo +6.8, cuatro factores +6.5.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NO vale 2.2 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para NO.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de UTAH",
-     "favors": "home",
-     "detail": "Sin Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 0.6 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909929",
-   "espn_game_id": "401909929",
-   "starts_at": "2026-11-05T01:00Z",
-   "home": {
-    "name": "Oklahoma City Thunder",
-    "code": "OKC"
-   },
-   "away": {
-    "name": "Cleveland Cavaliers",
-    "code": "CLE"
-   },
-   "projection": {
-    "home_score": 113.5,
-    "away_score": 115.4
-   },
-   "win_probability": {
-    "home": 0.4437,
-    "away": 0.5563
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Cleveland Cavaliers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 3.0,
-    "away": -3.0
-   },
-   "total_points": 228.8,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -20.0,
-     16.0
-    ],
-    "total": [
-     203.0,
-     255.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores -2.0, Elo +5.2, equipo +5.7, cuatro factores +6.2.",
-     "supports_pick": false
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de CLE vale 3.8 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de OKC",
-     "favors": "away",
-     "detail": "Sin Chet Holmgren, Nikola Topic, Cason Wallace: OKC pierde 8.0 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para OKC.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909930",
    "espn_game_id": "401909930",
@@ -377,55 +164,53 @@
    },
    "projection": {
     "home_score": 110.8,
-    "away_score": 115.9
+    "away_score": 116.4
    },
    "win_probability": {
-    "home": 0.3564,
-    "away": 0.6436
+    "home": 0.3407,
+    "away": 0.6593
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Portland Trail Blazers ML"
    },
-   "data_warning": "Jordan Goodwin está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": 5.0,
-    "away": -5.0
+    "home": 6.0,
+    "away": -6.0
    },
-   "total_points": 226.7,
+   "total_points": 227.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -23.0,
-     13.0
+     12.0
     ],
     "total": [
      201.0,
      253.0
     ]
    },
-   "game_warnings": [
-    "Jordan Goodwin está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +5.1, Elo +0.4, equipo +2.1, cuatro factores +1.3.",
+     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +5.7, Elo +0.4, equipo +2.1, cuatro factores +1.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de POR vale 6.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de POR vale 7.4 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de PHX",
      "favors": "away",
-     "detail": "Sin Mark Williams: PHX pierde 2.2 puntos.",
+     "detail": "Sin Jordan Goodwin, Mark Williams: PHX pierde 2.7 puntos.",
      "supports_pick": true
     },
     {
@@ -461,7 +246,7 @@
     "side": "home",
     "label": "San Antonio Spurs ML"
    },
-   "data_warning": "Santi Aldama está en duda (doubtful)",
+   "data_warning": null,
    "spread": {
     "home": -10.0,
     "away": 10.0
@@ -478,9 +263,7 @@
      247.0
     ]
    },
-   "game_warnings": [
-    "Santi Aldama está en duda (doubtful)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
@@ -989,6 +772,226 @@
      "label": "Bajas de NY",
      "favors": "away",
      "detail": "Sin Josh Hart: NY pierde 1.2 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909927",
+   "espn_game_id": "401909927",
+   "starts_at": "2026-11-05T01:00Z",
+   "home": {
+    "name": "Memphis Grizzlies",
+    "code": "MEM"
+   },
+   "away": {
+    "name": "Indiana Pacers",
+    "code": "IND"
+   },
+   "projection": {
+    "home_score": 117.3,
+    "away_score": 110.2
+   },
+   "win_probability": {
+    "home": 0.6992,
+    "away": 0.3008
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Memphis Grizzlies ML"
+   },
+   "data_warning": "Quinten Post está en duda (questionable)",
+   "spread": {
+    "home": -7.0,
+    "away": 7.0
+   },
+   "total_points": 227.5,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -11.0,
+     25.0
+    ],
+    "total": [
+     202.0,
+     254.0
+    ]
+   },
+   "game_warnings": [
+    "Quinten Post está en duda (questionable)",
+    "Kobe Brown está en duda (questionable)",
+    "Kelly Oubre Jr. está en duda (questionable)",
+    "Jalen Slawson está en duda (questionable)",
+    "Obi Toppin está en duda (questionable)",
+    "Ivica Zubac está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +7.1, Elo +5.0, equipo +6.0, cuatro factores +2.1.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de MEM vale 5.3 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para MEM.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de IND",
+     "favors": "home",
+     "detail": "Sin Johnny Furphy, Tyrese Haliburton, T.J. McConnell: IND pierde 1.6 puntos.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909928",
+   "espn_game_id": "401909928",
+   "starts_at": "2026-11-05T01:00Z",
+   "home": {
+    "name": "New Orleans Pelicans",
+    "code": "NO"
+   },
+   "away": {
+    "name": "Utah Jazz",
+    "code": "UTAH"
+   },
+   "projection": {
+    "home_score": 118.8,
+    "away_score": 114.6
+   },
+   "win_probability": {
+    "home": 0.6152,
+    "away": 0.3848
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "New Orleans Pelicans ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -5.0,
+    "away": 5.0
+   },
+   "total_points": 233.4,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -14.0,
+     22.0
+    ],
+    "total": [
+     208.0,
+     260.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a NO. Margen de NO: jugadores +4.0, Elo +7.5, equipo +6.8, cuatro factores +6.5.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de NO vale 2.2 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para NO.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de UTAH",
+     "favors": "home",
+     "detail": "Sin Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 0.6 puntos.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909929",
+   "espn_game_id": "401909929",
+   "starts_at": "2026-11-05T01:00Z",
+   "home": {
+    "name": "Oklahoma City Thunder",
+    "code": "OKC"
+   },
+   "away": {
+    "name": "Cleveland Cavaliers",
+    "code": "CLE"
+   },
+   "projection": {
+    "home_score": 113.5,
+    "away_score": 115.4
+   },
+   "win_probability": {
+    "home": 0.4437,
+    "away": 0.5563
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Cleveland Cavaliers ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 3.0,
+    "away": -3.0
+   },
+   "total_points": 228.8,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -20.0,
+     16.0
+    ],
+    "total": [
+     203.0,
+     255.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "3 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores -2.0, Elo +5.2, equipo +5.7, cuatro factores +6.2.",
+     "supports_pick": false
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de CLE vale 3.8 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de OKC",
+     "favors": "away",
+     "detail": "Sin Chet Holmgren, Nikola Topic, Cason Wallace: OKC pierde 8.0 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para OKC.",
      "supports_pick": false
     }
    ]
