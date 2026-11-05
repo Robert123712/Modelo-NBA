@@ -1,24 +1,24 @@
 {
  "schema_version": "1.0",
  "sport": "NBA",
- "generated_at": "2026-11-04T05:15:00.000570Z",
+ "generated_at": "2026-11-05T05:15:00.000515Z",
  "minimum_meaningful": 100,
  "versions": [
   {
    "model_version": "nba-0.7.0",
    "unlabeled": false,
    "from": "2026-10-22",
-   "to": "2026-11-02",
-   "graded": 93,
-   "pending": 14,
-   "significant": false,
+   "to": "2026-11-04",
+   "graded": 104,
+   "pending": 5,
+   "significant": true,
    "markets": {
     "moneyline": {
-     "n": 93,
-     "base_rate": 0.5054,
-     "brier": 0.1999,
-     "log_loss": 0.5777,
-     "hit_rate": 0.6559,
+     "n": 104,
+     "base_rate": 0.5096,
+     "brier": 0.2036,
+     "log_loss": 0.5857,
+     "hit_rate": 0.6442,
      "baseline_brier": 0.25,
      "calibration": [
       {
@@ -31,9 +31,9 @@
       {
        "from": 0.35,
        "to": 0.45,
-       "n": 11,
-       "predicted": 0.401,
-       "observed": 0.5455
+       "n": 15,
+       "predicted": 0.4,
+       "observed": 0.5333
       },
       {
        "from": 0.45,
@@ -52,25 +52,25 @@
       {
        "from": 0.55,
        "to": 0.65,
-       "n": 21,
-       "predicted": 0.5936,
-       "observed": 0.5238
+       "n": 24,
+       "predicted": 0.5926,
+       "observed": 0.5417
       },
       {
        "from": 0.65,
        "to": 1.01,
-       "n": 32,
-       "predicted": 0.7557,
-       "observed": 0.6875
+       "n": 36,
+       "predicted": 0.7564,
+       "observed": 0.6667
       }
      ]
     }
    },
    "projected_total": {
-    "n": 93,
-    "mae": 16.0,
-    "bias": 3.931,
-    "std_error": 2.0829,
+    "n": 104,
+    "mae": 15.311,
+    "bias": 3.245,
+    "std_error": 1.9077,
     "by_month": [
      {
       "month": "2026-10",
@@ -81,18 +81,18 @@
      },
      {
       "month": "2026-11",
-      "n": 19,
-      "mae": 16.995,
-      "bias": 5.184,
-      "std_error": 4.5777
+      "n": 30,
+      "mae": 14.24,
+      "bias": 2.347,
+      "std_error": 3.2337
      }
     ]
    },
    "projected_margin": {
-    "n": 93,
-    "mae": 10.72,
-    "bias": 1.86,
-    "std_error": 1.4291,
+    "n": 104,
+    "mae": 10.769,
+    "bias": 1.692,
+    "std_error": 1.3336,
     "by_month": [
      {
       "month": "2026-10",
@@ -103,10 +103,10 @@
      },
      {
       "month": "2026-11",
-      "n": 19,
-      "mae": 9.947,
-      "bias": 3.0,
-      "std_error": 2.7053
+      "n": 30,
+      "mae": 10.4,
+      "bias": 2.0,
+      "std_error": 2.171
      }
     ]
    },
@@ -116,13 +116,13 @@
    },
    "interval_coverage": {
     "margin": {
-     "n": 93,
-     "covered": 0.8172,
+     "n": 104,
+     "covered": 0.8365,
      "nominal": 0.8
     },
     "total": {
-     "n": 93,
-     "covered": 0.7957,
+     "n": 104,
+     "covered": 0.8173,
      "nominal": 0.8
     }
    }
