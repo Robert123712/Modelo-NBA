@@ -2,139 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-05T02:45:00.000534Z",
+ "generated_at": "2026-11-05T03:15:00.000552Z",
  "date_local": "2026-11-04",
  "games": [
-  {
-   "league_game_id": "401909933",
-   "espn_game_id": "401909933",
-   "starts_at": "2026-11-05T02:30Z",
-   "home": {
-    "name": "San Antonio Spurs",
-    "code": "SA"
-   },
-   "away": {
-    "name": "Dallas Mavericks",
-    "code": "DAL"
-   },
-   "projection": {
-    "home_score": 115.8,
-    "away_score": 105.8
-   },
-   "win_probability": {
-    "home": 0.765,
-    "away": 0.235
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "San Antonio Spurs ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -10.0,
-    "away": 10.0
-   },
-   "total_points": 221.6,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -8.0,
-     28.0
-    ],
-    "total": [
-     196.0,
-     247.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +9.9, Elo +11.8, equipo +11.5, cuatro factores +11.1.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 8.1 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para SA.",
-     "supports_pick": true
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909934",
-   "espn_game_id": "401909934",
-   "starts_at": "2026-11-05T03:00Z",
-   "home": {
-    "name": "Sacramento Kings",
-    "code": "SAC"
-   },
-   "away": {
-    "name": "Los Angeles Lakers",
-    "code": "LAL"
-   },
-   "projection": {
-    "home_score": 114.3,
-    "away_score": 124.8
-   },
-   "win_probability": {
-    "home": 0.2256,
-    "away": 0.7744
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Los Angeles Lakers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 11.0,
-    "away": -11.0
-   },
-   "total_points": 239.1,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -28.0,
-     7.0
-    ],
-    "total": [
-     214.0,
-     265.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +10.4, Elo +6.8, equipo +9.5, cuatro factores +5.4.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de LAL vale 12.2 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para SAC.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909935",
    "espn_game_id": "401909935",
@@ -1003,6 +873,136 @@
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para PHX.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909933",
+   "espn_game_id": "401909933",
+   "starts_at": "2026-11-05T02:30Z",
+   "home": {
+    "name": "San Antonio Spurs",
+    "code": "SA"
+   },
+   "away": {
+    "name": "Dallas Mavericks",
+    "code": "DAL"
+   },
+   "projection": {
+    "home_score": 115.8,
+    "away_score": 105.8
+   },
+   "win_probability": {
+    "home": 0.765,
+    "away": 0.235
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "San Antonio Spurs ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -10.0,
+    "away": 10.0
+   },
+   "total_points": 221.6,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -8.0,
+     28.0
+    ],
+    "total": [
+     196.0,
+     247.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +9.9, Elo +11.8, equipo +11.5, cuatro factores +11.1.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 8.1 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para SA.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909934",
+   "espn_game_id": "401909934",
+   "starts_at": "2026-11-05T03:00Z",
+   "home": {
+    "name": "Sacramento Kings",
+    "code": "SAC"
+   },
+   "away": {
+    "name": "Los Angeles Lakers",
+    "code": "LAL"
+   },
+   "projection": {
+    "home_score": 114.3,
+    "away_score": 124.8
+   },
+   "win_probability": {
+    "home": 0.2256,
+    "away": 0.7744
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Los Angeles Lakers ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 11.0,
+    "away": -11.0
+   },
+   "total_points": 239.1,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -28.0,
+     7.0
+    ],
+    "total": [
+     214.0,
+     265.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +10.4, Elo +6.8, equipo +9.5, cuatro factores +5.4.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de LAL vale 12.2 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para SAC.",
      "supports_pick": false
     }
    ]
