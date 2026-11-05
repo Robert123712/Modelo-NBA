@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-05T01:15:00.000532Z",
+ "generated_at": "2026-11-05T01:45:00.000561Z",
  "date_local": "2026-11-04",
  "games": [
-  {
-   "league_game_id": "401909930",
-   "espn_game_id": "401909930",
-   "starts_at": "2026-11-05T01:30Z",
-   "home": {
-    "name": "Houston Rockets",
-    "code": "HOU"
-   },
-   "away": {
-    "name": "Minnesota Timberwolves",
-    "code": "MIN"
-   },
-   "projection": {
-    "home_score": 109.5,
-    "away_score": 106.9
-   },
-   "win_probability": {
-    "home": 0.5734,
-    "away": 0.4266
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Houston Rockets ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -3.0,
-    "away": 3.0
-   },
-   "total_points": 216.4,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -15.0,
-     21.0
-    ],
-    "total": [
-     191.0,
-     242.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +2.7, Elo +3.5, equipo +3.6, cuatro factores +5.0.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 1.0 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para HOU.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de HOU",
-     "favors": "away",
-     "detail": "Sin Steven Adams, Clint Capela: HOU pierde 0.6 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909931",
    "espn_game_id": "401909931",
@@ -89,51 +18,48 @@
     "code": "TOR"
    },
    "projection": {
-    "home_score": 116.0,
+    "home_score": 115.7,
     "away_score": 113.5
    },
    "win_probability": {
-    "home": 0.5694,
-    "away": 0.4306
+    "home": 0.5638,
+    "away": 0.4362
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Denver Nuggets ML"
    },
-   "data_warning": "Cameron Johnson está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": -3.0,
     "away": 3.0
    },
-   "total_points": 229.4,
+   "total_points": 229.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -15.0,
+     -16.0,
      20.0
     ],
     "total": [
-     204.0,
+     203.0,
      255.0
     ]
    },
-   "game_warnings": [
-    "Cameron Johnson está en duda (probable)",
-    "Jakob Poeltl está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +2.4, Elo +2.2, equipo +0.8, cuatro factores -0.0.",
+     "detail": "3 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +2.3, Elo +2.2, equipo +0.8, cuatro factores -0.0.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DEN vale 0.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DEN vale 0.5 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -145,7 +71,7 @@
     {
      "label": "Bajas de TOR",
      "favors": "home",
-     "detail": "Sin Kawhi Leonard, Malachi Smith: TOR pierde 1.8 puntos.",
+     "detail": "Sin Kawhi Leonard, Malachi Smith: TOR pierde 1.7 puntos.",
      "supports_pick": true
     }
    ]
@@ -992,6 +918,77 @@
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para OKC.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909930",
+   "espn_game_id": "401909930",
+   "starts_at": "2026-11-05T01:30Z",
+   "home": {
+    "name": "Houston Rockets",
+    "code": "HOU"
+   },
+   "away": {
+    "name": "Minnesota Timberwolves",
+    "code": "MIN"
+   },
+   "projection": {
+    "home_score": 109.5,
+    "away_score": 106.9
+   },
+   "win_probability": {
+    "home": 0.5734,
+    "away": 0.4266
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Houston Rockets ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -3.0,
+    "away": 3.0
+   },
+   "total_points": 216.4,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -15.0,
+     21.0
+    ],
+    "total": [
+     191.0,
+     242.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +2.7, Elo +3.5, equipo +3.6, cuatro factores +5.0.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 1.0 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para HOU.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de HOU",
+     "favors": "away",
+     "detail": "Sin Steven Adams, Clint Capela: HOU pierde 0.6 puntos.",
      "supports_pick": false
     }
    ]
