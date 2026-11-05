@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-05T05:15:00.000515Z",
+ "generated_at": "2026-11-05T05:45:00.000599Z",
  "date_local": "2026-11-05",
  "games": [
   {
@@ -18,12 +18,12 @@
     "code": "ORL"
    },
    "projection": {
-    "home_score": 111.8,
+    "home_score": 111.7,
     "away_score": 114.8
    },
    "win_probability": {
-    "home": 0.414,
-    "away": 0.586
+    "home": 0.4132,
+    "away": 0.5868
    },
    "pick": {
     "market": "moneyline",
@@ -35,7 +35,7 @@
     "home": 4.0,
     "away": -4.0
    },
-   "total_points": 226.6,
+   "total_points": 226.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -95,12 +95,12 @@
     "code": "MIA"
    },
    "projection": {
-    "home_score": 124.7,
-    "away_score": 116.7
+    "home_score": 124.9,
+    "away_score": 116.8
    },
    "win_probability": {
-    "home": 0.7199,
-    "away": 0.2801
+    "home": 0.72,
+    "away": 0.28
    },
    "pick": {
     "market": "moneyline",
@@ -112,7 +112,7 @@
     "home": -8.0,
     "away": 8.0
    },
-   "total_points": 241.4,
+   "total_points": 241.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -120,8 +120,8 @@
      26.0
     ],
     "total": [
-     215.0,
-     267.0
+     216.0,
+     268.0
     ]
    },
    "game_warnings": [],
@@ -130,7 +130,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +8.0, Elo +2.9, equipo +3.3, cuatro factores +0.9.",
+     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +8.0, Elo +2.9, equipo +3.2, cuatro factores +0.9.",
      "supports_pick": true
     },
     {
