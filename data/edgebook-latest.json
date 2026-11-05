@@ -2,151 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-04T23:45:00.000563Z",
+ "generated_at": "2026-11-05T00:15:00.000590Z",
  "date_local": "2026-11-04",
  "games": [
-  {
-   "league_game_id": "401909922",
-   "espn_game_id": "401909922",
-   "starts_at": "2026-11-05T00:00Z",
-   "home": {
-    "name": "Detroit Pistons",
-    "code": "DET"
-   },
-   "away": {
-    "name": "Philadelphia 76ers",
-    "code": "PHI"
-   },
-   "projection": {
-    "home_score": 111.3,
-    "away_score": 105.5
-   },
-   "win_probability": {
-    "home": 0.6611,
-    "away": 0.3389
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Detroit Pistons ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -6.0,
-    "away": 6.0
-   },
-   "total_points": 216.8,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -12.0,
-     24.0
-    ],
-    "total": [
-     191.0,
-     243.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +5.7, Elo +5.1, equipo +7.7, cuatro factores +9.3.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DET vale 4.0 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para DET.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de DET",
-     "favors": "away",
-     "detail": "Sin Jalen Duren, Elijah Harkless, Isaiah Joe: DET pierde 1.8 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909923",
-   "espn_game_id": "401909923",
-   "starts_at": "2026-11-05T00:00Z",
-   "home": {
-    "name": "Washington Wizards",
-    "code": "WSH"
-   },
-   "away": {
-    "name": "Atlanta Hawks",
-    "code": "ATL"
-   },
-   "projection": {
-    "home_score": 112.0,
-    "away_score": 115.6
-   },
-   "win_probability": {
-    "home": 0.4001,
-    "away": 0.5999
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Atlanta Hawks ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 4.0,
-    "away": -4.0
-   },
-   "total_points": 227.6,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -22.0,
-     14.0
-    ],
-    "total": [
-     202.0,
-     253.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +3.6, Elo +4.5, equipo +5.5, cuatro factores +6.8.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de ATL vale 5.4 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de WSH",
-     "favors": "away",
-     "detail": "Sin Reece Beekman, Justin Champagnie, Tristan Vukcevic: WSH pierde 1.1 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para WSH.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909924",
    "espn_game_id": "401909924",
@@ -988,6 +846,152 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para LAC.",
      "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909922",
+   "espn_game_id": "401909922",
+   "starts_at": "2026-11-05T00:00Z",
+   "home": {
+    "name": "Detroit Pistons",
+    "code": "DET"
+   },
+   "away": {
+    "name": "Philadelphia 76ers",
+    "code": "PHI"
+   },
+   "projection": {
+    "home_score": 111.3,
+    "away_score": 105.5
+   },
+   "win_probability": {
+    "home": 0.6611,
+    "away": 0.3389
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Detroit Pistons ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -6.0,
+    "away": 6.0
+   },
+   "total_points": 216.8,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -12.0,
+     24.0
+    ],
+    "total": [
+     191.0,
+     243.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +5.7, Elo +5.1, equipo +7.7, cuatro factores +9.3.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de DET vale 4.0 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para DET.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de DET",
+     "favors": "away",
+     "detail": "Sin Jalen Duren, Elijah Harkless, Isaiah Joe: DET pierde 1.8 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909923",
+   "espn_game_id": "401909923",
+   "starts_at": "2026-11-05T00:00Z",
+   "home": {
+    "name": "Washington Wizards",
+    "code": "WSH"
+   },
+   "away": {
+    "name": "Atlanta Hawks",
+    "code": "ATL"
+   },
+   "projection": {
+    "home_score": 113.0,
+    "away_score": 117.0
+   },
+   "win_probability": {
+    "home": 0.3876,
+    "away": 0.6124
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Atlanta Hawks ML"
+   },
+   "data_warning": "Bilal Coulibaly está en duda (questionable)",
+   "spread": {
+    "home": 4.0,
+    "away": -4.0
+   },
+   "total_points": 230.0,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -22.0,
+     14.0
+    ],
+    "total": [
+     204.0,
+     256.0
+    ]
+   },
+   "game_warnings": [
+    "Bilal Coulibaly está en duda (questionable)",
+    "Alex Sarr está en duda (questionable)",
+    "Jalen Johnson está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +4.0, Elo +4.5, equipo +5.5, cuatro factores +6.8.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de ATL vale 5.8 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de WSH",
+     "favors": "away",
+     "detail": "Sin Reece Beekman, Justin Champagnie, Tristan Vukcevic: WSH pierde 1.5 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para WSH.",
+     "supports_pick": false
     }
    ]
   }
