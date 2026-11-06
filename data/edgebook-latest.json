@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-06T19:15:00.000581Z",
+ "generated_at": "2026-11-06T21:15:00.000662Z",
  "date_local": "2026-11-06",
  "games": [
   {
@@ -588,19 +588,19 @@
     "code": "SA"
    },
    "projection": {
-    "home_score": 107.3,
-    "away_score": 122.1
+    "home_score": 107.2,
+    "away_score": 122.2
    },
    "win_probability": {
-    "home": 0.1405,
-    "away": 0.8595
+    "home": 0.1375,
+    "away": 0.8625
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "San Antonio Spurs ML"
    },
-   "data_warning": null,
+   "data_warning": "De'Andre Hunter está en duda (questionable)",
    "spread": {
     "home": 15.0,
     "away": -15.0
@@ -617,19 +617,21 @@
      255.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "De'Andre Hunter está en duda (questionable)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +14.9, Elo +11.2, equipo +14.1, cuatro factores +9.4.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +15.1, Elo +11.2, equipo +14.1, cuatro factores +9.4.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 16.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 16.9 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -641,7 +643,7 @@
     {
      "label": "Bajas de SA",
      "favors": "home",
-     "detail": "Sin Tobias Harris: SA pierde 1.2 puntos.",
+     "detail": "Sin Tobias Harris: SA pierde 1.0 puntos.",
      "supports_pick": false
     }
    ]
