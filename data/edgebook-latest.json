@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-06T22:15:00.000558Z",
+ "generated_at": "2026-11-06T22:45:00.000523Z",
  "date_local": "2026-11-06",
  "games": [
   {
@@ -18,50 +18,48 @@
     "code": "WSH"
    },
    "projection": {
-    "home_score": 117.8,
-    "away_score": 108.9
+    "home_score": 119.1,
+    "away_score": 108.6
    },
    "win_probability": {
-    "home": 0.7392,
-    "away": 0.2608
+    "home": 0.7744,
+    "away": 0.2256
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Atlanta Hawks ML"
    },
-   "data_warning": "Anthony Davis está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": -9.0,
-    "away": 9.0
+    "home": -11.0,
+    "away": 11.0
    },
-   "total_points": 226.7,
+   "total_points": 227.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -9.0,
-     27.0
+     -8.0,
+     28.0
     ],
     "total": [
-     201.0,
-     253.0
+     202.0,
+     254.0
     ]
    },
-   "game_warnings": [
-    "Anthony Davis está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +9.0, Elo +9.5, equipo +9.6, cuatro factores +11.1.",
+     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +10.6, Elo +9.5, equipo +9.6, cuatro factores +11.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de ATL vale 7.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de ATL vale 8.9 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -73,7 +71,7 @@
     {
      "label": "Bajas de WSH",
      "favors": "home",
-     "detail": "Sin Reece Beekman, Justin Champagnie, Tristan Vukcevic: WSH pierde 1.7 puntos.",
+     "detail": "Sin Reece Beekman, Justin Champagnie, Anthony Davis: WSH pierde 3.4 puntos.",
      "supports_pick": true
     }
    ]
