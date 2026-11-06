@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-05T20:45:00.000582Z",
+ "generated_at": "2026-11-06T01:15:00.000617Z",
  "date_local": "2026-11-05",
  "games": [
   {
@@ -19,11 +19,11 @@
    },
    "projection": {
     "home_score": 111.6,
-    "away_score": 114.6
+    "away_score": 114.5
    },
    "win_probability": {
-    "home": 0.4133,
-    "away": 0.5867
+    "home": 0.4192,
+    "away": 0.5808
    },
    "pick": {
     "market": "moneyline",
@@ -32,10 +32,10 @@
    },
    "data_warning": null,
    "spread": {
-    "home": 4.0,
-    "away": -4.0
+    "home": 3.0,
+    "away": -3.0
    },
-   "total_points": 226.2,
+   "total_points": 226.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -53,13 +53,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores -3.0, Elo +1.0, equipo +1.3, cuatro factores +2.4.",
+     "detail": "3 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores -2.8, Elo +1.0, equipo +1.3, cuatro factores +2.4.",
      "supports_pick": false
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de ORL vale 2.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de ORL vale 2.5 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -71,7 +71,7 @@
     {
      "label": "Bajas de PHX",
      "favors": "away",
-     "detail": "Sin Jordan Goodwin, Mark Williams: PHX pierde 1.1 puntos.",
+     "detail": "Sin Jordan Goodwin, Mark Williams: PHX pierde 0.9 puntos.",
      "supports_pick": true
     },
     {
