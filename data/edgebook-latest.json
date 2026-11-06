@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-06T18:15:00.000573Z",
+ "generated_at": "2026-11-06T19:15:00.000581Z",
  "date_local": "2026-11-06",
  "games": [
   {
@@ -231,12 +231,12 @@
     "code": "UTAH"
    },
    "projection": {
-    "home_score": 115.7,
-    "away_score": 106.6
+    "home_score": 115.5,
+    "away_score": 106.8
    },
    "win_probability": {
-    "home": 0.747,
-    "away": 0.253
+    "home": 0.7391,
+    "away": 0.2609
    },
    "pick": {
     "market": "moneyline",
@@ -248,12 +248,12 @@
     "home": -9.0,
     "away": 9.0
    },
-   "total_points": 222.2,
+   "total_points": 222.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -9.0,
-     27.0
+     26.0
     ],
     "total": [
      197.0,
@@ -262,20 +262,21 @@
    },
    "game_warnings": [
     "Santi Aldama está en duda (probable)",
-    "Max Christie está en duda (probable)"
+    "Max Christie está en duda (probable)",
+    "Kyrie Irving está en duda (probable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +9.0, Elo +7.4, equipo +6.6, cuatro factores +5.2.",
+     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +8.6, Elo +7.4, equipo +6.6, cuatro factores +5.2.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DAL vale 7.3 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DAL vale 6.9 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -287,7 +288,7 @@
     {
      "label": "Bajas de UTAH",
      "favors": "home",
-     "detail": "Sin Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 1.1 puntos.",
+     "detail": "Sin Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 0.7 puntos.",
      "supports_pick": true
     }
    ]
