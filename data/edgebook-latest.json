@@ -2,86 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-06T02:15:00.000496Z",
+ "generated_at": "2026-11-06T03:15:00.000566Z",
  "date_local": "2026-11-05",
  "games": [
-  {
-   "league_game_id": "401909937",
-   "espn_game_id": "401909937",
-   "starts_at": "2026-11-06T03:00Z",
-   "home": {
-    "name": "Golden State Warriors",
-    "code": "GS"
-   },
-   "away": {
-    "name": "Miami Heat",
-    "code": "MIA"
-   },
-   "projection": {
-    "home_score": 123.8,
-    "away_score": 116.1
-   },
-   "win_probability": {
-    "home": 0.7116,
-    "away": 0.2884
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Golden State Warriors ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -8.0,
-    "away": 8.0
-   },
-   "total_points": 239.9,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -10.0,
-     26.0
-    ],
-    "total": [
-     214.0,
-     266.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +7.7, Elo +2.6, equipo +3.1, cuatro factores +0.6.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de GS vale 3.8 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para GS.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "home",
-     "detail": "MIA juega su segundo partido en dos noches: 2.1 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de GS",
-     "favors": "away",
-     "detail": "Sin Jimmy Butler III, Moses Moody, Kristaps Porzingis: GS pierde 1.5 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909936",
    "espn_game_id": "401909936",
@@ -155,6 +78,83 @@
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.7 puntos para PHX.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909937",
+   "espn_game_id": "401909937",
+   "starts_at": "2026-11-06T03:00Z",
+   "home": {
+    "name": "Golden State Warriors",
+    "code": "GS"
+   },
+   "away": {
+    "name": "Miami Heat",
+    "code": "MIA"
+   },
+   "projection": {
+    "home_score": 123.8,
+    "away_score": 116.1
+   },
+   "win_probability": {
+    "home": 0.7116,
+    "away": 0.2884
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Golden State Warriors ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -8.0,
+    "away": 8.0
+   },
+   "total_points": 239.9,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -10.0,
+     26.0
+    ],
+    "total": [
+     214.0,
+     266.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +7.7, Elo +2.6, equipo +3.1, cuatro factores +0.6.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de GS vale 3.8 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para GS.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "home",
+     "detail": "MIA juega su segundo partido en dos noches: 2.1 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de GS",
+     "favors": "away",
+     "detail": "Sin Jimmy Butler III, Moses Moody, Kristaps Porzingis: GS pierde 1.5 puntos.",
      "supports_pick": false
     }
    ]
