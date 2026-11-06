@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-06T15:15:00.773629Z",
+ "generated_at": "2026-11-06T16:15:00.000560Z",
  "date_local": "2026-11-06",
  "games": [
   {
@@ -381,11 +381,11 @@
    },
    "projection": {
     "home_score": 113.6,
-    "away_score": 120.6
+    "away_score": 120.8
    },
    "win_probability": {
-    "home": 0.3045,
-    "away": 0.6955
+    "home": 0.298,
+    "away": 0.702
    },
    "pick": {
     "market": "moneyline",
@@ -397,7 +397,7 @@
     "home": 7.0,
     "away": -7.0
    },
-   "total_points": 234.2,
+   "total_points": 234.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -417,13 +417,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +7.0, Elo +5.7, equipo +8.2, cuatro factores +8.1.",
+     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +7.2, Elo +5.7, equipo +8.2, cuatro factores +8.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de TOR vale 8.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de TOR vale 9.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -435,7 +435,7 @@
     {
      "label": "Bajas de TOR",
      "favors": "home",
-     "detail": "Sin Kawhi Leonard, Malachi Smith: TOR pierde 1.8 puntos.",
+     "detail": "Sin Kawhi Leonard, Malachi Smith: TOR pierde 1.6 puntos.",
      "supports_pick": false
     }
    ]
