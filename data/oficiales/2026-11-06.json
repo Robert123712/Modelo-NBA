@@ -3058,11 +3058,11 @@
   "tardia": false
  },
  "401909289": {
-  "generated_at": "2026-11-06T22:45:00.000523Z",
+  "generated_at": "2026-11-06T23:15:00.000530Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909289,
   "starts_at": "2026-11-07T00:30Z",
-  "minutos_antes": 105.0,
+  "minutos_antes": 75.0,
   "proyeccion": {
    "league_game_id": "401909289",
    "espn_game_id": "401909289",
@@ -3106,8 +3106,7 @@
     ]
    },
    "game_warnings": [
-    "Jarrett Allen está en duda (questionable)",
-    "Adem Bona está en duda (doubtful)"
+    "Jarrett Allen está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
@@ -4096,15 +4095,15 @@
     "a": 4431678,
     "j": "Tyrese Maxey",
     "lado": "away",
-    "min": 33.5,
+    "min": 34.1,
     "s": {
      "puntos": [
-      23.25,
+      23.36,
       12.0,
       35.0
      ],
      "rebotes": [
-      3.56,
+      3.7,
       1.0,
       6.0
      ],
@@ -4114,32 +4113,32 @@
       9.0
      ],
      "pra": [
-      32.42,
+      32.67,
       20.0,
       46.0
      ],
      "puntos_rebotes": [
-      26.81,
+      27.06,
       15.0,
       40.0
      ],
      "puntos_asistencias": [
-      28.86,
+      28.96,
       17.0,
       42.0
      ]
     },
     "ctx": {
-     "min_sano": 34.4,
+     "min_sano": 34.3,
      "rival": {
       "points": 1.0,
       "reb": 1.004,
       "assists": 0.973
      },
      "bajas": {
-      "points": 1.0,
+      "points": 1.008,
       "reb": 1.0,
-      "assists": 1.0
+      "assists": 0.988
      },
      "grupo": "G",
      "duda": false
@@ -4157,50 +4156,50 @@
     "a": 3917376,
     "j": "Jaylen Brown",
     "lado": "away",
-    "min": 33.1,
+    "min": 33.7,
     "s": {
      "puntos": [
-      21.64,
+      21.75,
       11.0,
       33.0
      ],
      "rebotes": [
-      6.66,
+      6.86,
       3.0,
       11.0
      ],
      "asistencias": [
-      4.04,
+      4.05,
       1.0,
       7.0
      ],
      "pra": [
-      32.34,
+      32.66,
       20.0,
       46.0
      ],
      "puntos_rebotes": [
-      28.3,
+      28.61,
       17.0,
       41.0
      ],
      "puntos_asistencias": [
-      25.68,
-      14.0,
+      25.8,
+      15.0,
       38.0
      ]
     },
     "ctx": {
-     "min_sano": 34.1,
+     "min_sano": 34.0,
      "rival": {
       "points": 1.0,
       "reb": 1.004,
       "assists": 0.973
      },
      "bajas": {
-      "points": 1.0,
+      "points": 1.008,
       "reb": 1.0,
-      "assists": 1.0
+      "assists": 0.988
      },
      "grupo": "G",
      "duda": false
@@ -4218,50 +4217,50 @@
     "a": 5124612,
     "j": "VJ Edgecombe",
     "lado": "away",
-    "min": 32.0,
+    "min": 32.6,
     "s": {
      "puntos": [
-      12.15,
+      12.25,
       5.0,
-      20.0
+      21.0
      ],
      "rebotes": [
-      6.33,
+      6.51,
       3.0,
       10.0
      ],
      "asistencias": [
-      3.46,
+      3.48,
       1.0,
       6.0
      ],
      "pra": [
-      21.95,
-      12.0,
+      22.24,
+      13.0,
       32.0
      ],
      "puntos_rebotes": [
-      18.48,
+      18.76,
       10.0,
       28.0
      ],
      "puntos_asistencias": [
-      15.61,
+      15.73,
       8.0,
       25.0
      ]
     },
     "ctx": {
-     "min_sano": 32.9,
+     "min_sano": 32.8,
      "rival": {
       "points": 1.0,
       "reb": 1.004,
       "assists": 0.973
      },
      "bajas": {
-      "points": 1.0,
+      "points": 1.009,
       "reb": 1.0,
-      "assists": 1.0
+      "assists": 0.988
      },
      "grupo": "G",
      "duda": false
@@ -4279,50 +4278,50 @@
     "a": 1966,
     "j": "LeBron James",
     "lado": "away",
-    "min": 30.8,
+    "min": 31.4,
     "s": {
      "puntos": [
-      16.84,
+      16.94,
       8.0,
       27.0
      ],
      "rebotes": [
-      6.73,
+      6.94,
       3.0,
       11.0
      ],
      "asistencias": [
-      7.48,
+      7.49,
       4.0,
       12.0
      ],
      "pra": [
-      31.05,
+      31.37,
       19.0,
       44.0
      ],
      "puntos_rebotes": [
-      23.57,
+      23.88,
       13.0,
       35.0
      ],
      "puntos_asistencias": [
-      24.32,
+      24.43,
       14.0,
       36.0
      ]
     },
     "ctx": {
-     "min_sano": 31.7,
+     "min_sano": 31.6,
      "rival": {
       "points": 1.0,
       "reb": 1.004,
       "assists": 0.999
      },
      "bajas": {
-      "points": 1.0,
+      "points": 1.01,
       "reb": 1.0,
-      "assists": 1.0
+      "assists": 0.988
      },
      "grupo": "F",
      "duda": false
@@ -4340,50 +4339,50 @@
     "a": 3059318,
     "j": "Joel Embiid",
     "lado": "away",
-    "min": 30.5,
+    "min": 31.2,
     "s": {
      "puntos": [
-      21.5,
+      21.68,
       11.0,
-      33.0
+      34.0
      ],
      "rebotes": [
-      9.28,
+      9.49,
       5.0,
       14.0
      ],
      "asistencias": [
-      4.44,
+      4.46,
       2.0,
       8.0
      ],
      "pra": [
-      35.22,
+      35.63,
       22.0,
       50.0
      ],
      "puntos_rebotes": [
-      30.78,
+      31.17,
       18.0,
-      44.0
+      45.0
      ],
      "puntos_asistencias": [
-      25.94,
-      14.0,
+      26.14,
+      15.0,
       39.0
      ]
     },
     "ctx": {
-     "min_sano": 31.5,
+     "min_sano": 31.4,
      "rival": {
       "points": 1.0,
       "reb": 1.004,
       "assists": 0.989
      },
      "bajas": {
-      "points": 1.0,
+      "points": 1.01,
       "reb": 1.0,
-      "assists": 1.0
+      "assists": 0.988
      },
      "grupo": "C",
      "duda": false
@@ -4401,36 +4400,36 @@
     "a": 3912848,
     "j": "Dean Wade",
     "lado": "away",
-    "min": 19.6,
+    "min": 20.4,
     "s": {
      "puntos": [
-      4.09,
+      4.23,
       0.0,
       9.0
      ],
      "rebotes": [
-      3.5,
+      3.72,
       1.0,
-      6.0
+      7.0
      ],
      "asistencias": [
-      1.6,
+      1.65,
       0.0,
       3.0
      ],
      "pra": [
-      9.2,
+      9.59,
       4.0,
       16.0
      ],
      "puntos_rebotes": [
-      7.59,
+      7.94,
       3.0,
-      13.0
+      14.0
      ],
      "puntos_asistencias": [
-      5.69,
-      1.0,
+      5.88,
+      2.0,
       11.0
      ]
     },
@@ -4442,9 +4441,9 @@
       "assists": 0.999
      },
      "bajas": {
-      "points": 1.0,
+      "points": 1.023,
       "reb": 1.0,
-      "assists": 1.0
+      "assists": 0.988
      },
      "grupo": "F",
      "duda": false
@@ -4462,50 +4461,50 @@
     "a": 4351851,
     "j": "Anfernee Simons",
     "lado": "away",
-    "min": 17.1,
+    "min": 17.9,
     "s": {
      "puntos": [
-      8.54,
+      8.78,
       2.0,
       16.0
      ],
      "rebotes": [
-      1.87,
+      2.04,
       0.0,
       4.0
      ],
      "asistencias": [
-      1.63,
+      1.69,
       0.0,
       4.0
      ],
      "pra": [
-      12.04,
-      4.0,
+      12.52,
+      5.0,
       21.0
      ],
      "puntos_rebotes": [
-      10.41,
-      3.0,
+      10.82,
+      4.0,
       19.0
      ],
      "puntos_asistencias": [
-      10.17,
+      10.47,
       3.0,
-      18.0
+      19.0
      ]
     },
     "ctx": {
-     "min_sano": 17.3,
+     "min_sano": 17.4,
      "rival": {
       "points": 1.0,
       "reb": 1.004,
       "assists": 0.973
      },
      "bajas": {
-      "points": 1.0,
+      "points": 1.029,
       "reb": 1.0,
-      "assists": 1.0
+      "assists": 0.988
      },
      "grupo": "G",
      "duda": false
@@ -4523,50 +4522,50 @@
     "a": 2581018,
     "j": "Kentavious Caldwell-Pope",
     "lado": "away",
-    "min": 16.5,
+    "min": 17.3,
     "s": {
      "puntos": [
-      4.65,
-      0.0,
+      4.84,
+      1.0,
       10.0
      ],
      "rebotes": [
-      2.09,
+      2.27,
       0.0,
-      4.0
+      5.0
      ],
      "asistencias": [
-      1.36,
+      1.39,
       0.0,
       3.0
      ],
      "pra": [
-      8.11,
-      2.0,
+      8.51,
+      3.0,
       15.0
      ],
      "puntos_rebotes": [
-      6.75,
+      7.11,
       2.0,
       13.0
      ],
      "puntos_asistencias": [
-      6.02,
+      6.24,
       1.0,
       12.0
      ]
     },
     "ctx": {
-     "min_sano": 16.7,
+     "min_sano": 16.8,
      "rival": {
       "points": 1.0,
       "reb": 1.004,
       "assists": 0.973
      },
      "bajas": {
-      "points": 1.0,
+      "points": 1.03,
       "reb": 1.0,
-      "assists": 1.0
+      "assists": 0.988
      },
      "grupo": "G",
      "duda": false
@@ -4584,11 +4583,11 @@
   "tardia": false
  },
  "401909290": {
-  "generated_at": "2026-11-06T22:45:00.000523Z",
+  "generated_at": "2026-11-06T23:15:00.000530Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909290,
   "starts_at": "2026-11-07T01:00Z",
-  "minutos_antes": 135.0,
+  "minutos_antes": 105.0,
   "proyeccion": {
    "league_game_id": "401909290",
    "espn_game_id": "401909290",
@@ -6117,11 +6116,11 @@
   "tardia": false
  },
  "401909291": {
-  "generated_at": "2026-11-06T22:45:00.000523Z",
+  "generated_at": "2026-11-06T23:15:00.000530Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909291,
   "starts_at": "2026-11-07T01:00Z",
-  "minutos_antes": 135.0,
+  "minutos_antes": 105.0,
   "proyeccion": {
    "league_game_id": "401909291",
    "espn_game_id": "401909291",
@@ -7646,11 +7645,11 @@
   "tardia": false
  },
  "401909292": {
-  "generated_at": "2026-11-06T22:45:00.000523Z",
+  "generated_at": "2026-11-06T23:15:00.000530Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909292,
   "starts_at": "2026-11-07T01:00Z",
-  "minutos_antes": 135.0,
+  "minutos_antes": 105.0,
   "proyeccion": {
    "league_game_id": "401909292",
    "espn_game_id": "401909292",
@@ -9179,11 +9178,11 @@
   "tardia": false
  },
  "401909293": {
-  "generated_at": "2026-11-06T22:45:00.000523Z",
+  "generated_at": "2026-11-06T23:15:00.000530Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909293,
   "starts_at": "2026-11-07T01:00Z",
-  "minutos_antes": 135.0,
+  "minutos_antes": 105.0,
   "proyeccion": {
    "league_game_id": "401909293",
    "espn_game_id": "401909293",
@@ -10708,11 +10707,11 @@
   "tardia": false
  },
  "401909294": {
-  "generated_at": "2026-11-06T22:45:00.000523Z",
+  "generated_at": "2026-11-06T23:15:00.000530Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909294,
   "starts_at": "2026-11-07T03:00Z",
-  "minutos_antes": 255.0,
+  "minutos_antes": 225.0,
   "proyeccion": {
    "league_game_id": "401909294",
    "espn_game_id": "401909294",
@@ -12231,11 +12230,11 @@
   "tardia": false
  },
  "401909295": {
-  "generated_at": "2026-11-06T22:45:00.000523Z",
+  "generated_at": "2026-11-06T23:15:00.000530Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909295,
   "starts_at": "2026-11-07T03:00Z",
-  "minutos_antes": 255.0,
+  "minutos_antes": 225.0,
   "proyeccion": {
    "league_game_id": "401909295",
    "espn_game_id": "401909295",

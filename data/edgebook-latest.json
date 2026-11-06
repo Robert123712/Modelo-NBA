@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-06T22:45:00.000523Z",
+ "generated_at": "2026-11-06T23:15:00.000530Z",
  "date_local": "2026-11-06",
  "games": [
   {
@@ -190,8 +190,7 @@
     ]
    },
    "game_warnings": [
-    "Jarrett Allen está en duda (questionable)",
-    "Adem Bona está en duda (doubtful)"
+    "Jarrett Allen está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
