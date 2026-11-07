@@ -2,74 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-07T21:45:00.000585Z",
+ "generated_at": "2026-11-07T22:15:00.000556Z",
  "date_local": "2026-11-07",
  "games": [
-  {
-   "league_game_id": "401909938",
-   "espn_game_id": "401909938",
-   "starts_at": "2026-11-07T22:00Z",
-   "home": {
-    "name": "Indiana Pacers",
-    "code": "IND"
-   },
-   "away": {
-    "name": "Denver Nuggets",
-    "code": "DEN"
-   },
-   "projection": {
-    "home_score": 109.9,
-    "away_score": 117.4
-   },
-   "win_probability": {
-    "home": 0.2936,
-    "away": 0.7064
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Denver Nuggets ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 8.0,
-    "away": -8.0
-   },
-   "total_points": 227.3,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -25.0,
-     10.0
-    ],
-    "total": [
-     202.0,
-     253.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +7.6, Elo +8.1, equipo +7.7, cuatro factores +6.8.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DEN vale 7.6 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de IND",
-     "favors": "away",
-     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Ben Sheppard: IND pierde 2.0 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909939",
    "espn_game_id": "401909939",
@@ -499,6 +434,73 @@
      "favors": "home",
      "detail": "Sin Tobias Harris: SA pierde 2.2 puntos.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909938",
+   "espn_game_id": "401909938",
+   "starts_at": "2026-11-07T22:00Z",
+   "home": {
+    "name": "Indiana Pacers",
+    "code": "IND"
+   },
+   "away": {
+    "name": "Denver Nuggets",
+    "code": "DEN"
+   },
+   "projection": {
+    "home_score": 109.9,
+    "away_score": 117.4
+   },
+   "win_probability": {
+    "home": 0.2936,
+    "away": 0.7064
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Denver Nuggets ML"
+   },
+   "data_warning": "DeMar DeRozan está en duda (probable)",
+   "spread": {
+    "home": 8.0,
+    "away": -8.0
+   },
+   "total_points": 227.2,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -25.0,
+     10.0
+    ],
+    "total": [
+     202.0,
+     253.0
+    ]
+   },
+   "game_warnings": [
+    "DeMar DeRozan está en duda (probable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +7.6, Elo +8.1, equipo +7.7, cuatro factores +6.8.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de DEN vale 7.6 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de IND",
+     "favors": "away",
+     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Ben Sheppard: IND pierde 2.0 puntos.",
+     "supports_pick": true
     }
    ]
   }
