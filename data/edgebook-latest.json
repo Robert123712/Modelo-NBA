@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-07T19:15:00.000564Z",
+ "generated_at": "2026-11-07T19:45:00.000561Z",
  "date_local": "2026-11-07",
  "games": [
   {
@@ -310,12 +310,12 @@
     "code": "ORL"
    },
    "projection": {
-    "home_score": 115.0,
-    "away_score": 109.2
+    "home_score": 114.5,
+    "away_score": 107.8
    },
    "win_probability": {
-    "home": 0.6581,
-    "away": 0.3419
+    "home": 0.6839,
+    "away": 0.3161
    },
    "pick": {
     "market": "moneyline",
@@ -324,19 +324,19 @@
    },
    "data_warning": null,
    "spread": {
-    "home": -6.0,
-    "away": 6.0
+    "home": -7.0,
+    "away": 7.0
    },
-   "total_points": 224.2,
+   "total_points": 222.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -12.0,
-     24.0
+     -11.0,
+     25.0
     ],
     "total": [
-     198.0,
-     250.0
+     197.0,
+     248.0
     ]
    },
    "game_warnings": [],
@@ -345,13 +345,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +5.8, Elo +3.4, equipo +5.0, cuatro factores +4.4.",
+     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +6.7, Elo +3.4, equipo +5.0, cuatro factores +4.4.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de GS vale 4.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de GS vale 5.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -359,12 +359,6 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.7 puntos para GS.",
      "supports_pick": true
-    },
-    {
-     "label": "Bajas de GS",
-     "favors": "away",
-     "detail": "Sin Jimmy Butler III, Moses Moody, Kristaps Porzingis: GS pierde 0.7 puntos.",
-     "supports_pick": false
     }
    ]
   },
