@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-07T18:15:00.000574Z",
+ "generated_at": "2026-11-07T19:15:00.000564Z",
  "date_local": "2026-11-07",
  "games": [
   {
@@ -237,51 +237,50 @@
     "code": "WSH"
    },
    "projection": {
-    "home_score": 119.1,
-    "away_score": 104.8
+    "home_score": 118.9,
+    "away_score": 105.2
    },
    "win_probability": {
-    "home": 0.8497,
-    "away": 0.1503
+    "home": 0.8394,
+    "away": 0.1606
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Oklahoma City Thunder ML"
    },
-   "data_warning": "Jaylin Williams está en duda (day-to-day)",
+   "data_warning": "Anthony Davis está en duda (questionable)",
    "spread": {
     "home": -14.0,
     "away": 14.0
    },
-   "total_points": 223.9,
+   "total_points": 224.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -4.0,
-     32.0
+     -5.0,
+     31.0
     ],
     "total": [
-     198.0,
+     199.0,
      250.0
     ]
    },
    "game_warnings": [
-    "Jaylin Williams está en duda (day-to-day)",
-    "Anthony Davis está en duda (day-to-day)"
+    "Anthony Davis está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +14.1, Elo +14.6, equipo +15.2, cuatro factores +15.9.",
+     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +13.5, Elo +14.6, equipo +15.2, cuatro factores +15.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de OKC vale 12.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de OKC vale 11.8 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -293,7 +292,7 @@
     {
      "label": "Bajas de OKC",
      "favors": "away",
-     "detail": "Sin Chet Holmgren, Cason Wallace, Jalen Williams: OKC pierde 1.2 puntos.",
+     "detail": "Sin Chet Holmgren, Nikola Topic, Cason Wallace: OKC pierde 1.8 puntos.",
      "supports_pick": false
     }
    ]
@@ -311,52 +310,48 @@
     "code": "ORL"
    },
    "projection": {
-    "home_score": 115.7,
+    "home_score": 115.0,
     "away_score": 109.2
    },
    "win_probability": {
-    "home": 0.6772,
-    "away": 0.3228
+    "home": 0.6581,
+    "away": 0.3419
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Golden State Warriors ML"
    },
-   "data_warning": "Draymond Green está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": -7.0,
-    "away": 7.0
+    "home": -6.0,
+    "away": 6.0
    },
-   "total_points": 224.8,
+   "total_points": 224.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -12.0,
-     25.0
+     24.0
     ],
     "total": [
-     199.0,
-     250.1
+     198.0,
+     250.0
     ]
    },
-   "game_warnings": [
-    "Draymond Green está en duda (questionable)",
-    "Gary Payton II está en duda (questionable)",
-    "Gui Santos está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +6.5, Elo +3.4, equipo +5.0, cuatro factores +4.4.",
+     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +5.8, Elo +3.4, equipo +5.0, cuatro factores +4.4.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de GS vale 4.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de GS vale 4.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -364,6 +359,12 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.7 puntos para GS.",
      "supports_pick": true
+    },
+    {
+     "label": "Bajas de GS",
+     "favors": "away",
+     "detail": "Sin Jimmy Butler III, Moses Moody, Kristaps Porzingis: GS pierde 0.7 puntos.",
+     "supports_pick": false
     }
    ]
   },
