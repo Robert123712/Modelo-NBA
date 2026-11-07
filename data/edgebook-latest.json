@@ -2,151 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-06T23:15:00.000530Z",
+ "generated_at": "2026-11-07T00:15:00.000551Z",
  "date_local": "2026-11-06",
  "games": [
-  {
-   "league_game_id": "401909287",
-   "espn_game_id": "401909287",
-   "starts_at": "2026-11-07T00:00Z",
-   "home": {
-    "name": "Atlanta Hawks",
-    "code": "ATL"
-   },
-   "away": {
-    "name": "Washington Wizards",
-    "code": "WSH"
-   },
-   "projection": {
-    "home_score": 119.1,
-    "away_score": 108.6
-   },
-   "win_probability": {
-    "home": 0.7744,
-    "away": 0.2256
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Atlanta Hawks ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -11.0,
-    "away": 11.0
-   },
-   "total_points": 227.7,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -8.0,
-     28.0
-    ],
-    "total": [
-     202.0,
-     254.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +10.6, Elo +9.5, equipo +9.6, cuatro factores +11.1.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de ATL vale 8.9 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para ATL.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de WSH",
-     "favors": "home",
-     "detail": "Sin Reece Beekman, Justin Champagnie, Anthony Davis: WSH pierde 3.4 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909288",
-   "espn_game_id": "401909288",
-   "starts_at": "2026-11-07T00:00Z",
-   "home": {
-    "name": "Charlotte Hornets",
-    "code": "CHA"
-   },
-   "away": {
-    "name": "Boston Celtics",
-    "code": "BOS"
-   },
-   "projection": {
-    "home_score": 98.5,
-    "away_score": 108.7
-   },
-   "win_probability": {
-    "home": 0.232,
-    "away": 0.768
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Boston Celtics ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 10.0,
-    "away": -10.0
-   },
-   "total_points": 207.2,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -28.0,
-     8.0
-    ],
-    "total": [
-     182.0,
-     233.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +10.2, Elo +3.3, equipo +5.3, cuatro factores +3.1.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 11.8 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de CHA",
-     "favors": "away",
-     "detail": "Sin Moussa Diabate, Kon Knueppel, Dennis Schroder: CHA pierde 4.1 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.6 puntos para CHA.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909289",
    "espn_game_id": "401909289",
@@ -160,44 +18,42 @@
     "code": "PHI"
    },
    "projection": {
-    "home_score": 116.3,
-    "away_score": 115.0
+    "home_score": 116.0,
+    "away_score": 115.7
    },
    "win_probability": {
-    "home": 0.5359,
-    "away": 0.4641
+    "home": 0.509,
+    "away": 0.491
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Cleveland Cavaliers ML"
    },
-   "data_warning": "Jarrett Allen está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": -2.0,
-    "away": 2.0
+    "home": -1.0,
+    "away": 1.0
    },
-   "total_points": 231.3,
+   "total_points": 231.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -16.0,
-     19.0
+     -17.0,
+     18.0
     ],
     "total": [
      206.0,
      258.0
     ]
    },
-   "game_warnings": [
-    "Jarrett Allen está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +1.3, Elo +1.0, equipo +2.8, cuatro factores +4.0.",
+     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +0.4, Elo +1.0, equipo +2.8, cuatro factores +4.0.",
      "supports_pick": true
     },
     {
@@ -207,9 +63,15 @@
      "supports_pick": true
     },
     {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de PHI vale 1.4 puntos más por partido.",
+     "supports_pick": false
+    },
+    {
      "label": "Bajas de CLE",
      "favors": "away",
-     "detail": "Sin Jaylon Tyson: CLE pierde 1.4 puntos.",
+     "detail": "Sin Jarrett Allen, Jaylon Tyson: CLE pierde 2.3 puntos.",
      "supports_pick": false
     }
    ]
@@ -373,52 +235,48 @@
     "code": "TOR"
    },
    "projection": {
-    "home_score": 113.8,
-    "away_score": 120.3
+    "home_score": 113.5,
+    "away_score": 119.5
    },
    "win_probability": {
-    "home": 0.318,
-    "away": 0.682
+    "home": 0.3298,
+    "away": 0.6702
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Toronto Raptors ML"
    },
-   "data_warning": "Scottie Barnes está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": 7.0,
-    "away": -7.0
+    "home": 6.0,
+    "away": -6.0
    },
-   "total_points": 234.1,
+   "total_points": 233.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -24.0,
-     11.0
+     12.0
     ],
     "total": [
-     209.0,
-     260.0
+     207.0,
+     259.0
     ]
    },
-   "game_warnings": [
-    "Scottie Barnes está en duda (questionable)",
-    "Jakob Poeltl está en duda (probable)",
-    "Immanuel Quickley está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +6.4, Elo +5.7, equipo +8.2, cuatro factores +8.1.",
+     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +6.0, Elo +5.7, equipo +8.2, cuatro factores +8.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de TOR vale 8.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de TOR vale 7.8 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -430,7 +288,7 @@
     {
      "label": "Bajas de TOR",
      "favors": "home",
-     "detail": "Sin Kawhi Leonard, Malachi Smith: TOR pierde 2.4 puntos.",
+     "detail": "Sin Scottie Barnes, Kawhi Leonard, Immanuel Quickley: TOR pierde 2.8 puntos.",
      "supports_pick": false
     }
    ]
@@ -640,6 +498,148 @@
      "label": "Bajas de SA",
      "favors": "home",
      "detail": "Sin Tobias Harris: SA pierde 1.0 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909287",
+   "espn_game_id": "401909287",
+   "starts_at": "2026-11-07T00:00Z",
+   "home": {
+    "name": "Atlanta Hawks",
+    "code": "ATL"
+   },
+   "away": {
+    "name": "Washington Wizards",
+    "code": "WSH"
+   },
+   "projection": {
+    "home_score": 119.1,
+    "away_score": 108.6
+   },
+   "win_probability": {
+    "home": 0.7744,
+    "away": 0.2256
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Atlanta Hawks ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -11.0,
+    "away": 11.0
+   },
+   "total_points": 227.7,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -8.0,
+     28.0
+    ],
+    "total": [
+     202.0,
+     254.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +10.6, Elo +9.5, equipo +9.6, cuatro factores +11.1.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de ATL vale 8.9 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para ATL.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de WSH",
+     "favors": "home",
+     "detail": "Sin Reece Beekman, Justin Champagnie, Anthony Davis: WSH pierde 3.4 puntos.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909288",
+   "espn_game_id": "401909288",
+   "starts_at": "2026-11-07T00:00Z",
+   "home": {
+    "name": "Charlotte Hornets",
+    "code": "CHA"
+   },
+   "away": {
+    "name": "Boston Celtics",
+    "code": "BOS"
+   },
+   "projection": {
+    "home_score": 98.5,
+    "away_score": 108.7
+   },
+   "win_probability": {
+    "home": 0.232,
+    "away": 0.768
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Boston Celtics ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 10.0,
+    "away": -10.0
+   },
+   "total_points": 207.2,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -28.0,
+     8.0
+    ],
+    "total": [
+     182.0,
+     233.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +10.2, Elo +3.3, equipo +5.3, cuatro factores +3.1.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 11.8 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de CHA",
+     "favors": "away",
+     "detail": "Sin Moussa Diabate, Kon Knueppel, Dennis Schroder: CHA pierde 4.1 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.6 puntos para CHA.",
      "supports_pick": false
     }
    ]
