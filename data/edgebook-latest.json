@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-07T15:45:00.000599Z",
+ "generated_at": "2026-11-07T18:15:00.000574Z",
  "date_local": "2026-11-07",
  "games": [
   {
@@ -87,37 +87,36 @@
     "code": "BKN"
    },
    "projection": {
-    "home_score": 118.0,
-    "away_score": 113.8
+    "home_score": 118.1,
+    "away_score": 113.3
    },
    "win_probability": {
-    "home": 0.622,
-    "away": 0.378
+    "home": 0.6387,
+    "away": 0.3613
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Atlanta Hawks ML"
    },
-   "data_warning": "Keshon Gilbert está en duda (day-to-day)",
+   "data_warning": "Noah Clowney está en duda (questionable)",
    "spread": {
     "home": -5.0,
     "away": 5.0
    },
-   "total_points": 231.8,
+   "total_points": 231.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -14.0,
-     22.0
+     -13.0,
+     23.0
     ],
     "total": [
      206.0,
-     258.0
+     257.0
     ]
    },
    "game_warnings": [
-    "Keshon Gilbert está en duda (day-to-day)",
     "Noah Clowney está en duda (questionable)"
    ],
    "warnings": [],
@@ -125,13 +124,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +4.0, Elo +10.6, equipo +10.1, cuatro factores +11.2.",
+     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +4.6, Elo +10.6, equipo +10.1, cuatro factores +11.2.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de ATL vale 4.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de ATL vale 5.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -149,7 +148,7 @@
     {
      "label": "Bajas de ATL",
      "favors": "away",
-     "detail": "Sin Mouhamed Gueye, Jalen Johnson, Jock Landale: ATL pierde 5.1 puntos.",
+     "detail": "Sin Keshon Gilbert, Mouhamed Gueye, Jalen Johnson: ATL pierde 4.5 puntos.",
      "supports_pick": false
     }
    ]
@@ -167,45 +166,48 @@
     "code": "NY"
    },
    "projection": {
-    "home_score": 112.4,
-    "away_score": 113.0
+    "home_score": 111.5,
+    "away_score": 113.7
    },
    "win_probability": {
-    "home": 0.4836,
-    "away": 0.5164
+    "home": 0.4374,
+    "away": 0.5626
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "New York Knicks ML"
    },
-   "data_warning": "Jarrett Allen está en duda (day-to-day)",
+   "data_warning": null,
    "spread": {
-    "home": 1.0,
-    "away": -1.0
+    "home": 3.0,
+    "away": -3.0
    },
-   "total_points": 225.5,
+   "total_points": 225.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -18.0,
-     17.0
+     -20.0,
+     16.0
     ],
     "total": [
-     200.0,
+     199.0,
      251.0
     ]
    },
-   "game_warnings": [
-    "Jarrett Allen está en duda (day-to-day)",
-    "Sam Merrill está en duda (day-to-day)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +0.8, Elo +1.7, equipo +1.9, cuatro factores +3.8.",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +2.3, Elo +1.7, equipo +1.9, cuatro factores +3.8.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 2.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -218,12 +220,6 @@
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.7 puntos para CLE.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de NY",
-     "favors": "home",
-     "detail": "Sin Josh Hart: NY pierde 1.2 puntos.",
      "supports_pick": false
     }
    ]
@@ -384,12 +380,12 @@
     "code": "HOU"
    },
    "projection": {
-    "home_score": 108.2,
-    "away_score": 115.4
+    "home_score": 108.1,
+    "away_score": 115.6
    },
    "win_probability": {
-    "home": 0.3004,
-    "away": 0.6996
+    "home": 0.2943,
+    "away": 0.7057
    },
    "pick": {
     "market": "moneyline",
@@ -398,15 +394,15 @@
    },
    "data_warning": "Jordan Goodwin está en duda (doubtful)",
    "spread": {
-    "home": 7.0,
-    "away": -7.0
+    "home": 8.0,
+    "away": -8.0
    },
-   "total_points": 223.6,
+   "total_points": 223.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -25.0,
-     11.0
+     10.0
     ],
     "total": [
      198.0,
@@ -421,19 +417,19 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +7.2, Elo +3.2, equipo +5.7, cuatro factores +4.1.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +7.4, Elo +3.2, equipo +5.7, cuatro factores +4.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 8.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 9.1 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de PHX",
      "favors": "away",
-     "detail": "Sin Mark Williams: PHX pierde 2.2 puntos.",
+     "detail": "Sin Mark Williams: PHX pierde 2.4 puntos.",
      "supports_pick": true
     },
     {
