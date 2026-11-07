@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-07T21:15:00.000568Z",
+ "generated_at": "2026-11-07T21:45:00.000585Z",
  "date_local": "2026-11-07",
  "games": [
   {
@@ -30,12 +30,12 @@
     "side": "away",
     "label": "Denver Nuggets ML"
    },
-   "data_warning": "DeMar DeRozan está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": 8.0,
     "away": -8.0
    },
-   "total_points": 227.2,
+   "total_points": 227.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -47,9 +47,7 @@
      253.0
     ]
    },
-   "game_warnings": [
-    "DeMar DeRozan está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
