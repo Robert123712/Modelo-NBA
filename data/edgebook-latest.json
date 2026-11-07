@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-07T19:45:00.000561Z",
+ "generated_at": "2026-11-07T20:45:00.000598Z",
  "date_local": "2026-11-07",
  "games": [
   {
@@ -18,38 +18,36 @@
     "code": "DEN"
    },
    "projection": {
-    "home_score": 108.4,
-    "away_score": 117.2
+    "home_score": 109.9,
+    "away_score": 117.4
    },
    "win_probability": {
-    "home": 0.2632,
-    "away": 0.7368
+    "home": 0.2936,
+    "away": 0.7064
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Denver Nuggets ML"
    },
-   "data_warning": "T.J. McConnell está en duda (questionable)",
+   "data_warning": "DeMar DeRozan está en duda (probable)",
    "spread": {
-    "home": 9.0,
-    "away": -9.0
+    "home": 8.0,
+    "away": -8.0
    },
-   "total_points": 225.6,
+   "total_points": 227.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -26.0,
-     9.0
+     -25.0,
+     10.0
     ],
     "total": [
-     200.0,
-     252.0
+     202.0,
+     253.0
     ]
    },
    "game_warnings": [
-    "T.J. McConnell está en duda (questionable)",
-    "Kelly Oubre Jr. está en duda (questionable)",
     "DeMar DeRozan está en duda (probable)"
    ],
    "warnings": [],
@@ -57,19 +55,19 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +8.8, Elo +8.1, equipo +7.7, cuatro factores +6.8.",
+     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +7.6, Elo +8.1, equipo +7.7, cuatro factores +6.8.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DEN vale 8.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DEN vale 7.6 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de IND",
      "favors": "away",
-     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Ben Sheppard: IND pierde 3.3 puntos.",
+     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Ben Sheppard: IND pierde 2.0 puntos.",
      "supports_pick": true
     }
    ]
