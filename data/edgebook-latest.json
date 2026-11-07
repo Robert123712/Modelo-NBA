@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-07T15:15:00.823627Z",
+ "generated_at": "2026-11-07T15:45:00.000599Z",
  "date_local": "2026-11-07",
  "games": [
   {
@@ -297,7 +297,7 @@
     {
      "label": "Bajas de OKC",
      "favors": "away",
-     "detail": "Sin Chet Holmgren, Nikola Topic, Cason Wallace: OKC pierde 1.2 puntos.",
+     "detail": "Sin Chet Holmgren, Cason Wallace, Jalen Williams: OKC pierde 1.2 puntos.",
      "supports_pick": false
     }
    ]
