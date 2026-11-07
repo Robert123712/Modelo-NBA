@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-07T00:15:00.000551Z",
+ "generated_at": "2026-11-07T00:45:00.000553Z",
  "date_local": "2026-11-06",
  "games": [
-  {
-   "league_game_id": "401909289",
-   "espn_game_id": "401909289",
-   "starts_at": "2026-11-07T00:30Z",
-   "home": {
-    "name": "Cleveland Cavaliers",
-    "code": "CLE"
-   },
-   "away": {
-    "name": "Philadelphia 76ers",
-    "code": "PHI"
-   },
-   "projection": {
-    "home_score": 116.0,
-    "away_score": 115.7
-   },
-   "win_probability": {
-    "home": 0.509,
-    "away": 0.491
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Cleveland Cavaliers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -1.0,
-    "away": 1.0
-   },
-   "total_points": 231.7,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -17.0,
-     18.0
-    ],
-    "total": [
-     206.0,
-     258.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +0.4, Elo +1.0, equipo +2.8, cuatro factores +4.0.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para CLE.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de PHI vale 1.4 puntos más por partido.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de CLE",
-     "favors": "away",
-     "detail": "Sin Jarrett Allen, Jaylon Tyson: CLE pierde 2.3 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909290",
    "espn_game_id": "401909290",
@@ -90,51 +19,47 @@
    },
    "projection": {
     "home_score": 115.5,
-    "away_score": 106.8
+    "away_score": 106.6
    },
    "win_probability": {
-    "home": 0.7391,
-    "away": 0.2609
+    "home": 0.7449,
+    "away": 0.2551
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Dallas Mavericks ML"
    },
-   "data_warning": "Santi Aldama está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": -9.0,
     "away": 9.0
    },
-   "total_points": 222.3,
+   "total_points": 222.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -9.0,
-     26.0
+     27.0
     ],
     "total": [
-     197.0,
+     196.0,
      248.0
     ]
    },
-   "game_warnings": [
-    "Santi Aldama está en duda (probable)",
-    "Max Christie está en duda (probable)",
-    "Kyrie Irving está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +8.6, Elo +7.4, equipo +6.6, cuatro factores +5.2.",
+     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +8.9, Elo +7.4, equipo +6.6, cuatro factores +5.2.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DAL vale 6.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DAL vale 7.2 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -146,7 +71,7 @@
     {
      "label": "Bajas de UTAH",
      "favors": "home",
-     "detail": "Sin Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 0.7 puntos.",
+     "detail": "Sin Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 1.0 puntos.",
      "supports_pick": true
     }
    ]
@@ -442,24 +367,24 @@
     "code": "SA"
    },
    "projection": {
-    "home_score": 107.2,
-    "away_score": 122.2
+    "home_score": 107.0,
+    "away_score": 122.5
    },
    "win_probability": {
-    "home": 0.1375,
-    "away": 0.8625
+    "home": 0.1298,
+    "away": 0.8702
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "San Antonio Spurs ML"
    },
-   "data_warning": "De'Andre Hunter está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": 15.0,
-    "away": -15.0
+    "home": 16.0,
+    "away": -16.0
    },
-   "total_points": 229.5,
+   "total_points": 229.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -471,33 +396,25 @@
      255.0
     ]
    },
-   "game_warnings": [
-    "De'Andre Hunter está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +15.1, Elo +11.2, equipo +14.1, cuatro factores +9.4.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +15.6, Elo +11.2, equipo +14.1, cuatro factores +9.4.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 16.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 17.4 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para SAC.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de SA",
-     "favors": "home",
-     "detail": "Sin Tobias Harris: SA pierde 1.0 puntos.",
      "supports_pick": false
     }
    ]
@@ -640,6 +557,73 @@
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.6 puntos para CHA.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909289",
+   "espn_game_id": "401909289",
+   "starts_at": "2026-11-07T00:30Z",
+   "home": {
+    "name": "Cleveland Cavaliers",
+    "code": "CLE"
+   },
+   "away": {
+    "name": "Philadelphia 76ers",
+    "code": "PHI"
+   },
+   "projection": {
+    "home_score": 116.3,
+    "away_score": 115.0
+   },
+   "win_probability": {
+    "home": 0.5359,
+    "away": 0.4641
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Cleveland Cavaliers ML"
+   },
+   "data_warning": "Jarrett Allen está en duda (questionable)",
+   "spread": {
+    "home": -2.0,
+    "away": 2.0
+   },
+   "total_points": 231.3,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -16.0,
+     19.0
+    ],
+    "total": [
+     206.0,
+     258.0
+    ]
+   },
+   "game_warnings": [
+    "Jarrett Allen está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +1.3, Elo +1.0, equipo +2.8, cuatro factores +4.0.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para CLE.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de CLE",
+     "favors": "away",
+     "detail": "Sin Jaylon Tyson: CLE pierde 1.4 puntos.",
      "supports_pick": false
     }
    ]
