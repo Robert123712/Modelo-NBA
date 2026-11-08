@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-08T17:45:00.000498Z",
+ "generated_at": "2026-11-08T18:15:00.000561Z",
  "date_local": "2026-11-08",
  "games": [
   {
@@ -94,12 +94,12 @@
     "code": "LAL"
    },
    "projection": {
-    "home_score": 113.4,
+    "home_score": 113.5,
     "away_score": 110.0
    },
    "win_probability": {
-    "home": 0.5987,
-    "away": 0.4013
+    "home": 0.6012,
+    "away": 0.3988
    },
    "pick": {
     "market": "moneyline",
@@ -111,7 +111,7 @@
     "home": -4.0,
     "away": 4.0
    },
-   "total_points": 223.4,
+   "total_points": 223.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -131,13 +131,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +3.5, Elo +4.1, equipo +4.1, cuatro factores +4.7.",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +3.6, Elo +4.1, equipo +4.1, cuatro factores +4.7.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DET vale 1.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DET vale 1.8 puntos más por partido.",
      "supports_pick": true
     },
     {
