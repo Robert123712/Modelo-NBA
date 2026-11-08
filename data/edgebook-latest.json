@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-08T21:45:00.000516Z",
+ "generated_at": "2026-11-08T23:15:00.000604Z",
  "date_local": "2026-11-08",
  "games": [
-  {
-   "league_game_id": "401909946",
-   "espn_game_id": "401909946",
-   "starts_at": "2026-11-08T23:00Z",
-   "home": {
-    "name": "Detroit Pistons",
-    "code": "DET"
-   },
-   "away": {
-    "name": "Los Angeles Lakers",
-    "code": "LAL"
-   },
-   "projection": {
-    "home_score": 113.5,
-    "away_score": 108.5
-   },
-   "win_probability": {
-    "home": 0.6405,
-    "away": 0.3595
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Detroit Pistons ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -5.0,
-    "away": 5.0
-   },
-   "total_points": 222.0,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -13.0,
-     23.0
-    ],
-    "total": [
-     196.0,
-     248.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +5.1, Elo +4.1, equipo +4.1, cuatro factores +4.7.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DET vale 3.3 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para DET.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de LAL",
-     "favors": "home",
-     "detail": "Sin Luka Doncic: LAL pierde 1.2 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909947",
    "espn_game_id": "401909947",
@@ -497,6 +426,77 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.9 puntos para CHI.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909946",
+   "espn_game_id": "401909946",
+   "starts_at": "2026-11-08T23:00Z",
+   "home": {
+    "name": "Detroit Pistons",
+    "code": "DET"
+   },
+   "away": {
+    "name": "Los Angeles Lakers",
+    "code": "LAL"
+   },
+   "projection": {
+    "home_score": 113.5,
+    "away_score": 108.5
+   },
+   "win_probability": {
+    "home": 0.6405,
+    "away": 0.3595
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Detroit Pistons ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -5.0,
+    "away": 5.0
+   },
+   "total_points": 222.0,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -13.0,
+     23.0
+    ],
+    "total": [
+     196.0,
+     248.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +5.1, Elo +4.1, equipo +4.1, cuatro factores +4.7.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de DET vale 3.3 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para DET.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de LAL",
+     "favors": "home",
+     "detail": "Sin Luka Doncic: LAL pierde 1.2 puntos.",
+     "supports_pick": true
     }
    ]
   }
