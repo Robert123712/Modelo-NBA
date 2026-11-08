@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-08T05:15:00.000654Z",
+ "generated_at": "2026-11-08T05:45:00.000577Z",
  "date_local": "2026-11-08",
  "games": [
   {
@@ -22,8 +22,8 @@
     "away_score": 121.8
    },
    "win_probability": {
-    "home": 0.2898,
-    "away": 0.7102
+    "home": 0.2885,
+    "away": 0.7115
    },
    "pick": {
     "market": "moneyline",
@@ -57,7 +57,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a PHI. Margen de PHI: jugadores +7.5, Elo +6.7, equipo +6.8, cuatro factores +2.8.",
+     "detail": "4 de 4 modelos ven ganar a PHI. Margen de PHI: jugadores +7.6, Elo +6.7, equipo +6.9, cuatro factores +2.8.",
      "supports_pick": true
     },
     {
@@ -93,12 +93,12 @@
     "code": "LAL"
    },
    "projection": {
-    "home_score": 113.5,
-    "away_score": 110.1
+    "home_score": 113.4,
+    "away_score": 110.0
    },
    "win_probability": {
-    "home": 0.5972,
-    "away": 0.4028
+    "home": 0.5987,
+    "away": 0.4013
    },
    "pick": {
     "market": "moneyline",
@@ -110,7 +110,7 @@
     "home": -4.0,
     "away": 4.0
    },
-   "total_points": 223.6,
+   "total_points": 223.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -130,7 +130,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +3.4, Elo +4.1, equipo +4.2, cuatro factores +4.7.",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +3.5, Elo +4.1, equipo +4.1, cuatro factores +4.7.",
      "supports_pick": true
     },
     {
@@ -142,7 +142,7 @@
     {
      "label": "Localía",
      "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para DET.",
+     "detail": "Jugar en casa vale 1.7 puntos para DET.",
      "supports_pick": true
     }
    ]
@@ -160,12 +160,12 @@
     "code": "UTAH"
    },
    "projection": {
-    "home_score": 119.2,
-    "away_score": 102.8
+    "home_score": 119.0,
+    "away_score": 102.7
    },
    "win_probability": {
-    "home": 0.8812,
-    "away": 0.1188
+    "home": 0.8807,
+    "away": 0.1193
    },
    "pick": {
     "market": "moneyline",
@@ -177,7 +177,7 @@
     "home": -16.0,
     "away": 16.0
    },
-   "total_points": 222.1,
+   "total_points": 221.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -209,7 +209,7 @@
     {
      "label": "Localía",
      "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para MIN.",
+     "detail": "Jugar en casa vale 1.7 puntos para MIN.",
      "supports_pick": true
     },
     {
@@ -233,12 +233,12 @@
     "code": "BKN"
    },
    "projection": {
-    "home_score": 117.2,
-    "away_score": 103.4
+    "home_score": 117.1,
+    "away_score": 103.3
    },
    "win_probability": {
-    "home": 0.8413,
-    "away": 0.1587
+    "home": 0.8414,
+    "away": 0.1586
    },
    "pick": {
     "market": "moneyline",
@@ -250,12 +250,12 @@
     "home": -14.0,
     "away": 14.0
    },
-   "total_points": 220.5,
+   "total_points": 220.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -5.0,
-     31.0
+     32.0
     ],
     "total": [
      195.0,
@@ -308,8 +308,8 @@
     "away_score": 118.8
    },
    "win_probability": {
-    "home": 0.1696,
-    "away": 0.8304
+    "home": 0.1691,
+    "away": 0.8309
    },
    "pick": {
     "market": "moneyline",
@@ -339,7 +339,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +13.3, Elo +9.5, equipo +11.8, cuatro factores +10.6.",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +13.3, Elo +9.5, equipo +11.9, cuatro factores +10.6.",
      "supports_pick": true
     },
     {
@@ -369,12 +369,12 @@
     "code": "NO"
    },
    "projection": {
-    "home_score": 115.3,
+    "home_score": 115.4,
     "away_score": 112.8
    },
    "win_probability": {
-    "home": 0.5767,
-    "away": 0.4233
+    "home": 0.5762,
+    "away": 0.4238
    },
    "pick": {
     "market": "moneyline",
@@ -386,7 +386,7 @@
     "home": -3.0,
     "away": 3.0
    },
-   "total_points": 228.1,
+   "total_points": 228.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -394,7 +394,7 @@
      20.0
     ],
     "total": [
-     202.0,
+     203.0,
      254.0
     ]
    },
@@ -404,7 +404,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a LAC. Margen de LAC: jugadores +2.6, Elo +2.9, equipo +2.9, cuatro factores +3.6.",
+     "detail": "4 de 4 modelos ven ganar a LAC. Margen de LAC: jugadores +2.6, Elo +2.9, equipo +2.8, cuatro factores +3.6.",
      "supports_pick": true
     },
     {
@@ -440,12 +440,12 @@
     "code": "MIA"
    },
    "projection": {
-    "home_score": 117.9,
-    "away_score": 122.2
+    "home_score": 117.8,
+    "away_score": 122.1
    },
    "win_probability": {
-    "home": 0.3802,
-    "away": 0.6198
+    "home": 0.3785,
+    "away": 0.6215
    },
    "pick": {
     "market": "moneyline",
@@ -457,7 +457,7 @@
     "home": 5.0,
     "away": -5.0
    },
-   "total_points": 240.1,
+   "total_points": 239.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -477,7 +477,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a MIA. Margen de MIA: jugadores +4.1, Elo +3.1, equipo +5.4, cuatro factores +4.4.",
+     "detail": "4 de 4 modelos ven ganar a MIA. Margen de MIA: jugadores +4.2, Elo +3.1, equipo +5.5, cuatro factores +4.4.",
      "supports_pick": true
     },
     {
