@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-08T19:45:00.000566Z",
+ "generated_at": "2026-11-08T20:15:00.000608Z",
  "date_local": "2026-11-08",
  "games": [
   {
@@ -19,23 +19,23 @@
    },
    "projection": {
     "home_score": 113.1,
-    "away_score": 123.1
+    "away_score": 123.2
    },
    "win_probability": {
-    "home": 0.2346,
-    "away": 0.7654
+    "home": 0.2319,
+    "away": 0.7681
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Philadelphia 76ers ML"
    },
-   "data_warning": "Joel Embiid está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": 10.0,
     "away": -10.0
    },
-   "total_points": 236.2,
+   "total_points": 236.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -47,27 +47,25 @@
      262.0
     ]
    },
-   "game_warnings": [
-    "Joel Embiid está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a PHI. Margen de PHI: jugadores +9.8, Elo +6.7, equipo +6.9, cuatro factores +2.8.",
+     "detail": "4 de 4 modelos ven ganar a PHI. Margen de PHI: jugadores +10.0, Elo +6.7, equipo +6.9, cuatro factores +2.8.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de PHI vale 11.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de PHI vale 11.9 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de CHI",
      "favors": "away",
-     "detail": "Sin Zach Collins, Norman Powell: CHI pierde 3.5 puntos.",
+     "detail": "Sin Zach Collins, Norman Powell: CHI pierde 3.6 puntos.",
      "supports_pick": true
     },
     {
