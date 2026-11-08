@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-08T16:45:00.000517Z",
+ "generated_at": "2026-11-08T17:45:00.000498Z",
  "date_local": "2026-11-08",
  "games": [
   {
@@ -161,12 +161,12 @@
     "code": "UTAH"
    },
    "projection": {
-    "home_score": 118.3,
-    "away_score": 102.4
+    "home_score": 118.5,
+    "away_score": 102.5
    },
    "win_probability": {
-    "home": 0.8741,
-    "away": 0.1259
+    "home": 0.8748,
+    "away": 0.1252
    },
    "pick": {
     "market": "moneyline",
@@ -178,7 +178,7 @@
     "home": -16.0,
     "away": 16.0
    },
-   "total_points": 220.7,
+   "total_points": 221.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
