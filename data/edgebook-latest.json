@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-08T18:15:00.000561Z",
+ "generated_at": "2026-11-08T18:45:00.000590Z",
  "date_local": "2026-11-08",
  "games": [
   {
@@ -95,55 +95,59 @@
    },
    "projection": {
     "home_score": 113.5,
-    "away_score": 110.0
+    "away_score": 108.5
    },
    "win_probability": {
-    "home": 0.6012,
-    "away": 0.3988
+    "home": 0.6405,
+    "away": 0.3595
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Detroit Pistons ML"
    },
-   "data_warning": "Luka Doncic está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": -4.0,
-    "away": 4.0
+    "home": -5.0,
+    "away": 5.0
    },
-   "total_points": 223.5,
+   "total_points": 222.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -14.0,
-     21.0
+     -13.0,
+     23.0
     ],
     "total": [
-     198.0,
-     250.0
+     196.0,
+     248.0
     ]
    },
-   "game_warnings": [
-    "Luka Doncic está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +3.6, Elo +4.1, equipo +4.1, cuatro factores +4.7.",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +5.1, Elo +4.1, equipo +4.1, cuatro factores +4.7.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DET vale 1.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DET vale 3.3 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.7 puntos para DET.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de LAL",
+     "favors": "home",
+     "detail": "Sin Luka Doncic: LAL pierde 1.2 puntos.",
      "supports_pick": true
     }
    ]
@@ -306,24 +310,24 @@
     "code": "BOS"
    },
    "projection": {
-    "home_score": 105.6,
-    "away_score": 118.8
+    "home_score": 105.7,
+    "away_score": 119.1
    },
    "win_probability": {
-    "home": 0.1693,
-    "away": 0.8307
+    "home": 0.1673,
+    "away": 0.8327
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Boston Celtics ML"
    },
-   "data_warning": null,
+   "data_warning": "Mitchell Robinson está en duda (questionable)",
    "spread": {
     "home": 13.0,
     "away": -13.0
    },
-   "total_points": 224.4,
+   "total_points": 224.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -335,19 +339,21 @@
      250.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Mitchell Robinson está en duda (questionable)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +13.3, Elo +9.5, equipo +11.9, cuatro factores +10.6.",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +13.4, Elo +9.5, equipo +11.9, cuatro factores +10.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 15.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 15.1 puntos más por partido.",
      "supports_pick": true
     },
     {
