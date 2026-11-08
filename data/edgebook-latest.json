@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-08T05:45:00.000577Z",
+ "generated_at": "2026-11-08T15:15:00.733173Z",
  "date_local": "2026-11-08",
  "games": [
   {
@@ -18,12 +18,12 @@
     "code": "PHI"
    },
    "projection": {
-    "home_score": 114.2,
-    "away_score": 121.8
+    "home_score": 113.8,
+    "away_score": 122.4
    },
    "win_probability": {
-    "home": 0.2885,
-    "away": 0.7115
+    "home": 0.2675,
+    "away": 0.7325
    },
    "pick": {
     "market": "moneyline",
@@ -32,14 +32,14 @@
    },
    "data_warning": "Nic Claxton está en duda (questionable)",
    "spread": {
-    "home": 8.0,
-    "away": -8.0
+    "home": 9.0,
+    "away": -9.0
    },
-   "total_points": 236.0,
+   "total_points": 236.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -25.0,
+     -26.0,
      10.0
     ],
     "total": [
@@ -49,6 +49,7 @@
    },
    "game_warnings": [
     "Nic Claxton está en duda (questionable)",
+    "Norman Powell está en duda (questionable)",
     "Jalen Smith está en duda (probable)",
     "Joel Embiid está en duda (probable)"
    ],
@@ -57,19 +58,19 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a PHI. Margen de PHI: jugadores +7.6, Elo +6.7, equipo +6.9, cuatro factores +2.8.",
+     "detail": "4 de 4 modelos ven ganar a PHI. Margen de PHI: jugadores +8.4, Elo +6.7, equipo +6.9, cuatro factores +2.8.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de PHI vale 9.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de PHI vale 10.3 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de CHI",
      "favors": "away",
-     "detail": "Sin Zach Collins: CHI pierde 1.2 puntos.",
+     "detail": "Sin Zach Collins: CHI pierde 2.0 puntos.",
      "supports_pick": true
     },
     {
@@ -110,7 +111,7 @@
     "home": -4.0,
     "away": 4.0
    },
-   "total_points": 223.5,
+   "total_points": 223.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -164,8 +165,8 @@
     "away_score": 102.7
    },
    "win_probability": {
-    "home": 0.8807,
-    "away": 0.1193
+    "home": 0.8811,
+    "away": 0.1189
    },
    "pick": {
     "market": "moneyline",
@@ -197,7 +198,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +16.4, Elo +14.8, equipo +13.6, cuatro factores +11.7.",
+     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +16.4, Elo +14.8, equipo +13.6, cuatro factores +11.6.",
      "supports_pick": true
     },
     {
@@ -237,8 +238,8 @@
     "away_score": 103.3
    },
    "win_probability": {
-    "home": 0.8414,
-    "away": 0.1586
+    "home": 0.8415,
+    "away": 0.1585
    },
    "pick": {
     "market": "moneyline",
@@ -308,8 +309,8 @@
     "away_score": 118.8
    },
    "win_probability": {
-    "home": 0.1691,
-    "away": 0.8309
+    "home": 0.1693,
+    "away": 0.8307
    },
    "pick": {
     "market": "moneyline",
@@ -373,8 +374,8 @@
     "away_score": 112.8
    },
    "win_probability": {
-    "home": 0.5762,
-    "away": 0.4238
+    "home": 0.5765,
+    "away": 0.4235
    },
    "pick": {
     "market": "moneyline",
@@ -386,7 +387,7 @@
     "home": -3.0,
     "away": 3.0
    },
-   "total_points": 228.3,
+   "total_points": 228.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -444,8 +445,8 @@
     "away_score": 122.1
    },
    "win_probability": {
-    "home": 0.3785,
-    "away": 0.6215
+    "home": 0.3784,
+    "away": 0.6216
    },
    "pick": {
     "market": "moneyline",
@@ -457,7 +458,7 @@
     "home": 5.0,
     "away": -5.0
    },
-   "total_points": 239.9,
+   "total_points": 239.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -496,7 +497,5 @@
   }
  ],
  "skipped_without_id": 0,
- "warnings": [
-  "Sin alineaciones de la NBA (HTTPError); titular del partido anterior"
- ]
+ "warnings": []
 }
