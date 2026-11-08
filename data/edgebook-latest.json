@@ -2,145 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-08T00:45:00.000619Z",
+ "generated_at": "2026-11-08T01:15:00.000525Z",
  "date_local": "2026-11-07",
  "games": [
-  {
-   "league_game_id": "401909940",
-   "espn_game_id": "401909940",
-   "starts_at": "2026-11-08T01:00Z",
-   "home": {
-    "name": "Cleveland Cavaliers",
-    "code": "CLE"
-   },
-   "away": {
-    "name": "New York Knicks",
-    "code": "NY"
-   },
-   "projection": {
-    "home_score": 111.5,
-    "away_score": 113.7
-   },
-   "win_probability": {
-    "home": 0.4355,
-    "away": 0.5645
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "New York Knicks ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 3.0,
-    "away": -3.0
-   },
-   "total_points": 225.2,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -20.0,
-     16.0
-    ],
-    "total": [
-     199.0,
-     251.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +2.4, Elo +1.7, equipo +1.9, cuatro factores +3.8.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 2.0 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "away",
-     "detail": "CLE juega su segundo partido en dos noches: 2.0 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para CLE.",
-     "supports_pick": false
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909941",
-   "espn_game_id": "401909941",
-   "starts_at": "2026-11-08T01:00Z",
-   "home": {
-    "name": "Oklahoma City Thunder",
-    "code": "OKC"
-   },
-   "away": {
-    "name": "Washington Wizards",
-    "code": "WSH"
-   },
-   "projection": {
-    "home_score": 120.2,
-    "away_score": 105.0
-   },
-   "win_probability": {
-    "home": 0.8641,
-    "away": 0.1359
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Oklahoma City Thunder ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -15.0,
-    "away": 15.0
-   },
-   "total_points": 225.2,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -3.0,
-     33.0
-    ],
-    "total": [
-     200.0,
-     251.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +15.1, Elo +14.6, equipo +15.2, cuatro factores +15.9.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de OKC vale 13.3 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para OKC.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909942",
    "espn_game_id": "401909942",
@@ -219,56 +83,54 @@
     "code": "HOU"
    },
    "projection": {
-    "home_score": 108.1,
-    "away_score": 115.6
+    "home_score": 108.0,
+    "away_score": 115.3
    },
    "win_probability": {
-    "home": 0.2943,
-    "away": 0.7057
+    "home": 0.2982,
+    "away": 0.7018
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Houston Rockets ML"
    },
-   "data_warning": "Jordan Goodwin está en duda (doubtful)",
+   "data_warning": null,
    "spread": {
     "home": 8.0,
     "away": -8.0
    },
-   "total_points": 223.7,
+   "total_points": 223.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -25.0,
-     10.0
+     11.0
     ],
     "total": [
      198.0,
-     250.0
+     249.0
     ]
    },
-   "game_warnings": [
-    "Jordan Goodwin está en duda (doubtful)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +7.4, Elo +3.2, equipo +5.7, cuatro factores +4.1.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +7.2, Elo +3.2, equipo +5.7, cuatro factores +4.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 9.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 8.9 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de PHX",
      "favors": "away",
-     "detail": "Sin Mark Williams: PHX pierde 2.4 puntos.",
+     "detail": "Sin Jordan Goodwin, Mark Williams: PHX pierde 2.3 puntos.",
      "supports_pick": true
     },
     {
@@ -493,6 +355,142 @@
      "favors": "away",
      "detail": "Sin Keshon Gilbert, Mouhamed Gueye, Jock Landale: ATL pierde 4.3 puntos.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909940",
+   "espn_game_id": "401909940",
+   "starts_at": "2026-11-08T01:00Z",
+   "home": {
+    "name": "Cleveland Cavaliers",
+    "code": "CLE"
+   },
+   "away": {
+    "name": "New York Knicks",
+    "code": "NY"
+   },
+   "projection": {
+    "home_score": 111.5,
+    "away_score": 113.7
+   },
+   "win_probability": {
+    "home": 0.4374,
+    "away": 0.5626
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "New York Knicks ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 3.0,
+    "away": -3.0
+   },
+   "total_points": 225.2,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -20.0,
+     16.0
+    ],
+    "total": [
+     199.0,
+     251.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +2.3, Elo +1.7, equipo +1.9, cuatro factores +3.8.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 2.0 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "away",
+     "detail": "CLE juega su segundo partido en dos noches: 2.0 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para CLE.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909941",
+   "espn_game_id": "401909941",
+   "starts_at": "2026-11-08T01:00Z",
+   "home": {
+    "name": "Oklahoma City Thunder",
+    "code": "OKC"
+   },
+   "away": {
+    "name": "Washington Wizards",
+    "code": "WSH"
+   },
+   "projection": {
+    "home_score": 120.2,
+    "away_score": 105.0
+   },
+   "win_probability": {
+    "home": 0.8641,
+    "away": 0.1359
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Oklahoma City Thunder ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -15.0,
+    "away": 15.0
+   },
+   "total_points": 225.2,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -3.0,
+     33.0
+    ],
+    "total": [
+     200.0,
+     251.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +15.1, Elo +14.6, equipo +15.2, cuatro factores +15.9.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de OKC vale 13.3 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para OKC.",
+     "supports_pick": true
     }
    ]
   }
