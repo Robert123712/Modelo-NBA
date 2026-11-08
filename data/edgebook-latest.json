@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-07T23:45:00.000514Z",
+ "generated_at": "2026-11-08T00:15:00.000578Z",
  "date_local": "2026-11-07",
  "games": [
   {
@@ -99,8 +99,8 @@
     "away_score": 113.7
    },
    "win_probability": {
-    "home": 0.4374,
-    "away": 0.5626
+    "home": 0.4355,
+    "away": 0.5645
    },
    "pick": {
     "market": "moneyline",
@@ -130,7 +130,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +2.3, Elo +1.7, equipo +1.9, cuatro factores +3.8.",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +2.4, Elo +1.7, equipo +1.9, cuatro factores +3.8.",
      "supports_pick": true
     },
     {
