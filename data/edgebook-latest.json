@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-08T20:15:00.000608Z",
+ "generated_at": "2026-11-08T20:45:00.000557Z",
  "date_local": "2026-11-08",
  "games": [
-  {
-   "league_game_id": "401909945",
-   "espn_game_id": "401909945",
-   "starts_at": "2026-11-08T20:30Z",
-   "home": {
-    "name": "Chicago Bulls",
-    "code": "CHI"
-   },
-   "away": {
-    "name": "Philadelphia 76ers",
-    "code": "PHI"
-   },
-   "projection": {
-    "home_score": 113.1,
-    "away_score": 123.2
-   },
-   "win_probability": {
-    "home": 0.2319,
-    "away": 0.7681
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Philadelphia 76ers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 10.0,
-    "away": -10.0
-   },
-   "total_points": 236.3,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -28.0,
-     8.0
-    ],
-    "total": [
-     210.0,
-     262.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a PHI. Margen de PHI: jugadores +10.0, Elo +6.7, equipo +6.9, cuatro factores +2.8.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de PHI vale 11.9 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de CHI",
-     "favors": "away",
-     "detail": "Sin Zach Collins, Norman Powell: CHI pierde 3.6 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.9 puntos para CHI.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909946",
    "espn_game_id": "401909946",
@@ -443,12 +372,12 @@
     "code": "MIA"
    },
    "projection": {
-    "home_score": 117.8,
-    "away_score": 122.1
+    "home_score": 117.0,
+    "away_score": 121.1
    },
    "win_probability": {
-    "home": 0.3784,
-    "away": 0.6216
+    "home": 0.3856,
+    "away": 0.6144
    },
    "pick": {
     "market": "moneyline",
@@ -457,19 +386,19 @@
    },
    "data_warning": null,
    "spread": {
-    "home": 5.0,
-    "away": -5.0
+    "home": 4.0,
+    "away": -4.0
    },
-   "total_points": 239.8,
+   "total_points": 238.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -22.0,
-     13.0
+     14.0
     ],
     "total": [
-     214.0,
-     266.0
+     212.0,
+     264.0
     ]
    },
    "game_warnings": [],
@@ -478,19 +407,95 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a MIA. Margen de MIA: jugadores +4.2, Elo +3.1, equipo +5.5, cuatro factores +4.4.",
+     "detail": "4 de 4 modelos ven ganar a MIA. Margen de MIA: jugadores +3.9, Elo +3.1, equipo +5.5, cuatro factores +4.4.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de MIA vale 6.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MIA vale 5.7 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para SAC.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909945",
+   "espn_game_id": "401909945",
+   "starts_at": "2026-11-08T20:30Z",
+   "home": {
+    "name": "Chicago Bulls",
+    "code": "CHI"
+   },
+   "away": {
+    "name": "Philadelphia 76ers",
+    "code": "PHI"
+   },
+   "projection": {
+    "home_score": 113.8,
+    "away_score": 122.4
+   },
+   "win_probability": {
+    "home": 0.2675,
+    "away": 0.7325
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Philadelphia 76ers ML"
+   },
+   "data_warning": "Nic Claxton está en duda (questionable)",
+   "spread": {
+    "home": 9.0,
+    "away": -9.0
+   },
+   "total_points": 236.2,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -26.0,
+     10.0
+    ],
+    "total": [
+     210.0,
+     262.0
+    ]
+   },
+   "game_warnings": [
+    "Nic Claxton está en duda (questionable)",
+    "Norman Powell está en duda (questionable)",
+    "Jalen Smith está en duda (probable)",
+    "Joel Embiid está en duda (probable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a PHI. Margen de PHI: jugadores +8.4, Elo +6.7, equipo +6.9, cuatro factores +2.8.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de PHI vale 10.3 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de CHI",
+     "favors": "away",
+     "detail": "Sin Zach Collins: CHI pierde 2.0 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.9 puntos para CHI.",
      "supports_pick": false
     }
    ]
