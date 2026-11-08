@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-08T01:45:00.000575Z",
+ "generated_at": "2026-11-08T02:15:00.000572Z",
  "date_local": "2026-11-07",
  "games": [
-  {
-   "league_game_id": "401909943",
-   "espn_game_id": "401909943",
-   "starts_at": "2026-11-08T02:00Z",
-   "home": {
-    "name": "Phoenix Suns",
-    "code": "PHX"
-   },
-   "away": {
-    "name": "Houston Rockets",
-    "code": "HOU"
-   },
-   "projection": {
-    "home_score": 108.0,
-    "away_score": 115.3
-   },
-   "win_probability": {
-    "home": 0.2982,
-    "away": 0.7018
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Houston Rockets ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 8.0,
-    "away": -8.0
-   },
-   "total_points": 223.3,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -25.0,
-     11.0
-    ],
-    "total": [
-     198.0,
-     249.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +7.2, Elo +3.2, equipo +5.7, cuatro factores +4.1.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 8.9 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de PHX",
-     "favors": "away",
-     "detail": "Sin Jordan Goodwin, Mark Williams: PHX pierde 2.3 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para PHX.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909944",
    "espn_game_id": "401909944",
@@ -491,6 +420,79 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.7 puntos para GS.",
      "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909943",
+   "espn_game_id": "401909943",
+   "starts_at": "2026-11-08T02:00Z",
+   "home": {
+    "name": "Phoenix Suns",
+    "code": "PHX"
+   },
+   "away": {
+    "name": "Houston Rockets",
+    "code": "HOU"
+   },
+   "projection": {
+    "home_score": 108.1,
+    "away_score": 115.6
+   },
+   "win_probability": {
+    "home": 0.2943,
+    "away": 0.7057
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Houston Rockets ML"
+   },
+   "data_warning": "Jordan Goodwin está en duda (doubtful)",
+   "spread": {
+    "home": 8.0,
+    "away": -8.0
+   },
+   "total_points": 223.7,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -25.0,
+     10.0
+    ],
+    "total": [
+     198.0,
+     250.0
+    ]
+   },
+   "game_warnings": [
+    "Jordan Goodwin está en duda (doubtful)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +7.4, Elo +3.2, equipo +5.7, cuatro factores +4.1.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 9.1 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de PHX",
+     "favors": "away",
+     "detail": "Sin Mark Williams: PHX pierde 2.4 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para PHX.",
+     "supports_pick": false
     }
    ]
   }
