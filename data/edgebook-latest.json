@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-08T15:15:00.733173Z",
+ "generated_at": "2026-11-08T16:45:00.000517Z",
  "date_local": "2026-11-08",
  "games": [
   {
@@ -161,36 +161,37 @@
     "code": "UTAH"
    },
    "projection": {
-    "home_score": 119.0,
-    "away_score": 102.7
+    "home_score": 118.3,
+    "away_score": 102.4
    },
    "win_probability": {
-    "home": 0.8811,
-    "away": 0.1189
+    "home": 0.8741,
+    "away": 0.1259
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Minnesota Timberwolves ML"
    },
-   "data_warning": "Lauri Markkanen está en duda (questionable)",
+   "data_warning": "Keyonte George está en duda (questionable)",
    "spread": {
     "home": -16.0,
     "away": 16.0
    },
-   "total_points": 221.7,
+   "total_points": 220.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -2.0,
+     -3.0,
      34.0
     ],
     "total": [
-     197.0,
-     247.0
+     196.0,
+     246.0
     ]
    },
    "game_warnings": [
+    "Keyonte George está en duda (questionable)",
     "Lauri Markkanen está en duda (questionable)"
    ],
    "warnings": [],
@@ -198,13 +199,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +16.4, Elo +14.8, equipo +13.6, cuatro factores +11.6.",
+     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +15.9, Elo +14.8, equipo +13.6, cuatro factores +11.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MIN vale 14.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MIN vale 14.2 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -216,7 +217,7 @@
     {
      "label": "Bajas de UTAH",
      "favors": "home",
-     "detail": "Sin Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 3.2 puntos.",
+     "detail": "Sin Jaren Jackson Jr., Jusuf Nurkic: UTAH pierde 2.7 puntos.",
      "supports_pick": true
     }
    ]
