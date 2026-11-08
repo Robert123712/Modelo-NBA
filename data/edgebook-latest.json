@@ -2,74 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-08T01:15:00.000525Z",
+ "generated_at": "2026-11-08T01:45:00.000575Z",
  "date_local": "2026-11-07",
  "games": [
-  {
-   "league_game_id": "401909942",
-   "espn_game_id": "401909942",
-   "starts_at": "2026-11-08T01:30Z",
-   "home": {
-    "name": "Golden State Warriors",
-    "code": "GS"
-   },
-   "away": {
-    "name": "Orlando Magic",
-    "code": "ORL"
-   },
-   "projection": {
-    "home_score": 114.5,
-    "away_score": 107.8
-   },
-   "win_probability": {
-    "home": 0.6839,
-    "away": 0.3161
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Golden State Warriors ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -7.0,
-    "away": 7.0
-   },
-   "total_points": 222.3,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -11.0,
-     25.0
-    ],
-    "total": [
-     197.0,
-     248.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +6.7, Elo +3.4, equipo +5.0, cuatro factores +4.4.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de GS vale 5.0 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para GS.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909943",
    "espn_game_id": "401909943",
@@ -490,6 +425,71 @@
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.7 puntos para OKC.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909942",
+   "espn_game_id": "401909942",
+   "starts_at": "2026-11-08T01:30Z",
+   "home": {
+    "name": "Golden State Warriors",
+    "code": "GS"
+   },
+   "away": {
+    "name": "Orlando Magic",
+    "code": "ORL"
+   },
+   "projection": {
+    "home_score": 114.5,
+    "away_score": 107.8
+   },
+   "win_probability": {
+    "home": 0.6839,
+    "away": 0.3161
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Golden State Warriors ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -7.0,
+    "away": 7.0
+   },
+   "total_points": 222.3,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -11.0,
+     25.0
+    ],
+    "total": [
+     197.0,
+     248.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +6.7, Elo +3.4, equipo +5.0, cuatro factores +4.4.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de GS vale 5.0 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para GS.",
      "supports_pick": true
     }
    ]
