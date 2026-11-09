@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-09T05:15:00.000535Z",
+ "generated_at": "2026-11-09T15:15:00.713463Z",
  "date_local": "2026-11-09",
  "games": [
   {
@@ -403,12 +403,12 @@
     "code": "DEN"
    },
    "projection": {
-    "home_score": 112.8,
-    "away_score": 108.0
+    "home_score": 112.9,
+    "away_score": 107.6
    },
    "win_probability": {
-    "home": 0.6315,
-    "away": 0.3685
+    "home": 0.645,
+    "away": 0.355
    },
    "pick": {
     "market": "moneyline",
@@ -420,12 +420,12 @@
     "home": -5.0,
     "away": 5.0
    },
-   "total_points": 220.8,
+   "total_points": 220.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -13.0,
-     22.0
+     23.0
     ],
     "total": [
      195.0,
@@ -443,13 +443,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +4.8, Elo +3.6, equipo +4.0, cuatro factores +3.9.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +5.3, Elo +3.6, equipo +4.0, cuatro factores +3.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 3.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 3.6 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -461,7 +461,7 @@
     {
      "label": "Bajas de DEN",
      "favors": "home",
-     "detail": "Sin Julian Strawther: DEN pierde 1.7 puntos.",
+     "detail": "Sin Julian Strawther: DEN pierde 2.2 puntos.",
      "supports_pick": true
     }
    ]
@@ -619,7 +619,5 @@
   }
  ],
  "skipped_without_id": 0,
- "warnings": [
-  "Sin alineaciones de la NBA (HTTPError); titular del partido anterior"
- ]
+ "warnings": []
 }
