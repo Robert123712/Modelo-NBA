@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-09T21:15:00.000656Z",
+ "generated_at": "2026-11-09T21:45:00.000573Z",
  "date_local": "2026-11-09",
  "games": [
   {
@@ -251,12 +251,12 @@
     "code": "MEM"
    },
    "projection": {
-    "home_score": 117.8,
-    "away_score": 113.0
+    "home_score": 117.0,
+    "away_score": 113.5
    },
    "win_probability": {
-    "home": 0.639,
-    "away": 0.361
+    "home": 0.6018,
+    "away": 0.3982
    },
    "pick": {
     "market": "moneyline",
@@ -265,19 +265,19 @@
    },
    "data_warning": "Scottie Barnes está en duda (questionable)",
    "spread": {
-    "home": -5.0,
-    "away": 5.0
+    "home": -4.0,
+    "away": 4.0
    },
-   "total_points": 230.8,
+   "total_points": 230.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -13.0,
-     23.0
+     -14.0,
+     21.0
     ],
     "total": [
      205.0,
-     257.0
+     256.0
     ]
    },
    "game_warnings": [
@@ -290,13 +290,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +4.9, Elo +7.7, equipo +6.4, cuatro factores +10.8.",
+     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +3.6, Elo +7.7, equipo +6.4, cuatro factores +10.8.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de TOR vale 3.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de TOR vale 1.8 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -308,7 +308,7 @@
     {
      "label": "Bajas de TOR",
      "favors": "away",
-     "detail": "Sin Kawhi Leonard, Malachi Smith: TOR pierde 1.0 puntos.",
+     "detail": "Sin Kawhi Leonard: TOR pierde 2.3 puntos.",
      "supports_pick": false
     }
    ]
