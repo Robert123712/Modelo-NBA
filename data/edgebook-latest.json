@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-09T18:15:00.000576Z",
+ "generated_at": "2026-11-09T18:45:00.000534Z",
  "date_local": "2026-11-09",
  "games": [
   {
@@ -250,12 +250,12 @@
     "code": "MEM"
    },
    "projection": {
-    "home_score": 117.4,
-    "away_score": 112.7
+    "home_score": 117.8,
+    "away_score": 113.0
    },
    "win_probability": {
-    "home": 0.6361,
-    "away": 0.3639
+    "home": 0.639,
+    "away": 0.361
    },
    "pick": {
     "market": "moneyline",
@@ -267,7 +267,7 @@
     "home": -5.0,
     "away": 5.0
    },
-   "total_points": 230.1,
+   "total_points": 230.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -276,11 +276,12 @@
     ],
     "total": [
      205.0,
-     256.0
+     257.0
     ]
    },
    "game_warnings": [
     "Scottie Barnes está en duda (questionable)",
+    "Collin Murray-Boyles está en duda (questionable)",
     "Immanuel Quickley está en duda (questionable)"
    ],
    "warnings": [],
@@ -288,13 +289,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +4.8, Elo +7.7, equipo +6.4, cuatro factores +10.8.",
+     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +4.9, Elo +7.7, equipo +6.4, cuatro factores +10.8.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de TOR vale 3.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de TOR vale 3.1 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -306,7 +307,7 @@
     {
      "label": "Bajas de TOR",
      "favors": "away",
-     "detail": "Sin Kawhi Leonard, Malachi Smith: TOR pierde 1.1 puntos.",
+     "detail": "Sin Kawhi Leonard, Malachi Smith: TOR pierde 1.0 puntos.",
      "supports_pick": false
     }
    ]
@@ -403,12 +404,12 @@
     "code": "DEN"
    },
    "projection": {
-    "home_score": 112.7,
-    "away_score": 108.2
+    "home_score": 112.3,
+    "away_score": 107.7
    },
    "win_probability": {
-    "home": 0.6238,
-    "away": 0.3762
+    "home": 0.6276,
+    "away": 0.3724
    },
    "pick": {
     "market": "moneyline",
@@ -420,7 +421,7 @@
     "home": -5.0,
     "away": 5.0
    },
-   "total_points": 220.9,
+   "total_points": 220.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -428,27 +429,26 @@
      22.0
     ],
     "total": [
-     195.0,
-     248.0
+     194.0,
+     247.0
     ]
    },
    "game_warnings": [
     "Christian Braun está en duda (questionable)",
-    "DeMar DeRozan está en duda (questionable)",
-    "Aaron Gordon está en duda (questionable)"
+    "DeMar DeRozan está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +4.5, Elo +3.6, equipo +4.0, cuatro factores +3.9.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +4.6, Elo +3.6, equipo +4.0, cuatro factores +3.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 2.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 3.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -460,7 +460,7 @@
     {
      "label": "Bajas de DEN",
      "favors": "home",
-     "detail": "Sin Julian Strawther: DEN pierde 1.4 puntos.",
+     "detail": "Sin Julian Strawther: DEN pierde 1.5 puntos.",
      "supports_pick": true
     }
    ]
