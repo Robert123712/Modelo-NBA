@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-09T22:15:00.000582Z",
+ "generated_at": "2026-11-09T22:45:00.000624Z",
  "date_local": "2026-11-09",
  "games": [
   {
@@ -18,33 +18,33 @@
     "code": "LAL"
    },
    "projection": {
-    "home_score": 120.8,
-    "away_score": 121.7
+    "home_score": 119.9,
+    "away_score": 119.8
    },
    "win_probability": {
-    "home": 0.4747,
-    "away": 0.5253
+    "home": 0.5024,
+    "away": 0.4976
    },
    "pick": {
     "market": "moneyline",
-    "side": "away",
-    "label": "Los Angeles Lakers ML"
+    "side": "home",
+    "label": "Atlanta Hawks ML"
    },
    "data_warning": null,
    "spread": {
-    "home": 1.0,
-    "away": -1.0
+    "home": -1.0,
+    "away": 1.0
    },
-   "total_points": 242.5,
+   "total_points": 239.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -19.0,
-     17.0
+     -18.0,
+     18.0
     ],
     "total": [
-     217.0,
-     269.0
+     214.0,
+     266.0
     ]
    },
    "game_warnings": [],
@@ -53,31 +53,31 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +0.5, Elo +0.3, equipo +1.3, cuatro factores +0.0.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de LAL vale 4.6 puntos más por partido.",
-     "supports_pick": true
+     "detail": "3 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores -0.8, Elo +0.3, equipo +1.3, cuatro factores +0.0.",
+     "supports_pick": false
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para ATL.",
-     "supports_pick": false
+     "supports_pick": true
     },
     {
      "label": "Descanso",
      "favors": "home",
      "detail": "LAL juega su segundo partido en dos noches: 2.3 puntos.",
-     "supports_pick": false
+     "supports_pick": true
     },
     {
      "label": "Bajas de LAL",
      "favors": "home",
-     "detail": "Sin Quentin Grimes: LAL pierde 0.9 puntos.",
+     "detail": "Sin Quentin Grimes, Austin Reaves: LAL pierde 2.2 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de LAL vale 3.2 puntos más por partido.",
      "supports_pick": false
     }
    ]
@@ -95,37 +95,36 @@
     "code": "CLE"
    },
    "projection": {
-    "home_score": 104.8,
-    "away_score": 112.9
+    "home_score": 104.9,
+    "away_score": 113.3
    },
    "win_probability": {
-    "home": 0.2793,
-    "away": 0.7207
+    "home": 0.2717,
+    "away": 0.7283
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Cleveland Cavaliers ML"
    },
-   "data_warning": "Moussa Diabate está en duda (doubtful)",
+   "data_warning": "Jarrett Allen está en duda (questionable)",
    "spread": {
-    "home": 8.0,
-    "away": -8.0
+    "home": 9.0,
+    "away": -9.0
    },
-   "total_points": 217.8,
+   "total_points": 218.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -26.0,
-     10.0
+     9.0
     ],
     "total": [
      192.0,
-     243.0
+     244.0
     ]
    },
    "game_warnings": [
-    "Moussa Diabate está en duda (doubtful)",
     "Jarrett Allen está en duda (questionable)"
    ],
    "warnings": [],
@@ -133,19 +132,19 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +9.7, Elo +2.7, equipo +5.1, cuatro factores +0.0.",
+     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +10.2, Elo +2.7, equipo +5.1, cuatro factores +0.0.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de CLE vale 11.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de CLE vale 11.9 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de CHA",
      "favors": "away",
-     "detail": "Sin Kon Knueppel, Brandon Miller, Dennis Schroder: CHA pierde 6.5 puntos.",
+     "detail": "Sin Moussa Diabate, Kon Knueppel, Brandon Miller: CHA pierde 7.0 puntos.",
      "supports_pick": true
     },
     {
