@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-09T19:45:00.000645Z",
+ "generated_at": "2026-11-09T21:15:00.000656Z",
  "date_local": "2026-11-09",
  "games": [
   {
@@ -557,12 +557,12 @@
     "code": "NO"
    },
    "projection": {
-    "home_score": 121.7,
-    "away_score": 113.6
+    "home_score": 121.5,
+    "away_score": 112.5
    },
    "win_probability": {
-    "home": 0.7229,
-    "away": 0.2771
+    "home": 0.7441,
+    "away": 0.2559
    },
    "pick": {
     "market": "moneyline",
@@ -571,37 +571,36 @@
    },
    "data_warning": "Gary Payton II está en duda (questionable)",
    "spread": {
-    "home": -8.0,
-    "away": 8.0
+    "home": -9.0,
+    "away": 9.0
    },
-   "total_points": 235.3,
+   "total_points": 234.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -10.0,
-     26.0
+     -9.0,
+     27.0
     ],
     "total": [
-     210.0,
-     261.0
+     208.0,
+     260.0
     ]
    },
    "game_warnings": [
-    "Gary Payton II está en duda (questionable)",
-    "Gui Santos está en duda (probable)"
+    "Gary Payton II está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +9.2, Elo +5.8, equipo +5.7, cuatro factores +4.3.",
+     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +10.5, Elo +5.8, equipo +5.7, cuatro factores +4.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de GS vale 5.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de GS vale 6.5 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -619,7 +618,7 @@
     {
      "label": "Bajas de GS",
      "favors": "away",
-     "detail": "Sin Jimmy Butler III, Moses Moody, Kristaps Porzingis: GS pierde 2.9 puntos.",
+     "detail": "Sin Jimmy Butler III, Moses Moody, Kristaps Porzingis: GS pierde 1.6 puntos.",
      "supports_pick": false
     }
    ]
