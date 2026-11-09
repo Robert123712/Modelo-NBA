@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-09T19:15:00.000534Z",
+ "generated_at": "2026-11-09T19:45:00.000645Z",
  "date_local": "2026-11-09",
  "games": [
   {
@@ -407,54 +407,54 @@
    },
    "projection": {
     "home_score": 112.0,
-    "away_score": 105.7
+    "away_score": 107.1
    },
    "win_probability": {
-    "home": 0.6726,
-    "away": 0.3274
+    "home": 0.6345,
+    "away": 0.3655
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Houston Rockets ML"
    },
-   "data_warning": "Christian Braun está en duda (questionable)",
+   "data_warning": "Christian Braun está en duda (probable)",
    "spread": {
-    "home": -6.0,
-    "away": 6.0
+    "home": -5.0,
+    "away": 5.0
    },
-   "total_points": 217.7,
+   "total_points": 219.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -12.0,
-     24.0
+     -13.0,
+     23.0
     ],
     "total": [
-     192.0,
-     244.0
+     193.0,
+     246.0
     ]
    },
    "game_warnings": [
-    "Christian Braun está en duda (questionable)",
-    "DeMar DeRozan está en duda (questionable)",
-    "Aaron Gordon está en duda (questionable)",
-    "Cameron Johnson está en duda (questionable)",
-    "Nikola Jokic está en duda (questionable)",
-    "Jamal Murray está en duda (questionable)"
+    "Christian Braun está en duda (probable)",
+    "DeMar DeRozan está en duda (probable)",
+    "Aaron Gordon está en duda (probable)",
+    "Cameron Johnson está en duda (probable)",
+    "Nikola Jokic está en duda (probable)",
+    "Jamal Murray está en duda (probable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +6.3, Elo +3.6, equipo +4.0, cuatro factores +3.9.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +4.9, Elo +3.6, equipo +4.0, cuatro factores +3.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 4.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 3.2 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -466,7 +466,7 @@
     {
      "label": "Bajas de DEN",
      "favors": "home",
-     "detail": "Sin Julian Strawther: DEN pierde 3.2 puntos.",
+     "detail": "Sin Julian Strawther: DEN pierde 1.8 puntos.",
      "supports_pick": true
     }
    ]
@@ -484,12 +484,12 @@
     "code": "SA"
    },
    "projection": {
-    "home_score": 108.3,
-    "away_score": 116.5
+    "home_score": 107.9,
+    "away_score": 116.3
    },
    "win_probability": {
-    "home": 0.275,
-    "away": 0.725
+    "home": 0.271,
+    "away": 0.729
    },
    "pick": {
     "market": "moneyline",
@@ -498,43 +498,42 @@
    },
    "data_warning": "Jordan Goodwin está en duda (questionable)",
    "spread": {
-    "home": 8.0,
-    "away": -8.0
+    "home": 9.0,
+    "away": -9.0
    },
-   "total_points": 224.8,
+   "total_points": 224.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -26.0,
-     10.0
+     9.0
     ],
     "total": [
      199.0,
-     251.0
+     250.0
     ]
    },
    "game_warnings": [
-    "Jordan Goodwin está en duda (questionable)",
-    "Devin Vassell está en duda (questionable)"
+    "Jordan Goodwin está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +8.2, Elo +6.2, equipo +7.5, cuatro factores +5.9.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +8.3, Elo +6.2, equipo +7.5, cuatro factores +5.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 9.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 10.1 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de PHX",
      "favors": "away",
-     "detail": "Sin Mark Williams: PHX pierde 0.8 puntos.",
+     "detail": "Sin Mark Williams: PHX pierde 1.0 puntos.",
      "supports_pick": true
     },
     {
@@ -562,15 +561,15 @@
     "away_score": 113.6
    },
    "win_probability": {
-    "home": 0.7224,
-    "away": 0.2776
+    "home": 0.7229,
+    "away": 0.2771
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Golden State Warriors ML"
    },
-   "data_warning": "Gui Santos está en duda (probable)",
+   "data_warning": "Gary Payton II está en duda (questionable)",
    "spread": {
     "home": -8.0,
     "away": 8.0
@@ -588,6 +587,7 @@
     ]
    },
    "game_warnings": [
+    "Gary Payton II está en duda (questionable)",
     "Gui Santos está en duda (probable)"
    ],
    "warnings": [],
