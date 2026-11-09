@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-09T15:45:00.000566Z",
+ "generated_at": "2026-11-09T17:45:00.000562Z",
  "date_local": "2026-11-09",
  "games": [
   {
@@ -98,28 +98,28 @@
     "code": "CLE"
    },
    "projection": {
-    "home_score": 105.0,
-    "away_score": 112.7
+    "home_score": 104.8,
+    "away_score": 112.9
    },
    "win_probability": {
-    "home": 0.2885,
-    "away": 0.7115
+    "home": 0.2793,
+    "away": 0.7207
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Cleveland Cavaliers ML"
    },
-   "data_warning": "Moussa Diabate está en duda (questionable)",
+   "data_warning": "Moussa Diabate está en duda (doubtful)",
    "spread": {
     "home": 8.0,
     "away": -8.0
    },
-   "total_points": 217.7,
+   "total_points": 217.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -25.0,
+     -26.0,
      10.0
     ],
     "total": [
@@ -128,7 +128,7 @@
     ]
    },
    "game_warnings": [
-    "Moussa Diabate está en duda (questionable)",
+    "Moussa Diabate está en duda (doubtful)",
     "Jarrett Allen está en duda (questionable)"
    ],
    "warnings": [],
@@ -136,19 +136,19 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +9.2, Elo +2.7, equipo +5.1, cuatro factores +0.0.",
+     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +9.7, Elo +2.7, equipo +5.1, cuatro factores +0.0.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de CLE vale 10.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de CLE vale 11.4 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de CHA",
      "favors": "away",
-     "detail": "Sin Kon Knueppel, Brandon Miller, Dennis Schroder: CHA pierde 6.0 puntos.",
+     "detail": "Sin Kon Knueppel, Brandon Miller, Dennis Schroder: CHA pierde 6.5 puntos.",
      "supports_pick": true
     },
     {
