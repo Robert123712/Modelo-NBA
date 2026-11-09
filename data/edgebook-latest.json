@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-09T18:45:00.000534Z",
+ "generated_at": "2026-11-09T19:15:00.000534Z",
  "date_local": "2026-11-09",
  "games": [
   {
@@ -171,24 +171,24 @@
     "code": "WSH"
    },
    "projection": {
-    "home_score": 115.4,
-    "away_score": 102.5
+    "home_score": 115.8,
+    "away_score": 102.6
    },
    "win_probability": {
-    "home": 0.8225,
-    "away": 0.1775
+    "home": 0.8274,
+    "away": 0.1726
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Detroit Pistons ML"
    },
-   "data_warning": "Anthony Davis está en duda (questionable)",
+   "data_warning": "Bilal Coulibaly está en duda (questionable)",
    "spread": {
     "home": -13.0,
     "away": 13.0
    },
-   "total_points": 217.9,
+   "total_points": 218.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -201,6 +201,7 @@
     ]
    },
    "game_warnings": [
+    "Bilal Coulibaly está en duda (questionable)",
     "Anthony Davis está en duda (questionable)"
    ],
    "warnings": [],
@@ -208,13 +209,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +13.0, Elo +13.5, equipo +14.3, cuatro factores +15.6.",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +13.2, Elo +13.5, equipo +14.3, cuatro factores +15.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DET vale 13.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DET vale 13.7 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -226,7 +227,7 @@
     {
      "label": "Bajas de WSH",
      "favors": "home",
-     "detail": "Sin Reece Beekman, Justin Champagnie, Tristan Vukcevic: WSH pierde 1.4 puntos.",
+     "detail": "Sin Reece Beekman, Justin Champagnie, Tristan Vukcevic: WSH pierde 1.6 puntos.",
      "supports_pick": true
     },
     {
@@ -325,24 +326,24 @@
     "code": "IND"
    },
    "projection": {
-    "home_score": 115.5,
-    "away_score": 108.5
+    "home_score": 115.4,
+    "away_score": 108.7
    },
    "win_probability": {
-    "home": 0.6985,
-    "away": 0.3015
+    "home": 0.6903,
+    "away": 0.3097
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Dallas Mavericks ML"
    },
-   "data_warning": "T.J. McConnell está en duda (questionable)",
+   "data_warning": "Morez Johnson Jr. está en duda (questionable)",
    "spread": {
     "home": -7.0,
     "away": 7.0
    },
-   "total_points": 224.0,
+   "total_points": 224.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -351,10 +352,11 @@
     ],
     "total": [
      198.0,
-     249.0
+     250.0
     ]
    },
    "game_warnings": [
+    "Morez Johnson Jr. está en duda (questionable)",
     "T.J. McConnell está en duda (questionable)"
    ],
    "warnings": [],
@@ -362,13 +364,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +7.1, Elo +6.0, equipo +6.4, cuatro factores +5.9.",
+     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +6.6, Elo +6.0, equipo +6.4, cuatro factores +5.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DAL vale 7.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DAL vale 7.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -380,7 +382,7 @@
     {
      "label": "Bajas de IND",
      "favors": "home",
-     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Ben Sheppard: IND pierde 4.6 puntos.",
+     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Ben Sheppard: IND pierde 4.1 puntos.",
      "supports_pick": true
     },
     {
@@ -404,12 +406,12 @@
     "code": "DEN"
    },
    "projection": {
-    "home_score": 112.3,
-    "away_score": 107.7
+    "home_score": 112.0,
+    "away_score": 105.7
    },
    "win_probability": {
-    "home": 0.6276,
-    "away": 0.3724
+    "home": 0.6726,
+    "away": 0.3274
    },
    "pick": {
     "market": "moneyline",
@@ -418,37 +420,41 @@
    },
    "data_warning": "Christian Braun está en duda (questionable)",
    "spread": {
-    "home": -5.0,
-    "away": 5.0
+    "home": -6.0,
+    "away": 6.0
    },
-   "total_points": 220.1,
+   "total_points": 217.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -13.0,
-     22.0
+     -12.0,
+     24.0
     ],
     "total": [
-     194.0,
-     247.0
+     192.0,
+     244.0
     ]
    },
    "game_warnings": [
     "Christian Braun está en duda (questionable)",
-    "DeMar DeRozan está en duda (questionable)"
+    "DeMar DeRozan está en duda (questionable)",
+    "Aaron Gordon está en duda (questionable)",
+    "Cameron Johnson está en duda (questionable)",
+    "Nikola Jokic está en duda (questionable)",
+    "Jamal Murray está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +4.6, Elo +3.6, equipo +4.0, cuatro factores +3.9.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +6.3, Elo +3.6, equipo +4.0, cuatro factores +3.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 3.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 4.6 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -460,7 +466,7 @@
     {
      "label": "Bajas de DEN",
      "favors": "home",
-     "detail": "Sin Julian Strawther: DEN pierde 1.5 puntos.",
+     "detail": "Sin Julian Strawther: DEN pierde 3.2 puntos.",
      "supports_pick": true
     }
    ]
