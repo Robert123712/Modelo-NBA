@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-10T19:45:00.000596Z",
+ "generated_at": "2026-11-10T20:45:00.000560Z",
  "date_local": "2026-11-10",
  "games": [
   {
@@ -159,11 +159,11 @@
    },
    "projection": {
     "home_score": 112.2,
-    "away_score": 114.0
+    "away_score": 113.1
    },
    "win_probability": {
-    "home": 0.4441,
-    "away": 0.5559
+    "home": 0.4729,
+    "away": 0.5271
    },
    "pick": {
     "market": "moneyline",
@@ -172,19 +172,19 @@
    },
    "data_warning": null,
    "spread": {
-    "home": 3.0,
-    "away": -3.0
+    "home": 2.0,
+    "away": -2.0
    },
-   "total_points": 226.2,
+   "total_points": 225.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -20.0,
-     16.0
+     -19.0,
+     17.0
     ],
     "total": [
      200.0,
-     252.0
+     251.0
     ]
    },
    "game_warnings": [],
@@ -193,25 +193,19 @@
     {
      "label": "Los 4 modelos",
      "favors": null,
-     "detail": "Los modelos se dividen 2-2. Margen de PHX: jugadores -2.0, Elo +2.4, equipo +0.2, cuatro factores -0.3.",
+     "detail": "Los modelos se dividen 2-2. Margen de PHX: jugadores -1.0, Elo +2.4, equipo +0.2, cuatro factores -0.3.",
      "supports_pick": false
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de LAC vale 1.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de LAC vale 0.5 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Descanso",
      "favors": "away",
      "detail": "PHX juega su segundo partido en dos noches: 2.2 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de PHX",
-     "favors": "away",
-     "detail": "Sin Jordan Goodwin, Mark Williams: PHX pierde 1.5 puntos.",
      "supports_pick": true
     },
     {
