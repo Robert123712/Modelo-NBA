@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-10T01:15:00.000655Z",
+ "generated_at": "2026-11-10T01:45:00.000604Z",
  "date_local": "2026-11-09",
  "games": [
-  {
-   "league_game_id": "401909957",
-   "espn_game_id": "401909957",
-   "starts_at": "2026-11-10T01:30Z",
-   "home": {
-    "name": "Houston Rockets",
-    "code": "HOU"
-   },
-   "away": {
-    "name": "Denver Nuggets",
-    "code": "DEN"
-   },
-   "projection": {
-    "home_score": 111.7,
-    "away_score": 107.6
-   },
-   "win_probability": {
-    "home": 0.6143,
-    "away": 0.3857
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Houston Rockets ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -5.0,
-    "away": 5.0
-   },
-   "total_points": 219.3,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -14.0,
-     22.0
-    ],
-    "total": [
-     193.0,
-     246.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +4.2, Elo +3.6, equipo +4.0, cuatro factores +3.9.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 2.5 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para HOU.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de DEN",
-     "favors": "home",
-     "detail": "Sin Julian Strawther: DEN pierde 1.1 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909958",
    "espn_game_id": "401909958",
@@ -596,6 +525,84 @@
      "favors": "away",
      "detail": "DAL juega su segundo partido en dos noches: 2.2 puntos.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909957",
+   "espn_game_id": "401909957",
+   "starts_at": "2026-11-10T01:30Z",
+   "home": {
+    "name": "Houston Rockets",
+    "code": "HOU"
+   },
+   "away": {
+    "name": "Denver Nuggets",
+    "code": "DEN"
+   },
+   "projection": {
+    "home_score": 111.8,
+    "away_score": 107.2
+   },
+   "win_probability": {
+    "home": 0.627,
+    "away": 0.373
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Houston Rockets ML"
+   },
+   "data_warning": "Christian Braun está en duda (probable)",
+   "spread": {
+    "home": -5.0,
+    "away": 5.0
+   },
+   "total_points": 219.0,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -13.0,
+     22.0
+    ],
+    "total": [
+     193.0,
+     246.0
+    ]
+   },
+   "game_warnings": [
+    "Christian Braun está en duda (probable)",
+    "DeMar DeRozan está en duda (probable)",
+    "Aaron Gordon está en duda (probable)",
+    "Cameron Johnson está en duda (probable)",
+    "Nikola Jokic está en duda (probable)",
+    "Jamal Murray está en duda (probable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +4.6, Elo +3.6, equipo +4.0, cuatro factores +3.9.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 3.0 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para HOU.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de DEN",
+     "favors": "home",
+     "detail": "Sin Julian Strawther: DEN pierde 1.5 puntos.",
+     "supports_pick": true
     }
    ]
   }
