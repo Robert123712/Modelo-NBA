@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-10T18:45:00.000579Z",
+ "generated_at": "2026-11-10T19:45:00.000596Z",
  "date_local": "2026-11-10",
  "games": [
   {
@@ -18,28 +18,28 @@
     "code": "MIL"
    },
    "projection": {
-    "home_score": 118.2,
-    "away_score": 102.9
+    "home_score": 117.9,
+    "away_score": 103.1
    },
    "win_probability": {
-    "home": 0.8665,
-    "away": 0.1335
+    "home": 0.8589,
+    "away": 0.1411
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "New York Knicks ML"
    },
-   "data_warning": "Josh Hart está en duda (questionable)",
+   "data_warning": "Josh Hart está en duda (doubtful)",
    "spread": {
     "home": -15.0,
     "away": 15.0
    },
-   "total_points": 221.2,
+   "total_points": 221.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -3.0,
+     -4.0,
      33.0
     ],
     "total": [
@@ -48,7 +48,7 @@
     ]
    },
    "game_warnings": [
-    "Josh Hart está en duda (questionable)",
+    "Josh Hart está en duda (doubtful)",
     "Tyler Herro está en duda (questionable)",
     "Kel'el Ware está en duda (questionable)"
    ],
@@ -57,13 +57,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +15.2, Elo +16.6, equipo +15.7, cuatro factores +16.6.",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +14.7, Elo +16.6, equipo +15.7, cuatro factores +16.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 13.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 13.0 puntos más por partido.",
      "supports_pick": true
     },
     {
