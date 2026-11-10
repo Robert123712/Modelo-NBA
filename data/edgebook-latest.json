@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-10T00:15:00.000618Z",
+ "generated_at": "2026-11-10T00:45:00.000651Z",
  "date_local": "2026-11-09",
  "games": [
-  {
-   "league_game_id": "401909955",
-   "espn_game_id": "401909955",
-   "starts_at": "2026-11-10T00:30Z",
-   "home": {
-    "name": "Toronto Raptors",
-    "code": "TOR"
-   },
-   "away": {
-    "name": "Memphis Grizzlies",
-    "code": "MEM"
-   },
-   "projection": {
-    "home_score": 117.0,
-    "away_score": 113.9
-   },
-   "win_probability": {
-    "home": 0.5918,
-    "away": 0.4082
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Toronto Raptors ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -4.0,
-    "away": 4.0
-   },
-   "total_points": 230.9,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -15.0,
-     21.0
-    ],
-    "total": [
-     205.0,
-     257.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +3.2, Elo +7.7, equipo +6.4, cuatro factores +10.8.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de TOR vale 1.4 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para TOR.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de TOR",
-     "favors": "away",
-     "detail": "Sin Scottie Barnes, Kawhi Leonard, Collin Murray-Boyles: TOR pierde 2.7 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909956",
    "espn_game_id": "401909956",
@@ -601,6 +530,77 @@
      "label": "Descanso",
      "favors": "away",
      "detail": "DET juega su segundo partido en dos noches: 2.2 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909955",
+   "espn_game_id": "401909955",
+   "starts_at": "2026-11-10T00:30Z",
+   "home": {
+    "name": "Toronto Raptors",
+    "code": "TOR"
+   },
+   "away": {
+    "name": "Memphis Grizzlies",
+    "code": "MEM"
+   },
+   "projection": {
+    "home_score": 117.0,
+    "away_score": 113.9
+   },
+   "win_probability": {
+    "home": 0.5918,
+    "away": 0.4082
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Toronto Raptors ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -4.0,
+    "away": 4.0
+   },
+   "total_points": 230.9,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -15.0,
+     21.0
+    ],
+    "total": [
+     205.0,
+     257.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +3.2, Elo +7.7, equipo +6.4, cuatro factores +10.8.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de TOR vale 1.4 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para TOR.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de TOR",
+     "favors": "away",
+     "detail": "Sin Scottie Barnes, Kawhi Leonard, Collin Murray-Boyles: TOR pierde 2.7 puntos.",
      "supports_pick": false
     }
    ]
