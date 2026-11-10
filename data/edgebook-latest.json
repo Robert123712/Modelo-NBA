@@ -2,86 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-10T00:45:00.000651Z",
+ "generated_at": "2026-11-10T01:15:00.000655Z",
  "date_local": "2026-11-09",
  "games": [
-  {
-   "league_game_id": "401909956",
-   "espn_game_id": "401909956",
-   "starts_at": "2026-11-10T01:00Z",
-   "home": {
-    "name": "Dallas Mavericks",
-    "code": "DAL"
-   },
-   "away": {
-    "name": "Indiana Pacers",
-    "code": "IND"
-   },
-   "projection": {
-    "home_score": 115.9,
-    "away_score": 109.3
-   },
-   "win_probability": {
-    "home": 0.6859,
-    "away": 0.3141
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Dallas Mavericks ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -7.0,
-    "away": 7.0
-   },
-   "total_points": 225.2,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -11.0,
-     24.0
-    ],
-    "total": [
-     199.0,
-     251.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +6.3, Elo +6.0, equipo +6.4, cuatro factores +5.9.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DAL vale 6.7 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para DAL.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de IND",
-     "favors": "home",
-     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Ben Sheppard: IND pierde 3.9 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "away",
-     "detail": "DAL juega su segundo partido en dos noches: 2.2 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909957",
    "espn_game_id": "401909957",
@@ -95,28 +18,28 @@
     "code": "DEN"
    },
    "projection": {
-    "home_score": 111.8,
-    "away_score": 107.2
+    "home_score": 111.7,
+    "away_score": 107.6
    },
    "win_probability": {
-    "home": 0.627,
-    "away": 0.373
+    "home": 0.6143,
+    "away": 0.3857
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Houston Rockets ML"
    },
-   "data_warning": "Christian Braun está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": -5.0,
     "away": 5.0
    },
-   "total_points": 219.0,
+   "total_points": 219.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -13.0,
+     -14.0,
      22.0
     ],
     "total": [
@@ -124,26 +47,19 @@
      246.0
     ]
    },
-   "game_warnings": [
-    "Christian Braun está en duda (probable)",
-    "DeMar DeRozan está en duda (probable)",
-    "Aaron Gordon está en duda (probable)",
-    "Cameron Johnson está en duda (probable)",
-    "Nikola Jokic está en duda (probable)",
-    "Jamal Murray está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +4.6, Elo +3.6, equipo +4.0, cuatro factores +3.9.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +4.2, Elo +3.6, equipo +4.0, cuatro factores +3.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 3.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 2.5 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -155,7 +71,7 @@
     {
      "label": "Bajas de DEN",
      "favors": "home",
-     "detail": "Sin Julian Strawther: DEN pierde 1.5 puntos.",
+     "detail": "Sin Julian Strawther: DEN pierde 1.1 puntos.",
      "supports_pick": true
     }
    ]
@@ -173,56 +89,54 @@
     "code": "SA"
    },
    "projection": {
-    "home_score": 107.9,
-    "away_score": 116.3
+    "home_score": 107.8,
+    "away_score": 116.7
    },
    "win_probability": {
-    "home": 0.271,
-    "away": 0.729
+    "home": 0.2603,
+    "away": 0.7397
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "San Antonio Spurs ML"
    },
-   "data_warning": "Jordan Goodwin está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": 9.0,
     "away": -9.0
    },
-   "total_points": 224.3,
+   "total_points": 224.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -26.0,
+     -27.0,
      9.0
     ],
     "total": [
      199.0,
-     250.0
+     251.0
     ]
    },
-   "game_warnings": [
-    "Jordan Goodwin está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +8.3, Elo +6.2, equipo +7.5, cuatro factores +5.9.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +8.8, Elo +6.2, equipo +7.5, cuatro factores +5.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 10.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 10.6 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de PHX",
      "favors": "away",
-     "detail": "Sin Mark Williams: PHX pierde 1.0 puntos.",
+     "detail": "Sin Jordan Goodwin, Mark Williams: PHX pierde 1.5 puntos.",
      "supports_pick": true
     },
     {
@@ -601,6 +515,86 @@
      "label": "Bajas de TOR",
      "favors": "away",
      "detail": "Sin Scottie Barnes, Kawhi Leonard, Collin Murray-Boyles: TOR pierde 2.7 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909956",
+   "espn_game_id": "401909956",
+   "starts_at": "2026-11-10T01:00Z",
+   "home": {
+    "name": "Dallas Mavericks",
+    "code": "DAL"
+   },
+   "away": {
+    "name": "Indiana Pacers",
+    "code": "IND"
+   },
+   "projection": {
+    "home_score": 115.4,
+    "away_score": 108.7
+   },
+   "win_probability": {
+    "home": 0.6903,
+    "away": 0.3097
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Dallas Mavericks ML"
+   },
+   "data_warning": "Morez Johnson Jr. está en duda (questionable)",
+   "spread": {
+    "home": -7.0,
+    "away": 7.0
+   },
+   "total_points": 224.1,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -11.0,
+     25.0
+    ],
+    "total": [
+     198.0,
+     250.0
+    ]
+   },
+   "game_warnings": [
+    "Morez Johnson Jr. está en duda (questionable)",
+    "T.J. McConnell está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +6.6, Elo +6.0, equipo +6.4, cuatro factores +5.9.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de DAL vale 7.0 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para DAL.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de IND",
+     "favors": "home",
+     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Ben Sheppard: IND pierde 4.1 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "away",
+     "detail": "DAL juega su segundo partido en dos noches: 2.2 puntos.",
      "supports_pick": false
     }
    ]
