@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-10T02:15:00.000533Z",
+ "generated_at": "2026-11-10T03:15:00.000682Z",
  "date_local": "2026-11-09",
  "games": [
-  {
-   "league_game_id": "401909959",
-   "espn_game_id": "401909959",
-   "starts_at": "2026-11-10T03:00Z",
-   "home": {
-    "name": "Golden State Warriors",
-    "code": "GS"
-   },
-   "away": {
-    "name": "New Orleans Pelicans",
-    "code": "NO"
-   },
-   "projection": {
-    "home_score": 122.1,
-    "away_score": 111.9
-   },
-   "win_probability": {
-    "home": 0.7719,
-    "away": 0.2281
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Golden State Warriors ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -10.0,
-    "away": 10.0
-   },
-   "total_points": 234.0,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -8.0,
-     28.0
-    ],
-    "total": [
-     208.0,
-     260.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +12.3, Elo +5.8, equipo +5.7, cuatro factores +4.3.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de GS vale 8.3 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para GS.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "home",
-     "detail": "NO juega su segundo partido en dos noches: 2.2 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909952",
    "espn_game_id": "401909952",
@@ -605,6 +534,77 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para PHX.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909959",
+   "espn_game_id": "401909959",
+   "starts_at": "2026-11-10T03:00Z",
+   "home": {
+    "name": "Golden State Warriors",
+    "code": "GS"
+   },
+   "away": {
+    "name": "New Orleans Pelicans",
+    "code": "NO"
+   },
+   "projection": {
+    "home_score": 122.0,
+    "away_score": 111.7
+   },
+   "win_probability": {
+    "home": 0.7752,
+    "away": 0.2248
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Golden State Warriors ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -10.0,
+    "away": 10.0
+   },
+   "total_points": 233.7,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -8.0,
+     28.0
+    ],
+    "total": [
+     208.0,
+     260.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +12.5, Elo +5.8, equipo +5.7, cuatro factores +4.3.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de GS vale 8.5 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para GS.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "home",
+     "detail": "NO juega su segundo partido en dos noches: 2.2 puntos.",
+     "supports_pick": true
     }
    ]
   }
