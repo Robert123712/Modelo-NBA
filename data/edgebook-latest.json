@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-11T05:15:00.000511Z",
+ "generated_at": "2026-11-11T05:45:00.000493Z",
  "date_local": "2026-11-11",
  "games": [
   {
@@ -22,8 +22,8 @@
     "away_score": 110.9
    },
    "win_probability": {
-    "home": 0.6226,
-    "away": 0.3774
+    "home": 0.623,
+    "away": 0.377
    },
    "pick": {
     "market": "moneyline",
@@ -95,8 +95,8 @@
     "away_score": 108.2
    },
    "win_probability": {
-    "home": 0.6321,
-    "away": 0.3679
+    "home": 0.6325,
+    "away": 0.3675
    },
    "pick": {
     "market": "moneyline",
@@ -108,7 +108,7 @@
     "home": -5.0,
     "away": 5.0
    },
-   "total_points": 221.0,
+   "total_points": 221.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -116,7 +116,7 @@
      22.0
     ],
     "total": [
-     195.0,
+     196.0,
      247.0
     ]
    },
@@ -168,8 +168,8 @@
     "away_score": 112.8
    },
    "win_probability": {
-    "home": 0.3483,
-    "away": 0.6517
+    "home": 0.3476,
+    "away": 0.6524
    },
    "pick": {
     "market": "moneyline",
@@ -181,7 +181,7 @@
     "home": 6.0,
     "away": -6.0
    },
-   "total_points": 220.2,
+   "total_points": 220.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -244,7 +244,7 @@
     "code": "SA"
    },
    "projection": {
-    "home_score": 109.8,
+    "home_score": 109.9,
     "away_score": 124.8
    },
    "win_probability": {
@@ -261,7 +261,7 @@
     "home": 15.0,
     "away": -15.0
    },
-   "total_points": 234.6,
+   "total_points": 234.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -281,7 +281,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +14.9, Elo +12.3, equipo +15.5, cuatro factores +12.2.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +14.9, Elo +12.3, equipo +15.5, cuatro factores +12.1.",
      "supports_pick": true
     },
     {
@@ -315,8 +315,8 @@
     "away_score": 115.3
    },
    "win_probability": {
-    "home": 0.4188,
-    "away": 0.5812
+    "home": 0.4184,
+    "away": 0.5816
    },
    "pick": {
     "market": "moneyline",
@@ -388,8 +388,8 @@
     "away_score": 123.6
    },
    "win_probability": {
-    "home": 0.1683,
-    "away": 0.8317
+    "home": 0.1686,
+    "away": 0.8314
    },
    "pick": {
     "market": "moneyline",
@@ -401,7 +401,7 @@
     "home": 13.0,
     "away": -13.0
    },
-   "total_points": 234.1,
+   "total_points": 234.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -461,8 +461,8 @@
     "away_score": 112.4
    },
    "win_probability": {
-    "home": 0.6121,
-    "away": 0.3879
+    "home": 0.6119,
+    "away": 0.3881
    },
    "pick": {
     "market": "moneyline",
@@ -502,7 +502,7 @@
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NO vale 1.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NO vale 1.5 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -532,12 +532,12 @@
     "code": "ORL"
    },
    "projection": {
-    "home_score": 106.7,
-    "away_score": 112.8
+    "home_score": 106.5,
+    "away_score": 111.9
    },
    "win_probability": {
-    "home": 0.3295,
-    "away": 0.6705
+    "home": 0.3463,
+    "away": 0.6537
    },
    "pick": {
     "market": "moneyline",
@@ -549,16 +549,16 @@
     "home": 6.0,
     "away": -6.0
    },
-   "total_points": 219.5,
+   "total_points": 218.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -24.0,
+     -23.0,
      12.0
     ],
     "total": [
-     194.0,
-     245.0
+     192.0,
+     244.0
     ]
    },
    "game_warnings": [],
@@ -567,19 +567,19 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +5.8, Elo +5.2, equipo +3.4, cuatro factores +2.2.",
+     "detail": "4 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +6.0, Elo +5.5, equipo +3.5, cuatro factores +3.0.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de ORL vale 7.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de ORL vale 7.8 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de UTAH",
      "favors": "away",
-     "detail": "Sin Keyonte George, Jaren Jackson Jr., Lauri Markkanen: UTAH pierde 3.7 puntos.",
+     "detail": "Sin Keyonte George, Jaren Jackson Jr., Lauri Markkanen: UTAH pierde 3.8 puntos.",
      "supports_pick": true
     },
     {
@@ -607,8 +607,8 @@
     "away_score": 109.6
    },
    "win_probability": {
-    "home": 0.6067,
-    "away": 0.3933
+    "home": 0.6061,
+    "away": 0.3939
    },
    "pick": {
     "market": "moneyline",
@@ -625,10 +625,10 @@
    "intervals_80": {
     "home_margin": [
      -14.0,
-     22.0
+     21.1
     ],
     "total": [
-     197.9,
+     197.0,
      249.0
     ]
    },
@@ -640,7 +640,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +3.7, Elo +5.0, equipo +4.3, cuatro factores +5.6.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +3.7, Elo +5.0, equipo +4.2, cuatro factores +5.5.",
      "supports_pick": true
     },
     {
@@ -677,11 +677,11 @@
    },
    "projection": {
     "home_score": 114.8,
-    "away_score": 112.5
+    "away_score": 112.6
    },
    "win_probability": {
-    "home": 0.5617,
-    "away": 0.4383
+    "home": 0.5611,
+    "away": 0.4389
    },
    "pick": {
     "market": "moneyline",
@@ -711,7 +711,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "3 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores -2.0, Elo +2.8, equipo +4.7, cuatro factores +4.1.",
+     "detail": "3 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores -2.0, Elo +2.8, equipo +4.8, cuatro factores +4.1.",
      "supports_pick": false
     },
     {
