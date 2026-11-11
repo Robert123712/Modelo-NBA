@@ -2,74 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-11T03:15:00.000620Z",
+ "generated_at": "2026-11-11T04:15:00.000522Z",
  "date_local": "2026-11-10",
  "games": [
-  {
-   "league_game_id": "401909965",
-   "espn_game_id": "401909965",
-   "starts_at": "2026-11-11T04:00Z",
-   "home": {
-    "name": "Portland Trail Blazers",
-    "code": "POR"
-   },
-   "away": {
-    "name": "Oklahoma City Thunder",
-    "code": "OKC"
-   },
-   "projection": {
-    "home_score": 114.1,
-    "away_score": 112.0
-   },
-   "win_probability": {
-    "home": 0.5585,
-    "away": 0.4415
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Portland Trail Blazers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -3.0,
-    "away": 3.0
-   },
-   "total_points": 226.0,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -16.0,
-     20.0
-    ],
-    "total": [
-     200.0,
-     252.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "3 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores -2.0, Elo +2.8, equipo +4.9, cuatro factores +4.1.",
-     "supports_pick": false
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para POR.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de OKC",
-     "favors": "home",
-     "detail": "Sin Chet Holmgren, Nikola Topic, Cason Wallace: OKC pierde 6.3 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909960",
    "espn_game_id": "401909960",
@@ -422,6 +357,71 @@
      "favors": "home",
      "detail": "Sin Paolo Banchero, Tristan da Silva, Jalen Suggs: ORL pierde 1.3 puntos.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909965",
+   "espn_game_id": "401909965",
+   "starts_at": "2026-11-11T04:00Z",
+   "home": {
+    "name": "Portland Trail Blazers",
+    "code": "POR"
+   },
+   "away": {
+    "name": "Oklahoma City Thunder",
+    "code": "OKC"
+   },
+   "projection": {
+    "home_score": 114.1,
+    "away_score": 112.0
+   },
+   "win_probability": {
+    "home": 0.5585,
+    "away": 0.4415
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Portland Trail Blazers ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -3.0,
+    "away": 3.0
+   },
+   "total_points": 226.0,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -16.0,
+     20.0
+    ],
+    "total": [
+     200.0,
+     252.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "3 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores -2.0, Elo +2.8, equipo +4.9, cuatro factores +4.1.",
+     "supports_pick": false
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para POR.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de OKC",
+     "favors": "home",
+     "detail": "Sin Chet Holmgren, Nikola Topic, Cason Wallace: OKC pierde 6.3 puntos.",
+     "supports_pick": true
     }
    ]
   }
