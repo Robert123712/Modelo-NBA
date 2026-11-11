@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-11T23:15:00.000626Z",
+ "generated_at": "2026-11-11T23:45:00.000488Z",
  "date_local": "2026-11-11",
  "games": [
   {
@@ -89,12 +89,12 @@
     "code": "CLE"
    },
    "projection": {
-    "home_score": 113.5,
-    "away_score": 108.4
+    "home_score": 113.0,
+    "away_score": 108.3
    },
    "win_probability": {
-    "home": 0.6466,
-    "away": 0.3534
+    "home": 0.6341,
+    "away": 0.3659
    },
    "pick": {
     "market": "moneyline",
@@ -106,16 +106,16 @@
     "home": -5.0,
     "away": 5.0
    },
-   "total_points": 222.0,
+   "total_points": 221.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -13.0,
-     23.0
+     22.0
     ],
     "total": [
      196.0,
-     248.0
+     247.0
     ]
    },
    "game_warnings": [],
@@ -124,13 +124,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +4.4, Elo +7.6, equipo +6.8, cuatro factores +9.3.",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +4.7, Elo +7.6, equipo +6.8, cuatro factores +9.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 4.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 5.1 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -142,7 +142,7 @@
     {
      "label": "Bajas de CLE",
      "favors": "home",
-     "detail": "Sin Sam Merrill, Jaylon Tyson: CLE pierde 1.0 puntos.",
+     "detail": "Sin Sam Merrill: CLE pierde 1.2 puntos.",
      "supports_pick": true
     },
     {
@@ -243,12 +243,12 @@
     "code": "SA"
    },
    "projection": {
-    "home_score": 110.0,
-    "away_score": 125.9
+    "home_score": 109.7,
+    "away_score": 125.8
    },
    "win_probability": {
-    "home": 0.1277,
-    "away": 0.8723
+    "home": 0.1236,
+    "away": 0.8764
    },
    "pick": {
     "market": "moneyline",
@@ -260,35 +260,34 @@
     "home": 16.0,
     "away": -16.0
    },
-   "total_points": 235.9,
+   "total_points": 235.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -34.0,
-     3.0
+     2.0
     ],
     "total": [
      210.0,
-     262.0
+     261.0
     ]
    },
    "game_warnings": [
     "Norman Powell está en duda (questionable)",
-    "Caleb Wilson está en duda (questionable)",
-    "Devin Vassell está en duda (questionable)"
+    "Caleb Wilson está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +15.9, Elo +12.3, equipo +15.4, cuatro factores +12.1.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +16.2, Elo +12.3, equipo +15.4, cuatro factores +12.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 17.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 18.0 puntos más por partido.",
      "supports_pick": true
     },
     {
