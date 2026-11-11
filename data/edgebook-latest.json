@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-11T21:15:46.475452Z",
+ "generated_at": "2026-11-11T22:15:00.000546Z",
  "date_local": "2026-11-11",
  "games": [
   {
@@ -314,12 +314,12 @@
     "code": "DEN"
    },
    "projection": {
-    "home_score": 112.6,
-    "away_score": 115.5
+    "home_score": 112.1,
+    "away_score": 115.6
    },
    "win_probability": {
-    "home": 0.415,
-    "away": 0.585
+    "home": 0.3984,
+    "away": 0.6016
    },
    "pick": {
     "market": "moneyline",
@@ -328,15 +328,15 @@
    },
    "data_warning": "Isaiah Stewart está en duda (questionable)",
    "spread": {
-    "home": 3.0,
-    "away": -3.0
+    "home": 4.0,
+    "away": -4.0
    },
-   "total_points": 228.1,
+   "total_points": 227.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -21.0,
-     15.0
+     14.0
     ],
     "total": [
      202.0,
@@ -351,19 +351,19 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +2.9, Elo +3.0, equipo +2.5, cuatro factores +5.0.",
+     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +3.5, Elo +3.0, equipo +2.5, cuatro factores +5.0.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DEN vale 4.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DEN vale 5.2 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de MEM",
      "favors": "away",
-     "detail": "Sin Scotty Pippen Jr., Quinten Post: MEM pierde 1.1 puntos.",
+     "detail": "Sin Scotty Pippen Jr., Quinten Post: MEM pierde 1.7 puntos.",
      "supports_pick": true
     },
     {
@@ -478,7 +478,7 @@
     "side": "home",
     "label": "New Orleans Pelicans ML"
    },
-   "data_warning": "Nolan Traore está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -5.0,
     "away": 5.0
@@ -495,9 +495,7 @@
      255.0
     ]
    },
-   "game_warnings": [
-    "Nolan Traore está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
