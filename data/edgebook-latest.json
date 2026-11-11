@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-11T21:15:00.000613Z",
+ "generated_at": "2026-11-11T21:15:46.475452Z",
  "date_local": "2026-11-11",
  "games": [
   {
@@ -687,12 +687,12 @@
     "code": "OKC"
    },
    "projection": {
-    "home_score": 113.8,
-    "away_score": 112.2
+    "home_score": 114.6,
+    "away_score": 111.2
    },
    "win_probability": {
-    "home": 0.5435,
-    "away": 0.4565
+    "home": 0.5955,
+    "away": 0.4045
    },
    "pick": {
     "market": "moneyline",
@@ -701,15 +701,15 @@
    },
    "data_warning": null,
    "spread": {
-    "home": -2.0,
-    "away": 2.0
+    "home": -4.0,
+    "away": 4.0
    },
-   "total_points": 225.9,
+   "total_points": 225.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -16.0,
-     19.0
+     -14.0,
+     21.0
     ],
     "total": [
      200.0,
@@ -722,13 +722,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "3 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores -3.4, Elo +0.9, equipo +2.8, cuatro factores +3.1.",
+     "detail": "3 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores -6.1, Elo +0.9, equipo +2.8, cuatro factores +3.1.",
      "supports_pick": false
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de POR vale 1.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de POR vale 4.3 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -740,7 +740,7 @@
     {
      "label": "Bajas de OKC",
      "favors": "home",
-     "detail": "Sin Chet Holmgren, Cason Wallace, Jalen Williams: OKC pierde 6.8 puntos.",
+     "detail": "Sin Chet Holmgren, Ajay Mitchell, Nikola Topic: OKC pierde 9.5 puntos.",
      "supports_pick": true
     }
    ]
