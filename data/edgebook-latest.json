@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-11T00:45:00.000526Z",
+ "generated_at": "2026-11-11T01:15:00.000514Z",
  "date_local": "2026-11-10",
  "games": [
-  {
-   "league_game_id": "401909961",
-   "espn_game_id": "401909961",
-   "starts_at": "2026-11-11T01:00Z",
-   "home": {
-    "name": "Philadelphia 76ers",
-    "code": "PHI"
-   },
-   "away": {
-    "name": "Boston Celtics",
-    "code": "BOS"
-   },
-   "projection": {
-    "home_score": 105.2,
-    "away_score": 110.0
-   },
-   "win_probability": {
-    "home": 0.3633,
-    "away": 0.6367
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Boston Celtics ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 5.0,
-    "away": -5.0
-   },
-   "total_points": 215.2,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -22.0,
-     13.0
-    ],
-    "total": [
-     189.0,
-     241.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +5.3, Elo +0.0, equipo +4.2, cuatro factores +5.1.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 7.0 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para PHI.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de BOS",
-     "favors": "home",
-     "detail": "Sin Devin Carter: BOS pierde 0.9 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909962",
    "espn_game_id": "401909962",
@@ -161,55 +90,53 @@
    },
    "projection": {
     "home_score": 112.7,
-    "away_score": 116.9
+    "away_score": 117.5
    },
    "win_probability": {
-    "home": 0.3846,
-    "away": 0.6154
+    "home": 0.3675,
+    "away": 0.6325
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Miami Heat ML"
    },
-   "data_warning": "Giannis Antetokounmpo está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": 5.0,
     "away": -5.0
    },
-   "total_points": 229.7,
+   "total_points": 230.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -22.0,
-     14.0
+     -23.0,
+     13.0
     ],
     "total": [
      204.0,
-     256.0
+     257.0
     ]
    },
-   "game_warnings": [
-    "Giannis Antetokounmpo está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a MIA. Margen de MIA: jugadores +4.4, Elo +5.2, equipo +4.3, cuatro factores +5.2.",
+     "detail": "4 de 4 modelos ven ganar a MIA. Margen de MIA: jugadores +5.3, Elo +5.2, equipo +4.3, cuatro factores +5.2.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de MIA vale 6.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MIA vale 7.1 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de UTAH",
      "favors": "away",
-     "detail": "Sin Keyonte George, Jaren Jackson Jr., Lauri Markkanen: UTAH pierde 3.4 puntos.",
+     "detail": "Sin Keyonte George, Jaren Jackson Jr., Lauri Markkanen: UTAH pierde 4.4 puntos.",
      "supports_pick": true
     },
     {
@@ -424,6 +351,77 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.7 puntos para NY.",
      "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909961",
+   "espn_game_id": "401909961",
+   "starts_at": "2026-11-11T01:00Z",
+   "home": {
+    "name": "Philadelphia 76ers",
+    "code": "PHI"
+   },
+   "away": {
+    "name": "Boston Celtics",
+    "code": "BOS"
+   },
+   "projection": {
+    "home_score": 105.2,
+    "away_score": 110.0
+   },
+   "win_probability": {
+    "home": 0.3633,
+    "away": 0.6367
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Boston Celtics ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 5.0,
+    "away": -5.0
+   },
+   "total_points": 215.2,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -22.0,
+     13.0
+    ],
+    "total": [
+     189.0,
+     241.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +5.3, Elo +0.0, equipo +4.2, cuatro factores +5.1.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 7.0 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para PHI.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de BOS",
+     "favors": "home",
+     "detail": "Sin Devin Carter: BOS pierde 0.9 puntos.",
+     "supports_pick": false
     }
    ]
   }
