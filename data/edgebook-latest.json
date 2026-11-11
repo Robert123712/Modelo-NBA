@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-11T22:15:00.000546Z",
+ "generated_at": "2026-11-11T22:45:00.000555Z",
  "date_local": "2026-11-11",
  "games": [
   {
@@ -91,58 +91,60 @@
     "code": "CLE"
    },
    "projection": {
-    "home_score": 112.9,
-    "away_score": 108.1
+    "home_score": 113.5,
+    "away_score": 108.4
    },
    "win_probability": {
-    "home": 0.6383,
-    "away": 0.3617
+    "home": 0.6466,
+    "away": 0.3534
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "New York Knicks ML"
    },
-   "data_warning": "Josh Hart está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": -5.0,
     "away": 5.0
    },
-   "total_points": 221.0,
+   "total_points": 222.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -13.0,
-     22.0
+     23.0
     ],
     "total": [
-     195.0,
-     247.0
+     196.0,
+     248.0
     ]
    },
-   "game_warnings": [
-    "Josh Hart está en duda (probable)",
-    "Karl-Anthony Towns está en duda (questionable)",
-    "Jaylon Tyson está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +3.9, Elo +7.6, equipo +6.8, cuatro factores +9.3.",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +4.4, Elo +7.6, equipo +6.8, cuatro factores +9.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 4.3 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 4.8 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.7 puntos para NY.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de CLE",
+     "favors": "home",
+     "detail": "Sin Sam Merrill, Jaylon Tyson: CLE pierde 1.0 puntos.",
      "supports_pick": true
     },
     {
@@ -166,57 +168,54 @@
     "code": "BOS"
    },
    "projection": {
-    "home_score": 107.1,
-    "away_score": 112.6
+    "home_score": 107.6,
+    "away_score": 112.1
    },
    "win_probability": {
-    "home": 0.3426,
-    "away": 0.6574
+    "home": 0.3703,
+    "away": 0.6297
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Boston Celtics ML"
    },
-   "data_warning": "Collin Murray-Boyles está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": 6.0,
-    "away": -6.0
+    "home": 5.0,
+    "away": -5.0
    },
-   "total_points": 219.7,
+   "total_points": 219.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -23.0,
-     12.0
+     -22.0,
+     13.0
     ],
     "total": [
      194.0,
      245.0
     ]
    },
-   "game_warnings": [
-    "Collin Murray-Boyles está en duda (questionable)",
-    "Immanuel Quickley está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +6.4, Elo +3.3, equipo +3.5, cuatro factores +1.9.",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +4.9, Elo +3.3, equipo +3.5, cuatro factores +1.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 10.3 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 8.8 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de TOR",
      "favors": "away",
-     "detail": "Sin Scottie Barnes, Kawhi Leonard: TOR pierde 4.6 puntos.",
+     "detail": "Sin Scottie Barnes, Kawhi Leonard, Malachi Smith: TOR pierde 3.1 puntos.",
      "supports_pick": true
     },
     {
@@ -246,12 +245,12 @@
     "code": "SA"
    },
    "projection": {
-    "home_score": 110.5,
+    "home_score": 110.0,
     "away_score": 125.9
    },
    "win_probability": {
-    "home": 0.1353,
-    "away": 0.8647
+    "home": 0.1277,
+    "away": 0.8723
    },
    "pick": {
     "market": "moneyline",
@@ -260,37 +259,38 @@
    },
    "data_warning": "Norman Powell está en duda (questionable)",
    "spread": {
-    "home": 15.0,
-    "away": -15.0
+    "home": 16.0,
+    "away": -16.0
    },
-   "total_points": 236.3,
+   "total_points": 235.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -33.0,
+     -34.0,
      3.0
     ],
     "total": [
-     211.0,
+     210.0,
      262.0
     ]
    },
    "game_warnings": [
     "Norman Powell está en duda (questionable)",
-    "Caleb Wilson está en duda (questionable)"
+    "Caleb Wilson está en duda (questionable)",
+    "Devin Vassell está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +15.4, Elo +12.3, equipo +15.4, cuatro factores +12.1.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +15.9, Elo +12.3, equipo +15.4, cuatro factores +12.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 17.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 17.7 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -466,48 +466,50 @@
     "code": "BKN"
    },
    "projection": {
-    "home_score": 116.7,
-    "away_score": 112.0
+    "home_score": 115.9,
+    "away_score": 112.3
    },
    "win_probability": {
-    "home": 0.6331,
-    "away": 0.3669
+    "home": 0.6013,
+    "away": 0.3987
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "New Orleans Pelicans ML"
    },
-   "data_warning": null,
+   "data_warning": "Trey Murphy III está en duda (doubtful)",
    "spread": {
-    "home": -5.0,
-    "away": 5.0
+    "home": -4.0,
+    "away": 4.0
    },
-   "total_points": 228.8,
+   "total_points": 228.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -13.0,
-     23.0
+     -14.0,
+     21.0
     ],
     "total": [
-     203.0,
-     255.0
+     202.0,
+     254.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Trey Murphy III está en duda (doubtful)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NO. Margen de NO: jugadores +4.4, Elo +6.2, equipo +5.4, cuatro factores +7.0.",
+     "detail": "4 de 4 modelos ven ganar a NO. Margen de NO: jugadores +2.8, Elo +6.2, equipo +5.4, cuatro factores +7.0.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NO vale 2.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NO vale 1.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -519,7 +521,7 @@
     {
      "label": "Bajas de NO",
      "favors": "away",
-     "detail": "Sin Bennedict Mathurin, Yves Missi, Trendon Watford: NO pierde 2.5 puntos.",
+     "detail": "Sin Bennedict Mathurin, Yves Missi, Trendon Watford: NO pierde 4.1 puntos.",
      "supports_pick": false
     }
    ]
@@ -612,12 +614,12 @@
     "code": "GS"
    },
    "projection": {
-    "home_score": 113.4,
+    "home_score": 113.2,
     "away_score": 109.5
    },
    "win_probability": {
-    "home": 0.6102,
-    "away": 0.3898
+    "home": 0.6052,
+    "away": 0.3948
    },
    "pick": {
     "market": "moneyline",
@@ -629,16 +631,16 @@
     "home": -4.0,
     "away": 4.0
    },
-   "total_points": 222.8,
+   "total_points": 222.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -14.0,
-     22.0
+     21.0
     ],
     "total": [
      197.0,
-     248.1
+     248.0
     ]
    },
    "game_warnings": [
@@ -649,13 +651,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +3.9, Elo +5.0, equipo +4.3, cuatro factores +5.6.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +3.7, Elo +5.0, equipo +4.3, cuatro factores +5.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 2.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 1.9 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -667,7 +669,7 @@
     {
      "label": "Bajas de GS",
      "favors": "home",
-     "detail": "Sin Jimmy Butler III, Moses Moody, Gary Payton II: GS pierde 2.3 puntos.",
+     "detail": "Sin Jimmy Butler III, Moses Moody, Gary Payton II: GS pierde 2.1 puntos.",
      "supports_pick": true
     }
    ]
