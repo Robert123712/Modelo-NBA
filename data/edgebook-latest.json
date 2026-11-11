@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-11T15:15:00.923098Z",
+ "generated_at": "2026-11-11T16:15:00.000613Z",
  "date_local": "2026-11-11",
  "games": [
   {
@@ -244,36 +244,37 @@
     "code": "SA"
    },
    "projection": {
-    "home_score": 110.0,
-    "away_score": 124.9
+    "home_score": 109.7,
+    "away_score": 126.1
    },
    "win_probability": {
-    "home": 0.1416,
-    "away": 0.8584
+    "home": 0.12,
+    "away": 0.88
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "San Antonio Spurs ML"
    },
-   "data_warning": "Devin Vassell está en duda (questionable)",
+   "data_warning": "Norman Powell está en duda (questionable)",
    "spread": {
-    "home": 15.0,
-    "away": -15.0
+    "home": 16.0,
+    "away": -16.0
    },
-   "total_points": 234.8,
+   "total_points": 235.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -33.0,
-     4.0
+     -34.0,
+     2.0
     ],
     "total": [
-     209.0,
-     261.0
+     210.0,
+     262.0
     ]
    },
    "game_warnings": [
+    "Norman Powell está en duda (questionable)",
     "Devin Vassell está en duda (questionable)"
    ],
    "warnings": [],
@@ -281,13 +282,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +14.9, Elo +12.3, equipo +15.4, cuatro factores +12.1.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +16.4, Elo +12.3, equipo +15.4, cuatro factores +12.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 16.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 18.3 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -458,12 +459,12 @@
     "code": "BKN"
    },
    "projection": {
-    "home_score": 116.4,
-    "away_score": 112.4
+    "home_score": 116.7,
+    "away_score": 111.9
    },
    "win_probability": {
-    "home": 0.6133,
-    "away": 0.3867
+    "home": 0.6344,
+    "away": 0.3656
    },
    "pick": {
     "market": "moneyline",
@@ -472,15 +473,15 @@
    },
    "data_warning": "Trey Murphy III está en duda (probable)",
    "spread": {
-    "home": -4.0,
-    "away": 4.0
+    "home": -5.0,
+    "away": 5.0
    },
-   "total_points": 228.8,
+   "total_points": 228.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -14.0,
-     22.0
+     -13.0,
+     23.0
     ],
     "total": [
      203.0,
@@ -489,6 +490,7 @@
    },
    "game_warnings": [
     "Trey Murphy III está en duda (probable)",
+    "Mikel Brown Jr. está en duda (questionable)",
     "Egor Demin está en duda (probable)",
     "Nolan Traore está en duda (questionable)"
    ],
@@ -497,13 +499,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NO. Margen de NO: jugadores +3.4, Elo +6.2, equipo +5.4, cuatro factores +7.0.",
+     "detail": "4 de 4 modelos ven ganar a NO. Margen de NO: jugadores +4.5, Elo +6.2, equipo +5.4, cuatro factores +7.0.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NO vale 1.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NO vale 2.6 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -515,7 +517,7 @@
     {
      "label": "Bajas de NO",
      "favors": "away",
-     "detail": "Sin Yves Missi, Trendon Watford: NO pierde 3.5 puntos.",
+     "detail": "Sin Yves Missi, Trendon Watford: NO pierde 2.4 puntos.",
      "supports_pick": false
     }
    ]
