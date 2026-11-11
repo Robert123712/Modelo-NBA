@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-11T16:15:00.000613Z",
+ "generated_at": "2026-11-11T16:45:00.000632Z",
  "date_local": "2026-11-11",
  "games": [
   {
@@ -460,23 +460,23 @@
    },
    "projection": {
     "home_score": 116.7,
-    "away_score": 111.9
+    "away_score": 112.0
    },
    "win_probability": {
-    "home": 0.6344,
-    "away": 0.3656
+    "home": 0.6325,
+    "away": 0.3675
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "New Orleans Pelicans ML"
    },
-   "data_warning": "Trey Murphy III está en duda (probable)",
+   "data_warning": "Egor Demin está en duda (probable)",
    "spread": {
     "home": -5.0,
     "away": 5.0
    },
-   "total_points": 228.6,
+   "total_points": 228.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -489,8 +489,6 @@
     ]
    },
    "game_warnings": [
-    "Trey Murphy III está en duda (probable)",
-    "Mikel Brown Jr. está en duda (questionable)",
     "Egor Demin está en duda (probable)",
     "Nolan Traore está en duda (questionable)"
    ],
@@ -499,13 +497,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NO. Margen de NO: jugadores +4.5, Elo +6.2, equipo +5.4, cuatro factores +7.0.",
+     "detail": "4 de 4 modelos ven ganar a NO. Margen de NO: jugadores +4.3, Elo +6.2, equipo +5.4, cuatro factores +7.0.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NO vale 2.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NO vale 2.5 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -517,7 +515,7 @@
     {
      "label": "Bajas de NO",
      "favors": "away",
-     "detail": "Sin Yves Missi, Trendon Watford: NO pierde 2.4 puntos.",
+     "detail": "Sin Bennedict Mathurin, Yves Missi, Trendon Watford: NO pierde 2.5 puntos.",
      "supports_pick": false
     }
    ]
