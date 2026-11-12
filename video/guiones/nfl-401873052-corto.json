@@ -4,5 +4,5 @@
  {"narracion": [["Los Giants ganaron el 65%.", "cuenta"], ["Marcador promedio: 24 a 19.", "veredicto"]]},
  {"narracion": [["La figura: Malik Nabers.", null], ["71 yardas por partido", "numero"], ["y anota en el 30%.", "promedio"]]},
  {"narracion": [["¿Y esa cosa de McCarthy?", null], ["Si lanza 2 touchdowns,", "medidor0"], ["los Giants ganan el 82%.", "sube0"]]},
- {"narracion": [["Nuestro pick: Giants.", "pick"], ["¿Tú a quién le vas?", "pregunta"], ["Comenta, y mañana lo calificamos.", "comenta"]]}
+ {"narracion": [["Nuestro pick: Giants.", "pick"], ["¿Tú a quién le vas?", "pregunta"], ["Comenta: completa,", "comenta"], ["si quieres ver toda la predicción.", null]]}
 ]

@@ -322,7 +322,8 @@ def construir_corto(d: dict, metricas: dict | None = None) -> dict:
     escenas.append({"tipo": "resultado", "props": {
         "titulo": "¿Quién gana?",
         "victorias": {"home": d["victorias"]["home"], "away": d["victorias"]["away"]}, "muestra": d["muestra"],
-        "veredicto": f"MARCADOR PROMEDIO: {round(mm['away'])}-{round(mm['home'])}", "favorito": favorito},
+        "veredicto": f"MARCADOR PROMEDIO: {round(mm['away'])}-{round(mm['home'])}",
+        "marcador": {"home": round(mm["home"]), "away": round(mm["away"])}, "favorito": favorito},
         "narracion": nar.trozos})
 
     # 4. La figura: el que mas yardas produce del favorito sin ser el QB.
@@ -354,10 +355,11 @@ def construir_corto(d: dict, metricas: dict | None = None) -> dict:
 
     # 6. Cierre: el pick, el record y la pregunta.
     nar = Narracion().t(f"Nuestro pick: {fav['apodo']}.", cue="pick").t("¿Tú a quién le vas?", cue="pregunta") \
-        .t("Comenta, y mañana lo calificamos.", cue="comenta")
+        .t("Comenta: completa,", cue="comenta").t("si quieres ver toda la predicción.")
     escenas.append({"tipo": "cierre", "props": {
         "titulo": "¿A quién\nle vas?", "pick": f"NUESTRO PICK: {fav['apodo']}", "favorito": favorito,
-        "linea1": "COMENTA TU PICK", "linea2": "MAÑANA LO CALIFICAMOS"}, "narracion": nar.trozos})
+        "palabra": "COMPLETA", "linea1": "Comenta “completa”", "linea2": "Y VE TODA LA PREDICCIÓN"},
+        "narracion": nar.trozos})
 
     return {"game_id": d["game_id"], "liga": "nfl", "marca": MARCA, "simulaciones": n, "record": record,
             "fecha": _fecha(d["starts_at"]), "equipos": eq, "cinta": d["cinta"], "escenas": escenas}
