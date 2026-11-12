@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-12T05:45:00.000669Z",
+ "generated_at": "2026-11-12T15:15:00.619373Z",
  "date_local": "2026-11-12",
  "games": [
   {
@@ -22,8 +22,8 @@
     "away_score": 109.8
    },
    "win_probability": {
-    "home": 0.5874,
-    "away": 0.4126
+    "home": 0.5876,
+    "away": 0.4124
    },
    "pick": {
     "market": "moneyline",
@@ -96,8 +96,8 @@
     "away_score": 116.0
    },
    "win_probability": {
-    "home": 0.1786,
-    "away": 0.8214
+    "home": 0.1785,
+    "away": 0.8215
    },
    "pick": {
     "market": "moneyline",
@@ -167,8 +167,8 @@
     "away_score": 108.2
    },
    "win_probability": {
-    "home": 0.6755,
-    "away": 0.3245
+    "home": 0.6754,
+    "away": 0.3246
    },
    "pick": {
     "market": "moneyline",
@@ -198,7 +198,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +5.9, Elo +8.6, equipo +6.9, cuatro factores +5.8.",
+     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +5.8, Elo +8.6, equipo +6.9, cuatro factores +5.8.",
      "supports_pick": true
     },
     {
@@ -232,8 +232,8 @@
     "away_score": 105.4
    },
    "win_probability": {
-    "home": 0.6643,
-    "away": 0.3357
+    "home": 0.664,
+    "away": 0.336
    },
    "pick": {
     "market": "moneyline",
@@ -291,7 +291,5 @@
   }
  ],
  "skipped_without_id": 0,
- "warnings": [
-  "Sin alineaciones de la NBA (HTTPError); titular del partido anterior"
- ]
+ "warnings": []
 }
