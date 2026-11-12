@@ -21,8 +21,8 @@ from pathlib import Path
 import edge_tts
 
 VOZ = os.environ.get("VIDEO_VOZ", "es-MX-JorgeNeural")
-RITMO = os.environ.get("VIDEO_RITMO", "+15%")
-COLA = 0.28  # silencio despues de la ultima palabra de cada escena
+RITMO = os.environ.get("VIDEO_RITMO", "+24%")
+COLA = 0.16  # silencio despues de la ultima palabra de cada escena
 FPS = 30
 
 

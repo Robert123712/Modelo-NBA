@@ -18,6 +18,7 @@ from pathlib import Path
 
 import guion
 import guion_nfl
+import narracion
 import voz
 
 AQUI = Path(__file__).parent
@@ -41,11 +42,13 @@ def _ids(o) -> set[int]:
     return set()
 
 
-def hacer(datos: Path, metricas: Path | None, salida: Path) -> Path:
+def hacer(datos: Path, metricas: Path | None, salida: Path, manual: Path | None = None) -> Path:
     d = json.loads(datos.read_text())
     liga = d.get("liga", "nba")
     armar = guion_nfl.construir if liga == "nfl" else guion.construir
     g = armar(d, json.loads(metricas.read_text()) if metricas else None)
+    if manual:
+        g = narracion.aplicar(g, json.loads(manual.read_text()))
     trabajo = salida / str(d["game_id"])
     tiempos = voz.construir(g, trabajo)
 
@@ -71,5 +74,6 @@ if __name__ == "__main__":
     ap.add_argument("datos", type=Path)
     ap.add_argument("--metricas", type=Path)
     ap.add_argument("--salida", type=Path, default=AQUI / "salida")
+    ap.add_argument("--narracion", type=Path, help="Guion escrito aparte (ver narracion.py)")
     a = ap.parse_args()
-    print(hacer(a.datos, a.metricas, a.salida))
+    print(hacer(a.datos, a.metricas, a.salida, a.narracion))
