@@ -42,10 +42,14 @@ def _ids(o) -> set[int]:
     return set()
 
 
-def hacer(datos: Path, metricas: Path | None, salida: Path, manual: Path | None = None) -> Path:
+def hacer(datos: Path, metricas: Path | None, salida: Path, manual: Path | None = None,
+          formato: str = "corto") -> Path:
     d = json.loads(datos.read_text())
     liga = d.get("liga", "nba")
-    armar = guion_nfl.construir if liga == "nfl" else guion.construir
+    if liga == "nfl":
+        armar = guion_nfl.construir_corto if formato == "corto" else guion_nfl.construir
+    else:
+        armar = guion.construir
     g = armar(d, json.loads(metricas.read_text()) if metricas else None)
     if manual:
         g = narracion.aplicar(g, json.loads(manual.read_text()))
@@ -75,5 +79,6 @@ if __name__ == "__main__":
     ap.add_argument("--metricas", type=Path)
     ap.add_argument("--salida", type=Path, default=AQUI / "salida")
     ap.add_argument("--narracion", type=Path, help="Guion escrito aparte (ver narracion.py)")
+    ap.add_argument("--formato", choices=("corto", "largo"), default="corto")
     a = ap.parse_args()
-    print(hacer(a.datos, a.metricas, a.salida, a.narracion))
+    print(hacer(a.datos, a.metricas, a.salida, a.narracion, a.formato))

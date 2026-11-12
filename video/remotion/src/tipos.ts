@@ -11,6 +11,7 @@ export type Escena = {
 export type Datos = {
   game_id: number;
   liga?: string;
+  record?: {aciertos: number; fallos: number} | null;
   marca: string;
   simulaciones: number;
   fecha: string;

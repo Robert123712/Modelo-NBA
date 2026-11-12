@@ -15,13 +15,14 @@ import os
 import re
 import subprocess
 import sys
+import time
 import unicodedata
 from pathlib import Path
 
 import edge_tts
 
-VOZ = os.environ.get("VIDEO_VOZ", "es-MX-JorgeNeural")
-RITMO = os.environ.get("VIDEO_RITMO", "+24%")
+VOZ = os.environ.get("VIDEO_VOZ", "es-US-AlonsoNeural")
+RITMO = os.environ.get("VIDEO_RITMO", "+36%")
 COLA = 0.16  # silencio despues de la ultima palabra de cada escena
 FPS = 30
 
@@ -95,7 +96,15 @@ def construir(guion: dict, salida: Path) -> dict:
     for i, esc in enumerate(guion["escenas"]):
         mp3 = salida / f"escena{i:02d}.mp3"
         texto = " ".join(t["voz"] for t in esc["narracion"])
-        eventos = asyncio.run(_sintetizar(texto, mp3))
+        # El servicio a veces contesta vacio: se reintenta antes de rendirse.
+        for intento in range(4):
+            try:
+                eventos = asyncio.run(_sintetizar(texto, mp3))
+                break
+            except edge_tts.exceptions.NoAudioReceived:
+                if intento == 3:
+                    raise
+                time.sleep(1.5 * (intento + 1))
         palabras, cues = _palabras(esc["narracion"], eventos)
         dur = eventos[-1]["fin"] + COLA
         # A cuadros enteros, para que audio y video no se despeguen.
