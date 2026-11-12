@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-12T18:15:00.000656Z",
+ "generated_at": "2026-11-12T18:45:00.000696Z",
  "date_local": "2026-11-12",
  "games": [
   {
@@ -229,19 +229,19 @@
     "code": "CHA"
    },
    "projection": {
-    "home_score": 111.5,
+    "home_score": 111.4,
     "away_score": 104.9
    },
    "win_probability": {
-    "home": 0.6851,
-    "away": 0.3149
+    "home": 0.6823,
+    "away": 0.3177
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Phoenix Suns ML"
    },
-   "data_warning": "Moussa Diabate está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": -7.0,
     "away": 7.0
@@ -258,21 +258,19 @@
      242.0
     ]
    },
-   "game_warnings": [
-    "Moussa Diabate está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +7.6, Elo +3.3, equipo +4.3, cuatro factores +0.5.",
+     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +7.4, Elo +3.3, equipo +4.3, cuatro factores +0.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de PHX vale 5.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de PHX vale 5.7 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -284,7 +282,7 @@
     {
      "label": "Bajas de CHA",
      "favors": "home",
-     "detail": "Sin Kon Knueppel, Brandon Miller, Dennis Schroder: CHA pierde 4.8 puntos.",
+     "detail": "Sin Kon Knueppel, Brandon Miller, Dennis Schroder: CHA pierde 4.7 puntos.",
      "supports_pick": true
     }
    ]
