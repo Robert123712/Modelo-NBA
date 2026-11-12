@@ -10,6 +10,7 @@ export type Escena = {
 };
 export type Datos = {
   game_id: number;
+  liga?: string;
   marca: string;
   simulaciones: number;
   fecha: string;

@@ -219,7 +219,7 @@ def construir(d: dict, metricas: dict | None = None) -> dict:
                                               "linea2": "RESULTADO MAÑANA"}, "narracion": nar.trozos})
 
     return {
-        "game_id": d["game_id"], "marca": MARCA, "simulaciones": n, "fecha": _fecha(d["starts_at"]),
+        "game_id": d["game_id"], "liga": "nba", "marca": MARCA, "simulaciones": n, "fecha": _fecha(d["starts_at"]),
         "equipos": eq, "cinta": d["cinta"], "escenas": escenas,
     }
 

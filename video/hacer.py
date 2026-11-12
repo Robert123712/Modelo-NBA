@@ -17,6 +17,7 @@ import urllib.request
 from pathlib import Path
 
 import guion
+import guion_nfl
 import voz
 
 AQUI = Path(__file__).parent
@@ -42,15 +43,17 @@ def _ids(o) -> set[int]:
 
 def hacer(datos: Path, metricas: Path | None, salida: Path) -> Path:
     d = json.loads(datos.read_text())
-    g = guion.construir(d, json.loads(metricas.read_text()) if metricas else None)
+    liga = d.get("liga", "nba")
+    armar = guion_nfl.construir if liga == "nfl" else guion.construir
+    g = armar(d, json.loads(metricas.read_text()) if metricas else None)
     trabajo = salida / str(d["game_id"])
     tiempos = voz.construir(g, trabajo)
 
     publico = REMOTION / "public"
     for a in _ids(tiempos["escenas"]):
-        _bajar(f"{ESPN}/headshots/nba/players/full/{a}.png", publico / "jugadores" / f"{a}.png")
+        _bajar(f"{ESPN}/headshots/{liga}/players/full/{a}.png", publico / "jugadores" / liga / f"{a}.png")
     for e in tiempos["equipos"].values():
-        _bajar(f"{ESPN}/teamlogos/nba/500/{e['abbr'].lower()}.png", publico / "logos" / f"{e['abbr']}.png")
+        _bajar(f"{ESPN}/teamlogos/{liga}/500/{e['abbr'].lower()}.png", publico / "logos" / liga / f"{e['abbr']}.png")
     shutil.copy(trabajo / "voz.wav", publico / "voz.wav")
     (REMOTION / "src" / "datos.json").write_text(json.dumps(tiempos, ensure_ascii=False))
 

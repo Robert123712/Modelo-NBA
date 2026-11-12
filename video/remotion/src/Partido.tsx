@@ -27,8 +27,10 @@ const fuentes = `
 `;
 
 const miles = (n: number) => Math.round(n).toLocaleString('en-US');
-const foto = (id: number) => staticFile(`jugadores/${id}.png`);
-const logo = (abbr: string) => staticFile(`logos/${abbr}.png`);
+// La liga decide de que carpeta salen fotos y logos; la fija `Partido` al empezar.
+let LIGA = 'nba';
+const foto = (id: number) => staticFile(`jugadores/${LIGA}/${id}.png`);
+const logo = (abbr: string) => staticFile(`logos/${LIGA}/${abbr}.png`);
 
 // Tiempo global en segundos: los `cue` del guion vienen en ese reloj.
 const Reloj = React.createContext(0);
@@ -114,7 +116,7 @@ const Heroe: React.FC<{e: Escena}> = ({e}) => {
       {p.remate && sello ? (
         <div
           style={{
-            position: 'absolute', top: 1150, left: 0, right: 0, display: 'flex', justifyContent: 'center',
+            position: 'absolute', top: 1215, left: 0, right: 0, display: 'flex', justifyContent: 'center',
             opacity: s, transform: `rotate(-8deg) scale(${2.2 - 1.2 * s})`,
           }}
         >
@@ -148,12 +150,13 @@ const esFallo = (i: number, total: number, fallos: number) => {
   return fallos > 0 && Math.floor((i + paso / 2) / paso) !== Math.floor((i + paso / 2 - 1) / paso) && i < total;
 };
 
-const Record: React.FC<{e: Escena}> = ({e}) => {
+const Record: React.FC<{e: Escena; d: Datos}> = ({e, d}) => {
   const t = useT();
   const {aciertos, total, pct} = e.props;
   const fallos = total - aciertos;
-  const cols = 17;
-  const lado = 46;
+  // Con pocos partidos, cuadros mas grandes.
+  const cols = total > 110 ? 17 : total > 60 ? 12 : 10;
+  const lado = Math.floor(940 / cols) - 10;
   const k = avance(t, e.ini + 0.4, 2.6);
   const cuenta = e.cues.numero ?? e.ini + 2;
   let vistosFallo = 0;
@@ -164,7 +167,7 @@ const Record: React.FC<{e: Escena}> = ({e}) => {
   });
   return (
     <AbsoluteFill>
-      <div style={{position: 'absolute', top: 170, left: 0, right: 0, textAlign: 'center', fontFamily: TEXTO, fontWeight: 700, fontSize: 54, color: GRIS, letterSpacing: 2}}>NUESTRO MODELO NBA · ESTA TEMPORADA</div>
+      <div style={{position: 'absolute', top: 170, left: 0, right: 0, textAlign: 'center', fontFamily: TEXTO, fontWeight: 700, fontSize: 54, color: GRIS, letterSpacing: 2}}>NUESTRO MODELO {(d.liga ?? 'nba').toUpperCase()} · ESTA TEMPORADA</div>
       <div style={{position: 'absolute', top: 240, left: 0, right: 0, textAlign: 'center', fontFamily: TITULAR, fontSize: 300, lineHeight: 1, color: TINTA}}>
         {Math.round(aciertos * avance(t, cuenta - 1.2, 1.2))}
         <span style={{color: ROJO}}>-</span>
@@ -174,7 +177,7 @@ const Record: React.FC<{e: Escena}> = ({e}) => {
         {puntos.map((f, i) => {
           const visto = i / total <= k;
           return (
-            <div key={i} style={{width: lado, height: lado, borderRadius: 10, background: visto ? (f ? ROJO : VERDE) : '#E3DCCD', color: '#fff', fontFamily: TEXTO, fontWeight: 700, fontSize: 34, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+            <div key={i} style={{width: lado, height: lado, borderRadius: 10, background: visto ? (f ? ROJO : VERDE) : '#E3DCCD', color: '#fff', fontFamily: TEXTO, fontWeight: 700, fontSize: lado * 0.72, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
               {visto ? (f ? '✕' : '✓') : ''}
             </div>
           );
@@ -210,7 +213,7 @@ const Resultado: React.FC<{e: Escena; d: Datos}> = ({e, d}) => {
       <Titulo color={TINTA} top={170} size={92}>{p.titulo}</Titulo>
       <div style={{position: 'absolute', top: 320, left: (1080 - cols * (celda + 2)) / 2, width: cols * (celda + 2), display: 'flex', flexWrap: 'wrap', gap: 2}}>
         {p.muestra.split('').map((c: string, i: number) => (
-          <div key={i} style={{width: celda, height: celda, borderRadius: 4, background: i < n ? (c === 'h' ? home.color : away.color) : '#E6DFD2'}} />
+          <div key={i} style={{width: celda, height: celda, borderRadius: 4, background: i < n ? (c === 'h' ? home.color : c === 'a' ? away.color : GRIS) : '#E6DFD2'}} />
         ))}
       </div>
       <div style={{position: 'absolute', top: 990, left: 50, right: 50, display: 'flex', justifyContent: 'space-between'}}>
@@ -261,7 +264,7 @@ const Cerrado: React.FC<{e: Escena; d: Datos}> = ({e, d}) => {
       <div style={{position: 'absolute', top: 560, left: 70, right: 70, height: alto, display: 'flex', alignItems: 'flex-end', gap: 6}}>
         {p.cuentas.map((c: number, i: number) => {
           const centro = p.desde + p.ancho * (i + 0.5);
-          const cerrado = Math.abs(centro) <= 5;
+          const cerrado = Math.abs(centro) <= (p.umbral_cerrado ?? 5);
           const color = centro < 0 ? away.color : centro > 0 ? home.color : GRIS;
           return (
             <div key={i} style={{flex: 1, height: `${(c / max) * 100 * crece}%`, background: color, borderRadius: '6px 6px 0 0', opacity: cerrado ? 1 : 1 - 0.55 * resalta}} />
@@ -273,7 +276,7 @@ const Cerrado: React.FC<{e: Escena; d: Datos}> = ({e, d}) => {
         <span style={{color: home.color}}>GANA {home.apodo.toUpperCase()} ▶</span>
       </div>
       <div style={{position: 'absolute', top: 1010, left: 60, right: 60, display: 'flex', justifyContent: 'space-between'}}>
-        <Dato valor={`${p.cerrados}%`} etiqueta="POR 5 PUNTOS O MENOS" estilo={entrada(t, cCerr)} />
+        <Dato valor={`${p.cerrados}%`} etiqueta={p.etiqueta_cerrados ?? 'POR 5 PUNTOS O MENOS'} estilo={entrada(t, cCerr)} />
         <Dato valor={`${p.ot}%`} etiqueta="A TIEMPO EXTRA" estilo={entrada(t, cOt)} />
       </div>
     </AbsoluteFill>
@@ -433,6 +436,7 @@ const ESCENAS: Record<string, React.FC<{e: Escena; d: Datos}>> = {
 };
 
 export const Partido: React.FC<Datos> = (d) => {
+  LIGA = d.liga ?? 'nba';
   const {fps} = useVideoConfig();
   const cuadro = (s: number) => Math.round(s * fps);
   // La cinta aparece cuando empieza a hablarse del resultado.
