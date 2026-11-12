@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-12T19:15:00.000649Z",
+ "generated_at": "2026-11-12T23:45:00.000546Z",
  "date_local": "2026-11-12",
  "games": [
   {
@@ -18,24 +18,24 @@
     "code": "TOR"
    },
    "projection": {
-    "home_score": 112.8,
-    "away_score": 110.0
+    "home_score": 113.2,
+    "away_score": 110.1
    },
    "win_probability": {
-    "home": 0.5792,
-    "away": 0.4208
+    "home": 0.5882,
+    "away": 0.4118
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Philadelphia 76ers ML"
    },
-   "data_warning": "Joel Embiid está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": -3.0,
-    "away": 3.0
+    "home": -4.0,
+    "away": 4.0
    },
-   "total_points": 222.8,
+   "total_points": 223.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -43,19 +43,17 @@
      21.0
     ],
     "total": [
-     197.0,
+     198.0,
      249.0
     ]
    },
-   "game_warnings": [
-    "Joel Embiid está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": null,
-     "detail": "Los modelos se dividen 2-2. Margen de PHI: jugadores +4.1, Elo +4.1, equipo -0.1, cuatro factores -2.0.",
+     "detail": "Los modelos se dividen 2-2. Margen de PHI: jugadores +4.5, Elo +4.1, equipo -0.1, cuatro factores -2.0.",
      "supports_pick": false
     },
     {
@@ -73,7 +71,7 @@
     {
      "label": "Bajas de TOR",
      "favors": "home",
-     "detail": "Sin Scottie Barnes, Kawhi Leonard: TOR pierde 3.6 puntos.",
+     "detail": "Sin Scottie Barnes, Kawhi Leonard: TOR pierde 4.1 puntos.",
      "supports_pick": true
     }
    ]
@@ -166,15 +164,15 @@
     "away_score": 108.2
    },
    "win_probability": {
-    "home": 0.6756,
-    "away": 0.3244
+    "home": 0.6754,
+    "away": 0.3246
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Minnesota Timberwolves ML"
    },
-   "data_warning": "Morez Johnson Jr. está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": -6.0,
     "away": 6.0
@@ -191,15 +189,13 @@
      249.0
     ]
    },
-   "game_warnings": [
-    "Morez Johnson Jr. está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +5.9, Elo +8.6, equipo +6.9, cuatro factores +5.8.",
+     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +5.8, Elo +8.6, equipo +6.9, cuatro factores +5.8.",
      "supports_pick": true
     },
     {
