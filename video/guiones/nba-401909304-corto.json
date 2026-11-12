@@ -1,0 +1,12 @@
+[
+ {"props": {"linea1": "¿Thunder o Clippers?", "linea2": "Un jugador lo voltea"},
+  "narracion": [["¿Thunder o Clippers?", "pick"], ["Un solo jugador puede voltear este partido.", "remate"]]},
+ {"narracion": [["Tomamos cómo viene cada equipo", "paso0"], ["y cada jugador,", "paso1"], ["y jugamos el partido", null], ["20,000 veces.", "cuenta"]]},
+ {"narracion": [["El Thunder ganó el 60%.", "cuenta"], ["Marcador promedio: 114 a 110.", "veredicto"]]},
+ {"props": {"titulo": "La figura del Thunder"},
+  "narracion": [["La figura del Thunder: Shai.", "figura"], ["29 puntos por partido,", "mejor"], ["y pasa de 35 en el 29%.", "extra"]]},
+ {"props": {"titulo": "La de Clippers"},
+  "narracion": [["Del otro lado, Darius Garland:", "figura"], ["20 puntos por partido,", "mejor"], ["y llega a 25 en el 30%.", "extra"]]},
+ {"narracion": [["¿La llave?", null], ["Si Shai mete 35,", "medidor0"], ["el Thunder gana el 66%.", "sube0"], ["Pero si Garland mete 25,", "medidor1"], ["Clippers sube al 48%: casi un volado.", "sube1"]]},
+ {"narracion": [["¿Tú a quién le vas?", "pregunta"], ["Comenta: completa,", "comenta"], ["si quieres ver toda la predicción.", null]]}
+]

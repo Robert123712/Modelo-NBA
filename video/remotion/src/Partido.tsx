@@ -166,6 +166,48 @@ const Heroe: React.FC<{e: Escena}> = ({e}) => {
   );
 };
 
+/** La figura de un equipo: sus tres numeros, con el mejor en grande. */
+const Figura: React.FC<{e: Escena}> = ({e}) => {
+  const t = useT();
+  const p = e.props;
+  const entra = (e.cues.figura ?? e.ini) - 0.05;
+  const cMejor = e.cues.mejor ?? e.ini + 1.5;
+  const sube = interpolate(t, [entra + 0.3, cMejor], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.quad)});
+  const golpe = interpolate(t, [cMejor - 0.05, cMejor + 0.3], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.back(2.5))});
+  return (
+    <AbsoluteFill>
+      <Titulo>{p.titulo}</Titulo>
+      <div style={{position: 'absolute', top: 345, left: 0, right: 0, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <div style={{position: 'relative', opacity: avance(t, entra, 0.3), transform: `scale(${0.7 + 0.3 * avance(t, entra, 0.4)})`}}>
+          <Foto id={p.athlete_id} color={p.color} size={380} brillo />
+          <Ficha abbr={p.abbr} size={130} style={{position: 'absolute', right: -40, bottom: -6, boxShadow: '0 10px 30px rgba(0,0,0,0.5)'}} />
+        </div>
+        <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: p.jugador.length > 18 ? 62 : 76, color: TINTA, letterSpacing: -2, marginTop: 14, lineHeight: 1.1, ...entrada(t, entra + 0.1)}}>{p.jugador}</div>
+      </div>
+      <div style={{position: 'absolute', top: 860, left: 40, right: 40, height: 310, display: 'flex', alignItems: 'flex-end', justifyContent: 'center', gap: 20}}>
+        {p.stats.map((x: any, i: number) => {
+          const m = x.mejor;
+          const escala = m ? 0.82 + 0.18 * golpe : 1;
+          return (
+            <div key={i} style={{...tarjeta, width: m ? 420 : 250, padding: m ? '18px 10px 22px' : '16px 10px 18px', textAlign: 'center', border: m ? `5px solid ${MENTA}` : `2px solid ${BORDE}`, background: m ? MENTA_OSCURA : TARJETA, boxShadow: m ? `0 0 ${90 * golpe}px ${MENTA}66` : 'none', transform: `scale(${escala})`, transformOrigin: 'bottom center', ...(m ? {} : entrada(t, entra + 0.25 + i * 0.08))}}>
+              <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: m ? 200 : 104, lineHeight: 1, letterSpacing: m ? -8 : -3, color: m ? MENTA : TINTA}}>{Math.round(x.valor * sube)}</div>
+              <div style={{fontFamily: TEXTO, fontWeight: 700, fontSize: m ? 44 : 32, letterSpacing: 3, color: m ? TINTA : GRIS, marginTop: 4}}>{m ? x.etiqueta : x.corto}</div>
+            </div>
+          );
+        })}
+      </div>
+      {p.extra ? (
+        <div style={{position: 'absolute', top: 1215, left: 0, right: 0, display: 'flex', justifyContent: 'center', ...entrada(t, (e.cues.extra ?? cMejor + 1) - 0.1)}}>
+          <div style={{display: 'flex', alignItems: 'center', gap: 22, padding: '14px 34px', borderRadius: 26, background: TARJETA, border: `3px solid ${tono(p.color)}`}}>
+            <span style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 84, color: TINTA, letterSpacing: -2}}>{p.extra.valor}</span>
+            <span style={{fontFamily: TEXTO, fontWeight: 700, fontSize: 36, color: GRIS, letterSpacing: 1, maxWidth: 520, lineHeight: 1.15}}>{p.extra.etiqueta}</span>
+          </div>
+        </div>
+      ) : null}
+    </AbsoluteFill>
+  );
+};
+
 const TituloEscena: React.FC<{e: Escena; d: Datos}> = ({e, d}) => {
   const t = useT();
   const n = Math.round(d.simulaciones * avance(t, e.ini + 0.7, 1.6));
@@ -250,8 +292,10 @@ const Resultado: React.FC<{e: Escena; d: Datos}> = ({e, d}) => {
       </div>
     </div>
   );
+  // Marcadores de tres cifras (NBA) llevan numero y logos mas chicos.
+  const tres = !!m && Math.max(m.home, m.away) >= 100;
   const digito = (v: number, gana: boolean) => (
-    <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 210, lineHeight: 1, letterSpacing: -8, color: gana ? TINTA : GRIS, textShadow: gana ? `0 0 60px ${MENTA}88` : 'none', minWidth: 250, textAlign: 'center'}}>{Math.round(v * sube)}</div>
+    <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: tres ? 168 : 210, lineHeight: 1.1, letterSpacing: tres ? -7 : -8, color: gana ? TINTA : GRIS, textShadow: gana ? `0 0 60px ${MENTA}88` : 'none', minWidth: tres ? 300 : 250, textAlign: 'center'}}>{Math.round(v * sube)}</div>
   );
   return (
     <AbsoluteFill>
@@ -274,11 +318,11 @@ const Resultado: React.FC<{e: Escena; d: Datos}> = ({e, d}) => {
         <div style={{position: 'absolute', top: 990, left: 40, right: 40, ...tarjeta, border: `4px solid ${MENTA}`, borderRadius: 40, padding: '22px 28px 30px', opacity: Math.min(1, s * 1.5), transform: `scale(${0.7 + 0.3 * s})`, boxShadow: `0 0 90px ${MENTA}44`}}>
           <div style={{textAlign: 'center', fontFamily: TEXTO, fontWeight: 700, fontSize: 40, letterSpacing: 8, color: MENTA}}>MARCADOR PROMEDIO</div>
           <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 8}}>
-            <Ficha abbr={away.abbr} size={150} />
+            <Ficha abbr={away.abbr} size={tres ? 110 : 150} />
             {digito(m.away, m.away > m.home)}
-            <div style={{width: 40, height: 14, borderRadius: 7, background: MENTA}} />
+            <div style={{width: tres ? 28 : 40, height: 14, borderRadius: 7, background: MENTA, flexShrink: 0}} />
             {digito(m.home, m.home > m.away)}
-            <Ficha abbr={home.abbr} size={150} />
+            <Ficha abbr={home.abbr} size={tres ? 110 : 150} />
           </div>
         </div>
       ) : (
@@ -420,7 +464,7 @@ const Decide: React.FC<{e: Escena}> = ({e}) => {
   return (
     <AbsoluteFill>
       <Titulo>{e.props.titulo}</Titulo>
-      <div style={{position: 'absolute', top: 320, left: 50, right: 50, display: 'flex', flexDirection: 'column', gap: 36}}>
+      <div style={{position: 'absolute', top: 350, left: 50, right: 50, display: 'flex', flexDirection: 'column', gap: 36}}>
         {e.props.medidores.map((m: any, i: number) => {
           const sube = e.cues[`sube${i}`] ?? e.ini + 3;
           const pct = m.base + (m.pct - m.base) * avance(t, sube - 0.5, 0.9);
@@ -428,12 +472,12 @@ const Decide: React.FC<{e: Escena}> = ({e}) => {
             <div key={i} style={{...tarjeta, borderLeft: `14px solid ${tono(m.color)}`, padding: '28px 40px 28px 30px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', ...entrada(t, (e.cues[`medidor${i}`] ?? e.ini) - 0.15)}}>
               <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', width: 520}}>
                 <Foto id={m.athlete_id} color={m.color} size={200} />
-                <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 54, color: TINTA, marginTop: 10, lineHeight: 1.05}}>{m.jugador}</div>
+                <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: m.jugador.length > 12 ? 44 : 54, color: TINTA, marginTop: 10, lineHeight: 1.05, whiteSpace: 'nowrap'}}>{m.jugador}</div>
                 <div style={{fontFamily: TEXTO, fontWeight: 700, fontSize: 34, color: MENTA, marginTop: 4, textAlign: 'center'}}>{m.evento}</div>
               </div>
               <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                 <div style={{fontFamily: TEXTO, fontWeight: 700, fontSize: 32, color: GRIS, letterSpacing: 1, marginBottom: 8}}>{m.equipo.toUpperCase()}</div>
-                <Medidor pct={pct} color={tono(m.color)} />
+                <Medidor pct={pct} color={tono(m.color)} size={320} />
               </div>
             </div>
           );
@@ -447,7 +491,7 @@ const Decide: React.FC<{e: Escena}> = ({e}) => {
 const Gancho: React.FC<{e: Escena; d: Datos}> = ({e, d}) => {
   const t = useT();
   const p = e.props;
-  const fav = p.favorito as 'home' | 'away';
+  const fav = p.favorito as 'home' | 'away' | null;
   const pick = e.cues.pick ?? e.ini;
   const rem = e.cues.remate ?? e.ini + 1.6;
   const crece = 1 + 0.16 * avance(t, pick + 0.25, 0.5);
@@ -456,20 +500,20 @@ const Gancho: React.FC<{e: Escena; d: Datos}> = ({e, d}) => {
     <Ficha
       abbr={d.equipos[lado].abbr}
       size={360}
-      style={{transform: `scale(${lado === fav ? crece : 2 - crece})`, opacity: lado === fav ? 1 : 1 - 0.45 * avance(t, pick + 0.25, 0.5), boxShadow: lado === fav ? `0 0 0 ${12 * avance(t, pick + 0.25, 0.5)}px ${MENTA}, 0 0 ${140 * avance(t, pick + 0.25, 0.5)}px ${MENTA}` : 'none'}}
+      style={{transform: `scale(${!fav ? 0.9 + 0.1 * avance(t, e.ini, 0.4) + 0.03 * Math.sin((t - e.ini) * 5 + (lado === 'home' ? 3.14 : 0)) : lado === fav ? crece : 2 - crece})`, opacity: !fav || lado === fav ? 1 : 1 - 0.45 * avance(t, pick + 0.25, 0.5), boxShadow: lado === fav ? `0 0 0 ${12 * avance(t, pick + 0.25, 0.5)}px ${MENTA}, 0 0 ${140 * avance(t, pick + 0.25, 0.5)}px ${MENTA}` : 'none'}}
     />
   );
   return (
     <AbsoluteFill>
       <div style={{position: 'absolute', top: 330, left: 0, right: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 60}}>
         {ficha('away')}
-        <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 70, color: GRIS}}>@</div>
+        <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 70, color: fav ? GRIS : MENTA}}>{fav ? '@' : 'VS'}</div>
         {ficha('home')}
       </div>
       <div style={{position: 'absolute', top: 820, left: 20, right: 20, textAlign: 'center', fontFamily: TITULAR, fontWeight: 800, fontSize: p.linea1.length > 16 ? 104 : 128, color: TINTA, lineHeight: 1.02, letterSpacing: -4, textTransform: 'uppercase', opacity: avance(t, pick - 0.05, 0.15), transform: `scale(${1.5 - 0.5 * avance(t, pick - 0.05, 0.28)})`}}>{p.linea1}</div>
       {p.linea2 ? (
         <div style={{position: 'absolute', top: 1120, left: 0, right: 0, display: 'flex', justifyContent: 'center', opacity: s, transform: `rotate(-2.5deg) scale(${1.6 - 0.6 * s})`}}>
-          <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 78, color: MENTA_OSCURA, background: MENTA, padding: '12px 40px', borderRadius: 20, textTransform: 'uppercase'}}>{p.linea2}</div>
+          <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: p.linea2.length > 18 ? 60 : 78, color: MENTA_OSCURA, background: MENTA, padding: '12px 40px', borderRadius: 20, textTransform: 'uppercase', whiteSpace: 'nowrap'}}>{p.linea2}</div>
         </div>
       ) : null}
     </AbsoluteFill>
@@ -665,6 +709,7 @@ const ESCENAS: Record<string, React.FC<{e: Escena; d: Datos}>> = {
   gancho: Gancho,
   explica: Explica,
   heroe: Heroe,
+  figura: Figura,
   titulo: TituloEscena,
   record: Record,
   resultado: Resultado,
