@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-12T15:15:00.619373Z",
+ "generated_at": "2026-11-12T17:45:00.000587Z",
  "date_local": "2026-11-12",
  "games": [
   {
@@ -92,12 +92,12 @@
     "code": "DET"
    },
    "projection": {
-    "home_score": 103.3,
-    "away_score": 116.0
+    "home_score": 103.5,
+    "away_score": 115.8
    },
    "win_probability": {
-    "home": 0.1785,
-    "away": 0.8215
+    "home": 0.1833,
+    "away": 0.8167
    },
    "pick": {
     "market": "moneyline",
@@ -106,10 +106,10 @@
    },
    "data_warning": null,
    "spread": {
-    "home": 13.0,
-    "away": -13.0
+    "home": 12.0,
+    "away": -12.0
    },
-   "total_points": 219.3,
+   "total_points": 219.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -127,13 +127,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +13.3, Elo +9.7, equipo +11.4, cuatro factores +12.1.",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +12.9, Elo +9.7, equipo +11.4, cuatro factores +12.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DET vale 12.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DET vale 12.5 puntos más por partido.",
      "supports_pick": true
     },
     {
