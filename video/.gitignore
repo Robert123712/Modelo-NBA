@@ -1,0 +1,8 @@
+salida/
+remotion/node_modules/
+remotion/out/
+remotion/public/voz.wav
+remotion/public/jugadores/
+remotion/public/logos/
+remotion/src/datos.json
+__pycache__/

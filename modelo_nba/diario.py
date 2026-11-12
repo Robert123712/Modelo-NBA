@@ -15,7 +15,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from . import VERSION, alineaciones, datos, emitir, espn, historico, props, record, reporte_nba, seguimiento, tendencias
+from . import VERSION, alineaciones, datos, emitir, espn, historico, props, record, reporte_nba, seguimiento, tendencias, video
 from . import minutos as mn
 from .mercados import mercados
 from .motores import elo, equipos, factores
@@ -303,6 +303,14 @@ def predecir(
             }
         except Exception as err:  # noqa: BLE001
             props_juego = {"error": f"{type(err).__name__}: {err}"}
+        # Datos para el video corto: un extra, nunca tumba la corrida.
+        try:
+            if "error" not in props_juego:
+                emitir.escribir_si_cambia(
+                    salida / "video" / f"{g['game_id']}.json",
+                    video.construir(g, sim, sims_props, rot_props, nombres), compacto=True)
+        except Exception:  # noqa: BLE001
+            pass
         try:
             # Novatos sin historial: su G/F/C del roster de ESPN, como SG/SF/C.
             novatos = {r["athlete_id"]: {"G": "SG", "F": "SF", "C": "C"}.get(
