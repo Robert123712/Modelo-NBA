@@ -26,10 +26,19 @@ def _stat(j: dict) -> str:
     return j.get("mejor", {}).get("stat") or PRINCIPAL.get(j.get("posicion", ""), "rec_yds")
 
 
+# Cuanto es "mucho" por estadistica, para comparar un QB con un receptor.
+ESCALA = {"pass_yds": 100.0, "rush_yds": 40.0, "rec_yds": 40.0}
+MINIMO = {"pass_yds": 150.0, "rush_yds": 30.0, "rec_yds": 30.0}
+
+
 def _rareza(j: dict) -> float:
-    """Que tan lejos de su promedio quedo su mejor partido."""
+    """Que tan lejos de su promedio quedo su mejor partido. Los que casi no
+    tocan el balon no cuentan: nadie los conoce y su promedio es ruido."""
     s = _stat(j)
-    return j["mejor"]["valor"] / max(j["media"].get(s, 0.0), 15.0)
+    media = j["media"].get(s, 0.0)
+    if media < MINIMO[s]:
+        return 0.0
+    return (j["mejor"]["valor"] - media) / ESCALA[s]
 
 
 def _umbral(js: list[dict], stat: str, meta: float = 0.25) -> str | None:
@@ -96,9 +105,10 @@ def construir(d: dict, metricas: dict | None = None) -> dict:
     escenas = []
 
     # 1. Gancho: el partido mas fuera de serie; de los mas raros, mejor uno que acabo en derrota.
-    tope = max(_rareza(j) for j in todos)
-    candidatos = [j for j in todos if _rareza(j) >= tope * 0.9]
-    gancho = max(candidatos, key=lambda j: (not j["mejor"]["gano"], _rareza(j)))
+    # Primero, una actuacion enorme que acabo en derrota (el numero mas
+    # grande llama mas); si no hay, la mas fuera de serie.
+    derrotas = [j for j in todos if not j["mejor"]["gano"] and _rareza(j) >= 2.0]
+    gancho = max(derrotas, key=lambda j: j["mejor"]["valor"]) if derrotas else max(todos, key=_rareza)
     lg, sg = lado_de[gancho["athlete_id"]], _stat(gancho)
     nar = Narracion().t("En una de nuestras").n(n).t("simulaciones,").t(f"{gancho['jugador']} {HIZO[sg]}") \
         .n(gancho["mejor"]["valor"], cue="numero").t("yardas...")
@@ -204,13 +214,19 @@ def construir(d: dict, metricas: dict | None = None) -> dict:
     lr = "away" if lg == "home" else "home"
     raro = max(jug[lr], key=_rareza)
     sr = _stat(raro)
-    nar = Narracion().t(f"El partido más raro de los {eq[lr]['apodo']}:").t(f"{raro['jugador']} con") \
-        .n(raro["mejor"]["valor"], cue="numero").t("yardas.").t("Su promedio es", cue="promedio") \
-        .n(round(raro["media"].get(sr, 0)), sufijo=".")
+    # Si el simulador manda el percentil 99 en vez del maximo, no es "el mas
+    # raro": es su noche grande, la que pasa una de cada cien veces.
+    cada = raro["mejor"].get("una_de_cada")
+    nar = Narracion().t(f"La noche grande de los {eq[lr]['apodo']}:" if cada else f"El partido más raro de los {eq[lr]['apodo']}:") \
+        .t(f"{raro['jugador']} con").n(raro["mejor"]["valor"], cue="numero").t("yardas.")
+    if cada:
+        nar.t("Pasa una de cada").n(cada).t("veces.")
+    nar.t("Su promedio es", cue="promedio").n(round(raro["media"].get(sr, 0)), sufijo=".")
     escenas.append({"tipo": "heroe", "props": {
-        "titulo": "EL PARTIDO MÁS RARO", "athlete_id": raro["athlete_id"], "jugador": raro["jugador"],
+        "titulo": "LA NOCHE GRANDE" if cada else "EL PARTIDO MÁS RARO", "athlete_id": raro["athlete_id"], "jugador": raro["jugador"],
         "color": eq[lr]["color"], "desde": int(round(raro["media"].get(sr, 0))), "hasta": raro["mejor"]["valor"],
-        "etiqueta": ROTULO[sr], "sub": f"{raro['jugador']} · SU MEJOR EN {miles(n)} SIMS",
+        "etiqueta": ROTULO[sr],
+        "sub": f"{raro['jugador']} · 1 DE CADA {cada} SIMS" if cada else f"{raro['jugador']} · SU MEJOR EN {miles(n)} SIMS",
         "pie": f"PROMEDIO: {raro['media'].get(sr, 0):.0f} YDS", "remate": None}, "narracion": nar.trozos})
 
     # 9. Que lo decide.
