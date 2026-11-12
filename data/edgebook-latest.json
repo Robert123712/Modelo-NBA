@@ -2,234 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-11T23:45:00.000488Z",
+ "generated_at": "2026-11-12T00:15:00.000553Z",
  "date_local": "2026-11-11",
  "games": [
-  {
-   "league_game_id": "401909966",
-   "espn_game_id": "401909966",
-   "starts_at": "2026-11-12T00:00Z",
-   "home": {
-    "name": "Indiana Pacers",
-    "code": "IND"
-   },
-   "away": {
-    "name": "Washington Wizards",
-    "code": "WSH"
-   },
-   "projection": {
-    "home_score": 115.9,
-    "away_score": 111.4
-   },
-   "win_probability": {
-    "home": 0.6276,
-    "away": 0.3724
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Indiana Pacers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -5.0,
-    "away": 5.0
-   },
-   "total_points": 227.3,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -13.0,
-     22.0
-    ],
-    "total": [
-     202.0,
-     254.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a IND. Margen de IND: jugadores +4.7, Elo +2.7, equipo +3.9, cuatro factores +4.7.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de IND vale 2.9 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para IND.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de IND",
-     "favors": "away",
-     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Ben Sheppard: IND pierde 2.5 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909967",
-   "espn_game_id": "401909967",
-   "starts_at": "2026-11-12T00:00Z",
-   "home": {
-    "name": "New York Knicks",
-    "code": "NY"
-   },
-   "away": {
-    "name": "Cleveland Cavaliers",
-    "code": "CLE"
-   },
-   "projection": {
-    "home_score": 113.0,
-    "away_score": 108.3
-   },
-   "win_probability": {
-    "home": 0.6341,
-    "away": 0.3659
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "New York Knicks ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -5.0,
-    "away": 5.0
-   },
-   "total_points": 221.3,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -13.0,
-     22.0
-    ],
-    "total": [
-     196.0,
-     247.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +4.7, Elo +7.6, equipo +6.8, cuatro factores +9.3.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 5.1 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para NY.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de CLE",
-     "favors": "home",
-     "detail": "Sin Sam Merrill: CLE pierde 1.2 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "away",
-     "detail": "NY juega su segundo partido en dos noches: 2.1 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909968",
-   "espn_game_id": "401909968",
-   "starts_at": "2026-11-12T00:00Z",
-   "home": {
-    "name": "Toronto Raptors",
-    "code": "TOR"
-   },
-   "away": {
-    "name": "Boston Celtics",
-    "code": "BOS"
-   },
-   "projection": {
-    "home_score": 107.6,
-    "away_score": 112.1
-   },
-   "win_probability": {
-    "home": 0.3703,
-    "away": 0.6297
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Boston Celtics ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 5.0,
-    "away": -5.0
-   },
-   "total_points": 219.8,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -22.0,
-     13.0
-    ],
-    "total": [
-     194.0,
-     245.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +4.9, Elo +3.3, equipo +3.5, cuatro factores +1.9.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 8.8 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de TOR",
-     "favors": "away",
-     "detail": "Sin Scottie Barnes, Kawhi Leonard, Malachi Smith: TOR pierde 3.1 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para TOR.",
-     "supports_pick": false
-    },
-    {
-     "label": "Descanso",
-     "favors": "home",
-     "detail": "BOS juega su segundo partido en dos noches: 2.1 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909969",
    "espn_game_id": "401909969",
@@ -463,28 +238,28 @@
     "code": "BKN"
    },
    "projection": {
-    "home_score": 115.9,
-    "away_score": 112.3
+    "home_score": 115.3,
+    "away_score": 112.5
    },
    "win_probability": {
-    "home": 0.6013,
-    "away": 0.3987
+    "home": 0.5786,
+    "away": 0.4214
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "New Orleans Pelicans ML"
    },
-   "data_warning": "Trey Murphy III está en duda (doubtful)",
+   "data_warning": null,
    "spread": {
-    "home": -4.0,
-    "away": 4.0
+    "home": -3.0,
+    "away": 3.0
    },
-   "total_points": 228.2,
+   "total_points": 227.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -14.0,
+     -15.0,
      21.0
     ],
     "total": [
@@ -492,21 +267,13 @@
      254.0
     ]
    },
-   "game_warnings": [
-    "Trey Murphy III está en duda (doubtful)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NO. Margen de NO: jugadores +2.8, Elo +6.2, equipo +5.4, cuatro factores +7.0.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NO vale 1.0 puntos más por partido.",
+     "detail": "4 de 4 modelos ven ganar a NO. Margen de NO: jugadores +1.6, Elo +6.2, equipo +5.4, cuatro factores +7.0.",
      "supports_pick": true
     },
     {
@@ -518,7 +285,7 @@
     {
      "label": "Bajas de NO",
      "favors": "away",
-     "detail": "Sin Bennedict Mathurin, Yves Missi, Trendon Watford: NO pierde 4.1 puntos.",
+     "detail": "Sin Bennedict Mathurin, Yves Missi, Trey Murphy III: NO pierde 5.2 puntos.",
      "supports_pick": false
     }
    ]
@@ -739,6 +506,233 @@
      "favors": "home",
      "detail": "Sin Chet Holmgren, Ajay Mitchell, Nikola Topic: OKC pierde 9.5 puntos.",
      "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909966",
+   "espn_game_id": "401909966",
+   "starts_at": "2026-11-12T00:00Z",
+   "home": {
+    "name": "Indiana Pacers",
+    "code": "IND"
+   },
+   "away": {
+    "name": "Washington Wizards",
+    "code": "WSH"
+   },
+   "projection": {
+    "home_score": 115.2,
+    "away_score": 110.9
+   },
+   "win_probability": {
+    "home": 0.625,
+    "away": 0.375
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Indiana Pacers ML"
+   },
+   "data_warning": "T.J. McConnell está en duda (questionable)",
+   "spread": {
+    "home": -5.0,
+    "away": 5.0
+   },
+   "total_points": 226.2,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -13.0,
+     22.0
+    ],
+    "total": [
+     201.0,
+     252.0
+    ]
+   },
+   "game_warnings": [
+    "T.J. McConnell está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a IND. Margen de IND: jugadores +4.5, Elo +2.7, equipo +3.9, cuatro factores +4.7.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de IND vale 2.7 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para IND.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de IND",
+     "favors": "away",
+     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Ben Sheppard: IND pierde 2.7 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909967",
+   "espn_game_id": "401909967",
+   "starts_at": "2026-11-12T00:00Z",
+   "home": {
+    "name": "New York Knicks",
+    "code": "NY"
+   },
+   "away": {
+    "name": "Cleveland Cavaliers",
+    "code": "CLE"
+   },
+   "projection": {
+    "home_score": 113.5,
+    "away_score": 108.4
+   },
+   "win_probability": {
+    "home": 0.6466,
+    "away": 0.3534
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "New York Knicks ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -5.0,
+    "away": 5.0
+   },
+   "total_points": 222.0,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -13.0,
+     23.0
+    ],
+    "total": [
+     196.0,
+     248.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +4.4, Elo +7.6, equipo +6.8, cuatro factores +9.3.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 4.8 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para NY.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de CLE",
+     "favors": "home",
+     "detail": "Sin Sam Merrill, Jaylon Tyson: CLE pierde 1.0 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "away",
+     "detail": "NY juega su segundo partido en dos noches: 2.1 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909968",
+   "espn_game_id": "401909968",
+   "starts_at": "2026-11-12T00:00Z",
+   "home": {
+    "name": "Toronto Raptors",
+    "code": "TOR"
+   },
+   "away": {
+    "name": "Boston Celtics",
+    "code": "BOS"
+   },
+   "projection": {
+    "home_score": 107.6,
+    "away_score": 112.1
+   },
+   "win_probability": {
+    "home": 0.3703,
+    "away": 0.6297
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Boston Celtics ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 5.0,
+    "away": -5.0
+   },
+   "total_points": 219.8,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -22.0,
+     13.0
+    ],
+    "total": [
+     194.0,
+     245.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +4.9, Elo +3.3, equipo +3.5, cuatro factores +1.9.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 8.8 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de TOR",
+     "favors": "away",
+     "detail": "Sin Scottie Barnes, Kawhi Leonard, Malachi Smith: TOR pierde 3.1 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para TOR.",
+     "supports_pick": false
+    },
+    {
+     "label": "Descanso",
+     "favors": "home",
+     "detail": "BOS juega su segundo partido en dos noches: 2.1 puntos.",
+     "supports_pick": false
     }
    ]
   }
