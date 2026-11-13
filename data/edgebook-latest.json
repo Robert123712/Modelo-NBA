@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-13T20:45:00.000509Z",
+ "generated_at": "2026-11-13T21:45:00.000555Z",
  "date_local": "2026-11-13",
  "games": [
   {
@@ -520,24 +520,24 @@
     "code": "POR"
    },
    "projection": {
-    "home_score": 109.7,
-    "away_score": 119.8
+    "home_score": 109.8,
+    "away_score": 119.6
    },
    "win_probability": {
-    "home": 0.2361,
-    "away": 0.7639
+    "home": 0.2412,
+    "away": 0.7588
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Portland Trail Blazers ML"
    },
-   "data_warning": "Precious Achiuwa está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": 10.0,
     "away": -10.0
    },
-   "total_points": 229.5,
+   "total_points": 229.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -549,21 +549,19 @@
      255.0
     ]
    },
-   "game_warnings": [
-    "Precious Achiuwa está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +10.0, Elo +7.6, equipo +10.1, cuatro factores +5.4.",
+     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +9.7, Elo +7.6, equipo +10.1, cuatro factores +5.4.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de POR vale 11.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de POR vale 11.5 puntos más por partido.",
      "supports_pick": true
     },
     {
