@@ -2,151 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-12T23:45:00.000546Z",
+ "generated_at": "2026-11-13T00:15:00.000554Z",
  "date_local": "2026-11-12",
  "games": [
-  {
-   "league_game_id": "401909976",
-   "espn_game_id": "401909976",
-   "starts_at": "2026-11-13T00:00Z",
-   "home": {
-    "name": "Philadelphia 76ers",
-    "code": "PHI"
-   },
-   "away": {
-    "name": "Toronto Raptors",
-    "code": "TOR"
-   },
-   "projection": {
-    "home_score": 113.2,
-    "away_score": 110.1
-   },
-   "win_probability": {
-    "home": 0.5882,
-    "away": 0.4118
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Philadelphia 76ers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -4.0,
-    "away": 4.0
-   },
-   "total_points": 223.2,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -15.0,
-     21.0
-    ],
-    "total": [
-     198.0,
-     249.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": null,
-     "detail": "Los modelos se dividen 2-2. Margen de PHI: jugadores +4.5, Elo +4.1, equipo -0.1, cuatro factores -2.0.",
-     "supports_pick": false
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para PHI.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "home",
-     "detail": "TOR juega su segundo partido en dos noches: 2.2 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de TOR",
-     "favors": "home",
-     "detail": "Sin Scottie Barnes, Kawhi Leonard: TOR pierde 4.1 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909977",
-   "espn_game_id": "401909977",
-   "starts_at": "2026-11-13T00:00Z",
-   "home": {
-    "name": "Washington Wizards",
-    "code": "WSH"
-   },
-   "away": {
-    "name": "Detroit Pistons",
-    "code": "DET"
-   },
-   "projection": {
-    "home_score": 103.5,
-    "away_score": 115.8
-   },
-   "win_probability": {
-    "home": 0.1833,
-    "away": 0.8167
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Detroit Pistons ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 12.0,
-    "away": -12.0
-   },
-   "total_points": 219.4,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -30.0,
-     6.0
-    ],
-    "total": [
-     194.0,
-     245.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +12.9, Elo +9.7, equipo +11.4, cuatro factores +12.1.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DET vale 12.5 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "away",
-     "detail": "WSH juega su segundo partido en dos noches: 2.2 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para WSH.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909978",
    "espn_game_id": "401909978",
@@ -280,6 +138,150 @@
      "favors": "home",
      "detail": "Sin Kon Knueppel, Brandon Miller, Dennis Schroder: CHA pierde 3.5 puntos.",
      "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909976",
+   "espn_game_id": "401909976",
+   "starts_at": "2026-11-13T00:00Z",
+   "home": {
+    "name": "Philadelphia 76ers",
+    "code": "PHI"
+   },
+   "away": {
+    "name": "Toronto Raptors",
+    "code": "TOR"
+   },
+   "projection": {
+    "home_score": 112.8,
+    "away_score": 110.0
+   },
+   "win_probability": {
+    "home": 0.5792,
+    "away": 0.4208
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Philadelphia 76ers ML"
+   },
+   "data_warning": "Joel Embiid está en duda (questionable)",
+   "spread": {
+    "home": -3.0,
+    "away": 3.0
+   },
+   "total_points": 222.8,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -15.0,
+     21.0
+    ],
+    "total": [
+     197.0,
+     249.0
+    ]
+   },
+   "game_warnings": [
+    "Joel Embiid está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": null,
+     "detail": "Los modelos se dividen 2-2. Margen de PHI: jugadores +4.1, Elo +4.1, equipo -0.1, cuatro factores -2.0.",
+     "supports_pick": false
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para PHI.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "home",
+     "detail": "TOR juega su segundo partido en dos noches: 2.2 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de TOR",
+     "favors": "home",
+     "detail": "Sin Scottie Barnes, Kawhi Leonard: TOR pierde 3.6 puntos.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909977",
+   "espn_game_id": "401909977",
+   "starts_at": "2026-11-13T00:00Z",
+   "home": {
+    "name": "Washington Wizards",
+    "code": "WSH"
+   },
+   "away": {
+    "name": "Detroit Pistons",
+    "code": "DET"
+   },
+   "projection": {
+    "home_score": 103.5,
+    "away_score": 115.8
+   },
+   "win_probability": {
+    "home": 0.1833,
+    "away": 0.8167
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Detroit Pistons ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 12.0,
+    "away": -12.0
+   },
+   "total_points": 219.4,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -30.0,
+     6.0
+    ],
+    "total": [
+     194.0,
+     245.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +12.9, Elo +9.7, equipo +11.4, cuatro factores +12.1.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de DET vale 12.5 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "away",
+     "detail": "WSH juega su segundo partido en dos noches: 2.2 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para WSH.",
+     "supports_pick": false
     }
    ]
   }
