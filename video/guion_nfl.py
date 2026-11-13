@@ -355,10 +355,10 @@ def construir_corto(d: dict, metricas: dict | None = None) -> dict:
 
     # 6. Cierre: el pick, el record y la pregunta.
     nar = Narracion().t(f"Nuestro pick: {fav['apodo']}.", cue="pick").t("¿Tú a quién le vas?", cue="pregunta") \
-        .t("Comenta: completa,", cue="comenta").t("si quieres ver toda la predicción.")
+        .t("Comenta: predicción,", cue="comenta").t("si quieres ver toda la predicción.")
     escenas.append({"tipo": "cierre", "props": {
         "titulo": "¿A quién\nle vas?", "pick": f"NUESTRO PICK: {fav['apodo']}", "favorito": favorito,
-        "palabra": "COMPLETA", "linea1": "Comenta “completa”", "linea2": "Y VE TODA LA PREDICCIÓN"},
+        "palabra": "PREDICCIÓN", "linea1": "Comenta “predicción”", "linea2": "Y VE TODA LA PREDICCIÓN"},
         "narracion": nar.trozos})
 
     return {"game_id": d["game_id"], "liga": "nfl", "marca": MARCA, "simulaciones": n, "record": record,

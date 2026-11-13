@@ -8,5 +8,5 @@
  {"props": {"titulo": "La de Clippers"},
   "narracion": [["Del otro lado, Darius Garland:", "figura"], ["20 puntos por partido,", "mejor"], ["y llega a 25 en el 30%.", "extra"]]},
  {"narracion": [["¿La llave?", null], ["Si Shai mete 35,", "medidor0"], ["el Thunder gana el 66%.", "sube0"], ["Pero si Garland mete 25,", "medidor1"], ["Clippers sube al 48%: casi un volado.", "sube1"]]},
- {"narracion": [["¿Tú a quién le vas?", "pregunta"], ["Comenta: completa,", "comenta"], ["si quieres ver toda la predicción.", null]]}
+ {"narracion": [["¿Tú a quién le vas?", "pregunta"], ["Comenta: predicción,", "comenta"], ["si quieres ver toda la predicción.", null]]}
 ]
