@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-13T21:45:00.000555Z",
+ "generated_at": "2026-11-13T22:45:00.000530Z",
  "date_local": "2026-11-13",
  "games": [
   {
@@ -92,52 +92,48 @@
     "code": "MIL"
    },
    "projection": {
-    "home_score": 116.7,
-    "away_score": 106.7
+    "home_score": 116.1,
+    "away_score": 106.5
    },
    "win_probability": {
-    "home": 0.7666,
-    "away": 0.2334
+    "home": 0.7584,
+    "away": 0.2416
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Orlando Magic ML"
    },
-   "data_warning": "Jamal Cain está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -10.0,
     "away": 10.0
    },
-   "total_points": 223.4,
+   "total_points": 222.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -8.0,
-     27.1
+     27.0
     ],
     "total": [
-     198.0,
-     249.0
+     197.0,
+     248.0
     ]
    },
-   "game_warnings": [
-    "Jamal Cain está en duda (questionable)",
-    "Tristan da Silva está en duda (questionable)",
-    "Jalen Suggs está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +10.6, Elo +9.0, equipo +8.6, cuatro factores +8.9.",
+     "detail": "4 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +10.1, Elo +9.0, equipo +8.6, cuatro factores +8.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de ORL vale 8.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de ORL vale 8.3 puntos más por partido.",
      "supports_pick": true
     },
     {
