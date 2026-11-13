@@ -300,7 +300,9 @@ def construir_corto(d: dict, metricas: dict | None = None) -> dict:
         j = _figura(jug[lado])
         mejor = max(_DESTACA, key=lambda s: j["media"][s] / _DESTACA[s])
         rotulo, p, umbral = _extra(j, mejor)
-        nar = Narracion().t(f"Por los {eq[lado]['apodo']}, {j['jugador']}:", cue="figura")             .n(round(j["media"][mejor]), cue="mejor").t(f"{_ROTULO[mejor].lower()} por partido,")
+        # Son las estadisticas de ESTE partido, no el promedio de la temporada.
+        nar = Narracion().t(f"Por los {eq[lado]['apodo']}, {j['jugador']}.", cue="figura") \
+            .t("En este partido:").n(round(j["media"][mejor]), cue="mejor").t(f"{_ROTULO[mejor].lower()},")
         if umbral is None:
             nar.t("y firma doble-doble en el", cue="extra").p(p, fin=".")
         else:
