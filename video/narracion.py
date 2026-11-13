@@ -47,6 +47,9 @@ def aplicar(guion: dict, manual: list[dict]) -> dict:
         permitidos = _numeros(esc["props"]) | _numeros([t["texto"] for t in esc["narracion"]]) \
             | {guion["simulaciones"]}
         cues = {t["cue"] for t in esc["narracion"] if t["cue"]}
+        esc["props"].update(m.get("props", {}))
+        if "narracion" not in m:
+            continue  # esta escena se queda con lo que dice la plantilla
         trozos = []
         for texto, cue in m["narracion"]:
             extra = _numeros(texto) - permitidos
@@ -68,5 +71,4 @@ def aplicar(guion: dict, manual: list[dict]) -> dict:
                 else:
                     grupo.append(w)
         esc["narracion"] = trozos
-        esc["props"].update(m.get("props", {}))
     return guion

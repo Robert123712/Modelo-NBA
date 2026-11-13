@@ -228,7 +228,7 @@ def construir(d: dict, metricas: dict | None = None) -> dict:
 
 # Con que numero "destaca" un jugador en cada estadistica: sirve para escoger
 # cual de sus tres numeros se resalta.
-_DESTACA = {"points": 24.0, "reb": 10.0, "assists": 8.0}
+_DESTACA = {"points": 22.0, "reb": 11.0, "assists": 9.0}
 _ROTULO = {"points": "PUNTOS", "reb": "REBOTES", "assists": "ASISTENCIAS"}
 _CORTO = {"points": "PTS", "reb": "REB", "assists": "AST"}
 _VERBO = {"points": "mete", "reb": "baja", "assists": "reparte"}
