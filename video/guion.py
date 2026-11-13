@@ -248,6 +248,30 @@ def _extra(j: dict, mejor: str) -> tuple[str, float, int | None]:
     return f"{u}+ {_ROTULO[mejor]}", j["sobre"][mejor][u], int(u)
 
 
+def _lejos(a: str, b: str, umbral: float = 130) -> bool:
+    """Dos colores hex se distinguen en pantalla si estan lejos en RGB."""
+    c = [int(x[i:i + 2], 16) for x in (a, b) for i in (1, 3, 5)]
+    return sum((c[k] - c[k + 3]) ** 2 for k in range(3)) ** 0.5 >= umbral
+
+
+def _contrastar(eq: dict) -> None:
+    """Si los dos equipos se parecen (dos rojos, dos azules), el visitante toma su
+    segundo color o, si tampoco contrasta, blanco. Los cuadros de la simulacion
+    tienen que leerse de los dos lados."""
+    if _lejos(eq["home"]["color"], eq["away"]["color"]):
+        return
+    if _lejos(eq["home"]["color"], eq["away"]["color2"]):
+        eq["away"]["color"] = eq["away"]["color2"]
+    else:
+        eq["away"]["color"] = "#e3ebef"
+
+
+def _peso(e: dict) -> float:
+    """Que tanto empuja un evento, con un pequeno bonus a rebotes y asistencias
+    para que no todas las llaves sean de puntos."""
+    return e["empuje"] * e["p_evento"] ** 0.5 * (1.0 if e["stat"] == "points" else 1.6)
+
+
 def construir_corto(d: dict, metricas: dict | None = None) -> dict:
     """Version corta de NBA: siete bloques, sin dar pick.
 
@@ -256,13 +280,23 @@ def construir_corto(d: dict, metricas: dict | None = None) -> dict:
     """
     n = d["simulaciones"]
     eq = {lado: equipo(d["equipos"][lado]["abbr"]) for lado in ("home", "away")}
-    if eq["home"]["color"].lower() == eq["away"]["color"].lower():
-        eq["away"]["color"] = eq["away"]["color2"]
+    _contrastar(eq)
     jug = d["jugadores"]
     favorito = "home" if d["victorias"]["home"] >= d["victorias"]["away"] else "away"
     otro = "away" if favorito == "home" else "home"
     p_gana = {lado: d["victorias"][lado] / n for lado in ("home", "away")}
     fav, riv = eq[favorito], eq[otro]
+    # El dato principal del gancho sale de la figura del favorito: cambia de un video a otro.
+    fig_fav = _figura(jug[favorito])
+    principal = max(_DESTACA, key=lambda s: fig_fav["media"][s] / _DESTACA[s])
+    ap = _apellido(fig_fav["jugador"])
+    frase, rotulo = {
+        "points": (f"Todo pasa por {ap}.", f"TODO PASA POR {ap.upper()}"),
+        "reb": (f"Todo pasa por los rebotes de {ap}.", f"LOS REBOTES DE {ap.upper()}"),
+        "assists": (f"Todo pasa por las asistencias de {ap}.", f"LAS ASISTENCIAS DE {ap.upper()}"),
+    }[principal]
+    if len(rotulo) > 26:  # un nombre largo no cabe en el letrero: se usa el equipo
+        frase, rotulo = f"Todo pasa por el {fav['apodo']}.", f"TODO PASA POR {fav['apodo'].upper()}"
 
     record = None
     if metricas:
@@ -274,9 +308,9 @@ def construir_corto(d: dict, metricas: dict | None = None) -> dict:
     escenas = []
 
     # 1. Gancho: la pregunta, sin dar pick.
-    nar = Narracion().t(f"¿{eq['away']['apodo']} o {eq['home']['apodo']}?", cue="pick")         .t("Jugamos este partido").n(n, cue="remate").t("veces.")
+    nar = Narracion().t(f"¿{eq['away']['apodo']} o {eq['home']['apodo']}?", cue="pick").t(frase, cue="remate")
     escenas.append({"tipo": "gancho", "props": {
-        "linea1": "¿QUIÉN GANA HOY?", "linea2": f"LO JUGAMOS {miles(n)} VECES", "favorito": None},
+        "linea1": f"¿{eq['away']['apodo']} O {eq['home']['apodo']}?".upper(), "linea2": rotulo, "favorito": None},
         "narracion": nar.trozos})
 
     # 2. Como se hizo.
@@ -323,7 +357,7 @@ def construir_corto(d: dict, metricas: dict | None = None) -> dict:
         ops = [(j, e) for j in jug[lado] for e in j["eventos"] if e["p_evento"] >= 0.15 and e["empuje"] > 0]
         if not ops:
             continue
-        j, e = max(ops, key=lambda x: x[1]["empuje"] * x[1]["p_evento"] ** 0.5)
+        j, e = max(ops, key=lambda x: _peso(x[1]))
         frase = f"{'Si' if k == 0 else 'Pero si'} {_apellido(j['jugador'])} {_VERBO[e['stat']]} {{}} {_ROTULO[e['stat']].lower()},"
         nar.t(frase.format(e["umbral"]), frase.format(decir(e["umbral"])), cue=f"medidor{k}")             .t(f"los {eq[lado]['apodo']} ganan el").p(e["p_gana"], cue=f"sube{k}", fin=".")
         medidores.append({"athlete_id": j["athlete_id"], "jugador": _apellido(j["jugador"]),
