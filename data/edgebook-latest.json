@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-13T22:45:00.000530Z",
+ "generated_at": "2026-11-13T23:15:00.000561Z",
  "date_local": "2026-11-13",
  "games": [
   {
@@ -18,57 +18,54 @@
     "code": "NY"
    },
    "projection": {
-    "home_score": 104.3,
-    "away_score": 114.0
+    "home_score": 104.6,
+    "away_score": 113.8
    },
    "win_probability": {
-    "home": 0.2412,
-    "away": 0.7588
+    "home": 0.2522,
+    "away": 0.7478
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "New York Knicks ML"
    },
-   "data_warning": "T.J. McConnell está en duda (probable)",
+   "data_warning": null,
    "spread": {
-    "home": 10.0,
-    "away": -10.0
+    "home": 9.0,
+    "away": -9.0
    },
-   "total_points": 218.4,
+   "total_points": 218.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -28.0,
-     8.0
+     -27.0,
+     9.0
     ],
     "total": [
      193.0,
      244.0
     ]
    },
-   "game_warnings": [
-    "T.J. McConnell está en duda (probable)",
-    "Aaron Nesmith está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +9.8, Elo +10.1, equipo +9.3, cuatro factores +10.5.",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +9.1, Elo +10.1, equipo +9.3, cuatro factores +10.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 11.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 10.8 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de IND",
      "favors": "away",
-     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Ben Sheppard: IND pierde 4.7 puntos.",
+     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Ben Sheppard: IND pierde 3.9 puntos.",
      "supports_pick": true
     },
     {
@@ -158,27 +155,27 @@
    },
    "projection": {
     "home_score": 118.0,
-    "away_score": 120.0
+    "away_score": 119.6
    },
    "win_probability": {
-    "home": 0.4451,
-    "away": 0.5549
+    "home": 0.4567,
+    "away": 0.5433
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Cleveland Cavaliers ML"
    },
-   "data_warning": "Pelle Larsson está en duda (doubtful)",
+   "data_warning": "Klay Thompson está en duda (questionable)",
    "spread": {
-    "home": 3.0,
-    "away": -3.0
+    "home": 2.0,
+    "away": -2.0
    },
-   "total_points": 238.0,
+   "total_points": 237.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -20.0,
+     -19.0,
      16.0
     ],
     "total": [
@@ -187,21 +184,20 @@
     ]
    },
    "game_warnings": [
-    "Pelle Larsson está en duda (doubtful)",
-    "Klay Thompson está en duda (probable)"
+    "Klay Thompson está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "3 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +2.0, Elo +1.3, equipo +1.9, cuatro factores -1.7.",
+     "detail": "3 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +1.4, Elo +1.3, equipo +1.9, cuatro factores -1.7.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de CLE vale 3.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de CLE vale 3.2 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -213,7 +209,7 @@
     {
      "label": "Bajas de CLE",
      "favors": "home",
-     "detail": "Sin Sam Merrill, Evan Mobley: CLE pierde 1.6 puntos.",
+     "detail": "Sin Sam Merrill, Evan Mobley: CLE pierde 2.2 puntos.",
      "supports_pick": false
     }
    ]
