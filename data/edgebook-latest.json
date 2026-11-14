@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-14T17:45:00.000518Z",
+ "generated_at": "2026-11-14T18:15:00.000537Z",
  "date_local": "2026-11-14",
  "games": [
   {
@@ -18,24 +18,24 @@
     "code": "DEN"
    },
    "projection": {
-    "home_score": 110.5,
-    "away_score": 121.3
+    "home_score": 109.9,
+    "away_score": 121.2
    },
    "win_probability": {
-    "home": 0.2159,
-    "away": 0.7841
+    "home": 0.2074,
+    "away": 0.7926
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Denver Nuggets ML"
    },
-   "data_warning": null,
+   "data_warning": "Yves Missi está en duda (probable)",
    "spread": {
     "home": 11.0,
     "away": -11.0
    },
-   "total_points": 231.8,
+   "total_points": 231.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -47,19 +47,21 @@
      257.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Yves Missi está en duda (probable)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +12.6, Elo +6.8, equipo +7.5, cuatro factores +5.2.",
+     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +13.2, Elo +6.8, equipo +7.5, cuatro factores +5.2.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DEN vale 12.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DEN vale 12.9 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -71,7 +73,7 @@
     {
      "label": "Bajas de NO",
      "favors": "away",
-     "detail": "Sin Yves Missi, Trey Murphy III, Dejounte Murray: NO pierde 2.6 puntos.",
+     "detail": "Sin Bryce McGowens, Trey Murphy III, Dejounte Murray: NO pierde 3.3 puntos.",
      "supports_pick": true
     },
     {
@@ -126,7 +128,7 @@
    },
    "game_warnings": [
     "Evan Mobley está en duda (day-to-day)",
-    "Max Christie está en duda (questionable)",
+    "Max Christie está en duda (doubtful)",
     "Morez Johnson Jr. está en duda (probable)"
    ],
    "warnings": [],
@@ -176,24 +178,24 @@
     "code": "DET"
    },
    "projection": {
-    "home_score": 112.9,
-    "away_score": 117.7
+    "home_score": 112.7,
+    "away_score": 117.5
    },
    "win_probability": {
-    "home": 0.3617,
-    "away": 0.6383
+    "home": 0.3624,
+    "away": 0.6376
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Detroit Pistons ML"
    },
-   "data_warning": "Pelle Larsson está en duda (day-to-day)",
+   "data_warning": "Giannis Antetokounmpo está en duda (probable)",
    "spread": {
     "home": 5.0,
     "away": -5.0
    },
-   "total_points": 230.6,
+   "total_points": 230.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -202,12 +204,13 @@
     ],
     "total": [
      205.0,
-     257.0
+     256.0
     ]
    },
    "game_warnings": [
-    "Pelle Larsson está en duda (day-to-day)",
-    "Klay Thompson está en duda (day-to-day)"
+    "Giannis Antetokounmpo está en duda (probable)",
+    "Pelle Larsson está en duda (doubtful)",
+    "Klay Thompson está en duda (probable)"
    ],
    "warnings": [],
    "key_factors": [
@@ -257,11 +260,11 @@
    },
    "projection": {
     "home_score": 118.5,
-    "away_score": 111.8
+    "away_score": 111.9
    },
    "win_probability": {
-    "home": 0.6869,
-    "away": 0.3131
+    "home": 0.6829,
+    "away": 0.3171
    },
    "pick": {
     "market": "moneyline",
@@ -273,7 +276,7 @@
     "home": -7.0,
     "away": 7.0
    },
-   "total_points": 230.3,
+   "total_points": 230.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -287,20 +290,21 @@
    },
    "game_warnings": [
     "Zach Edey está en duda (day-to-day)",
-    "Mikel Brown Jr. está en duda (probable)"
+    "Mikel Brown Jr. está en duda (probable)",
+    "Nolan Traore está en duda (probable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +6.0, Elo +5.9, equipo +7.7, cuatro factores +5.0.",
+     "detail": "4 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +5.8, Elo +5.9, equipo +7.7, cuatro factores +5.0.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MEM vale 6.3 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MEM vale 6.1 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -318,7 +322,7 @@
     {
      "label": "Bajas de MEM",
      "favors": "away",
-     "detail": "Sin Scotty Pippen Jr.: MEM pierde 4.1 puntos.",
+     "detail": "Sin Scotty Pippen Jr.: MEM pierde 4.3 puntos.",
      "supports_pick": false
     }
    ]
@@ -336,50 +340,52 @@
     "code": "CHI"
    },
    "projection": {
-    "home_score": 125.7,
+    "home_score": 126.5,
     "away_score": 108.4
    },
    "win_probability": {
-    "home": 0.8974,
-    "away": 0.1026
+    "home": 0.9074,
+    "away": 0.0926
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Minnesota Timberwolves ML"
    },
-   "data_warning": "Jalen Smith está en duda (day-to-day)",
+   "data_warning": "Nic Claxton está en duda (questionable)",
    "spread": {
-    "home": -17.0,
-    "away": 17.0
+    "home": -18.0,
+    "away": 18.0
    },
-   "total_points": 234.1,
+   "total_points": 234.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -1.0,
-     35.0
+     1.0,
+     36.0
     ],
     "total": [
-     208.0,
+     209.0,
      260.0
     ]
    },
    "game_warnings": [
-    "Jalen Smith está en duda (day-to-day)"
+    "Nic Claxton está en duda (questionable)",
+    "Norman Powell está en duda (questionable)",
+    "Jalen Smith está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +18.4, Elo +12.8, equipo +15.1, cuatro factores +12.4.",
+     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +19.6, Elo +12.8, equipo +15.1, cuatro factores +12.4.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MIN vale 14.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MIN vale 15.4 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -392,6 +398,12 @@
      "label": "Descanso",
      "favors": "home",
      "detail": "CHI juega su segundo partido en dos noches: 2.3 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de CHI",
+     "favors": "home",
+     "detail": "Sin Caleb Wilson: CHI pierde 0.7 puntos.",
      "supports_pick": true
     }
    ]
