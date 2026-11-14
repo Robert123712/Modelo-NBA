@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-14T20:15:00.000543Z",
+ "generated_at": "2026-11-14T22:45:00.000524Z",
  "date_local": "2026-11-14",
  "games": [
   {
@@ -22,20 +22,20 @@
     "away_score": 121.1
    },
    "win_probability": {
-    "home": 0.2114,
-    "away": 0.7886
+    "home": 0.2109,
+    "away": 0.7891
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Denver Nuggets ML"
    },
-   "data_warning": "Yves Missi está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": 11.0,
     "away": -11.0
    },
-   "total_points": 231.2,
+   "total_points": 231.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -47,15 +47,13 @@
      257.0
     ]
    },
-   "game_warnings": [
-    "Yves Missi está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +12.9, Elo +6.8, equipo +7.5, cuatro factores +5.2.",
+     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +13.0, Elo +6.8, equipo +7.5, cuatro factores +5.2.",
      "supports_pick": true
     },
     {
