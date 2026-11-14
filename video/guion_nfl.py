@@ -11,7 +11,7 @@ import json
 import sys
 
 from equipos import equipo
-from guion import MARCA, Narracion, _apellido, _fecha, pct
+from guion import MARCA, Narracion, _apellido, _contrastar, _fecha, pct
 from numeros import decir, miles
 
 # Estadistica principal por posicion y como se dice.
@@ -267,6 +267,12 @@ if __name__ == "__main__":
         print(f"[{e['tipo']}]", " ".join(t["texto"] for t in e["narracion"]))
 
 
+def _figura_nfl(jugadores: list[dict]) -> dict:
+    """La figura del equipo: el que mas yardas produce sin ser el QB."""
+    resto = [j for j in jugadores if j.get("posicion") != "QB"] or jugadores
+    return max(resto, key=lambda j: j["media"].get("rush_yds", 0) + j["media"].get("rec_yds", 0))
+
+
 def construir_corto(d: dict, metricas: dict | None = None) -> dict:
     """Version corta: seis bloques y pocas cifras dichas.
 
@@ -276,8 +282,7 @@ def construir_corto(d: dict, metricas: dict | None = None) -> dict:
     d = _normalizar(d)
     n = d["simulaciones"]
     eq = {lado: equipo(d["equipos"][lado]["abbr"], "nfl") for lado in ("home", "away")}
-    if eq["home"]["color"].lower() == eq["away"]["color"].lower():
-        eq["away"]["color"] = eq["away"]["color2"]
+    _contrastar(eq)
     jug = d["jugadores"]
     favorito = "home" if d["victorias"]["home"] >= d["victorias"]["away"] else "away"
     otro = "away" if favorito == "home" else "home"
@@ -299,13 +304,17 @@ def construir_corto(d: dict, metricas: dict | None = None) -> dict:
     llave = _llave(favorito)
     escenas = []
 
-    # 1. Gancho: el pick y una pregunta que se contesta al final.
-    nar = Narracion().t(f"Los {fav['apodo']} ganan hoy...", cue="pick")
-    if llave:
-        nar.t(f"si {_apellido(llave[0]['jugador'])} hace una sola cosa.", cue="remate")
+    # 1. Gancho: la pregunta, sin pick, y el jugador que la decide (cambia de un video a otro).
+    fig_gancho = _figura_nfl(jug[favorito])
+    ap = _apellido(fig_gancho["jugador"])
+    frase = f"Todo pasa por {ap}."
+    rotulo = f"TODO PASA POR {ap.upper()}"
+    if len(rotulo) > 26:  # un nombre largo no cabe en el letrero: se usa el equipo
+        frase, rotulo = f"Todo pasa por el {fav['apodo']}.", f"TODO PASA POR {fav['apodo'].upper()}"
+    nar = Narracion().t(f"¿{eq['away']['apodo']} o {eq['home']['apodo']}?", cue="pick").t(frase, cue="remate")
     escenas.append({"tipo": "gancho", "props": {
-        "linea1": f"{fav['apodo']} GANAN HOY", "linea2": "...SI PASA UNA COSA" if llave else None,
-        "favorito": favorito}, "narracion": nar.trozos})
+        "linea1": f"¿{eq['away']['apodo']} O {eq['home']['apodo']}?".upper(), "linea2": rotulo,
+        "favorito": None}, "narracion": nar.trozos})
 
     # 2. Como se hizo, en una frase.
     nar = Narracion().t("Tomamos cómo viene jugando cada equipo", cue="paso0").t("y cada jugador,", cue="paso1") \
@@ -331,7 +340,8 @@ def construir_corto(d: dict, metricas: dict | None = None) -> dict:
     fig = max(resto, key=lambda j: j["media"].get("rush_yds", 0) + j["media"].get("rec_yds", 0))
     sf = "rush_yds" if fig["media"].get("rush_yds", 0) > fig["media"].get("rec_yds", 0) else "rec_yds"
     p_td = fig["sobre"].get("td", {}).get("1")
-    nar = Narracion().t(f"La figura: {fig['jugador']}.").t("Promedia", cue="numero").n(round(fig["media"][sf])).t("yardas")
+    # Son las estadisticas de ESTE partido, no el promedio de la temporada.
+    nar = Narracion().t(f"La figura: {fig['jugador']}.").t("En este partido:", cue="numero").n(round(fig["media"][sf])).t("yardas")
     if p_td is not None:
         nar.t("y anota en el", cue="promedio").p(p_td, fin=".")
     escenas.append({"tipo": "heroe", "props": {
@@ -354,10 +364,10 @@ def construir_corto(d: dict, metricas: dict | None = None) -> dict:
             "pct": pct(e["p_gana"])}]}, "narracion": nar.trozos})
 
     # 6. Cierre: el pick, el record y la pregunta.
-    nar = Narracion().t(f"Nuestro pick: {fav['apodo']}.", cue="pick").t("¿Tú a quién le vas?", cue="pregunta") \
+    nar = Narracion().t("¿Tú a quién le vas?", cue="pregunta") \
         .t("Comenta: predicción,", cue="comenta").t("si quieres ver toda la predicción.")
     escenas.append({"tipo": "cierre", "props": {
-        "titulo": "¿A quién\nle vas?", "pick": f"NUESTRO PICK: {fav['apodo']}", "favorito": favorito,
+        "titulo": "¿A quién\nle vas?", "favorito": favorito,
         "palabra": "PREDICCIÓN", "linea1": "Comenta “predicción”", "linea2": "Y VE TODA LA PREDICCIÓN"},
         "narracion": nar.trozos})
 
