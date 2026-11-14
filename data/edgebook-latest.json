@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-14T05:45:00.000594Z",
+ "generated_at": "2026-11-14T06:15:00.000596Z",
  "date_local": "2026-11-14",
  "games": [
   {
@@ -22,8 +22,8 @@
     "away_score": 121.5
    },
    "win_probability": {
-    "home": 0.2086,
-    "away": 0.7914
+    "home": 0.2089,
+    "away": 0.7911
    },
    "pick": {
     "market": "moneyline",
@@ -59,7 +59,7 @@
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DEN vale 12.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DEN vale 12.8 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -179,8 +179,8 @@
     "away_score": 117.3
    },
    "win_probability": {
-    "home": 0.3744,
-    "away": 0.6256
+    "home": 0.3748,
+    "away": 0.6252
    },
    "pick": {
     "market": "moneyline",
@@ -197,7 +197,7 @@
    "intervals_80": {
     "home_margin": [
      -22.0,
-     13.1
+     14.0
     ],
     "total": [
      205.0,
@@ -210,7 +210,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +4.5, Elo +3.0, equipo +4.2, cuatro factores +3.0.",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +4.5, Elo +3.0, equipo +4.1, cuatro factores +3.0.",
      "supports_pick": true
     },
     {
@@ -289,13 +289,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +4.6, Elo +5.9, equipo +7.7, cuatro factores +5.1.",
+     "detail": "4 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +4.6, Elo +5.9, equipo +7.7, cuatro factores +5.0.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MEM vale 5.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MEM vale 4.9 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -335,8 +335,8 @@
     "away_score": 108.4
    },
    "win_probability": {
-    "home": 0.8973,
-    "away": 0.1027
+    "home": 0.8974,
+    "away": 0.1026
    },
    "pick": {
     "market": "moneyline",
