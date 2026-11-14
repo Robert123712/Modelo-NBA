@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-14T01:15:00.000560Z",
+ "generated_at": "2026-11-14T01:45:00.000528Z",
  "date_local": "2026-11-13",
  "games": [
-  {
-   "league_game_id": "401909301",
-   "espn_game_id": "401909301",
-   "starts_at": "2026-11-14T01:30Z",
-   "home": {
-    "name": "Houston Rockets",
-    "code": "HOU"
-   },
-   "away": {
-    "name": "Utah Jazz",
-    "code": "UTAH"
-   },
-   "projection": {
-    "home_score": 118.5,
-    "away_score": 101.2
-   },
-   "win_probability": {
-    "home": 0.8969,
-    "away": 0.1031
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Houston Rockets ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -17.0,
-    "away": 17.0
-   },
-   "total_points": 219.6,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -1.0,
-     35.0
-    ],
-    "total": [
-     194.0,
-     245.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +18.0, Elo +15.4, equipo +15.2, cuatro factores +13.0.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 16.3 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para HOU.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de UTAH",
-     "favors": "home",
-     "detail": "Sin Jaren Jackson Jr., Lauri Markkanen, Jusuf Nurkic: UTAH pierde 5.1 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909302",
    "espn_game_id": "401909302",
@@ -633,6 +562,77 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para NO.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909301",
+   "espn_game_id": "401909301",
+   "starts_at": "2026-11-14T01:30Z",
+   "home": {
+    "name": "Houston Rockets",
+    "code": "HOU"
+   },
+   "away": {
+    "name": "Utah Jazz",
+    "code": "UTAH"
+   },
+   "projection": {
+    "home_score": 118.5,
+    "away_score": 101.2
+   },
+   "win_probability": {
+    "home": 0.8969,
+    "away": 0.1031
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Houston Rockets ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -17.0,
+    "away": 17.0
+   },
+   "total_points": 219.6,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -1.0,
+     35.0
+    ],
+    "total": [
+     194.0,
+     245.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +18.0, Elo +15.4, equipo +15.2, cuatro factores +13.0.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 16.3 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para HOU.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de UTAH",
+     "favors": "home",
+     "detail": "Sin Jaren Jackson Jr., Lauri Markkanen, Jusuf Nurkic: UTAH pierde 5.1 puntos.",
+     "supports_pick": true
     }
    ]
   }
