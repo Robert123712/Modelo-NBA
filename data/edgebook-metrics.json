@@ -1,7 +1,7 @@
 {
  "schema_version": "1.0",
  "sport": "NBA",
- "generated_at": "2026-11-14T05:15:00.000514Z",
+ "generated_at": "2026-11-14T05:45:00.000594Z",
  "minimum_meaningful": 100,
  "versions": [
   {
@@ -9,24 +9,24 @@
    "unlabeled": false,
    "from": "2026-10-22",
    "to": "2026-11-13",
-   "graded": 167,
-   "pending": 7,
+   "graded": 168,
+   "pending": 6,
    "significant": true,
    "markets": {
     "moneyline": {
-     "n": 167,
-     "base_rate": 0.521,
-     "brier": 0.1877,
-     "log_loss": 0.5525,
-     "hit_rate": 0.6946,
+     "n": 168,
+     "base_rate": 0.5179,
+     "brier": 0.187,
+     "log_loss": 0.5508,
+     "hit_rate": 0.6964,
      "baseline_brier": 0.25,
      "calibration": [
       {
        "from": 0.0,
        "to": 0.35,
-       "n": 32,
-       "predicted": 0.2478,
-       "observed": 0.125
+       "n": 33,
+       "predicted": 0.2476,
+       "observed": 0.1212
       },
       {
        "from": 0.35,
@@ -67,10 +67,10 @@
     }
    },
    "projected_total": {
-    "n": 167,
-    "mae": 14.592,
-    "bias": 1.769,
-    "std_error": 1.4586,
+    "n": 168,
+    "mae": 14.52,
+    "bias": 1.773,
+    "std_error": 1.45,
     "by_month": [
      {
       "month": "2026-10",
@@ -81,18 +81,18 @@
      },
      {
       "month": "2026-11",
-      "n": 93,
-      "mae": 13.675,
-      "bias": 0.305,
-      "std_error": 1.8301
+      "n": 94,
+      "mae": 13.555,
+      "bias": 0.328,
+      "std_error": 1.8108
      }
     ]
    },
    "projected_margin": {
-    "n": 167,
-    "mae": 11.06,
-    "bias": 0.497,
-    "std_error": 1.1106,
+    "n": 168,
+    "mae": 11.012,
+    "bias": 0.512,
+    "std_error": 1.1041,
     "by_month": [
      {
       "month": "2026-10",
@@ -103,10 +103,10 @@
      },
      {
       "month": "2026-11",
-      "n": 93,
-      "mae": 11.172,
-      "bias": -0.355,
-      "std_error": 1.4922
+      "n": 94,
+      "mae": 11.085,
+      "bias": -0.319,
+      "std_error": 1.4767
      }
     ]
    },
@@ -116,13 +116,13 @@
    },
    "interval_coverage": {
     "margin": {
-     "n": 167,
-     "covered": 0.8144,
+     "n": 168,
+     "covered": 0.8155,
      "nominal": 0.8
     },
     "total": {
-     "n": 167,
-     "covered": 0.8503,
+     "n": 168,
+     "covered": 0.8512,
      "nominal": 0.8
     }
    }

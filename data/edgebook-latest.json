@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-14T05:15:00.000514Z",
+ "generated_at": "2026-11-14T05:45:00.000594Z",
  "date_local": "2026-11-14",
  "games": [
   {
@@ -19,11 +19,11 @@
    },
    "projection": {
     "home_score": 110.2,
-    "away_score": 121.4
+    "away_score": 121.5
    },
    "win_probability": {
-    "home": 0.2091,
-    "away": 0.7909
+    "home": 0.2086,
+    "away": 0.7914
    },
    "pick": {
     "market": "moneyline",
@@ -35,7 +35,7 @@
     "home": 11.0,
     "away": -11.0
    },
-   "total_points": 231.6,
+   "total_points": 231.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -99,8 +99,8 @@
     "away_score": 115.4
    },
    "win_probability": {
-    "home": 0.5552,
-    "away": 0.4448
+    "home": 0.5553,
+    "away": 0.4447
    },
    "pick": {
     "market": "moneyline",
@@ -139,7 +139,7 @@
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de CLE vale 0.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de CLE vale 0.7 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -179,8 +179,8 @@
     "away_score": 117.3
    },
    "win_probability": {
-    "home": 0.375,
-    "away": 0.625
+    "home": 0.3744,
+    "away": 0.6256
    },
    "pick": {
     "market": "moneyline",
@@ -197,7 +197,7 @@
    "intervals_80": {
     "home_margin": [
      -22.0,
-     14.0
+     13.1
     ],
     "total": [
      205.0,
@@ -256,8 +256,8 @@
     "away_score": 113.0
    },
    "win_probability": {
-    "home": 0.6624,
-    "away": 0.3376
+    "home": 0.6621,
+    "away": 0.3379
    },
    "pick": {
     "market": "moneyline",
@@ -278,7 +278,7 @@
     ],
     "total": [
      206.0,
-     257.0
+     258.0
     ]
    },
    "game_warnings": [
