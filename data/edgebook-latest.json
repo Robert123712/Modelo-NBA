@@ -2,145 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-13T23:45:00.000558Z",
+ "generated_at": "2026-11-14T00:15:00.000639Z",
  "date_local": "2026-11-13",
  "games": [
-  {
-   "league_game_id": "401909296",
-   "espn_game_id": "401909296",
-   "starts_at": "2026-11-14T00:00Z",
-   "home": {
-    "name": "Indiana Pacers",
-    "code": "IND"
-   },
-   "away": {
-    "name": "New York Knicks",
-    "code": "NY"
-   },
-   "projection": {
-    "home_score": 104.6,
-    "away_score": 113.8
-   },
-   "win_probability": {
-    "home": 0.2522,
-    "away": 0.7478
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "New York Knicks ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 9.0,
-    "away": -9.0
-   },
-   "total_points": 218.5,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -27.0,
-     9.0
-    ],
-    "total": [
-     193.0,
-     244.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +9.1, Elo +10.1, equipo +9.3, cuatro factores +10.5.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 10.8 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de IND",
-     "favors": "away",
-     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Ben Sheppard: IND pierde 3.9 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para IND.",
-     "supports_pick": false
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909297",
-   "espn_game_id": "401909297",
-   "starts_at": "2026-11-14T00:00Z",
-   "home": {
-    "name": "Orlando Magic",
-    "code": "ORL"
-   },
-   "away": {
-    "name": "Milwaukee Bucks",
-    "code": "MIL"
-   },
-   "projection": {
-    "home_score": 116.1,
-    "away_score": 106.5
-   },
-   "win_probability": {
-    "home": 0.7584,
-    "away": 0.2416
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Orlando Magic ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -10.0,
-    "away": 10.0
-   },
-   "total_points": 222.6,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -8.0,
-     27.0
-    ],
-    "total": [
-     197.0,
-     248.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +10.1, Elo +9.0, equipo +8.6, cuatro factores +8.9.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de ORL vale 8.3 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para ORL.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909298",
    "espn_game_id": "401909298",
@@ -298,24 +162,24 @@
     "code": "MEM"
    },
    "projection": {
-    "home_score": 114.7,
-    "away_score": 118.2
+    "home_score": 114.5,
+    "away_score": 118.0
    },
    "win_probability": {
-    "home": 0.3992,
-    "away": 0.6008
+    "home": 0.3998,
+    "away": 0.6002
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Memphis Grizzlies ML"
    },
-   "data_warning": "Bennedict Mathurin está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": 4.0,
     "away": -4.0
    },
-   "total_points": 232.8,
+   "total_points": 232.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -327,9 +191,7 @@
      259.0
     ]
    },
-   "game_warnings": [
-    "Bennedict Mathurin está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
@@ -630,6 +492,145 @@
      "favors": "home",
      "detail": "Sin Chet Holmgren, Cason Wallace, Jalen Williams: OKC pierde 4.3 puntos.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909296",
+   "espn_game_id": "401909296",
+   "starts_at": "2026-11-14T00:00Z",
+   "home": {
+    "name": "Indiana Pacers",
+    "code": "IND"
+   },
+   "away": {
+    "name": "New York Knicks",
+    "code": "NY"
+   },
+   "projection": {
+    "home_score": 104.3,
+    "away_score": 114.0
+   },
+   "win_probability": {
+    "home": 0.2412,
+    "away": 0.7588
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "New York Knicks ML"
+   },
+   "data_warning": "T.J. McConnell está en duda (probable)",
+   "spread": {
+    "home": 10.0,
+    "away": -10.0
+   },
+   "total_points": 218.4,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -28.0,
+     8.0
+    ],
+    "total": [
+     193.0,
+     244.0
+    ]
+   },
+   "game_warnings": [
+    "T.J. McConnell está en duda (probable)",
+    "Aaron Nesmith está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +9.8, Elo +10.1, equipo +9.3, cuatro factores +10.5.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 11.6 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de IND",
+     "favors": "away",
+     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Ben Sheppard: IND pierde 4.7 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para IND.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909297",
+   "espn_game_id": "401909297",
+   "starts_at": "2026-11-14T00:00Z",
+   "home": {
+    "name": "Orlando Magic",
+    "code": "ORL"
+   },
+   "away": {
+    "name": "Milwaukee Bucks",
+    "code": "MIL"
+   },
+   "projection": {
+    "home_score": 116.1,
+    "away_score": 106.5
+   },
+   "win_probability": {
+    "home": 0.7584,
+    "away": 0.2416
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Orlando Magic ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -10.0,
+    "away": 10.0
+   },
+   "total_points": 222.6,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -8.0,
+     27.0
+    ],
+    "total": [
+     197.0,
+     248.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +10.1, Elo +9.0, equipo +8.6, cuatro factores +8.9.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de ORL vale 8.3 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para ORL.",
+     "supports_pick": true
     }
    ]
   }
