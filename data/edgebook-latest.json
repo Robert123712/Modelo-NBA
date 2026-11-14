@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-14T01:45:00.000528Z",
+ "generated_at": "2026-11-14T02:15:00.000546Z",
  "date_local": "2026-11-13",
  "games": [
   {
@@ -18,24 +18,24 @@
     "code": "GS"
    },
    "projection": {
-    "home_score": 114.6,
-    "away_score": 106.4
+    "home_score": 114.7,
+    "away_score": 106.7
    },
    "win_probability": {
-    "home": 0.7234,
-    "away": 0.2766
+    "home": 0.7196,
+    "away": 0.2804
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "San Antonio Spurs ML"
    },
-   "data_warning": "De'Aaron Fox está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -8.0,
     "away": 8.0
    },
-   "total_points": 220.9,
+   "total_points": 221.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -43,26 +43,23 @@
      26.0
     ],
     "total": [
-     195.0,
+     196.0,
      247.0
     ]
    },
-   "game_warnings": [
-    "De'Aaron Fox está en duda (questionable)",
-    "Devin Vassell está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +8.6, Elo +9.1, equipo +6.9, cuatro factores +8.1.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +8.4, Elo +9.1, equipo +6.9, cuatro factores +8.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 6.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 6.6 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -74,7 +71,7 @@
     {
      "label": "Bajas de GS",
      "favors": "home",
-     "detail": "Sin Jimmy Butler III, Stephen Curry, Moses Moody: GS pierde 4.1 puntos.",
+     "detail": "Sin Jimmy Butler III, Stephen Curry, Moses Moody: GS pierde 3.9 puntos.",
      "supports_pick": true
     }
    ]
@@ -157,28 +154,28 @@
     "code": "OKC"
    },
    "projection": {
-    "home_score": 109.7,
-    "away_score": 113.8
+    "home_score": 110.1,
+    "away_score": 113.4
    },
    "win_probability": {
-    "home": 0.3892,
-    "away": 0.6108
+    "home": 0.4109,
+    "away": 0.5891
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Oklahoma City Thunder ML"
    },
-   "data_warning": null,
+   "data_warning": "Ajay Mitchell está en duda (questionable)",
    "spread": {
     "home": 4.0,
     "away": -4.0
    },
-   "total_points": 223.5,
+   "total_points": 223.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -22.0,
+     -21.0,
      14.0
     ],
     "total": [
@@ -186,19 +183,21 @@
      249.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Ajay Mitchell está en duda (questionable)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +3.1, Elo +4.6, equipo +6.4, cuatro factores +3.9.",
+     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +2.1, Elo +4.6, equipo +6.4, cuatro factores +3.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de OKC vale 4.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de OKC vale 3.9 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -210,7 +209,7 @@
     {
      "label": "Bajas de OKC",
      "favors": "home",
-     "detail": "Sin Chet Holmgren, Cason Wallace, Jalen Williams: OKC pierde 4.3 puntos.",
+     "detail": "Sin Chet Holmgren, Cason Wallace, Jalen Williams: OKC pierde 5.3 puntos.",
      "supports_pick": false
     }
    ]
