@@ -2,74 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-15T20:45:00.000606Z",
+ "generated_at": "2026-11-15T21:15:00.000530Z",
  "date_local": "2026-11-15",
  "games": [
-  {
-   "league_game_id": "401909986",
-   "espn_game_id": "401909986",
-   "starts_at": "2026-11-15T21:00Z",
-   "home": {
-    "name": "Phoenix Suns",
-    "code": "PHX"
-   },
-   "away": {
-    "name": "Los Angeles Lakers",
-    "code": "LAL"
-   },
-   "projection": {
-    "home_score": 114.2,
-    "away_score": 116.9
-   },
-   "win_probability": {
-    "home": 0.4195,
-    "away": 0.5805
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Los Angeles Lakers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 3.0,
-    "away": -3.0
-   },
-   "total_points": 231.2,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -21.0,
-     15.0
-    ],
-    "total": [
-     206.0,
-     257.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +2.9, Elo +2.5, equipo +2.5, cuatro factores +2.6.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de LAL vale 4.8 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para PHX.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909987",
    "espn_game_id": "401909987",
@@ -648,6 +583,71 @@
      "favors": "home",
      "detail": "Sin Johnny Furphy, Tyrese Haliburton, Ben Sheppard: IND pierde 4.2 puntos.",
      "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909986",
+   "espn_game_id": "401909986",
+   "starts_at": "2026-11-15T21:00Z",
+   "home": {
+    "name": "Phoenix Suns",
+    "code": "PHX"
+   },
+   "away": {
+    "name": "Los Angeles Lakers",
+    "code": "LAL"
+   },
+   "projection": {
+    "home_score": 114.2,
+    "away_score": 116.9
+   },
+   "win_probability": {
+    "home": 0.4195,
+    "away": 0.5805
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Los Angeles Lakers ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 3.0,
+    "away": -3.0
+   },
+   "total_points": 231.2,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -21.0,
+     15.0
+    ],
+    "total": [
+     206.0,
+     257.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +2.9, Elo +2.5, equipo +2.5, cuatro factores +2.6.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de LAL vale 4.8 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para PHX.",
+     "supports_pick": false
     }
    ]
   }
