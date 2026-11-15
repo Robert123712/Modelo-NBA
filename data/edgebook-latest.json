@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-15T18:45:00.000554Z",
+ "generated_at": "2026-11-15T19:45:00.000542Z",
  "date_local": "2026-11-15",
  "games": [
   {
@@ -383,23 +383,23 @@
    },
    "projection": {
     "home_score": 104.2,
-    "away_score": 114.2
+    "away_score": 114.4
    },
    "win_probability": {
-    "home": 0.2361,
-    "away": 0.7639
+    "home": 0.2294,
+    "away": 0.7706
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Houston Rockets ML"
    },
-   "data_warning": "Bub Carrington está en duda (questionable)",
+   "data_warning": "Tre Johnson está en duda (questionable)",
    "spread": {
     "home": 10.0,
     "away": -10.0
    },
-   "total_points": 218.4,
+   "total_points": 218.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -412,7 +412,6 @@
     ]
    },
    "game_warnings": [
-    "Bub Carrington está en duda (questionable)",
     "Tre Johnson está en duda (questionable)"
    ],
    "warnings": [],
@@ -420,13 +419,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +9.7, Elo +9.4, equipo +10.5, cuatro factores +10.5.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +10.1, Elo +9.4, equipo +10.5, cuatro factores +10.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 11.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 11.9 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -524,12 +523,12 @@
     "code": "OKC"
    },
    "projection": {
-    "home_score": 108.0,
-    "away_score": 116.4
+    "home_score": 107.5,
+    "away_score": 115.9
    },
    "win_probability": {
-    "home": 0.2717,
-    "away": 0.7283
+    "home": 0.2713,
+    "away": 0.7287
    },
    "pick": {
     "market": "moneyline",
@@ -538,24 +537,23 @@
    },
    "data_warning": "Precious Achiuwa está en duda (questionable)",
    "spread": {
-    "home": 8.0,
-    "away": -8.0
+    "home": 9.0,
+    "away": -9.0
    },
-   "total_points": 224.3,
+   "total_points": 223.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -26.0,
-     10.0
+     9.0
     ],
     "total": [
-     199.0,
-     250.0
+     198.0,
+     249.0
     ]
    },
    "game_warnings": [
     "Precious Achiuwa está en duda (questionable)",
-    "Keegan Murray está en duda (questionable)",
     "Ajay Mitchell está en duda (questionable)"
    ],
    "warnings": [],
