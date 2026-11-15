@@ -2,86 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-14T23:45:00.000548Z",
+ "generated_at": "2026-11-15T00:15:00.000514Z",
  "date_local": "2026-11-14",
  "games": [
-  {
-   "league_game_id": "401909980",
-   "espn_game_id": "401909980",
-   "starts_at": "2026-11-15T00:00Z",
-   "home": {
-    "name": "New Orleans Pelicans",
-    "code": "NO"
-   },
-   "away": {
-    "name": "Denver Nuggets",
-    "code": "DEN"
-   },
-   "projection": {
-    "home_score": 109.7,
-    "away_score": 121.5
-   },
-   "win_probability": {
-    "home": 0.1974,
-    "away": 0.8026
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Denver Nuggets ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 12.0,
-    "away": -12.0
-   },
-   "total_points": 231.2,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -30.0,
-     6.0
-    ],
-    "total": [
-     206.0,
-     257.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +14.0, Elo +6.8, equipo +7.5, cuatro factores +5.2.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DEN vale 13.6 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "away",
-     "detail": "NO juega su segundo partido en dos noches: 2.2 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de NO",
-     "favors": "away",
-     "detail": "Sin Bennedict Mathurin, Bryce McGowens, Trey Murphy III: NO pierde 4.0 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para NO.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909981",
    "espn_game_id": "401909981",
@@ -250,11 +173,11 @@
    },
    "projection": {
     "home_score": 117.3,
-    "away_score": 110.9
+    "away_score": 111.0
    },
    "win_probability": {
-    "home": 0.6802,
-    "away": 0.3198
+    "home": 0.6788,
+    "away": 0.3212
    },
    "pick": {
     "market": "moneyline",
@@ -280,8 +203,7 @@
    },
    "game_warnings": [
     "Zach Edey está en duda (questionable)",
-    "Jerami Grant está en duda (questionable)",
-    "Mikel Brown Jr. está en duda (probable)"
+    "Jerami Grant está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
@@ -312,7 +234,7 @@
     {
      "label": "Bajas de MEM",
      "favors": "away",
-     "detail": "Sin Ty Jerome, Scotty Pippen Jr., Quinten Post: MEM pierde 4.5 puntos.",
+     "detail": "Sin Ty Jerome, Scotty Pippen Jr., Quinten Post: MEM pierde 4.6 puntos.",
      "supports_pick": false
     }
    ]
@@ -330,24 +252,24 @@
     "code": "CHI"
    },
    "projection": {
-    "home_score": 126.5,
-    "away_score": 108.4
+    "home_score": 125.9,
+    "away_score": 107.6
    },
    "win_probability": {
-    "home": 0.9074,
-    "away": 0.0926
+    "home": 0.909,
+    "away": 0.091
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Minnesota Timberwolves ML"
    },
-   "data_warning": "Nic Claxton está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -18.0,
     "away": 18.0
    },
-   "total_points": 234.9,
+   "total_points": 233.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -355,27 +277,23 @@
      36.0
     ],
     "total": [
-     209.0,
-     260.0
+     208.0,
+     259.0
     ]
    },
-   "game_warnings": [
-    "Nic Claxton está en duda (questionable)",
-    "Norman Powell está en duda (questionable)",
-    "Jalen Smith está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +19.6, Elo +12.8, equipo +15.1, cuatro factores +12.4.",
+     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +19.8, Elo +12.8, equipo +15.1, cuatro factores +12.4.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MIN vale 15.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MIN vale 15.5 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -393,8 +311,85 @@
     {
      "label": "Bajas de CHI",
      "favors": "home",
-     "detail": "Sin Caleb Wilson: CHI pierde 0.7 puntos.",
+     "detail": "Sin Nic Claxton, Jalen Smith, Caleb Wilson: CHI pierde 0.9 puntos.",
      "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909980",
+   "espn_game_id": "401909980",
+   "starts_at": "2026-11-15T00:00Z",
+   "home": {
+    "name": "New Orleans Pelicans",
+    "code": "NO"
+   },
+   "away": {
+    "name": "Denver Nuggets",
+    "code": "DEN"
+   },
+   "projection": {
+    "home_score": 110.0,
+    "away_score": 121.1
+   },
+   "win_probability": {
+    "home": 0.2109,
+    "away": 0.7891
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Denver Nuggets ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 11.0,
+    "away": -11.0
+   },
+   "total_points": 231.1,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -29.0,
+     7.0
+    ],
+    "total": [
+     206.0,
+     257.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +13.0, Elo +6.8, equipo +7.5, cuatro factores +5.2.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de DEN vale 12.6 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "away",
+     "detail": "NO juega su segundo partido en dos noches: 2.2 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de NO",
+     "favors": "away",
+     "detail": "Sin Bryce McGowens, Trey Murphy III, Dejounte Murray: NO pierde 3.0 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para NO.",
+     "supports_pick": false
     }
    ]
   }
