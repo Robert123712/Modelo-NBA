@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-15T19:45:00.000542Z",
+ "generated_at": "2026-11-15T20:15:00.000491Z",
  "date_local": "2026-11-15",
  "games": [
   {
@@ -449,12 +449,12 @@
     "code": "ATL"
    },
    "projection": {
-    "home_score": 114.1,
+    "home_score": 114.6,
     "away_score": 120.6
    },
    "win_probability": {
-    "home": 0.3197,
-    "away": 0.6803
+    "home": 0.3335,
+    "away": 0.6665
    },
    "pick": {
     "market": "moneyline",
@@ -463,15 +463,15 @@
    },
    "data_warning": "Ryan Rollins está en duda (questionable)",
    "spread": {
-    "home": 7.0,
-    "away": -7.0
+    "home": 6.0,
+    "away": -6.0
    },
-   "total_points": 234.7,
+   "total_points": 235.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -24.0,
-     11.0
+     12.0
     ],
     "total": [
      209.0,
@@ -487,19 +487,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +6.3, Elo +5.6, equipo +6.8, cuatro factores +6.4.",
+     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +5.5, Elo +5.6, equipo +6.8, cuatro factores +6.4.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de ATL vale 8.2 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de MIL",
-     "favors": "away",
-     "detail": "Sin Ousmane Dieng, Kam Jones, Pete Nance: MIL pierde 0.8 puntos.",
+     "detail": "Con los minutos proyectados, la rotación de ATL vale 7.4 puntos más por partido.",
      "supports_pick": true
     },
     {
