@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-15T21:15:00.000530Z",
+ "generated_at": "2026-11-15T21:45:00.000477Z",
  "date_local": "2026-11-15",
  "games": [
-  {
-   "league_game_id": "401909987",
-   "espn_game_id": "401909987",
-   "starts_at": "2026-11-15T21:30Z",
-   "home": {
-    "name": "LA Clippers",
-    "code": "LAC"
-   },
-   "away": {
-    "name": "Charlotte Hornets",
-    "code": "CHA"
-   },
-   "projection": {
-    "home_score": 109.4,
-    "away_score": 105.1
-   },
-   "win_probability": {
-    "home": 0.6219,
-    "away": 0.3781
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "LA Clippers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -5.0,
-    "away": 5.0
-   },
-   "total_points": 214.5,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -13.0,
-     22.0
-    ],
-    "total": [
-     189.0,
-     240.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a LAC. Margen de LAC: jugadores +3.9, Elo +2.4, equipo +4.4, cuatro factores +2.8.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de LAC vale 2.1 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para LAC.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de CHA",
-     "favors": "home",
-     "detail": "Sin Kon Knueppel, Dennis Schroder: CHA pierde 2.2 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909988",
    "espn_game_id": "401909988",
@@ -160,12 +89,12 @@
     "code": "DAL"
    },
    "projection": {
-    "home_score": 116.2,
-    "away_score": 103.0
+    "home_score": 116.7,
+    "away_score": 102.0
    },
    "win_probability": {
-    "home": 0.8298,
-    "away": 0.1702
+    "home": 0.856,
+    "away": 0.144
    },
    "pick": {
     "market": "moneyline",
@@ -174,39 +103,37 @@
    },
    "data_warning": "Santi Aldama está en duda (questionable)",
    "spread": {
-    "home": -13.0,
-    "away": 13.0
+    "home": -15.0,
+    "away": 15.0
    },
-   "total_points": 219.2,
+   "total_points": 218.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -5.0,
-     31.0
+     -4.0,
+     32.0
     ],
     "total": [
-     194.0,
-     245.0
+     193.0,
+     244.0
     ]
    },
    "game_warnings": [
     "Santi Aldama está en duda (questionable)",
-    "Max Christie está en duda (doubtful)",
-    "Daniel Gafford está en duda (probable)",
-    "Kyrie Irving está en duda (questionable)"
+    "Daniel Gafford está en duda (probable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +14.3, Elo +10.6, equipo +10.4, cuatro factores +9.7.",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +16.4, Elo +10.6, equipo +10.4, cuatro factores +9.7.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 10.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 12.8 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -224,7 +151,7 @@
     {
      "label": "Bajas de DAL",
      "favors": "home",
-     "detail": "Sin Sergio de Larrea, Dereck Lively II: DAL pierde 1.6 puntos.",
+     "detail": "Sin Max Christie, Sergio de Larrea, Kyrie Irving: DAL pierde 3.7 puntos.",
      "supports_pick": true
     }
    ]
@@ -242,24 +169,24 @@
     "code": "NY"
    },
    "projection": {
-    "home_score": 106.3,
-    "away_score": 110.0
+    "home_score": 106.2,
+    "away_score": 109.8
    },
    "win_probability": {
-    "home": 0.3952,
-    "away": 0.6048
+    "home": 0.3977,
+    "away": 0.6023
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "New York Knicks ML"
    },
-   "data_warning": "Scottie Barnes está en duda (questionable)",
+   "data_warning": "Scottie Barnes está en duda (probable)",
    "spread": {
     "home": 4.0,
     "away": -4.0
    },
-   "total_points": 216.3,
+   "total_points": 216.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -272,26 +199,26 @@
     ]
    },
    "game_warnings": [
-    "Scottie Barnes está en duda (questionable)"
+    "Scottie Barnes está en duda (probable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +4.1, Elo +4.2, equipo +3.2, cuatro factores +3.3.",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +4.0, Elo +4.2, equipo +3.2, cuatro factores +3.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 5.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 5.7 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de TOR",
      "favors": "away",
-     "detail": "Sin Kawhi Leonard, Malachi Smith: TOR pierde 2.7 puntos.",
+     "detail": "Sin Kawhi Leonard, Malachi Smith: TOR pierde 2.6 puntos.",
      "supports_pick": true
     },
     {
@@ -648,6 +575,77 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para PHX.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909987",
+   "espn_game_id": "401909987",
+   "starts_at": "2026-11-15T21:30Z",
+   "home": {
+    "name": "LA Clippers",
+    "code": "LAC"
+   },
+   "away": {
+    "name": "Charlotte Hornets",
+    "code": "CHA"
+   },
+   "projection": {
+    "home_score": 109.4,
+    "away_score": 105.1
+   },
+   "win_probability": {
+    "home": 0.6219,
+    "away": 0.3781
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "LA Clippers ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -5.0,
+    "away": 5.0
+   },
+   "total_points": 214.5,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -13.0,
+     22.0
+    ],
+    "total": [
+     189.0,
+     240.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a LAC. Margen de LAC: jugadores +3.9, Elo +2.4, equipo +4.4, cuatro factores +2.8.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de LAC vale 2.1 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para LAC.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de CHA",
+     "favors": "home",
+     "detail": "Sin Kon Knueppel, Dennis Schroder: CHA pierde 2.2 puntos.",
+     "supports_pick": true
     }
    ]
   }
