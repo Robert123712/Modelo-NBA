@@ -11,6 +11,7 @@ import json
 import sys
 
 from equipos import equipo
+from ganchos import gancho
 from guion import MARCA, Narracion, _apellido, _contrastar, _fecha, pct
 from numeros import decir, miles
 
@@ -307,10 +308,7 @@ def construir_corto(d: dict, metricas: dict | None = None) -> dict:
     # 1. Gancho: la pregunta, sin pick, y el jugador que la decide (cambia de un video a otro).
     fig_gancho = _figura_nfl(jug[favorito])
     ap = _apellido(fig_gancho["jugador"])
-    frase = f"Todo pasa por {ap}."
-    rotulo = f"TODO PASA POR {ap.upper()}"
-    if len(rotulo) > 26:  # un nombre largo no cabe en el letrero: se usa el equipo
-        frase, rotulo = f"Todo pasa por el {fav['apodo']}.", f"TODO PASA POR {fav['apodo'].upper()}"
+    frase, rotulo = gancho(ap, fav["apodo"], d["game_id"], p_gana[favorito])
     nar = Narracion().t(f"¿{eq['away']['apodo']} o {eq['home']['apodo']}?", cue="pick").t(frase, cue="remate")
     escenas.append({"tipo": "gancho", "props": {
         "linea1": f"¿{eq['away']['apodo']} O {eq['home']['apodo']}?".upper(), "linea2": rotulo,

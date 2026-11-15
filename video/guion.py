@@ -14,6 +14,7 @@ import json
 import sys
 
 from equipos import equipo
+from ganchos import gancho
 from numeros import decir, miles
 
 MARCA = "EDGEBOOK"
@@ -290,13 +291,8 @@ def construir_corto(d: dict, metricas: dict | None = None) -> dict:
     fig_fav = _figura(jug[favorito])
     principal = max(_DESTACA, key=lambda s: fig_fav["media"][s] / _DESTACA[s])
     ap = _apellido(fig_fav["jugador"])
-    frase, rotulo = {
-        "points": (f"Todo pasa por {ap}.", f"TODO PASA POR {ap.upper()}"),
-        "reb": (f"Todo pasa por los rebotes de {ap}.", f"LOS REBOTES DE {ap.upper()}"),
-        "assists": (f"Todo pasa por las asistencias de {ap}.", f"LAS ASISTENCIAS DE {ap.upper()}"),
-    }[principal]
-    if len(rotulo) > 26:  # un nombre largo no cabe en el letrero: se usa el equipo
-        frase, rotulo = f"Todo pasa por el {fav['apodo']}.", f"TODO PASA POR {fav['apodo'].upper()}"
+    frase, rotulo = gancho(ap, fav["apodo"], d["game_id"], p_gana[favorito],
+                           None if principal == "points" else principal)
 
     record = None
     if metricas:
