@@ -2,157 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-15T22:45:00.000502Z",
+ "generated_at": "2026-11-15T23:15:00.000487Z",
  "date_local": "2026-11-15",
  "games": [
-  {
-   "league_game_id": "401909989",
-   "espn_game_id": "401909989",
-   "starts_at": "2026-11-15T23:00Z",
-   "home": {
-    "name": "Boston Celtics",
-    "code": "BOS"
-   },
-   "away": {
-    "name": "Dallas Mavericks",
-    "code": "DAL"
-   },
-   "projection": {
-    "home_score": 117.0,
-    "away_score": 102.1
-   },
-   "win_probability": {
-    "home": 0.8575,
-    "away": 0.1425
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Boston Celtics ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -15.0,
-    "away": 15.0
-   },
-   "total_points": 219.1,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -4.0,
-     33.0
-    ],
-    "total": [
-     194.0,
-     245.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +16.6, Elo +10.6, equipo +10.4, cuatro factores +9.7.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 13.0 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para BOS.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "home",
-     "detail": "DAL juega su segundo partido en dos noches: 1.9 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de DAL",
-     "favors": "home",
-     "detail": "Sin Santi Aldama, Max Christie, Sergio de Larrea: DAL pierde 3.9 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909990",
-   "espn_game_id": "401909990",
-   "starts_at": "2026-11-15T23:00Z",
-   "home": {
-    "name": "Toronto Raptors",
-    "code": "TOR"
-   },
-   "away": {
-    "name": "New York Knicks",
-    "code": "NY"
-   },
-   "projection": {
-    "home_score": 106.2,
-    "away_score": 109.8
-   },
-   "win_probability": {
-    "home": 0.3987,
-    "away": 0.6013
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "New York Knicks ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 4.0,
-    "away": -4.0
-   },
-   "total_points": 216.0,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -22.0,
-     14.0
-    ],
-    "total": [
-     190.0,
-     242.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +3.9, Elo +4.2, equipo +3.2, cuatro factores +3.3.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 5.7 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de TOR",
-     "favors": "away",
-     "detail": "Sin Kawhi Leonard, Malachi Smith: TOR pierde 2.6 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para TOR.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909991",
    "espn_game_id": "401909991",
@@ -638,6 +490,159 @@
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para UTAH.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909989",
+   "espn_game_id": "401909989",
+   "starts_at": "2026-11-15T23:00Z",
+   "home": {
+    "name": "Boston Celtics",
+    "code": "BOS"
+   },
+   "away": {
+    "name": "Dallas Mavericks",
+    "code": "DAL"
+   },
+   "projection": {
+    "home_score": 116.7,
+    "away_score": 102.0
+   },
+   "win_probability": {
+    "home": 0.856,
+    "away": 0.144
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Boston Celtics ML"
+   },
+   "data_warning": "Santi Aldama está en duda (questionable)",
+   "spread": {
+    "home": -15.0,
+    "away": 15.0
+   },
+   "total_points": 218.7,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -4.0,
+     32.0
+    ],
+    "total": [
+     193.0,
+     244.0
+    ]
+   },
+   "game_warnings": [
+    "Santi Aldama está en duda (questionable)",
+    "Daniel Gafford está en duda (probable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +16.4, Elo +10.6, equipo +10.4, cuatro factores +9.7.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 12.8 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para BOS.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "home",
+     "detail": "DAL juega su segundo partido en dos noches: 1.9 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de DAL",
+     "favors": "home",
+     "detail": "Sin Max Christie, Sergio de Larrea, Kyrie Irving: DAL pierde 3.7 puntos.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909990",
+   "espn_game_id": "401909990",
+   "starts_at": "2026-11-15T23:00Z",
+   "home": {
+    "name": "Toronto Raptors",
+    "code": "TOR"
+   },
+   "away": {
+    "name": "New York Knicks",
+    "code": "NY"
+   },
+   "projection": {
+    "home_score": 106.2,
+    "away_score": 109.8
+   },
+   "win_probability": {
+    "home": 0.3977,
+    "away": 0.6023
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "New York Knicks ML"
+   },
+   "data_warning": "Scottie Barnes está en duda (probable)",
+   "spread": {
+    "home": 4.0,
+    "away": -4.0
+   },
+   "total_points": 216.1,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -22.0,
+     14.0
+    ],
+    "total": [
+     190.0,
+     242.0
+    ]
+   },
+   "game_warnings": [
+    "Scottie Barnes está en duda (probable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +4.0, Elo +4.2, equipo +3.2, cuatro factores +3.3.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 5.7 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de TOR",
+     "favors": "away",
+     "detail": "Sin Kawhi Leonard, Malachi Smith: TOR pierde 2.6 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para TOR.",
      "supports_pick": false
     }
    ]
