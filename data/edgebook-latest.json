@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-15T15:45:00.000548Z",
+ "generated_at": "2026-11-15T17:45:00.000506Z",
  "date_local": "2026-11-15",
  "games": [
   {
@@ -18,52 +18,48 @@
     "code": "IND"
    },
    "projection": {
-    "home_score": 116.6,
-    "away_score": 110.0
+    "home_score": 116.3,
+    "away_score": 109.9
    },
    "win_probability": {
-    "home": 0.6817,
-    "away": 0.3183
+    "home": 0.6764,
+    "away": 0.3236
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Philadelphia 76ers ML"
    },
-   "data_warning": "T.J. McConnell está en duda (probable)",
+   "data_warning": null,
    "spread": {
-    "home": -7.0,
-    "away": 7.0
+    "home": -6.0,
+    "away": 6.0
    },
-   "total_points": 226.5,
+   "total_points": 226.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -11.0,
-     25.0
+     -12.0,
+     24.0
     ],
     "total": [
-     201.0,
+     200.0,
      252.0
     ]
    },
-   "game_warnings": [
-    "T.J. McConnell está en duda (probable)",
-    "Andrew Nembhard está en duda (questionable)",
-    "Aaron Nesmith está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a PHI. Margen de PHI: jugadores +6.7, Elo +9.6, equipo +6.4, cuatro factores +5.5.",
+     "detail": "4 de 4 modelos ven ganar a PHI. Margen de PHI: jugadores +6.4, Elo +9.6, equipo +6.4, cuatro factores +5.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de PHI vale 4.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de PHI vale 4.5 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -75,7 +71,7 @@
     {
      "label": "Bajas de IND",
      "favors": "home",
-     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Ben Sheppard: IND pierde 4.2 puntos.",
+     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Andrew Nembhard: IND pierde 3.9 puntos.",
      "supports_pick": true
     }
    ]
@@ -447,12 +443,12 @@
     "code": "HOU"
    },
    "projection": {
-    "home_score": 104.0,
+    "home_score": 103.9,
     "away_score": 113.8
    },
    "win_probability": {
-    "home": 0.2387,
-    "away": 0.7613
+    "home": 0.2389,
+    "away": 0.7611
    },
    "pick": {
     "market": "moneyline",
@@ -479,8 +475,7 @@
    "game_warnings": [
     "Bub Carrington está en duda (questionable)",
     "Tre Johnson está en duda (questionable)",
-    "Alex Sarr está en duda (questionable)",
-    "Steven Adams está en duda (probable)"
+    "Alex Sarr está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
@@ -523,24 +518,24 @@
     "code": "ATL"
    },
    "projection": {
-    "home_score": 114.5,
-    "away_score": 120.3
+    "home_score": 114.4,
+    "away_score": 120.1
    },
    "win_probability": {
-    "home": 0.3361,
-    "away": 0.6639
+    "home": 0.3424,
+    "away": 0.6576
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Atlanta Hawks ML"
    },
-   "data_warning": null,
+   "data_warning": "Ryan Rollins está en duda (questionable)",
    "spread": {
     "home": 6.0,
     "away": -6.0
    },
-   "total_points": 234.8,
+   "total_points": 234.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -552,19 +547,21 @@
      261.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Ryan Rollins está en duda (questionable)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +5.4, Elo +5.6, equipo +6.8, cuatro factores +6.4.",
+     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +5.0, Elo +5.6, equipo +6.8, cuatro factores +6.4.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de ATL vale 7.3 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de ATL vale 6.9 puntos más por partido.",
      "supports_pick": true
     },
     {
