@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-16T23:15:00.000566Z",
+ "generated_at": "2026-11-16T23:45:00.000512Z",
  "date_local": "2026-11-16",
  "games": [
   {
@@ -168,50 +168,48 @@
     "code": "MEM"
    },
    "projection": {
-    "home_score": 110.9,
+    "home_score": 110.6,
     "away_score": 117.1
    },
    "win_probability": {
-    "home": 0.3291,
-    "away": 0.6709
+    "home": 0.3199,
+    "away": 0.6801
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Memphis Grizzlies ML"
    },
-   "data_warning": "Zach Edey está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": 6.0,
-    "away": -6.0
+    "home": 7.0,
+    "away": -7.0
    },
-   "total_points": 228.0,
+   "total_points": 227.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -24.0,
-     12.0
+     11.0
     ],
     "total": [
      202.0,
      254.0
     ]
    },
-   "game_warnings": [
-    "Zach Edey está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +6.3, Elo +3.4, equipo +5.6, cuatro factores +2.9.",
+     "detail": "4 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +6.7, Elo +3.4, equipo +5.6, cuatro factores +2.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de MEM vale 6.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MEM vale 6.5 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -229,7 +227,7 @@
     {
      "label": "Bajas de MEM",
      "favors": "home",
-     "detail": "Sin GG Jackson, Ty Jerome, Scotty Pippen Jr.: MEM pierde 3.1 puntos.",
+     "detail": "Sin GG Jackson, Ty Jerome, Scotty Pippen Jr.: MEM pierde 2.7 puntos.",
      "supports_pick": false
     }
    ]
