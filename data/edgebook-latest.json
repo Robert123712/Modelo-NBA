@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-16T01:15:00.000492Z",
+ "generated_at": "2026-11-16T01:45:00.000553Z",
  "date_local": "2026-11-15",
  "games": [
   {
@@ -18,24 +18,24 @@
     "code": "OKC"
    },
    "projection": {
-    "home_score": 107.0,
-    "away_score": 116.3
+    "home_score": 107.1,
+    "away_score": 116.4
    },
    "win_probability": {
-    "home": 0.2515,
-    "away": 0.7485
+    "home": 0.2505,
+    "away": 0.7495
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Oklahoma City Thunder ML"
    },
-   "data_warning": "De'Andre Hunter está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": 9.0,
     "away": -9.0
    },
-   "total_points": 223.3,
+   "total_points": 223.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -47,15 +47,13 @@
      249.0
     ]
    },
-   "game_warnings": [
-    "De'Andre Hunter está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +7.4, Elo +9.6, equipo +13.3, cuatro factores +9.9.",
+     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +7.5, Elo +9.6, equipo +13.3, cuatro factores +9.9.",
      "supports_pick": true
     },
     {
@@ -73,7 +71,7 @@
     {
      "label": "Bajas de OKC",
      "favors": "home",
-     "detail": "Sin Chet Holmgren, Cason Wallace, Jalen Williams: OKC pierde 6.7 puntos.",
+     "detail": "Sin Chet Holmgren, Cason Wallace, Jalen Williams: OKC pierde 6.6 puntos.",
      "supports_pick": false
     }
    ]
