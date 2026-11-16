@@ -50,7 +50,7 @@ def hacer(datos: Path, metricas: Path | None, salida: Path, manual: Path | None 
     if liga == "nfl":
         armar = {"corto": guion_nfl.construir_corto, "v3": guion_nfl.construir_v3}.get(formato, guion_nfl.construir)
     else:
-        armar = guion.construir_corto if formato == "corto" else guion.construir
+        armar = {"corto": guion.construir_corto, "v3": guion.construir_v3}.get(formato, guion.construir)
     g = armar(d, json.loads(metricas.read_text()) if metricas else None)
     if manual:
         g = narracion.aplicar(g, json.loads(manual.read_text()))

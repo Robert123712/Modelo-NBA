@@ -377,6 +377,121 @@ def construir_corto(d: dict, metricas: dict | None = None) -> dict:
             "fecha": _fecha(d["starts_at"]), "equipos": eq, "cinta": d["cinta"], "escenas": escenas}
 
 
+
+# ---- Formato v3 (2026-11-16): mismo esqueleto que `guion_nfl.construir_v3` ----
+
+def historia(p_fav: float) -> str:
+    """"claro" (favorito fuerte), "volado" (casi 50-50) o "ventaja" (en medio)."""
+    return "claro" if p_fav >= 0.65 else "volado" if p_fav < 0.57 else "ventaja"
+
+
+def _fila_cta(j: dict) -> dict:
+    """Un renglon de muestra para la tarjeta de Edgebook: su mejor estadistica y
+    la linea que pasa mas cerca de la mitad de las veces."""
+    s = max(_DESTACA, key=lambda k: j["media"][k] / _DESTACA[k])
+    u = min(j["sobre"][s], key=lambda k: abs(j["sobre"][s][k] - 0.5))
+    return {"athlete_id": j["athlete_id"], "jugador": _apellido(j["jugador"]),
+            "linea": f"{u}+ {_ROTULO[s]}", "pct": pct(j["sobre"][s][u])}
+
+
+def construir_v3(d: dict, metricas: dict | None = None) -> dict:
+    n = d["simulaciones"]
+    eq = {lado: equipo(d["equipos"][lado]["abbr"]) for lado in ("home", "away")}
+    _contrastar(eq)
+    jug = d["jugadores"]
+    favorito = "home" if d["victorias"]["home"] >= d["victorias"]["away"] else "away"
+    otro = "away" if favorito == "home" else "home"
+    p_gana = {lado: d["victorias"][lado] / n for lado in ("home", "away")}
+    fav, riv = eq[favorito], eq[otro]
+    tipo = historia(p_gana[favorito])
+
+    def _llave(lado):
+        ops = [(j, e) for j in jug[lado] for e in j["eventos"] if e["p_evento"] >= 0.15 and e["empuje"] > 0]
+        return max(ops, key=lambda x: _peso(x[1])) if ops else None
+
+    # Favorito claro: la tension esta en como gana el otro. Si no, en quien lo define.
+    lado_llave = otro if tipo == "claro" else favorito
+    llave = _llave(lado_llave)
+    if llave is None:
+        lado_llave = favorito if lado_llave == otro else otro
+        llave = _llave(lado_llave)
+    escenas = []
+
+    # 1. Gancho: el resultado ya, y una promesa que se paga en la llave.
+    nar = Narracion().t(f"{eq['away']['apodo']} contra {eq['home']['apodo']}.", cue="pick")
+    if tipo == "claro":
+        nar.t(f"La simulación le da a los {fav['apodo']} el", cue="cuenta").p(p_gana[favorito], fin="...") \
+            .t(f"pero los {riv['apodo']} tienen una salida.", cue="remate")
+        banner = f"LOS {riv['apodo'].upper()} TIENEN SALIDA"
+    elif tipo == "volado":
+        nar.t("La simulación no se decide:", cue="cuenta").p(p_gana[favorito]).t("contra").p(p_gana[otro], fin=".") \
+            .t("Lo define un jugador.", cue="remate")
+        banner = "LO DEFINE UN JUGADOR"
+    else:
+        ap = _apellido(llave[0]["jugador"]) if llave else fav["apodo"]
+        nar.t(f"La simulación va con los {fav['apodo']}:", cue="cuenta").p(p_gana[favorito], fin=".") \
+            .t(f"Pero todo pasa por {ap}.", cue="remate")
+        banner = f"TODO PASA POR {ap.upper()}"
+    escenas.append({"tipo": "gancho3", "props": {
+        "favorito": favorito, "historia": tipo, "banner": banner,
+        "pct": {"home": pct(p_gana["home"]), "away": pct(p_gana["away"])}}, "narracion": nar.trozos})
+
+    # 2. Como, en una linea, sobre la cuadricula: y el marcador.
+    mm = d["marcador_medio"]
+    alto, bajo = sorted((round(mm["home"]), round(mm["away"])), reverse=True)
+    nar = Narracion().t("Jugamos el partido").n(n, cue="cuenta").t("veces, jugador por jugador.") \
+        .t("Marcador promedio:", cue="veredicto").n(alto).t("a").n(bajo, sufijo=".")
+    escenas.append({"tipo": "resultado", "props": {
+        "titulo": f"{miles(n)} simulaciones", "victorias": d["victorias"], "muestra": d["muestra"],
+        "veredicto": "", "marcador": {"home": round(mm["home"]), "away": round(mm["away"])}, "favorito": favorito},
+        "narracion": nar.trozos})
+
+    # 3. La figura del favorito: sus tres numeros de ESTE partido, resaltado el mejor.
+    j = _figura(jug[favorito])
+    mejor = max(_DESTACA, key=lambda s: j["media"][s] / _DESTACA[s])
+    rotulo, p, umbral = _extra(j, mejor)
+    nar = Narracion().t(f"La figura: {j['jugador']}.", cue="figura") \
+        .t("En este partido:").n(round(j["media"][mejor]), cue="mejor").t(f"{_ROTULO[mejor].lower()},")
+    if umbral is None:
+        nar.t("y firma doble-doble en el", cue="extra").p(p, fin=".")
+    else:
+        nar.t(f"y llega a {umbral} en el", f"y llega a {decir(umbral)} en el", cue="extra").p(p, fin=".")
+    escenas.append({"tipo": "figura", "props": {
+        "titulo": "La figura", "athlete_id": j["athlete_id"], "jugador": j["jugador"], "color": fav["color"],
+        "abbr": fav["abbr"], "equipo": fav["apodo"],
+        "stats": [{"valor": int(round(j["media"][s])), "etiqueta": _ROTULO[s], "corto": _CORTO[s],
+                   "mejor": s == mejor} for s in ("points", "reb", "assists")],
+        "extra": {"valor": f"{pct(p)}%", "etiqueta": f"DE LAS SIMS CON {rotulo}"}}, "narracion": nar.trozos})
+
+    # 4. La llave: paga la promesa del gancho.
+    if llave:
+        jl, e = llave
+        eqk = eq[lado_llave]
+        pregunta = f"¿La salida de los {eqk['apodo']}?" if tipo == "claro" else "¿Quién lo define?" if tipo == "volado" else "¿Y la llave?"
+        frase = f"Si {_apellido(jl['jugador'])} {_VERBO[e['stat']]} {{}} {_ROTULO[e['stat']].lower()},"
+        nar = Narracion().t(pregunta).t(frase.format(e["umbral"]), frase.format(decir(e["umbral"])), cue="medidor0") \
+            .t(f"los {eqk['apodo']} suben al").p(e["p_gana"], cue="sube0", fin=".")
+        escenas.append({"tipo": "decide", "props": {
+            "titulo": "La salida" if tipo == "claro" else "La llave del partido", "medidores": [{
+                "athlete_id": jl["athlete_id"], "jugador": _apellido(jl["jugador"]), "evento": e["texto"].upper(),
+                "color": eqk["color"], "equipo": f"{eqk['apodo']} GANAN", "base": pct(p_gana[lado_llave]),
+                "pct": pct(e["p_gana"])}]}, "narracion": nar.trozos})
+
+    # 5. Llamado a Edgebook: tres lineas reales del partido y la palabra a comentar.
+    orden = lambda lado: sorted(jug[lado], key=lambda x: -(x["media"]["points"] + 1.2 * x["media"]["reb"] + 1.5 * x["media"]["assists"]))
+    muestra = [orden(favorito)[0], orden(otro)[0]] + orden(favorito)[1:2]
+    nar = Narracion().t("Las probabilidades de cada jugador", cue="tarjeta").t("están gratis en Edgebook.", cue="marca") \
+        .t("Comenta: predicción,", cue="comenta").t("y te paso el link.", cue="link")
+    escenas.append({"tipo": "cta", "props": {
+        "titulo": "Cada jugador, cada línea", "filas": [_fila_cta(x) for x in muestra],
+        "palabra": "PREDICCIÓN", "linea1": "Comenta “predicción”", "linea2": "Y TE PASO EL LINK GRATIS"},
+        "narracion": nar.trozos})
+
+    return {"game_id": d["game_id"], "liga": "nba", "marca": MARCA, "simulaciones": n, "record": None,
+            "formato": "v3", "historia": tipo,
+            "fecha": _fecha(d["starts_at"]), "equipos": eq, "cinta": d["cinta"], "escenas": escenas}
+
+
 if __name__ == "__main__":
     datos = json.load(open(sys.argv[1]))
     met = json.load(open(sys.argv[2])) if len(sys.argv) > 3 and sys.argv[2] != "-" else None
