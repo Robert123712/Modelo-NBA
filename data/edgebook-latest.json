@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-16T20:45:00.000562Z",
+ "generated_at": "2026-11-16T22:45:00.000543Z",
  "date_local": "2026-11-16",
  "games": [
   {
@@ -30,7 +30,7 @@
     "side": "home",
     "label": "Boston Celtics ML"
    },
-   "data_warning": "Neemias Queta está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -9.0,
     "away": 9.0
@@ -47,9 +47,7 @@
      239.0
     ]
    },
-   "game_warnings": [
-    "Neemias Queta está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
@@ -75,6 +73,12 @@
      "favors": "away",
      "detail": "BOS juega su segundo partido en dos noches: 1.9 puntos.",
      "supports_pick": false
+    },
+    {
+     "label": "Bajas de BOS",
+     "favors": "away",
+     "detail": "Sin Neemias Queta: BOS pierde 1.0 puntos.",
+     "supports_pick": false
     }
    ]
   },
@@ -91,38 +95,36 @@
     "code": "CHI"
    },
    "projection": {
-    "home_score": 125.4,
-    "away_score": 115.9
+    "home_score": 125.6,
+    "away_score": 116.3
    },
    "win_probability": {
-    "home": 0.7538,
-    "away": 0.2462
+    "home": 0.7489,
+    "away": 0.2511
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Cleveland Cavaliers ML"
    },
-   "data_warning": "Jaylon Tyson está en duda (doubtful)",
+   "data_warning": "Jalen Smith está en duda (questionable)",
    "spread": {
     "home": -9.0,
     "away": 9.0
    },
-   "total_points": 241.3,
+   "total_points": 241.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -8.0,
+     -9.0,
      27.0
     ],
     "total": [
-     215.0,
-     267.0
+     216.0,
+     268.0
     ]
    },
    "game_warnings": [
-    "Jaylon Tyson está en duda (doubtful)",
-    "Peyton Watson está en duda (questionable)",
     "Jalen Smith está en duda (questionable)"
    ],
    "warnings": [],
@@ -130,13 +132,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +9.1, Elo +9.0, equipo +9.8, cuatro factores +8.9.",
+     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +8.8, Elo +9.0, equipo +9.8, cuatro factores +8.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de CLE vale 7.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de CLE vale 6.9 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -148,7 +150,7 @@
     {
      "label": "Bajas de CLE",
      "favors": "away",
-     "detail": "Sin Sam Merrill, Evan Mobley, Nae'Qwan Tomlin: CLE pierde 1.4 puntos.",
+     "detail": "Sin Sam Merrill, Evan Mobley, Nae'Qwan Tomlin: CLE pierde 1.7 puntos.",
      "supports_pick": false
     }
    ]
@@ -166,24 +168,24 @@
     "code": "MEM"
    },
    "projection": {
-    "home_score": 111.6,
-    "away_score": 117.5
+    "home_score": 111.5,
+    "away_score": 117.3
    },
    "win_probability": {
-    "home": 0.3366,
-    "away": 0.6634
+    "home": 0.3389,
+    "away": 0.6611
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Memphis Grizzlies ML"
    },
-   "data_warning": "Tre Johnson está en duda (questionable)",
+   "data_warning": "Zach Edey está en duda (questionable)",
    "spread": {
     "home": 6.0,
     "away": -6.0
    },
-   "total_points": 229.1,
+   "total_points": 228.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -196,7 +198,6 @@
     ]
    },
    "game_warnings": [
-    "Tre Johnson está en duda (questionable)",
     "Zach Edey está en duda (questionable)"
    ],
    "warnings": [],
@@ -204,13 +205,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +5.9, Elo +3.4, equipo +5.6, cuatro factores +2.9.",
+     "detail": "4 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +5.7, Elo +3.4, equipo +5.6, cuatro factores +2.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de MEM vale 5.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MEM vale 5.6 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -228,7 +229,7 @@
     {
      "label": "Bajas de MEM",
      "favors": "home",
-     "detail": "Sin GG Jackson, Ty Jerome, Scotty Pippen Jr.: MEM pierde 3.5 puntos.",
+     "detail": "Sin GG Jackson, Ty Jerome, Scotty Pippen Jr.: MEM pierde 3.6 puntos.",
      "supports_pick": false
     }
    ]
