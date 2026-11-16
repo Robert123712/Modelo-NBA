@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-16T18:45:00.000571Z",
+ "generated_at": "2026-11-16T20:45:00.000562Z",
  "date_local": "2026-11-16",
  "games": [
   {
@@ -543,24 +543,24 @@
     "code": "PHX"
    },
    "projection": {
-    "home_score": 119.3,
-    "away_score": 110.4
+    "home_score": 119.6,
+    "away_score": 110.6
    },
    "win_probability": {
-    "home": 0.7445,
-    "away": 0.2555
+    "home": 0.7444,
+    "away": 0.2556
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Denver Nuggets ML"
    },
-   "data_warning": null,
+   "data_warning": "Ryan Dunn está en duda (questionable)",
    "spread": {
     "home": -9.0,
     "away": 9.0
    },
-   "total_points": 229.7,
+   "total_points": 230.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -568,11 +568,13 @@
      27.0
     ],
     "total": [
-     204.0,
+     205.0,
      256.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Ryan Dunn está en duda (questionable)"
+   ],
    "warnings": [],
    "key_factors": [
     {
