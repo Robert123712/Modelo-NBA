@@ -699,7 +699,7 @@ const SubtitulosGrandes: React.FC<{d: Datos}> = ({d}) => {
   const size = Math.min(100, Math.floor(840 / (letras * 0.7)));
   const pop = interpolate(t, [g[0].ini - 0.08, g[0].ini + 0.07], [0.85, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   return (
-    <div style={{position: 'absolute', top: 1310, left: 60, right: 180, height: 150, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: TITULAR, fontWeight: 800, fontSize: size, textTransform: 'uppercase', lineHeight: 1.05, letterSpacing: -1, transform: `scale(${pop})`}}>
+    <div style={{position: 'absolute', top: 1385, left: 60, right: 180, height: 140, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: TITULAR, fontWeight: 800, fontSize: size, textTransform: 'uppercase', lineHeight: 1.05, letterSpacing: -1, transform: `scale(${pop})`}}>
       <div style={{whiteSpace: 'nowrap', WebkitTextStroke: `14px ${FONDO}`, paintOrder: 'stroke fill', filter: `drop-shadow(0 8px 0 ${FONDO})`}}>
         {g.map((p, i) => {
           const sonando = t >= p.ini - 0.04 && t <= p.fin + 0.05;
@@ -743,19 +743,19 @@ const Gancho3: React.FC<{e: Escena; d: Datos}> = ({e, d}) => {
   const color = tono(d.equipos[fav].color);
   return (
     <AbsoluteFill>
-      <div style={{position: 'absolute', top: 230, left: 0, right: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 50}}>
-        <Ficha abbr={d.equipos.away.abbr} size={230} style={{opacity: ent, transform: `translateX(${(1 - ent) * -160}px) scale(${'away' === fav ? 1 + 0.08 * k : 1 - 0.1 * k})`, boxShadow: 'away' === fav ? `0 0 ${90 * k}px ${color}` : 'none'}} />
+      <div style={{position: 'absolute', top: 200, left: 0, right: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 50}}>
+        <Ficha abbr={d.equipos.away.abbr} size={300} style={{opacity: ent, transform: `translateX(${(1 - ent) * -160}px) scale(${'away' === fav ? 1 + 0.08 * k : 1 - 0.1 * k})`, boxShadow: 'away' === fav ? `0 0 ${90 * k}px ${color}` : 'none'}} />
         <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 64, color: MENTA}}>VS</div>
-        <Ficha abbr={d.equipos.home.abbr} size={230} style={{opacity: ent, transform: `translateX(${(1 - ent) * 160}px) scale(${'home' === fav ? 1 + 0.08 * k : 1 - 0.1 * k})`, boxShadow: 'home' === fav ? `0 0 ${90 * k}px ${color}` : 'none'}} />
+        <Ficha abbr={d.equipos.home.abbr} size={300} style={{opacity: ent, transform: `translateX(${(1 - ent) * 160}px) scale(${'home' === fav ? 1 + 0.08 * k : 1 - 0.1 * k})`, boxShadow: 'home' === fav ? `0 0 ${90 * k}px ${color}` : 'none'}} />
       </div>
-      <div style={{position: 'absolute', top: 500, left: 0, right: 0, textAlign: 'center', opacity: avance(t, cuenta - 0.1, 0.2)}}>
+      <div style={{position: 'absolute', top: 540, left: 0, right: 0, textAlign: 'center', opacity: avance(t, cuenta - 0.1, 0.2)}}>
         <div style={{fontFamily: TEXTO, fontWeight: 700, fontSize: 46, color: GRIS, letterSpacing: 6}}>LA SIMULACIÓN DICE</div>
-        <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 330, lineHeight: 1, letterSpacing: -12, color, transform: `scale(${1 + 0.1 * golpe * (1 - avance(t, cuenta + 1.25, 0.4))})`, WebkitTextStroke: `12px ${FONDO}`, paintOrder: 'stroke fill', textShadow: `0 0 80px ${color}66`}}>
+        <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 360, lineHeight: 1, letterSpacing: -12, color, transform: `scale(${1 + 0.1 * golpe * (1 - avance(t, cuenta + 1.25, 0.4))})`, WebkitTextStroke: `12px ${FONDO}`, paintOrder: 'stroke fill', textShadow: `0 0 80px ${color}66`}}>
           {Math.round(p.pct[fav] * k)}%
         </div>
         <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 70, color: TINTA, letterSpacing: -1, textTransform: 'uppercase', marginTop: -6}}>{d.equipos[fav].apodo} ganan</div>
       </div>
-      <div style={{position: 'absolute', top: 1010, left: 70, right: 70, opacity: avance(t, cuenta + 0.2, 0.3)}}>
+      <div style={{position: 'absolute', top: 1090, left: 50, right: 50, opacity: avance(t, cuenta + 0.2, 0.3)}}>
         <div style={{height: 30, borderRadius: 15, overflow: 'hidden', background: APAGADO, display: 'flex', flexDirection: fav === 'away' ? 'row' : 'row-reverse'}}>
           <div style={{width: `${p.pct[fav] * k}%`, background: color}} />
           <div style={{flex: 1}} />
@@ -766,54 +766,57 @@ const Gancho3: React.FC<{e: Escena; d: Datos}> = ({e, d}) => {
           <span style={{color: tono(d.equipos[otro].color)}}>{d.equipos[otro].apodo.toUpperCase()} {Math.round(p.pct[otro] * k)}%</span>
         </div>
       </div>
-      <div style={{position: 'absolute', top: 1150, left: 0, right: 0, display: 'flex', justifyContent: 'center', opacity: s, transform: `rotate(-2.5deg) scale(${1.6 - 0.6 * s})`}}>
+      <div style={{position: 'absolute', top: 1230, left: 0, right: 0, display: 'flex', justifyContent: 'center', opacity: s, transform: `rotate(-2.5deg) scale(${1.6 - 0.6 * s})`}}>
         <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: p.banner.length > 22 ? 58 : 70, color: MENTA_OSCURA, background: MENTA, padding: '12px 40px', borderRadius: 20, whiteSpace: 'nowrap', boxShadow: `0 0 80px ${MENTA}55`}}>{p.banner}</div>
       </div>
     </AbsoluteFill>
   );
 };
 
-/** Cierre v3: muestra de lo que hay en Edgebook y el link del perfil. */
+/** Cierre v3: muestra de lo que hay en Edgebook y la palabra a comentar. */
 const Cta: React.FC<{e: Escena; d: Datos}> = ({e, d}) => {
   const t = useT();
   const p = e.props;
   const ent = e.cues.tarjeta ?? e.ini;
-  const marca = e.cues.marca ?? e.ini + 1.4;
+  const com = (e.cues.comenta ?? e.ini + 1.6) - 0.1;
   const link = e.cues.link ?? e.ini + 2.6;
-  const m = interpolate(t, [marca - 0.05, marca + 0.3], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.back(2))});
+  const palabra: string = p.palabra;
+  const letras = Math.round(palabra.length * avance(t, com + 0.15, 0.6));
+  const cursor = Math.floor((t - e.ini) * 3) % 2 === 0;
   const l = avance(t, link - 0.05, 0.25);
-  const pulso = 1 + 0.05 * Math.sin((t - link) * 10) * (t > link ? 1 : 0);
-  const flecha = Math.sin((t - link) * 8) * 14;
   return (
     <AbsoluteFill>
       <Titulo>{p.titulo}</Titulo>
-      <div style={{position: 'absolute', top: 330, left: 70, right: 70, ...tarjeta, borderRadius: 40, padding: '26px 32px 18px', ...entrada(t, ent, 0.35)}}>
-        <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10}}>
-          <Marca size={50} />
-          <span style={{fontFamily: TEXTO, fontWeight: 700, fontSize: 30, color: GRIS, letterSpacing: 2}}>{d.equipos.away.abbr} @ {d.equipos.home.abbr} · PROPS</span>
+      <div style={{position: 'absolute', top: 330, left: 40, right: 40, ...tarjeta, borderRadius: 44, padding: '26px 34px 18px', ...entrada(t, ent, 0.35)}}>
+        <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12}}>
+          <Marca size={64} />
+          <span style={{fontFamily: TEXTO, fontWeight: 700, fontSize: 34, color: MENTA, letterSpacing: 2}}>GRATIS</span>
         </div>
         {p.filas.map((f: any, i: number) => {
           const a = avance(t, ent + 0.25 + i * 0.22, 0.4);
           return (
-            <div key={i} style={{display: 'flex', alignItems: 'center', gap: 24, padding: '16px 0', borderTop: `2px solid ${BORDE}`, opacity: a, transform: `translateX(${(1 - a) * 60}px)`}}>
-              <Foto id={f.athlete_id} color={MENTA} size={104} />
+            <div key={i} style={{display: 'flex', alignItems: 'center', gap: 26, padding: '16px 0', borderTop: `2px solid ${BORDE}`, opacity: a, transform: `translateX(${(1 - a) * 60}px)`}}>
+              <Foto id={f.athlete_id} color={MENTA} size={132} />
               <div style={{flex: 1}}>
-                <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 46, color: TINTA, lineHeight: 1.1}}>{f.jugador}</div>
-                <div style={{fontFamily: TEXTO, fontWeight: 700, fontSize: 30, color: GRIS, letterSpacing: 1}}>{f.linea}</div>
+                <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 58, color: TINTA, lineHeight: 1.1}}>{f.jugador}</div>
+                <div style={{fontFamily: TEXTO, fontWeight: 700, fontSize: 36, color: GRIS, letterSpacing: 1}}>{f.linea}</div>
               </div>
-              <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 64, color: MENTA}}>{Math.round(f.pct * a)}%</div>
+              <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 88, color: MENTA, letterSpacing: -2}}>{Math.round(f.pct * a)}%</div>
             </div>
           );
         })}
-        <div style={{textAlign: 'center', fontFamily: TEXTO, fontWeight: 700, fontSize: 28, color: GRIS, letterSpacing: 2, paddingTop: 8, borderTop: `2px solid ${BORDE}`}}>+ TODOS LOS JUGADORES Y LÍNEAS</div>
+        <div style={{textAlign: 'center', fontFamily: TEXTO, fontWeight: 700, fontSize: 32, color: GRIS, letterSpacing: 2, paddingTop: 10, borderTop: `2px solid ${BORDE}`}}>+ TODOS LOS JUGADORES Y LÍNEAS</div>
       </div>
-      <div style={{position: 'absolute', top: 960, left: 0, right: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: Math.min(1, m * 2), transform: `scale(${0.6 + 0.4 * m})`}}>
-        <Marca size={110} />
-        <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 62, color: MENTA, marginTop: 14}}>{p.linea1}</div>
-      </div>
-      <div style={{position: 'absolute', top: 1170, left: 0, right: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 22, opacity: l, transform: `scale(${(0.7 + 0.3 * l) * pulso})`}}>
-        <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 64, color: MENTA_OSCURA, background: MENTA, padding: '14px 40px', borderRadius: 60, boxShadow: `0 0 90px ${MENTA}77`}}>{p.linea2}</div>
-        <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 90, color: MENTA, transform: `translateX(${flecha}px)`}}>→</div>
+      <div style={{position: 'absolute', top: 1010, left: 50, right: 50, ...entrada(t, com)}}>
+        <div style={{...tarjeta, border: `4px solid ${MENTA}`, borderRadius: 60, padding: '20px 30px', display: 'flex', alignItems: 'center', gap: 24, boxShadow: `0 0 70px ${MENTA}44`}}>
+          <div style={{width: 90, height: 90, borderRadius: 45, background: APAGADO, color: GRIS, fontFamily: TEXTO, fontWeight: 700, fontSize: 36, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0}}>TÚ</div>
+          <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 84, color: TINTA, letterSpacing: 2, flex: 1}}>
+            {palabra.slice(0, letras)}
+            <span style={{color: MENTA, opacity: cursor ? 1 : 0}}>|</span>
+          </div>
+          <div style={{width: 90, height: 90, borderRadius: 45, background: MENTA, color: MENTA_OSCURA, fontFamily: TITULAR, fontWeight: 800, fontSize: 54, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, transform: `scale(${1 + 0.08 * Math.sin((t - e.ini) * 9)})`}}>↑</div>
+        </div>
+        <div style={{textAlign: 'center', fontFamily: TITULAR, fontWeight: 800, fontSize: 66, color: MENTA, marginTop: 24, textTransform: 'uppercase', opacity: l, transform: `scale(${0.8 + 0.2 * l})`}}>{p.linea2}</div>
       </div>
     </AbsoluteFill>
   );
@@ -844,7 +847,7 @@ export const Partido: React.FC<Datos> = (d) => {
   const v3 = d.formato === 'v3';
   // v3: todo un poco mas chico y mas abajo, para dejar libre la barra de arriba
   // de TikTok y el renglon de subtitulos grandes.
-  const capa: React.CSSProperties = v3 ? {transform: 'translateY(40px) scale(0.9)', transformOrigin: 'top center'} : {};
+  const capa: React.CSSProperties = v3 ? {transform: 'translateY(20px)', transformOrigin: 'top center'} : {};
   return (
     <AbsoluteFill style={{background: FONDO}}>
       <style>{fuentes}</style>

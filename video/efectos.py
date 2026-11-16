@@ -12,7 +12,7 @@ from pathlib import Path
 
 AR = 44100
 # Los cues que llevan golpe: el numero llega en pantalla en ese instante.
-GOLPES = {"cuenta", "veredicto", "numero", "sube0", "sube1", "remate", "link", "marca"}
+GOLPES = {"cuenta", "veredicto", "numero", "sube0", "sube1", "remate", "link", "comenta"}
 VOLUMEN = {"barrido": 0.32, "golpe": 0.5, "ding": 0.28}
 
 

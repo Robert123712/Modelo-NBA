@@ -497,10 +497,10 @@ def construir_v3(d: dict, metricas: dict | None = None) -> dict:
 
     # 5. Llamado a Edgebook: lo que el video no alcanzo a decir esta en la app, gratis.
     nar = Narracion().t("Las probabilidades de cada jugador", cue="tarjeta").t("están gratis en Edgebook.", cue="marca") \
-        .t("Link en el perfil.", cue="link")
+        .t("Comenta: predicción,", cue="comenta").t("y te paso el link.", cue="link")
     escenas.append({"tipo": "cta", "props": {
         "titulo": "Cada jugador, cada línea", "filas": _props_cta(jug, favorito, otro),
-        "linea1": "TODAS LAS PROPS, GRATIS", "linea2": "LINK EN EL PERFIL"}, "narracion": nar.trozos})
+        "palabra": "PREDICCIÓN", "linea1": "Comenta “predicción”", "linea2": "Y TE PASO EL LINK GRATIS"}, "narracion": nar.trozos})
 
     return {"game_id": d["game_id"], "liga": "nfl", "marca": MARCA, "simulaciones": n, "record": record,
             "formato": "v3", "historia": tipo,
