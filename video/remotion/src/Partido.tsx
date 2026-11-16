@@ -699,7 +699,7 @@ const SubtitulosGrandes: React.FC<{d: Datos}> = ({d}) => {
   const size = Math.min(100, Math.floor(840 / (letras * 0.7)));
   const pop = interpolate(t, [g[0].ini - 0.08, g[0].ini + 0.07], [0.85, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   return (
-    <div style={{position: 'absolute', top: 1385, left: 60, right: 180, height: 140, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: TITULAR, fontWeight: 800, fontSize: size, textTransform: 'uppercase', lineHeight: 1.05, letterSpacing: -1, transform: `scale(${pop})`}}>
+    <div style={{position: 'absolute', top: 1385, left: 40, right: 40, height: 140, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: TITULAR, fontWeight: 800, fontSize: size, textTransform: 'uppercase', lineHeight: 1.05, letterSpacing: -1, transform: `scale(${pop})`}}>
       <div style={{whiteSpace: 'nowrap', WebkitTextStroke: `14px ${FONDO}`, paintOrder: 'stroke fill', filter: `drop-shadow(0 8px 0 ${FONDO})`}}>
         {g.map((p, i) => {
           const sonando = t >= p.ini - 0.04 && t <= p.fin + 0.05;

@@ -1,5 +1,5 @@
-"""Efectos de sonido (sin musica): un barrido en cada cambio de bloque y un
-golpe cuando cae cada numero. Se sintetizan con ffmpeg, sin archivos externos,
+"""Efectos de sonido (sin musica): aire en cada cambio de bloque y unos
+pocos sonidos en los momentos clave. Se sintetizan con ffmpeg, sin archivos externos,
 y se mezclan debajo de la voz.
 
     efectos.mezclar(tiempos, voz.wav, salida.wav)
@@ -11,22 +11,29 @@ import subprocess
 from pathlib import Path
 
 AR = 44100
-# Los cues que llevan golpe: el numero llega en pantalla en ese instante.
-GOLPES = {"cuenta", "veredicto", "numero", "sube0", "sube1", "remate", "link", "comenta"}
-VOLUMEN = {"barrido": 0.32, "golpe": 0.5, "ding": 0.28}
+# Pocos sonidos y cada uno con su papel: aire en los cambios de bloque, un golpe
+# grave solo para el numero del gancho, un "bloop" cuando sube la llave, teclas
+# al escribirse la palabra y una campana suave al final.
+VOLUMEN = {"aire": 0.16, "impacto": 0.42, "bloop": 0.22, "tecla": 0.14, "campana": 0.2}
 
 
 def _sintetizar(dir_: Path) -> dict[str, Path]:
     dir_.mkdir(parents=True, exist_ok=True)
     recetas = {
-        # Ruido rosa filtrado que sube y baja: "whoosh" de 0.4 s.
-        "barrido": "anoisesrc=d=0.42:c=pink:r={ar},highpass=f=500,lowpass=f=6000,"
-                   "afade=t=in:d=0.26:curve=exp,afade=t=out:st=0.26:d=0.16,volume=1.6",
-        # Golpe grave con clic: seno que cae de 140 a 50 Hz en 0.18 s.
-        "golpe": "aevalsrc='0.9*sin(2*PI*(50*t+450*(1-exp(-t*18))/18))*exp(-t*16)"
-                 "+0.25*sin(2*PI*1800*t)*exp(-t*90)':d=0.25:s={ar}",
-        # Campanita corta para el cierre.
-        "ding": "aevalsrc='0.5*sin(2*PI*1320*t)*exp(-t*9)+0.25*sin(2*PI*1980*t)*exp(-t*12)':d=0.45:s={ar}",
+        # Aire: ruido cafe filtrado, entra y sale despacio (0.55 s).
+        "aire": "anoisesrc=d=0.55:c=brown:r={ar},highpass=f=300,lowpass=f=3200,"
+                "afade=t=in:d=0.32:curve=qsin,afade=t=out:st=0.32:d=0.23:curve=qsin,volume=3",
+        # Impacto: golpe grave y redondo, sin clic.
+        "impacto": "aevalsrc='sin(2*PI*(46*t+38*(1-exp(-t*14))/14))*exp(-t*7)*min(1\\,t*400)':d=0.7:s={ar},"
+                   "lowpass=f=260",
+        # Bloop: dos notas cortas que suben.
+        "bloop": "aevalsrc='0.6*sin(2*PI*587*t)*exp(-t*22)*min(1\\,t*300)"
+                 "+0.6*sin(2*PI*880*max(0\\,t-0.09))*exp(-max(0\\,t-0.09)*16)*gt(t\\,0.09)':d=0.45:s={ar}",
+        # Tecla: un toque seco y agudo de 20 ms.
+        "tecla": "anoisesrc=d=0.03:c=white:r={ar},highpass=f=2200,lowpass=f=7000,afade=t=out:st=0.004:d=0.024",
+        # Campana: dos notas suaves con cola larga.
+        "campana": "aevalsrc='0.45*sin(2*PI*784*t)*exp(-t*4.5)*min(1\\,t*200)"
+                   "+0.4*sin(2*PI*1175*max(0\\,t-0.12))*exp(-max(0\\,t-0.12)*4)*gt(t\\,0.12)':d=1.1:s={ar}",
     }
     rutas = {}
     for nombre, f in recetas.items():
@@ -40,11 +47,19 @@ def _sintetizar(dir_: Path) -> dict[str, Path]:
 def linea_de_tiempo(tiempos: dict) -> list[tuple[str, float]]:
     eventos = []
     for i, e in enumerate(tiempos["escenas"]):
+        c = e["cues"]
         if i > 0:
-            eventos.append(("barrido", max(0.0, e["ini"] - 0.22)))
-        for cue, t in e["cues"].items():
-            if cue in GOLPES:
-                eventos.append(("ding" if cue == "link" else "golpe", t))
+            eventos.append(("aire", max(0.0, e["ini"] - 0.3)))
+        if e["tipo"] == "gancho3" and "cuenta" in c:
+            eventos.append(("impacto", c["cuenta"] + 1.0))  # cuando el numero termina de subir
+        if e["tipo"] == "decide" and "sube0" in c:
+            eventos.append(("bloop", c["sube0"]))
+        if e["tipo"] == "cta":
+            if "comenta" in c:  # una tecla por letra, al ritmo en que se escribe
+                n = len(e["props"].get("palabra", "")) or 8
+                eventos += [("tecla", c["comenta"] + 0.05 + 0.6 * k / n) for k in range(n)]
+            if "link" in c:
+                eventos.append(("campana", c["link"]))
     return sorted(eventos, key=lambda x: x[1])
 
 
