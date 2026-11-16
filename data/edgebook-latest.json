@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-16T18:15:00.000575Z",
+ "generated_at": "2026-11-16T18:45:00.000571Z",
  "date_local": "2026-11-16",
  "games": [
   {
@@ -18,24 +18,24 @@
     "code": "ORL"
    },
    "projection": {
-    "home_score": 110.9,
-    "away_score": 102.1
+    "home_score": 111.0,
+    "away_score": 102.2
    },
    "win_probability": {
-    "home": 0.7349,
-    "away": 0.2651
+    "home": 0.7326,
+    "away": 0.2674
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Boston Celtics ML"
    },
-   "data_warning": null,
+   "data_warning": "Neemias Queta está en duda (questionable)",
    "spread": {
     "home": -9.0,
     "away": 9.0
    },
-   "total_points": 213.0,
+   "total_points": 213.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -43,23 +43,25 @@
      27.0
     ],
     "total": [
-     187.0,
+     188.0,
      239.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Neemias Queta está en duda (questionable)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +7.5, Elo +8.7, equipo +11.2, cuatro factores +9.6.",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +7.4, Elo +8.7, equipo +11.2, cuatro factores +9.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 7.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 7.5 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -472,8 +474,8 @@
     "away_score": 118.3
    },
    "win_probability": {
-    "home": 0.2914,
-    "away": 0.7086
+    "home": 0.2917,
+    "away": 0.7083
    },
    "pick": {
     "market": "moneyline",
