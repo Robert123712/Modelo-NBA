@@ -668,12 +668,12 @@ const Cabecera: React.FC<{d: Datos; cinta: number; fin: number}> = ({d, cinta, f
 };
 
 /** Subtitulos: frases cortas; la palabra que suena va en verde, la que falta espera en gris. */
-const trozar = (palabras: Palabra[]) => {
+const trozar = (palabras: Palabra[], maxPalabras = 3, maxLetras = 16) => {
   const grupos: Palabra[][] = [];
   let actual: Palabra[] = [];
   for (const p of palabras) {
     const letras = actual.reduce((s, x) => s + x.texto.length + 1, 0);
-    if (actual.length && (actual.length >= 3 || letras + p.texto.length > 16)) {
+    if (actual.length && (actual.length >= maxPalabras || letras + p.texto.length > maxLetras)) {
       grupos.push(actual);
       actual = [];
     }
@@ -685,6 +685,29 @@ const trozar = (palabras: Palabra[]) => {
   }
   if (actual.length) grupos.push(actual);
   return grupos;
+};
+
+/** v3: subtitulos grandes dentro de la zona segura de TikTok (lejos de los
+ * botones de la derecha y del texto de abajo), maximo dos palabras. */
+const SubtitulosGrandes: React.FC<{d: Datos}> = ({d}) => {
+  const t = useT();
+  const grupos = React.useMemo(() => d.escenas.flatMap((e) => trozar(e.palabras, 2, 13)), [d]);
+  let g = grupos[0];
+  for (const x of grupos) if (x[0].ini - 0.08 <= t) g = x;
+  if (!g || t > g[g.length - 1].fin + 0.4) return null;
+  const letras = g.reduce((s, x) => s + x.texto.length, 0) + g.length - 1;
+  const size = Math.min(100, Math.floor(840 / (letras * 0.7)));
+  const pop = interpolate(t, [g[0].ini - 0.08, g[0].ini + 0.07], [0.85, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return (
+    <div style={{position: 'absolute', top: 1310, left: 60, right: 180, height: 150, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: TITULAR, fontWeight: 800, fontSize: size, textTransform: 'uppercase', lineHeight: 1.05, letterSpacing: -1, transform: `scale(${pop})`}}>
+      <div style={{whiteSpace: 'nowrap', WebkitTextStroke: `14px ${FONDO}`, paintOrder: 'stroke fill', filter: `drop-shadow(0 8px 0 ${FONDO})`}}>
+        {g.map((p, i) => {
+          const sonando = t >= p.ini - 0.04 && t <= p.fin + 0.05;
+          return <span key={i} style={{color: sonando || t > p.fin ? (sonando ? MENTA : TINTA) : '#5d6f78', margin: '0 12px'}}>{p.texto}</span>;
+        })}
+      </div>
+    </div>
+  );
 };
 
 const Subtitulos: React.FC<{d: Datos}> = ({d}) => {
@@ -705,6 +728,97 @@ const Subtitulos: React.FC<{d: Datos}> = ({d}) => {
   );
 };
 
+/** Gancho v3: el resultado desde el primer segundo y una promesa en letrero. */
+const Gancho3: React.FC<{e: Escena; d: Datos}> = ({e, d}) => {
+  const t = useT();
+  const p = e.props;
+  const fav = p.favorito as 'home' | 'away';
+  const otro = fav === 'home' ? 'away' : 'home';
+  const cuenta = e.cues.cuenta ?? e.ini + 1;
+  const rem = e.cues.remate ?? e.ini + 3;
+  const k = avance(t, cuenta, 1.1);
+  const golpe = interpolate(t, [cuenta + 0.9, cuenta + 1.25], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.back(2.5))});
+  const s = avance(t, rem, 0.25);
+  const ent = avance(t, e.ini, 0.35);
+  const color = tono(d.equipos[fav].color);
+  return (
+    <AbsoluteFill>
+      <div style={{position: 'absolute', top: 230, left: 0, right: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 50}}>
+        <Ficha abbr={d.equipos.away.abbr} size={230} style={{opacity: ent, transform: `translateX(${(1 - ent) * -160}px) scale(${'away' === fav ? 1 + 0.08 * k : 1 - 0.1 * k})`, boxShadow: 'away' === fav ? `0 0 ${90 * k}px ${color}` : 'none'}} />
+        <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 64, color: MENTA}}>VS</div>
+        <Ficha abbr={d.equipos.home.abbr} size={230} style={{opacity: ent, transform: `translateX(${(1 - ent) * 160}px) scale(${'home' === fav ? 1 + 0.08 * k : 1 - 0.1 * k})`, boxShadow: 'home' === fav ? `0 0 ${90 * k}px ${color}` : 'none'}} />
+      </div>
+      <div style={{position: 'absolute', top: 500, left: 0, right: 0, textAlign: 'center', opacity: avance(t, cuenta - 0.1, 0.2)}}>
+        <div style={{fontFamily: TEXTO, fontWeight: 700, fontSize: 46, color: GRIS, letterSpacing: 6}}>LA SIMULACIÓN DICE</div>
+        <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 330, lineHeight: 1, letterSpacing: -12, color, transform: `scale(${1 + 0.1 * golpe * (1 - avance(t, cuenta + 1.25, 0.4))})`, WebkitTextStroke: `12px ${FONDO}`, paintOrder: 'stroke fill', textShadow: `0 0 80px ${color}66`}}>
+          {Math.round(p.pct[fav] * k)}%
+        </div>
+        <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 70, color: TINTA, letterSpacing: -1, textTransform: 'uppercase', marginTop: -6}}>{d.equipos[fav].apodo} ganan</div>
+      </div>
+      <div style={{position: 'absolute', top: 1010, left: 70, right: 70, opacity: avance(t, cuenta + 0.2, 0.3)}}>
+        <div style={{height: 30, borderRadius: 15, overflow: 'hidden', background: APAGADO, display: 'flex', flexDirection: fav === 'away' ? 'row' : 'row-reverse'}}>
+          <div style={{width: `${p.pct[fav] * k}%`, background: color}} />
+          <div style={{flex: 1}} />
+          <div style={{width: `${p.pct[otro] * k}%`, background: tono(d.equipos[otro].color)}} />
+        </div>
+        <div style={{display: 'flex', justifyContent: 'space-between', flexDirection: fav === 'away' ? 'row' : 'row-reverse', marginTop: 10, fontFamily: TEXTO, fontWeight: 700, fontSize: 38, letterSpacing: 2}}>
+          <span style={{color}}>{d.equipos[fav].apodo.toUpperCase()} {Math.round(p.pct[fav] * k)}%</span>
+          <span style={{color: tono(d.equipos[otro].color)}}>{d.equipos[otro].apodo.toUpperCase()} {Math.round(p.pct[otro] * k)}%</span>
+        </div>
+      </div>
+      <div style={{position: 'absolute', top: 1150, left: 0, right: 0, display: 'flex', justifyContent: 'center', opacity: s, transform: `rotate(-2.5deg) scale(${1.6 - 0.6 * s})`}}>
+        <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: p.banner.length > 22 ? 58 : 70, color: MENTA_OSCURA, background: MENTA, padding: '12px 40px', borderRadius: 20, whiteSpace: 'nowrap', boxShadow: `0 0 80px ${MENTA}55`}}>{p.banner}</div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+/** Cierre v3: muestra de lo que hay en Edgebook y el link del perfil. */
+const Cta: React.FC<{e: Escena; d: Datos}> = ({e, d}) => {
+  const t = useT();
+  const p = e.props;
+  const ent = e.cues.tarjeta ?? e.ini;
+  const marca = e.cues.marca ?? e.ini + 1.4;
+  const link = e.cues.link ?? e.ini + 2.6;
+  const m = interpolate(t, [marca - 0.05, marca + 0.3], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.back(2))});
+  const l = avance(t, link - 0.05, 0.25);
+  const pulso = 1 + 0.05 * Math.sin((t - link) * 10) * (t > link ? 1 : 0);
+  const flecha = Math.sin((t - link) * 8) * 14;
+  return (
+    <AbsoluteFill>
+      <Titulo>{p.titulo}</Titulo>
+      <div style={{position: 'absolute', top: 330, left: 70, right: 70, ...tarjeta, borderRadius: 40, padding: '26px 32px 18px', ...entrada(t, ent, 0.35)}}>
+        <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10}}>
+          <Marca size={50} />
+          <span style={{fontFamily: TEXTO, fontWeight: 700, fontSize: 30, color: GRIS, letterSpacing: 2}}>{d.equipos.away.abbr} @ {d.equipos.home.abbr} · PROPS</span>
+        </div>
+        {p.filas.map((f: any, i: number) => {
+          const a = avance(t, ent + 0.25 + i * 0.22, 0.4);
+          return (
+            <div key={i} style={{display: 'flex', alignItems: 'center', gap: 24, padding: '16px 0', borderTop: `2px solid ${BORDE}`, opacity: a, transform: `translateX(${(1 - a) * 60}px)`}}>
+              <Foto id={f.athlete_id} color={MENTA} size={104} />
+              <div style={{flex: 1}}>
+                <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 46, color: TINTA, lineHeight: 1.1}}>{f.jugador}</div>
+                <div style={{fontFamily: TEXTO, fontWeight: 700, fontSize: 30, color: GRIS, letterSpacing: 1}}>{f.linea}</div>
+              </div>
+              <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 64, color: MENTA}}>{Math.round(f.pct * a)}%</div>
+            </div>
+          );
+        })}
+        <div style={{textAlign: 'center', fontFamily: TEXTO, fontWeight: 700, fontSize: 28, color: GRIS, letterSpacing: 2, paddingTop: 8, borderTop: `2px solid ${BORDE}`}}>+ TODOS LOS JUGADORES Y LÍNEAS</div>
+      </div>
+      <div style={{position: 'absolute', top: 960, left: 0, right: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: Math.min(1, m * 2), transform: `scale(${0.6 + 0.4 * m})`}}>
+        <Marca size={110} />
+        <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 62, color: MENTA, marginTop: 14}}>{p.linea1}</div>
+      </div>
+      <div style={{position: 'absolute', top: 1170, left: 0, right: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 22, opacity: l, transform: `scale(${(0.7 + 0.3 * l) * pulso})`}}>
+        <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 64, color: MENTA_OSCURA, background: MENTA, padding: '14px 40px', borderRadius: 60, boxShadow: `0 0 90px ${MENTA}77`}}>{p.linea2}</div>
+        <div style={{fontFamily: TITULAR, fontWeight: 800, fontSize: 90, color: MENTA, transform: `translateX(${flecha}px)`}}>→</div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 const ESCENAS: Record<string, React.FC<{e: Escena; d: Datos}>> = {
   gancho: Gancho,
   explica: Explica,
@@ -717,6 +831,8 @@ const ESCENAS: Record<string, React.FC<{e: Escena; d: Datos}>> = {
   tarjetas: Tarjetas,
   decide: Decide,
   cierre: Cierre,
+  gancho3: Gancho3,
+  cta: Cta,
 };
 
 export const Partido: React.FC<Datos> = (d) => {
@@ -725,6 +841,10 @@ export const Partido: React.FC<Datos> = (d) => {
   const cuadro = (s: number) => Math.round(s * fps);
   const resultado = d.escenas.find((e) => e.tipo === 'resultado');
   const cierre = d.escenas[d.escenas.length - 1];
+  const v3 = d.formato === 'v3';
+  // v3: todo un poco mas chico y mas abajo, para dejar libre la barra de arriba
+  // de TikTok y el renglon de subtitulos grandes.
+  const capa: React.CSSProperties = v3 ? {transform: 'translateY(40px) scale(0.9)', transformOrigin: 'top center'} : {};
   return (
     <AbsoluteFill style={{background: FONDO}}>
       <style>{fuentes}</style>
@@ -736,7 +856,9 @@ export const Partido: React.FC<Datos> = (d) => {
         return (
           <Sequence key={i} from={cuadro(e.ini)} durationInFrames={ultima ? undefined : cuadro(e.ini + e.dur) - cuadro(e.ini)}>
             <Reloj.Provider value={e.ini}>
-              <Comp e={e} d={d} />
+              <AbsoluteFill style={capa}>
+                <Comp e={e} d={d} />
+              </AbsoluteFill>
             </Reloj.Provider>
           </Sequence>
         );
@@ -744,8 +866,8 @@ export const Partido: React.FC<Datos> = (d) => {
       {d.escenas.slice(1).map((e, i) => (
         <Barrido key={i} ini={e.ini} />
       ))}
-      <Cabecera d={d} cinta={resultado ? resultado.ini : Infinity} fin={cierre.ini} />
-      <Subtitulos d={d} />
+      {v3 ? null : <Cabecera d={d} cinta={resultado ? resultado.ini : Infinity} fin={cierre.ini} />}
+      {v3 ? <SubtitulosGrandes d={d} /> : <Subtitulos d={d} />}
     </AbsoluteFill>
   );
 };

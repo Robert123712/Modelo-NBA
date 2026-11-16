@@ -25,6 +25,11 @@ VOZ = os.environ.get("VIDEO_VOZ", "es-US-AlonsoNeural")
 RITMO = os.environ.get("VIDEO_RITMO", "+36%")
 COLA = 0.16  # silencio despues de la ultima palabra de cada escena
 FPS = 30
+# Pausas: la voz deja hasta ~0.7 s en cada "?" o "..." y medio segundo al
+# arrancar cada escena. Con VIDEO_APRETAR=1 se recortan a PAUSA.
+APRETAR = os.environ.get("VIDEO_APRETAR", "0") == "1"
+PAUSA = 0.14
+ARRANQUE = 0.04
 
 
 def _norm(s: str) -> str:
@@ -90,6 +95,32 @@ def _palabras(narracion: list[dict], eventos: list[dict]) -> tuple[list[dict], d
     return palabras, cues
 
 
+def _apretar(mp3: Path, eventos: list[dict], wav: Path) -> list[dict]:
+    """Quita el silencio inicial y deja cada pausa entre palabras en PAUSA como
+    maximo. Regresa los eventos con los tiempos del audio recortado."""
+    tramos, ini = [], max(0.0, eventos[0]["ini"] - ARRANQUE)
+    for a, b in zip(eventos, eventos[1:]):
+        if b["ini"] - a["fin"] > PAUSA:
+            tramos.append((ini, a["fin"] + PAUSA / 2))
+            ini = b["ini"] - PAUSA / 2
+    tramos.append((ini, eventos[-1]["fin"] + 0.05))
+    def mover(t: float) -> float:
+        """Instante del audio original -> instante del recortado."""
+        dentro = 0.0
+        for x, y in tramos:
+            if t < x:
+                return dentro  # cae en una pausa quitada: se pega al siguiente tramo
+            if t <= y:
+                return dentro + t - x
+            dentro += y - x
+        return dentro
+    filtros = "".join(f"[0:a]atrim={x:.3f}:{y:.3f},asetpts=PTS-STARTPTS[t{i}];" for i, (x, y) in enumerate(tramos))
+    filtros += "".join(f"[t{i}]" for i in range(len(tramos))) + f"concat=n={len(tramos)}:v=0:a=1[s]"
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(mp3), "-filter_complex", filtros, "-map", "[s]",
+                    "-ar", "44100", "-ac", "2", str(wav)], check=True)
+    return [{**ev, "ini": round(mover(ev["ini"]), 3), "fin": round(mover(ev["fin"]), 3)} for ev in eventos]
+
+
 def construir(guion: dict, salida: Path) -> dict:
     salida.mkdir(parents=True, exist_ok=True)
     partes, escenas, t0 = [], [], 0.0
@@ -105,12 +136,17 @@ def construir(guion: dict, salida: Path) -> dict:
                 if intento == 3:
                     raise
                 time.sleep(1.5 * (intento + 1))
+        wav = salida / f"escena{i:02d}.wav"
+        fuente = mp3
+        if APRETAR:
+            corto = salida / f"escena{i:02d}-corto.wav"
+            eventos = _apretar(mp3, eventos, corto)
+            fuente = corto
         palabras, cues = _palabras(esc["narracion"], eventos)
         dur = eventos[-1]["fin"] + COLA
         # A cuadros enteros, para que audio y video no se despeguen.
         dur = round(dur * FPS) / FPS
-        wav = salida / f"escena{i:02d}.wav"
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(mp3), "-af", f"apad,atrim=0:{dur}",
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(fuente), "-af", f"apad,atrim=0:{dur}",
                         "-ar", "44100", "-ac", "2", str(wav)], check=True)
         partes.append(wav)
         escenas.append({
