@@ -2,236 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-16T23:45:00.000512Z",
+ "generated_at": "2026-11-17T00:15:00.000584Z",
  "date_local": "2026-11-16",
  "games": [
-  {
-   "league_game_id": "401909994",
-   "espn_game_id": "401909994",
-   "starts_at": "2026-11-17T00:00Z",
-   "home": {
-    "name": "Boston Celtics",
-    "code": "BOS"
-   },
-   "away": {
-    "name": "Orlando Magic",
-    "code": "ORL"
-   },
-   "projection": {
-    "home_score": 111.0,
-    "away_score": 102.2
-   },
-   "win_probability": {
-    "home": 0.7326,
-    "away": 0.2674
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Boston Celtics ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -9.0,
-    "away": 9.0
-   },
-   "total_points": 213.2,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -9.0,
-     27.0
-    ],
-    "total": [
-     188.0,
-     239.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +7.4, Elo +8.7, equipo +11.2, cuatro factores +9.6.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 7.5 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para BOS.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "away",
-     "detail": "BOS juega su segundo partido en dos noches: 1.9 puntos.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de BOS",
-     "favors": "away",
-     "detail": "Sin Neemias Queta: BOS pierde 1.0 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909995",
-   "espn_game_id": "401909995",
-   "starts_at": "2026-11-17T00:00Z",
-   "home": {
-    "name": "Cleveland Cavaliers",
-    "code": "CLE"
-   },
-   "away": {
-    "name": "Chicago Bulls",
-    "code": "CHI"
-   },
-   "projection": {
-    "home_score": 125.6,
-    "away_score": 116.3
-   },
-   "win_probability": {
-    "home": 0.7489,
-    "away": 0.2511
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Cleveland Cavaliers ML"
-   },
-   "data_warning": "Jalen Smith está en duda (questionable)",
-   "spread": {
-    "home": -9.0,
-    "away": 9.0
-   },
-   "total_points": 241.9,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -9.0,
-     27.0
-    ],
-    "total": [
-     216.0,
-     268.0
-    ]
-   },
-   "game_warnings": [
-    "Jalen Smith está en duda (questionable)"
-   ],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +8.8, Elo +9.0, equipo +9.8, cuatro factores +8.9.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de CLE vale 6.9 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.9 puntos para CLE.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de CLE",
-     "favors": "away",
-     "detail": "Sin Sam Merrill, Evan Mobley, Nae'Qwan Tomlin: CLE pierde 1.7 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909996",
-   "espn_game_id": "401909996",
-   "starts_at": "2026-11-17T00:00Z",
-   "home": {
-    "name": "Washington Wizards",
-    "code": "WSH"
-   },
-   "away": {
-    "name": "Memphis Grizzlies",
-    "code": "MEM"
-   },
-   "projection": {
-    "home_score": 110.6,
-    "away_score": 117.1
-   },
-   "win_probability": {
-    "home": 0.3199,
-    "away": 0.6801
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Memphis Grizzlies ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 7.0,
-    "away": -7.0
-   },
-   "total_points": 227.7,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -24.0,
-     11.0
-    ],
-    "total": [
-     202.0,
-     254.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +6.7, Elo +3.4, equipo +5.6, cuatro factores +2.9.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de MEM vale 6.5 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "away",
-     "detail": "WSH juega su segundo partido en dos noches: 2.0 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para WSH.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de MEM",
-     "favors": "home",
-     "detail": "Sin GG Jackson, Ty Jerome, Scotty Pippen Jr.: MEM pierde 2.7 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909997",
    "espn_game_id": "401909997",
@@ -245,50 +18,48 @@
     "code": "PHI"
    },
    "projection": {
-    "home_score": 110.7,
-    "away_score": 114.0
+    "home_score": 110.6,
+    "away_score": 114.2
    },
    "win_probability": {
-    "home": 0.4012,
-    "away": 0.5988
+    "home": 0.3925,
+    "away": 0.6075
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Philadelphia 76ers ML"
    },
-   "data_warning": "Joel Embiid está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": 4.0,
     "away": -4.0
    },
-   "total_points": 224.7,
+   "total_points": 224.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -21.0,
-     15.0
+     14.0
     ],
     "total": [
      199.0,
      251.0
     ]
    },
-   "game_warnings": [
-    "Joel Embiid está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a PHI. Margen de PHI: jugadores +2.5, Elo +6.6, equipo +5.0, cuatro factores +4.3.",
+     "detail": "4 de 4 modelos ven ganar a PHI. Margen de PHI: jugadores +3.0, Elo +6.6, equipo +5.0, cuatro factores +4.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de PHI vale 6.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de PHI vale 6.8 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -306,7 +77,7 @@
     {
      "label": "Bajas de PHI",
      "favors": "home",
-     "detail": "Sin Dominick Barlow, Adem Bona, LeBron James: PHI pierde 2.9 puntos.",
+     "detail": "Sin Dominick Barlow, Adem Bona, LeBron James: PHI pierde 2.5 puntos.",
      "supports_pick": false
     }
    ]
@@ -324,50 +95,48 @@
     "code": "HOU"
    },
    "projection": {
-    "home_score": 115.4,
-    "away_score": 117.8
+    "home_score": 115.5,
+    "away_score": 118.1
    },
    "win_probability": {
-    "home": 0.4304,
-    "away": 0.5696
+    "home": 0.425,
+    "away": 0.575
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Houston Rockets ML"
    },
-   "data_warning": "Amen Thompson está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": 3.0,
     "away": -3.0
    },
-   "total_points": 233.2,
+   "total_points": 233.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -20.0,
-     16.0
+     -21.0,
+     15.0
     ],
     "total": [
-     207.0,
-     259.0
+     208.0,
+     260.0
     ]
    },
-   "game_warnings": [
-    "Amen Thompson está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +1.8, Elo +1.9, equipo +4.3, cuatro factores +1.8.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +2.1, Elo +1.9, equipo +4.3, cuatro factores +1.8.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 5.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 6.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -604,6 +373,235 @@
      "favors": "home",
      "detail": "Sin Mark Williams: PHX pierde 0.6 puntos.",
      "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909994",
+   "espn_game_id": "401909994",
+   "starts_at": "2026-11-17T00:00Z",
+   "home": {
+    "name": "Boston Celtics",
+    "code": "BOS"
+   },
+   "away": {
+    "name": "Orlando Magic",
+    "code": "ORL"
+   },
+   "projection": {
+    "home_score": 111.0,
+    "away_score": 102.2
+   },
+   "win_probability": {
+    "home": 0.7326,
+    "away": 0.2674
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Boston Celtics ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -9.0,
+    "away": 9.0
+   },
+   "total_points": 213.2,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -9.0,
+     27.0
+    ],
+    "total": [
+     188.0,
+     239.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +7.4, Elo +8.7, equipo +11.2, cuatro factores +9.6.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 7.5 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para BOS.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "away",
+     "detail": "BOS juega su segundo partido en dos noches: 1.9 puntos.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de BOS",
+     "favors": "away",
+     "detail": "Sin Neemias Queta: BOS pierde 1.0 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909995",
+   "espn_game_id": "401909995",
+   "starts_at": "2026-11-17T00:00Z",
+   "home": {
+    "name": "Cleveland Cavaliers",
+    "code": "CLE"
+   },
+   "away": {
+    "name": "Chicago Bulls",
+    "code": "CHI"
+   },
+   "projection": {
+    "home_score": 125.6,
+    "away_score": 116.3
+   },
+   "win_probability": {
+    "home": 0.7489,
+    "away": 0.2511
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Cleveland Cavaliers ML"
+   },
+   "data_warning": "Jalen Smith está en duda (questionable)",
+   "spread": {
+    "home": -9.0,
+    "away": 9.0
+   },
+   "total_points": 241.9,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -9.0,
+     27.0
+    ],
+    "total": [
+     216.0,
+     268.0
+    ]
+   },
+   "game_warnings": [
+    "Jalen Smith está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +8.8, Elo +9.0, equipo +9.8, cuatro factores +8.9.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de CLE vale 6.9 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.9 puntos para CLE.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de CLE",
+     "favors": "away",
+     "detail": "Sin Sam Merrill, Evan Mobley, Nae'Qwan Tomlin: CLE pierde 1.7 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909996",
+   "espn_game_id": "401909996",
+   "starts_at": "2026-11-17T00:00Z",
+   "home": {
+    "name": "Washington Wizards",
+    "code": "WSH"
+   },
+   "away": {
+    "name": "Memphis Grizzlies",
+    "code": "MEM"
+   },
+   "projection": {
+    "home_score": 111.5,
+    "away_score": 117.3
+   },
+   "win_probability": {
+    "home": 0.3389,
+    "away": 0.6611
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Memphis Grizzlies ML"
+   },
+   "data_warning": "Zach Edey está en duda (questionable)",
+   "spread": {
+    "home": 6.0,
+    "away": -6.0
+   },
+   "total_points": 228.8,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -24.0,
+     12.0
+    ],
+    "total": [
+     203.0,
+     255.0
+    ]
+   },
+   "game_warnings": [
+    "Zach Edey está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +5.7, Elo +3.4, equipo +5.6, cuatro factores +2.9.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de MEM vale 5.6 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "away",
+     "detail": "WSH juega su segundo partido en dos noches: 2.0 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para WSH.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de MEM",
+     "favors": "home",
+     "detail": "Sin GG Jackson, Ty Jerome, Scotty Pippen Jr.: MEM pierde 3.6 puntos.",
+     "supports_pick": false
     }
    ]
   }
