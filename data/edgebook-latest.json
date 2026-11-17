@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-17T15:15:00.519830Z",
+ "generated_at": "2026-11-17T17:45:00.000546Z",
  "date_local": "2026-11-17",
  "games": [
   {
@@ -19,23 +19,23 @@
    },
    "projection": {
     "home_score": 104.9,
-    "away_score": 108.6
+    "away_score": 108.8
    },
    "win_probability": {
-    "home": 0.3942,
-    "away": 0.6058
+    "home": 0.3915,
+    "away": 0.6085
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "New York Knicks ML"
    },
-   "data_warning": null,
+   "data_warning": "Scottie Barnes está en duda (questionable)",
    "spread": {
     "home": 4.0,
     "away": -4.0
    },
-   "total_points": 213.5,
+   "total_points": 213.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -44,28 +44,30 @@
     ],
     "total": [
      188.0,
-     239.0
+     240.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Scottie Barnes está en duda (questionable)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +3.9, Elo +4.6, equipo +3.1, cuatro factores +3.3.",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +4.1, Elo +4.6, equipo +3.1, cuatro factores +3.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 5.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 5.9 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de TOR",
      "favors": "away",
-     "detail": "Sin Kawhi Leonard, Malachi Smith: TOR pierde 2.5 puntos.",
+     "detail": "Sin Kawhi Leonard, Malachi Smith: TOR pierde 2.7 puntos.",
      "supports_pick": true
     },
     {
