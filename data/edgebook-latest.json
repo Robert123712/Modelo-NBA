@@ -2,157 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-17T00:15:00.000584Z",
+ "generated_at": "2026-11-17T00:45:00.000572Z",
  "date_local": "2026-11-16",
  "games": [
-  {
-   "league_game_id": "401909997",
-   "espn_game_id": "401909997",
-   "starts_at": "2026-11-17T00:30Z",
-   "home": {
-    "name": "Brooklyn Nets",
-    "code": "BKN"
-   },
-   "away": {
-    "name": "Philadelphia 76ers",
-    "code": "PHI"
-   },
-   "projection": {
-    "home_score": 110.6,
-    "away_score": 114.2
-   },
-   "win_probability": {
-    "home": 0.3925,
-    "away": 0.6075
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Philadelphia 76ers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 4.0,
-    "away": -4.0
-   },
-   "total_points": 224.8,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -21.0,
-     14.0
-    ],
-    "total": [
-     199.0,
-     251.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a PHI. Margen de PHI: jugadores +3.0, Elo +6.6, equipo +5.0, cuatro factores +4.3.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de PHI vale 6.8 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para BKN.",
-     "supports_pick": false
-    },
-    {
-     "label": "Descanso",
-     "favors": "home",
-     "detail": "PHI juega su segundo partido en dos noches: 2.0 puntos.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de PHI",
-     "favors": "home",
-     "detail": "Sin Dominick Barlow, Adem Bona, LeBron James: PHI pierde 2.5 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909998",
-   "espn_game_id": "401909998",
-   "starts_at": "2026-11-17T00:30Z",
-   "home": {
-    "name": "Miami Heat",
-    "code": "MIA"
-   },
-   "away": {
-    "name": "Houston Rockets",
-    "code": "HOU"
-   },
-   "projection": {
-    "home_score": 115.5,
-    "away_score": 118.1
-   },
-   "win_probability": {
-    "home": 0.425,
-    "away": 0.575
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Houston Rockets ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 3.0,
-    "away": -3.0
-   },
-   "total_points": 233.6,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -21.0,
-     15.0
-    ],
-    "total": [
-     208.0,
-     260.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +2.1, Elo +1.9, equipo +4.3, cuatro factores +1.8.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 6.0 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para MIA.",
-     "supports_pick": false
-    },
-    {
-     "label": "Descanso",
-     "favors": "home",
-     "detail": "HOU juega su segundo partido en dos noches: 2.0 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909999",
    "espn_game_id": "401909999",
@@ -237,50 +89,48 @@
     "code": "GS"
    },
    "projection": {
-    "home_score": 110.8,
-    "away_score": 118.3
+    "home_score": 111.0,
+    "away_score": 118.1
    },
    "win_probability": {
-    "home": 0.2917,
-    "away": 0.7083
+    "home": 0.3008,
+    "away": 0.6992
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Golden State Warriors ML"
    },
-   "data_warning": "Gui Santos está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": 8.0,
-    "away": -8.0
+    "home": 7.0,
+    "away": -7.0
    },
-   "total_points": 229.1,
+   "total_points": 229.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -25.0,
-     10.0
+     11.0
     ],
     "total": [
      203.0,
      255.0
     ]
    },
-   "game_warnings": [
-    "Gui Santos está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +7.8, Elo +5.3, equipo +6.8, cuatro factores +2.7.",
+     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +7.2, Elo +5.3, equipo +6.8, cuatro factores +2.7.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de GS vale 9.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de GS vale 9.1 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -292,7 +142,7 @@
     {
      "label": "Bajas de GS",
      "favors": "home",
-     "detail": "Sin Jimmy Butler III, Stephen Curry, Moses Moody: GS pierde 1.3 puntos.",
+     "detail": "Sin Jimmy Butler III, Stephen Curry, Moses Moody: GS pierde 1.9 puntos.",
      "supports_pick": false
     }
    ]
@@ -601,6 +451,158 @@
      "label": "Bajas de MEM",
      "favors": "home",
      "detail": "Sin GG Jackson, Ty Jerome, Scotty Pippen Jr.: MEM pierde 3.6 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909997",
+   "espn_game_id": "401909997",
+   "starts_at": "2026-11-17T00:30Z",
+   "home": {
+    "name": "Brooklyn Nets",
+    "code": "BKN"
+   },
+   "away": {
+    "name": "Philadelphia 76ers",
+    "code": "PHI"
+   },
+   "projection": {
+    "home_score": 110.7,
+    "away_score": 114.0
+   },
+   "win_probability": {
+    "home": 0.4012,
+    "away": 0.5988
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Philadelphia 76ers ML"
+   },
+   "data_warning": "Joel Embiid está en duda (questionable)",
+   "spread": {
+    "home": 4.0,
+    "away": -4.0
+   },
+   "total_points": 224.7,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -21.0,
+     15.0
+    ],
+    "total": [
+     199.0,
+     251.0
+    ]
+   },
+   "game_warnings": [
+    "Joel Embiid está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a PHI. Margen de PHI: jugadores +2.5, Elo +6.6, equipo +5.0, cuatro factores +4.3.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de PHI vale 6.4 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para BKN.",
+     "supports_pick": false
+    },
+    {
+     "label": "Descanso",
+     "favors": "home",
+     "detail": "PHI juega su segundo partido en dos noches: 2.0 puntos.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de PHI",
+     "favors": "home",
+     "detail": "Sin Dominick Barlow, Adem Bona, LeBron James: PHI pierde 2.9 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909998",
+   "espn_game_id": "401909998",
+   "starts_at": "2026-11-17T00:30Z",
+   "home": {
+    "name": "Miami Heat",
+    "code": "MIA"
+   },
+   "away": {
+    "name": "Houston Rockets",
+    "code": "HOU"
+   },
+   "projection": {
+    "home_score": 115.4,
+    "away_score": 117.8
+   },
+   "win_probability": {
+    "home": 0.4304,
+    "away": 0.5696
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Houston Rockets ML"
+   },
+   "data_warning": "Amen Thompson está en duda (questionable)",
+   "spread": {
+    "home": 3.0,
+    "away": -3.0
+   },
+   "total_points": 233.2,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -20.0,
+     16.0
+    ],
+    "total": [
+     207.0,
+     259.0
+    ]
+   },
+   "game_warnings": [
+    "Amen Thompson está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +1.8, Elo +1.9, equipo +4.3, cuatro factores +1.8.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 5.7 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para MIA.",
+     "supports_pick": false
+    },
+    {
+     "label": "Descanso",
+     "favors": "home",
+     "detail": "HOU juega su segundo partido en dos noches: 2.0 puntos.",
      "supports_pick": false
     }
    ]
