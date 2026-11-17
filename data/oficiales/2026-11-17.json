@@ -1,10 +1,10 @@
 {
  "401910002": {
-  "generated_at": "2026-11-17T15:15:00.519830Z",
+  "generated_at": "2026-11-17T16:15:00.000554Z",
   "model_version": "nba-0.7.0",
   "game_id": 401910002,
   "starts_at": "2026-11-18T00:30Z",
-  "minutos_antes": 555.0,
+  "minutos_antes": 495.0,
   "proyeccion": {
    "league_game_id": "401910002",
    "espn_game_id": "401910002",
@@ -1529,11 +1529,11 @@
   "tardia": false
  },
  "401910003": {
-  "generated_at": "2026-11-17T15:15:00.519830Z",
+  "generated_at": "2026-11-17T16:15:00.000554Z",
   "model_version": "nba-0.7.0",
   "game_id": 401910003,
   "starts_at": "2026-11-18T01:00Z",
-  "minutos_antes": 585.0,
+  "minutos_antes": 525.0,
   "proyeccion": {
    "league_game_id": "401910003",
    "espn_game_id": "401910003",
@@ -3060,11 +3060,11 @@
   "tardia": false
  },
  "401910004": {
-  "generated_at": "2026-11-17T15:15:00.519830Z",
+  "generated_at": "2026-11-17T16:15:00.000554Z",
   "model_version": "nba-0.7.0",
   "game_id": 401910004,
   "starts_at": "2026-11-18T01:00Z",
-  "minutos_antes": 585.0,
+  "minutos_antes": 525.0,
   "proyeccion": {
    "league_game_id": "401910004",
    "espn_game_id": "401910004",
@@ -4591,11 +4591,11 @@
   "tardia": false
  },
  "401910006": {
-  "generated_at": "2026-11-17T15:15:00.519830Z",
+  "generated_at": "2026-11-17T16:15:00.000554Z",
   "model_version": "nba-0.7.0",
   "game_id": 401910006,
   "starts_at": "2026-11-18T03:30Z",
-  "minutos_antes": 735.0,
+  "minutos_antes": 675.0,
   "proyeccion": {
    "league_game_id": "401910006",
    "espn_game_id": "401910006",
@@ -6120,11 +6120,11 @@
   "tardia": false
  },
  "401910005": {
-  "generated_at": "2026-11-17T15:15:00.519830Z",
+  "generated_at": "2026-11-17T16:15:00.000554Z",
   "model_version": "nba-0.7.0",
   "game_id": 401910005,
   "starts_at": "2026-11-18T04:00Z",
-  "minutos_antes": 765.0,
+  "minutos_antes": 705.0,
   "proyeccion": {
    "league_game_id": "401910005",
    "espn_game_id": "401910005",
@@ -7164,32 +7164,32 @@
     "min": 28.1,
     "s": {
      "puntos": [
-      16.56,
+      16.66,
       8.0,
       27.0
      ],
      "rebotes": [
-      7.55,
+      7.57,
       4.0,
       12.0
      ],
      "asistencias": [
-      2.53,
+      2.54,
       1.0,
       5.0
      ],
      "pra": [
-      26.64,
+      26.76,
       15.0,
       39.0
      ],
      "puntos_rebotes": [
-      24.11,
+      24.23,
       13.0,
       36.0
      ],
      "puntos_asistencias": [
-      19.09,
+      19.2,
       10.0,
       30.0
      ]
@@ -7219,30 +7219,91 @@
     }
    },
    {
+    "a": 4602025,
+    "j": "Sion James",
+    "lado": "away",
+    "min": 28.0,
+    "s": {
+     "puntos": [
+      7.39,
+      2.0,
+      14.0
+     ],
+     "rebotes": [
+      4.55,
+      2.0,
+      8.0
+     ],
+     "asistencias": [
+      3.65,
+      1.0,
+      6.0
+     ],
+     "pra": [
+      15.58,
+      8.0,
+      24.0
+     ],
+     "puntos_rebotes": [
+      11.94,
+      5.0,
+      19.0
+     ],
+     "puntos_asistencias": [
+      11.04,
+      5.0,
+      18.0
+     ]
+    },
+    "ctx": {
+     "min_sano": 28.1,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.968,
+      "assists": 1.077
+     },
+     "bajas": {
+      "points": 1.075,
+      "reb": 1.0,
+      "assists": 1.047
+     },
+     "grupo": "G",
+     "duda": false
+    },
+    "prom": {
+     "puntos": 5.77,
+     "rebotes": 3.85,
+     "asistencias": 3.0,
+     "pra": 12.62,
+     "puntos_rebotes": 9.62,
+     "puntos_asistencias": 8.77
+    }
+   },
+   {
     "a": 4433249,
     "j": "Moussa Diabate",
     "lado": "away",
     "min": 26.9,
     "s": {
      "puntos": [
-      9.47,
+      9.48,
       3.0,
       17.0
      ],
      "rebotes": [
-      9.63,
+      9.61,
       5.0,
       15.0
      ],
      "asistencias": [
-      2.33,
+      2.31,
       0.0,
-      5.0
+      4.0
      ],
      "pra": [
-      21.43,
+      21.4,
       12.0,
-      31.0
+      32.0
      ],
      "puntos_rebotes": [
       19.09,
@@ -7250,7 +7311,7 @@
       29.0
      ],
      "puntos_asistencias": [
-      11.8,
+      11.79,
       5.0,
       19.0
      ]
@@ -7280,74 +7341,13 @@
     }
    },
    {
-    "a": 3135045,
-    "j": "Grayson Allen",
-    "lado": "away",
-    "min": 26.7,
-    "s": {
-     "puntos": [
-      14.99,
-      6.0,
-      25.0
-     ],
-     "rebotes": [
-      3.47,
-      1.0,
-      6.0
-     ],
-     "asistencias": [
-      3.95,
-      1.0,
-      7.0
-     ],
-     "pra": [
-      22.41,
-      12.0,
-      34.0
-     ],
-     "puntos_rebotes": [
-      18.46,
-      9.0,
-      29.0
-     ],
-     "puntos_asistencias": [
-      18.94,
-      9.0,
-      29.0
-     ]
-    },
-    "ctx": {
-     "min_sano": 26.7,
-     "rival": {
-      "points": 1.0,
-      "reb": 0.968,
-      "assists": 1.077
-     },
-     "bajas": {
-      "points": 1.077,
-      "reb": 1.0,
-      "assists": 1.047
-     },
-     "grupo": "G",
-     "duda": false
-    },
-    "prom": {
-     "puntos": 14.92,
-     "rebotes": 3.08,
-     "asistencias": 3.31,
-     "pra": 21.31,
-     "puntos_rebotes": 18.0,
-     "puntos_asistencias": 18.23
-    }
-   },
-   {
     "a": 4433287,
     "j": "Brandon Miller",
     "lado": "away",
     "min": 24.9,
     "s": {
      "puntos": [
-      18.11,
+      18.23,
       8.0,
       29.0
      ],
@@ -7357,22 +7357,22 @@
       8.0
      ],
      "asistencias": [
-      2.87,
+      2.84,
       1.0,
       5.0
      ],
      "pra": [
-      25.6,
+      25.69,
       14.0,
-      38.10000000000218
+      39.0
      ],
      "puntos_rebotes": [
-      22.73,
+      22.86,
       12.0,
       35.0
      ],
      "puntos_asistencias": [
-      20.98,
+      21.07,
       10.0,
       33.0
      ]
@@ -7385,7 +7385,7 @@
       "assists": 0.975
      },
      "bajas": {
-      "points": 1.08,
+      "points": 1.081,
       "reb": 1.0,
       "assists": 1.047
      },
@@ -7402,51 +7402,51 @@
     }
    },
    {
-    "a": 4602025,
-    "j": "Sion James",
+    "a": 3135045,
+    "j": "Grayson Allen",
     "lado": "away",
-    "min": 24.6,
+    "min": 23.3,
     "s": {
      "puntos": [
-      6.77,
-      2.0,
-      13.0
+      13.86,
+      5.0,
+      23.0
      ],
      "rebotes": [
-      4.31,
-      1.0,
-      7.0
-     ],
-     "asistencias": [
-      3.4,
+      3.3,
       1.0,
       6.0
      ],
+     "asistencias": [
+      3.67,
+      1.0,
+      7.0
+     ],
      "pra": [
-      14.48,
-      7.0,
-      23.0
+      20.83,
+      11.0,
+      32.0
      ],
      "puntos_rebotes": [
-      11.08,
-      5.0,
-      18.0
+      17.16,
+      8.0,
+      27.0
      ],
      "puntos_asistencias": [
-      10.17,
-      4.0,
-      17.0
+      17.53,
+      8.0,
+      28.0
      ]
     },
     "ctx": {
-     "min_sano": 24.6,
+     "min_sano": 23.2,
      "rival": {
       "points": 1.0,
       "reb": 0.968,
       "assists": 1.077
      },
      "bajas": {
-      "points": 1.081,
+      "points": 1.084,
       "reb": 1.0,
       "assists": 1.047
      },
@@ -7454,12 +7454,12 @@
      "duda": false
     },
     "prom": {
-     "puntos": 5.77,
-     "rebotes": 3.85,
-     "asistencias": 3.0,
-     "pra": 12.62,
-     "puntos_rebotes": 9.62,
-     "puntos_asistencias": 8.77
+     "puntos": 14.92,
+     "rebotes": 3.08,
+     "asistencias": 3.31,
+     "pra": 21.31,
+     "puntos_rebotes": 18.0,
+     "puntos_asistencias": 18.23
     }
    },
    {
@@ -7469,12 +7469,12 @@
     "min": 21.2,
     "s": {
      "puntos": [
-      14.31,
+      14.42,
       6.0,
       24.0
      ],
      "rebotes": [
-      2.71,
+      2.69,
       1.0,
       5.0
      ],
@@ -7484,19 +7484,19 @@
       7.0
      ],
      "pra": [
-      20.74,
+      20.83,
       11.0,
       32.0
      ],
      "puntos_rebotes": [
-      17.02,
+      17.11,
       8.0,
       27.0
      ],
      "puntos_asistencias": [
-      18.03,
+      18.14,
       9.0,
-      28.0
+      29.0
      ]
     },
     "ctx": {
@@ -7545,12 +7545,12 @@
       4.0
      ],
      "pra": [
-      12.32,
+      12.31,
       5.0,
       20.0
      ],
      "puntos_rebotes": [
-      10.65,
+      10.64,
       4.0,
       18.0
      ],
@@ -7568,7 +7568,7 @@
       "assists": 0.975
      },
      "bajas": {
-      "points": 1.097,
+      "points": 1.098,
       "reb": 1.0,
       "assists": 1.047
      },
@@ -7591,32 +7591,32 @@
     "min": 18.4,
     "s": {
      "puntos": [
-      6.19,
+      6.2,
       1.0,
       12.0
      ],
      "rebotes": [
-      5.44,
+      5.45,
       2.0,
       9.0
      ],
      "asistencias": [
-      1.43,
+      1.44,
       0.0,
       3.0
      ],
      "pra": [
-      13.06,
+      13.09,
       6.0,
       21.0
      ],
      "puntos_rebotes": [
-      11.63,
+      11.65,
       5.0,
       19.0
      ],
      "puntos_asistencias": [
-      7.62,
+      7.64,
       2.0,
       14.0
      ]
