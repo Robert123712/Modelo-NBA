@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-17T18:45:00.000575Z",
+ "generated_at": "2026-11-17T19:15:00.000567Z",
  "date_local": "2026-11-17",
  "games": [
   {
@@ -91,24 +91,24 @@
     "code": "POR"
    },
    "projection": {
-    "home_score": 114.3,
-    "away_score": 111.1
+    "home_score": 115.1,
+    "away_score": 111.9
    },
    "win_probability": {
-    "home": 0.5887,
-    "away": 0.4113
+    "home": 0.5866,
+    "away": 0.4134
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Minnesota Timberwolves ML"
    },
-   "data_warning": "Jonathan Kuminga está en duda (day-to-day)",
+   "data_warning": null,
    "spread": {
     "home": -4.0,
     "away": 4.0
    },
-   "total_points": 225.4,
+   "total_points": 227.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -116,25 +116,23 @@
      21.0
     ],
     "total": [
-     200.0,
-     251.0
+     201.0,
+     253.0
     ]
    },
-   "game_warnings": [
-    "Jonathan Kuminga está en duda (day-to-day)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +3.0, Elo +3.4, equipo +3.7, cuatro factores +4.5.",
+     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +2.8, Elo +3.4, equipo +3.7, cuatro factores +4.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MIN vale 1.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MIN vale 1.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -146,7 +144,7 @@
     {
      "label": "Bajas de MIN",
      "favors": "away",
-     "detail": "Sin Jaylen Clark, Donte DiVincenzo, Anthony Edwards: MIN pierde 2.0 puntos.",
+     "detail": "Sin Jaylen Clark, Donte DiVincenzo, Anthony Edwards: MIN pierde 2.2 puntos.",
      "supports_pick": false
     }
    ]
