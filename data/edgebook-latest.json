@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-17T19:15:00.000567Z",
+ "generated_at": "2026-11-17T19:45:00.000558Z",
  "date_local": "2026-11-17",
  "games": [
   {
@@ -91,24 +91,24 @@
     "code": "POR"
    },
    "projection": {
-    "home_score": 115.1,
-    "away_score": 111.9
+    "home_score": 114.7,
+    "away_score": 111.5
    },
    "win_probability": {
-    "home": 0.5866,
-    "away": 0.4134
+    "home": 0.5879,
+    "away": 0.4121
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Minnesota Timberwolves ML"
    },
-   "data_warning": null,
+   "data_warning": "Deni Avdija está en duda (questionable)",
    "spread": {
     "home": -4.0,
     "away": 4.0
    },
-   "total_points": 227.0,
+   "total_points": 226.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -117,22 +117,24 @@
     ],
     "total": [
      201.0,
-     253.0
+     252.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Deni Avdija está en duda (questionable)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +2.8, Elo +3.4, equipo +3.7, cuatro factores +4.5.",
+     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +3.0, Elo +3.4, equipo +3.7, cuatro factores +4.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MIN vale 1.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MIN vale 1.1 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -144,7 +146,7 @@
     {
      "label": "Bajas de MIN",
      "favors": "away",
-     "detail": "Sin Jaylen Clark, Donte DiVincenzo, Anthony Edwards: MIN pierde 2.2 puntos.",
+     "detail": "Sin Jaylen Clark, Donte DiVincenzo, Anthony Edwards: MIN pierde 2.0 puntos.",
      "supports_pick": false
     }
    ]
