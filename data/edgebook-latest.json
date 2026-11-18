@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-18T18:45:00.000545Z",
+ "generated_at": "2026-11-18T19:15:00.000534Z",
  "date_local": "2026-11-18",
  "games": [
   {
@@ -451,29 +451,29 @@
     "code": "DET"
    },
    "projection": {
-    "home_score": 108.3,
-    "away_score": 116.3
+    "home_score": 108.0,
+    "away_score": 116.9
    },
    "win_probability": {
-    "home": 0.2825,
-    "away": 0.7175
+    "home": 0.2633,
+    "away": 0.7367
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Detroit Pistons ML"
    },
-   "data_warning": "Ronald Holland II está en duda (day-to-day)",
+   "data_warning": "Cade Cunningham está en duda (questionable)",
    "spread": {
-    "home": 8.0,
-    "away": -8.0
+    "home": 9.0,
+    "away": -9.0
    },
-   "total_points": 224.7,
+   "total_points": 224.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -26.0,
-     10.0
+     -27.0,
+     9.0
     ],
     "total": [
      199.0,
@@ -481,26 +481,27 @@
     ]
    },
    "game_warnings": [
-    "Ronald Holland II está en duda (day-to-day)"
+    "Cade Cunningham está en duda (questionable)",
+    "Isaiah Joe está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +7.4, Elo +8.2, equipo +9.0, cuatro factores +7.5.",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +8.6, Elo +8.2, equipo +9.0, cuatro factores +7.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DET vale 11.3 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DET vale 12.5 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de NO",
      "favors": "away",
-     "detail": "Sin Bennedict Mathurin, Bryce McGowens, Trey Murphy III: NO pierde 0.7 puntos.",
+     "detail": "Sin Bennedict Mathurin, Bryce McGowens, Trey Murphy III: NO pierde 1.9 puntos.",
      "supports_pick": true
     },
     {
@@ -820,12 +821,12 @@
     "code": "PHX"
    },
    "projection": {
-    "home_score": 112.0,
-    "away_score": 118.3
+    "home_score": 111.9,
+    "away_score": 118.1
    },
    "win_probability": {
-    "home": 0.3242,
-    "away": 0.6758
+    "home": 0.329,
+    "away": 0.671
    },
    "pick": {
     "market": "moneyline",
@@ -834,10 +835,10 @@
    },
    "data_warning": "Precious Achiuwa está en duda (questionable)",
    "spread": {
-    "home": 7.0,
-    "away": -7.0
+    "home": 6.0,
+    "away": -6.0
    },
-   "total_points": 230.3,
+   "total_points": 230.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -845,26 +846,25 @@
      12.0
     ],
     "total": [
-     205.0,
+     204.0,
      256.0
     ]
    },
    "game_warnings": [
-    "Precious Achiuwa está en duda (questionable)",
-    "De'Andre Hunter está en duda (questionable)"
+    "Precious Achiuwa está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +6.2, Elo +5.5, equipo +6.5, cuatro factores +4.2.",
+     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +6.0, Elo +5.5, equipo +6.5, cuatro factores +4.2.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de PHX vale 8.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de PHX vale 7.8 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -876,7 +876,7 @@
     {
      "label": "Bajas de PHX",
      "favors": "home",
-     "detail": "Sin Mark Williams: PHX pierde 1.1 puntos.",
+     "detail": "Sin Mark Williams: PHX pierde 1.4 puntos.",
      "supports_pick": false
     }
    ]
