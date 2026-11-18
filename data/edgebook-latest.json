@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-18T19:15:00.000534Z",
+ "generated_at": "2026-11-18T21:15:00.000565Z",
  "date_local": "2026-11-18",
  "games": [
   {
@@ -746,52 +746,50 @@
     "code": "UTAH"
    },
    "projection": {
-    "home_score": 123.5,
-    "away_score": 110.4
+    "home_score": 122.5,
+    "away_score": 109.8
    },
    "win_probability": {
-    "home": 0.826,
-    "away": 0.174
+    "home": 0.8202,
+    "away": 0.1798
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Los Angeles Lakers ML"
    },
-   "data_warning": "Walker Kessler está en duda (day-to-day)",
+   "data_warning": "Jaxson Hayes está en duda (questionable)",
    "spread": {
     "home": -13.0,
     "away": 13.0
    },
-   "total_points": 233.9,
+   "total_points": 232.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -5.0,
+     -6.0,
      31.0
     ],
     "total": [
-     208.0,
-     260.0
+     207.0,
+     258.0
     ]
    },
    "game_warnings": [
-    "Walker Kessler está en duda (day-to-day)",
-    "Austin Reaves está en duda (day-to-day)",
-    "Jaxson Hayes está en duda (day-to-day)"
+    "Jaxson Hayes está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +13.9, Elo +14.0, equipo +11.5, cuatro factores +11.6.",
+     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +13.4, Elo +14.0, equipo +11.5, cuatro factores +11.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de LAL vale 12.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de LAL vale 11.6 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -803,7 +801,7 @@
     {
      "label": "Bajas de UTAH",
      "favors": "home",
-     "detail": "Sin Jaren Jackson Jr., Lauri Markkanen, Jusuf Nurkic: UTAH pierde 3.9 puntos.",
+     "detail": "Sin Jaren Jackson Jr., Lauri Markkanen, Jusuf Nurkic: UTAH pierde 3.3 puntos.",
      "supports_pick": true
     }
    ]
