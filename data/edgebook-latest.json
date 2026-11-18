@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-18T21:15:00.000565Z",
+ "generated_at": "2026-11-18T21:45:00.000542Z",
  "date_local": "2026-11-18",
  "games": [
   {
@@ -820,49 +820,47 @@
    },
    "projection": {
     "home_score": 111.9,
-    "away_score": 118.1
+    "away_score": 118.2
    },
    "win_probability": {
-    "home": 0.329,
-    "away": 0.671
+    "home": 0.3244,
+    "away": 0.6756
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Phoenix Suns ML"
    },
-   "data_warning": "Precious Achiuwa está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": 6.0,
-    "away": -6.0
+    "home": 7.0,
+    "away": -7.0
    },
-   "total_points": 230.0,
+   "total_points": 230.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -24.0,
-     12.0
+     11.0
     ],
     "total": [
      204.0,
      256.0
     ]
    },
-   "game_warnings": [
-    "Precious Achiuwa está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +6.0, Elo +5.5, equipo +6.5, cuatro factores +4.2.",
+     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +6.2, Elo +5.5, equipo +6.5, cuatro factores +4.2.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de PHX vale 7.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de PHX vale 8.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -874,7 +872,7 @@
     {
      "label": "Bajas de PHX",
      "favors": "home",
-     "detail": "Sin Mark Williams: PHX pierde 1.4 puntos.",
+     "detail": "Sin Mark Williams: PHX pierde 1.1 puntos.",
      "supports_pick": false
     }
    ]
