@@ -2,151 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-18T00:45:00.000602Z",
+ "generated_at": "2026-11-18T01:15:00.000692Z",
  "date_local": "2026-11-17",
  "games": [
-  {
-   "league_game_id": "401910003",
-   "espn_game_id": "401910003",
-   "starts_at": "2026-11-18T01:00Z",
-   "home": {
-    "name": "Minnesota Timberwolves",
-    "code": "MIN"
-   },
-   "away": {
-    "name": "Portland Trail Blazers",
-    "code": "POR"
-   },
-   "projection": {
-    "home_score": 114.4,
-    "away_score": 110.9
-   },
-   "win_probability": {
-    "home": 0.5954,
-    "away": 0.4046
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Minnesota Timberwolves ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -4.0,
-    "away": 4.0
-   },
-   "total_points": 225.3,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -14.0,
-     21.0
-    ],
-    "total": [
-     200.0,
-     251.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +3.3, Elo +3.4, equipo +3.7, cuatro factores +4.5.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MIN vale 1.5 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para MIN.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de MIN",
-     "favors": "away",
-     "detail": "Sin Jaylen Clark, Donte DiVincenzo, Anthony Edwards: MIN pierde 1.6 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
-  {
-   "league_game_id": "401910004",
-   "espn_game_id": "401910004",
-   "starts_at": "2026-11-18T01:00Z",
-   "home": {
-    "name": "San Antonio Spurs",
-    "code": "SA"
-   },
-   "away": {
-    "name": "Detroit Pistons",
-    "code": "DET"
-   },
-   "projection": {
-    "home_score": 112.9,
-    "away_score": 105.5
-   },
-   "win_probability": {
-    "home": 0.7016,
-    "away": 0.2984
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "San Antonio Spurs ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -8.0,
-    "away": 8.0
-   },
-   "total_points": 218.4,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -11.0,
-     25.0
-    ],
-    "total": [
-     193.0,
-     244.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +7.9, Elo +6.7, equipo +6.5, cuatro factores +4.5.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 6.1 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para SA.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de DET",
-     "favors": "home",
-     "detail": "Sin Jalen Duren, Ronald Holland II, Isaiah Joe: DET pierde 2.1 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401910006",
    "espn_game_id": "401910006",
@@ -357,6 +215,150 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para TOR.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401910003",
+   "espn_game_id": "401910003",
+   "starts_at": "2026-11-18T01:00Z",
+   "home": {
+    "name": "Minnesota Timberwolves",
+    "code": "MIN"
+   },
+   "away": {
+    "name": "Portland Trail Blazers",
+    "code": "POR"
+   },
+   "projection": {
+    "home_score": 114.7,
+    "away_score": 111.5
+   },
+   "win_probability": {
+    "home": 0.5879,
+    "away": 0.4121
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Minnesota Timberwolves ML"
+   },
+   "data_warning": "Deni Avdija está en duda (questionable)",
+   "spread": {
+    "home": -4.0,
+    "away": 4.0
+   },
+   "total_points": 226.2,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -15.0,
+     21.0
+    ],
+    "total": [
+     201.0,
+     252.0
+    ]
+   },
+   "game_warnings": [
+    "Deni Avdija está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +3.0, Elo +3.4, equipo +3.7, cuatro factores +4.5.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de MIN vale 1.1 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para MIN.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de MIN",
+     "favors": "away",
+     "detail": "Sin Jaylen Clark, Donte DiVincenzo, Anthony Edwards: MIN pierde 2.0 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401910004",
+   "espn_game_id": "401910004",
+   "starts_at": "2026-11-18T01:00Z",
+   "home": {
+    "name": "San Antonio Spurs",
+    "code": "SA"
+   },
+   "away": {
+    "name": "Detroit Pistons",
+    "code": "DET"
+   },
+   "projection": {
+    "home_score": 112.9,
+    "away_score": 105.5
+   },
+   "win_probability": {
+    "home": 0.7016,
+    "away": 0.2984
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "San Antonio Spurs ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -8.0,
+    "away": 8.0
+   },
+   "total_points": 218.4,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -11.0,
+     25.0
+    ],
+    "total": [
+     193.0,
+     244.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +7.9, Elo +6.7, equipo +6.5, cuatro factores +4.5.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 6.1 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para SA.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de DET",
+     "favors": "home",
+     "detail": "Sin Jalen Duren, Ronald Holland II, Isaiah Joe: DET pierde 2.1 puntos.",
+     "supports_pick": true
     }
    ]
   }
