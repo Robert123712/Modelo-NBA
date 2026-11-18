@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-18T23:15:00.000498Z",
+ "generated_at": "2026-11-18T23:45:00.000574Z",
  "date_local": "2026-11-18",
  "games": [
   {
@@ -18,22 +18,22 @@
     "code": "MEM"
    },
    "projection": {
-    "home_score": 121.5,
-    "away_score": 115.5
+    "home_score": 121.7,
+    "away_score": 115.3
    },
    "win_probability": {
-    "home": 0.6697,
-    "away": 0.3303
+    "home": 0.6804,
+    "away": 0.3196
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Cleveland Cavaliers ML"
    },
-   "data_warning": "Sam Merrill está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": -6.0,
-    "away": 6.0
+    "home": -7.0,
+    "away": 7.0
    },
    "total_points": 237.0,
    "season": 2027,
@@ -47,22 +47,19 @@
      263.0
     ]
    },
-   "game_warnings": [
-    "Sam Merrill está en duda (questionable)",
-    "Peyton Watson está en duda (doubtful)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +7.0, Elo +5.9, equipo +3.6, cuatro factores +6.1.",
+     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +7.6, Elo +5.9, equipo +3.6, cuatro factores +6.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de CLE vale 5.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de CLE vale 5.8 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -74,7 +71,7 @@
     {
      "label": "Bajas de MEM",
      "favors": "home",
-     "detail": "Sin GG Jackson, Ty Jerome, Scotty Pippen Jr.: MEM pierde 5.1 puntos.",
+     "detail": "Sin GG Jackson, Ty Jerome, Scotty Pippen Jr.: MEM pierde 5.7 puntos.",
      "supports_pick": true
     }
    ]
@@ -92,24 +89,24 @@
     "code": "HOU"
    },
    "projection": {
-    "home_score": 108.3,
-    "away_score": 117.2
+    "home_score": 108.1,
+    "away_score": 117.0
    },
    "win_probability": {
-    "home": 0.2588,
-    "away": 0.7412
+    "home": 0.2593,
+    "away": 0.7407
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Houston Rockets ML"
    },
-   "data_warning": "Amen Thompson está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": 9.0,
     "away": -9.0
    },
-   "total_points": 225.5,
+   "total_points": 225.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -121,15 +118,13 @@
      251.0
     ]
    },
-   "game_warnings": [
-    "Amen Thompson está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +9.3, Elo +7.1, equipo +7.8, cuatro factores +7.1.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +9.2, Elo +7.1, equipo +7.8, cuatro factores +7.1.",
      "supports_pick": true
     },
     {
@@ -230,45 +225,48 @@
     "code": "PHI"
    },
    "projection": {
-    "home_score": 110.5,
-    "away_score": 108.8
+    "home_score": 111.2,
+    "away_score": 107.8
    },
    "win_probability": {
-    "home": 0.546,
-    "away": 0.454
+    "home": 0.5955,
+    "away": 0.4045
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Orlando Magic ML"
    },
-   "data_warning": "Tyrese Maxey está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": -2.0,
-    "away": 2.0
+    "home": -4.0,
+    "away": 4.0
    },
-   "total_points": 219.3,
+   "total_points": 219.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -16.0,
-     19.0
+     -15.0,
+     21.0
     ],
     "total": [
-     194.0,
+     193.0,
      245.0
     ]
    },
-   "game_warnings": [
-    "Tyrese Maxey está en duda (questionable)",
-    "Dean Wade está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +2.2, Elo +0.0, equipo +0.3, cuatro factores +1.7.",
+     "detail": "4 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +4.7, Elo +0.0, equipo +0.3, cuatro factores +1.7.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de ORL vale 2.9 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -280,7 +278,7 @@
     {
      "label": "Bajas de PHI",
      "favors": "home",
-     "detail": "Sin Dominick Barlow, Adem Bona, Jaylen Brown: PHI pierde 1.3 puntos.",
+     "detail": "Sin Dominick Barlow, Adem Bona, Jaylen Brown: PHI pierde 3.7 puntos.",
      "supports_pick": true
     }
    ]
@@ -599,12 +597,12 @@
     "code": "GS"
    },
    "projection": {
-    "home_score": 113.1,
-    "away_score": 112.0
+    "home_score": 113.2,
+    "away_score": 111.5
    },
    "win_probability": {
-    "home": 0.5335,
-    "away": 0.4665
+    "home": 0.5498,
+    "away": 0.4502
    },
    "pick": {
     "market": "moneyline",
@@ -616,12 +614,12 @@
     "home": -2.0,
     "away": 2.0
    },
-   "total_points": 225.1,
+   "total_points": 224.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -17.0,
-     19.0
+     -16.0,
+     20.0
     ],
     "total": [
      199.0,
@@ -631,22 +629,20 @@
    "game_warnings": [
     "Santi Aldama está en duda (probable)",
     "Max Christie está en duda (questionable)",
-    "Walter Clayton Jr. está en duda (probable)",
-    "Draymond Green está en duda (questionable)",
-    "Al Horford está en duda (questionable)"
+    "Walter Clayton Jr. está en duda (probable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "3 de 4 modelos ven ganar a GS. Margen de GS: jugadores -2.5, Elo +0.3, equipo +1.9, cuatro factores +0.0.",
+     "detail": "3 de 4 modelos ven ganar a GS. Margen de GS: jugadores -3.3, Elo +0.3, equipo +1.9, cuatro factores +0.0.",
      "supports_pick": false
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DAL vale 0.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DAL vale 1.6 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -658,7 +654,7 @@
     {
      "label": "Bajas de GS",
      "favors": "home",
-     "detail": "Sin Jimmy Butler III, Stephen Curry, Moses Moody: GS pierde 6.2 puntos.",
+     "detail": "Sin Jimmy Butler III, Stephen Curry, Al Horford: GS pierde 7.0 puntos.",
      "supports_pick": true
     }
    ]
