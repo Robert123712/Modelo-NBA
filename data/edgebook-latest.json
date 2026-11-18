@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-18T21:45:00.000542Z",
+ "generated_at": "2026-11-18T22:45:00.000876Z",
  "date_local": "2026-11-18",
  "games": [
   {
@@ -92,12 +92,12 @@
     "code": "HOU"
    },
    "projection": {
-    "home_score": 108.3,
-    "away_score": 117.0
+    "home_score": 108.2,
+    "away_score": 117.2
    },
    "win_probability": {
-    "home": 0.2658,
-    "away": 0.7342
+    "home": 0.2579,
+    "away": 0.7421
    },
    "pick": {
     "market": "moneyline",
@@ -113,7 +113,7 @@
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -26.0,
+     -27.0,
      9.0
     ],
     "total": [
@@ -123,7 +123,6 @@
    },
    "game_warnings": [
     "T.J. McConnell está en duda (probable)",
-    "Andrew Nembhard está en duda (questionable)",
     "Amen Thompson está en duda (questionable)"
    ],
    "warnings": [],
@@ -131,19 +130,19 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +8.8, Elo +7.1, equipo +7.8, cuatro factores +7.1.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +9.3, Elo +7.1, equipo +7.8, cuatro factores +7.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 10.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 11.1 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de IND",
      "favors": "away",
-     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Ben Sheppard: IND pierde 4.3 puntos.",
+     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Andrew Nembhard: IND pierde 4.8 puntos.",
      "supports_pick": true
     },
     {
