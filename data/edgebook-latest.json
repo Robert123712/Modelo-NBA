@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-17T23:15:00.000557Z",
+ "generated_at": "2026-11-18T00:45:00.000602Z",
  "date_local": "2026-11-17",
  "games": [
-  {
-   "league_game_id": "401910002",
-   "espn_game_id": "401910002",
-   "starts_at": "2026-11-18T00:30Z",
-   "home": {
-    "name": "Toronto Raptors",
-    "code": "TOR"
-   },
-   "away": {
-    "name": "New York Knicks",
-    "code": "NY"
-   },
-   "projection": {
-    "home_score": 104.9,
-    "away_score": 108.6
-   },
-   "win_probability": {
-    "home": 0.3942,
-    "away": 0.6058
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "New York Knicks ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 4.0,
-    "away": -4.0
-   },
-   "total_points": 213.5,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -22.0,
-     14.0
-    ],
-    "total": [
-     188.0,
-     239.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +3.9, Elo +4.6, equipo +3.1, cuatro factores +3.3.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 5.7 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de TOR",
-     "favors": "away",
-     "detail": "Sin Kawhi Leonard, Malachi Smith: TOR pierde 2.5 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para TOR.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401910003",
    "espn_game_id": "401910003",
@@ -89,50 +18,48 @@
     "code": "POR"
    },
    "projection": {
-    "home_score": 114.7,
-    "away_score": 111.5
+    "home_score": 114.4,
+    "away_score": 110.9
    },
    "win_probability": {
-    "home": 0.5879,
-    "away": 0.4121
+    "home": 0.5954,
+    "away": 0.4046
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Minnesota Timberwolves ML"
    },
-   "data_warning": "Deni Avdija está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -4.0,
     "away": 4.0
    },
-   "total_points": 226.2,
+   "total_points": 225.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -15.0,
+     -14.0,
      21.0
     ],
     "total": [
-     201.0,
-     252.0
+     200.0,
+     251.0
     ]
    },
-   "game_warnings": [
-    "Deni Avdija está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +3.0, Elo +3.4, equipo +3.7, cuatro factores +4.5.",
+     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +3.3, Elo +3.4, equipo +3.7, cuatro factores +4.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MIN vale 1.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MIN vale 1.5 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -144,7 +71,7 @@
     {
      "label": "Bajas de MIN",
      "favors": "away",
-     "detail": "Sin Jaylen Clark, Donte DiVincenzo, Anthony Edwards: MIN pierde 2.0 puntos.",
+     "detail": "Sin Jaylen Clark, Donte DiVincenzo, Anthony Edwards: MIN pierde 1.6 puntos.",
      "supports_pick": false
     }
    ]
@@ -359,6 +286,77 @@
      "favors": "home",
      "detail": "Sin Kon Knueppel, Dennis Schroder: CHA pierde 1.2 puntos.",
      "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401910002",
+   "espn_game_id": "401910002",
+   "starts_at": "2026-11-18T00:30Z",
+   "home": {
+    "name": "Toronto Raptors",
+    "code": "TOR"
+   },
+   "away": {
+    "name": "New York Knicks",
+    "code": "NY"
+   },
+   "projection": {
+    "home_score": 104.9,
+    "away_score": 108.6
+   },
+   "win_probability": {
+    "home": 0.3942,
+    "away": 0.6058
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "New York Knicks ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 4.0,
+    "away": -4.0
+   },
+   "total_points": 213.5,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -22.0,
+     14.0
+    ],
+    "total": [
+     188.0,
+     239.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +3.9, Elo +4.6, equipo +3.1, cuatro factores +3.3.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 5.7 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de TOR",
+     "favors": "away",
+     "detail": "Sin Kawhi Leonard, Malachi Smith: TOR pierde 2.5 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para TOR.",
+     "supports_pick": false
     }
    ]
   }
