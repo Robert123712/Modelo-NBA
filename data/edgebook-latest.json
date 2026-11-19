@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-19T05:45:00.000519Z",
+ "generated_at": "2026-11-19T15:15:01.513571Z",
  "date_local": "2026-11-19",
  "games": [
   {
@@ -18,24 +18,24 @@
     "code": "GS"
    },
    "projection": {
-    "home_score": 116.3,
+    "home_score": 116.6,
     "away_score": 112.5
    },
    "win_probability": {
-    "home": 0.6052,
-    "away": 0.3948
+    "home": 0.6135,
+    "away": 0.3865
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Memphis Grizzlies ML"
    },
-   "data_warning": null,
+   "data_warning": "Isaiah Stewart está en duda (day-to-day)",
    "spread": {
     "home": -4.0,
     "away": 4.0
    },
-   "total_points": 228.8,
+   "total_points": 229.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -43,23 +43,27 @@
      22.0
     ],
     "total": [
-     203.0,
+     204.0,
      255.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Isaiah Stewart está en duda (day-to-day)",
+    "Draymond Green está en duda (day-to-day)",
+    "Al Horford está en duda (day-to-day)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +4.7, Elo +2.4, equipo +1.7, cuatro factores -0.2.",
+     "detail": "3 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +5.1, Elo +2.4, equipo +1.7, cuatro factores -0.2.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MEM vale 3.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MEM vale 3.4 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -71,7 +75,7 @@
     {
      "label": "Bajas de GS",
      "favors": "home",
-     "detail": "Sin Jimmy Butler III, Stephen Curry, Al Horford: GS pierde 4.1 puntos.",
+     "detail": "Sin Jimmy Butler III, Stephen Curry, Moses Moody: GS pierde 4.4 puntos.",
      "supports_pick": true
     }
    ]
@@ -101,7 +105,7 @@
     "side": "away",
     "label": "Portland Trail Blazers ML"
    },
-   "data_warning": "Deni Avdija está en duda (questionable)",
+   "data_warning": "Ryan Rollins está en duda (day-to-day)",
    "spread": {
     "home": 11.0,
     "away": -11.0
@@ -119,6 +123,7 @@
     ]
    },
    "game_warnings": [
+    "Ryan Rollins está en duda (day-to-day)",
     "Deni Avdija está en duda (questionable)",
     "Toumani Camara está en duda (questionable)"
    ],
@@ -282,7 +287,5 @@
   }
  ],
  "skipped_without_id": 0,
- "warnings": [
-  "Sin alineaciones de la NBA (HTTPError); titular del partido anterior"
- ]
+ "warnings": []
 }
