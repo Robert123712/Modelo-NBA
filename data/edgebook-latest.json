@@ -2,151 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-18T23:45:00.000574Z",
+ "generated_at": "2026-11-19T00:15:00.000538Z",
  "date_local": "2026-11-18",
  "games": [
-  {
-   "league_game_id": "401910007",
-   "espn_game_id": "401910007",
-   "starts_at": "2026-11-19T00:00Z",
-   "home": {
-    "name": "Cleveland Cavaliers",
-    "code": "CLE"
-   },
-   "away": {
-    "name": "Memphis Grizzlies",
-    "code": "MEM"
-   },
-   "projection": {
-    "home_score": 121.7,
-    "away_score": 115.3
-   },
-   "win_probability": {
-    "home": 0.6804,
-    "away": 0.3196
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Cleveland Cavaliers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -7.0,
-    "away": 7.0
-   },
-   "total_points": 237.0,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -12.0,
-     24.0
-    ],
-    "total": [
-     211.0,
-     263.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +7.6, Elo +5.9, equipo +3.6, cuatro factores +6.1.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de CLE vale 5.8 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para CLE.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de MEM",
-     "favors": "home",
-     "detail": "Sin GG Jackson, Ty Jerome, Scotty Pippen Jr.: MEM pierde 5.7 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
-  {
-   "league_game_id": "401910008",
-   "espn_game_id": "401910008",
-   "starts_at": "2026-11-19T00:00Z",
-   "home": {
-    "name": "Indiana Pacers",
-    "code": "IND"
-   },
-   "away": {
-    "name": "Houston Rockets",
-    "code": "HOU"
-   },
-   "projection": {
-    "home_score": 108.1,
-    "away_score": 117.0
-   },
-   "win_probability": {
-    "home": 0.2593,
-    "away": 0.7407
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Houston Rockets ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 9.0,
-    "away": -9.0
-   },
-   "total_points": 225.1,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -27.0,
-     9.0
-    ],
-    "total": [
-     200.0,
-     251.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +9.2, Elo +7.1, equipo +7.8, cuatro factores +7.1.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 11.0 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de IND",
-     "favors": "away",
-     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Andrew Nembhard: IND pierde 4.7 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para IND.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401910009",
    "espn_game_id": "401910009",
@@ -208,77 +66,6 @@
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para MIA.",
-     "supports_pick": true
-    }
-   ]
-  },
-  {
-   "league_game_id": "401910010",
-   "espn_game_id": "401910010",
-   "starts_at": "2026-11-19T00:00Z",
-   "home": {
-    "name": "Orlando Magic",
-    "code": "ORL"
-   },
-   "away": {
-    "name": "Philadelphia 76ers",
-    "code": "PHI"
-   },
-   "projection": {
-    "home_score": 111.2,
-    "away_score": 107.8
-   },
-   "win_probability": {
-    "home": 0.5955,
-    "away": 0.4045
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Orlando Magic ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -4.0,
-    "away": 4.0
-   },
-   "total_points": 219.0,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -15.0,
-     21.0
-    ],
-    "total": [
-     193.0,
-     245.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +4.7, Elo +0.0, equipo +0.3, cuatro factores +1.7.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de ORL vale 2.9 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para ORL.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de PHI",
-     "favors": "home",
-     "detail": "Sin Dominick Barlow, Adem Bona, Jaylen Brown: PHI pierde 3.7 puntos.",
      "supports_pick": true
     }
    ]
@@ -524,50 +311,48 @@
     "code": "ATL"
    },
    "projection": {
-    "home_score": 117.2,
-    "away_score": 109.8
+    "home_score": 117.7,
+    "away_score": 109.0
    },
    "win_probability": {
-    "home": 0.7008,
-    "away": 0.2992
+    "home": 0.735,
+    "away": 0.265
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Oklahoma City Thunder ML"
    },
-   "data_warning": "Jaylin Williams está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": -7.0,
-    "away": 7.0
+    "home": -9.0,
+    "away": 9.0
    },
-   "total_points": 226.9,
+   "total_points": 226.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -10.0,
-     25.0
+     -9.0,
+     26.0
     ],
     "total": [
-     202.0,
+     201.0,
      253.0
     ]
    },
-   "game_warnings": [
-    "Jaylin Williams está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +6.7, Elo +6.5, equipo +8.9, cuatro factores +7.7.",
+     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +8.7, Elo +6.5, equipo +8.9, cuatro factores +7.7.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de OKC vale 4.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de OKC vale 6.8 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -579,7 +364,7 @@
     {
      "label": "Bajas de OKC",
      "favors": "away",
-     "detail": "Sin Chet Holmgren, Cason Wallace, Jalen Williams: OKC pierde 5.1 puntos.",
+     "detail": "Sin Chet Holmgren, Cason Wallace, Jalen Williams: OKC pierde 3.2 puntos.",
      "supports_pick": false
     }
    ]
@@ -597,52 +382,48 @@
     "code": "GS"
    },
    "projection": {
-    "home_score": 113.2,
-    "away_score": 111.5
+    "home_score": 112.9,
+    "away_score": 111.4
    },
    "win_probability": {
-    "home": 0.5498,
-    "away": 0.4502
+    "home": 0.545,
+    "away": 0.455
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Dallas Mavericks ML"
    },
-   "data_warning": "Santi Aldama está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": -2.0,
     "away": 2.0
    },
-   "total_points": 224.8,
+   "total_points": 224.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -16.0,
-     20.0
+     19.0
     ],
     "total": [
      199.0,
-     251.0
+     250.0
     ]
    },
-   "game_warnings": [
-    "Santi Aldama está en duda (probable)",
-    "Max Christie está en duda (questionable)",
-    "Walter Clayton Jr. está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "3 de 4 modelos ven ganar a GS. Margen de GS: jugadores -3.3, Elo +0.3, equipo +1.9, cuatro factores +0.0.",
+     "detail": "3 de 4 modelos ven ganar a GS. Margen de GS: jugadores -3.1, Elo +0.3, equipo +1.9, cuatro factores +0.0.",
      "supports_pick": false
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DAL vale 1.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DAL vale 1.3 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -654,7 +435,7 @@
     {
      "label": "Bajas de GS",
      "favors": "home",
-     "detail": "Sin Jimmy Butler III, Stephen Curry, Al Horford: GS pierde 7.0 puntos.",
+     "detail": "Sin Jimmy Butler III, Stephen Curry, Al Horford: GS pierde 6.8 puntos.",
      "supports_pick": true
     }
    ]
@@ -865,6 +646,221 @@
      "favors": "home",
      "detail": "Sin Mark Williams: PHX pierde 1.1 puntos.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401910007",
+   "espn_game_id": "401910007",
+   "starts_at": "2026-11-19T00:00Z",
+   "home": {
+    "name": "Cleveland Cavaliers",
+    "code": "CLE"
+   },
+   "away": {
+    "name": "Memphis Grizzlies",
+    "code": "MEM"
+   },
+   "projection": {
+    "home_score": 121.5,
+    "away_score": 115.5
+   },
+   "win_probability": {
+    "home": 0.6697,
+    "away": 0.3303
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Cleveland Cavaliers ML"
+   },
+   "data_warning": "Sam Merrill está en duda (questionable)",
+   "spread": {
+    "home": -6.0,
+    "away": 6.0
+   },
+   "total_points": 237.0,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -12.0,
+     24.0
+    ],
+    "total": [
+     211.0,
+     263.0
+    ]
+   },
+   "game_warnings": [
+    "Sam Merrill está en duda (questionable)",
+    "Peyton Watson está en duda (doubtful)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +7.0, Elo +5.9, equipo +3.6, cuatro factores +6.1.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de CLE vale 5.2 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para CLE.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de MEM",
+     "favors": "home",
+     "detail": "Sin GG Jackson, Ty Jerome, Scotty Pippen Jr.: MEM pierde 5.1 puntos.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401910008",
+   "espn_game_id": "401910008",
+   "starts_at": "2026-11-19T00:00Z",
+   "home": {
+    "name": "Indiana Pacers",
+    "code": "IND"
+   },
+   "away": {
+    "name": "Houston Rockets",
+    "code": "HOU"
+   },
+   "projection": {
+    "home_score": 108.2,
+    "away_score": 117.2
+   },
+   "win_probability": {
+    "home": 0.2579,
+    "away": 0.7421
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Houston Rockets ML"
+   },
+   "data_warning": "T.J. McConnell está en duda (probable)",
+   "spread": {
+    "home": 9.0,
+    "away": -9.0
+   },
+   "total_points": 225.3,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -27.0,
+     9.0
+    ],
+    "total": [
+     200.0,
+     251.0
+    ]
+   },
+   "game_warnings": [
+    "T.J. McConnell está en duda (probable)",
+    "Amen Thompson está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +9.3, Elo +7.1, equipo +7.8, cuatro factores +7.1.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 11.1 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de IND",
+     "favors": "away",
+     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Andrew Nembhard: IND pierde 4.8 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para IND.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401910010",
+   "espn_game_id": "401910010",
+   "starts_at": "2026-11-19T00:00Z",
+   "home": {
+    "name": "Orlando Magic",
+    "code": "ORL"
+   },
+   "away": {
+    "name": "Philadelphia 76ers",
+    "code": "PHI"
+   },
+   "projection": {
+    "home_score": 110.4,
+    "away_score": 109.2
+   },
+   "win_probability": {
+    "home": 0.5335,
+    "away": 0.4665
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Orlando Magic ML"
+   },
+   "data_warning": "Dean Wade está en duda (questionable)",
+   "spread": {
+    "home": -2.0,
+    "away": 2.0
+   },
+   "total_points": 219.6,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -17.0,
+     19.0
+    ],
+    "total": [
+     194.0,
+     245.0
+    ]
+   },
+   "game_warnings": [
+    "Dean Wade está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +1.6, Elo +0.0, equipo +0.3, cuatro factores +1.7.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para ORL.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de PHI",
+     "favors": "home",
+     "detail": "Sin Dominick Barlow, Adem Bona, Jaylen Brown: PHI pierde 0.6 puntos.",
+     "supports_pick": true
     }
    ]
   }
