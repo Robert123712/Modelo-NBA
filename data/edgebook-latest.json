@@ -2,216 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-19T02:15:00.000522Z",
+ "generated_at": "2026-11-19T03:15:00.000553Z",
  "date_local": "2026-11-18",
  "games": [
-  {
-   "league_game_id": "401910015",
-   "espn_game_id": "401910015",
-   "starts_at": "2026-11-19T02:30Z",
-   "home": {
-    "name": "Denver Nuggets",
-    "code": "DEN"
-   },
-   "away": {
-    "name": "Boston Celtics",
-    "code": "BOS"
-   },
-   "projection": {
-    "home_score": 109.2,
-    "away_score": 111.2
-   },
-   "win_probability": {
-    "home": 0.4425,
-    "away": 0.5575
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Boston Celtics ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 3.0,
-    "away": -3.0
-   },
-   "total_points": 220.4,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -20.0,
-     16.0
-    ],
-    "total": [
-     194.0,
-     247.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +2.2, Elo +1.4, equipo +3.1, cuatro factores +3.0.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 3.9 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para DEN.",
-     "supports_pick": false
-    }
-   ]
-  },
-  {
-   "league_game_id": "401910017",
-   "espn_game_id": "401910017",
-   "starts_at": "2026-11-19T03:00Z",
-   "home": {
-    "name": "Los Angeles Lakers",
-    "code": "LAL"
-   },
-   "away": {
-    "name": "Utah Jazz",
-    "code": "UTAH"
-   },
-   "projection": {
-    "home_score": 122.3,
-    "away_score": 109.7
-   },
-   "win_probability": {
-    "home": 0.8186,
-    "away": 0.1814
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Los Angeles Lakers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -13.0,
-    "away": 13.0
-   },
-   "total_points": 231.9,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -6.0,
-     31.0
-    ],
-    "total": [
-     206.0,
-     258.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +13.2, Elo +14.0, equipo +11.5, cuatro factores +11.6.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de LAL vale 11.4 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para LAL.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de UTAH",
-     "favors": "home",
-     "detail": "Sin Jaren Jackson Jr., Lauri Markkanen, Jusuf Nurkic: UTAH pierde 3.1 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
-  {
-   "league_game_id": "401910018",
-   "espn_game_id": "401910018",
-   "starts_at": "2026-11-19T03:00Z",
-   "home": {
-    "name": "Sacramento Kings",
-    "code": "SAC"
-   },
-   "away": {
-    "name": "Phoenix Suns",
-    "code": "PHX"
-   },
-   "projection": {
-    "home_score": 111.8,
-    "away_score": 118.5
-   },
-   "win_probability": {
-    "home": 0.316,
-    "away": 0.684
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Phoenix Suns ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 7.0,
-    "away": -7.0
-   },
-   "total_points": 230.4,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -25.0,
-     11.0
-    ],
-    "total": [
-     205.0,
-     256.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +6.7, Elo +5.5, equipo +6.5, cuatro factores +4.2.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de PHX vale 8.5 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para SAC.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de PHX",
-     "favors": "home",
-     "detail": "Sin Mark Williams: PHX pierde 0.6 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401910007",
    "espn_game_id": "401910007",
@@ -865,6 +658,215 @@
      "favors": "home",
      "detail": "Sin Jimmy Butler III, Stephen Curry, Al Horford: GS pierde 7.0 puntos.",
      "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401910015",
+   "espn_game_id": "401910015",
+   "starts_at": "2026-11-19T02:30Z",
+   "home": {
+    "name": "Denver Nuggets",
+    "code": "DEN"
+   },
+   "away": {
+    "name": "Boston Celtics",
+    "code": "BOS"
+   },
+   "projection": {
+    "home_score": 109.2,
+    "away_score": 111.2
+   },
+   "win_probability": {
+    "home": 0.4425,
+    "away": 0.5575
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Boston Celtics ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 3.0,
+    "away": -3.0
+   },
+   "total_points": 220.4,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -20.0,
+     16.0
+    ],
+    "total": [
+     194.0,
+     247.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +2.2, Elo +1.4, equipo +3.1, cuatro factores +3.0.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 3.9 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para DEN.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401910017",
+   "espn_game_id": "401910017",
+   "starts_at": "2026-11-19T03:00Z",
+   "home": {
+    "name": "Los Angeles Lakers",
+    "code": "LAL"
+   },
+   "away": {
+    "name": "Utah Jazz",
+    "code": "UTAH"
+   },
+   "projection": {
+    "home_score": 122.5,
+    "away_score": 109.8
+   },
+   "win_probability": {
+    "home": 0.8202,
+    "away": 0.1798
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Los Angeles Lakers ML"
+   },
+   "data_warning": "Jaxson Hayes está en duda (questionable)",
+   "spread": {
+    "home": -13.0,
+    "away": 13.0
+   },
+   "total_points": 232.3,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -6.0,
+     31.0
+    ],
+    "total": [
+     207.0,
+     258.0
+    ]
+   },
+   "game_warnings": [
+    "Jaxson Hayes está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +13.4, Elo +14.0, equipo +11.5, cuatro factores +11.6.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de LAL vale 11.6 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para LAL.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de UTAH",
+     "favors": "home",
+     "detail": "Sin Jaren Jackson Jr., Lauri Markkanen, Jusuf Nurkic: UTAH pierde 3.3 puntos.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401910018",
+   "espn_game_id": "401910018",
+   "starts_at": "2026-11-19T03:00Z",
+   "home": {
+    "name": "Sacramento Kings",
+    "code": "SAC"
+   },
+   "away": {
+    "name": "Phoenix Suns",
+    "code": "PHX"
+   },
+   "projection": {
+    "home_score": 111.9,
+    "away_score": 118.2
+   },
+   "win_probability": {
+    "home": 0.3244,
+    "away": 0.6756
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Phoenix Suns ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 7.0,
+    "away": -7.0
+   },
+   "total_points": 230.1,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -24.0,
+     11.0
+    ],
+    "total": [
+     204.0,
+     256.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +6.2, Elo +5.5, equipo +6.5, cuatro factores +4.2.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de PHX vale 8.0 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para SAC.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de PHX",
+     "favors": "home",
+     "detail": "Sin Mark Williams: PHX pierde 1.1 puntos.",
+     "supports_pick": false
     }
    ]
   }
