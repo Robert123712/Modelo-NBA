@@ -2,222 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-19T00:15:00.000538Z",
+ "generated_at": "2026-11-19T00:45:00.000576Z",
  "date_local": "2026-11-18",
  "games": [
-  {
-   "league_game_id": "401910009",
-   "espn_game_id": "401910009",
-   "starts_at": "2026-11-19T00:00Z",
-   "home": {
-    "name": "Miami Heat",
-    "code": "MIA"
-   },
-   "away": {
-    "name": "Milwaukee Bucks",
-    "code": "MIL"
-   },
-   "projection": {
-    "home_score": 122.7,
-    "away_score": 112.1
-   },
-   "win_probability": {
-    "home": 0.7762,
-    "away": 0.2238
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Miami Heat ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -11.0,
-    "away": 11.0
-   },
-   "total_points": 234.8,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -8.0,
-     28.0
-    ],
-    "total": [
-     209.0,
-     261.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIA. Margen de MIA: jugadores +10.0, Elo +11.5, equipo +11.2, cuatro factores +11.6.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MIA vale 8.2 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para MIA.",
-     "supports_pick": true
-    }
-   ]
-  },
-  {
-   "league_game_id": "401910011",
-   "espn_game_id": "401910011",
-   "starts_at": "2026-11-19T00:30Z",
-   "home": {
-    "name": "Brooklyn Nets",
-    "code": "BKN"
-   },
-   "away": {
-    "name": "Chicago Bulls",
-    "code": "CHI"
-   },
-   "projection": {
-    "home_score": 118.1,
-    "away_score": 118.8
-   },
-   "win_probability": {
-    "home": 0.4797,
-    "away": 0.5203
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Chicago Bulls ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 1.0,
-    "away": -1.0
-   },
-   "total_points": 237.0,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -18.0,
-     17.0
-    ],
-    "total": [
-     211.0,
-     263.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a BKN. Margen de BKN: jugadores -1.1, Elo +0.3, equipo +0.4, cuatro factores +0.5.",
-     "supports_pick": false
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de CHI vale 3.0 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.9 puntos para BKN.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de CHI",
-     "favors": "home",
-     "detail": "Sin Caleb Wilson: CHI pierde 0.8 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
-  {
-   "league_game_id": "401910012",
-   "espn_game_id": "401910012",
-   "starts_at": "2026-11-19T00:30Z",
-   "home": {
-    "name": "Toronto Raptors",
-    "code": "TOR"
-   },
-   "away": {
-    "name": "Washington Wizards",
-    "code": "WSH"
-   },
-   "projection": {
-    "home_score": 115.0,
-    "away_score": 107.4
-   },
-   "win_probability": {
-    "home": 0.7073,
-    "away": 0.2927
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Toronto Raptors ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -8.0,
-    "away": 8.0
-   },
-   "total_points": 222.4,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -10.0,
-     25.0
-    ],
-    "total": [
-     197.0,
-     249.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +5.7, Elo +9.2, equipo +10.8, cuatro factores +11.5.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de TOR vale 6.0 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para TOR.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "away",
-     "detail": "TOR juega su segundo partido en dos noches: 2.1 puntos.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de TOR",
-     "favors": "away",
-     "detail": "Sin Scottie Barnes, RJ Barrett, Kawhi Leonard: TOR pierde 4.1 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401910013",
    "espn_game_id": "401910013",
@@ -231,57 +18,54 @@
     "code": "DET"
    },
    "projection": {
-    "home_score": 108.0,
-    "away_score": 116.9
+    "home_score": 107.7,
+    "away_score": 117.3
    },
    "win_probability": {
-    "home": 0.2633,
-    "away": 0.7367
+    "home": 0.2471,
+    "away": 0.7529
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Detroit Pistons ML"
    },
-   "data_warning": "Cade Cunningham está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": 9.0,
-    "away": -9.0
+    "home": 10.0,
+    "away": -10.0
    },
-   "total_points": 224.9,
+   "total_points": 225.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -27.0,
-     9.0
+     -28.0,
+     8.0
     ],
     "total": [
      199.0,
      251.0
     ]
    },
-   "game_warnings": [
-    "Cade Cunningham está en duda (questionable)",
-    "Isaiah Joe está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +8.6, Elo +8.2, equipo +9.0, cuatro factores +7.5.",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +9.7, Elo +8.2, equipo +9.0, cuatro factores +7.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DET vale 12.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DET vale 13.6 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de NO",
      "favors": "away",
-     "detail": "Sin Bennedict Mathurin, Bryce McGowens, Trey Murphy III: NO pierde 1.9 puntos.",
+     "detail": "Sin Bennedict Mathurin, Bryce McGowens, Trey Murphy III: NO pierde 3.0 puntos.",
      "supports_pick": true
     },
     {
@@ -798,6 +582,71 @@
    ]
   },
   {
+   "league_game_id": "401910009",
+   "espn_game_id": "401910009",
+   "starts_at": "2026-11-19T00:00Z",
+   "home": {
+    "name": "Miami Heat",
+    "code": "MIA"
+   },
+   "away": {
+    "name": "Milwaukee Bucks",
+    "code": "MIL"
+   },
+   "projection": {
+    "home_score": 122.7,
+    "away_score": 112.1
+   },
+   "win_probability": {
+    "home": 0.7762,
+    "away": 0.2238
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Miami Heat ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -11.0,
+    "away": 11.0
+   },
+   "total_points": 234.8,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -8.0,
+     28.0
+    ],
+    "total": [
+     209.0,
+     261.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a MIA. Margen de MIA: jugadores +10.0, Elo +11.5, equipo +11.2, cuatro factores +11.6.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de MIA vale 8.2 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para MIA.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
    "league_game_id": "401910010",
    "espn_game_id": "401910010",
    "starts_at": "2026-11-19T00:00Z",
@@ -861,6 +710,154 @@
      "favors": "home",
      "detail": "Sin Dominick Barlow, Adem Bona, Jaylen Brown: PHI pierde 0.6 puntos.",
      "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401910011",
+   "espn_game_id": "401910011",
+   "starts_at": "2026-11-19T00:30Z",
+   "home": {
+    "name": "Brooklyn Nets",
+    "code": "BKN"
+   },
+   "away": {
+    "name": "Chicago Bulls",
+    "code": "CHI"
+   },
+   "projection": {
+    "home_score": 118.1,
+    "away_score": 118.8
+   },
+   "win_probability": {
+    "home": 0.4797,
+    "away": 0.5203
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Chicago Bulls ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 1.0,
+    "away": -1.0
+   },
+   "total_points": 237.0,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -18.0,
+     17.0
+    ],
+    "total": [
+     211.0,
+     263.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "3 de 4 modelos ven ganar a BKN. Margen de BKN: jugadores -1.1, Elo +0.3, equipo +0.4, cuatro factores +0.5.",
+     "supports_pick": false
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de CHI vale 3.0 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.9 puntos para BKN.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de CHI",
+     "favors": "home",
+     "detail": "Sin Caleb Wilson: CHI pierde 0.8 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401910012",
+   "espn_game_id": "401910012",
+   "starts_at": "2026-11-19T00:30Z",
+   "home": {
+    "name": "Toronto Raptors",
+    "code": "TOR"
+   },
+   "away": {
+    "name": "Washington Wizards",
+    "code": "WSH"
+   },
+   "projection": {
+    "home_score": 115.0,
+    "away_score": 107.4
+   },
+   "win_probability": {
+    "home": 0.7073,
+    "away": 0.2927
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Toronto Raptors ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -8.0,
+    "away": 8.0
+   },
+   "total_points": 222.4,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -10.0,
+     25.0
+    ],
+    "total": [
+     197.0,
+     249.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a TOR. Margen de TOR: jugadores +5.7, Elo +9.2, equipo +10.8, cuatro factores +11.5.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de TOR vale 6.0 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para TOR.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "away",
+     "detail": "TOR juega su segundo partido en dos noches: 2.1 puntos.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de TOR",
+     "favors": "away",
+     "detail": "Sin Scottie Barnes, RJ Barrett, Kawhi Leonard: TOR pierde 4.1 puntos.",
+     "supports_pick": false
     }
    ]
   }
