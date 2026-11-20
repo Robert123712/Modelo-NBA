@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-20T15:15:28.741866Z",
+ "generated_at": "2026-11-20T17:45:00.000521Z",
  "date_local": "2026-11-20",
  "games": [
   {
@@ -229,12 +229,12 @@
     "code": "TOR"
    },
    "projection": {
-    "home_score": 112.0,
+    "home_score": 111.9,
     "away_score": 103.9
    },
    "win_probability": {
-    "home": 0.7175,
-    "away": 0.2825
+    "home": 0.7173,
+    "away": 0.2827
    },
    "pick": {
     "market": "moneyline",
@@ -246,7 +246,7 @@
     "home": -8.0,
     "away": 8.0
    },
-   "total_points": 215.9,
+   "total_points": 215.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -259,7 +259,8 @@
     ]
    },
    "game_warnings": [
-    "Cade Cunningham está en duda (probable)"
+    "Cade Cunningham está en duda (probable)",
+    "Ronald Holland II está en duda (doubtful)"
    ],
    "warnings": [],
    "key_factors": [
