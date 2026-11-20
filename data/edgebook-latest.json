@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-20T21:45:00.000579Z",
+ "generated_at": "2026-11-20T22:45:00.000512Z",
  "date_local": "2026-11-20",
  "games": [
   {
@@ -18,50 +18,48 @@
     "code": "CHA"
    },
    "projection": {
-    "home_score": 111.4,
-    "away_score": 105.5
+    "home_score": 111.0,
+    "away_score": 105.3
    },
    "win_probability": {
-    "home": 0.6688,
-    "away": 0.3312
+    "home": 0.6631,
+    "away": 0.3369
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Atlanta Hawks ML"
    },
-   "data_warning": "Kingston Flemings está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -6.0,
     "away": 6.0
    },
-   "total_points": 216.9,
+   "total_points": 216.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -12.0,
-     24.0
+     23.0
     ],
     "total": [
      191.0,
-     243.0
+     242.1
     ]
    },
-   "game_warnings": [
-    "Kingston Flemings está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +6.1, Elo +5.4, equipo +5.5, cuatro factores +3.7.",
+     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +5.8, Elo +5.4, equipo +5.5, cuatro factores +3.7.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de ATL vale 4.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de ATL vale 4.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -73,7 +71,7 @@
     {
      "label": "Bajas de CHA",
      "favors": "home",
-     "detail": "Sin Grayson Allen, Kon Knueppel, Dennis Schroder: CHA pierde 4.2 puntos.",
+     "detail": "Sin Grayson Allen, Kon Knueppel, Dennis Schroder: CHA pierde 3.8 puntos.",
      "supports_pick": true
     }
    ]
