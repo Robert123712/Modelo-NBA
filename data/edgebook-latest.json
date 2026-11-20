@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-20T22:45:00.000512Z",
+ "generated_at": "2026-11-20T23:45:00.000555Z",
  "date_local": "2026-11-20",
  "games": [
   {
@@ -301,12 +301,12 @@
     "code": "WSH"
    },
    "projection": {
-    "home_score": 121.0,
-    "away_score": 114.7
+    "home_score": 119.5,
+    "away_score": 113.8
    },
    "win_probability": {
-    "home": 0.6733,
-    "away": 0.3267
+    "home": 0.6584,
+    "away": 0.3416
    },
    "pick": {
     "market": "moneyline",
@@ -318,16 +318,16 @@
     "home": -6.0,
     "away": 6.0
    },
-   "total_points": 235.7,
+   "total_points": 233.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -11.0,
+     -12.0,
      24.0
     ],
     "total": [
-     210.0,
-     262.0
+     207.0,
+     259.0
     ]
    },
    "game_warnings": [],
@@ -336,13 +336,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a CHI. Margen de CHI: jugadores +7.0, Elo +5.6, equipo +4.8, cuatro factores +5.5.",
+     "detail": "4 de 4 modelos ven ganar a CHI. Margen de CHI: jugadores +6.2, Elo +5.6, equipo +4.8, cuatro factores +5.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de CHI vale 5.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de CHI vale 4.4 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -354,7 +354,7 @@
     {
      "label": "Bajas de WSH",
      "favors": "home",
-     "detail": "Sin Reece Beekman, Justin Champagnie, Tristan Vukcevic: WSH pierde 3.3 puntos.",
+     "detail": "Sin Reece Beekman, Justin Champagnie, Tristan Vukcevic: WSH pierde 2.5 puntos.",
      "supports_pick": true
     }
    ]
@@ -384,7 +384,7 @@
     "side": "home",
     "label": "Oklahoma City Thunder ML"
    },
-   "data_warning": "Alex Caruso está en duda (questionable)",
+   "data_warning": "Trey Murphy III está en duda (questionable)",
    "spread": {
     "home": -12.0,
     "away": 12.0
@@ -402,7 +402,6 @@
     ]
    },
    "game_warnings": [
-    "Alex Caruso está en duda (questionable)",
     "Trey Murphy III está en duda (questionable)"
    ],
    "warnings": [],
@@ -428,7 +427,7 @@
     {
      "label": "Bajas de OKC",
      "favors": "away",
-     "detail": "Sin Chet Holmgren, Nikola Topic, Cason Wallace: OKC pierde 3.6 puntos.",
+     "detail": "Sin Alex Caruso, Chet Holmgren, Nikola Topic: OKC pierde 3.6 puntos.",
      "supports_pick": false
     }
    ]
