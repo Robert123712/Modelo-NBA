@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-20T00:45:00.000540Z",
+ "generated_at": "2026-11-20T01:15:00.000538Z",
  "date_local": "2026-11-19",
  "games": [
   {
@@ -18,19 +18,19 @@
     "code": "GS"
    },
    "projection": {
-    "home_score": 116.0,
-    "away_score": 113.7
+    "home_score": 115.9,
+    "away_score": 113.9
    },
    "win_probability": {
-    "home": 0.5652,
-    "away": 0.4348
+    "home": 0.5584,
+    "away": 0.4416
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Memphis Grizzlies ML"
    },
-   "data_warning": null,
+   "data_warning": "Isaiah Stewart está en duda (day-to-day)",
    "spread": {
     "home": -3.0,
     "away": 3.0
@@ -47,19 +47,15 @@
      256.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Isaiah Stewart está en duda (day-to-day)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +2.5, Elo +2.4, equipo +1.7, cuatro factores -0.2.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MEM vale 0.8 puntos más por partido.",
+     "detail": "3 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +2.1, Elo +2.4, equipo +1.7, cuatro factores -0.2.",
      "supports_pick": true
     },
     {
@@ -71,7 +67,7 @@
     {
      "label": "Bajas de GS",
      "favors": "home",
-     "detail": "Sin Jimmy Butler III, Stephen Curry, Draymond Green: GS pierde 1.8 puntos.",
+     "detail": "Sin Jimmy Butler III, Stephen Curry, Draymond Green: GS pierde 1.4 puntos.",
      "supports_pick": true
     }
    ]
@@ -89,48 +85,51 @@
     "code": "POR"
    },
    "projection": {
-    "home_score": 108.6,
-    "away_score": 121.2
+    "home_score": 109.4,
+    "away_score": 122.2
    },
    "win_probability": {
-    "home": 0.1784,
-    "away": 0.8216
+    "home": 0.1751,
+    "away": 0.8249
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Portland Trail Blazers ML"
    },
-   "data_warning": null,
+   "data_warning": "Deni Avdija está en duda (day-to-day)",
    "spread": {
     "home": 13.0,
     "away": -13.0
    },
-   "total_points": 229.8,
+   "total_points": 231.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -31.0,
-     6.0
+     5.0
     ],
     "total": [
-     204.0,
-     256.0
+     206.0,
+     257.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Deni Avdija está en duda (day-to-day)",
+    "Toumani Camara está en duda (day-to-day)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +13.8, Elo +8.2, equipo +10.2, cuatro factores +6.3.",
+     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +14.1, Elo +8.2, equipo +10.2, cuatro factores +6.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de POR vale 13.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de POR vale 13.7 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -142,7 +141,7 @@
     {
      "label": "Bajas de MIL",
      "favors": "away",
-     "detail": "Sin Ousmane Dieng, Kyle Kuzma, Myles Turner: MIL pierde 2.2 puntos.",
+     "detail": "Sin Ousmane Dieng, Kyle Kuzma, Myles Turner: MIL pierde 2.5 puntos.",
      "supports_pick": true
     },
     {
@@ -166,24 +165,24 @@
     "code": "NY"
    },
    "projection": {
-    "home_score": 106.4,
-    "away_score": 105.8
+    "home_score": 106.7,
+    "away_score": 106.2
    },
    "win_probability": {
-    "home": 0.5201,
-    "away": 0.4799
+    "home": 0.5191,
+    "away": 0.4809
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Minnesota Timberwolves ML"
    },
-   "data_warning": null,
+   "data_warning": "Jonathan Kuminga está en duda (day-to-day)",
    "spread": {
     "home": -1.0,
     "away": 1.0
    },
-   "total_points": 212.2,
+   "total_points": 212.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -191,11 +190,13 @@
      18.0
     ],
     "total": [
-     186.0,
-     238.0
+     187.0,
+     239.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Jonathan Kuminga está en duda (day-to-day)"
+   ],
    "warnings": [],
    "key_factors": [
     {
@@ -213,7 +214,7 @@
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 1.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 1.3 puntos más por partido.",
      "supports_pick": false
     }
    ]
