@@ -1,10 +1,10 @@
 {
  "401909305": {
-  "generated_at": "2026-11-20T17:45:00.000521Z",
+  "generated_at": "2026-11-20T21:45:00.000579Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909305,
   "starts_at": "2026-11-21T00:00Z",
-  "minutos_antes": 375.0,
+  "minutos_antes": 135.0,
   "proyeccion": {
    "league_game_id": "401909305",
    "espn_game_id": "401909305",
@@ -1531,11 +1531,11 @@
   "tardia": false
  },
  "401909306": {
-  "generated_at": "2026-11-20T17:45:00.000521Z",
+  "generated_at": "2026-11-20T21:45:00.000579Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909306,
   "starts_at": "2026-11-21T00:30Z",
-  "minutos_antes": 405.0,
+  "minutos_antes": 165.0,
   "proyeccion": {
    "league_game_id": "401909306",
    "espn_game_id": "401909306",
@@ -3054,11 +3054,11 @@
   "tardia": false
  },
  "401909307": {
-  "generated_at": "2026-11-20T17:45:00.000521Z",
+  "generated_at": "2026-11-20T21:45:00.000579Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909307,
   "starts_at": "2026-11-21T00:30Z",
-  "minutos_antes": 405.0,
+  "minutos_antes": 165.0,
   "proyeccion": {
    "league_game_id": "401909307",
    "espn_game_id": "401909307",
@@ -4585,11 +4585,11 @@
   "tardia": false
  },
  "401909308": {
-  "generated_at": "2026-11-20T17:45:00.000521Z",
+  "generated_at": "2026-11-20T21:45:00.000579Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909308,
   "starts_at": "2026-11-21T00:30Z",
-  "minutos_antes": 405.0,
+  "minutos_antes": 165.0,
   "proyeccion": {
    "league_game_id": "401909308",
    "espn_game_id": "401909308",
@@ -6117,11 +6117,11 @@
   "tardia": false
  },
  "401909309": {
-  "generated_at": "2026-11-20T17:45:00.000521Z",
+  "generated_at": "2026-11-20T21:45:00.000579Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909309,
   "starts_at": "2026-11-21T01:00Z",
-  "minutos_antes": 435.0,
+  "minutos_antes": 195.0,
   "proyeccion": {
    "league_game_id": "401909309",
    "espn_game_id": "401909309",
@@ -7646,11 +7646,11 @@
   "tardia": false
  },
  "401909310": {
-  "generated_at": "2026-11-20T17:45:00.000521Z",
+  "generated_at": "2026-11-20T21:45:00.000579Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909310,
   "starts_at": "2026-11-21T01:00Z",
-  "minutos_antes": 435.0,
+  "minutos_antes": 195.0,
   "proyeccion": {
    "league_game_id": "401909310",
    "espn_game_id": "401909310",
@@ -9178,11 +9178,11 @@
   "tardia": false
  },
  "401909311": {
-  "generated_at": "2026-11-20T17:45:00.000521Z",
+  "generated_at": "2026-11-20T21:45:00.000579Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909311,
   "starts_at": "2026-11-21T02:30Z",
-  "minutos_antes": 525.0,
+  "minutos_antes": 285.0,
   "proyeccion": {
    "league_game_id": "401909311",
    "espn_game_id": "401909311",
@@ -10707,11 +10707,11 @@
   "tardia": false
  },
  "401909312": {
-  "generated_at": "2026-11-20T17:45:00.000521Z",
+  "generated_at": "2026-11-20T21:45:00.000579Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909312,
   "starts_at": "2026-11-21T03:00Z",
-  "minutos_antes": 555.0,
+  "minutos_antes": 315.0,
   "proyeccion": {
    "league_game_id": "401909312",
    "espn_game_id": "401909312",
@@ -12233,11 +12233,11 @@
   "tardia": false
  },
  "401909313": {
-  "generated_at": "2026-11-20T17:45:00.000521Z",
+  "generated_at": "2026-11-20T21:45:00.000579Z",
   "model_version": "nba-0.7.0",
   "game_id": 401909313,
   "starts_at": "2026-11-21T03:00Z",
-  "minutos_antes": 555.0,
+  "minutos_antes": 315.0,
   "proyeccion": {
    "league_game_id": "401909313",
    "espn_game_id": "401909313",
@@ -12263,7 +12263,7 @@
     "side": "home",
     "label": "Los Angeles Lakers ML"
    },
-   "data_warning": "Precious Achiuwa está en duda (doubtful)",
+   "data_warning": "De'Andre Hunter está en duda (questionable)",
    "spread": {
     "home": -14.0,
     "away": 14.0
@@ -12281,7 +12281,6 @@
     ]
    },
    "game_warnings": [
-    "Precious Achiuwa está en duda (doubtful)",
     "De'Andre Hunter está en duda (questionable)"
    ],
    "warnings": [],
@@ -13277,50 +13276,50 @@
     "a": 5142620,
     "j": "Darius Acuff Jr.",
     "lado": "away",
-    "min": 31.8,
+    "min": 32.4,
     "s": {
      "puntos": [
-      23.48,
-      12.0,
-      36.0
+      24.19,
+      13.0,
+      37.0
      ],
      "rebotes": [
-      3.49,
+      3.76,
       1.0,
-      6.0
+      7.0
      ],
      "asistencias": [
-      7.17,
+      7.23,
       3.0,
       11.0
      ],
      "pra": [
-      34.14,
-      20.0,
-      49.0
+      35.18,
+      21.0,
+      50.0
      ],
      "puntos_rebotes": [
-      26.96,
-      15.0,
-      40.0
+      27.95,
+      16.0,
+      41.0
      ],
      "puntos_asistencias": [
-      30.65,
+      31.42,
       18.0,
       45.0
      ]
     },
     "ctx": {
-     "min_sano": 33.4,
+     "min_sano": 33.3,
      "rival": {
       "points": 1.0,
       "reb": 0.971,
       "assists": 1.087
      },
      "bajas": {
-      "points": 1.0,
+      "points": 1.03,
       "reb": 1.0,
-      "assists": 1.0
+      "assists": 0.991
      },
      "grupo": "G",
      "duda": false
@@ -13338,50 +13337,50 @@
     "a": 4065732,
     "j": "De'Andre Hunter",
     "lado": "away",
-    "min": 31.4,
+    "min": 32.0,
     "s": {
      "puntos": [
-      15.14,
+      15.76,
       7.0,
       25.0
      ],
      "rebotes": [
-      4.32,
+      4.6,
       2.0,
-      7.0
+      8.0
      ],
      "asistencias": [
-      1.84,
+      1.9,
       0.0,
       4.0
      ],
      "pra": [
-      21.3,
-      11.0,
-      32.0
+      22.26,
+      12.0,
+      33.0
      ],
      "puntos_rebotes": [
-      19.47,
-      10.0,
-      30.0
+      20.36,
+      11.0,
+      31.0
      ],
      "puntos_asistencias": [
-      16.98,
-      8.0,
-      27.0
+      17.66,
+      9.0,
+      28.0
      ]
     },
     "ctx": {
-     "min_sano": 32.9,
+     "min_sano": 32.8,
      "rival": {
       "points": 1.0,
       "reb": 0.971,
       "assists": 0.964
      },
      "bajas": {
-      "points": 1.0,
+      "points": 1.031,
       "reb": 1.0,
-      "assists": 1.0
+      "assists": 0.991
      },
      "grupo": "F",
      "duda": true
@@ -13399,50 +13398,50 @@
     "a": 3064440,
     "j": "Zach LaVine",
     "lado": "away",
-    "min": 29.3,
+    "min": 30.0,
     "s": {
      "puntos": [
-      18.6,
+      19.16,
       9.0,
-      29.0
+      30.0
      ],
      "rebotes": [
-      3.21,
+      3.47,
       1.0,
       6.0
      ],
      "asistencias": [
-      3.19,
+      3.25,
       1.0,
       6.0
      ],
      "pra": [
-      24.99,
+      25.88,
       14.0,
-      37.0
+      38.0
      ],
      "puntos_rebotes": [
-      21.8,
-      11.0,
-      33.0
+      22.63,
+      12.0,
+      34.0
      ],
      "puntos_asistencias": [
-      21.78,
-      11.0,
-      33.0
+      22.41,
+      12.0,
+      34.0
      ]
     },
     "ctx": {
-     "min_sano": 30.9,
+     "min_sano": 30.8,
      "rival": {
       "points": 1.0,
       "reb": 0.971,
       "assists": 1.087
      },
      "bajas": {
-      "points": 1.0,
+      "points": 1.032,
       "reb": 1.0,
-      "assists": 1.0
+      "assists": 0.991
      },
      "grupo": "G",
      "duda": false
@@ -13460,50 +13459,50 @@
     "a": 3155942,
     "j": "Domantas Sabonis",
     "lado": "away",
-    "min": 26.7,
+    "min": 27.4,
     "s": {
      "puntos": [
-      13.26,
-      5.0,
-      22.0
+      13.87,
+      6.0,
+      23.0
      ],
      "rebotes": [
-      11.34,
+      11.71,
       6.0,
       17.0
      ],
      "asistencias": [
-      5.13,
+      5.22,
       2.0,
       9.0
      ],
      "pra": [
-      29.73,
-      17.0,
-      43.0
+      30.8,
+      18.0,
+      44.0
      ],
      "puntos_rebotes": [
-      24.6,
+      25.58,
       14.0,
-      37.0
+      38.0
      ],
      "puntos_asistencias": [
-      18.39,
-      9.0,
+      19.09,
+      10.0,
       29.0
      ]
     },
     "ctx": {
-     "min_sano": 28.3,
+     "min_sano": 28.2,
      "rival": {
       "points": 1.0,
       "reb": 0.971,
       "assists": 0.964
      },
      "bajas": {
-      "points": 1.0,
+      "points": 1.034,
       "reb": 1.0,
-      "assists": 1.0
+      "assists": 0.991
      },
      "grupo": "F",
      "duda": false
@@ -13521,50 +13520,50 @@
     "a": 4594327,
     "j": "Keegan Murray",
     "lado": "away",
-    "min": 26.6,
+    "min": 27.2,
     "s": {
      "puntos": [
-      10.01,
-      3.0,
+      10.48,
+      4.0,
       18.0
      ],
      "rebotes": [
-      4.04,
-      1.0,
+      4.33,
+      2.0,
       7.0
      ],
      "asistencias": [
-      1.5,
+      1.58,
       0.0,
       3.0
      ],
      "pra": [
-      15.56,
+      16.39,
       8.0,
-      25.0
+      26.0
      ],
      "puntos_rebotes": [
-      14.05,
-      6.0,
-      23.0
+      14.81,
+      7.0,
+      24.0
      ],
      "puntos_asistencias": [
-      11.51,
+      12.06,
       5.0,
-      19.0
+      20.0
      ]
     },
     "ctx": {
-     "min_sano": 28.1,
+     "min_sano": 28.0,
      "rival": {
       "points": 1.0,
       "reb": 0.971,
       "assists": 0.964
      },
      "bajas": {
-      "points": 1.0,
+      "points": 1.034,
       "reb": 1.0,
-      "assists": 1.0
+      "assists": 0.991
      },
      "grupo": "F",
      "duda": false
@@ -13582,50 +13581,50 @@
     "a": 4066262,
     "j": "Malik Monk",
     "lado": "away",
-    "min": 16.8,
+    "min": 17.6,
     "s": {
      "puntos": [
-      9.06,
-      2.0,
+      9.66,
+      3.0,
       17.0
      ],
      "rebotes": [
-      1.65,
+      1.93,
       0.0,
       4.0
      ],
      "asistencias": [
-      3.63,
+      3.76,
       1.0,
       7.0
      ],
      "pra": [
-      14.34,
-      6.0,
-      24.0
+      15.35,
+      7.0,
+      25.0
      ],
      "puntos_rebotes": [
-      10.71,
-      3.0,
-      19.0
+      11.59,
+      4.0,
+      20.0
      ],
      "puntos_asistencias": [
-      12.69,
+      13.42,
       5.0,
-      22.0
+      23.0
      ]
     },
     "ctx": {
-     "min_sano": 16.9,
+     "min_sano": 17.0,
      "rival": {
       "points": 1.0,
       "reb": 0.971,
       "assists": 1.087
      },
      "bajas": {
-      "points": 1.0,
+      "points": 1.052,
       "reb": 1.0,
-      "assists": 1.0
+      "assists": 0.991
      },
      "grupo": "G",
      "duda": false
@@ -13643,50 +13642,50 @@
     "a": 4395650,
     "j": "Leaky Black",
     "lado": "away",
-    "min": 16.8,
+    "min": 17.6,
     "s": {
      "puntos": [
-      4.47,
-      0.0,
-      9.0
+      4.93,
+      1.0,
+      10.0
      ],
      "rebotes": [
-      3.16,
+      3.46,
       1.0,
       6.0
      ],
      "asistencias": [
-      1.38,
+      1.46,
       0.0,
       3.0
      ],
      "pra": [
-      9.01,
-      3.0,
-      16.0
+      9.85,
+      4.0,
+      17.0
      ],
      "puntos_rebotes": [
-      7.63,
-      2.0,
-      14.0
+      8.38,
+      3.0,
+      15.0
      ],
      "puntos_asistencias": [
-      5.85,
-      1.0,
-      11.0
+      6.39,
+      2.0,
+      12.0
      ]
     },
     "ctx": {
-     "min_sano": 16.9,
+     "min_sano": 17.0,
      "rival": {
       "points": 1.0,
       "reb": 0.971,
       "assists": 0.964
      },
      "bajas": {
-      "points": 1.0,
+      "points": 1.052,
       "reb": 1.0,
-      "assists": 1.0
+      "assists": 0.991
      },
      "grupo": "F",
      "duda": false
@@ -13701,64 +13700,64 @@
     }
    },
    {
-    "a": 4431679,
-    "j": "Precious Achiuwa",
+    "a": 4433174,
+    "j": "Dylan Cardwell",
     "lado": "away",
-    "min": 16.5,
+    "min": 14.8,
     "s": {
      "puntos": [
-      6.77,
+      6.08,
       1.0,
-      13.0
+      12.0
      ],
      "rebotes": [
-      5.29,
+      6.02,
       2.0,
-      9.0
+      10.0
      ],
      "asistencias": [
-      0.92,
+      1.36,
       0.0,
-      2.0
+      3.0
      ],
      "pra": [
-      12.98,
+      13.47,
       5.0,
       22.0
      ],
      "puntos_rebotes": [
-      12.06,
-      4.0,
-      21.0
+      12.1,
+      5.0,
+      20.0
      ],
      "puntos_asistencias": [
-      7.68,
+      7.45,
       2.0,
-      15.0
+      14.0
      ]
     },
     "ctx": {
-     "min_sano": 16.7,
+     "min_sano": 14.2,
      "rival": {
       "points": 1.0,
       "reb": 0.971,
-      "assists": 0.964
+      "assists": 0.93
      },
      "bajas": {
-      "points": 1.0,
+      "points": 1.061,
       "reb": 1.0,
-      "assists": 1.0
+      "assists": 0.991
      },
-     "grupo": "F",
-     "duda": true
+     "grupo": "C",
+     "duda": false
     },
     "prom": {
-     "puntos": 9.5,
-     "rebotes": 5.83,
-     "asistencias": 1.0,
-     "pra": 16.33,
-     "puntos_rebotes": 15.33,
-     "puntos_asistencias": 10.5
+     "puntos": 5.71,
+     "rebotes": 5.86,
+     "asistencias": 1.71,
+     "pra": 13.29,
+     "puntos_rebotes": 11.57,
+     "puntos_asistencias": 7.43
     }
    }
   ],

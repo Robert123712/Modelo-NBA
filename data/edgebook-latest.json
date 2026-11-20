@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-20T17:45:00.000521Z",
+ "generated_at": "2026-11-20T21:45:00.000579Z",
  "date_local": "2026-11-20",
  "games": [
   {
@@ -599,7 +599,7 @@
     "side": "home",
     "label": "Los Angeles Lakers ML"
    },
-   "data_warning": "Precious Achiuwa está en duda (doubtful)",
+   "data_warning": "De'Andre Hunter está en duda (questionable)",
    "spread": {
     "home": -14.0,
     "away": 14.0
@@ -617,7 +617,6 @@
     ]
    },
    "game_warnings": [
-    "Precious Achiuwa está en duda (doubtful)",
     "De'Andre Hunter está en duda (questionable)"
    ],
    "warnings": [],
