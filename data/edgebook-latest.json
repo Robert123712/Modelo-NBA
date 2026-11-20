@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-19T19:15:00.000519Z",
+ "generated_at": "2026-11-20T00:15:00.000516Z",
  "date_local": "2026-11-19",
  "games": [
   {
@@ -18,12 +18,12 @@
     "code": "GS"
    },
    "projection": {
-    "home_score": 115.9,
+    "home_score": 116.1,
     "away_score": 113.9
    },
    "win_probability": {
-    "home": 0.5584,
-    "away": 0.4416
+    "home": 0.5623,
+    "away": 0.4377
    },
    "pick": {
     "market": "moneyline",
@@ -35,7 +35,7 @@
     "home": -3.0,
     "away": 3.0
    },
-   "total_points": 229.8,
+   "total_points": 230.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -55,7 +55,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +2.1, Elo +2.4, equipo +1.7, cuatro factores -0.2.",
+     "detail": "3 de 4 modelos ven ganar a MEM. Margen de MEM: jugadores +2.3, Elo +2.4, equipo +1.7, cuatro factores -0.2.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de MEM vale 0.6 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -67,7 +73,7 @@
     {
      "label": "Bajas de GS",
      "favors": "home",
-     "detail": "Sin Jimmy Butler III, Stephen Curry, Draymond Green: GS pierde 1.4 puntos.",
+     "detail": "Sin Jimmy Butler III, Stephen Curry, Draymond Green: GS pierde 1.6 puntos.",
      "supports_pick": true
     }
    ]
