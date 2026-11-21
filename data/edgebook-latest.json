@@ -2,219 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-21T00:15:00.000588Z",
+ "generated_at": "2026-11-21T00:45:00.000531Z",
  "date_local": "2026-11-20",
  "games": [
-  {
-   "league_game_id": "401909306",
-   "espn_game_id": "401909306",
-   "starts_at": "2026-11-21T00:30Z",
-   "home": {
-    "name": "Brooklyn Nets",
-    "code": "BKN"
-   },
-   "away": {
-    "name": "Orlando Magic",
-    "code": "ORL"
-   },
-   "projection": {
-    "home_score": 106.5,
-    "away_score": 114.0
-   },
-   "win_probability": {
-    "home": 0.2907,
-    "away": 0.7093
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Orlando Magic ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 8.0,
-    "away": -8.0
-   },
-   "total_points": 220.4,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -25.0,
-     10.0
-    ],
-    "total": [
-     195.0,
-     246.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +8.8, Elo +5.6, equipo +5.1, cuatro factores +5.4.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de ORL vale 10.5 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para BKN.",
-     "supports_pick": false
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909307",
-   "espn_game_id": "401909307",
-   "starts_at": "2026-11-21T00:30Z",
-   "home": {
-    "name": "Cleveland Cavaliers",
-    "code": "CLE"
-   },
-   "away": {
-    "name": "Indiana Pacers",
-    "code": "IND"
-   },
-   "projection": {
-    "home_score": 123.4,
-    "away_score": 114.3
-   },
-   "win_probability": {
-    "home": 0.7462,
-    "away": 0.2538
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Cleveland Cavaliers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -9.0,
-    "away": 9.0
-   },
-   "total_points": 237.7,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -9.0,
-     27.0
-    ],
-    "total": [
-     212.0,
-     264.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +9.5, Elo +9.6, equipo +8.0, cuatro factores +7.4.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de CLE vale 7.7 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para CLE.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de IND",
-     "favors": "home",
-     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Ben Sheppard: IND pierde 4.6 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909308",
-   "espn_game_id": "401909308",
-   "starts_at": "2026-11-21T00:30Z",
-   "home": {
-    "name": "Detroit Pistons",
-    "code": "DET"
-   },
-   "away": {
-    "name": "Toronto Raptors",
-    "code": "TOR"
-   },
-   "projection": {
-    "home_score": 111.9,
-    "away_score": 103.9
-   },
-   "win_probability": {
-    "home": 0.7173,
-    "away": 0.2827
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Detroit Pistons ML"
-   },
-   "data_warning": "Cade Cunningham está en duda (probable)",
-   "spread": {
-    "home": -8.0,
-    "away": 8.0
-   },
-   "total_points": 215.8,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -10.0,
-     26.0
-    ],
-    "total": [
-     190.0,
-     242.0
-    ]
-   },
-   "game_warnings": [
-    "Cade Cunningham está en duda (probable)",
-    "Ronald Holland II está en duda (doubtful)"
-   ],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +9.0, Elo +8.5, equipo +5.9, cuatro factores +6.0.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DET vale 7.3 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para DET.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de TOR",
-     "favors": "home",
-     "detail": "Sin RJ Barrett, Kawhi Leonard, Collin Murray-Boyles: TOR pierde 4.8 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909309",
    "espn_game_id": "401909309",
@@ -636,6 +426,218 @@
      "label": "Bajas de CHA",
      "favors": "home",
      "detail": "Sin Grayson Allen, Kon Knueppel, Dennis Schroder: CHA pierde 3.8 puntos.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909306",
+   "espn_game_id": "401909306",
+   "starts_at": "2026-11-21T00:30Z",
+   "home": {
+    "name": "Brooklyn Nets",
+    "code": "BKN"
+   },
+   "away": {
+    "name": "Orlando Magic",
+    "code": "ORL"
+   },
+   "projection": {
+    "home_score": 106.5,
+    "away_score": 114.0
+   },
+   "win_probability": {
+    "home": 0.2907,
+    "away": 0.7093
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Orlando Magic ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 8.0,
+    "away": -8.0
+   },
+   "total_points": 220.4,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -25.0,
+     10.0
+    ],
+    "total": [
+     195.0,
+     246.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +8.8, Elo +5.6, equipo +5.1, cuatro factores +5.4.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de ORL vale 10.5 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para BKN.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909307",
+   "espn_game_id": "401909307",
+   "starts_at": "2026-11-21T00:30Z",
+   "home": {
+    "name": "Cleveland Cavaliers",
+    "code": "CLE"
+   },
+   "away": {
+    "name": "Indiana Pacers",
+    "code": "IND"
+   },
+   "projection": {
+    "home_score": 123.5,
+    "away_score": 114.1
+   },
+   "win_probability": {
+    "home": 0.7518,
+    "away": 0.2482
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Cleveland Cavaliers ML"
+   },
+   "data_warning": "Peyton Watson está en duda (questionable)",
+   "spread": {
+    "home": -10.0,
+    "away": 10.0
+   },
+   "total_points": 237.5,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -9.0,
+     27.0
+    ],
+    "total": [
+     212.0,
+     263.0
+    ]
+   },
+   "game_warnings": [
+    "Peyton Watson está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +9.9, Elo +9.6, equipo +8.0, cuatro factores +7.4.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de CLE vale 8.1 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para CLE.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de IND",
+     "favors": "home",
+     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Ben Sheppard: IND pierde 5.0 puntos.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909308",
+   "espn_game_id": "401909308",
+   "starts_at": "2026-11-21T00:30Z",
+   "home": {
+    "name": "Detroit Pistons",
+    "code": "DET"
+   },
+   "away": {
+    "name": "Toronto Raptors",
+    "code": "TOR"
+   },
+   "projection": {
+    "home_score": 111.9,
+    "away_score": 103.9
+   },
+   "win_probability": {
+    "home": 0.7173,
+    "away": 0.2827
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Detroit Pistons ML"
+   },
+   "data_warning": "Cade Cunningham está en duda (probable)",
+   "spread": {
+    "home": -8.0,
+    "away": 8.0
+   },
+   "total_points": 215.8,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -10.0,
+     26.0
+    ],
+    "total": [
+     190.0,
+     242.0
+    ]
+   },
+   "game_warnings": [
+    "Cade Cunningham está en duda (probable)",
+    "Ronald Holland II está en duda (doubtful)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +9.0, Elo +8.5, equipo +5.9, cuatro factores +6.0.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de DET vale 7.3 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para DET.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de TOR",
+     "favors": "home",
+     "detail": "Sin RJ Barrett, Kawhi Leonard, Collin Murray-Boyles: TOR pierde 4.8 puntos.",
      "supports_pick": true
     }
    ]
