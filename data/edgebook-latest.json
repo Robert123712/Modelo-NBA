@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-21T18:45:00.000562Z",
+ "generated_at": "2026-11-21T19:15:00.000568Z",
  "date_local": "2026-11-21",
  "games": [
   {
@@ -161,12 +161,12 @@
     "code": "MEM"
    },
    "projection": {
-    "home_score": 115.8,
-    "away_score": 109.3
+    "home_score": 116.4,
+    "away_score": 111.1
    },
    "win_probability": {
-    "home": 0.6874,
-    "away": 0.3126
+    "home": 0.6519,
+    "away": 0.3481
    },
    "pick": {
     "market": "moneyline",
@@ -175,19 +175,19 @@
    },
    "data_warning": null,
    "spread": {
-    "home": -7.0,
-    "away": 7.0
+    "home": -6.0,
+    "away": 6.0
    },
-   "total_points": 225.1,
+   "total_points": 227.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -11.0,
-     24.0
+     -12.0,
+     23.0
     ],
     "total": [
-     200.0,
-     251.0
+     202.0,
+     253.0
     ]
    },
    "game_warnings": [],
@@ -196,13 +196,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +7.0, Elo +6.3, equipo +5.2, cuatro factores +7.6.",
+     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +5.1, Elo +6.3, equipo +5.2, cuatro factores +7.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MIN vale 5.3 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MIN vale 3.3 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -214,7 +214,7 @@
     {
      "label": "Bajas de MEM",
      "favors": "home",
-     "detail": "Sin Cameron Boozer, Jerami Grant, GG Jackson: MEM pierde 3.5 puntos.",
+     "detail": "Sin Cameron Boozer, Jerami Grant, GG Jackson: MEM pierde 1.5 puntos.",
      "supports_pick": true
     }
    ]
