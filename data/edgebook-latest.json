@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-21T05:15:00.000608Z",
+ "generated_at": "2026-11-21T05:45:00.000585Z",
  "date_local": "2026-11-21",
  "games": [
   {
@@ -22,8 +22,8 @@
     "away_score": 110.5
    },
    "win_probability": {
-    "home": 0.7699,
-    "away": 0.2301
+    "home": 0.7705,
+    "away": 0.2295
    },
    "pick": {
     "market": "moneyline",
@@ -62,7 +62,7 @@
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de PHI vale 8.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de PHI vale 8.5 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -92,12 +92,12 @@
     "code": "POR"
    },
    "projection": {
-    "home_score": 110.1,
-    "away_score": 105.5
+    "home_score": 110.2,
+    "away_score": 105.7
    },
    "win_probability": {
-    "home": 0.6294,
-    "away": 0.3706
+    "home": 0.6287,
+    "away": 0.3713
    },
    "pick": {
     "market": "moneyline",
@@ -109,7 +109,7 @@
     "home": -5.0,
     "away": 5.0
    },
-   "total_points": 215.6,
+   "total_points": 215.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -117,8 +117,8 @@
      22.0
     ],
     "total": [
-     190.0,
-     241.0
+     191.0,
+     242.0
     ]
    },
    "game_warnings": [
@@ -160,12 +160,12 @@
     "code": "LAC"
    },
    "projection": {
-    "home_score": 115.6,
-    "away_score": 111.8
+    "home_score": 115.7,
+    "away_score": 111.9
    },
    "win_probability": {
-    "home": 0.6066,
-    "away": 0.3934
+    "home": 0.6068,
+    "away": 0.3932
    },
    "pick": {
     "market": "moneyline",
@@ -177,7 +177,7 @@
     "home": -4.0,
     "away": 4.0
    },
-   "total_points": 227.4,
+   "total_points": 227.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -234,12 +234,12 @@
     "code": "MEM"
    },
    "projection": {
-    "home_score": 115.9,
+    "home_score": 115.8,
     "away_score": 109.3
    },
    "win_probability": {
-    "home": 0.6884,
-    "away": 0.3116
+    "home": 0.6874,
+    "away": 0.3126
    },
    "pick": {
     "market": "moneyline",
@@ -251,7 +251,7 @@
     "home": -7.0,
     "away": 7.0
    },
-   "total_points": 225.2,
+   "total_points": 225.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -269,7 +269,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +7.0, Elo +6.3, equipo +5.3, cuatro factores +7.6.",
+     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +7.0, Elo +6.3, equipo +5.2, cuatro factores +7.6.",
      "supports_pick": true
     },
     {
@@ -305,12 +305,12 @@
     "code": "NO"
    },
    "projection": {
-    "home_score": 121.5,
+    "home_score": 121.4,
     "away_score": 105.8
    },
    "win_probability": {
-    "home": 0.8712,
-    "away": 0.1288
+    "home": 0.8709,
+    "away": 0.1291
    },
    "pick": {
     "market": "moneyline",
@@ -340,7 +340,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +15.5, Elo +15.6, equipo +15.6, cuatro factores +13.5.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +15.4, Elo +15.6, equipo +15.6, cuatro factores +13.5.",
      "supports_pick": true
     },
     {
@@ -358,7 +358,7 @@
     {
      "label": "Descanso",
      "favors": "home",
-     "detail": "NO juega su segundo partido en dos noches: 2.1 puntos.",
+     "detail": "NO juega su segundo partido en dos noches: 2.0 puntos.",
      "supports_pick": true
     },
     {
@@ -382,12 +382,12 @@
     "code": "BOS"
    },
    "projection": {
-    "home_score": 103.5,
-    "away_score": 118.5
+    "home_score": 103.0,
+    "away_score": 117.4
    },
    "win_probability": {
-    "home": 0.1388,
-    "away": 0.8612
+    "home": 0.1475,
+    "away": 0.8525
    },
    "pick": {
     "market": "moneyline",
@@ -396,19 +396,19 @@
    },
    "data_warning": "Jayson Tatum está en duda (questionable)",
    "spread": {
-    "home": 15.0,
-    "away": -15.0
+    "home": 14.0,
+    "away": -14.0
    },
-   "total_points": 222.0,
+   "total_points": 220.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -33.0,
+     -32.0,
      4.0
     ],
     "total": [
-     196.0,
-     248.0
+     195.0,
+     246.0
     ]
    },
    "game_warnings": [
@@ -420,13 +420,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +15.1, Elo +10.6, equipo +14.2, cuatro factores +11.1.",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +14.5, Elo +10.7, equipo +13.7, cuatro factores +10.8.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 14.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 14.2 puntos más por partido.",
      "supports_pick": true
     },
     {
