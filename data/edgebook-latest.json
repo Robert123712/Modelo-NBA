@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-21T19:45:00.000563Z",
+ "generated_at": "2026-11-21T21:15:00.000549Z",
  "date_local": "2026-11-21",
  "games": [
   {
@@ -309,12 +309,12 @@
     "code": "BOS"
    },
    "projection": {
-    "home_score": 103.0,
-    "away_score": 117.5
+    "home_score": 103.8,
+    "away_score": 117.1
    },
    "win_probability": {
-    "home": 0.1464,
-    "away": 0.8536
+    "home": 0.1673,
+    "away": 0.8327
    },
    "pick": {
     "market": "moneyline",
@@ -323,15 +323,15 @@
    },
    "data_warning": "Precious Achiuwa está en duda (day-to-day)",
    "spread": {
-    "home": 14.0,
-    "away": -14.0
+    "home": 13.0,
+    "away": -13.0
    },
-   "total_points": 220.5,
+   "total_points": 220.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -32.0,
-     4.0
+     -31.0,
+     5.0
     ],
     "total": [
      195.0,
@@ -339,22 +339,20 @@
     ]
    },
    "game_warnings": [
-    "Precious Achiuwa está en duda (day-to-day)",
-    "Jayson Tatum está en duda (questionable)",
-    "Derrick White está en duda (questionable)"
+    "Precious Achiuwa está en duda (day-to-day)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +14.6, Elo +10.7, equipo +13.7, cuatro factores +10.8.",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +12.8, Elo +10.7, equipo +13.7, cuatro factores +10.8.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 14.3 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 12.5 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -367,6 +365,12 @@
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.7 puntos para SAC.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de BOS",
+     "favors": "home",
+     "detail": "Sin Mitchell Robinson, Jayson Tatum, Derrick White: BOS pierde 2.9 puntos.",
      "supports_pick": false
     }
    ]
