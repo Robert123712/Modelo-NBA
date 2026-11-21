@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-21T22:15:00.000519Z",
+ "generated_at": "2026-11-21T22:45:00.000530Z",
  "date_local": "2026-11-21",
  "games": [
   {
@@ -18,51 +18,48 @@
     "code": "POR"
    },
    "projection": {
-    "home_score": 109.7,
-    "away_score": 105.8
+    "home_score": 109.4,
+    "away_score": 106.3
    },
    "win_probability": {
-    "home": 0.6109,
-    "away": 0.3891
+    "home": 0.5885,
+    "away": 0.4115
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "New York Knicks ML"
    },
-   "data_warning": "Karl-Anthony Towns está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -4.0,
     "away": 4.0
    },
-   "total_points": 215.5,
+   "total_points": 215.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -14.0,
-     22.0
+     -15.0,
+     21.0
     ],
     "total": [
      190.0,
-     241.0
+     242.0
     ]
    },
-   "game_warnings": [
-    "Karl-Anthony Towns está en duda (questionable)",
-    "Deni Avdija está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +3.5, Elo +6.2, equipo +4.7, cuatro factores +7.5.",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +2.3, Elo +6.2, equipo +4.7, cuatro factores +7.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 1.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 0.6 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -74,7 +71,7 @@
     {
      "label": "Bajas de NY",
      "favors": "away",
-     "detail": "Sin OG Anunoby: NY pierde 2.1 puntos.",
+     "detail": "Sin OG Anunoby, Karl-Anthony Towns: NY pierde 3.3 puntos.",
      "supports_pick": false
     }
    ]
