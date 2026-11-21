@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-21T21:15:00.000549Z",
+ "generated_at": "2026-11-21T21:45:00.000572Z",
  "date_local": "2026-11-21",
  "games": [
   {
@@ -309,19 +309,19 @@
     "code": "BOS"
    },
    "projection": {
-    "home_score": 103.8,
-    "away_score": 117.1
+    "home_score": 103.9,
+    "away_score": 117.0
    },
    "win_probability": {
-    "home": 0.1673,
-    "away": 0.8327
+    "home": 0.1679,
+    "away": 0.8321
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Boston Celtics ML"
    },
-   "data_warning": "Precious Achiuwa está en duda (day-to-day)",
+   "data_warning": "Precious Achiuwa está en duda (questionable)",
    "spread": {
     "home": 13.0,
     "away": -13.0
@@ -339,20 +339,20 @@
     ]
    },
    "game_warnings": [
-    "Precious Achiuwa está en duda (day-to-day)"
+    "Precious Achiuwa está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +12.8, Elo +10.7, equipo +13.7, cuatro factores +10.8.",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +12.7, Elo +10.7, equipo +13.7, cuatro factores +10.8.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 12.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 12.4 puntos más por partido.",
      "supports_pick": true
     },
     {
