@@ -2,151 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-21T00:45:00.000531Z",
+ "generated_at": "2026-11-21T01:15:00.000536Z",
  "date_local": "2026-11-20",
  "games": [
-  {
-   "league_game_id": "401909309",
-   "espn_game_id": "401909309",
-   "starts_at": "2026-11-21T01:00Z",
-   "home": {
-    "name": "Chicago Bulls",
-    "code": "CHI"
-   },
-   "away": {
-    "name": "Washington Wizards",
-    "code": "WSH"
-   },
-   "projection": {
-    "home_score": 119.5,
-    "away_score": 113.8
-   },
-   "win_probability": {
-    "home": 0.6575,
-    "away": 0.3425
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Chicago Bulls ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -6.0,
-    "away": 6.0
-   },
-   "total_points": 233.3,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -12.0,
-     24.0
-    ],
-    "total": [
-     207.0,
-     259.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a CHI. Margen de CHI: jugadores +6.2, Elo +5.6, equipo +4.8, cuatro factores +5.5.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de CHI vale 4.4 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para CHI.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de WSH",
-     "favors": "home",
-     "detail": "Sin Reece Beekman, Justin Champagnie, Tristan Vukcevic: WSH pierde 2.5 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909310",
-   "espn_game_id": "401909310",
-   "starts_at": "2026-11-21T01:00Z",
-   "home": {
-    "name": "Oklahoma City Thunder",
-    "code": "OKC"
-   },
-   "away": {
-    "name": "New Orleans Pelicans",
-    "code": "NO"
-   },
-   "projection": {
-    "home_score": 118.7,
-    "away_score": 107.8
-   },
-   "win_probability": {
-    "home": 0.7858,
-    "away": 0.2142
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Oklahoma City Thunder ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -11.0,
-    "away": 11.0
-   },
-   "total_points": 226.6,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -7.0,
-     29.0
-    ],
-    "total": [
-     201.0,
-     252.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +9.5, Elo +12.0, equipo +14.1, cuatro factores +12.0.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de OKC vale 7.8 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para OKC.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de OKC",
-     "favors": "away",
-     "detail": "Sin Alex Caruso, Chet Holmgren, Nikola Topic: OKC pierde 4.9 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909311",
    "espn_game_id": "401909311",
@@ -639,6 +497,150 @@
      "favors": "home",
      "detail": "Sin RJ Barrett, Kawhi Leonard, Collin Murray-Boyles: TOR pierde 4.8 puntos.",
      "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909309",
+   "espn_game_id": "401909309",
+   "starts_at": "2026-11-21T01:00Z",
+   "home": {
+    "name": "Chicago Bulls",
+    "code": "CHI"
+   },
+   "away": {
+    "name": "Washington Wizards",
+    "code": "WSH"
+   },
+   "projection": {
+    "home_score": 119.5,
+    "away_score": 113.8
+   },
+   "win_probability": {
+    "home": 0.6584,
+    "away": 0.3416
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Chicago Bulls ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -6.0,
+    "away": 6.0
+   },
+   "total_points": 233.3,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -12.0,
+     24.0
+    ],
+    "total": [
+     207.0,
+     259.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a CHI. Margen de CHI: jugadores +6.2, Elo +5.6, equipo +4.8, cuatro factores +5.5.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de CHI vale 4.4 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para CHI.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de WSH",
+     "favors": "home",
+     "detail": "Sin Reece Beekman, Justin Champagnie, Tristan Vukcevic: WSH pierde 2.5 puntos.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909310",
+   "espn_game_id": "401909310",
+   "starts_at": "2026-11-21T01:00Z",
+   "home": {
+    "name": "Oklahoma City Thunder",
+    "code": "OKC"
+   },
+   "away": {
+    "name": "New Orleans Pelicans",
+    "code": "NO"
+   },
+   "projection": {
+    "home_score": 119.0,
+    "away_score": 107.1
+   },
+   "win_probability": {
+    "home": 0.8043,
+    "away": 0.1957
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Oklahoma City Thunder ML"
+   },
+   "data_warning": "Trey Murphy III está en duda (questionable)",
+   "spread": {
+    "home": -12.0,
+    "away": 12.0
+   },
+   "total_points": 226.1,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -6.0,
+     30.0
+    ],
+    "total": [
+     201.0,
+     252.0
+    ]
+   },
+   "game_warnings": [
+    "Trey Murphy III está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +10.9, Elo +12.0, equipo +14.1, cuatro factores +12.0.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de OKC vale 9.1 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para OKC.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de OKC",
+     "favors": "away",
+     "detail": "Sin Alex Caruso, Chet Holmgren, Nikola Topic: OKC pierde 3.6 puntos.",
+     "supports_pick": false
     }
    ]
   }
