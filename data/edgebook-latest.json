@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-20T23:45:00.000555Z",
+ "generated_at": "2026-11-21T00:15:00.000588Z",
  "date_local": "2026-11-20",
  "games": [
-  {
-   "league_game_id": "401909305",
-   "espn_game_id": "401909305",
-   "starts_at": "2026-11-21T00:00Z",
-   "home": {
-    "name": "Atlanta Hawks",
-    "code": "ATL"
-   },
-   "away": {
-    "name": "Charlotte Hornets",
-    "code": "CHA"
-   },
-   "projection": {
-    "home_score": 111.0,
-    "away_score": 105.3
-   },
-   "win_probability": {
-    "home": 0.6631,
-    "away": 0.3369
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Atlanta Hawks ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -6.0,
-    "away": 6.0
-   },
-   "total_points": 216.3,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -12.0,
-     23.0
-    ],
-    "total": [
-     191.0,
-     242.1
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +5.8, Elo +5.4, equipo +5.5, cuatro factores +3.7.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de ATL vale 4.0 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para ATL.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de CHA",
-     "favors": "home",
-     "detail": "Sin Grayson Allen, Kon Knueppel, Dennis Schroder: CHA pierde 3.8 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909306",
    "espn_game_id": "401909306",
@@ -154,24 +83,24 @@
     "code": "IND"
    },
    "projection": {
-    "home_score": 123.5,
-    "away_score": 114.1
+    "home_score": 123.4,
+    "away_score": 114.3
    },
    "win_probability": {
-    "home": 0.7518,
-    "away": 0.2482
+    "home": 0.7462,
+    "away": 0.2538
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Cleveland Cavaliers ML"
    },
-   "data_warning": "Peyton Watson está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": -10.0,
-    "away": 10.0
+    "home": -9.0,
+    "away": 9.0
    },
-   "total_points": 237.5,
+   "total_points": 237.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -180,24 +109,22 @@
     ],
     "total": [
      212.0,
-     263.0
+     264.0
     ]
    },
-   "game_warnings": [
-    "Peyton Watson está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +9.9, Elo +9.6, equipo +8.0, cuatro factores +7.4.",
+     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +9.5, Elo +9.6, equipo +8.0, cuatro factores +7.4.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de CLE vale 8.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de CLE vale 7.7 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -209,7 +136,7 @@
     {
      "label": "Bajas de IND",
      "favors": "home",
-     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Ben Sheppard: IND pierde 5.0 puntos.",
+     "detail": "Sin Johnny Furphy, Tyrese Haliburton, Ben Sheppard: IND pierde 4.6 puntos.",
      "supports_pick": true
     }
    ]
@@ -305,8 +232,8 @@
     "away_score": 113.8
    },
    "win_probability": {
-    "home": 0.6584,
-    "away": 0.3416
+    "home": 0.6575,
+    "away": 0.3425
    },
    "pick": {
     "market": "moneyline",
@@ -372,50 +299,48 @@
     "code": "NO"
    },
    "projection": {
-    "home_score": 119.0,
-    "away_score": 107.1
+    "home_score": 118.7,
+    "away_score": 107.8
    },
    "win_probability": {
-    "home": 0.8043,
-    "away": 0.1957
+    "home": 0.7858,
+    "away": 0.2142
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Oklahoma City Thunder ML"
    },
-   "data_warning": "Trey Murphy III está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": -12.0,
-    "away": 12.0
+    "home": -11.0,
+    "away": 11.0
    },
-   "total_points": 226.1,
+   "total_points": 226.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -6.0,
-     30.0
+     -7.0,
+     29.0
     ],
     "total": [
      201.0,
      252.0
     ]
    },
-   "game_warnings": [
-    "Trey Murphy III está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +10.9, Elo +12.0, equipo +14.1, cuatro factores +12.0.",
+     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +9.5, Elo +12.0, equipo +14.1, cuatro factores +12.0.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de OKC vale 9.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de OKC vale 7.8 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -427,7 +352,7 @@
     {
      "label": "Bajas de OKC",
      "favors": "away",
-     "detail": "Sin Alex Caruso, Chet Holmgren, Nikola Topic: OKC pierde 3.6 puntos.",
+     "detail": "Sin Alex Caruso, Chet Holmgren, Nikola Topic: OKC pierde 4.9 puntos.",
      "supports_pick": false
     }
    ]
@@ -641,6 +566,77 @@
      "favors": "away",
      "detail": "Sin Austin Reaves: LAL pierde 1.8 puntos.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909305",
+   "espn_game_id": "401909305",
+   "starts_at": "2026-11-21T00:00Z",
+   "home": {
+    "name": "Atlanta Hawks",
+    "code": "ATL"
+   },
+   "away": {
+    "name": "Charlotte Hornets",
+    "code": "CHA"
+   },
+   "projection": {
+    "home_score": 111.0,
+    "away_score": 105.3
+   },
+   "win_probability": {
+    "home": 0.6631,
+    "away": 0.3369
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Atlanta Hawks ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -6.0,
+    "away": 6.0
+   },
+   "total_points": 216.3,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -12.0,
+     23.0
+    ],
+    "total": [
+     191.0,
+     242.1
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a ATL. Margen de ATL: jugadores +5.8, Elo +5.4, equipo +5.5, cuatro factores +3.7.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de ATL vale 4.0 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para ATL.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de CHA",
+     "favors": "home",
+     "detail": "Sin Grayson Allen, Kon Knueppel, Dennis Schroder: CHA pierde 3.8 puntos.",
+     "supports_pick": true
     }
    ]
   }
