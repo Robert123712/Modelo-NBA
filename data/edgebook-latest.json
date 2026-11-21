@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-21T05:45:00.000585Z",
+ "generated_at": "2026-11-21T15:15:00.739920Z",
  "date_local": "2026-11-21",
  "games": [
   {
@@ -96,8 +96,8 @@
     "away_score": 105.7
    },
    "win_probability": {
-    "home": 0.6287,
-    "away": 0.3713
+    "home": 0.6285,
+    "away": 0.3715
    },
    "pick": {
     "market": "moneyline",
@@ -164,8 +164,8 @@
     "away_score": 111.9
    },
    "win_probability": {
-    "home": 0.6068,
-    "away": 0.3932
+    "home": 0.6067,
+    "away": 0.3933
    },
    "pick": {
     "market": "moneyline",
@@ -309,8 +309,8 @@
     "away_score": 105.8
    },
    "win_probability": {
-    "home": 0.8709,
-    "away": 0.1291
+    "home": 0.8706,
+    "away": 0.1294
    },
    "pick": {
     "market": "moneyline",
@@ -383,23 +383,23 @@
    },
    "projection": {
     "home_score": 103.0,
-    "away_score": 117.4
+    "away_score": 117.5
    },
    "win_probability": {
-    "home": 0.1475,
-    "away": 0.8525
+    "home": 0.1464,
+    "away": 0.8536
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Boston Celtics ML"
    },
-   "data_warning": "Jayson Tatum está en duda (questionable)",
+   "data_warning": "Precious Achiuwa está en duda (day-to-day)",
    "spread": {
     "home": 14.0,
     "away": -14.0
    },
-   "total_points": 220.4,
+   "total_points": 220.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -412,6 +412,7 @@
     ]
    },
    "game_warnings": [
+    "Precious Achiuwa está en duda (day-to-day)",
     "Jayson Tatum está en duda (questionable)",
     "Derrick White está en duda (questionable)"
    ],
@@ -420,13 +421,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +14.5, Elo +10.7, equipo +13.7, cuatro factores +10.8.",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +14.6, Elo +10.7, equipo +13.7, cuatro factores +10.8.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 14.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 14.3 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -445,7 +446,5 @@
   }
  ],
  "skipped_without_id": 0,
- "warnings": [
-  "Sin alineaciones de la NBA (HTTPError); titular del partido anterior"
- ]
+ "warnings": []
 }
