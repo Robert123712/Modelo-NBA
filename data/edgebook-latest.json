@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-21T15:15:00.739920Z",
+ "generated_at": "2026-11-21T16:15:00.000512Z",
  "date_local": "2026-11-21",
  "games": [
   {
@@ -92,37 +92,38 @@
     "code": "POR"
    },
    "projection": {
-    "home_score": 110.2,
-    "away_score": 105.7
+    "home_score": 109.7,
+    "away_score": 105.6
    },
    "win_probability": {
-    "home": 0.6285,
-    "away": 0.3715
+    "home": 0.6198,
+    "away": 0.3802
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "New York Knicks ML"
    },
-   "data_warning": "OG Anunoby está en duda (questionable)",
+   "data_warning": "OG Anunoby está en duda (doubtful)",
    "spread": {
     "home": -5.0,
     "away": 5.0
    },
-   "total_points": 215.9,
+   "total_points": 215.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -13.0,
+     -14.0,
      22.0
     ],
     "total": [
-     191.0,
-     242.0
+     190.0,
+     241.0
     ]
    },
    "game_warnings": [
-    "OG Anunoby está en duda (questionable)",
+    "OG Anunoby está en duda (doubtful)",
+    "Karl-Anthony Towns está en duda (questionable)",
     "Deni Avdija está en duda (questionable)"
    ],
    "warnings": [],
@@ -130,13 +131,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +4.5, Elo +6.2, equipo +4.7, cuatro factores +7.5.",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +4.0, Elo +6.2, equipo +4.7, cuatro factores +7.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 2.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 2.3 puntos más por partido.",
      "supports_pick": true
     },
     {
