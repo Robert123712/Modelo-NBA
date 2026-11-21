@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-21T16:15:00.000512Z",
+ "generated_at": "2026-11-21T17:45:00.000584Z",
  "date_local": "2026-11-21",
  "games": [
   {
@@ -18,51 +18,48 @@
     "code": "MIL"
    },
    "projection": {
-    "home_score": 120.9,
-    "away_score": 110.5
+    "home_score": 121.0,
+    "away_score": 110.3
    },
    "win_probability": {
-    "home": 0.7705,
-    "away": 0.2295
+    "home": 0.7783,
+    "away": 0.2217
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Philadelphia 76ers ML"
    },
-   "data_warning": "Dominick Barlow está en duda (probable)",
+   "data_warning": null,
    "spread": {
-    "home": -10.0,
-    "away": 10.0
+    "home": -11.0,
+    "away": 11.0
    },
-   "total_points": 231.4,
+   "total_points": 231.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -8.0,
-     28.0
+     -7.0,
+     29.0
     ],
     "total": [
      206.0,
      257.0
     ]
    },
-   "game_warnings": [
-    "Dominick Barlow está en duda (probable)",
-    "Tyrese Maxey está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a PHI. Margen de PHI: jugadores +10.2, Elo +13.1, equipo +10.4, cuatro factores +8.6.",
+     "detail": "4 de 4 modelos ven ganar a PHI. Margen de PHI: jugadores +10.7, Elo +13.1, equipo +10.4, cuatro factores +8.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de PHI vale 8.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de PHI vale 9.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -74,7 +71,7 @@
     {
      "label": "Bajas de PHI",
      "favors": "away",
-     "detail": "Sin Adem Bona, Jaylen Brown, Dean Wade: PHI pierde 1.4 puntos.",
+     "detail": "Sin Adem Bona, Jaylen Brown, Dean Wade: PHI pierde 0.9 puntos.",
      "supports_pick": false
     }
    ]
