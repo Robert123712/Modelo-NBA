@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-22T15:15:00.708740Z",
+ "generated_at": "2026-11-22T17:45:00.000611Z",
  "date_local": "2026-11-22",
  "games": [
   {
@@ -161,12 +161,12 @@
     "code": "ORL"
    },
    "projection": {
-    "home_score": 106.0,
-    "away_score": 111.8
+    "home_score": 105.9,
+    "away_score": 111.9
    },
    "win_probability": {
-    "home": 0.3382,
-    "away": 0.6618
+    "home": 0.3362,
+    "away": 0.6638
    },
    "pick": {
     "market": "moneyline",
@@ -196,19 +196,19 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +6.5, Elo +4.9, equipo +4.3, cuatro factores +5.0.",
+     "detail": "4 de 4 modelos ven ganar a ORL. Margen de ORL: jugadores +6.6, Elo +4.9, equipo +4.3, cuatro factores +5.0.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de ORL vale 8.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de ORL vale 8.3 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de WSH",
      "favors": "away",
-     "detail": "Sin Reece Beekman, Justin Champagnie, Tristan Vukcevic: WSH pierde 1.4 puntos.",
+     "detail": "Sin Reece Beekman, Justin Champagnie, Tristan Vukcevic: WSH pierde 1.6 puntos.",
      "supports_pick": true
     },
     {
@@ -232,24 +232,24 @@
     "code": "DEN"
    },
    "projection": {
-    "home_score": 114.8,
-    "away_score": 121.3
+    "home_score": 115.9,
+    "away_score": 122.2
    },
    "win_probability": {
-    "home": 0.321,
-    "away": 0.679
+    "home": 0.3239,
+    "away": 0.6761
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Denver Nuggets ML"
    },
-   "data_warning": "Norman Powell está en duda (questionable)",
+   "data_warning": "Nic Claxton está en duda (questionable)",
    "spread": {
     "home": 7.0,
     "away": -7.0
    },
-   "total_points": 236.1,
+   "total_points": 238.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -257,13 +257,14 @@
      12.0
     ],
     "total": [
-     210.0,
-     263.0
+     212.0,
+     265.0
     ]
    },
    "game_warnings": [
+    "Nic Claxton está en duda (questionable)",
     "Norman Powell está en duda (questionable)",
-    "Jalen Smith está en duda (questionable)",
+    "Jalen Smith está en duda (probable)",
     "Patrick Williams está en duda (probable)"
    ],
    "warnings": [],
@@ -271,13 +272,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +6.6, Elo +4.6, equipo +6.1, cuatro factores +4.6.",
+     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +6.4, Elo +4.6, equipo +6.1, cuatro factores +4.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DEN vale 8.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DEN vale 8.2 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -289,7 +290,7 @@
     {
      "label": "Bajas de DEN",
      "favors": "home",
-     "detail": "Sin Julian Strawther: DEN pierde 1.0 puntos.",
+     "detail": "Sin Julian Strawther: DEN pierde 1.2 puntos.",
      "supports_pick": false
     }
    ]
