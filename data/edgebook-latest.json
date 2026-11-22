@@ -2,74 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-22T20:15:00.000533Z",
+ "generated_at": "2026-11-22T20:45:00.000548Z",
  "date_local": "2026-11-22",
  "games": [
-  {
-   "league_game_id": "401910029",
-   "espn_game_id": "401910029",
-   "starts_at": "2026-11-22T20:30Z",
-   "home": {
-    "name": "Atlanta Hawks",
-    "code": "ATL"
-   },
-   "away": {
-    "name": "Detroit Pistons",
-    "code": "DET"
-   },
-   "projection": {
-    "home_score": 110.8,
-    "away_score": 114.8
-   },
-   "win_probability": {
-    "home": 0.3834,
-    "away": 0.6166
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Detroit Pistons ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 4.0,
-    "away": -4.0
-   },
-   "total_points": 225.6,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -22.0,
-     14.0
-    ],
-    "total": [
-     200.0,
-     251.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +5.1, Elo +1.2, equipo +2.4, cuatro factores +2.1.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DET vale 6.8 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para ATL.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401910030",
    "espn_game_id": "401910030",
@@ -230,37 +165,36 @@
     "code": "DEN"
    },
    "projection": {
-    "home_score": 115.8,
-    "away_score": 122.8
+    "home_score": 116.2,
+    "away_score": 123.9
    },
    "win_probability": {
-    "home": 0.3046,
-    "away": 0.6954
+    "home": 0.2872,
+    "away": 0.7128
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Denver Nuggets ML"
    },
-   "data_warning": "Nic Claxton está en duda (questionable)",
+   "data_warning": "Jalen Smith está en duda (probable)",
    "spread": {
-    "home": 7.0,
-    "away": -7.0
+    "home": 8.0,
+    "away": -8.0
    },
-   "total_points": 238.6,
+   "total_points": 240.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -25.0,
-     11.0
+     -26.0,
+     10.0
     ],
     "total": [
-     213.0,
-     265.0
+     214.0,
+     266.0
     ]
    },
    "game_warnings": [
-    "Nic Claxton está en duda (questionable)",
     "Jalen Smith está en duda (probable)",
     "Patrick Williams está en duda (probable)"
    ],
@@ -269,13 +203,19 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +7.5, Elo +4.6, equipo +6.1, cuatro factores +4.6.",
+     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +8.6, Elo +4.6, equipo +6.1, cuatro factores +4.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DEN vale 9.3 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DEN vale 10.3 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de CHI",
+     "favors": "away",
+     "detail": "Sin Nic Claxton, Norman Powell, Caleb Wilson: CHI pierde 0.9 puntos.",
      "supports_pick": true
     },
     {
@@ -521,6 +461,79 @@
      "label": "Descanso",
      "favors": "home",
      "detail": "BOS juega su segundo partido en dos noches: 1.9 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401910029",
+   "espn_game_id": "401910029",
+   "starts_at": "2026-11-22T20:30Z",
+   "home": {
+    "name": "Atlanta Hawks",
+    "code": "ATL"
+   },
+   "away": {
+    "name": "Detroit Pistons",
+    "code": "DET"
+   },
+   "projection": {
+    "home_score": 110.7,
+    "away_score": 114.8
+   },
+   "win_probability": {
+    "home": 0.3821,
+    "away": 0.6179
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Detroit Pistons ML"
+   },
+   "data_warning": "Cade Cunningham está en duda (probable)",
+   "spread": {
+    "home": 5.0,
+    "away": -5.0
+   },
+   "total_points": 225.5,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -22.0,
+     14.0
+    ],
+    "total": [
+     200.0,
+     251.0
+    ]
+   },
+   "game_warnings": [
+    "Cade Cunningham está en duda (probable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +5.2, Elo +1.2, equipo +2.4, cuatro factores +2.1.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de DET vale 6.9 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de ATL",
+     "favors": "away",
+     "detail": "Sin Mouhamed Gueye, Jock Landale, CJ McCollum: ATL pierde 0.5 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para ATL.",
      "supports_pick": false
     }
    ]
