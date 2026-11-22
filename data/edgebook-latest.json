@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-22T18:45:00.000549Z",
+ "generated_at": "2026-11-22T19:15:00.000580Z",
  "date_local": "2026-11-22",
  "games": [
   {
@@ -18,24 +18,24 @@
     "code": "DET"
    },
    "projection": {
-    "home_score": 110.9,
-    "away_score": 114.7
+    "home_score": 110.7,
+    "away_score": 114.8
    },
    "win_probability": {
-    "home": 0.39,
-    "away": 0.61
+    "home": 0.3821,
+    "away": 0.6179
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Detroit Pistons ML"
    },
-   "data_warning": "Kingston Flemings está en duda (questionable)",
+   "data_warning": "Cade Cunningham está en duda (probable)",
    "spread": {
-    "home": 4.0,
-    "away": -4.0
+    "home": 5.0,
+    "away": -5.0
    },
-   "total_points": 225.6,
+   "total_points": 225.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -48,22 +48,26 @@
     ]
    },
    "game_warnings": [
-    "Kingston Flemings está en duda (questionable)",
-    "Cade Cunningham está en duda (probable)",
-    "Ronald Holland II está en duda (questionable)"
+    "Cade Cunningham está en duda (probable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +4.7, Elo +1.2, equipo +2.4, cuatro factores +2.1.",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +5.2, Elo +1.2, equipo +2.4, cuatro factores +2.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DET vale 6.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DET vale 6.9 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de ATL",
+     "favors": "away",
+     "detail": "Sin Mouhamed Gueye, Jock Landale, CJ McCollum: ATL pierde 0.5 puntos.",
      "supports_pick": true
     },
     {
@@ -234,12 +238,12 @@
     "code": "DEN"
    },
    "projection": {
-    "home_score": 115.9,
-    "away_score": 122.2
+    "home_score": 115.8,
+    "away_score": 122.8
    },
    "win_probability": {
-    "home": 0.3239,
-    "away": 0.6761
+    "home": 0.3046,
+    "away": 0.6954
    },
    "pick": {
     "market": "moneyline",
@@ -251,21 +255,20 @@
     "home": 7.0,
     "away": -7.0
    },
-   "total_points": 238.1,
+   "total_points": 238.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -24.0,
-     12.0
+     -25.0,
+     11.0
     ],
     "total": [
-     212.0,
+     213.0,
      265.0
     ]
    },
    "game_warnings": [
     "Nic Claxton está en duda (questionable)",
-    "Norman Powell está en duda (questionable)",
     "Jalen Smith está en duda (probable)",
     "Patrick Williams está en duda (probable)"
    ],
@@ -274,25 +277,19 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +6.4, Elo +4.6, equipo +6.1, cuatro factores +4.6.",
+     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +7.5, Elo +4.6, equipo +6.1, cuatro factores +4.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DEN vale 8.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DEN vale 9.3 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para CHI.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de DEN",
-     "favors": "home",
-     "detail": "Sin Julian Strawther: DEN pierde 1.2 puntos.",
      "supports_pick": false
     }
    ]
@@ -310,56 +307,56 @@
     "code": "DAL"
    },
    "projection": {
-    "home_score": 110.2,
-    "away_score": 112.3
+    "home_score": 109.5,
+    "away_score": 112.2
    },
    "win_probability": {
-    "home": 0.4396,
-    "away": 0.5604
+    "home": 0.4214,
+    "away": 0.5786
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Dallas Mavericks ML"
    },
-   "data_warning": "P.J. Washington está en duda (day-to-day)",
+   "data_warning": "Walter Clayton Jr. está en duda (questionable)",
    "spread": {
     "home": 3.0,
     "away": -3.0
    },
-   "total_points": 222.6,
+   "total_points": 221.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -20.0,
-     16.0
+     -21.0,
+     15.0
     ],
     "total": [
-     197.0,
-     248.0
+     196.0,
+     247.0
     ]
    },
    "game_warnings": [
-    "P.J. Washington está en duda (day-to-day)"
+    "Walter Clayton Jr. está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +2.0, Elo +2.1, equipo +2.1, cuatro factores +2.1.",
+     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +3.0, Elo +2.1, equipo +2.1, cuatro factores +2.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DAL vale 5.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DAL vale 6.7 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de UTAH",
      "favors": "away",
-     "detail": "Sin Jaren Jackson Jr., Lauri Markkanen, Jusuf Nurkic: UTAH pierde 3.0 puntos.",
+     "detail": "Sin Jaren Jackson Jr., Lauri Markkanen, Jusuf Nurkic: UTAH pierde 4.0 puntos.",
      "supports_pick": true
     },
     {
@@ -389,50 +386,50 @@
     "code": "IND"
    },
    "projection": {
-    "home_score": 114.0,
-    "away_score": 103.2
+    "home_score": 113.3,
+    "away_score": 103.3
    },
    "win_probability": {
-    "home": 0.7869,
-    "away": 0.2131
+    "home": 0.7702,
+    "away": 0.2298
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "New York Knicks ML"
    },
-   "data_warning": "Pascal Siakam está en duda (questionable)",
+   "data_warning": "Karl-Anthony Towns está en duda (questionable)",
    "spread": {
-    "home": -11.0,
-    "away": 11.0
+    "home": -10.0,
+    "away": 10.0
    },
-   "total_points": 217.2,
+   "total_points": 216.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -7.0,
-     29.0
+     -8.0,
+     28.0
     ],
     "total": [
-     192.0,
-     243.0
+     191.0,
+     242.0
     ]
    },
    "game_warnings": [
-    "Pascal Siakam está en duda (questionable)"
+    "Karl-Anthony Towns está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +10.3, Elo +14.7, equipo +12.2, cuatro factores +12.5.",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +9.2, Elo +14.7, equipo +12.2, cuatro factores +12.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 10.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 9.5 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -444,7 +441,7 @@
     {
      "label": "Bajas de IND",
      "favors": "home",
-     "detail": "Sin Johnny Furphy, Tyrese Haliburton, T.J. McConnell: IND pierde 3.8 puntos.",
+     "detail": "Sin Johnny Furphy, Tyrese Haliburton, T.J. McConnell: IND pierde 2.6 puntos.",
      "supports_pick": true
     },
     {
