@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-22T05:45:00.000526Z",
+ "generated_at": "2026-11-22T15:15:00.708740Z",
  "date_local": "2026-11-22",
  "games": [
   {
@@ -22,8 +22,8 @@
     "away_score": 114.7
    },
    "win_probability": {
-    "home": 0.3926,
-    "away": 0.6074
+    "home": 0.3927,
+    "away": 0.6073
    },
    "pick": {
     "market": "moneyline",
@@ -91,8 +91,8 @@
     "away_score": 117.4
    },
    "win_probability": {
-    "home": 0.4836,
-    "away": 0.5164
+    "home": 0.4839,
+    "away": 0.5161
    },
    "pick": {
     "market": "moneyline",
@@ -307,24 +307,24 @@
     "code": "DAL"
    },
    "projection": {
-    "home_score": 110.6,
-    "away_score": 112.2
+    "home_score": 110.2,
+    "away_score": 112.3
    },
    "win_probability": {
-    "home": 0.4522,
-    "away": 0.5478
+    "home": 0.4396,
+    "away": 0.5604
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Dallas Mavericks ML"
    },
-   "data_warning": null,
+   "data_warning": "P.J. Washington está en duda (day-to-day)",
    "spread": {
-    "home": 2.0,
-    "away": -2.0
+    "home": 3.0,
+    "away": -3.0
    },
-   "total_points": 222.8,
+   "total_points": 222.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -333,28 +333,30 @@
     ],
     "total": [
      197.0,
-     249.0
+     248.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "P.J. Washington está en duda (day-to-day)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +1.4, Elo +2.1, equipo +2.1, cuatro factores +2.1.",
+     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +2.0, Elo +2.1, equipo +2.1, cuatro factores +2.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DAL vale 5.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DAL vale 5.7 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de UTAH",
      "favors": "away",
-     "detail": "Sin Jaren Jackson Jr., Lauri Markkanen, Jusuf Nurkic: UTAH pierde 2.4 puntos.",
+     "detail": "Sin Jaren Jackson Jr., Lauri Markkanen, Jusuf Nurkic: UTAH pierde 3.0 puntos.",
      "supports_pick": true
     },
     {
@@ -388,8 +390,8 @@
     "away_score": 102.7
    },
    "win_probability": {
-    "home": 0.7881,
-    "away": 0.2119
+    "home": 0.788,
+    "away": 0.212
    },
    "pick": {
     "market": "moneyline",
@@ -465,54 +467,58 @@
     "code": "BOS"
    },
    "projection": {
-    "home_score": 106.3,
-    "away_score": 110.7
+    "home_score": 106.0,
+    "away_score": 111.7
    },
    "win_probability": {
-    "home": 0.3748,
-    "away": 0.6252
+    "home": 0.3392,
+    "away": 0.6608
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Boston Celtics ML"
    },
-   "data_warning": null,
+   "data_warning": "Mitchell Robinson está en duda (day-to-day)",
    "spread": {
-    "home": 5.0,
-    "away": -5.0
+    "home": 6.0,
+    "away": -6.0
    },
-   "total_points": 217.0,
+   "total_points": 217.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -22.0,
-     14.0
+     -23.0,
+     12.0
     ],
     "total": [
-     191.0,
-     243.0
+     192.0,
+     244.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Mitchell Robinson está en duda (day-to-day)",
+    "Jayson Tatum está en duda (day-to-day)",
+    "Derrick White está en duda (day-to-day)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +3.9, Elo +4.3, equipo +5.4, cuatro factores +5.7.",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +5.9, Elo +4.3, equipo +5.4, cuatro factores +5.7.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 7.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 9.5 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de GS",
      "favors": "away",
-     "detail": "Sin Jimmy Butler III, Stephen Curry, Moses Moody: GS pierde 2.9 puntos.",
+     "detail": "Sin Jimmy Butler III, Stephen Curry, Moses Moody: GS pierde 4.8 puntos.",
      "supports_pick": true
     },
     {
@@ -531,7 +537,5 @@
   }
  ],
  "skipped_without_id": 0,
- "warnings": [
-  "Sin alineaciones de la NBA (HTTPError); titular del partido anterior"
- ]
+ "warnings": []
 }
