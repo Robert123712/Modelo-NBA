@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-21T23:45:00.000525Z",
+ "generated_at": "2026-11-22T00:45:00.000525Z",
  "date_local": "2026-11-21",
  "games": [
-  {
-   "league_game_id": "401910024",
-   "espn_game_id": "401910024",
-   "starts_at": "2026-11-22T00:30Z",
-   "home": {
-    "name": "New York Knicks",
-    "code": "NY"
-   },
-   "away": {
-    "name": "Portland Trail Blazers",
-    "code": "POR"
-   },
-   "projection": {
-    "home_score": 109.4,
-    "away_score": 106.3
-   },
-   "win_probability": {
-    "home": 0.5885,
-    "away": 0.4115
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "New York Knicks ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -4.0,
-    "away": 4.0
-   },
-   "total_points": 215.7,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -15.0,
-     21.0
-    ],
-    "total": [
-     190.0,
-     242.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +2.3, Elo +6.2, equipo +4.7, cuatro factores +7.5.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 0.6 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para NY.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de NY",
-     "favors": "away",
-     "detail": "Sin OG Anunoby, Karl-Anthony Towns: NY pierde 3.3 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401910025",
    "espn_game_id": "401910025",
@@ -225,12 +154,12 @@
     "code": "NO"
    },
    "projection": {
-    "home_score": 121.8,
-    "away_score": 104.4
+    "home_score": 122.5,
+    "away_score": 103.2
    },
    "win_probability": {
-    "home": 0.8961,
-    "away": 0.1039
+    "home": 0.9181,
+    "away": 0.0819
    },
    "pick": {
     "market": "moneyline",
@@ -239,19 +168,19 @@
    },
    "data_warning": null,
    "spread": {
-    "home": -17.0,
-    "away": 17.0
+    "home": -19.0,
+    "away": 19.0
    },
-   "total_points": 226.2,
+   "total_points": 225.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -1.0,
-     35.0
+     2.0,
+     37.0
     ],
     "total": [
-     201.0,
-     252.0
+     200.0,
+     251.0
     ]
    },
    "game_warnings": [],
@@ -260,13 +189,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +18.1, Elo +15.6, equipo +15.6, cuatro factores +13.5.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +20.8, Elo +15.6, equipo +15.6, cuatro factores +13.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 14.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 17.1 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -284,7 +213,7 @@
     {
      "label": "Bajas de NO",
      "favors": "home",
-     "detail": "Sin Bennedict Mathurin, Bryce McGowens, Trey Murphy III: NO pierde 0.7 puntos.",
+     "detail": "Sin Bennedict Mathurin, Bryce McGowens, Trey Murphy III: NO pierde 3.4 puntos.",
      "supports_pick": true
     }
    ]
@@ -438,6 +367,77 @@
      "label": "Bajas de PHI",
      "favors": "away",
      "detail": "Sin Adem Bona, Jaylen Brown, Dean Wade: PHI pierde 1.4 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401910024",
+   "espn_game_id": "401910024",
+   "starts_at": "2026-11-22T00:30Z",
+   "home": {
+    "name": "New York Knicks",
+    "code": "NY"
+   },
+   "away": {
+    "name": "Portland Trail Blazers",
+    "code": "POR"
+   },
+   "projection": {
+    "home_score": 109.4,
+    "away_score": 106.3
+   },
+   "win_probability": {
+    "home": 0.5885,
+    "away": 0.4115
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "New York Knicks ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -4.0,
+    "away": 4.0
+   },
+   "total_points": 215.7,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -15.0,
+     21.0
+    ],
+    "total": [
+     190.0,
+     242.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +2.3, Elo +6.2, equipo +4.7, cuatro factores +7.5.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 0.6 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para NY.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de NY",
+     "favors": "away",
+     "detail": "Sin OG Anunoby, Karl-Anthony Towns: NY pierde 3.3 puntos.",
      "supports_pick": false
     }
    ]
