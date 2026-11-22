@@ -2,86 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-22T01:45:00.000526Z",
+ "generated_at": "2026-11-22T03:15:00.000543Z",
  "date_local": "2026-11-21",
  "games": [
-  {
-   "league_game_id": "401910028",
-   "espn_game_id": "401910028",
-   "starts_at": "2026-11-22T03:00Z",
-   "home": {
-    "name": "Sacramento Kings",
-    "code": "SAC"
-   },
-   "away": {
-    "name": "Boston Celtics",
-    "code": "BOS"
-   },
-   "projection": {
-    "home_score": 103.8,
-    "away_score": 117.1
-   },
-   "win_probability": {
-    "home": 0.1655,
-    "away": 0.8345
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Boston Celtics ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 13.0,
-    "away": -13.0
-   },
-   "total_points": 220.9,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -31.0,
-     5.0
-    ],
-    "total": [
-     195.0,
-     246.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +13.0, Elo +10.7, equipo +13.7, cuatro factores +10.8.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 12.7 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "away",
-     "detail": "SAC juega su segundo partido en dos noches: 2.0 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para SAC.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de BOS",
-     "favors": "home",
-     "detail": "Sin Mitchell Robinson, Jayson Tatum, Derrick White: BOS pierde 2.7 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401910023",
    "espn_game_id": "401910023",
@@ -437,6 +360,83 @@
      "favors": "home",
      "detail": "Sin Bennedict Mathurin, Bryce McGowens, Trey Murphy III: NO pierde 0.7 puntos.",
      "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401910028",
+   "espn_game_id": "401910028",
+   "starts_at": "2026-11-22T03:00Z",
+   "home": {
+    "name": "Sacramento Kings",
+    "code": "SAC"
+   },
+   "away": {
+    "name": "Boston Celtics",
+    "code": "BOS"
+   },
+   "projection": {
+    "home_score": 103.8,
+    "away_score": 117.1
+   },
+   "win_probability": {
+    "home": 0.1655,
+    "away": 0.8345
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Boston Celtics ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 13.0,
+    "away": -13.0
+   },
+   "total_points": 220.9,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -31.0,
+     5.0
+    ],
+    "total": [
+     195.0,
+     246.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +13.0, Elo +10.7, equipo +13.7, cuatro factores +10.8.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 12.7 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "away",
+     "detail": "SAC juega su segundo partido en dos noches: 2.0 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para SAC.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de BOS",
+     "favors": "home",
+     "detail": "Sin Mitchell Robinson, Jayson Tatum, Derrick White: BOS pierde 2.7 puntos.",
+     "supports_pick": false
     }
    ]
   }
