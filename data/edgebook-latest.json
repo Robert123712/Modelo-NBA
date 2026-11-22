@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-22T20:45:00.000548Z",
+ "generated_at": "2026-11-22T21:15:00.000539Z",
  "date_local": "2026-11-22",
  "games": [
   {
@@ -398,57 +398,53 @@
    },
    "projection": {
     "home_score": 106.0,
-    "away_score": 111.7
+    "away_score": 112.3
    },
    "win_probability": {
-    "home": 0.3392,
-    "away": 0.6608
+    "home": 0.3257,
+    "away": 0.6743
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Boston Celtics ML"
    },
-   "data_warning": "Mitchell Robinson está en duda (day-to-day)",
+   "data_warning": null,
    "spread": {
     "home": 6.0,
     "away": -6.0
    },
-   "total_points": 217.8,
+   "total_points": 218.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -23.0,
+     -24.0,
      12.0
     ],
     "total": [
-     192.0,
+     193.0,
      244.0
     ]
    },
-   "game_warnings": [
-    "Mitchell Robinson está en duda (day-to-day)",
-    "Jayson Tatum está en duda (day-to-day)",
-    "Derrick White está en duda (day-to-day)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +5.9, Elo +4.3, equipo +5.4, cuatro factores +5.7.",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +6.7, Elo +4.3, equipo +5.4, cuatro factores +5.7.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 9.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 10.3 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de GS",
      "favors": "away",
-     "detail": "Sin Jimmy Butler III, Stephen Curry, Moses Moody: GS pierde 4.8 puntos.",
+     "detail": "Sin Jimmy Butler III, Stephen Curry, Moses Moody: GS pierde 5.6 puntos.",
      "supports_pick": true
     },
     {
