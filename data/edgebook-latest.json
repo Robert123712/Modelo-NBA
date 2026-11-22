@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-22T21:15:00.000539Z",
+ "generated_at": "2026-11-22T21:45:00.000524Z",
  "date_local": "2026-11-22",
  "games": [
   {
@@ -18,64 +18,63 @@
     "code": "OKC"
    },
    "projection": {
-    "home_score": 116.8,
-    "away_score": 117.4
+    "home_score": 117.5,
+    "away_score": 116.6
    },
    "win_probability": {
-    "home": 0.4839,
-    "away": 0.5161
+    "home": 0.5283,
+    "away": 0.4717
    },
    "pick": {
     "market": "moneyline",
-    "side": "away",
-    "label": "Oklahoma City Thunder ML"
+    "side": "home",
+    "label": "Miami Heat ML"
    },
    "data_warning": "Giannis Antetokounmpo está en duda (questionable)",
    "spread": {
-    "home": 1.0,
-    "away": -1.0
+    "home": -2.0,
+    "away": 2.0
    },
-   "total_points": 234.2,
+   "total_points": 234.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -19.0,
-     18.0
+     -17.0,
+     19.0
     ],
     "total": [
-     209.0,
+     208.0,
      260.0
     ]
    },
    "game_warnings": [
-    "Giannis Antetokounmpo está en duda (questionable)",
-    "Shai Gilgeous-Alexander está en duda (questionable)"
+    "Giannis Antetokounmpo está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "3 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores -1.0, Elo +0.5, equipo +4.3, cuatro factores +2.6.",
-     "supports_pick": true
+     "detail": "3 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores -3.2, Elo +0.5, equipo +4.3, cuatro factores +2.6.",
+     "supports_pick": false
     },
     {
      "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de OKC vale 0.7 puntos más por partido.",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de MIA vale 1.5 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para MIA.",
-     "supports_pick": false
+     "supports_pick": true
     },
     {
      "label": "Bajas de OKC",
      "favors": "home",
-     "detail": "Sin Alex Caruso, Chet Holmgren, Nikola Topic: OKC pierde 6.5 puntos.",
-     "supports_pick": false
+     "detail": "Sin Alex Caruso, Shai Gilgeous-Alexander, Chet Holmgren: OKC pierde 8.7 puntos.",
+     "supports_pick": true
     }
    ]
   },
