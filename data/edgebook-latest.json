@@ -2,222 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-22T00:45:00.000525Z",
+ "generated_at": "2026-11-22T01:15:00.000533Z",
  "date_local": "2026-11-21",
  "games": [
-  {
-   "league_game_id": "401910025",
-   "espn_game_id": "401910025",
-   "starts_at": "2026-11-22T01:00Z",
-   "home": {
-    "name": "Dallas Mavericks",
-    "code": "DAL"
-   },
-   "away": {
-    "name": "LA Clippers",
-    "code": "LAC"
-   },
-   "projection": {
-    "home_score": 115.7,
-    "away_score": 112.9
-   },
-   "win_probability": {
-    "home": 0.5777,
-    "away": 0.4223
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Dallas Mavericks ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -3.0,
-    "away": 3.0
-   },
-   "total_points": 228.6,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -15.0,
-     20.0
-    ],
-    "total": [
-     203.0,
-     255.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +3.5, Elo +3.4, equipo +1.7, cuatro factores +0.1.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DAL vale 1.7 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para DAL.",
-     "supports_pick": true
-    }
-   ]
-  },
-  {
-   "league_game_id": "401910026",
-   "espn_game_id": "401910026",
-   "starts_at": "2026-11-22T01:00Z",
-   "home": {
-    "name": "Minnesota Timberwolves",
-    "code": "MIN"
-   },
-   "away": {
-    "name": "Memphis Grizzlies",
-    "code": "MEM"
-   },
-   "projection": {
-    "home_score": 116.4,
-    "away_score": 111.1
-   },
-   "win_probability": {
-    "home": 0.6519,
-    "away": 0.3481
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Minnesota Timberwolves ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -6.0,
-    "away": 6.0
-   },
-   "total_points": 227.5,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -12.0,
-     23.0
-    ],
-    "total": [
-     202.0,
-     253.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +5.1, Elo +6.3, equipo +5.2, cuatro factores +7.6.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MIN vale 3.3 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para MIN.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de MEM",
-     "favors": "home",
-     "detail": "Sin Cameron Boozer, Jerami Grant, GG Jackson: MEM pierde 1.5 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
-  {
-   "league_game_id": "401910027",
-   "espn_game_id": "401910027",
-   "starts_at": "2026-11-22T01:00Z",
-   "home": {
-    "name": "San Antonio Spurs",
-    "code": "SA"
-   },
-   "away": {
-    "name": "New Orleans Pelicans",
-    "code": "NO"
-   },
-   "projection": {
-    "home_score": 122.5,
-    "away_score": 103.2
-   },
-   "win_probability": {
-    "home": 0.9181,
-    "away": 0.0819
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "San Antonio Spurs ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -19.0,
-    "away": 19.0
-   },
-   "total_points": 225.7,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     2.0,
-     37.0
-    ],
-    "total": [
-     200.0,
-     251.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +20.8, Elo +15.6, equipo +15.6, cuatro factores +13.5.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 17.1 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para SA.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "home",
-     "detail": "NO juega su segundo partido en dos noches: 2.0 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de NO",
-     "favors": "home",
-     "detail": "Sin Bennedict Mathurin, Bryce McGowens, Trey Murphy III: NO pierde 3.4 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401910028",
    "espn_game_id": "401910028",
@@ -439,6 +226,219 @@
      "favors": "away",
      "detail": "Sin OG Anunoby, Karl-Anthony Towns: NY pierde 3.3 puntos.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401910025",
+   "espn_game_id": "401910025",
+   "starts_at": "2026-11-22T01:00Z",
+   "home": {
+    "name": "Dallas Mavericks",
+    "code": "DAL"
+   },
+   "away": {
+    "name": "LA Clippers",
+    "code": "LAC"
+   },
+   "projection": {
+    "home_score": 115.7,
+    "away_score": 112.9
+   },
+   "win_probability": {
+    "home": 0.5777,
+    "away": 0.4223
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Dallas Mavericks ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -3.0,
+    "away": 3.0
+   },
+   "total_points": 228.6,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -15.0,
+     20.0
+    ],
+    "total": [
+     203.0,
+     255.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a DAL. Margen de DAL: jugadores +3.5, Elo +3.4, equipo +1.7, cuatro factores +0.1.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de DAL vale 1.7 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para DAL.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401910026",
+   "espn_game_id": "401910026",
+   "starts_at": "2026-11-22T01:00Z",
+   "home": {
+    "name": "Minnesota Timberwolves",
+    "code": "MIN"
+   },
+   "away": {
+    "name": "Memphis Grizzlies",
+    "code": "MEM"
+   },
+   "projection": {
+    "home_score": 116.4,
+    "away_score": 111.1
+   },
+   "win_probability": {
+    "home": 0.6519,
+    "away": 0.3481
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Minnesota Timberwolves ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -6.0,
+    "away": 6.0
+   },
+   "total_points": 227.5,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -12.0,
+     23.0
+    ],
+    "total": [
+     202.0,
+     253.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +5.1, Elo +6.3, equipo +5.2, cuatro factores +7.6.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de MIN vale 3.3 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para MIN.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de MEM",
+     "favors": "home",
+     "detail": "Sin Cameron Boozer, Jerami Grant, GG Jackson: MEM pierde 1.5 puntos.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401910027",
+   "espn_game_id": "401910027",
+   "starts_at": "2026-11-22T01:00Z",
+   "home": {
+    "name": "San Antonio Spurs",
+    "code": "SA"
+   },
+   "away": {
+    "name": "New Orleans Pelicans",
+    "code": "NO"
+   },
+   "projection": {
+    "home_score": 121.8,
+    "away_score": 104.4
+   },
+   "win_probability": {
+    "home": 0.8961,
+    "away": 0.1039
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "San Antonio Spurs ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -17.0,
+    "away": 17.0
+   },
+   "total_points": 226.2,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -1.0,
+     35.0
+    ],
+    "total": [
+     201.0,
+     252.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +18.1, Elo +15.6, equipo +15.6, cuatro factores +13.5.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 14.4 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para SA.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "home",
+     "detail": "NO juega su segundo partido en dos noches: 2.0 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de NO",
+     "favors": "home",
+     "detail": "Sin Bennedict Mathurin, Bryce McGowens, Trey Murphy III: NO pierde 0.7 puntos.",
+     "supports_pick": true
     }
    ]
   }
