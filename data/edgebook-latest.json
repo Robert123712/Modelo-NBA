@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-22T19:15:00.000580Z",
+ "generated_at": "2026-11-22T20:15:00.000533Z",
  "date_local": "2026-11-22",
  "games": [
   {
@@ -18,24 +18,24 @@
     "code": "DET"
    },
    "projection": {
-    "home_score": 110.7,
+    "home_score": 110.8,
     "away_score": 114.8
    },
    "win_probability": {
-    "home": 0.3821,
-    "away": 0.6179
+    "home": 0.3834,
+    "away": 0.6166
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Detroit Pistons ML"
    },
-   "data_warning": "Cade Cunningham está en duda (probable)",
+   "data_warning": null,
    "spread": {
-    "home": 5.0,
-    "away": -5.0
+    "home": 4.0,
+    "away": -4.0
    },
-   "total_points": 225.5,
+   "total_points": 225.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -47,27 +47,19 @@
      251.0
     ]
    },
-   "game_warnings": [
-    "Cade Cunningham está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +5.2, Elo +1.2, equipo +2.4, cuatro factores +2.1.",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +5.1, Elo +1.2, equipo +2.4, cuatro factores +2.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DET vale 6.9 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de ATL",
-     "favors": "away",
-     "detail": "Sin Mouhamed Gueye, Jock Landale, CJ McCollum: ATL pierde 0.5 puntos.",
+     "detail": "Con los minutos proyectados, la rotación de DET vale 6.8 puntos más por partido.",
      "supports_pick": true
     },
     {
