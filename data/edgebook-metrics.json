@@ -1,24 +1,24 @@
 {
  "schema_version": "1.0",
  "sport": "NBA",
- "generated_at": "2026-11-21T05:45:00.000585Z",
+ "generated_at": "2026-11-22T05:15:00.000523Z",
  "minimum_meaningful": 100,
  "versions": [
   {
    "model_version": "nba-0.7.0",
    "unlabeled": false,
    "from": "2026-10-22",
-   "to": "2026-11-20",
-   "graded": 221,
-   "pending": 6,
+   "to": "2026-11-21",
+   "graded": 226,
+   "pending": 8,
    "significant": true,
    "markets": {
     "moneyline": {
-     "n": 221,
-     "base_rate": 0.4977,
-     "brier": 0.198,
-     "log_loss": 0.5781,
-     "hit_rate": 0.6833,
+     "n": 226,
+     "base_rate": 0.5088,
+     "brier": 0.1959,
+     "log_loss": 0.5737,
+     "hit_rate": 0.6903,
      "baseline_brier": 0.25,
      "calibration": [
       {
@@ -52,25 +52,25 @@
       {
        "from": 0.55,
        "to": 0.65,
-       "n": 41,
-       "predicted": 0.5975,
-       "observed": 0.6341
+       "n": 43,
+       "predicted": 0.5968,
+       "observed": 0.6512
       },
       {
        "from": 0.65,
        "to": 1.01,
-       "n": 74,
-       "predicted": 0.7587,
-       "observed": 0.6892
+       "n": 77,
+       "predicted": 0.7593,
+       "observed": 0.7013
       }
      ]
     }
    },
    "projected_total": {
-    "n": 221,
-    "mae": 14.422,
-    "bias": 0.868,
-    "std_error": 1.2486,
+    "n": 226,
+    "mae": 14.637,
+    "bias": 1.121,
+    "std_error": 1.2439,
     "by_month": [
      {
       "month": "2026-10",
@@ -81,18 +81,18 @@
      },
      {
       "month": "2026-11",
-      "n": 147,
-      "mae": 13.756,
-      "bias": -0.512,
-      "std_error": 1.4493
+      "n": 152,
+      "mae": 14.097,
+      "bias": -0.091,
+      "std_error": 1.4477
      }
     ]
    },
    "projected_margin": {
-    "n": 221,
-    "mae": 11.032,
-    "bias": 1.023,
-    "std_error": 0.9585,
+    "n": 226,
+    "mae": 10.903,
+    "bias": 0.973,
+    "std_error": 0.9391,
     "by_month": [
      {
       "month": "2026-10",
@@ -103,10 +103,10 @@
      },
      {
       "month": "2026-11",
-      "n": 147,
-      "mae": 11.088,
-      "bias": 0.748,
-      "std_error": 1.1753
+      "n": 152,
+      "mae": 10.895,
+      "bias": 0.684,
+      "std_error": 1.1397
      }
     ]
    },
@@ -116,13 +116,13 @@
    },
    "interval_coverage": {
     "margin": {
-     "n": 221,
-     "covered": 0.8009,
+     "n": 226,
+     "covered": 0.8053,
      "nominal": 0.8
     },
     "total": {
-     "n": 221,
-     "covered": 0.8507,
+     "n": 226,
+     "covered": 0.8451,
      "nominal": 0.8
     }
    }
