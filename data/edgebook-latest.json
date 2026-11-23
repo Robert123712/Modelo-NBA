@@ -2,86 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-23T01:15:00.000541Z",
+ "generated_at": "2026-11-23T01:45:00.000549Z",
  "date_local": "2026-11-22",
  "games": [
-  {
-   "league_game_id": "401910035",
-   "espn_game_id": "401910035",
-   "starts_at": "2026-11-23T01:30Z",
-   "home": {
-    "name": "Golden State Warriors",
-    "code": "GS"
-   },
-   "away": {
-    "name": "Boston Celtics",
-    "code": "BOS"
-   },
-   "projection": {
-    "home_score": 106.0,
-    "away_score": 112.3
-   },
-   "win_probability": {
-    "home": 0.3257,
-    "away": 0.6743
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Boston Celtics ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 6.0,
-    "away": -6.0
-   },
-   "total_points": 218.3,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -24.0,
-     12.0
-    ],
-    "total": [
-     193.0,
-     244.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +6.7, Elo +4.3, equipo +5.4, cuatro factores +5.7.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 10.3 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de GS",
-     "favors": "away",
-     "detail": "Sin Jimmy Butler III, Stephen Curry, Moses Moody: GS pierde 5.6 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para GS.",
-     "supports_pick": false
-    },
-    {
-     "label": "Descanso",
-     "favors": "home",
-     "detail": "BOS juega su segundo partido en dos noches: 1.9 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401910029",
    "espn_game_id": "401910029",
@@ -526,6 +449,83 @@
      "label": "Descanso",
      "favors": "away",
      "detail": "NY juega su segundo partido en dos noches: 1.9 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401910035",
+   "espn_game_id": "401910035",
+   "starts_at": "2026-11-23T01:30Z",
+   "home": {
+    "name": "Golden State Warriors",
+    "code": "GS"
+   },
+   "away": {
+    "name": "Boston Celtics",
+    "code": "BOS"
+   },
+   "projection": {
+    "home_score": 106.0,
+    "away_score": 112.3
+   },
+   "win_probability": {
+    "home": 0.3257,
+    "away": 0.6743
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Boston Celtics ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 6.0,
+    "away": -6.0
+   },
+   "total_points": 218.3,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -24.0,
+     12.0
+    ],
+    "total": [
+     193.0,
+     244.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +6.7, Elo +4.3, equipo +5.4, cuatro factores +5.7.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 10.3 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de GS",
+     "favors": "away",
+     "detail": "Sin Jimmy Butler III, Stephen Curry, Moses Moody: GS pierde 5.6 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para GS.",
+     "supports_pick": false
+    },
+    {
+     "label": "Descanso",
+     "favors": "home",
+     "detail": "BOS juega su segundo partido en dos noches: 1.9 puntos.",
      "supports_pick": false
     }
    ]
