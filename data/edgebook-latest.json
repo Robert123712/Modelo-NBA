@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-23T17:15:00.000541Z",
+ "generated_at": "2026-11-23T17:45:00.000517Z",
  "date_local": "2026-11-23",
  "games": [
   {
@@ -315,8 +315,8 @@
     "away_score": 104.3
    },
    "win_probability": {
-    "home": 0.8307,
-    "away": 0.1693
+    "home": 0.8305,
+    "away": 0.1695
    },
    "pick": {
     "market": "moneyline",
