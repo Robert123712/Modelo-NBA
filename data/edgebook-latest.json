@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-23T15:15:00.581720Z",
+ "generated_at": "2026-11-23T17:15:00.000541Z",
  "date_local": "2026-11-23",
  "games": [
   {
@@ -91,12 +91,12 @@
     "code": "POR"
    },
    "projection": {
-    "home_score": 113.2,
+    "home_score": 112.7,
     "away_score": 114.8
    },
    "win_probability": {
-    "home": 0.4522,
-    "away": 0.5478
+    "home": 0.4391,
+    "away": 0.5609
    },
    "pick": {
     "market": "moneyline",
@@ -105,10 +105,10 @@
    },
    "data_warning": "Adem Bona está en duda (probable)",
    "spread": {
-    "home": 2.0,
-    "away": -2.0
+    "home": 3.0,
+    "away": -3.0
    },
-   "total_points": 228.0,
+   "total_points": 227.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -123,6 +123,7 @@
    "game_warnings": [
     "Adem Bona está en duda (probable)",
     "Jaylen Brown está en duda (probable)",
+    "Joel Embiid está en duda (questionable)",
     "Dean Wade está en duda (probable)"
    ],
    "warnings": [],
@@ -130,13 +131,13 @@
     {
      "label": "Los 4 modelos",
      "favors": null,
-     "detail": "Los modelos se dividen 2-2. Margen de PHI: jugadores -1.6, Elo +2.5, equipo -1.6, cuatro factores +0.2.",
+     "detail": "Los modelos se dividen 2-2. Margen de PHI: jugadores -2.3, Elo +2.5, equipo -1.6, cuatro factores +0.2.",
      "supports_pick": false
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de POR vale 3.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de POR vale 4.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -674,12 +675,12 @@
     "code": "SA"
    },
    "projection": {
-    "home_score": 104.0,
-    "away_score": 117.2
+    "home_score": 105.1,
+    "away_score": 117.7
    },
    "win_probability": {
-    "home": 0.1677,
-    "away": 0.8323
+    "home": 0.1799,
+    "away": 0.8201
    },
    "pick": {
     "market": "moneyline",
@@ -691,33 +692,34 @@
     "home": 13.0,
     "away": -13.0
    },
-   "total_points": 221.2,
+   "total_points": 222.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -31.0,
-     5.0
+     -30.0,
+     6.0
     ],
     "total": [
-     196.0,
-     247.0
+     197.0,
+     248.0
     ]
    },
    "game_warnings": [
-    "De'Aaron Fox está en duda (questionable)"
+    "De'Aaron Fox está en duda (questionable)",
+    "Victor Wembanyama está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +12.5, Elo +13.1, equipo +15.0, cuatro factores +12.2.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +11.4, Elo +13.1, equipo +15.0, cuatro factores +12.2.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 14.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 13.2 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -729,7 +731,7 @@
     {
      "label": "Bajas de SA",
      "favors": "home",
-     "detail": "Sin Dylan Harper, Tobias Harris: SA pierde 2.1 puntos.",
+     "detail": "Sin Dylan Harper, Tobias Harris: SA pierde 3.2 puntos.",
      "supports_pick": false
     }
    ]
