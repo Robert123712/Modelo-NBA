@@ -1,10 +1,10 @@
 {
  "401910036": {
-  "generated_at": "2026-11-23T15:45:00.000514Z",
+  "generated_at": "2026-11-23T16:15:00.000526Z",
   "model_version": "nba-0.7.0",
   "game_id": 401910036,
   "starts_at": "2026-11-24T00:00Z",
-  "minutos_antes": 495.0,
+  "minutos_antes": 465.0,
   "proyeccion": {
    "league_game_id": "401910036",
    "espn_game_id": "401910036",
@@ -1531,11 +1531,11 @@
   "tardia": false
  },
  "401910037": {
-  "generated_at": "2026-11-23T15:45:00.000514Z",
+  "generated_at": "2026-11-23T16:15:00.000526Z",
   "model_version": "nba-0.7.0",
   "game_id": 401910037,
   "starts_at": "2026-11-24T00:00Z",
-  "minutos_antes": 495.0,
+  "minutos_antes": 465.0,
   "proyeccion": {
    "league_game_id": "401910037",
    "espn_game_id": "401910037",
@@ -3058,11 +3058,11 @@
   "tardia": false
  },
  "401910038": {
-  "generated_at": "2026-11-23T15:45:00.000514Z",
+  "generated_at": "2026-11-23T16:15:00.000526Z",
   "model_version": "nba-0.7.0",
   "game_id": 401910038,
   "starts_at": "2026-11-24T00:30Z",
-  "minutos_antes": 525.0,
+  "minutos_antes": 495.0,
   "proyeccion": {
    "league_game_id": "401910038",
    "espn_game_id": "401910038",
@@ -4593,11 +4593,11 @@
   "tardia": false
  },
  "401910039": {
-  "generated_at": "2026-11-23T15:45:00.000514Z",
+  "generated_at": "2026-11-23T16:15:00.000526Z",
   "model_version": "nba-0.7.0",
   "game_id": 401910039,
   "starts_at": "2026-11-24T00:30Z",
-  "minutos_antes": 525.0,
+  "minutos_antes": 495.0,
   "proyeccion": {
    "league_game_id": "401910039",
    "espn_game_id": "401910039",
@@ -5644,17 +5644,17 @@
       31.0
      ],
      "rebotes": [
-      4.39,
+      4.38,
       2.0,
-      7.0
+      8.0
      ],
      "asistencias": [
-      4.22,
+      4.23,
       1.0,
       7.0
      ],
      "pra": [
-      28.62,
+      28.63,
       16.0,
       42.0
      ],
@@ -5664,9 +5664,9 @@
       37.0
      ],
      "puntos_asistencias": [
-      24.24,
+      24.25,
       13.0,
-      36.0
+      37.0
      ]
     },
     "ctx": {
@@ -5700,32 +5700,32 @@
     "min": 28.0,
     "s": {
      "puntos": [
-      13.37,
+      13.34,
       6.0,
       22.0
      ],
      "rebotes": [
-      4.92,
+      4.91,
       2.0,
       8.0
      ],
      "asistencias": [
-      2.22,
+      2.23,
       0.0,
       4.0
      ],
      "pra": [
-      20.51,
+      20.47,
       11.0,
       31.0
      ],
      "puntos_rebotes": [
-      18.28,
+      18.25,
       9.0,
       28.0
      ],
      "puntos_asistencias": [
-      15.59,
+      15.57,
       7.0,
       25.0
      ]
@@ -5755,84 +5755,23 @@
     }
    },
    {
-    "a": 5082206,
-    "j": "Brayden Burries",
-    "lado": "away",
-    "min": 25.7,
-    "s": {
-     "puntos": [
-      12.14,
-      5.0,
-      21.0
-     ],
-     "rebotes": [
-      5.94,
-      2.0,
-      10.0
-     ],
-     "asistencias": [
-      2.68,
-      1.0,
-      5.0
-     ],
-     "pra": [
-      20.76,
-      11.0,
-      31.0
-     ],
-     "puntos_rebotes": [
-      18.08,
-      9.0,
-      28.0
-     ],
-     "puntos_asistencias": [
-      14.82,
-      7.0,
-      24.0
-     ]
-    },
-    "ctx": {
-     "min_sano": 26.9,
-     "rival": {
-      "points": 1.0,
-      "reb": 0.992,
-      "assists": 0.952
-     },
-     "bajas": {
-      "points": 1.0,
-      "reb": 1.0,
-      "assists": 1.0
-     },
-     "grupo": "G",
-     "duda": false
-    },
-    "prom": {
-     "puntos": 11.29,
-     "rebotes": 5.47,
-     "asistencias": 2.41,
-     "pra": 19.18,
-     "puntos_rebotes": 16.76,
-     "puntos_asistencias": 13.71
-    }
-   },
-   {
     "a": 4432848,
     "j": "Jaime Jaquez Jr.",
     "lado": "away",
     "min": 25.4,
     "s": {
      "puntos": [
-      12.32,
+      12.3,
       5.0,
       21.0
      ],
      "rebotes": [
-      4.22,
+      4.25,
       1.0,
       7.0
      ],
      "asistencias": [
-      2.98,
+      2.97,
       1.0,
       6.0
      ],
@@ -5847,7 +5786,7 @@
       26.0
      ],
      "puntos_asistencias": [
-      15.3,
+      15.27,
       7.0,
       25.0
      ]
@@ -5883,14 +5822,14 @@
     "min": 24.9,
     "s": {
      "puntos": [
-      9.15,
+      9.11,
       3.0,
       16.0
      ],
      "rebotes": [
-      5.72,
+      5.71,
       2.0,
-      10.0
+      9.0
      ],
      "asistencias": [
       2.14,
@@ -5898,17 +5837,17 @@
       4.0
      ],
      "pra": [
-      17.01,
+      16.96,
       8.0,
       26.0
      ],
      "puntos_rebotes": [
-      14.87,
+      14.82,
       7.0,
       24.0
      ],
      "puntos_asistencias": [
-      11.29,
+      11.25,
       4.0,
       19.0
      ]
@@ -5941,41 +5880,41 @@
     "a": 4591725,
     "j": "Ryan Rollins",
     "lado": "away",
-    "min": 20.2,
+    "min": 24.8,
     "s": {
      "puntos": [
-      9.87,
-      3.0,
-      18.0
+      11.35,
+      4.0,
+      20.0
      ],
      "rebotes": [
-      4.06,
+      4.39,
+      1.0,
+      8.0
+     ],
+     "asistencias": [
+      3.75,
       1.0,
       7.0
      ],
-     "asistencias": [
-      3.37,
-      1.0,
-      6.0
-     ],
      "pra": [
-      17.3,
-      8.0,
-      28.0
+      19.5,
+      10.0,
+      30.0
      ],
      "puntos_rebotes": [
-      13.94,
-      6.0,
-      23.0
+      15.74,
+      7.0,
+      25.0
      ],
      "puntos_asistencias": [
-      13.24,
-      5.0,
-      22.0
+      15.11,
+      7.0,
+      24.0
      ]
     },
     "ctx": {
-     "min_sano": 20.4,
+     "min_sano": 25.9,
      "rival": {
       "points": 1.0,
       "reb": 0.992,
@@ -5999,18 +5938,79 @@
     }
    },
    {
+    "a": 5082206,
+    "j": "Brayden Burries",
+    "lado": "away",
+    "min": 21.1,
+    "s": {
+     "puntos": [
+      10.66,
+      4.0,
+      19.0
+     ],
+     "rebotes": [
+      5.4,
+      2.0,
+      9.0
+     ],
+     "asistencias": [
+      2.42,
+      0.0,
+      5.0
+     ],
+     "pra": [
+      18.48,
+      9.0,
+      29.0
+     ],
+     "puntos_rebotes": [
+      16.06,
+      7.0,
+      26.0
+     ],
+     "puntos_asistencias": [
+      13.08,
+      5.0,
+      22.0
+     ]
+    },
+    "ctx": {
+     "min_sano": 21.4,
+     "rival": {
+      "points": 1.0,
+      "reb": 0.992,
+      "assists": 0.952
+     },
+     "bajas": {
+      "points": 1.0,
+      "reb": 1.0,
+      "assists": 1.0
+     },
+     "grupo": "G",
+     "duda": false
+    },
+    "prom": {
+     "puntos": 11.29,
+     "rebotes": 5.47,
+     "asistencias": 2.41,
+     "pra": 19.18,
+     "puntos_rebotes": 16.76,
+     "puntos_asistencias": 13.71
+    }
+   },
+   {
     "a": 5105623,
     "j": "Kel'el Ware",
     "lado": "away",
     "min": 17.4,
     "s": {
      "puntos": [
-      7.2,
+      7.23,
       2.0,
       14.0
      ],
      "rebotes": [
-      6.26,
+      6.25,
       2.0,
       11.0
      ],
@@ -6020,17 +6020,17 @@
       2.0
      ],
      "pra": [
-      14.3,
+      14.32,
       6.0,
       24.0
      ],
      "puntos_rebotes": [
-      13.46,
+      13.48,
       5.0,
-      22.0
+      23.0
      ],
      "puntos_asistencias": [
-      8.04,
+      8.06,
       2.0,
       15.0
      ]
@@ -6066,32 +6066,32 @@
     "min": 16.9,
     "s": {
      "puntos": [
-      7.11,
+      7.1,
       2.0,
       14.0
      ],
      "rebotes": [
-      3.1,
+      3.09,
       1.0,
       6.0
      ],
      "asistencias": [
-      0.65,
+      0.64,
       0.0,
       2.0
      ],
      "pra": [
-      10.85,
+      10.83,
       4.0,
       19.0
      ],
      "puntos_rebotes": [
-      10.2,
+      10.19,
       3.0,
       18.0
      ],
      "puntos_asistencias": [
-      7.76,
+      7.75,
       2.0,
       15.0
      ]
@@ -6124,11 +6124,11 @@
   "tardia": false
  },
  "401910040": {
-  "generated_at": "2026-11-23T15:45:00.000514Z",
+  "generated_at": "2026-11-23T16:15:00.000526Z",
   "model_version": "nba-0.7.0",
   "game_id": 401910040,
   "starts_at": "2026-11-24T00:30Z",
-  "minutos_antes": 525.0,
+  "minutos_antes": 495.0,
   "proyeccion": {
    "league_game_id": "401910040",
    "espn_game_id": "401910040",
@@ -7653,11 +7653,11 @@
   "tardia": false
  },
  "401910041": {
-  "generated_at": "2026-11-23T15:45:00.000514Z",
+  "generated_at": "2026-11-23T16:15:00.000526Z",
   "model_version": "nba-0.7.0",
   "game_id": 401910041,
   "starts_at": "2026-11-24T01:00Z",
-  "minutos_antes": 555.0,
+  "minutos_antes": 525.0,
   "proyeccion": {
    "league_game_id": "401910041",
    "espn_game_id": "401910041",
@@ -9185,11 +9185,11 @@
   "tardia": false
  },
  "401910042": {
-  "generated_at": "2026-11-23T15:45:00.000514Z",
+  "generated_at": "2026-11-23T16:15:00.000526Z",
   "model_version": "nba-0.7.0",
   "game_id": 401910042,
   "starts_at": "2026-11-24T01:00Z",
-  "minutos_antes": 555.0,
+  "minutos_antes": 525.0,
   "proyeccion": {
    "league_game_id": "401910042",
    "espn_game_id": "401910042",
@@ -10712,11 +10712,11 @@
   "tardia": false
  },
  "401910043": {
-  "generated_at": "2026-11-23T15:45:00.000514Z",
+  "generated_at": "2026-11-23T16:15:00.000526Z",
   "model_version": "nba-0.7.0",
   "game_id": 401910043,
   "starts_at": "2026-11-24T01:30Z",
-  "minutos_antes": 585.0,
+  "minutos_antes": 555.0,
   "proyeccion": {
    "league_game_id": "401910043",
    "espn_game_id": "401910043",
@@ -12241,11 +12241,11 @@
   "tardia": false
  },
  "401910044": {
-  "generated_at": "2026-11-23T15:45:00.000514Z",
+  "generated_at": "2026-11-23T16:15:00.000526Z",
   "model_version": "nba-0.7.0",
   "game_id": 401910044,
   "starts_at": "2026-11-24T03:00Z",
-  "minutos_antes": 675.0,
+  "minutos_antes": 645.0,
   "proyeccion": {
    "league_game_id": "401910044",
    "espn_game_id": "401910044",
@@ -13778,11 +13778,11 @@
   "tardia": false
  },
  "401910045": {
-  "generated_at": "2026-11-23T15:45:00.000514Z",
+  "generated_at": "2026-11-23T16:15:00.000526Z",
   "model_version": "nba-0.7.0",
   "game_id": 401910045,
   "starts_at": "2026-11-24T03:00Z",
-  "minutos_antes": 675.0,
+  "minutos_antes": 645.0,
   "proyeccion": {
    "league_game_id": "401910045",
    "espn_game_id": "401910045",
