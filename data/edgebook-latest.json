@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-23T21:45:00.000557Z",
+ "generated_at": "2026-11-23T22:45:00.000594Z",
  "date_local": "2026-11-23",
  "games": [
   {
@@ -22,15 +22,15 @@
     "away_score": 111.4
    },
    "win_probability": {
-    "home": 0.3569,
-    "away": 0.6431
+    "home": 0.3578,
+    "away": 0.6422
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Memphis Grizzlies ML"
    },
-   "data_warning": "Brandon Miller está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": 5.0,
     "away": -5.0
@@ -47,21 +47,19 @@
      244.0
     ]
    },
-   "game_warnings": [
-    "Brandon Miller está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": null,
-     "detail": "Los modelos se dividen 2-2. Margen de CHA: jugadores -5.8, Elo +0.0, equipo -3.1, cuatro factores +3.3.",
+     "detail": "Los modelos se dividen 2-2. Margen de CHA: jugadores -5.7, Elo +0.0, equipo -3.1, cuatro factores +3.3.",
      "supports_pick": false
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de MEM vale 7.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MEM vale 7.4 puntos más por partido.",
      "supports_pick": true
     },
     {
