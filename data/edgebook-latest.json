@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-23T22:45:00.000594Z",
+ "generated_at": "2026-11-23T23:15:00.000568Z",
  "date_local": "2026-11-23",
  "games": [
   {
@@ -89,12 +89,12 @@
     "code": "POR"
    },
    "projection": {
-    "home_score": 112.7,
-    "away_score": 114.8
+    "home_score": 111.9,
+    "away_score": 114.9
    },
    "win_probability": {
-    "home": 0.4391,
-    "away": 0.5609
+    "home": 0.4144,
+    "away": 0.5856
    },
    "pick": {
     "market": "moneyline",
@@ -103,25 +103,24 @@
    },
    "data_warning": "Adem Bona está en duda (probable)",
    "spread": {
-    "home": 3.0,
-    "away": -3.0
+    "home": 4.0,
+    "away": -4.0
    },
-   "total_points": 227.5,
+   "total_points": 226.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -20.0,
-     16.0
+     -21.0,
+     15.0
     ],
     "total": [
-     202.0,
-     254.0
+     201.0,
+     253.0
     ]
    },
    "game_warnings": [
     "Adem Bona está en duda (probable)",
     "Jaylen Brown está en duda (probable)",
-    "Joel Embiid está en duda (questionable)",
     "Dean Wade está en duda (probable)"
    ],
    "warnings": [],
@@ -129,13 +128,19 @@
     {
      "label": "Los 4 modelos",
      "favors": null,
-     "detail": "Los modelos se dividen 2-2. Margen de PHI: jugadores -2.3, Elo +2.5, equipo -1.6, cuatro factores +0.2.",
+     "detail": "Los modelos se dividen 2-2. Margen de PHI: jugadores -3.6, Elo +2.5, equipo -1.6, cuatro factores +0.2.",
      "supports_pick": false
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de POR vale 4.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de POR vale 5.4 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de PHI",
+     "favors": "away",
+     "detail": "Sin Joel Embiid: PHI pierde 3.7 puntos.",
      "supports_pick": true
     },
     {
@@ -233,23 +238,23 @@
    },
    "projection": {
     "home_score": 116.8,
-    "away_score": 107.5
+    "away_score": 107.4
    },
    "win_probability": {
-    "home": 0.751,
-    "away": 0.249
+    "home": 0.7512,
+    "away": 0.2488
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Toronto Raptors ML"
    },
-   "data_warning": "Collin Murray-Boyles está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": -9.0,
     "away": 9.0
    },
-   "total_points": 224.3,
+   "total_points": 224.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -258,12 +263,10 @@
     ],
     "total": [
      199.0,
-     250.0
+     249.0
     ]
    },
-   "game_warnings": [
-    "Collin Murray-Boyles está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
