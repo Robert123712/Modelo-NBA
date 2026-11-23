@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-23T19:45:00.000554Z",
+ "generated_at": "2026-11-23T21:15:00.000598Z",
  "date_local": "2026-11-23",
  "games": [
   {
@@ -591,24 +591,24 @@
     "code": "UTAH"
    },
    "projection": {
-    "home_score": 120.0,
-    "away_score": 108.0
+    "home_score": 120.5,
+    "away_score": 108.2
    },
    "win_probability": {
-    "home": 0.8088,
-    "away": 0.1912
+    "home": 0.8136,
+    "away": 0.1864
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Los Angeles Lakers ML"
    },
-   "data_warning": "Jaxson Hayes está en duda (day-to-day)",
+   "data_warning": null,
    "spread": {
     "home": -12.0,
     "away": 12.0
    },
-   "total_points": 227.9,
+   "total_points": 228.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -616,25 +616,23 @@
      30.0
     ],
     "total": [
-     202.0,
-     253.0
+     203.0,
+     254.0
     ]
    },
-   "game_warnings": [
-    "Jaxson Hayes está en duda (day-to-day)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +12.9, Elo +11.7, equipo +9.6, cuatro factores +11.0.",
+     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +13.3, Elo +11.7, equipo +9.6, cuatro factores +11.0.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de LAL vale 9.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de LAL vale 9.5 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -652,7 +650,7 @@
     {
      "label": "Bajas de UTAH",
      "favors": "home",
-     "detail": "Sin Jaren Jackson Jr., Lauri Markkanen, Jusuf Nurkic: UTAH pierde 2.1 puntos.",
+     "detail": "Sin Jaxson Hayes, Jaren Jackson Jr., Lauri Markkanen: UTAH pierde 2.5 puntos.",
      "supports_pick": true
     }
    ]
