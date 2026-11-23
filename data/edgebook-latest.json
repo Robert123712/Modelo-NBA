@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-23T21:15:00.000598Z",
+ "generated_at": "2026-11-23T21:45:00.000557Z",
  "date_local": "2026-11-23",
  "games": [
   {
@@ -669,11 +669,11 @@
    },
    "projection": {
     "home_score": 105.1,
-    "away_score": 117.7
+    "away_score": 117.6
    },
    "win_probability": {
-    "home": 0.1799,
-    "away": 0.8201
+    "home": 0.1825,
+    "away": 0.8175
    },
    "pick": {
     "market": "moneyline",
@@ -682,10 +682,10 @@
    },
    "data_warning": "De'Aaron Fox está en duda (questionable)",
    "spread": {
-    "home": 13.0,
-    "away": -13.0
+    "home": 12.0,
+    "away": -12.0
    },
-   "total_points": 222.7,
+   "total_points": 222.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -706,13 +706,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +11.4, Elo +13.1, equipo +15.0, cuatro factores +12.2.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +11.2, Elo +13.1, equipo +15.0, cuatro factores +12.2.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 13.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 13.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -724,7 +724,7 @@
     {
      "label": "Bajas de SA",
      "favors": "home",
-     "detail": "Sin Dylan Harper, Tobias Harris: SA pierde 3.2 puntos.",
+     "detail": "Sin Dylan Harper, Tobias Harris: SA pierde 3.4 puntos.",
      "supports_pick": false
     }
    ]
