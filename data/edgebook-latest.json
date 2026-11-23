@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-23T17:45:00.000517Z",
+ "generated_at": "2026-11-23T18:45:00.000620Z",
  "date_local": "2026-11-23",
  "games": [
   {
@@ -161,29 +161,29 @@
     "code": "OKC"
    },
    "projection": {
-    "home_score": 112.0,
-    "away_score": 117.2
+    "home_score": 111.0,
+    "away_score": 118.4
    },
    "win_probability": {
-    "home": 0.3547,
-    "away": 0.6453
+    "home": 0.298,
+    "away": 0.702
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Oklahoma City Thunder ML"
    },
-   "data_warning": "T.J. McConnell está en duda (day-to-day)",
+   "data_warning": "Pascal Siakam está en duda (questionable)",
    "spread": {
-    "home": 5.0,
-    "away": -5.0
+    "home": 8.0,
+    "away": -8.0
    },
-   "total_points": 229.3,
+   "total_points": 229.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -23.0,
-     13.0
+     -25.0,
+     11.0
     ],
     "total": [
      204.0,
@@ -191,36 +191,32 @@
     ]
    },
    "game_warnings": [
-    "T.J. McConnell está en duda (day-to-day)",
-    "Alex Caruso está en duda (day-to-day)",
-    "Shai Gilgeous-Alexander está en duda (day-to-day)",
-    "Aday Mara está en duda (day-to-day)",
-    "Jaylin Williams está en duda (day-to-day)"
+    "Pascal Siakam está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +3.5, Elo +7.4, equipo +8.6, cuatro factores +7.7.",
+     "detail": "4 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores +6.8, Elo +7.4, equipo +8.6, cuatro factores +7.7.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de OKC vale 5.3 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de OKC vale 8.6 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de IND",
+     "favors": "away",
+     "detail": "Sin Johnny Furphy, Tyrese Haliburton, T.J. McConnell: IND pierde 1.2 puntos.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para IND.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de OKC",
-     "favors": "home",
-     "detail": "Sin Chet Holmgren, Cason Wallace, Jalen Williams: OKC pierde 2.1 puntos.",
      "supports_pick": false
     }
    ]
@@ -382,24 +378,24 @@
     "code": "CLE"
    },
    "projection": {
-    "home_score": 118.7,
+    "home_score": 118.6,
     "away_score": 126.1
    },
    "win_probability": {
-    "home": 0.2988,
-    "away": 0.7012
+    "home": 0.2966,
+    "away": 0.7034
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Cleveland Cavaliers ML"
    },
-   "data_warning": "Nic Claxton está en duda (day-to-day)",
+   "data_warning": "Nic Claxton está en duda (questionable)",
    "spread": {
     "home": 8.0,
     "away": -8.0
    },
-   "total_points": 244.8,
+   "total_points": 244.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -412,7 +408,8 @@
     ]
    },
    "game_warnings": [
-    "Nic Claxton está en duda (day-to-day)",
+    "Nic Claxton está en duda (questionable)",
+    "Jalen Smith está en duda (probable)",
     "Jaylon Tyson está en duda (probable)"
    ],
    "warnings": [],
@@ -420,13 +417,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +8.5, Elo +4.3, equipo +5.1, cuatro factores +4.0.",
+     "detail": "4 de 4 modelos ven ganar a CLE. Margen de CLE: jugadores +8.7, Elo +4.3, equipo +5.1, cuatro factores +4.0.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de CLE vale 8.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de CLE vale 8.4 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -456,24 +453,24 @@
     "code": "PHX"
    },
    "projection": {
-    "home_score": 113.9,
+    "home_score": 114.0,
     "away_score": 117.9
    },
    "win_probability": {
-    "home": 0.3851,
-    "away": 0.6149
+    "home": 0.3892,
+    "away": 0.6108
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Phoenix Suns ML"
    },
-   "data_warning": "Trey Murphy III está en duda (probable)",
+   "data_warning": "Zion Williamson está en duda (probable)",
    "spread": {
     "home": 4.0,
     "away": -4.0
    },
-   "total_points": 231.8,
+   "total_points": 231.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -486,7 +483,6 @@
     ]
    },
    "game_warnings": [
-    "Trey Murphy III está en duda (probable)",
     "Zion Williamson está en duda (probable)",
     "Ryan Dunn está en duda (questionable)"
    ],
@@ -495,13 +491,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +4.0, Elo +4.6, equipo +4.3, cuatro factores +2.7.",
+     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +3.7, Elo +4.6, equipo +4.3, cuatro factores +2.7.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de PHX vale 5.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de PHX vale 5.5 puntos más por partido.",
      "supports_pick": true
     },
     {
