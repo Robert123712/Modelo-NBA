@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-23T23:15:00.000568Z",
+ "generated_at": "2026-11-23T23:45:00.000544Z",
  "date_local": "2026-11-23",
  "games": [
   {
@@ -93,18 +93,18 @@
     "away_score": 114.9
    },
    "win_probability": {
-    "home": 0.4144,
-    "away": 0.5856
+    "home": 0.4163,
+    "away": 0.5837
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Portland Trail Blazers ML"
    },
-   "data_warning": "Adem Bona está en duda (probable)",
+   "data_warning": null,
    "spread": {
-    "home": 4.0,
-    "away": -4.0
+    "home": 3.5,
+    "away": -3.5
    },
    "total_points": 226.8,
    "season": 2027,
@@ -118,29 +118,25 @@
      253.0
     ]
    },
-   "game_warnings": [
-    "Adem Bona está en duda (probable)",
-    "Jaylen Brown está en duda (probable)",
-    "Dean Wade está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": null,
-     "detail": "Los modelos se dividen 2-2. Margen de PHI: jugadores -3.6, Elo +2.5, equipo -1.6, cuatro factores +0.2.",
+     "detail": "Los modelos se dividen 2-2. Margen de PHI: jugadores -3.5, Elo +2.5, equipo -1.6, cuatro factores +0.2.",
      "supports_pick": false
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de POR vale 5.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de POR vale 5.3 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de PHI",
      "favors": "away",
-     "detail": "Sin Joel Embiid: PHI pierde 3.7 puntos.",
+     "detail": "Sin Joel Embiid: PHI pierde 3.6 puntos.",
      "supports_pick": true
     },
     {
