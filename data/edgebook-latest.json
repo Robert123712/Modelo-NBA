@@ -2,157 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-24T01:45:00.000516Z",
+ "generated_at": "2026-11-24T03:15:00.000606Z",
  "date_local": "2026-11-23",
  "games": [
-  {
-   "league_game_id": "401910044",
-   "espn_game_id": "401910044",
-   "starts_at": "2026-11-24T03:00Z",
-   "home": {
-    "name": "Los Angeles Lakers",
-    "code": "LAL"
-   },
-   "away": {
-    "name": "Utah Jazz",
-    "code": "UTAH"
-   },
-   "projection": {
-    "home_score": 120.5,
-    "away_score": 108.2
-   },
-   "win_probability": {
-    "home": 0.8136,
-    "away": 0.1864
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Los Angeles Lakers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -12.0,
-    "away": 12.0
-   },
-   "total_points": 228.6,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -6.0,
-     30.0
-    ],
-    "total": [
-     203.0,
-     254.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +13.3, Elo +11.7, equipo +9.6, cuatro factores +11.0.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de LAL vale 9.5 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para LAL.",
-     "supports_pick": true
-    },
-    {
-     "label": "Descanso",
-     "favors": "home",
-     "detail": "UTAH juega su segundo partido en dos noches: 2.0 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de UTAH",
-     "favors": "home",
-     "detail": "Sin Jaxson Hayes, Jaren Jackson Jr., Lauri Markkanen: UTAH pierde 2.5 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
-  {
-   "league_game_id": "401910045",
-   "espn_game_id": "401910045",
-   "starts_at": "2026-11-24T03:00Z",
-   "home": {
-    "name": "Sacramento Kings",
-    "code": "SAC"
-   },
-   "away": {
-    "name": "San Antonio Spurs",
-    "code": "SA"
-   },
-   "projection": {
-    "home_score": 106.5,
-    "away_score": 118.0
-   },
-   "win_probability": {
-    "home": 0.2028,
-    "away": 0.7972
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "San Antonio Spurs ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 12.0,
-    "away": -12.0
-   },
-   "total_points": 224.6,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -29.0,
-     7.0
-    ],
-    "total": [
-     199.0,
-     250.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +9.8, Elo +13.1, equipo +15.0, cuatro factores +12.2.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 11.5 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para SAC.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de SA",
-     "favors": "home",
-     "detail": "Sin De'Aaron Fox, Dylan Harper, Tobias Harris: SA pierde 4.8 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401910036",
    "espn_game_id": "401910036",
@@ -719,6 +571,154 @@
      "favors": "home",
      "detail": "Sin Bradley Beal, Jordan Miller: LAC pierde 0.5 puntos.",
      "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401910044",
+   "espn_game_id": "401910044",
+   "starts_at": "2026-11-24T03:00Z",
+   "home": {
+    "name": "Los Angeles Lakers",
+    "code": "LAL"
+   },
+   "away": {
+    "name": "Utah Jazz",
+    "code": "UTAH"
+   },
+   "projection": {
+    "home_score": 120.5,
+    "away_score": 108.2
+   },
+   "win_probability": {
+    "home": 0.8136,
+    "away": 0.1864
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Los Angeles Lakers ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -12.0,
+    "away": 12.0
+   },
+   "total_points": 228.6,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -6.0,
+     30.0
+    ],
+    "total": [
+     203.0,
+     254.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a LAL. Margen de LAL: jugadores +13.3, Elo +11.7, equipo +9.6, cuatro factores +11.0.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de LAL vale 9.5 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para LAL.",
+     "supports_pick": true
+    },
+    {
+     "label": "Descanso",
+     "favors": "home",
+     "detail": "UTAH juega su segundo partido en dos noches: 2.0 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de UTAH",
+     "favors": "home",
+     "detail": "Sin Jaxson Hayes, Jaren Jackson Jr., Lauri Markkanen: UTAH pierde 2.5 puntos.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401910045",
+   "espn_game_id": "401910045",
+   "starts_at": "2026-11-24T03:00Z",
+   "home": {
+    "name": "Sacramento Kings",
+    "code": "SAC"
+   },
+   "away": {
+    "name": "San Antonio Spurs",
+    "code": "SA"
+   },
+   "projection": {
+    "home_score": 106.5,
+    "away_score": 118.0
+   },
+   "win_probability": {
+    "home": 0.2028,
+    "away": 0.7972
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "San Antonio Spurs ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 12.0,
+    "away": -12.0
+   },
+   "total_points": 224.6,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -29.0,
+     7.0
+    ],
+    "total": [
+     199.0,
+     250.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +9.8, Elo +13.1, equipo +15.0, cuatro factores +12.2.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 11.5 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para SAC.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de SA",
+     "favors": "home",
+     "detail": "Sin De'Aaron Fox, Dylan Harper, Tobias Harris: SA pierde 4.8 puntos.",
+     "supports_pick": false
     }
    ]
   }
