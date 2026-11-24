@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-24T05:45:00.000610Z",
+ "generated_at": "2026-11-24T15:15:00.593971Z",
  "date_local": "2026-11-24",
  "games": [
   {
@@ -218,7 +218,5 @@
   }
  ],
  "skipped_without_id": 0,
- "warnings": [
-  "Sin alineaciones de la NBA (HTTPError); titular del partido anterior"
- ]
+ "warnings": []
 }
