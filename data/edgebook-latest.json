@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-24T15:15:00.593971Z",
+ "generated_at": "2026-11-24T23:45:00.000503Z",
  "date_local": "2026-11-24",
  "games": [
   {
@@ -18,28 +18,28 @@
     "code": "DET"
    },
    "projection": {
-    "home_score": 104.8,
-    "away_score": 107.8
+    "home_score": 104.4,
+    "away_score": 108.0
    },
    "win_probability": {
-    "home": 0.4144,
-    "away": 0.5856
+    "home": 0.3958,
+    "away": 0.6042
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Detroit Pistons ML"
    },
-   "data_warning": "Cade Cunningham está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": 4.0,
     "away": -4.0
    },
-   "total_points": 212.6,
+   "total_points": 212.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -21.0,
+     -21.1,
      15.0
     ],
     "total": [
@@ -47,33 +47,25 @@
      238.0
     ]
    },
-   "game_warnings": [
-    "Cade Cunningham está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +2.0, Elo +2.8, equipo +4.5, cuatro factores +3.2.",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +3.0, Elo +2.8, equipo +4.5, cuatro factores +3.2.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DET vale 3.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DET vale 4.7 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.7 puntos para ORL.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de DET",
-     "favors": "home",
-     "detail": "Sin Jalen Duren, Duncan Robinson: DET pierde 0.6 puntos.",
      "supports_pick": false
     }
    ]
