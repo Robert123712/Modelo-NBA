@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-24T01:15:00.000583Z",
+ "generated_at": "2026-11-24T01:45:00.000516Z",
  "date_local": "2026-11-23",
  "games": [
-  {
-   "league_game_id": "401910043",
-   "espn_game_id": "401910043",
-   "starts_at": "2026-11-24T01:30Z",
-   "home": {
-    "name": "Houston Rockets",
-    "code": "HOU"
-   },
-   "away": {
-    "name": "LA Clippers",
-    "code": "LAC"
-   },
-   "projection": {
-    "home_score": 116.7,
-    "away_score": 106.4
-   },
-   "win_probability": {
-    "home": 0.7698,
-    "away": 0.2302
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Houston Rockets ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -10.0,
-    "away": 10.0
-   },
-   "total_points": 223.1,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -8.0,
-     28.0
-    ],
-    "total": [
-     197.0,
-     249.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +10.3, Elo +9.5, equipo +9.2, cuatro factores +7.0.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 8.6 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para HOU.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de LAC",
-     "favors": "home",
-     "detail": "Sin Bradley Beal, Jordan Miller: LAC pierde 0.5 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401910044",
    "espn_game_id": "401910044",
@@ -166,51 +95,48 @@
     "code": "SA"
    },
    "projection": {
-    "home_score": 105.1,
-    "away_score": 117.6
+    "home_score": 106.5,
+    "away_score": 118.0
    },
    "win_probability": {
-    "home": 0.1825,
-    "away": 0.8175
+    "home": 0.2028,
+    "away": 0.7972
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "San Antonio Spurs ML"
    },
-   "data_warning": "De'Aaron Fox está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": 12.0,
     "away": -12.0
    },
-   "total_points": 222.6,
+   "total_points": 224.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -30.0,
-     6.0
+     -29.0,
+     7.0
     ],
     "total": [
-     197.0,
-     248.0
+     199.0,
+     250.0
     ]
    },
-   "game_warnings": [
-    "De'Aaron Fox está en duda (questionable)",
-    "Victor Wembanyama está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +11.2, Elo +13.1, equipo +15.0, cuatro factores +12.2.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +9.8, Elo +13.1, equipo +15.0, cuatro factores +12.2.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 13.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 11.5 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -222,7 +148,7 @@
     {
      "label": "Bajas de SA",
      "favors": "home",
-     "detail": "Sin Dylan Harper, Tobias Harris: SA pierde 3.4 puntos.",
+     "detail": "Sin De'Aaron Fox, Dylan Harper, Tobias Harris: SA pierde 4.8 puntos.",
      "supports_pick": false
     }
    ]
@@ -722,6 +648,77 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para NO.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401910043",
+   "espn_game_id": "401910043",
+   "starts_at": "2026-11-24T01:30Z",
+   "home": {
+    "name": "Houston Rockets",
+    "code": "HOU"
+   },
+   "away": {
+    "name": "LA Clippers",
+    "code": "LAC"
+   },
+   "projection": {
+    "home_score": 116.7,
+    "away_score": 106.4
+   },
+   "win_probability": {
+    "home": 0.7698,
+    "away": 0.2302
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Houston Rockets ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -10.0,
+    "away": 10.0
+   },
+   "total_points": 223.1,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -8.0,
+     28.0
+    ],
+    "total": [
+     197.0,
+     249.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +10.3, Elo +9.5, equipo +9.2, cuatro factores +7.0.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 8.6 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para HOU.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de LAC",
+     "favors": "home",
+     "detail": "Sin Bradley Beal, Jordan Miller: LAC pierde 0.5 puntos.",
+     "supports_pick": true
     }
    ]
   }
