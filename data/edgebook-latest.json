@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-25T20:45:00.000584Z",
+ "generated_at": "2026-11-25T21:15:00.000705Z",
  "date_local": "2026-11-25",
  "games": [
   {
@@ -512,12 +512,12 @@
     "code": "SAC"
    },
    "projection": {
-    "home_score": 113.6,
-    "away_score": 106.8
+    "home_score": 113.7,
+    "away_score": 106.6
    },
    "win_probability": {
-    "home": 0.6924,
-    "away": 0.3076
+    "home": 0.6979,
+    "away": 0.3021
    },
    "pick": {
     "market": "moneyline",
@@ -529,7 +529,7 @@
     "home": -7.0,
     "away": 7.0
    },
-   "total_points": 220.4,
+   "total_points": 220.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -542,20 +542,21 @@
     ]
    },
    "game_warnings": [
-    "Yaxel Lendeborg está en duda (questionable)"
+    "Yaxel Lendeborg está en duda (questionable)",
+    "Zach LaVine está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +5.7, Elo +8.0, equipo +9.2, cuatro factores +7.2.",
+     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +6.0, Elo +8.0, equipo +9.2, cuatro factores +7.2.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de GS vale 4.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de GS vale 4.3 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -567,7 +568,7 @@
     {
      "label": "Bajas de GS",
      "favors": "away",
-     "detail": "Sin Jimmy Butler III, Stephen Curry, Moses Moody: GS pierde 5.9 puntos.",
+     "detail": "Sin Jimmy Butler III, Stephen Curry, Moses Moody: GS pierde 5.6 puntos.",
      "supports_pick": false
     }
    ]
