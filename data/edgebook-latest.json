@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-25T21:45:00.000673Z",
+ "generated_at": "2026-11-25T22:15:00.000664Z",
  "date_local": "2026-11-25",
  "games": [
-  {
-   "league_game_id": "401909317",
-   "espn_game_id": "401909317",
-   "starts_at": "2026-11-25T22:00Z",
-   "home": {
-    "name": "Philadelphia 76ers",
-    "code": "PHI"
-   },
-   "away": {
-    "name": "Miami Heat",
-    "code": "MIA"
-   },
-   "projection": {
-    "home_score": 119.3,
-    "away_score": 119.1
-   },
-   "win_probability": {
-    "home": 0.5053,
-    "away": 0.4947
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Philadelphia 76ers ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -1.0,
-    "away": 1.0
-   },
-   "total_points": 238.4,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -17.0,
-     18.0
-    ],
-    "total": [
-     213.0,
-     264.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": null,
-     "detail": "Los modelos se dividen 2-2. Margen de PHI: jugadores -0.2, Elo +2.2, equipo +0.4, cuatro factores -0.8.",
-     "supports_pick": false
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para PHI.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de MIA vale 2.0 puntos más por partido.",
-     "supports_pick": false
-    },
-    {
-     "label": "Bajas de PHI",
-     "favors": "away",
-     "detail": "Sin Joel Embiid: PHI pierde 2.1 puntos.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909318",
    "espn_game_id": "401909318",
@@ -89,12 +18,12 @@
     "code": "CHI"
    },
    "projection": {
-    "home_score": 110.6,
-    "away_score": 109.4
+    "home_score": 110.1,
+    "away_score": 108.3
    },
    "win_probability": {
-    "home": 0.5377,
-    "away": 0.4623
+    "home": 0.5531,
+    "away": 0.4469
    },
    "pick": {
     "market": "moneyline",
@@ -106,28 +35,27 @@
     "home": -2.0,
     "away": 2.0
    },
-   "total_points": 220.0,
+   "total_points": 218.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -17.0,
-     19.0
+     -16.0,
+     20.0
     ],
     "total": [
-     194.0,
-     246.0
+     193.0,
+     244.0
     ]
    },
    "game_warnings": [
-    "Sion James está en duda (probable)",
-    "Jalen Smith está en duda (questionable)"
+    "Sion James está en duda (probable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +0.9, Elo +2.7, equipo +2.0, cuatro factores +5.1.",
+     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +1.7, Elo +2.7, equipo +2.0, cuatro factores +5.1.",
      "supports_pick": true
     },
     {
@@ -137,15 +65,9 @@
      "supports_pick": true
     },
     {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de CHI vale 0.8 puntos más por partido.",
-     "supports_pick": false
-    },
-    {
      "label": "Bajas de CHA",
      "favors": "away",
-     "detail": "Sin Grayson Allen, Ryan Kalkbrenner, Kon Knueppel: CHA pierde 3.0 puntos.",
+     "detail": "Sin Grayson Allen, Ryan Kalkbrenner, Kon Knueppel: CHA pierde 2.2 puntos.",
      "supports_pick": false
     }
    ]
@@ -641,6 +563,79 @@
      "label": "Bajas de SA",
      "favors": "home",
      "detail": "Sin Dylan Harper, Tobias Harris: SA pierde 4.7 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909317",
+   "espn_game_id": "401909317",
+   "starts_at": "2026-11-25T22:00Z",
+   "home": {
+    "name": "Philadelphia 76ers",
+    "code": "PHI"
+   },
+   "away": {
+    "name": "Miami Heat",
+    "code": "MIA"
+   },
+   "projection": {
+    "home_score": 119.3,
+    "away_score": 119.0
+   },
+   "win_probability": {
+    "home": 0.5089,
+    "away": 0.4911
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Philadelphia 76ers ML"
+   },
+   "data_warning": "Giannis Antetokounmpo está en duda (probable)",
+   "spread": {
+    "home": -1.0,
+    "away": 1.0
+   },
+   "total_points": 238.3,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -17.0,
+     18.0
+    ],
+    "total": [
+     213.0,
+     264.0
+    ]
+   },
+   "game_warnings": [
+    "Giannis Antetokounmpo está en duda (probable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": null,
+     "detail": "Los modelos se dividen 2-2. Margen de PHI: jugadores -0.0, Elo +2.2, equipo +0.4, cuatro factores -0.8.",
+     "supports_pick": false
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para PHI.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de MIA vale 1.8 puntos más por partido.",
+     "supports_pick": false
+    },
+    {
+     "label": "Bajas de PHI",
+     "favors": "away",
+     "detail": "Sin Joel Embiid: PHI pierde 2.0 puntos.",
      "supports_pick": false
     }
    ]
