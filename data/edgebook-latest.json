@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-25T15:15:00.796457Z",
+ "generated_at": "2026-11-25T16:45:00.000534Z",
  "date_local": "2026-11-25",
  "games": [
   {
@@ -18,45 +18,45 @@
     "code": "MIA"
    },
    "projection": {
-    "home_score": 120.3,
+    "home_score": 119.9,
     "away_score": 118.1
    },
    "win_probability": {
-    "home": 0.5609,
-    "away": 0.4391
+    "home": 0.5517,
+    "away": 0.4483
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Philadelphia 76ers ML"
    },
-   "data_warning": "Joel Embiid está en duda (day-to-day)",
+   "data_warning": "Joel Embiid está en duda (doubtful)",
    "spread": {
-    "home": -3.0,
-    "away": 3.0
+    "home": -2.0,
+    "away": 2.0
    },
-   "total_points": 238.3,
+   "total_points": 238.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -15.0,
-     20.0
+     -16.0,
+     19.0
     ],
     "total": [
-     213.0,
+     212.0,
      264.0
     ]
    },
    "game_warnings": [
-    "Joel Embiid está en duda (day-to-day)",
-    "Giannis Antetokounmpo está en duda (day-to-day)"
+    "Joel Embiid está en duda (doubtful)",
+    "Giannis Antetokounmpo está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a PHI. Margen de PHI: jugadores +2.0, Elo +2.2, equipo +0.4, cuatro factores -0.8.",
+     "detail": "3 de 4 modelos ven ganar a PHI. Margen de PHI: jugadores +1.6, Elo +2.2, equipo +0.4, cuatro factores -0.8.",
      "supports_pick": true
     },
     {
@@ -80,46 +80,47 @@
     "code": "CHI"
    },
    "projection": {
-    "home_score": 110.8,
-    "away_score": 109.2
+    "home_score": 110.9,
+    "away_score": 109.4
    },
    "win_probability": {
-    "home": 0.5461,
-    "away": 0.4539
+    "home": 0.5426,
+    "away": 0.4574
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Charlotte Hornets ML"
    },
-   "data_warning": "Sion James está en duda (day-to-day)",
+   "data_warning": "Grayson Allen está en duda (questionable)",
    "spread": {
     "home": -2.0,
     "away": 2.0
    },
-   "total_points": 220.0,
+   "total_points": 220.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -16.0,
+     -17.0,
      19.0
     ],
     "total": [
-     194.0,
+     195.0,
      246.0
     ]
    },
    "game_warnings": [
-    "Sion James está en duda (day-to-day)",
-    "Ryan Kalkbrenner está en duda (day-to-day)",
-    "Jalen Smith está en duda (day-to-day)"
+    "Grayson Allen está en duda (questionable)",
+    "Sion James está en duda (probable)",
+    "Ryan Kalkbrenner está en duda (doubtful)",
+    "Jalen Smith está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +1.3, Elo +2.7, equipo +2.0, cuatro factores +5.1.",
+     "detail": "4 de 4 modelos ven ganar a CHA. Margen de CHA: jugadores +1.2, Elo +2.7, equipo +2.0, cuatro factores +5.1.",
      "supports_pick": true
     },
     {
@@ -129,9 +130,15 @@
      "supports_pick": true
     },
     {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de CHI vale 0.6 puntos más por partido.",
+     "supports_pick": false
+    },
+    {
      "label": "Bajas de CHA",
      "favors": "away",
-     "detail": "Sin Grayson Allen, Kon Knueppel, Dennis Schroder: CHA pierde 2.6 puntos.",
+     "detail": "Sin Kon Knueppel, Dennis Schroder: CHA pierde 2.7 puntos.",
      "supports_pick": false
     }
    ]
@@ -149,52 +156,52 @@
     "code": "CLE"
    },
    "projection": {
-    "home_score": 112.9,
-    "away_score": 107.5
+    "home_score": 112.6,
+    "away_score": 107.4
    },
    "win_probability": {
-    "home": 0.6543,
-    "away": 0.3457
+    "home": 0.6493,
+    "away": 0.3507
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "New York Knicks ML"
    },
-   "data_warning": "Josh Hart está en duda (day-to-day)",
+   "data_warning": "Josh Hart está en duda (questionable)",
    "spread": {
     "home": -6.0,
     "away": 6.0
    },
-   "total_points": 220.3,
+   "total_points": 220.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -12.0,
+     -13.0,
      23.0
     ],
     "total": [
-     195.0,
+     194.0,
      246.0
     ]
    },
    "game_warnings": [
-    "Josh Hart está en duda (day-to-day)",
-    "Miles McBride está en duda (day-to-day)",
-    "Karl-Anthony Towns está en duda (day-to-day)"
+    "Josh Hart está en duda (questionable)",
+    "Miles McBride está en duda (questionable)",
+    "Karl-Anthony Towns está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +4.7, Elo +7.8, equipo +6.4, cuatro factores +7.6.",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +4.5, Elo +7.8, equipo +6.4, cuatro factores +7.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 3.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 2.8 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -206,7 +213,7 @@
     {
      "label": "Bajas de NY",
      "favors": "away",
-     "detail": "Sin OG Anunoby: NY pierde 1.4 puntos.",
+     "detail": "Sin OG Anunoby: NY pierde 1.6 puntos.",
      "supports_pick": false
     }
    ]
@@ -366,12 +373,12 @@
     "code": "BKN"
    },
    "projection": {
-    "home_score": 118.8,
-    "away_score": 116.5
+    "home_score": 118.9,
+    "away_score": 118.0
    },
    "win_probability": {
-    "home": 0.5647,
-    "away": 0.4353
+    "home": 0.5234,
+    "away": 0.4766
    },
    "pick": {
     "market": "moneyline",
@@ -380,19 +387,19 @@
    },
    "data_warning": null,
    "spread": {
-    "home": -3.0,
-    "away": 3.0
+    "home": -1.0,
+    "away": 1.0
    },
-   "total_points": 235.2,
+   "total_points": 237.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -15.0,
-     20.0
+     -17.0,
+     18.0
     ],
     "total": [
-     209.0,
-     261.0
+     211.0,
+     263.0
     ]
    },
    "game_warnings": [],
@@ -401,7 +408,7 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIL. Margen de MIL: jugadores +2.2, Elo +2.6, equipo +2.4, cuatro factores +3.5.",
+     "detail": "4 de 4 modelos ven ganar a MIL. Margen de MIL: jugadores +0.1, Elo +2.6, equipo +2.4, cuatro factores +3.5.",
      "supports_pick": true
     },
     {
@@ -409,6 +416,12 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para MIL.",
      "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de BKN vale 1.7 puntos más por partido.",
+     "supports_pick": false
     }
    ]
   },
@@ -491,23 +504,23 @@
    },
    "projection": {
     "home_score": 113.6,
-    "away_score": 106.7
+    "away_score": 106.8
    },
    "win_probability": {
-    "home": 0.6932,
-    "away": 0.3068
+    "home": 0.6924,
+    "away": 0.3076
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Golden State Warriors ML"
    },
-   "data_warning": "Yaxel Lendeborg está en duda (day-to-day)",
+   "data_warning": "Yaxel Lendeborg está en duda (questionable)",
    "spread": {
     "home": -7.0,
     "away": 7.0
    },
-   "total_points": 220.3,
+   "total_points": 220.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -520,14 +533,14 @@
     ]
    },
    "game_warnings": [
-    "Yaxel Lendeborg está en duda (day-to-day)"
+    "Yaxel Lendeborg está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +5.8, Elo +8.0, equipo +9.2, cuatro factores +7.2.",
+     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +5.7, Elo +8.0, equipo +9.2, cuatro factores +7.2.",
      "supports_pick": true
     },
     {
@@ -563,51 +576,51 @@
     "code": "SA"
    },
    "projection": {
-    "home_score": 111.9,
-    "away_score": 112.5
+    "home_score": 112.1,
+    "away_score": 112.6
    },
    "win_probability": {
-    "home": 0.4813,
-    "away": 0.5187
+    "home": 0.4851,
+    "away": 0.5149
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "San Antonio Spurs ML"
    },
-   "data_warning": "De'Aaron Fox está en duda (day-to-day)",
+   "data_warning": "De'Aaron Fox está en duda (questionable)",
    "spread": {
     "home": 1.0,
     "away": -1.0
    },
-   "total_points": 224.4,
+   "total_points": 224.7,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -19.0,
+     -18.0,
      17.0
     ],
     "total": [
      199.0,
-     250.0
+     251.0
     ]
    },
    "game_warnings": [
-    "De'Aaron Fox está en duda (day-to-day)",
-    "Victor Wembanyama está en duda (day-to-day)"
+    "De'Aaron Fox está en duda (questionable)",
+    "Victor Wembanyama está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "3 de 4 modelos ven ganar a SA. Margen de SA: jugadores -0.6, Elo +2.3, equipo +3.1, cuatro factores +3.9.",
+     "detail": "3 de 4 modelos ven ganar a SA. Margen de SA: jugadores -0.8, Elo +2.3, equipo +3.1, cuatro factores +3.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 1.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 1.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -619,7 +632,7 @@
     {
      "label": "Bajas de SA",
      "favors": "home",
-     "detail": "Sin Dylan Harper, Tobias Harris: SA pierde 4.5 puntos.",
+     "detail": "Sin Dylan Harper, Tobias Harris: SA pierde 4.7 puntos.",
      "supports_pick": false
     }
    ]
