@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-25T22:15:00.000664Z",
+ "generated_at": "2026-11-25T22:45:00.000584Z",
  "date_local": "2026-11-25",
  "games": [
   {
@@ -22,20 +22,20 @@
     "away_score": 108.3
    },
    "win_probability": {
-    "home": 0.5531,
-    "away": 0.4469
+    "home": 0.5538,
+    "away": 0.4462
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Charlotte Hornets ML"
    },
-   "data_warning": "Sion James está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": -2.0,
     "away": 2.0
    },
-   "total_points": 218.4,
+   "total_points": 218.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -47,9 +47,7 @@
      244.0
     ]
    },
-   "game_warnings": [
-    "Sion James está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
@@ -67,7 +65,7 @@
     {
      "label": "Bajas de CHA",
      "favors": "away",
-     "detail": "Sin Grayson Allen, Ryan Kalkbrenner, Kon Knueppel: CHA pierde 2.2 puntos.",
+     "detail": "Sin Grayson Allen, Ryan Kalkbrenner, Kon Knueppel: CHA pierde 2.1 puntos.",
      "supports_pick": false
     }
    ]
@@ -432,12 +430,12 @@
     "code": "SAC"
    },
    "projection": {
-    "home_score": 113.7,
-    "away_score": 106.6
+    "home_score": 113.9,
+    "away_score": 106.5
    },
    "win_probability": {
-    "home": 0.6979,
-    "away": 0.3021
+    "home": 0.7053,
+    "away": 0.2947
    },
    "pick": {
     "market": "moneyline",
@@ -446,8 +444,8 @@
    },
    "data_warning": "Yaxel Lendeborg está en duda (questionable)",
    "spread": {
-    "home": -7.0,
-    "away": 7.0
+    "home": -8.0,
+    "away": 8.0
    },
    "total_points": 220.3,
    "season": 2027,
@@ -457,26 +455,25 @@
      25.0
     ],
     "total": [
-     194.0,
+     195.0,
      246.0
     ]
    },
    "game_warnings": [
-    "Yaxel Lendeborg está en duda (questionable)",
-    "Zach LaVine está en duda (questionable)"
+    "Yaxel Lendeborg está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +6.0, Elo +8.0, equipo +9.2, cuatro factores +7.2.",
+     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +6.5, Elo +8.0, equipo +9.2, cuatro factores +7.2.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de GS vale 4.3 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de GS vale 4.8 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -488,7 +485,7 @@
     {
      "label": "Bajas de GS",
      "favors": "away",
-     "detail": "Sin Jimmy Butler III, Stephen Curry, Moses Moody: GS pierde 5.6 puntos.",
+     "detail": "Sin Jimmy Butler III, Stephen Curry, Moses Moody: GS pierde 5.1 puntos.",
      "supports_pick": false
     }
    ]
