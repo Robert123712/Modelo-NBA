@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-25T00:15:00.000518Z",
+ "generated_at": "2026-11-25T01:15:00.000597Z",
  "date_local": "2026-11-24",
  "games": [
-  {
-   "league_game_id": "401909315",
-   "espn_game_id": "401909315",
-   "starts_at": "2026-11-25T01:00Z",
-   "home": {
-    "name": "Washington Wizards",
-    "code": "WSH"
-   },
-   "away": {
-    "name": "Boston Celtics",
-    "code": "BOS"
-   },
-   "projection": {
-    "home_score": 102.9,
-    "away_score": 113.6
-   },
-   "win_probability": {
-    "home": 0.216,
-    "away": 0.784
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Boston Celtics ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 11.0,
-    "away": -11.0
-   },
-   "total_points": 216.5,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -28.0,
-     7.0
-    ],
-    "total": [
-     191.0,
-     242.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +10.9, Elo +7.7, equipo +10.5, cuatro factores +10.8.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 12.6 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de WSH",
-     "favors": "away",
-     "detail": "Sin Reece Beekman, Justin Champagnie, Tristan Vukcevic: WSH pierde 1.5 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para WSH.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909316",
    "espn_game_id": "401909316",
@@ -212,6 +141,77 @@
      "label": "Bajas de DET",
      "favors": "home",
      "detail": "Sin Jalen Duren, Duncan Robinson: DET pierde 0.6 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909315",
+   "espn_game_id": "401909315",
+   "starts_at": "2026-11-25T01:00Z",
+   "home": {
+    "name": "Washington Wizards",
+    "code": "WSH"
+   },
+   "away": {
+    "name": "Boston Celtics",
+    "code": "BOS"
+   },
+   "projection": {
+    "home_score": 102.9,
+    "away_score": 113.6
+   },
+   "win_probability": {
+    "home": 0.216,
+    "away": 0.784
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Boston Celtics ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 11.0,
+    "away": -11.0
+   },
+   "total_points": 216.5,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -28.0,
+     7.0
+    ],
+    "total": [
+     191.0,
+     242.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "away",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +10.9, Elo +7.7, equipo +10.5, cuatro factores +10.8.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 12.6 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de WSH",
+     "favors": "away",
+     "detail": "Sin Reece Beekman, Justin Champagnie, Tristan Vukcevic: WSH pierde 1.5 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para WSH.",
      "supports_pick": false
     }
    ]
