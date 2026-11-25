@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-25T05:45:00.000705Z",
+ "generated_at": "2026-11-25T15:15:00.796457Z",
  "date_local": "2026-11-25",
  "games": [
   {
@@ -18,12 +18,12 @@
     "code": "MIA"
    },
    "projection": {
-    "home_score": 120.2,
-    "away_score": 118.0
+    "home_score": 120.3,
+    "away_score": 118.1
    },
    "win_probability": {
-    "home": 0.5606,
-    "away": 0.4394
+    "home": 0.5609,
+    "away": 0.4391
    },
    "pick": {
     "market": "moneyline",
@@ -84,8 +84,8 @@
     "away_score": 109.2
    },
    "win_probability": {
-    "home": 0.5464,
-    "away": 0.4536
+    "home": 0.5461,
+    "away": 0.4539
    },
    "pick": {
     "market": "moneyline",
@@ -153,8 +153,8 @@
     "away_score": 107.5
    },
    "win_probability": {
-    "home": 0.6541,
-    "away": 0.3459
+    "home": 0.6543,
+    "away": 0.3457
    },
    "pick": {
     "market": "moneyline",
@@ -224,12 +224,12 @@
     "code": "MIN"
    },
    "projection": {
-    "home_score": 110.3,
+    "home_score": 110.2,
     "away_score": 110.5
    },
    "win_probability": {
-    "home": 0.4918,
-    "away": 0.5082
+    "home": 0.4916,
+    "away": 0.5084
    },
    "pick": {
     "market": "moneyline",
@@ -299,8 +299,8 @@
     "away_score": 114.0
    },
    "win_probability": {
-    "home": 0.6561,
-    "away": 0.3439
+    "home": 0.6559,
+    "away": 0.3441
    },
    "pick": {
     "market": "moneyline",
@@ -370,8 +370,8 @@
     "away_score": 116.5
    },
    "win_probability": {
-    "home": 0.5651,
-    "away": 0.4349
+    "home": 0.5647,
+    "away": 0.4353
    },
    "pick": {
     "market": "moneyline",
@@ -429,8 +429,8 @@
     "away_score": 107.9
    },
    "win_probability": {
-    "home": 0.7029,
-    "away": 0.2971
+    "home": 0.7028,
+    "away": 0.2972
    },
    "pick": {
     "market": "moneyline",
@@ -494,8 +494,8 @@
     "away_score": 106.7
    },
    "win_probability": {
-    "home": 0.693,
-    "away": 0.307
+    "home": 0.6932,
+    "away": 0.3068
    },
    "pick": {
     "market": "moneyline",
@@ -567,8 +567,8 @@
     "away_score": 112.5
    },
    "win_probability": {
-    "home": 0.4812,
-    "away": 0.5188
+    "home": 0.4813,
+    "away": 0.5187
    },
    "pick": {
     "market": "moneyline",
@@ -589,7 +589,7 @@
     ],
     "total": [
      199.0,
-     251.0
+     250.0
     ]
    },
    "game_warnings": [
@@ -626,7 +626,5 @@
   }
  ],
  "skipped_without_id": 0,
- "warnings": [
-  "Sin alineaciones de la NBA (HTTPError); titular del partido anterior"
- ]
+ "warnings": []
 }
