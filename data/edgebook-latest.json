@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-25T21:15:00.000705Z",
+ "generated_at": "2026-11-25T21:45:00.000673Z",
  "date_local": "2026-11-25",
  "games": [
   {
@@ -19,23 +19,23 @@
    },
    "projection": {
     "home_score": 119.3,
-    "away_score": 119.0
+    "away_score": 119.1
    },
    "win_probability": {
-    "home": 0.5089,
-    "away": 0.4911
+    "home": 0.5053,
+    "away": 0.4947
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Philadelphia 76ers ML"
    },
-   "data_warning": "Giannis Antetokounmpo está en duda (probable)",
+   "data_warning": null,
    "spread": {
     "home": -1.0,
     "away": 1.0
    },
-   "total_points": 238.3,
+   "total_points": 238.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -47,15 +47,13 @@
      264.0
     ]
    },
-   "game_warnings": [
-    "Giannis Antetokounmpo está en duda (probable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": null,
-     "detail": "Los modelos se dividen 2-2. Margen de PHI: jugadores -0.0, Elo +2.2, equipo +0.4, cuatro factores -0.8.",
+     "detail": "Los modelos se dividen 2-2. Margen de PHI: jugadores -0.2, Elo +2.2, equipo +0.4, cuatro factores -0.8.",
      "supports_pick": false
     },
     {
@@ -67,13 +65,13 @@
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de MIA vale 1.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MIA vale 2.0 puntos más por partido.",
      "supports_pick": false
     },
     {
      "label": "Bajas de PHI",
      "favors": "away",
-     "detail": "Sin Joel Embiid: PHI pierde 2.0 puntos.",
+     "detail": "Sin Joel Embiid: PHI pierde 2.1 puntos.",
      "supports_pick": false
     }
    ]
@@ -165,37 +163,37 @@
     "code": "CLE"
    },
    "projection": {
-    "home_score": 113.3,
+    "home_score": 113.7,
     "away_score": 107.7
    },
    "win_probability": {
-    "home": 0.6588,
-    "away": 0.3412
+    "home": 0.6693,
+    "away": 0.3307
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "New York Knicks ML"
    },
-   "data_warning": "Jalen Brunson está en duda (questionable)",
+   "data_warning": "Jalen Brunson está en duda (probable)",
    "spread": {
     "home": -6.0,
     "away": 6.0
    },
-   "total_points": 221.0,
+   "total_points": 221.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -12.0,
-     23.0
+     24.0
     ],
     "total": [
-     195.0,
+     196.0,
      247.0
     ]
    },
    "game_warnings": [
-    "Jalen Brunson está en duda (questionable)",
+    "Jalen Brunson está en duda (probable)",
     "Josh Hart está en duda (probable)",
     "Karl-Anthony Towns está en duda (probable)"
    ],
@@ -204,13 +202,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +5.0, Elo +7.8, equipo +6.4, cuatro factores +7.6.",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +5.6, Elo +7.8, equipo +6.4, cuatro factores +7.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 3.3 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 3.9 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -222,7 +220,7 @@
     {
      "label": "Bajas de NY",
      "favors": "away",
-     "detail": "Sin OG Anunoby, Miles McBride: NY pierde 1.1 puntos.",
+     "detail": "Sin OG Anunoby, Miles McBride: NY pierde 0.5 puntos.",
      "supports_pick": false
     }
    ]
