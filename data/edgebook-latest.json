@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-26T01:45:00.000591Z",
+ "generated_at": "2026-11-26T02:45:00.000510Z",
  "date_local": "2026-11-25",
  "games": [
   {
@@ -18,12 +18,12 @@
     "code": "SAC"
    },
    "projection": {
-    "home_score": 113.8,
-    "away_score": 106.3
+    "home_score": 113.4,
+    "away_score": 106.0
    },
    "win_probability": {
-    "home": 0.7085,
-    "away": 0.2915
+    "home": 0.7077,
+    "away": 0.2923
    },
    "pick": {
     "market": "moneyline",
@@ -35,7 +35,7 @@
     "home": -8.0,
     "away": 8.0
    },
-   "total_points": 220.1,
+   "total_points": 219.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -44,7 +44,7 @@
     ],
     "total": [
      194.0,
-     246.0
+     245.0
     ]
    },
    "game_warnings": [],
@@ -53,13 +53,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +6.6, Elo +8.0, equipo +9.2, cuatro factores +7.2.",
+     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +6.5, Elo +8.0, equipo +9.2, cuatro factores +7.2.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de GS vale 4.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de GS vale 4.8 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -71,7 +71,7 @@
     {
      "label": "Bajas de GS",
      "favors": "away",
-     "detail": "Sin Jimmy Butler III, Stephen Curry, Moses Moody: GS pierde 5.0 puntos.",
+     "detail": "Sin Jimmy Butler III, Stephen Curry, Moses Moody: GS pierde 5.1 puntos.",
      "supports_pick": false
     }
    ]
@@ -89,51 +89,48 @@
     "code": "SA"
    },
    "projection": {
-    "home_score": 112.1,
-    "away_score": 112.6
+    "home_score": 111.1,
+    "away_score": 111.9
    },
    "win_probability": {
-    "home": 0.4851,
-    "away": 0.5149
+    "home": 0.476,
+    "away": 0.524
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "San Antonio Spurs ML"
    },
-   "data_warning": "De'Aaron Fox está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": 1.0,
     "away": -1.0
    },
-   "total_points": 224.7,
+   "total_points": 223.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -18.0,
+     -19.0,
      17.0
     ],
     "total": [
-     199.0,
-     251.0
+     197.0,
+     249.0
     ]
    },
-   "game_warnings": [
-    "De'Aaron Fox está en duda (questionable)",
-    "Victor Wembanyama está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "3 de 4 modelos ven ganar a SA. Margen de SA: jugadores -0.8, Elo +2.3, equipo +3.1, cuatro factores +3.9.",
+     "detail": "3 de 4 modelos ven ganar a SA. Margen de SA: jugadores -0.3, Elo +2.3, equipo +3.1, cuatro factores +3.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 1.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 1.4 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -145,7 +142,7 @@
     {
      "label": "Bajas de SA",
      "favors": "home",
-     "detail": "Sin Dylan Harper, Tobias Harris: SA pierde 4.7 puntos.",
+     "detail": "Sin De'Aaron Fox, Dylan Harper, Tobias Harris: SA pierde 4.3 puntos.",
      "supports_pick": false
     }
    ]
