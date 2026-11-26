@@ -2,145 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-26T00:15:00.000720Z",
+ "generated_at": "2026-11-26T00:45:00.000579Z",
  "date_local": "2026-11-25",
  "games": [
-  {
-   "league_game_id": "401909319",
-   "espn_game_id": "401909319",
-   "starts_at": "2026-11-26T00:30Z",
-   "home": {
-    "name": "New York Knicks",
-    "code": "NY"
-   },
-   "away": {
-    "name": "Cleveland Cavaliers",
-    "code": "CLE"
-   },
-   "projection": {
-    "home_score": 113.9,
-    "away_score": 107.7
-   },
-   "win_probability": {
-    "home": 0.6752,
-    "away": 0.3248
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "New York Knicks ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -6.0,
-    "away": 6.0
-   },
-   "total_points": 221.6,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -12.0,
-     24.0
-    ],
-    "total": [
-     196.0,
-     247.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +5.9, Elo +7.8, equipo +6.4, cuatro factores +7.6.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 4.2 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para NY.",
-     "supports_pick": true
-    }
-   ]
-  },
-  {
-   "league_game_id": "401909320",
-   "espn_game_id": "401909320",
-   "starts_at": "2026-11-26T00:30Z",
-   "home": {
-    "name": "Oklahoma City Thunder",
-    "code": "OKC"
-   },
-   "away": {
-    "name": "Minnesota Timberwolves",
-    "code": "MIN"
-   },
-   "projection": {
-    "home_score": 110.2,
-    "away_score": 110.5
-   },
-   "win_probability": {
-    "home": 0.4916,
-    "away": 0.5084
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "away",
-    "label": "Minnesota Timberwolves ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": 1.0,
-    "away": -1.0
-   },
-   "total_points": 220.8,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -18.0,
-     18.0
-    ],
-    "total": [
-     195.0,
-     247.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "3 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores -1.5, Elo +1.2, equipo +1.8, cuatro factores +3.7.",
-     "supports_pick": false
-    },
-    {
-     "label": "Rotación",
-     "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de MIN vale 3.3 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de OKC",
-     "favors": "away",
-     "detail": "Sin Chet Holmgren, Aday Mara, Nikola Topic: OKC pierde 4.2 puntos.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para OKC.",
-     "supports_pick": false
-    }
-   ]
-  },
   {
    "league_game_id": "401909321",
    "espn_game_id": "401909321",
@@ -290,12 +154,12 @@
     "code": "PHX"
    },
    "projection": {
-    "home_score": 115.2,
-    "away_score": 107.9
+    "home_score": 115.0,
+    "away_score": 108.2
    },
    "win_probability": {
-    "home": 0.7028,
-    "away": 0.2972
+    "home": 0.6912,
+    "away": 0.3088
    },
    "pick": {
     "market": "moneyline",
@@ -307,12 +171,12 @@
     "home": -7.0,
     "away": 7.0
    },
-   "total_points": 223.0,
+   "total_points": 223.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -11.0,
-     25.0
+     24.0
     ],
     "total": [
      198.0,
@@ -325,13 +189,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +7.3, Elo +5.0, equipo +6.9, cuatro factores +6.4.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +6.8, Elo +5.0, equipo +6.9, cuatro factores +6.4.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 5.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 5.1 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -355,50 +219,48 @@
     "code": "SAC"
    },
    "projection": {
-    "home_score": 113.9,
-    "away_score": 106.5
+    "home_score": 113.8,
+    "away_score": 106.3
    },
    "win_probability": {
-    "home": 0.7053,
-    "away": 0.2947
+    "home": 0.7085,
+    "away": 0.2915
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Golden State Warriors ML"
    },
-   "data_warning": "Yaxel Lendeborg está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -8.0,
     "away": 8.0
    },
-   "total_points": 220.3,
+   "total_points": 220.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -11.0,
+     -10.0,
      25.0
     ],
     "total": [
-     195.0,
+     194.0,
      246.0
     ]
    },
-   "game_warnings": [
-    "Yaxel Lendeborg está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +6.5, Elo +8.0, equipo +9.2, cuatro factores +7.2.",
+     "detail": "4 de 4 modelos ven ganar a GS. Margen de GS: jugadores +6.6, Elo +8.0, equipo +9.2, cuatro factores +7.2.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de GS vale 4.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de GS vale 4.9 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -410,7 +272,7 @@
     {
      "label": "Bajas de GS",
      "favors": "away",
-     "detail": "Sin Jimmy Butler III, Stephen Curry, Moses Moody: GS pierde 5.1 puntos.",
+     "detail": "Sin Jimmy Butler III, Stephen Curry, Moses Moody: GS pierde 5.0 puntos.",
      "supports_pick": false
     }
    ]
@@ -623,6 +485,152 @@
      "label": "Bajas de CHA",
      "favors": "away",
      "detail": "Sin Grayson Allen, Ryan Kalkbrenner, Kon Knueppel: CHA pierde 2.1 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909319",
+   "espn_game_id": "401909319",
+   "starts_at": "2026-11-26T00:30Z",
+   "home": {
+    "name": "New York Knicks",
+    "code": "NY"
+   },
+   "away": {
+    "name": "Cleveland Cavaliers",
+    "code": "CLE"
+   },
+   "projection": {
+    "home_score": 113.7,
+    "away_score": 107.7
+   },
+   "win_probability": {
+    "home": 0.6693,
+    "away": 0.3307
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "New York Knicks ML"
+   },
+   "data_warning": "Jalen Brunson está en duda (probable)",
+   "spread": {
+    "home": -6.0,
+    "away": 6.0
+   },
+   "total_points": 221.3,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -12.0,
+     24.0
+    ],
+    "total": [
+     196.0,
+     247.0
+    ]
+   },
+   "game_warnings": [
+    "Jalen Brunson está en duda (probable)",
+    "Josh Hart está en duda (probable)",
+    "Karl-Anthony Towns está en duda (probable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +5.6, Elo +7.8, equipo +6.4, cuatro factores +7.6.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 3.9 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para NY.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de NY",
+     "favors": "away",
+     "detail": "Sin OG Anunoby, Miles McBride: NY pierde 0.5 puntos.",
+     "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909320",
+   "espn_game_id": "401909320",
+   "starts_at": "2026-11-26T00:30Z",
+   "home": {
+    "name": "Oklahoma City Thunder",
+    "code": "OKC"
+   },
+   "away": {
+    "name": "Minnesota Timberwolves",
+    "code": "MIN"
+   },
+   "projection": {
+    "home_score": 110.2,
+    "away_score": 110.5
+   },
+   "win_probability": {
+    "home": 0.4916,
+    "away": 0.5084
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "away",
+    "label": "Minnesota Timberwolves ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": 1.0,
+    "away": -1.0
+   },
+   "total_points": 220.8,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -18.0,
+     18.0
+    ],
+    "total": [
+     195.0,
+     247.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "3 de 4 modelos ven ganar a OKC. Margen de OKC: jugadores -1.5, Elo +1.2, equipo +1.8, cuatro factores +3.7.",
+     "supports_pick": false
+    },
+    {
+     "label": "Rotación",
+     "favors": "away",
+     "detail": "Con los minutos proyectados, la rotación de MIN vale 3.3 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de OKC",
+     "favors": "away",
+     "detail": "Sin Chet Holmgren, Aday Mara, Nikola Topic: OKC pierde 4.2 puntos.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para OKC.",
      "supports_pick": false
     }
    ]
