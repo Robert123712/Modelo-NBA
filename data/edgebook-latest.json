@@ -2,74 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-26T01:15:00.000613Z",
+ "generated_at": "2026-11-26T01:45:00.000591Z",
  "date_local": "2026-11-25",
  "games": [
-  {
-   "league_game_id": "401909323",
-   "espn_game_id": "401909323",
-   "starts_at": "2026-11-26T01:30Z",
-   "home": {
-    "name": "Houston Rockets",
-    "code": "HOU"
-   },
-   "away": {
-    "name": "Phoenix Suns",
-    "code": "PHX"
-   },
-   "projection": {
-    "home_score": 115.0,
-    "away_score": 108.2
-   },
-   "win_probability": {
-    "home": 0.6912,
-    "away": 0.3088
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Houston Rockets ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -7.0,
-    "away": 7.0
-   },
-   "total_points": 223.1,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -11.0,
-     24.0
-    ],
-    "total": [
-     198.0,
-     249.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +6.8, Elo +5.0, equipo +6.9, cuatro factores +6.4.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 5.1 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.7 puntos para HOU.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909324",
    "espn_game_id": "401909324",
@@ -632,6 +567,71 @@
      "favors": "away",
      "detail": "Con los minutos proyectados, la rotación de BKN vale 1.7 puntos más por partido.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909323",
+   "espn_game_id": "401909323",
+   "starts_at": "2026-11-26T01:30Z",
+   "home": {
+    "name": "Houston Rockets",
+    "code": "HOU"
+   },
+   "away": {
+    "name": "Phoenix Suns",
+    "code": "PHX"
+   },
+   "projection": {
+    "home_score": 115.2,
+    "away_score": 107.9
+   },
+   "win_probability": {
+    "home": 0.7028,
+    "away": 0.2972
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Houston Rockets ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -7.0,
+    "away": 7.0
+   },
+   "total_points": 223.0,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -11.0,
+     25.0
+    ],
+    "total": [
+     198.0,
+     249.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +7.3, Elo +5.0, equipo +6.9, cuatro factores +6.4.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 5.6 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.7 puntos para HOU.",
+     "supports_pick": true
     }
    ]
   }
