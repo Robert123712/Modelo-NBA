@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-27T17:45:00.000586Z",
+ "generated_at": "2026-11-27T18:15:00.000564Z",
  "date_local": "2026-11-27",
  "games": [
   {
@@ -88,12 +88,12 @@
     "code": "MIL"
    },
    "projection": {
-    "home_score": 118.4,
-    "away_score": 103.2
+    "home_score": 118.3,
+    "away_score": 102.8
    },
    "win_probability": {
-    "home": 0.8637,
-    "away": 0.1363
+    "home": 0.8676,
+    "away": 0.1324
    },
    "pick": {
     "market": "moneyline",
@@ -105,7 +105,7 @@
     "home": -15.0,
     "away": 15.0
    },
-   "total_points": 221.6,
+   "total_points": 221.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -123,13 +123,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +15.5, Elo +14.6, equipo +13.9, cuatro factores +13.6.",
+     "detail": "4 de 4 modelos ven ganar a DET. Margen de DET: jugadores +15.9, Elo +14.6, equipo +13.9, cuatro factores +13.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de DET vale 13.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DET vale 14.2 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -141,7 +141,7 @@
     {
      "label": "Bajas de MIL",
      "favors": "home",
-     "detail": "Sin Kam Jones, Cormac Ryan: MIL pierde 0.6 puntos.",
+     "detail": "Sin Kasparas Jakucionis, Kam Jones, Cormac Ryan: MIL pierde 0.9 puntos.",
      "supports_pick": true
     }
    ]
@@ -376,12 +376,12 @@
     "code": "MEM"
    },
    "projection": {
-    "home_score": 115.7,
+    "home_score": 116.4,
     "away_score": 109.8
    },
    "win_probability": {
-    "home": 0.6688,
-    "away": 0.3312
+    "home": 0.6862,
+    "away": 0.3138
    },
    "pick": {
     "market": "moneyline",
@@ -390,36 +390,38 @@
    },
    "data_warning": "LaMelo Ball está en duda (questionable)",
    "spread": {
-    "home": -6.0,
-    "away": 6.0
+    "home": -7.0,
+    "away": 7.0
    },
-   "total_points": 225.6,
+   "total_points": 226.2,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -12.0,
+     -11.0,
      24.0
     ],
     "total": [
-     200.0,
+     201.0,
      252.0
     ]
    },
    "game_warnings": [
-    "LaMelo Ball está en duda (questionable)"
+    "LaMelo Ball está en duda (questionable)",
+    "Zach Edey está en duda (questionable)",
+    "Isaiah Stewart está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +5.9, Elo +6.5, equipo +5.7, cuatro factores +7.5.",
+     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +6.9, Elo +6.5, equipo +5.7, cuatro factores +7.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MIN vale 4.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MIN vale 5.1 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -431,7 +433,7 @@
     {
      "label": "Bajas de MEM",
      "favors": "home",
-     "detail": "Sin Cameron Boozer, Jerami Grant, GG Jackson: MEM pierde 1.8 puntos.",
+     "detail": "Sin Cameron Boozer, Jerami Grant, GG Jackson: MEM pierde 2.7 puntos.",
      "supports_pick": true
     }
    ]
@@ -658,24 +660,24 @@
     "code": "NO"
    },
    "projection": {
-    "home_score": 117.0,
+    "home_score": 116.8,
     "away_score": 113.0
    },
    "win_probability": {
-    "home": 0.6129,
-    "away": 0.3871
+    "home": 0.6095,
+    "away": 0.3905
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "LA Clippers ML"
    },
-   "data_warning": "Bennedict Mathurin está en duda (doubtful)",
+   "data_warning": null,
    "spread": {
     "home": -4.0,
     "away": 4.0
    },
-   "total_points": 229.9,
+   "total_points": 229.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -687,21 +689,19 @@
      256.0
     ]
    },
-   "game_warnings": [
-    "Bennedict Mathurin está en duda (doubtful)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a LAC. Margen de LAC: jugadores +3.8, Elo +4.1, equipo +4.7, cuatro factores +4.9.",
+     "detail": "4 de 4 modelos ven ganar a LAC. Margen de LAC: jugadores +3.6, Elo +4.1, equipo +4.7, cuatro factores +4.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de LAC vale 2.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de LAC vale 1.8 puntos más por partido.",
      "supports_pick": true
     },
     {
