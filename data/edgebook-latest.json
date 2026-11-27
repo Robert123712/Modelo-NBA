@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-27T18:15:00.000564Z",
+ "generated_at": "2026-11-27T18:45:00.000584Z",
  "date_local": "2026-11-27",
  "games": [
   {
@@ -18,24 +18,24 @@
     "code": "MIA"
    },
    "projection": {
-    "home_score": 116.6,
-    "away_score": 108.4
+    "home_score": 116.9,
+    "away_score": 108.5
    },
    "win_probability": {
-    "home": 0.7231,
-    "away": 0.2769
+    "home": 0.7267,
+    "away": 0.2733
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "New York Knicks ML"
    },
-   "data_warning": "OG Anunoby está en duda (doubtful)",
+   "data_warning": "Karl-Anthony Towns está en duda (questionable)",
    "spread": {
     "home": -8.0,
     "away": 8.0
    },
-   "total_points": 224.9,
+   "total_points": 225.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -43,13 +43,11 @@
      26.0
     ],
     "total": [
-     199.0,
+     200.0,
      251.0
     ]
    },
    "game_warnings": [
-    "OG Anunoby está en duda (doubtful)",
-    "Miles McBride está en duda (questionable)",
     "Karl-Anthony Towns está en duda (questionable)",
     "Giannis Antetokounmpo está en duda (probable)"
    ],
@@ -58,13 +56,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +8.6, Elo +7.5, equipo +7.5, cuatro factores +7.2.",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +8.8, Elo +7.5, equipo +7.5, cuatro factores +7.2.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 6.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 7.1 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -725,12 +723,12 @@
     "code": "GS"
    },
    "projection": {
-    "home_score": 115.4,
-    "away_score": 106.8
+    "home_score": 114.0,
+    "away_score": 107.1
    },
    "win_probability": {
-    "home": 0.7316,
-    "away": 0.2684
+    "home": 0.6875,
+    "away": 0.3125
    },
    "pick": {
     "market": "moneyline",
@@ -739,19 +737,19 @@
    },
    "data_warning": null,
    "spread": {
-    "home": -9.0,
-    "away": 9.0
+    "home": -7.0,
+    "away": 7.0
    },
-   "total_points": 222.2,
+   "total_points": 221.1,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -9.0,
-     27.0
+     -11.0,
+     25.0
     ],
     "total": [
-     196.0,
-     248.0
+     195.0,
+     247.0
     ]
    },
    "game_warnings": [],
@@ -760,13 +758,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +9.9, Elo +7.4, equipo +6.1, cuatro factores +4.9.",
+     "detail": "4 de 4 modelos ven ganar a POR. Margen de POR: jugadores +7.3, Elo +7.4, equipo +6.1, cuatro factores +4.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de POR vale 8.2 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de POR vale 5.6 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -778,7 +776,7 @@
     {
      "label": "Bajas de GS",
      "favors": "home",
-     "detail": "Sin Jimmy Butler III, Stephen Curry, Moses Moody: GS pierde 7.4 puntos.",
+     "detail": "Sin Jimmy Butler III, Stephen Curry, Moses Moody: GS pierde 4.8 puntos.",
      "supports_pick": true
     }
    ]
