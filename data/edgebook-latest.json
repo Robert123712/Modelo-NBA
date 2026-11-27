@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-27T19:45:00.000603Z",
+ "generated_at": "2026-11-27T22:45:00.000548Z",
  "date_local": "2026-11-27",
  "games": [
   {
@@ -19,11 +19,11 @@
    },
    "projection": {
     "home_score": 116.9,
-    "away_score": 108.5
+    "away_score": 108.7
    },
    "win_probability": {
-    "home": 0.7267,
-    "away": 0.2733
+    "home": 0.7247,
+    "away": 0.2753
    },
    "pick": {
     "market": "moneyline",
@@ -35,7 +35,7 @@
     "home": -8.0,
     "away": 8.0
    },
-   "total_points": 225.4,
+   "total_points": 225.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -48,21 +48,20 @@
     ]
    },
    "game_warnings": [
-    "Karl-Anthony Towns está en duda (questionable)",
-    "Giannis Antetokounmpo está en duda (probable)"
+    "Karl-Anthony Towns está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +8.8, Elo +7.5, equipo +7.5, cuatro factores +7.2.",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +8.6, Elo +7.5, equipo +7.5, cuatro factores +7.2.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 7.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 6.9 puntos más por partido.",
      "supports_pick": true
     },
     {
