@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-27T18:45:00.000584Z",
+ "generated_at": "2026-11-27T19:15:00.000585Z",
  "date_local": "2026-11-27",
  "games": [
   {
@@ -374,37 +374,36 @@
     "code": "MEM"
    },
    "projection": {
-    "home_score": 116.4,
-    "away_score": 109.8
+    "home_score": 115.4,
+    "away_score": 109.4
    },
    "win_probability": {
-    "home": 0.6862,
-    "away": 0.3138
+    "home": 0.6732,
+    "away": 0.3268
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Minnesota Timberwolves ML"
    },
-   "data_warning": "LaMelo Ball está en duda (questionable)",
+   "data_warning": "Zach Edey está en duda (questionable)",
    "spread": {
-    "home": -7.0,
-    "away": 7.0
+    "home": -6.0,
+    "away": 6.0
    },
-   "total_points": 226.2,
+   "total_points": 224.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -11.0,
+     -12.0,
      24.0
     ],
     "total": [
-     201.0,
-     252.0
+     200.0,
+     251.0
     ]
    },
    "game_warnings": [
-    "LaMelo Ball está en duda (questionable)",
     "Zach Edey está en duda (questionable)",
     "Isaiah Stewart está en duda (questionable)"
    ],
@@ -413,13 +412,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +6.9, Elo +6.5, equipo +5.7, cuatro factores +7.5.",
+     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +6.1, Elo +6.5, equipo +5.7, cuatro factores +7.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MIN vale 5.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MIN vale 4.4 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -431,7 +430,7 @@
     {
      "label": "Bajas de MEM",
      "favors": "home",
-     "detail": "Sin Cameron Boozer, Jerami Grant, GG Jackson: MEM pierde 2.7 puntos.",
+     "detail": "Sin Cameron Boozer, Jerami Grant, GG Jackson: MEM pierde 2.0 puntos.",
      "supports_pick": true
     }
    ]
@@ -449,48 +448,62 @@
     "code": "DAL"
    },
    "projection": {
-    "home_score": 113.6,
-    "away_score": 111.9
+    "home_score": 114.4,
+    "away_score": 110.9
    },
    "win_probability": {
-    "home": 0.5487,
-    "away": 0.4513
+    "home": 0.5983,
+    "away": 0.4017
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Phoenix Suns ML"
    },
-   "data_warning": null,
+   "data_warning": "Kyrie Irving está en duda (questionable)",
    "spread": {
-    "home": -2.0,
-    "away": 2.0
+    "home": -4.0,
+    "away": 4.0
    },
-   "total_points": 225.5,
+   "total_points": 225.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -16.0,
-     20.0
+     -14.0,
+     21.0
     ],
     "total": [
      200.0,
      252.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Kyrie Irving está en duda (questionable)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +1.5, Elo +3.3, equipo +2.5, cuatro factores +2.6.",
+     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +3.7, Elo +3.3, equipo +2.5, cuatro factores +2.6.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de PHX vale 1.9 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Localía",
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para PHX.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de DAL",
+     "favors": "home",
+     "detail": "Sin Sergio de Larrea, Dereck Lively II: DAL pierde 1.8 puntos.",
      "supports_pick": true
     }
    ]
@@ -658,24 +671,24 @@
     "code": "NO"
    },
    "projection": {
-    "home_score": 116.8,
+    "home_score": 117.0,
     "away_score": 113.0
    },
    "win_probability": {
-    "home": 0.6095,
-    "away": 0.3905
+    "home": 0.6129,
+    "away": 0.3871
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "LA Clippers ML"
    },
-   "data_warning": null,
+   "data_warning": "Bennedict Mathurin está en duda (doubtful)",
    "spread": {
     "home": -4.0,
     "away": 4.0
    },
-   "total_points": 229.8,
+   "total_points": 229.9,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -687,19 +700,21 @@
      256.0
     ]
    },
-   "game_warnings": [],
+   "game_warnings": [
+    "Bennedict Mathurin está en duda (doubtful)"
+   ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a LAC. Margen de LAC: jugadores +3.6, Elo +4.1, equipo +4.7, cuatro factores +4.9.",
+     "detail": "4 de 4 modelos ven ganar a LAC. Margen de LAC: jugadores +3.8, Elo +4.1, equipo +4.7, cuatro factores +4.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de LAC vale 1.8 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de LAC vale 2.0 puntos más por partido.",
      "supports_pick": true
     },
     {
