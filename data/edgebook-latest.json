@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-27T05:15:00.000608Z",
+ "generated_at": "2026-11-27T15:15:00.842391Z",
  "date_local": "2026-11-27",
  "games": [
   {
@@ -92,8 +92,8 @@
     "away_score": 103.2
    },
    "win_probability": {
-    "home": 0.864,
-    "away": 0.136
+    "home": 0.8637,
+    "away": 0.1363
    },
    "pick": {
     "market": "moneyline",
@@ -163,8 +163,8 @@
     "away_score": 115.7
    },
    "win_probability": {
-    "home": 0.4782,
-    "away": 0.5218
+    "home": 0.4778,
+    "away": 0.5222
    },
    "pick": {
     "market": "moneyline",
@@ -320,7 +320,7 @@
     "home": -10.0,
     "away": 10.0
    },
-   "total_points": 223.5,
+   "total_points": 223.6,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -393,7 +393,7 @@
     "home": -6.0,
     "away": 6.0
    },
-   "total_points": 225.9,
+   "total_points": 226.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -785,7 +785,5 @@
   }
  ],
  "skipped_without_id": 0,
- "warnings": [
-  "Sin alineaciones de la NBA (HTTPError); titular del partido anterior"
- ]
+ "warnings": []
 }
