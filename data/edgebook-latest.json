@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-27T16:45:00.000546Z",
+ "generated_at": "2026-11-27T17:45:00.000586Z",
  "date_local": "2026-11-27",
  "games": [
   {
@@ -305,19 +305,19 @@
     "code": "ATL"
    },
    "projection": {
-    "home_score": 116.7,
+    "home_score": 116.8,
     "away_score": 106.9
    },
    "win_probability": {
-    "home": 0.759,
-    "away": 0.241
+    "home": 0.7604,
+    "away": 0.2396
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Boston Celtics ML"
    },
-   "data_warning": "Mitchell Robinson está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -10.0,
     "away": 10.0
@@ -334,15 +334,13 @@
      249.0
     ]
    },
-   "game_warnings": [
-    "Mitchell Robinson está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +11.0, Elo +4.9, equipo +6.9, cuatro factores +6.6.",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +11.1, Elo +4.9, equipo +6.9, cuatro factores +6.6.",
      "supports_pick": true
     },
     {
