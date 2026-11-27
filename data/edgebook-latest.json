@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-27T15:15:00.842391Z",
+ "generated_at": "2026-11-27T15:45:00.000577Z",
  "date_local": "2026-11-27",
  "games": [
   {
@@ -18,12 +18,12 @@
     "code": "MIA"
    },
    "projection": {
-    "home_score": 117.0,
-    "away_score": 108.2
+    "home_score": 117.2,
+    "away_score": 108.6
    },
    "win_probability": {
-    "home": 0.7372,
-    "away": 0.2628
+    "home": 0.7322,
+    "away": 0.2678
    },
    "pick": {
     "market": "moneyline",
@@ -35,7 +35,7 @@
     "home": -9.0,
     "away": 9.0
    },
-   "total_points": 225.2,
+   "total_points": 225.8,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -44,7 +44,7 @@
     ],
     "total": [
      200.0,
-     251.0
+     252.0
     ]
    },
    "game_warnings": [
@@ -58,13 +58,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +9.4, Elo +7.5, equipo +7.5, cuatro factores +7.2.",
+     "detail": "4 de 4 modelos ven ganar a NY. Margen de NY: jugadores +9.2, Elo +7.5, equipo +7.5, cuatro factores +7.2.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de NY vale 7.7 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de NY vale 7.4 puntos más por partido.",
      "supports_pick": true
     },
     {
