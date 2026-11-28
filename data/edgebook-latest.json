@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-28T00:45:00.000519Z",
+ "generated_at": "2026-11-28T01:15:00.000521Z",
  "date_local": "2026-11-27",
  "games": [
-  {
-   "league_game_id": "401909330",
-   "espn_game_id": "401909330",
-   "starts_at": "2026-11-28T01:00Z",
-   "home": {
-    "name": "Boston Celtics",
-    "code": "BOS"
-   },
-   "away": {
-    "name": "Atlanta Hawks",
-    "code": "ATL"
-   },
-   "projection": {
-    "home_score": 116.6,
-    "away_score": 107.0
-   },
-   "win_probability": {
-    "home": 0.7537,
-    "away": 0.2463
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Boston Celtics ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -10.0,
-    "away": 10.0
-   },
-   "total_points": 223.6,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -9.0,
-     27.0
-    ],
-    "total": [
-     198.0,
-     249.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +10.7, Elo +4.9, equipo +6.9, cuatro factores +6.6.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de BOS vale 8.9 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para BOS.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de ATL",
-     "favors": "home",
-     "detail": "Sin Mouhamed Gueye, Jock Landale, CJ McCollum: ATL pierde 1.2 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909331",
    "espn_game_id": "401909331",
@@ -89,51 +18,48 @@
     "code": "MEM"
    },
    "projection": {
-    "home_score": 115.5,
-    "away_score": 109.4
+    "home_score": 115.1,
+    "away_score": 109.3
    },
    "win_probability": {
-    "home": 0.6732,
-    "away": 0.3268
+    "home": 0.6678,
+    "away": 0.3322
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Minnesota Timberwolves ML"
    },
-   "data_warning": "Zach Edey está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": -6.0,
     "away": 6.0
    },
-   "total_points": 224.8,
+   "total_points": 224.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
      -12.0,
-     24.0
+     23.0
     ],
     "total": [
-     200.0,
-     251.0
+     199.0,
+     250.0
     ]
    },
-   "game_warnings": [
-    "Zach Edey está en duda (questionable)",
-    "Isaiah Stewart está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +6.2, Elo +6.5, equipo +5.7, cuatro factores +7.5.",
+     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +5.8, Elo +6.5, equipo +5.7, cuatro factores +7.5.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MIN vale 4.4 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de MIN vale 4.0 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -145,7 +71,7 @@
     {
      "label": "Bajas de MEM",
      "favors": "home",
-     "detail": "Sin Cameron Boozer, Jerami Grant, GG Jackson: MEM pierde 2.0 puntos.",
+     "detail": "Sin Cameron Boozer, Jerami Grant, GG Jackson: MEM pierde 1.6 puntos.",
      "supports_pick": true
     }
    ]
@@ -163,50 +89,48 @@
     "code": "DAL"
    },
    "projection": {
-    "home_score": 114.4,
-    "away_score": 110.9
+    "home_score": 115.5,
+    "away_score": 109.8
    },
    "win_probability": {
-    "home": 0.5983,
-    "away": 0.4017
+    "home": 0.6576,
+    "away": 0.3424
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "Phoenix Suns ML"
    },
-   "data_warning": "Kyrie Irving está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": -4.0,
-    "away": 4.0
+    "home": -6.0,
+    "away": 6.0
    },
    "total_points": 225.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -14.0,
-     21.0
+     -12.0,
+     24.0
     ],
     "total": [
      200.0,
-     252.0
+     251.0
     ]
    },
-   "game_warnings": [
-    "Kyrie Irving está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +3.7, Elo +3.3, equipo +2.5, cuatro factores +2.6.",
+     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +6.8, Elo +3.3, equipo +2.5, cuatro factores +2.6.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de PHX vale 1.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de PHX vale 5.1 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -218,7 +142,7 @@
     {
      "label": "Bajas de DAL",
      "favors": "home",
-     "detail": "Sin Sergio de Larrea, Dereck Lively II: DAL pierde 1.8 puntos.",
+     "detail": "Sin Sergio de Larrea, Kyrie Irving, Dereck Lively II: DAL pierde 5.0 puntos.",
      "supports_pick": true
     }
    ]
@@ -310,12 +234,12 @@
     "code": "DEN"
    },
    "projection": {
-    "home_score": 110.8,
-    "away_score": 118.9
+    "home_score": 110.5,
+    "away_score": 118.8
    },
    "win_probability": {
-    "home": 0.2792,
-    "away": 0.7208
+    "home": 0.2754,
+    "away": 0.7246
    },
    "pick": {
     "market": "moneyline",
@@ -327,7 +251,7 @@
     "home": 8.0,
     "away": -8.0
    },
-   "total_points": 229.7,
+   "total_points": 229.3,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
@@ -336,32 +260,31 @@
     ],
     "total": [
      204.0,
-     256.0
+     255.0
     ]
    },
    "game_warnings": [
     "Mo Bamba está en duda (questionable)",
-    "Jaxson Hayes está en duda (questionable)",
-    "Jusuf Nurkic está en duda (questionable)"
+    "Jaxson Hayes está en duda (questionable)"
    ],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +9.2, Elo +5.7, equipo +5.5, cuatro factores +5.3.",
+     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +9.4, Elo +5.7, equipo +5.5, cuatro factores +5.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DEN vale 10.9 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DEN vale 11.1 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de UTAH",
      "favors": "away",
-     "detail": "Sin Jaren Jackson Jr., Lauri Markkanen: UTAH pierde 4.3 puntos.",
+     "detail": "Sin Jaren Jackson Jr., Lauri Markkanen, Jusuf Nurkic: UTAH pierde 4.5 puntos.",
      "supports_pick": true
     },
     {
@@ -789,6 +712,77 @@
      "favors": "away",
      "detail": "Sin RJ Barrett, Kawhi Leonard: TOR pierde 6.2 puntos.",
      "supports_pick": false
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909330",
+   "espn_game_id": "401909330",
+   "starts_at": "2026-11-28T01:00Z",
+   "home": {
+    "name": "Boston Celtics",
+    "code": "BOS"
+   },
+   "away": {
+    "name": "Atlanta Hawks",
+    "code": "ATL"
+   },
+   "projection": {
+    "home_score": 116.6,
+    "away_score": 107.0
+   },
+   "win_probability": {
+    "home": 0.7537,
+    "away": 0.2463
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Boston Celtics ML"
+   },
+   "data_warning": null,
+   "spread": {
+    "home": -10.0,
+    "away": 10.0
+   },
+   "total_points": 223.6,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -9.0,
+     27.0
+    ],
+    "total": [
+     198.0,
+     249.0
+    ]
+   },
+   "game_warnings": [],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a BOS. Margen de BOS: jugadores +10.7, Elo +4.9, equipo +6.9, cuatro factores +6.6.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de BOS vale 8.9 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para BOS.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de ATL",
+     "favors": "home",
+     "detail": "Sin Mouhamed Gueye, Jock Landale, CJ McCollum: ATL pierde 1.2 puntos.",
+     "supports_pick": true
     }
    ]
   }
