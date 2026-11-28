@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-28T01:15:00.000521Z",
+ "generated_at": "2026-11-28T01:45:00.000529Z",
  "date_local": "2026-11-27",
  "games": [
-  {
-   "league_game_id": "401909331",
-   "espn_game_id": "401909331",
-   "starts_at": "2026-11-28T01:30Z",
-   "home": {
-    "name": "Minnesota Timberwolves",
-    "code": "MIN"
-   },
-   "away": {
-    "name": "Memphis Grizzlies",
-    "code": "MEM"
-   },
-   "projection": {
-    "home_score": 115.1,
-    "away_score": 109.3
-   },
-   "win_probability": {
-    "home": 0.6678,
-    "away": 0.3322
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Minnesota Timberwolves ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -6.0,
-    "away": 6.0
-   },
-   "total_points": 224.4,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -12.0,
-     23.0
-    ],
-    "total": [
-     199.0,
-     250.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +5.8, Elo +6.5, equipo +5.7, cuatro factores +7.5.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de MIN vale 4.0 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para MIN.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de MEM",
-     "favors": "home",
-     "detail": "Sin Cameron Boozer, Jerami Grant, GG Jackson: MEM pierde 1.6 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909332",
    "espn_game_id": "401909332",
@@ -234,57 +163,54 @@
     "code": "DEN"
    },
    "projection": {
-    "home_score": 110.5,
-    "away_score": 118.8
+    "home_score": 110.8,
+    "away_score": 118.3
    },
    "win_probability": {
-    "home": 0.2754,
-    "away": 0.7246
+    "home": 0.2934,
+    "away": 0.7066
    },
    "pick": {
     "market": "moneyline",
     "side": "away",
     "label": "Denver Nuggets ML"
    },
-   "data_warning": "Mo Bamba está en duda (questionable)",
+   "data_warning": null,
    "spread": {
     "home": 8.0,
     "away": -8.0
    },
-   "total_points": 229.3,
+   "total_points": 229.0,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -26.0,
+     -25.0,
      10.0
     ],
     "total": [
-     204.0,
+     203.0,
      255.0
     ]
    },
-   "game_warnings": [
-    "Mo Bamba está en duda (questionable)",
-    "Jaxson Hayes está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "away",
-     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +9.4, Elo +5.7, equipo +5.5, cuatro factores +5.3.",
+     "detail": "4 de 4 modelos ven ganar a DEN. Margen de DEN: jugadores +8.3, Elo +5.7, equipo +5.5, cuatro factores +5.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "away",
-     "detail": "Con los minutos proyectados, la rotación de DEN vale 11.1 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de DEN vale 10.0 puntos más por partido.",
      "supports_pick": true
     },
     {
      "label": "Bajas de UTAH",
      "favors": "away",
-     "detail": "Sin Jaren Jackson Jr., Lauri Markkanen, Jusuf Nurkic: UTAH pierde 4.5 puntos.",
+     "detail": "Sin Mo Bamba, Jaren Jackson Jr., Lauri Markkanen: UTAH pierde 3.4 puntos.",
      "supports_pick": true
     },
     {
@@ -309,18 +235,18 @@
    },
    "projection": {
     "home_score": 117.0,
-    "away_score": 113.0
+    "away_score": 112.9
    },
    "win_probability": {
-    "home": 0.6129,
-    "away": 0.3871
+    "home": 0.6139,
+    "away": 0.3861
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "LA Clippers ML"
    },
-   "data_warning": "Bennedict Mathurin está en duda (doubtful)",
+   "data_warning": null,
    "spread": {
     "home": -4.0,
     "away": 4.0
@@ -337,21 +263,19 @@
      256.0
     ]
    },
-   "game_warnings": [
-    "Bennedict Mathurin está en duda (doubtful)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a LAC. Margen de LAC: jugadores +3.8, Elo +4.1, equipo +4.7, cuatro factores +4.9.",
+     "detail": "4 de 4 modelos ven ganar a LAC. Margen de LAC: jugadores +3.9, Elo +4.1, equipo +4.7, cuatro factores +4.9.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de LAC vale 2.0 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de LAC vale 2.1 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -782,6 +706,80 @@
      "label": "Bajas de ATL",
      "favors": "home",
      "detail": "Sin Mouhamed Gueye, Jock Landale, CJ McCollum: ATL pierde 1.2 puntos.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909331",
+   "espn_game_id": "401909331",
+   "starts_at": "2026-11-28T01:30Z",
+   "home": {
+    "name": "Minnesota Timberwolves",
+    "code": "MIN"
+   },
+   "away": {
+    "name": "Memphis Grizzlies",
+    "code": "MEM"
+   },
+   "projection": {
+    "home_score": 115.5,
+    "away_score": 109.4
+   },
+   "win_probability": {
+    "home": 0.6732,
+    "away": 0.3268
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Minnesota Timberwolves ML"
+   },
+   "data_warning": "Zach Edey está en duda (questionable)",
+   "spread": {
+    "home": -6.0,
+    "away": 6.0
+   },
+   "total_points": 224.8,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -12.0,
+     24.0
+    ],
+    "total": [
+     200.0,
+     251.0
+    ]
+   },
+   "game_warnings": [
+    "Zach Edey está en duda (questionable)",
+    "Isaiah Stewart está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a MIN. Margen de MIN: jugadores +6.2, Elo +6.5, equipo +5.7, cuatro factores +7.5.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de MIN vale 4.4 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para MIN.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de MEM",
+     "favors": "home",
+     "detail": "Sin Cameron Boozer, Jerami Grant, GG Jackson: MEM pierde 2.0 puntos.",
      "supports_pick": true
     }
    ]
