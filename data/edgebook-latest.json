@@ -2,80 +2,9 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-28T01:45:00.000529Z",
+ "generated_at": "2026-11-28T02:15:00.000547Z",
  "date_local": "2026-11-27",
  "games": [
-  {
-   "league_game_id": "401909332",
-   "espn_game_id": "401909332",
-   "starts_at": "2026-11-28T02:00Z",
-   "home": {
-    "name": "Phoenix Suns",
-    "code": "PHX"
-   },
-   "away": {
-    "name": "Dallas Mavericks",
-    "code": "DAL"
-   },
-   "projection": {
-    "home_score": 115.5,
-    "away_score": 109.8
-   },
-   "win_probability": {
-    "home": 0.6576,
-    "away": 0.3424
-   },
-   "pick": {
-    "market": "moneyline",
-    "side": "home",
-    "label": "Phoenix Suns ML"
-   },
-   "data_warning": null,
-   "spread": {
-    "home": -6.0,
-    "away": 6.0
-   },
-   "total_points": 225.3,
-   "season": 2027,
-   "intervals_80": {
-    "home_margin": [
-     -12.0,
-     24.0
-    ],
-    "total": [
-     200.0,
-     251.0
-    ]
-   },
-   "game_warnings": [],
-   "warnings": [],
-   "key_factors": [
-    {
-     "label": "Los 4 modelos",
-     "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +6.8, Elo +3.3, equipo +2.5, cuatro factores +2.6.",
-     "supports_pick": true
-    },
-    {
-     "label": "Rotación",
-     "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de PHX vale 5.1 puntos más por partido.",
-     "supports_pick": true
-    },
-    {
-     "label": "Localía",
-     "favors": "home",
-     "detail": "Jugar en casa vale 1.8 puntos para PHX.",
-     "supports_pick": true
-    },
-    {
-     "label": "Bajas de DAL",
-     "favors": "home",
-     "detail": "Sin Sergio de Larrea, Kyrie Irving, Dereck Lively II: DAL pierde 5.0 puntos.",
-     "supports_pick": true
-    }
-   ]
-  },
   {
    "league_game_id": "401909333",
    "espn_game_id": "401909333",
@@ -89,28 +18,28 @@
     "code": "LAL"
    },
    "projection": {
-    "home_score": 116.3,
-    "away_score": 110.2
+    "home_score": 116.5,
+    "away_score": 110.0
    },
    "win_probability": {
-    "home": 0.6682,
-    "away": 0.3318
+    "home": 0.6805,
+    "away": 0.3195
    },
    "pick": {
     "market": "moneyline",
     "side": "home",
     "label": "San Antonio Spurs ML"
    },
-   "data_warning": "De'Aaron Fox está en duda (questionable)",
+   "data_warning": null,
    "spread": {
-    "home": -6.0,
-    "away": 6.0
+    "home": -7.0,
+    "away": 7.0
    },
-   "total_points": 226.5,
+   "total_points": 226.4,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -12.0,
+     -11.0,
      24.0
     ],
     "total": [
@@ -118,22 +47,19 @@
      252.0
     ]
    },
-   "game_warnings": [
-    "De'Aaron Fox está en duda (questionable)",
-    "Dylan Harper está en duda (questionable)"
-   ],
+   "game_warnings": [],
    "warnings": [],
    "key_factors": [
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +5.4, Elo +6.1, equipo +7.5, cuatro factores +5.3.",
+     "detail": "4 de 4 modelos ven ganar a SA. Margen de SA: jugadores +6.1, Elo +6.1, equipo +7.5, cuatro factores +5.3.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de SA vale 3.6 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de SA vale 4.3 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -141,12 +67,6 @@
      "favors": "home",
      "detail": "Jugar en casa vale 1.8 puntos para SA.",
      "supports_pick": true
-    },
-    {
-     "label": "Bajas de SA",
-     "favors": "away",
-     "detail": "Sin Tobias Harris: SA pierde 1.2 puntos.",
-     "supports_pick": false
     }
    ]
   },
@@ -780,6 +700,79 @@
      "label": "Bajas de MEM",
      "favors": "home",
      "detail": "Sin Cameron Boozer, Jerami Grant, GG Jackson: MEM pierde 2.0 puntos.",
+     "supports_pick": true
+    }
+   ]
+  },
+  {
+   "league_game_id": "401909332",
+   "espn_game_id": "401909332",
+   "starts_at": "2026-11-28T02:00Z",
+   "home": {
+    "name": "Phoenix Suns",
+    "code": "PHX"
+   },
+   "away": {
+    "name": "Dallas Mavericks",
+    "code": "DAL"
+   },
+   "projection": {
+    "home_score": 114.4,
+    "away_score": 110.9
+   },
+   "win_probability": {
+    "home": 0.5983,
+    "away": 0.4017
+   },
+   "pick": {
+    "market": "moneyline",
+    "side": "home",
+    "label": "Phoenix Suns ML"
+   },
+   "data_warning": "Kyrie Irving está en duda (questionable)",
+   "spread": {
+    "home": -4.0,
+    "away": 4.0
+   },
+   "total_points": 225.3,
+   "season": 2027,
+   "intervals_80": {
+    "home_margin": [
+     -14.0,
+     21.0
+    ],
+    "total": [
+     200.0,
+     252.0
+    ]
+   },
+   "game_warnings": [
+    "Kyrie Irving está en duda (questionable)"
+   ],
+   "warnings": [],
+   "key_factors": [
+    {
+     "label": "Los 4 modelos",
+     "favors": "home",
+     "detail": "4 de 4 modelos ven ganar a PHX. Margen de PHX: jugadores +3.7, Elo +3.3, equipo +2.5, cuatro factores +2.6.",
+     "supports_pick": true
+    },
+    {
+     "label": "Rotación",
+     "favors": "home",
+     "detail": "Con los minutos proyectados, la rotación de PHX vale 1.9 puntos más por partido.",
+     "supports_pick": true
+    },
+    {
+     "label": "Localía",
+     "favors": "home",
+     "detail": "Jugar en casa vale 1.8 puntos para PHX.",
+     "supports_pick": true
+    },
+    {
+     "label": "Bajas de DAL",
+     "favors": "home",
+     "detail": "Sin Sergio de Larrea, Dereck Lively II: DAL pierde 1.8 puntos.",
      "supports_pick": true
     }
    ]
