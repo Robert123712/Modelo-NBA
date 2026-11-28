@@ -2,7 +2,7 @@
  "schema_version": "1.1",
  "sport": "NBA",
  "model_version": "nba-0.7.0",
- "generated_at": "2026-11-28T05:15:00.000513Z",
+ "generated_at": "2026-11-28T05:45:00.000532Z",
  "date_local": "2026-11-28",
  "games": [
   {
@@ -318,12 +318,12 @@
     "code": "PHI"
    },
    "projection": {
-    "home_score": 114.9,
-    "away_score": 106.6
+    "home_score": 115.5,
+    "away_score": 105.0
    },
    "win_probability": {
-    "home": 0.7241,
-    "away": 0.2759
+    "home": 0.7733,
+    "away": 0.2267
    },
    "pick": {
     "market": "moneyline",
@@ -332,19 +332,19 @@
    },
    "data_warning": "Steven Adams está en duda (questionable)",
    "spread": {
-    "home": -8.0,
-    "away": 8.0
+    "home": -10.0,
+    "away": 10.0
    },
-   "total_points": 221.5,
+   "total_points": 220.5,
    "season": 2027,
    "intervals_80": {
     "home_margin": [
-     -10.0,
-     26.0
+     -8.0,
+     28.0
     ],
     "total": [
-     195.9,
-     248.0
+     195.0,
+     246.0
     ]
    },
    "game_warnings": [
@@ -355,13 +355,13 @@
     {
      "label": "Los 4 modelos",
      "favors": "home",
-     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +9.1, Elo +3.5, equipo +6.4, cuatro factores +7.1.",
+     "detail": "4 de 4 modelos ven ganar a HOU. Margen de HOU: jugadores +12.3, Elo +3.5, equipo +6.4, cuatro factores +7.1.",
      "supports_pick": true
     },
     {
      "label": "Rotación",
      "favors": "home",
-     "detail": "Con los minutos proyectados, la rotación de HOU vale 5.5 puntos más por partido.",
+     "detail": "Con los minutos proyectados, la rotación de HOU vale 8.7 puntos más por partido.",
      "supports_pick": true
     },
     {
@@ -379,7 +379,7 @@
     {
      "label": "Bajas de PHI",
      "favors": "home",
-     "detail": "Sin Jaylen Brown, Dean Wade: PHI pierde 1.1 puntos.",
+     "detail": "Sin Jaylen Brown, Joel Embiid, LeBron James: PHI pierde 4.2 puntos.",
      "supports_pick": true
     }
    ]
